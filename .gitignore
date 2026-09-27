@@ -1,0 +1,5 @@
+# Source PDFs and local notes are intentionally excluded from the public Pages artifact.
+*.pdf
+.obsidian/
+__pycache__/
+tmp/
