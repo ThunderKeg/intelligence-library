@@ -3,7 +3,7 @@ const CACHE_NAME = "intelligence-library-__BUILD_VERSION__";
 const CORE_ASSETS = [
   "./", "./index.html", "./styles.css", "./app.js", "./books.js",
   "./books/bishop-deep-learning-2024/chapter-01.json", "./manifest.webmanifest",
-  "./favicon.svg", "./icons/icon-192.png", "./icons/icon-512.png",
+  "./favicon.svg", "./icons/icon-180.png", "./icons/icon-192.png", "./icons/icon-512.png",
 ];
 
 self.addEventListener("install", (event) => {

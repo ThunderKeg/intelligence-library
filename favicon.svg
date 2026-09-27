@@ -1,5 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <circle cx="32" cy="32" r="30" fill="#2e5141"/>
-  <text x="30" y="42" fill="#f6f2e9" font-family="Georgia,serif" font-size="27" letter-spacing="-3" text-anchor="middle">IL</text>
-  <path d="M49 7v12M43 13h12M45 9l8 8M53 9l-8 8" stroke="#d6e4a6" stroke-width="1.8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" fill="#254b3b"/>
+<path d="M 100 199 C 151 178 211 185 256 214 L 256 380 C 210 351 152 346 100 368 Z" fill="#173a2d"/>
+<path d="M 412 199 C 361 178 301 185 256 214 L 256 380 C 302 351 360 346 412 368 Z" fill="#173a2d"/>
+<path d="M 110 187 C 161 169 216 177 256 205 L 256 366 C 216 338 161 330 110 349 Z" fill="#f8f5e9"/>
+<path d="M 402 187 C 351 169 296 177 256 205 L 256 366 C 296 338 351 330 402 349 Z" fill="#e9e4d2"/>
+<path d="M 256 106 L 269 138 L 301 151 L 269 164 L 256 196 L 243 164 L 211 151 L 243 138 Z" fill="#e3bc68"/>
+<path d="M 139 231 C 174 222 203 230 226 244" fill="none" stroke="#9caf9d" stroke-width="5" stroke-linecap="round"/>
+<path d="M 139 269 C 174 260 203 268 226 282" fill="none" stroke="#9caf9d" stroke-width="5" stroke-linecap="round"/>
+<path d="M 373 231 C 338 222 309 230 286 244" fill="none" stroke="#9caf9d" stroke-width="5" stroke-linecap="round"/>
+<path d="M 373 269 C 338 260 309 268 286 282" fill="none" stroke="#9caf9d" stroke-width="5" stroke-linecap="round"/>
 </svg>
