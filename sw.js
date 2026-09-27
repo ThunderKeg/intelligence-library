@@ -28,7 +28,8 @@ const CORE_ASSETS = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS)).then(() => self.skipWaiting()));
+  const freshAssets = CORE_ASSETS.map((path) => new Request(new URL(path, self.registration.scope), { cache: "reload" }));
+  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(freshAssets)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener("activate", (event) => {
@@ -42,7 +43,7 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin || !url.pathname.startsWith(new URL(self.registration.scope).pathname)) return;
-  event.respondWith(fetch(event.request).then((response) => {
+  event.respondWith(fetch(event.request, { cache: "no-cache" }).then((response) => {
     if (response.ok) {
       const copy = response.clone();
       event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy)));

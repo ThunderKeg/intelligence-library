@@ -249,14 +249,34 @@ async function renderReader(book) {
 
 async function setupPwa() {
   if (!("serviceWorker" in navigator)) return;
+  let previousController = navigator.serviceWorker.controller;
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    const hadController = Boolean(previousController);
+    previousController = navigator.serviceWorker.controller;
+    if (hadController && !refreshing) {
+      refreshing = true;
+      location.reload();
+    }
+  });
   try {
-    const registration = await navigator.serviceWorker.register("./sw.js");
-    registration.update();
-    setInterval(() => registration.update(), 60 * 60 * 1000);
-    let refreshing = false;
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
-      if (!refreshing) { refreshing = true; location.reload(); }
-    });
+    const registration = await navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" });
+    let checking = false;
+    let lastCheck = 0;
+    async function checkForUpdate() {
+      if (checking || document.hidden || !navigator.onLine || Date.now() - lastCheck < 15 * 1000) return;
+      checking = true;
+      lastCheck = Date.now();
+      try { await registration.update(); }
+      catch { /* Try again when the reader returns to the foreground. */ }
+      finally { checking = false; }
+    }
+    void checkForUpdate();
+    setInterval(checkForUpdate, 5 * 60 * 1000);
+    document.addEventListener("visibilitychange", checkForUpdate);
+    window.addEventListener("pageshow", checkForUpdate);
+    window.addEventListener("focus", checkForUpdate);
+    window.addEventListener("online", checkForUpdate);
   } catch { /* Reading remains available without offline support. */ }
 }
 
