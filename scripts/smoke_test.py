@@ -3,7 +3,7 @@
 import os
 from pathlib import Path
 
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import Error, sync_playwright
 
 
 BASE = os.environ.get("LIBRARY_TEST_URL", "http://127.0.0.1:8787/")
@@ -35,7 +35,12 @@ with sync_playwright() as playwright:
     page.locator(".toc-link").last.click()
     page.wait_for_function("location.hash === '#read-p20-t03'")
     page.wait_for_function("JSON.parse(localStorage.getItem('intelligence-library:progress:v2:bishop-deep-learning-2024')).page >= 20")
-    page.reload()
+    try:
+        page.reload()
+    except Error as error:
+        if "ERR_ABORTED" not in str(error):
+            raise
+        page.wait_for_load_state("load")
     page.locator(".reading-block").first.wait_for()
     page.wait_for_function("window.scrollY > 1000")
     page.goto(BASE)
