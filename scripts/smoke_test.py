@@ -26,7 +26,8 @@ with sync_playwright() as playwright:
     page.get_by_role("link", name="阅读第一章").click()
     page.locator(".reader-page-grid").wait_for()
     assert page.locator("#reader-count").inner_text() == "1 / 22"
-    assert page.locator(".facsimile-link img").is_visible()
+    page.locator(".facsimile-link img").wait_for(state="visible")
+    page.wait_for_function("document.querySelector('.facsimile-link img').naturalWidth > 0")
     assert "深度学习革命" in page.locator(".reader-page-translation").inner_text()
     page.screenshot(path=str(OUTPUT / "reader-desktop.png"), full_page=True)
 
