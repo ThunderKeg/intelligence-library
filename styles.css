@@ -219,6 +219,43 @@ h2 { font-size: clamp(39px, 4vw, 61px); line-height: 1.2; letter-spacing: -.04em
 .reader-pagination button:disabled { opacity: .35; cursor: default; }
 .reader-pagination span { font: italic 16px var(--serif); color: #80907d; }
 
+/* Source-faithful chapter pages */
+.reader-sidebar { max-height: calc(100vh - 3px); overflow-y: auto; }
+.reader-heading { margin: 28px 0 34px; }
+.reader-heading h1 { font-size: clamp(37px, 3.6vw, 50px); }
+.reader-section-en { margin-bottom: 12px; }
+.reader-lede { font: 13px/1.6 var(--sans); color: #71816f; }
+.reader-page-grid { display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: 34px; align-items: start; padding-top: 25px; }
+.reader-page-original { position: sticky; top: 24px; min-width: 0; }
+.reader-panel-label { color: #627d65; font-size: 10px; font-weight: 700; letter-spacing: .12em; margin: 0 0 14px; }
+.facsimile-link { display: block; background: #fff; padding: 7px; box-shadow: 0 7px 27px rgba(38,57,41,.12); border: 1px solid #d7ddd3; }
+.facsimile-link img { display: block; width: 100%; height: auto; }
+.facsimile-link:focus-visible { outline: 3px solid #80a370; }
+.source-transcript { color: #6d7d70; font-size: 11px; line-height: 1.65; margin-top: 16px; }
+.source-transcript summary { cursor: pointer; color: var(--green); font-weight: 600; }
+.source-transcript p { font-family: Georgia, serif; margin: 13px 0; white-space: pre-wrap; }
+.source-transcript pre { font: 12px/1.6 Georgia, serif; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 480px; overflow-y: auto; }
+.reader-page-translation { min-width: 0; }
+.translation-block { border-bottom: 1px solid #e2e6dc; padding: 0 0 19px; margin: 0 0 21px; scroll-margin-top: 32px; }
+.translation-zh { font: 16px/1.95 var(--serif); color: #35443a; margin: 0; overflow-wrap: anywhere; white-space: pre-wrap; }
+.translation-heading { padding-top: 8px; }
+.translation-heading .translation-zh { font-size: 23px; line-height: 1.5; color: var(--green); }
+.translation-caption { background: #eaf0e4; padding: 13px 15px; border-bottom: 0; }
+.translation-caption .translation-zh { font-size: 13px; line-height: 1.7; }
+.translation-formula { background: #e9eee5; padding: 16px 18px; border-left: 3px solid #83a36e; }
+.translation-formula .translation-zh { color: #2f5742; font: 17px/1.8 Georgia, var(--serif); }
+.translation-table-scroll { overflow-x: auto; }
+.translation-table { width: 100%; border-collapse: collapse; font: 12px/1.5 var(--sans); white-space: nowrap; }
+.translation-table th, .translation-table td { padding: 6px 8px; border-bottom: 1px solid #dbe4d7; text-align: right; }
+.translation-table th:first-child, .translation-table td:first-child { text-align: left; }
+.translation-table th { background: #eaf0e4; color: #416448; }
+.translation-fragment { display: inline-block; margin: 0 7px 12px 0; padding: 4px 9px; border: 1px solid #d8e1d4; }
+.translation-fragment .translation-zh { font: 12px/1.5 var(--sans); }
+.reader-view[data-language="zh"] .reader-page-original, .reader-view[data-language="en"] .reader-page-translation { display: none; }
+.reader-view[data-language="zh"] .reader-page-grid, .reader-view[data-language="en"] .reader-page-grid { display: block; max-width: 800px; }
+.reader-view[data-language="en"] .reader-page-original { position: static; }
+.reader-view[data-language="both"] .reader-page-original { display: block; }
+
 @media (max-width: 1100px) {
   .book-grid { grid-template-columns: 1fr; }
   .book-card { max-width: 710px; }
@@ -245,6 +282,12 @@ h2 { font-size: clamp(39px, 4vw, 61px); line-height: 1.2; letter-spacing: -.04em
   .reader-article[data-language="zh"] .copy-zh { padding-left: 0; border-left: 0; }
   .reader-topbar { gap: 12px; flex-wrap: wrap; }
   .preview-badge { display: none; }
+  .reader-sidebar { max-height: none; overflow: visible; }
+  #reader-toc { display: flex; overflow-x: auto; gap: 7px; padding-bottom: 9px; }
+  #reader-toc .toc-link { flex: 0 0 auto; }
+  .reader-page-grid { display: block; }
+  .reader-page-original { position: static; margin-bottom: 31px; max-width: 520px; }
+  .translation-zh { font-size: 17px; }
 }
 @media (max-width: 480px) {
   .book-card { display: block; padding: 13px; }

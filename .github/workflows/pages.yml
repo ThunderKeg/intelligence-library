@@ -25,9 +25,10 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Stage public files only
         run: |
-          mkdir -p site/books site/icons
+          mkdir -p site/books/bishop-deep-learning-2024/pages site/icons
           cp index.html styles.css app.js books.js favicon.svg manifest.webmanifest sw.js site/
-          cp books/*.json site/books/
+          cp books/bishop-deep-learning-2024/chapter-01.json site/books/bishop-deep-learning-2024/
+          cp books/bishop-deep-learning-2024/pages/*.webp site/books/bishop-deep-learning-2024/pages/
           cp icons/*.png site/icons/
           sed -i "s/__BUILD_VERSION__/${GITHUB_SHA}/g" site/sw.js
       - uses: actions/upload-pages-artifact@v3
