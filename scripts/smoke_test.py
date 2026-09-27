@@ -1,4 +1,4 @@
-"""Local Chapter 1 browser smoke test. Requires a server on port 8787."""
+"""Browser smoke test for the continuous text reader."""
 
 import os
 from pathlib import Path
@@ -21,48 +21,42 @@ with sync_playwright() as playwright:
     errors = []
     page.on("pageerror", lambda error: errors.append(str(error)))
     page.goto(BASE)
-    page.locator(".book-card").wait_for()
+    page.locator(".book-card").first.wait_for()
     assert page.locator(".book-card").count() == 1
-    page.get_by_role("link", name="阅读第一章").click()
-    page.locator(".reader-page-grid").wait_for()
-    assert page.locator("#reader-count").inner_text() == "1 / 22"
-    page.locator(".facsimile-link img").wait_for(state="visible")
-    page.wait_for_function("document.querySelector('.facsimile-link img').naturalWidth > 0")
-    assert "深度学习革命" in page.locator(".reader-page-translation").inner_text()
-    page.screenshot(path=str(OUTPUT / "reader-desktop.png"), full_page=True)
+    page.get_by_role("link", name="开始阅读").click()
+    page.locator(".reading-block").first.wait_for()
+    assert page.locator(".reading-block").count() == 124
+    assert page.locator(".toc-link").count() == 17
+    assert page.locator(".reader-article img").count() == 0
+    assert "独家授权" not in page.locator(".reader-article").inner_text()
+    assert page.locator(".reading-heading h1").inner_text() == "第 1 章 深度学习革命"
+    page.screenshot(path=str(OUTPUT / "reader-desktop.png"), full_page=False)
 
-    page.get_by_role("button", name="下一页").click()
-    assert page.locator("#reader-count").inner_text() == "2 / 22"
-    page.get_by_role("button", name="中文", exact=True).click()
-    assert not page.locator(".reader-page-original").is_visible()
-    assert page.locator(".reader-page-translation").is_visible()
     page.locator(".toc-link").last.click()
-    assert page.locator("#reader-count").inner_text() == "20 / 22"
-    page.get_by_role("button", name="下一页").click()
-    page.get_by_role("button", name="下一页").click()
-    assert page.locator("#reader-count").inner_text() == "22 / 22"
-    assert "自动微分" in page.locator(".reader-page-translation").inner_text()
+    page.wait_for_function("location.hash === '#read-p20-t03'")
+    page.wait_for_function("JSON.parse(localStorage.getItem('intelligence-library:progress:v2:bishop-deep-learning-2024')).page >= 20")
     page.reload()
-    assert page.locator("#reader-count").inner_text() == "22 / 22"
+    page.locator(".reading-block").first.wait_for()
+    page.wait_for_function("window.scrollY > 1000")
     page.goto(BASE)
     assert page.get_by_role("link", name="继续阅读").is_visible()
 
     page.evaluate("navigator.serviceWorker.ready")
     desktop.set_offline(True)
     page.goto(BASE + "?book=bishop-deep-learning-2024")
-    assert page.locator("#reader-count").inner_text() == "22 / 22"
-    assert page.locator(".facsimile-link img").evaluate("image => image.complete && image.naturalWidth > 0")
+    assert page.locator(".reading-block").count() == 124
     desktop.set_offline(False)
 
     mobile = browser.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=1, is_mobile=True, has_touch=True)
     phone = mobile.new_page()
     phone.on("pageerror", lambda error: errors.append(str(error)))
-    phone.goto(BASE + "?book=bishop-deep-learning-2024&page=14")
-    phone.locator(".reader-page-grid").wait_for()
-    assert phone.locator("#reader-count").inner_text() == "14 / 22"
-    phone.screenshot(path=str(OUTPUT / "reader-mobile.png"), full_page=True)
+    phone.goto(BASE + "?book=bishop-deep-learning-2024#read-p14-t06")
+    phone.locator(".reading-block").first.wait_for()
+    phone.wait_for_function("Math.abs(document.getElementById('read-p14-t06').getBoundingClientRect().top) < 100")
+    assert not phone.locator("#reader-menu").evaluate("menu => menu.open")
+    phone.screenshot(path=str(OUTPUT / "reader-mobile.png"), full_page=False)
     dimensions = phone.evaluate("({viewport: innerWidth, content: document.documentElement.scrollWidth})")
     assert dimensions["content"] <= dimensions["viewport"], dimensions
     assert not errors, errors
-    print(f"PASS: 22 pages, bilingual toggle, resume, offline, mobile width {dimensions}, no page errors")
+    print(f"PASS: 124 text blocks, 17 contents links, resume, offline, mobile width {dimensions}, no page errors")
     browser.close()

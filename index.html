@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f6f2e9" />
-    <meta name="description" content="Intelligence Library · 算经阁，一个可离线阅读、记住进度的个人双语学习书架。" />
-    <title>Intelligence Library · 算经阁</title>
+    <meta name="theme-color" content="#f7f6f2" />
+    <meta name="description" content="算经阁：可离线阅读、记住进度的个人学习书架。" />
+    <title>算经阁 · 个人书架</title>
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="apple-touch-icon" href="icons/icon-192.png" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -14,117 +14,44 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <a class="brand" href="./" aria-label="Intelligence Library 首页">
-          <span class="brand-mark" aria-hidden="true">IL<span class="brand-spark">✳</span></span>
-          <span class="brand-name">Intelligence <span>Library</span></span>
-        </a>
-        <nav id="header-nav" aria-label="主导航">
-          <a href="#shelves">书架</a>
-          <a href="#about">关于</a>
-        </nav>
-      </header>
+    <header class="site-header">
+      <a class="brand" href="./">算经阁</a>
+      <span class="header-note">个人书架</span>
+    </header>
 
-      <main id="top">
-        <div id="landing-view">
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-line"></span> A LIBRARY FOR CURIOUS MINDS</p>
-            <p class="chinese-name">算经阁 <span>·</span> 个人学习书架</p>
-            <h1 id="hero-title">Ideas worth<br /><em>returning to.</em></h1>
-            <p class="hero-description">从数学的严谨，到机器如何学习。把值得反复翻阅的书放在同一座书阁里，随时接上上次读到的地方。</p>
-            <a class="primary-link" href="#shelves">走进书架 <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero-art" aria-hidden="true">
-            <div class="art-orbit orbit-one"></div>
-            <div class="art-orbit orbit-two"></div>
-            <div class="art-star star-one">✳</div>
-            <div class="art-star star-two">✳</div>
-            <div class="book-stack">
-              <div class="book book-one"><span>MATHEMATICS</span><i>01</i></div>
-              <div class="book book-two"><span>INFORMATION</span><i>02</i></div>
-              <div class="book book-three"><span>INTELLIGENCE</span><i>03</i></div>
-              <div class="book book-four"><span>LEARNING</span><i>04</i></div>
-            </div>
-            <p class="art-caption">A collection in progress<br />EST. 2026</p>
-          </div>
-        </section>
-
-        <section class="topics" id="about" aria-labelledby="topics-title">
-          <div class="section-intro">
-            <p class="section-kicker">THE SUBJECTS</p>
-            <h2 id="topics-title">四门学问，<br /><em>一座书阁。</em></h2>
-          </div>
-          <div class="topic-grid">
-            <article class="topic-card"><span class="topic-number">01 / ML</span><div class="topic-symbol">∇</div><h3>机器学习</h3><p>从统计方法到深度学习，理解模型如何从数据中学习。</p></article>
-            <article class="topic-card"><span class="topic-number">02 / AI</span><div class="topic-symbol">✳</div><h3>人工智能</h3><p>探索推理、表示、智能体与不断演进的智能系统。</p></article>
-            <article class="topic-card"><span class="topic-number">03 / MATH</span><div class="topic-symbol">∑</div><h3>数学</h3><p>在代数、概率与优化中，找到复杂思想的简洁结构。</p></article>
-            <article class="topic-card"><span class="topic-number">04 / INFO</span><div class="topic-symbol">ℐ</div><h3>信息论</h3><p>从熵与编码出发，理解信息如何被度量和传递。</p></article>
-          </div>
-        </section>
-
-        <section class="shelves" id="shelves" aria-labelledby="shelves-title">
-          <div class="shelf-heading">
-            <div><p class="section-kicker">THE COLLECTION</p><h2 id="shelves-title">馆藏书架<span class="title-dot">.</span></h2></div>
-            <p class="collection-count" id="collection-count">0 BOOKS & COUNTING</p>
-          </div>
-          <div class="toolbar">
-            <label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">搜索书名、作者或简介</span><input id="search" type="search" placeholder="搜索书名、作者或关键词…" autocomplete="off" /></label>
-          </div>
-          <div class="category-filters" id="category-filters" role="group" aria-label="学科筛选"></div>
-          <div class="book-grid" id="book-grid" aria-live="polite"></div>
-          <div class="empty-state" id="empty-state">
-            <div class="empty-icon" aria-hidden="true">✳</div>
-            <h3 id="empty-title">书架已经备好。</h3>
-            <p id="empty-description">第一本值得收藏的书，即将在这里上架。</p>
-          </div>
-        </section>
+    <main>
+      <section id="landing-view" class="shelf" aria-labelledby="shelf-title">
+        <div class="shelf-heading">
+          <h1 id="shelf-title">我的书架</h1>
+          <span id="book-count"></span>
         </div>
+        <label class="search-field">
+          <span class="sr-only">搜索书名或作者</span>
+          <input id="search" type="search" placeholder="搜索书名或作者" autocomplete="off" />
+        </label>
+        <div id="book-grid" class="book-grid"></div>
+        <p id="empty-state" class="empty-state" hidden>没有找到图书。</p>
+      </section>
 
-        <section id="reader-view" class="reader-view" hidden aria-label="图书阅读器">
-          <div class="reader-progress-track" aria-hidden="true"><span id="reading-progress"></span></div>
-          <div class="reader-topbar">
-            <a class="back-link" href="./">← 返回书架</a>
-            <span id="reader-book-title"></span>
-            <span class="preview-badge">CHAPTER 01 / 第一章译本</span>
+      <section id="reader-view" class="reader-view" hidden aria-label="图书阅读器">
+        <div class="reader-progress-track" aria-hidden="true"><span id="reading-progress"></span></div>
+        <div class="reader-topbar">
+          <a class="back-link" href="./">← 书架</a>
+          <span id="reader-book-title"></span>
+        </div>
+        <div class="reader-layout">
+          <aside class="reader-sidebar" aria-label="章节目录">
+            <details id="reader-menu">
+              <summary>目录</summary>
+              <nav id="reader-toc" aria-label="本章目录"></nav>
+            </details>
+          </aside>
+          <div class="reader-main">
+            <p id="reader-status" class="reader-status" role="status" hidden></p>
+            <article id="reader-article" class="reader-article"></article>
           </div>
-          <div id="reader-status" class="reader-status" role="status" hidden></div>
-          <div class="reader-layout">
-            <aside class="reader-sidebar" aria-label="本书目录">
-              <p class="sidebar-eyebrow">CONTENTS / 目录</p>
-              <div id="reader-toc"></div>
-              <div class="sidebar-footnote">阅读位置保存在此设备的浏览器中，按每本书分别记录。点击原书页图可放大核对。</div>
-            </aside>
-            <div class="reader-main">
-              <div class="reader-tools">
-                <span>阅读方式</span>
-                <div class="language-switch" role="group" aria-label="阅读语言">
-                  <button type="button" data-language="both" aria-pressed="true">双语</button>
-                  <button type="button" data-language="zh" aria-pressed="false">中文</button>
-                  <button type="button" data-language="en" aria-pressed="false">EN</button>
-                </div>
-              </div>
-              <header class="reader-heading">
-                <p id="reader-chapter-kicker" class="section-kicker"></p>
-                <h1 id="reader-section-title"></h1>
-                <p id="reader-section-en" class="reader-section-en"></p>
-                <p id="reader-lede" class="reader-lede"></p>
-              </header>
-              <div class="reader-column-headings" aria-hidden="true"><span>ORIGINAL · 原书页图</span><span>TRANSLATION · 中文译文</span></div>
-              <article id="reader-article" class="reader-article"></article>
-              <div class="reader-source">原书：Christopher M. Bishop、Hugh Bishop，Deep Learning: Foundations and Concepts，Springer，2024。此处对应原书第 1 章第 1–22 页；英文页图为核对基准。</div>
-              <div class="reader-pagination">
-                <button id="previous-section" type="button">← 上一页</button>
-                <span id="reader-count"></span>
-                <button id="next-section" type="button">下一页 →</button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer"><div><strong>Intelligence Library</strong><span>算经阁 · 为值得反复阅读的思想留一个位置。</span></div><a href="#top">回到顶部 ↑</a></footer>
-    </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
