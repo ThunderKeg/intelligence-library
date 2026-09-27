@@ -7,6 +7,8 @@ const books = [
     author: "Christopher M. Bishop · Hugh Bishop",
     year: "2024",
     description: "第 1 章《深度学习革命》中文译文",
-    content: "books/bishop-deep-learning-2024/chapter-01.json",
+    chapters: [
+      { id: "01", number: "1", title: "深度学习革命", content: "books/bishop-deep-learning-2024/chapter-01.json" },
+    ],
   },
 ];

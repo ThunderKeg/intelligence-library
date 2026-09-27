@@ -6,6 +6,14 @@
     <meta name="theme-color" content="#f7f6f2" />
     <meta name="description" content="算经阁：可离线阅读、记住进度的个人学习书架。" />
     <title>算经阁 · 个人书架</title>
+    <script>
+      (() => {
+        let saved;
+        try { saved = localStorage.getItem("intelligence-library:theme:v1"); } catch { /* Use system theme. */ }
+        document.documentElement.dataset.theme = ["light", "dark"].includes(saved)
+          ? saved : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      })();
+    </script>
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="apple-touch-icon" href="icons/icon-192.png" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -16,7 +24,10 @@
   <body>
     <header class="site-header">
       <a class="brand" href="./">算经阁</a>
-      <span class="header-note">个人书架</span>
+      <div class="header-actions">
+        <span class="header-note">个人书架</span>
+        <button id="theme-toggle" class="text-button" type="button" aria-label="切换深色模式" aria-pressed="false">深色模式</button>
+      </div>
     </header>
 
     <main>
@@ -38,6 +49,7 @@
         <div class="reader-topbar">
           <a class="back-link" href="./">← 书架</a>
           <span id="reader-book-title"></span>
+          <button id="toc-toggle" class="text-button toc-button" type="button" aria-haspopup="dialog" aria-controls="toc-dialog" aria-expanded="false">目录</button>
         </div>
         <div class="reader-layout">
           <aside class="reader-sidebar" aria-label="章节目录">
@@ -49,8 +61,16 @@
           <div class="reader-main">
             <p id="reader-status" class="reader-status" role="status" hidden></p>
             <article id="reader-article" class="reader-article"></article>
+            <nav id="chapter-navigation" class="chapter-navigation" aria-label="切换章节" hidden></nav>
           </div>
         </div>
+        <dialog id="toc-dialog" class="toc-dialog" aria-labelledby="toc-dialog-title">
+          <div class="toc-dialog-header">
+            <h2 id="toc-dialog-title">目录</h2>
+            <button id="toc-close" class="text-button" type="button">关闭</button>
+          </div>
+          <nav id="reader-toc-mobile" aria-label="本章目录"></nav>
+        </dialog>
       </section>
     </main>
   </body>

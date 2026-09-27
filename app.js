@@ -2,6 +2,7 @@ const shelf = Array.isArray(books) ? books : [];
 const params = new URLSearchParams(location.search);
 const activeBook = shelf.find((book) => book.id === params.get("book"));
 const progressPrefix = "intelligence-library:progress:v2:";
+const themeKey = "intelligence-library:theme:v1";
 
 function element(tag, className, content) {
   const node = document.createElement(tag);
@@ -17,17 +18,44 @@ function readProgress(book) {
   } catch { return null; }
 }
 
-function saveProgress(book, blockId) {
+function saveProgress(book, chapterId, blockId) {
   const page = Number(blockId.match(/^read-p(\d+)-/)?.[1]);
   try {
-    localStorage.setItem(progressPrefix + book.id, JSON.stringify({ page, block: blockId, updatedAt: Date.now() }));
+    localStorage.setItem(progressPrefix + book.id, JSON.stringify({ chapter: chapterId, page, block: blockId, updatedAt: Date.now() }));
   } catch { /* Reading remains available when storage is disabled. */ }
 }
 
-function bookUrl(book) {
+function bookUrl(book, chapterId) {
   const url = new URL("./", location.href);
   url.searchParams.set("book", book.id);
+  if (chapterId) url.searchParams.set("chapter", chapterId);
   return url.href;
+}
+
+function setupTheme() {
+  const button = document.querySelector("#theme-toggle");
+  const system = matchMedia("(prefers-color-scheme: dark)");
+  let preference;
+  try { preference = localStorage.getItem(themeKey); } catch { /* Use system theme. */ }
+  if (!["light", "dark"].includes(preference)) preference = null;
+
+  function apply(theme, save) {
+    document.documentElement.dataset.theme = theme;
+    button.textContent = theme === "dark" ? "浅色模式" : "深色模式";
+    button.setAttribute("aria-label", theme === "dark" ? "切换浅色模式" : "切换深色模式");
+    button.setAttribute("aria-pressed", String(theme === "dark"));
+    document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#171e1a" : "#f7f6f2";
+    if (save) {
+      preference = theme;
+      try { localStorage.setItem(themeKey, theme); } catch { /* Keep the current session theme. */ }
+    }
+  }
+
+  apply(preference || (system.matches ? "dark" : "light"), false);
+  button.addEventListener("click", () => apply(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true));
+  system.addEventListener("change", () => {
+    if (!preference) apply(system.matches ? "dark" : "light", false);
+  });
 }
 
 function renderShelf() {
@@ -45,8 +73,9 @@ function renderShelf() {
       const original = element("p", "book-original-title", book.originalTitle);
       const author = element("p", "book-author", `${book.author} · ${book.year}`);
       const description = element("p", "book-description", book.description);
-      const read = element("a", "read-link", readProgress(book) ? "继续阅读 →" : "开始阅读 →");
-      read.href = bookUrl(book);
+      const progress = readProgress(book);
+      const read = element("a", "read-link", progress ? "继续阅读 →" : "开始阅读 →");
+      read.href = bookUrl(book, progress?.chapter);
       card.append(title, original, author, description, read);
       return card;
     }));
@@ -77,7 +106,7 @@ function renderBlock(block) {
     node.append(renderTable(block.text));
   } else if (block.kind === "heading") {
     const number = block.text.match(/^(\d+(?:\.\d+)*)(?:\s|$)/)?.[1];
-    const depth = number ? number.split(".").length : (block.text.startsWith("第 1 章") ? 1 : 3);
+    const depth = number ? number.split(".").length : (/^第\s*\d+\s*章/.test(block.text) ? 1 : 3);
     node.append(element(`h${Math.min(depth, 3)}`, "", block.text));
   } else {
     node.append(element("p", "", block.text));
@@ -91,12 +120,17 @@ async function renderReader(book) {
   document.querySelector("#reader-book-title").textContent = book.title;
   document.title = `${book.title} · 算经阁`;
 
+  const chapters = Array.isArray(book.chapters) ? book.chapters : [];
+  const saved = readProgress(book);
+  const explicit = chapters.find((item) => item.id === params.get("chapter"));
+  const chapterInfo = explicit || (params.has("page") ? chapters[0] : chapters.find((item) => item.id === saved?.chapter)) || chapters[0];
   let chapter;
   try {
-    const response = await fetch(new URL(book.content, document.baseURI));
+    if (!chapterInfo) throw new Error("No chapters");
+    const response = await fetch(new URL(chapterInfo.content, document.baseURI));
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     chapter = await response.json();
-    if (!Array.isArray(chapter.blocks) || !chapter.blocks.length) throw new Error("Empty chapter");
+    if (!Array.isArray(chapter.blocks) || !chapter.blocks.length || !Array.isArray(chapter.toc) || !chapter.toc.length) throw new Error("Empty chapter");
   } catch {
     const status = document.querySelector("#reader-status");
     status.textContent = "内容暂时无法加载，请检查网络后刷新。";
@@ -110,18 +144,52 @@ async function renderReader(book) {
   const nodes = [...article.querySelectorAll(".reading-block")];
   const indexById = new Map(nodes.map((node, index) => [node.id, index]));
   const toc = document.querySelector("#reader-toc");
+  const mobileToc = document.querySelector("#reader-toc-mobile");
   const menu = document.querySelector("#reader-menu");
+  const dialog = document.querySelector("#toc-dialog");
+  const tocToggle = document.querySelector("#toc-toggle");
   const desktop = matchMedia("(min-width: 800px)");
   const setMenuForWidth = () => { menu.open = desktop.matches; };
   setMenuForWidth();
   desktop.addEventListener("change", setMenuForWidth);
 
-  toc.replaceChildren(...chapter.toc.map((entry) => {
-    const link = element("a", "toc-link", `${entry.number} ${entry.title}`);
-    link.href = `#read-${entry.block}`;
-    link.addEventListener("click", () => { if (!desktop.matches) menu.open = false; });
+  function drawToc(container, closeOnSelect) {
+    const links = [];
+    for (const item of chapters) {
+      const currentChapter = item.id === chapterInfo.id;
+      const chapterLink = element("a", `toc-link toc-chapter-link${currentChapter ? " chapter-current" : ""}`, `${item.number} ${item.title}`);
+      chapterLink.href = currentChapter ? `#read-${chapter.toc[0].block}` : bookUrl(book, item.id);
+      if (currentChapter) chapterLink.setAttribute("aria-current", "page");
+      if (closeOnSelect) chapterLink.addEventListener("click", () => dialog.close());
+      links.push(chapterLink);
+      if (currentChapter) {
+        for (const entry of chapter.toc.filter((section) => section.number !== item.number)) {
+          const level = Math.min(entry.number.split(".").length, 3);
+          const link = element("a", `toc-link toc-section-link toc-level-${level}`, `${entry.number} ${entry.title}`);
+          link.href = `#read-${entry.block}`;
+          if (closeOnSelect) link.addEventListener("click", () => dialog.close());
+          links.push(link);
+        }
+      }
+    }
+    container.replaceChildren(...links);
+  }
+  drawToc(toc, false);
+  drawToc(mobileToc, true);
+  tocToggle.addEventListener("click", () => { dialog.showModal(); tocToggle.setAttribute("aria-expanded", "true"); });
+  document.querySelector("#toc-close").addEventListener("click", () => dialog.close());
+  dialog.addEventListener("close", () => tocToggle.setAttribute("aria-expanded", "false"));
+  dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+
+  const chapterNavigation = document.querySelector("#chapter-navigation");
+  const chapterIndex = chapters.indexOf(chapterInfo);
+  const adjacent = [chapters[chapterIndex - 1], chapters[chapterIndex + 1]];
+  chapterNavigation.replaceChildren(...adjacent.filter(Boolean).map((item) => {
+    const link = element("a", "chapter-navigation-link", `${item === adjacent[0] ? "← 上一章" : "下一章 →"} · ${item.number} ${item.title}`);
+    link.href = bookUrl(book, item.id);
     return link;
   }));
+  chapterNavigation.hidden = !chapterNavigation.childElementCount;
 
   let lastSaved = "";
   function updatePosition() {
@@ -133,12 +201,12 @@ async function renderReader(book) {
     }
     const blockId = nodes[current].id;
     if (blockId !== lastSaved) {
-      saveProgress(book, blockId);
+      saveProgress(book, chapterInfo.id, blockId);
       lastSaved = blockId;
     }
     document.querySelector("#reading-progress").style.width = `${((current + 1) / nodes.length) * 100}%`;
     const currentToc = [...chapter.toc].reverse().find((entry) => (indexById.get(`read-${entry.block}`) ?? 0) <= current);
-    for (const link of toc.querySelectorAll("a")) {
+    for (const link of document.querySelectorAll(".toc-section-link")) {
       const selected = link.hash === `#read-${currentToc?.block}`;
       link.classList.toggle("active", selected);
       if (selected) link.setAttribute("aria-current", "location");
@@ -146,14 +214,14 @@ async function renderReader(book) {
     }
   }
 
-  const saved = readProgress(book);
   const legacyPage = Number(params.get("page"));
   const legacyBlock = blocks.find((block) => block.page === legacyPage)?.id;
   const requested = decodeURIComponent(location.hash.slice(1));
+  const canRestore = saved && (!params.has("chapter") || saved.chapter === chapterInfo.id || (!saved.chapter && chapterIndex === 0));
   const restoreId = indexById.has(requested) ? requested :
     legacyBlock ? `read-${legacyBlock}` :
-    indexById.has(saved?.block) ? saved.block :
-    saved?.page ? `read-${blocks.find((block) => block.page === saved.page)?.id}` : null;
+    canRestore && indexById.has(saved.block) ? saved.block :
+    canRestore && saved.page ? `read-${blocks.find((block) => block.page === saved.page)?.id}` : null;
   const startTracking = () => {
     if (restoreId) document.getElementById(restoreId)?.scrollIntoView({ block: "start", behavior: "instant" });
     updatePosition();
@@ -180,6 +248,7 @@ async function setupPwa() {
   } catch { /* Reading remains available without offline support. */ }
 }
 
+setupTheme();
 if (activeBook) renderReader(activeBook);
 else renderShelf();
 setupPwa();
