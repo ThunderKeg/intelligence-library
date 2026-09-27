@@ -121,3 +121,34 @@ a { color: var(--accent); }
   .reading-heading h2 { font-size: 24px; }
   .reading-heading h3 { font-size: 20px; }
 }
+
+/* Full-text Shannon edition. */
+.reading-intro { margin: 0 0 2.4em; padding: 16px 20px; border-left: 3px solid var(--accent); background: var(--surface); }
+.reading-intro p { margin: 0; }
+.reading-rich .book-formula { max-width: 100%; margin: 1.6em 0; padding: 16px 18px; overflow-x: auto; border-radius: 3px; background: var(--formula); color: var(--ink); }
+.reading-rich .book-formula math { font-size: 1.1em; }
+.reading-rich p math[display="inline"], .reading-rich li math[display="inline"] { display: inline-block; max-width: 100%; overflow-x: auto; vertical-align: middle; }
+.reading-rich .book-figure { margin: 2.2em 0; }
+.reading-rich .book-figure img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.reading-rich .figure-caption { margin-top: 12px; padding-left: 14px; border-left: 2px solid var(--caption-line); color: var(--muted); font: 14px/1.8 var(--sans); }
+.reading-rich .figure-translation { margin: 12px 0 0; padding-left: 14px; border-left: 2px solid var(--caption-line); color: var(--muted); font: 14px/1.8 var(--sans); }
+.reading-rich .book-list { margin: 0 0 1.6em; padding-left: 1.7em; color: var(--body); font: 18px/1.9 var(--serif); }
+.reading-rich .book-list li { margin: .4em 0; padding-left: .2em; overflow-wrap: anywhere; white-space: normal; }
+.reading-rich .book-list li > p { margin: .5em 0; }
+.reading-rich .book-code { margin: 1.6em 0; padding: 16px 18px; overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); color: var(--ink); font: 14px/1.65 Consolas, "SFMono-Regular", monospace; tab-size: 4; }
+.reading-rich .book-code code { font: inherit; white-space: pre; }
+.reading-rich .footnote { margin: 2em 0; padding-top: .7em; border-top: 1px solid var(--line); }
+.reading-rich .footnote p { font-size: 14px; line-height: 1.8; }
+.reading-rich .footnote hr { display: none; }
+.reading-rich [id] { scroll-margin-top: 85px; }
+.reading-rich .translator-note { margin: 1.3em 0; padding: 12px 16px; border-left: 2px solid var(--accent); background: var(--surface); color: var(--body); }
+.reading-rich .translator-note strong { color: var(--accent); font: 700 13px/1.7 var(--sans); }
+.reading-rich .translator-note p { margin: .3em 0 0; color: inherit; font: 14px/1.8 var(--sans); }
+@media (max-width: 800px) {
+  .reading-rich .book-list { font-size: 17px; }
+  .reading-rich .book-formula { padding: 13px 14px; }
+  .reading-rich .book-formula math { font-size: 1em; }
+}
+@media (max-width: 480px) {
+  .reading-rich .book-table { min-width: 700px; }
+}

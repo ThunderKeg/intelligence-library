@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p site/books site/icons
           cp index.html styles.css app.js books.js favicon.svg manifest.webmanifest sw.js site/
-          find books -type f -name 'chapter-*.json' -print0 | while IFS= read -r -d '' file; do
+          find books -type f \( -name 'chapter-*.json' -o -path '*/assets/*' \) -print0 | while IFS= read -r -d '' file; do
             mkdir -p "site/$(dirname "$file")"
             cp "$file" "site/$file"
           done

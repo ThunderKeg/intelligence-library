@@ -105,9 +105,20 @@ function renderBlock(block) {
   if (block.kind === "table") {
     node.append(renderTable(block.text));
   } else if (block.kind === "heading") {
-    const number = block.text.match(/^(\d+(?:\.\d+)*)(?:\s|$)/)?.[1];
-    const depth = number ? number.split(".").length : (/^第\s*\d+\s*章/.test(block.text) ? 1 : 3);
-    node.append(element(`h${Math.min(depth, 3)}`, "", block.text));
+    if (typeof block.html === "string") {
+      const fragment = document.createElement("template");
+      fragment.innerHTML = block.html;
+      node.append(fragment.content);
+    } else {
+      const number = block.text.match(/^(\d+(?:\.\d+)*)(?:\s|$)/)?.[1];
+      const depth = Number.isInteger(block.level) ? block.level :
+        (number ? number.split(".").length : (/^第\s*\d+\s*章/.test(block.text) ? 1 : 3));
+      node.append(element(`h${Math.max(1, Math.min(depth, 3))}`, "", block.text));
+    }
+  } else if (block.kind === "rich" && typeof block.html === "string") {
+    const fragment = document.createElement("template");
+    fragment.innerHTML = block.html;
+    node.append(fragment.content);
   } else {
     node.append(element("p", "", block.text));
   }
@@ -163,9 +174,9 @@ async function renderReader(book) {
       if (closeOnSelect) chapterLink.addEventListener("click", () => dialog.close());
       links.push(chapterLink);
       if (currentChapter) {
-        for (const entry of chapter.toc.filter((section) => section.number !== item.number)) {
-          const level = Math.min(entry.number.split(".").length, 3);
-          const link = element("a", `toc-link toc-section-link toc-level-${level}`, `${entry.number} ${entry.title}`);
+        for (const entry of chapter.toc.slice(1)) {
+          const level = Number.isInteger(entry.level) ? entry.level : Math.min(entry.number.split(".").length, 3);
+          const link = element("a", `toc-link toc-section-link toc-level-${level}`, `${entry.number} ${entry.title}`.trim());
           link.href = `#read-${entry.block}`;
           if (closeOnSelect) link.addEventListener("click", () => dialog.close());
           links.push(link);
@@ -217,8 +228,9 @@ async function renderReader(book) {
   const legacyPage = Number(params.get("page"));
   const legacyBlock = blocks.find((block) => block.page === legacyPage)?.id;
   const requested = decodeURIComponent(location.hash.slice(1));
+  const requestedNode = requested && document.getElementById(requested);
   const canRestore = saved && (!params.has("chapter") || saved.chapter === chapterInfo.id || (!saved.chapter && chapterIndex === 0));
-  const restoreId = indexById.has(requested) ? requested :
+  const restoreId = requestedNode && article.contains(requestedNode) ? requested :
     legacyBlock ? `read-${legacyBlock}` :
     canRestore && indexById.has(saved.block) ? saved.block :
     canRestore && saved.page ? `read-${blocks.find((block) => block.page === saved.page)?.id}` : null;
