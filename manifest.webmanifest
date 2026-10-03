@@ -2,7 +2,7 @@
   "name": "Intelligence Library · 算经阁",
   "short_name": "算经阁",
   "description": "个人学习书架",
-  "id": "./",
+  "id": "/intelligence-library/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
