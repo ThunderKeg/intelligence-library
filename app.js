@@ -433,6 +433,168 @@ function renderBlock(block, book) {
   return node;
 }
 
+async function loadReferenceIndex(book) {
+  if (!book.referenceIndex) return null;
+  try {
+    const response = await fetch(new URL(book.referenceIndex, document.baseURI));
+    if (!response.ok) return null;
+    const index = await response.json();
+    return index.bookId === book.id && index.targets ? index.targets : null;
+  } catch { return null; }
+}
+
+function referenceMatches(text, targets, book, currentChapter, selfBlock) {
+  const matches = [];
+  const chapters = new Set(book.chapters.map((chapter) => chapter.id));
+  const number = "(?:[A-C]|\\d+)\\.\\d+(?:\\.\\d+)?";
+  const joined = `(?:\\s*(?:、|,|，|和|及|与)\\s*${number})+`;
+
+  function add(kind, key, start, end) {
+    const target = targets[kind]?.[key];
+    if (!target || !chapters.has(target.chapter) || !/^[\w-]+$/.test(target.block)) return;
+    if (target.chapter === currentChapter && target.block === selfBlock) return;
+    const href = target.chapter === currentChapter ? `#read-${target.block}` :
+      `${bookUrl(book, target.chapter)}#read-${target.block}`;
+    matches.push({ start, end, href });
+  }
+
+  function singles(kind, pattern) {
+    for (const match of text.matchAll(pattern)) add(kind, match[1], match.index, match.index + match[0].length);
+  }
+
+  function groups(kind, pattern, numberPattern) {
+    for (const match of text.matchAll(pattern)) {
+      const offset = match.index + match[0].indexOf(match[1]);
+      for (const value of match[1].matchAll(numberPattern)) {
+        add(kind, value[0], offset + value.index, offset + value.index + value[0].length);
+      }
+    }
+  }
+
+  singles("chapter", /第\s*(\d+)\s*章/g);
+  singles("chapter", /附录\s*([A-C])(?![A-Za-z0-9])/g);
+  singles("section", /(?:第\s*)?((?:[A-C]|\d+)(?:\.\d+){1,2})\s*(?:小)?节/g);
+  singles("section", /附录\s*([A-C]\.\d+(?:\.\d+)?)\s*节?/g);
+  singles("figure", /图\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
+  singles("table", /表\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
+  singles("algorithm", /算法\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
+  singles("formula", /(?:公式|式)\s*[（(]\s*((?:[A-C]|\d+)\.\d+)\s*[）)]/g);
+  singles("formula", /[（(]\s*((?:[A-C]|\d+)\.\d+)\s*[）)]/g);
+  groups("chapter", /第\s*(\d+(?:\s*(?:、|,|，|和|及|与)\s*\d+)+)\s*章/g, /\d+/g);
+  groups("section", new RegExp(`(?:第\\s*)?(${number}${joined})\\s*(?:小)?节`, "g"), new RegExp(number, "g"));
+  groups("figure", new RegExp(`图\\s*(${number}${joined})`, "g"), new RegExp(number, "g"));
+  groups("table", new RegExp(`表\\s*(${number}${joined})`, "g"), new RegExp(number, "g"));
+  matches.sort((left, right) => left.start - right.start || right.end - left.end);
+  const selected = [];
+  for (const match of matches) {
+    if (!selected.length || match.start >= selected[selected.length - 1].end) selected.push(match);
+  }
+  return selected;
+}
+
+function linkReferences(article, book, currentChapter, targets) {
+  let linked = 0;
+  const containers = article.querySelectorAll(
+    ".reading-paragraph, .reading-list, .reading-footnote, .reading-quote, .reading-exercise, .reading-bibliographical-note, .reading-figure .figure-caption, .reading-table .book-table, .reading-heading");
+  for (const container of containers) {
+    const selfBlock = container.closest(".reading-block")?.id.slice(5);
+    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    for (const node of nodes) {
+      if (node.parentElement?.closest("a, code, pre, math, .reading-intro")) continue;
+      const matches = referenceMatches(node.textContent, targets, book, currentChapter, selfBlock);
+      if (!matches.length) continue;
+      const fragment = document.createDocumentFragment();
+      let offset = 0;
+      for (const match of matches) {
+        if (match.start < offset) continue;
+        fragment.append(document.createTextNode(node.textContent.slice(offset, match.start)));
+        const link = element("a", "reading-reference", node.textContent.slice(match.start, match.end));
+        link.href = match.href;
+        fragment.append(link);
+        linked += 1;
+        offset = match.end;
+      }
+      fragment.append(document.createTextNode(node.textContent.slice(offset)));
+      node.replaceWith(fragment);
+    }
+  }
+  article.dataset.referenceLinks = String(linked);
+}
+
+function setupOfflineImages(book) {
+  if (!book.offlineImages || !("serviceWorker" in navigator)) return;
+  const panel = document.querySelector("#offline-panel");
+  const status = document.querySelector("#offline-status");
+  const retry = document.querySelector("#offline-retry");
+  panel.hidden = false;
+  let runId = 0;
+  let activePort = null;
+  let timer = null;
+
+  async function prepare() {
+    const currentRun = ++runId;
+    if (activePort) activePort.close();
+    activePort = null;
+    clearTimeout(timer);
+    status.textContent = "正在检查离线图片…";
+    retry.hidden = true;
+    try {
+      let registration = await navigator.serviceWorker.getRegistration();
+      if (!registration) registration = await navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" });
+      const ready = registration.active ? registration : await Promise.race([
+        navigator.serviceWorker.ready,
+        new Promise((_, reject) => setTimeout(() => reject(new Error("Service Worker timeout")), 30000)),
+      ]);
+      if (currentRun !== runId) return;
+      const worker = ready.active || navigator.serviceWorker.controller;
+      if (!worker) throw new Error("Service Worker unavailable");
+      const channel = new MessageChannel();
+      activePort = channel.port1;
+      const timeOut = () => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          if (currentRun !== runId) return;
+          status.textContent = "离线图片准备未响应，请重试。";
+          retry.hidden = false;
+          channel.port1.close();
+          activePort = null;
+        }, 30000);
+      };
+      channel.port1.onmessage = ({ data }) => {
+        if (currentRun !== runId || data?.type !== "offline-images-status") return;
+        clearTimeout(timer);
+        const size = data.totalBytes ? `，约 ${Math.ceil(data.totalBytes / 1048576)} MB` : "";
+        if (data.state === "complete") {
+          status.textContent = `本书 ${data.total} 张图片已可离线阅读`;
+          channel.port1.close();
+          activePort = null;
+        } else if (data.state === "error") {
+          status.textContent = `离线图片已准备 ${data.done}/${data.total} 张；联网后可重试。`;
+          retry.hidden = false;
+          channel.port1.close();
+          activePort = null;
+        } else {
+          status.textContent = `正在准备离线图片 ${data.done}/${data.total}${size}`;
+          timeOut();
+        }
+      };
+      worker.postMessage({ type: "prepare-offline-images", path: book.offlineImages }, [channel.port2]);
+      timeOut();
+    } catch {
+      if (currentRun !== runId) return;
+      status.textContent = "离线图片准备失败，请重试。";
+      retry.hidden = false;
+    }
+  }
+
+  retry.addEventListener("click", prepare);
+  window.addEventListener("online", prepare);
+  navigator.serviceWorker.addEventListener("controllerchange", prepare);
+  void prepare();
+}
+
 async function renderReader(book) {
   document.querySelector("#landing-view").hidden = true;
   document.querySelector("#reader-view").hidden = false;
@@ -444,6 +606,7 @@ async function renderReader(book) {
   const explicit = chapters.find((item) => item.id === params.get("chapter"));
   const legacyChapter = chapters.find((item) => item.id === book.legacyPageChapter) || chapters[0];
   const chapterInfo = explicit || (params.has("page") ? legacyChapter : chapters.find((item) => item.id === saved?.chapter)) || chapters[0];
+  const referenceIndexPromise = loadReferenceIndex(book);
   let chapter;
   try {
     if (!chapterInfo) throw new Error("No chapters");
@@ -462,6 +625,9 @@ async function renderReader(book) {
   const article = document.querySelector("#reader-article");
   article.dataset.bookId = book.id;
   article.replaceChildren(...blocks.map((block) => renderBlock(block, book)));
+  const referenceIndex = await referenceIndexPromise;
+  if (referenceIndex) linkReferences(article, book, chapterInfo.id, referenceIndex);
+  setupOfflineImages(book);
   const nodes = [...article.querySelectorAll(".reading-block")];
   const updateFormulaHints = () => {
     for (const formula of article.querySelectorAll(".book-formula")) {

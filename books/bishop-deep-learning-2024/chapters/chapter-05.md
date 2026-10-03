@@ -103,16 +103,18 @@ $$
 
 <!-- pdf-page: 154 -->
 
-<figure id="fig-5-3">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-3.png" alt="多类线性判别函数的三个凸决策区域及同一区域内两点的连线">
-  <figcaption>图 5.3：多类线性判别函数的决策区域，红线为决策边界。若两点 $\mathbf{x}_A$ 和 $\mathbf{x}_B$ 都位于同一决策区域 $\mathcal{R}_k$ 内，则连接两点的线段上的任意点 $\hat{\mathbf{x}}$ 也必在 $\mathcal{R}_k$ 内，因此决策区域必定单连通且为凸集。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 它对应由下式定义的 $(D-1)$ 维超平面：
 
 $$
 (\mathbf{w}_k-\mathbf{w}_j)^{\mathrm T}\mathbf{x}+(w_{k0}-w_{j0})=0. \tag{5.8}
 $$
+
+<figure id="fig-5-3">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-3.png" alt="多类线性判别函数的三个凸决策区域及同一区域内两点的连线">
+  <figcaption>图 5.3：多类线性判别函数的决策区域，红线为决策边界。若两点 $\mathbf{x}_A$ 和 $\mathbf{x}_B$ 都位于同一决策区域 $\mathcal{R}_k$ 内，则连接两点的线段上的任意点 $\hat{\mathbf{x}}$ 也必在 $\mathcal{R}_k$ 内，因此决策区域必定单连通且为凸集。</figcaption>
+</figure>
 
 它与第 5.1.1 小节讨论的二类别决策边界具有相同形式，因此适用类似的几何性质。
 
@@ -282,7 +284,7 @@ $$
 
 在很多应用中，我们的目标比单纯减少误分类次数更复杂。再考虑医学诊断问题。如果一名未患癌的患者被误诊为患癌，后果可能是患者受到惊吓，还须接受进一步检查。相反，如果一名癌症患者被诊断为健康，因未得到治疗而可能过早死亡。因此，这两类错误的后果可能有天壤之别。显然，即使为此要增加第一类错误，也应尽量减少第二类错误。
 
-可以引入**损失函数**（也称**代价函数**）来形式化这些问题。它是衡量采取各种可用决策或行动所造成损失的单一总体指标。我们的目标就是使总损失最小。注意，有些作者改用**效用函数**，并希望使它的值
+可以引入**损失函数**（也称**代价函数**）来形式化这些问题。它是衡量采取各种可用决策或行动所造成损失的单一总体指标。我们的目标就是使总损失最小。注意，有些作者改用**效用函数**，并希望使它的值最大化。
 
 <!-- pdf-page: 160 -->
 
@@ -299,7 +301,7 @@ $$
   <p class="figure-translation">图内文字：normal＝未患癌；cancer＝患癌。行依次为真实类别“未患癌、患癌”，列依次为判定类别“未患癌、患癌”；矩阵数值为 $0,1;100,0$。</p>
 </figure>
 
-最大化。若把效用直接定义为损失的相反数，这两个概念就是等价的。本书通篇采用损失函数的约定。假设对一个新的 $\mathbf{x}$，真实类别是 $\mathcal{C}_k$，而我们把 $\mathbf{x}$ 分配给类别 $\mathcal{C}_j$（$j$ 可能等于 $k$，也可能不等于）。这样会产生某个水平的损失，记为 $L_{kj}$，可将它看作损失矩阵的第 $k,j$ 个元素。例如，癌症诊断示例可以采用图 5.6 所示的损失矩阵。这个矩阵表示：决策正确时没有损失；把健康患者诊断为患癌时损失为 1；把癌症患者诊断为健康时损失为 100。
+若把效用直接定义为损失的相反数，这两个概念就是等价的。本书通篇采用损失函数的约定。假设对一个新的 $\mathbf{x}$，真实类别是 $\mathcal{C}_k$，而我们把 $\mathbf{x}$ 分配给类别 $\mathcal{C}_j$（$j$ 可能等于 $k$，也可能不等于）。这样会产生某个水平的损失，记为 $L_{kj}$，可将它看作损失矩阵的第 $k,j$ 个元素。例如，癌症诊断示例可以采用图 5.6 所示的损失矩阵。这个矩阵表示：决策正确时没有损失；把健康患者诊断为患癌时损失为 1；把癌症患者诊断为健康时损失为 100。
 
 最优解应使损失函数最小。然而，损失函数取决于未知的真实类别。给定输入向量 $\mathbf{x}$ 时，我们对真实类别的不确定性由联合概率分布 $p(\mathbf{x},\mathcal{C}_k)$ 表示，因此转而寻求最小化相对于这个分布计算的**平均损失**：
 
@@ -325,13 +327,15 @@ $$
 
 <!-- pdf-page: 162 -->
 
+<!-- join-previous-paragraph -->
+
+系统，对正确类别几乎没有疑问的图像直接分类，而对更模棱两可的病例要求进行活检。具体做法是引入阈值 $\theta$，当输入 $\mathbf{x}$ 对应的最大后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 小于或等于 $\theta$ 时予以拒判。图 5.7 展示了两类别、单个连续输入变量 $x$ 的情况。注意，设 $\theta=1$ 会使所有样本都被拒判；如果有 $K$ 个类别，设 $\theta<1/K$ 则不会拒判任何样本。因此，拒判样本的比例受 $\theta$ 的取值控制。
+
 <figure id="fig-5-7">
   <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-7.png" alt="两类后验概率曲线、阈值及拒判区域">
   <figcaption>图 5.7 拒判选项示意图。当输入 $x$ 对应的两个后验概率中较大者不超过某一阈值 $\theta$ 时，拒绝分类。</figcaption>
   <p class="figure-translation">图内文字：reject region＝拒判区域。</p>
 </figure>
-
-系统，对正确类别几乎没有疑问的图像直接分类，而对更模棱两可的病例要求进行活检。具体做法是引入阈值 $\theta$，当输入 $\mathbf{x}$ 对应的最大后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 小于或等于 $\theta$ 时予以拒判。图 5.7 展示了两类别、单个连续输入变量 $x$ 的情况。注意，设 $\theta=1$ 会使所有样本都被拒判；如果有 $K$ 个类别，设 $\theta<1/K$ 则不会拒判任何样本。因此，拒判样本的比例受 $\theta$ 的取值控制。
 
 如果给定损失矩阵，只需把拒判决策本身造成的损失考虑进去，就很容易扩展拒判准则，使期望损失最小。参见习题 5.10。
 
@@ -375,13 +379,15 @@ $$
 
 <!-- pdf-page: 164 -->
 
+<!-- join-previous-paragraph -->
+
+因为该位置的决策边界使误分类概率最小。
+
 <figure id="fig-5-8">
   <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-8.png" alt="两类的类条件密度与对应的后验概率曲线">
   <figcaption>图 5.8 单个输入变量 $x$ 下两个类别的类条件密度示例（左图），以及对应的后验概率（右图）。注意，左图以蓝色显示的类条件密度 $p(x\mid\mathcal{C}_1)$ 的左侧峰值，对后验概率没有影响。假设两个类别的先验概率 $p(\mathcal{C}_1)$ 和 $p(\mathcal{C}_2)$ 相等，右图绿色竖线表示能使误分类率最小的 $x$ 决策边界。</figcaption>
   <p class="figure-translation">图内文字：class densities＝类别密度。其余文字为概率与变量符号。</p>
 </figure>
-
-因为该位置的决策边界使误分类概率最小。
 
 不过，采用方法（c）就无法再得到后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$。即使最终仍用后验概率来决策，计算它们也有许多重要理由，包括：
 
@@ -421,13 +427,15 @@ $$
 
 <!-- pdf-page: 166 -->
 
+<!-- join-previous-paragraph -->
+
+使其总和为 1。式（5.26）的这种特殊条件独立假设，是一个**朴素贝叶斯模型**的例子（见第 11.2.3 节）。注意，在这个模型下，联合边缘分布 $p(\mathbf{x}_{\mathrm I},\mathbf{x}_{\mathrm B})$ 通常不能分解为乘积。后面章节将介绍如何构建无需式（5.26）条件独立假设的数据组合模型。与输出决策的模型相比，输出概率的模型还有一个好处：很容易使它们对可调参数（例如多项式回归中的权重系数）可微，从而能够组合起来，并用第 7 章介绍的基于梯度的优化方法共同训练。
+
 <figure id="fig-5-9">
   <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-9.png" alt="癌症筛查的混淆矩阵">
   <figcaption>图 5.9 癌症筛查问题的混淆矩阵：行对应真实类别，列对应决策准则分配的类别。矩阵元素给出真阴性、假阳性、假阴性和真阳性的数量。</figcaption>
   <p class="figure-translation">图内文字：normal＝未患癌；cancer＝患癌。$N_{\mathrm{TN}}$＝真阴性数量，$N_{\mathrm{FP}}$＝假阳性数量，$N_{\mathrm{FN}}$＝假阴性数量，$N_{\mathrm{TP}}$＝真阳性数量。</p>
 </figure>
-
-使其总和为 1。式（5.26）的这种特殊条件独立假设，是一个**朴素贝叶斯模型**的例子（见第 11.2.3 节）。注意，在这个模型下，联合边缘分布 $p(\mathbf{x}_{\mathrm I},\mathbf{x}_{\mathrm B})$ 通常不能分解为乘积。后面章节将介绍如何构建无需式（5.26）条件独立假设的数据组合模型。与输出决策的模型相比，输出概率的模型还有一个好处：很容易使它们对可调参数（例如多项式回归中的权重系数）可微，从而能够组合起来，并用第 7 章介绍的基于梯度的优化方法共同训练。
 
 ### 5.2.5 分类器准确率
 
@@ -524,12 +532,6 @@ $$
 
 <!-- pdf-page: 169 -->
 
-<figure id="fig-5-11">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-11.png" alt="蓝色、红色与随机分类器的 ROC 曲线">
-  <figcaption>图 5.11 受试者工作特征（ROC）曲线绘制真阳性率与假阳性率的关系，刻画分类问题中第一类错误与第二类错误之间的取舍。上方蓝色曲线表示的分类器优于下方红色曲线表示的分类器。虚线表示一个简单的随机分类器的性能。</figcaption>
-  <p class="figure-translation">图内文字：True positive rate＝真阳性率；False positive rate＝假阳性率。</p>
-</figure>
-
 $$
 F=\frac{2\times\text{精确率}\times\text{召回率}}
 {\text{精确率}+\text{召回率}}
@@ -541,6 +543,12 @@ $$
 {2N_{\mathrm{TP}}+N_{\mathrm{FP}}+N_{\mathrm{FN}}}.
 \tag{5.39}
 $$
+
+<figure id="fig-5-11">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-11.png" alt="蓝色、红色与随机分类器的 ROC 曲线">
+  <figcaption>图 5.11 受试者工作特征（ROC）曲线绘制真阳性率与假阳性率的关系，刻画分类问题中第一类错误与第二类错误之间的取舍。上方蓝色曲线表示的分类器优于下方红色曲线表示的分类器。虚线表示一个简单的随机分类器的性能。</figcaption>
+  <p class="figure-translation">图内文字：True positive rate＝真阳性率；False positive rate＝假阳性率。</p>
+</figure>
 
 **译注：** 原书此处误称“几何平均”；式（5.38）给出的是调和平均。
 
@@ -672,12 +680,14 @@ $$
 
 <!-- pdf-page: 172 -->
 
+<!-- join-previous-paragraph -->
+
+取常数的曲面，它由 $\mathbf{x}$ 的线性函数给出，因此决策边界在输入空间中是线性的。先验概率 $p(\mathcal{C}_k)$ 只通过偏置参数 $w_0$ 起作用，所以改变先验概率会使决策边界平行移动；更一般地，也会使后验概率相同的等值线平行移动。
+
 <figure id="fig-5-13">
   <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-13.png" alt="两类条件密度和对应的后验概率曲面">
   <figcaption>图 5.13 左图显示以红色和蓝色表示的两个类别的类条件密度。右图显示对应的后验概率 $p(\mathcal{C}_1\mid\mathbf{x})$，它是 $\mathbf{x}$ 的线性函数经过逻辑 sigmoid 变换后的结果。右图曲面使用比例为 $p(\mathcal{C}_1\mid\mathbf{x})$ 的红色墨水和比例为 $p(\mathcal{C}_2\mid\mathbf{x})=1-p(\mathcal{C}_1\mid\mathbf{x})$ 的蓝色墨水着色。</figcaption>
 </figure>
-
-取常数的曲面，它由 $\mathbf{x}$ 的线性函数给出，因此决策边界在输入空间中是线性的。先验概率 $p(\mathcal{C}_k)$ 只通过偏置参数 $w_0$ 起作用，所以改变先验概率会使决策边界平行移动；更一般地，也会使后验概率相同的等值线平行移动。
 
 对于一般的 $K$ 类情形，后验概率由式（5.45）给出；根据式（5.46）和（5.47），有
 
@@ -709,12 +719,14 @@ $$
 
 <!-- pdf-page: 173 -->
 
+<!-- join-previous-paragraph -->
+
+使用**极大似然（maximum likelihood）**确定模型参数以及类别先验概率 $p(\mathcal{C}_k)$。这需要包含 $\mathbf{x}$ 观测值及其对应类别标签的数据集。
+
 <figure id="fig-5-14">
   <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-14.png" alt="三个高斯类的类条件密度与彩色后验概率、决策边界">
   <figcaption>图 5.14 左图显示三个类别各自呈高斯分布的类条件密度，以红色、绿色和蓝色表示；其中红色和蓝色类别的协方差矩阵相同。右图显示对应的后验概率：图像中的每个点按三个类别各自的后验概率，以相应比例的红、蓝、绿三色墨水着色，同时画出了决策边界。注意，具有相同协方差矩阵的红、蓝两类之间的边界是线性的，其余类别对之间的边界则是二次的。</figcaption>
 </figure>
-
-使用**极大似然（maximum likelihood）**确定模型参数以及类别先验概率 $p(\mathcal{C}_k)$。这需要包含 $\mathbf{x}$ 观测值及其对应类别标签的数据集。
 
 先考虑两个类别，各自的类条件密度都是高斯分布，并共用一个协方差矩阵。设数据集为 $\{\mathbf{x}_n,t_n\}$，$n=1,\ldots,N$。其中，$t_n=1$ 表示类别 $\mathcal{C}_1$，$t_n=0$ 表示类别 $\mathcal{C}_2$。记类别 $\mathcal{C}_1$ 的先验概率为 $p(\mathcal{C}_1)=\pi$，故 $p(\mathcal{C}_2)=1-\pi$。若数据点 $\mathbf{x}_n$ 属于类别 $\mathcal{C}_1$，则 $t_n=1$，因而
 

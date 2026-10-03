@@ -324,15 +324,15 @@ $$
 
 <!-- pdf-page: 235 -->
 
-<figure id="fig-7-3">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-07/fig-7-3.png" alt="狭长椭圆等误差线上的固定步长梯度下降轨迹">
-  <figcaption>图 7.3 固定步长梯度下降示意图：误差函数沿不同方向具有显著不同的曲率。椭圆形等值线显示，误差曲面 $E$ 形如一条狭长山谷。注意，权重空间中大多数位置的局部负梯度向量 $-\nabla E$ 并不指向误差函数的极小点。因此，梯度下降的连续步骤可能在山谷两侧来回振荡，而沿山谷向极小点前进得很慢。向量 $\mathbf{u}_1$ 和 $\mathbf{u}_2$ 是 Hessian 矩阵的特征向量。</figcaption>
-</figure>
-
 $$
 \epsilon=\sqrt{\frac{2}{M}}.
 \tag{7.23}
 $$
+
+<figure id="fig-7-3">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-07/fig-7-3.png" alt="狭长椭圆等误差线上的固定步长梯度下降轨迹">
+  <figcaption>图 7.3 固定步长梯度下降示意图：误差函数沿不同方向具有显著不同的曲率。椭圆形等值线显示，误差曲面 $E$ 形如一条狭长山谷。注意，权重空间中大多数位置的局部负梯度向量 $-\nabla E$ 并不指向误差函数的极小点。因此，梯度下降的连续步骤可能在山谷两侧来回振荡，而沿山谷向极小点前进得很慢。向量 $\mathbf{u}_1$ 和 $\mathbf{u}_2$ 是 Hessian 矩阵的特征向量。</figcaption>
+</figure>
 
 **译注：** 原书式（7.22）写成 $\operatorname{var}[z_j^{(l)}]$，并把上一层的方差代入；式（7.20）的输出应对应下标 $i$，且 ReLU 输出的均值一般不为零，右端实际上是二阶矩 $\mathbb E[(z_i^{(l)})^2]$。此处按独立零均值权重和上一层输出二阶矩的条件表述，式（7.23）的尺度选择不变。
 

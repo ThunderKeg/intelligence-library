@@ -80,6 +80,8 @@ a { color: var(--accent); }
 .toc-level-3 { padding-left: 28px; }
 .toc-link.active { color: var(--accent); font-weight: 700; border-left-color: var(--accent); }
 .reader-main { min-width: 0; padding: 55px clamp(24px, 7vw, 112px) 130px; }
+.offline-panel { max-width: 740px; margin: -28px auto 28px; display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.offline-panel .text-button { padding: 3px 8px; }
 .reader-article { max-width: 740px; margin: auto; }
 .chapter-navigation { max-width: 740px; margin: 76px auto 0; padding-top: 24px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .chapter-navigation-link { font-size: 14px; line-height: 1.7; text-decoration: none; font-weight: 700; }
@@ -207,6 +209,7 @@ a { color: var(--accent); }
   .reader-sidebar { display: none; }
   .toc-button { display: inline-block; }
   .reader-main { padding: 33px 24px 100px; }
+  .offline-panel { margin-top: -12px; }
   .reading-block p { font-size: 17px; line-height: 1.95; }
   .book-list { font-size: 17px; }
   .book-formula { padding: 13px 14px; }

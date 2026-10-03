@@ -94,7 +94,7 @@ def main() -> None:
     args = parser.parse_args()
     ranges: dict[int | str, tuple[int, int]] = {
         **chapter_ranges(), "A": (618, 624), "B": (625, 627), "C": (628, 631),
-        "frontmatter": (1, 4), "contents": (11, 20),
+        "frontmatter": (1, 4), 0: (5, 10), "contents": (11, 20),
         "bibliography": (632, 647), "index": (648, 656),
     }
     numbers = (

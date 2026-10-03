@@ -31,7 +31,7 @@ jobs:
             mkdir -p "site/$(dirname "$file")"
             cp "$file" "site/$file"
           done
-          for name in frontmatter contents appendix-a appendix-b appendix-c bibliography index; do
+          for name in frontmatter contents appendix-a appendix-b appendix-c bibliography index reference-index offline-images; do
             file="books/bishop-deep-learning-2024/${name}.json"
             mkdir -p "site/$(dirname "$file")"
             cp "$file" "site/$file"

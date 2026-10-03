@@ -510,10 +510,7 @@ $$
 
 <!-- pdf-page: 58 -->
 
-<figure id="fig-2-9">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-02/fig-2-9.png" alt="高斯曲线上的样本点与似然乘积的示意图">
-  <figcaption>图 2.9：高斯分布似然函数的示意。红色曲线是高斯分布，灰色点是一组数据 $\{x_n\}$；式 (2.55) 的似然函数，是蓝色点所表示的相应 $p(x)$ 值的乘积。极大化似然，就是调整高斯分布的均值与方差，使这一乘积最大。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 $\boldsymbol{x}$ 独立同分布，所以在给定 $\mu$ 和 $\sigma^2$ 时，数据集的概率可写为
 
@@ -521,6 +518,11 @@ $$
 p(\boldsymbol{x}\mid\mu,\sigma^2)
 =\prod_{n=1}^{N}\mathcal N(x_n\mid\mu,\sigma^2). \tag{2.55}
 $$
+
+<figure id="fig-2-9">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-02/fig-2-9.png" alt="高斯曲线上的样本点与似然乘积的示意图">
+  <figcaption>图 2.9：高斯分布似然函数的示意。红色曲线是高斯分布，灰色点是一组数据 $\{x_n\}$；式 (2.55) 的似然函数，是蓝色点所表示的相应 $p(x)$ 值的乘积。极大化似然，就是调整高斯分布的均值与方差，使这一乘积最大。</figcaption>
+</figure>
 
 将它视为 $\mu$ 和 $\sigma^2$ 的函数时，就称为高斯分布的似然函数（likelihood function）。图 2.9 给出了图解。
 
@@ -613,15 +615,15 @@ $$
 
 <!-- pdf-page: 61 -->
 
-<figure id="fig-2-11">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-02/fig-2-11.png" alt="多项式回归曲线和给定输入 x 时目标 t 的条件高斯分布示意图">
-  <figcaption>图 2.11：式 (2.64) 定义的给定 $x$ 时 $t$ 的高斯条件分布示意图。其中，均值由多项式函数 $y(x,\mathbf{w})$ 给出，方差由参数 $\sigma^2$ 给出。</figcaption>
-</figure>
-
 $$
 p(\boldsymbol{t}\mid\boldsymbol{x},\mathbf{w},\sigma^2)
 =\prod_{n=1}^{N}\mathcal N\bigl(t_n\mid y(x_n,\mathbf{w}),\sigma^2\bigr). \tag{2.65}
 $$
+
+<figure id="fig-2-11">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-02/fig-2-11.png" alt="多项式回归曲线和给定输入 x 时目标 t 的条件高斯分布示意图">
+  <figcaption>图 2.11：式 (2.64) 定义的给定 $x$ 时 $t$ 的高斯条件分布示意图。其中，均值由多项式函数 $y(x,\mathbf{w})$ 给出，方差由参数 $\sigma^2$ 给出。</figcaption>
+</figure>
 
 和前面处理简单高斯分布时一样，最大化似然函数的对数更方便。将式 (2.49) 给出的高斯分布代入，得到对数似然函数：
 

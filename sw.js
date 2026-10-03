@@ -36,6 +36,8 @@ const CORE_ASSETS = [
   "./books/bishop-deep-learning-2024/appendix-c.json",
   "./books/bishop-deep-learning-2024/bibliography.json",
   "./books/bishop-deep-learning-2024/index.json",
+  "./books/bishop-deep-learning-2024/reference-index.json",
+  "./books/bishop-deep-learning-2024/offline-images.json",
   "./favicon.svg", "./icons/icon-180.png", "./icons/icon-192.png", "./icons/icon-512.png",
   "./books/shannon-mathematical-theory-1948/chapter-00.json",
   "./books/shannon-mathematical-theory-1948/chapter-01.json",
@@ -81,6 +83,105 @@ self.addEventListener("activate", (event) => {
     }
     await self.clients.claim();
   })());
+});
+
+const offlineImageJobs = new Map();
+
+function reportOfflineImages(job, state, done, total, totalBytes = 0) {
+  job.latest = { type: "offline-images-status", state, done, total, totalBytes };
+  for (const port of job.ports) {
+    try { port.postMessage(job.latest); } catch { job.ports.delete(port); }
+  }
+}
+
+async function prepareOfflineImages(path, job) {
+  const bookId = path.match(/^books\/([a-z0-9-]+)\/offline-images\.json$/)?.[1];
+  if (!bookId) throw new Error("Invalid image manifest path");
+  const manifestUrl = new URL(`./${path}`, self.registration.scope);
+  let response;
+  try { response = await fetch(manifestUrl, { cache: "no-cache" }); }
+  catch { response = await caches.match(manifestUrl); }
+  if (!response?.ok) throw new Error("Image manifest unavailable");
+  const manifest = await response.json();
+  if (manifest.bookId !== bookId || !/^[a-f0-9]{20}$/.test(manifest.version) ||
+      !Array.isArray(manifest.assets) || manifest.assets.length > 10000 ||
+      new Set(manifest.assets).size !== manifest.assets.length ||
+      !manifest.assets.every((asset) => typeof asset === "string" &&
+        asset.startsWith(`books/${bookId}/assets/`) && !asset.includes("..") &&
+        isBookImage(new URL(`./${asset}`, self.registration.scope)))) {
+    throw new Error("Invalid image manifest");
+  }
+  const imageCache = await caches.open(IMAGE_CACHE_NAME);
+  const versionUrl = new URL(`./books/${bookId}/offline-images-version`, self.registration.scope);
+  const cachedVersion = (await (await imageCache.match(versionUrl))?.text()) || "";
+  const urls = manifest.assets.map((asset) => new URL(`./${asset}`, self.registration.scope));
+  const total = urls.length;
+  const totalBytes = manifest.totalBytes || 0;
+  let done = 0;
+  let pending = urls;
+
+  if (cachedVersion === manifest.version) {
+    pending = [];
+    for (const url of urls) {
+      if (await imageCache.match(url)) done += 1;
+      else pending.push(url);
+    }
+    if (done === total) {
+      reportOfflineImages(job, "complete", done, total, totalBytes);
+      return;
+    }
+  }
+  reportOfflineImages(job, "progress", done, total, totalBytes);
+
+  let next = 0;
+  let failures = 0;
+  async function worker() {
+    while (next < pending.length) {
+      const url = pending[next++];
+      try {
+        const fetched = await fetch(url, { cache: "no-cache" });
+        if (!fetched.ok) throw new Error(`HTTP ${fetched.status}`);
+        await imageCache.put(url, fetched);
+        done += 1;
+      } catch {
+        failures += 1;
+      }
+      reportOfflineImages(job, "progress", done, total, totalBytes);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(4, pending.length) }, worker));
+  if (failures) {
+    reportOfflineImages(job, "error", done, total, totalBytes);
+    return;
+  }
+  const assetUrls = new Set(urls.map((url) => url.href));
+  for (const request of await imageCache.keys()) {
+    if (request.url.includes(`/books/${bookId}/assets/`) && !assetUrls.has(request.url)) {
+      await imageCache.delete(request);
+    }
+  }
+  await imageCache.put(versionUrl, new Response(manifest.version));
+  reportOfflineImages(job, "complete", total, total, totalBytes);
+}
+
+self.addEventListener("message", (event) => {
+  if (event.data?.type !== "prepare-offline-images" || typeof event.data.path !== "string") return;
+  const path = event.data.path;
+  const port = event.ports[0];
+  if (!port) return;
+  let job = offlineImageJobs.get(path);
+  if (job) {
+    job.ports.add(port);
+    if (job.latest) port.postMessage(job.latest);
+    event.waitUntil(job.promise);
+    return;
+  }
+  job = { ports: new Set([port]), latest: null, promise: null };
+  offlineImageJobs.set(path, job);
+  job.promise = prepareOfflineImages(path, job).catch(() => {
+    reportOfflineImages(job, "error", job.latest?.done || 0, job.latest?.total || 0);
+  }).finally(() => offlineImageJobs.delete(path));
+  event.waitUntil(job.promise);
 });
 
 self.addEventListener("fetch", (event) => {

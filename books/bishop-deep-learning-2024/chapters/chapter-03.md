@@ -217,12 +217,14 @@ $$
 
 <!-- pdf-page: 90 -->
 
+<!-- join-previous-paragraph -->
+
+单个实变量，使熵最大的分布是高斯分布。这一性质对多元高斯分布也成立（习题 3.8）。
+
 <figure id="fig-3-2">
   <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-2.png" alt="N 分别为 1、2、10 时，均匀分布随机数的平均值的三幅直方图，形状逐渐趋近钟形">
   <figcaption>图 3.2：不同 $N$ 值下，$N$ 个均匀分布随机数的平均值的直方图。可以看到，随着 $N$ 增大，该分布趋向高斯分布。</figcaption>
 </figure>
-
-单个实变量，使熵最大的分布是高斯分布。这一性质对多元高斯分布也成立（习题 3.8）。
 
 高斯分布还出现在多个随机变量求和的情形。中心极限定理告诉我们，在满足某些温和条件时，一组随机变量的和——它本身当然也是随机变量——的分布会随着求和项数增多而越来越接近高斯分布（Walker，1969）。我们可以用 $N$ 个变量 $x_1,\ldots,x_N$ 来说明：每个变量都在区间 $[0,1]$ 上均匀分布，然后考察平均值 $(x_1+\cdots+x_N)/N$ 的分布。如图 3.2 所示，$N$ 很大时，这个分布趋向高斯分布。实际上，随着 $N$ 增大，向高斯分布的收敛可能非常快。由此可知，二项分布 (3.9) 定义在 $m$ 上，而 $m$ 是随机二值变量 $x$ 的 $N$ 个观测值之和；当 $N\to\infty$ 时，二项分布将趋向高斯分布（$N=10$ 的情形见图 3.1）。
 
@@ -296,12 +298,14 @@ $$
 
 <!-- pdf-page: 92 -->
 
+<!-- join-previous-paragraph -->
+
+这种情形下，分布是奇异的，并被限制在一个维数更低的子空间内。如果所有特征值均非负，就称协方差矩阵为半正定矩阵（positive semidefinite）。
+
 <figure id="fig-3-3">
   <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-3.png" alt="二维高斯分布的红色等密度椭圆、均值、特征向量和旋转坐标轴">
   <figcaption>图 3.3：红色曲线是二维空间 $\mathbf{x}=(x_1,x_2)$ 中，高斯分布的概率密度保持不变的椭圆；其上的密度是 $\mathbf{x}=\boldsymbol{\mu}$ 处密度的 $\exp(-1/2)$ 倍。椭圆的轴由协方差矩阵的特征向量 $\mathbf{u}_i$ 确定，对应的特征值为 $\lambda_i$。</figcaption>
 </figure>
-
-这种情形下，分布是奇异的，并被限制在一个维数更低的子空间内。如果所有特征值均非负，就称协方差矩阵为半正定矩阵（positive semidefinite）。
 
 现在考察在 $y_i$ 所定义的新坐标系中，高斯分布的形式。从 $\mathbf{x}$ 坐标系变换到 $\mathbf{y}$ 坐标系时，雅可比矩阵 $\mathbf{J}$ 的元素为
 
@@ -420,12 +424,14 @@ $$
 
 <!-- pdf-page: 95 -->
 
+<!-- join-previous-paragraph -->
+
+这些方法虽然限制了分布的自由度，并大幅加快协方差矩阵的求逆，却也极大地限制了概率密度的形式，使模型捕捉数据中有意义的相关性的能力受到限制。
+
 <figure id="fig-3-4">
   <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-4.png" alt="二维高斯分布在一般、对角和各向同性协方差矩阵下的三种等密度轮廓">
   <figcaption>图 3.4：二维高斯分布的等概率密度轮廓，其中协方差矩阵 (a) 为一般形式，(b) 为对角矩阵，此时椭圆轮廓与坐标轴对齐，(c) 与单位矩阵成正比，此时轮廓为同心圆。</figcaption>
 </figure>
-
-这些方法虽然限制了分布的自由度，并大幅加快协方差矩阵的求逆，却也极大地限制了概率密度的形式，使模型捕捉数据中有意义的相关性的能力受到限制。
 
 高斯分布的另一局限是它本质上是单峰的，即只有一个最大值，因此无法很好地近似多峰分布。这样，高斯分布一方面可能因为参数过多而过于灵活，另一方面又可能因为能充分表示的分布类型有限而过于受限。后文会看到，引入潜变量（latent variable），又称隐藏变量或未观测变量，可以同时解决这两个问题。具体而言，引入离散潜变量将产生高斯混合分布，从而得到丰富的多峰分布族（见第 3.2.9 节）。类似地，引入连续潜变量可得到这样的模型：自由参数的数量可以独立于数据空间的维数 $D$ 而受到控制，同时仍能捕捉数据集中的主要相关性（见第 16 章）。
 
@@ -919,10 +925,7 @@ $$
 
 <!-- pdf-page: 105 -->
 
-<figure id="fig-3-6">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-6.png" alt="老忠实间歇泉数据的散点图，与一个高斯分布及两个高斯分布组合的等密度轮廓比较">
-  <figcaption>图 3.6：“老忠实间歇泉”数据图，红色曲线为等概率密度轮廓。(a) 用极大似然法拟合数据的单个高斯分布。它未能捕捉数据的两个聚集区域，甚至把大量概率质量放在两个区域之间、数据相对稀疏的中间地带。(b) 同样由极大似然法拟合的两个高斯分布的线性组合，它更好地表示了数据。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 最后一个数据点 $\mathbf{x}_N$ 的贡献单独分离出来，可得
 
@@ -937,6 +940,11 @@ $$
 \end{aligned} \tag{3.110}
 $$
 
+<figure id="fig-3-6">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-6.png" alt="老忠实间歇泉数据的散点图，与一个高斯分布及两个高斯分布组合的等密度轮廓比较">
+  <figcaption>图 3.6：“老忠实间歇泉”数据图，红色曲线为等概率密度轮廓。(a) 用极大似然法拟合数据的单个高斯分布。它未能捕捉数据的两个聚集区域，甚至把大量概率质量放在两个区域之间、数据相对稀疏的中间地带。(b) 同样由极大似然法拟合的两个高斯分布的线性组合，它更好地表示了数据。</figcaption>
+</figure>
+
 这一结果可以这样理解：观察前 $N-1$ 个数据点后，我们用 $\boldsymbol{\mu}_{\mathrm{ML}}^{(N-1)}$ 估计 $\boldsymbol{\mu}$。现在又观察到数据点 $\mathbf{x}_N$，便沿着“误差信号”方向 $\mathbf{x}_N-\boldsymbol{\mu}_{\mathrm{ML}}^{(N-1)}$，将旧估计移动一小步，步长比例为 $1/N$，从而得到更新后的估计 $\boldsymbol{\mu}_{\mathrm{ML}}^{(N)}$。注意，随着 $N$ 增大，后续各数据点的贡献逐渐减小。
 
 ### 3.2.9 高斯混合分布
@@ -947,12 +955,14 @@ $$
 
 <!-- pdf-page: 106 -->
 
+<!-- join-previous-paragraph -->
+
+图 3.6(b) 确实表明如此。像这样的叠加，是由高斯分布等更基本分布的线性组合形成的，可以构建成称为混合分布的概率模型（见第 15 章）。本节用高斯分布说明混合模型的框架。更一般地，混合模型也可以是其他分布的线性组合，例如二值变量的伯努利分布混合。图 3.7 表明，高斯分布的线性组合可以形成十分复杂的密度。只要使用足够多的高斯分布，并调整它们的均值、协方差以及线性组合中的系数，就可以把几乎任何连续分布近似到任意精度。
+
 <figure id="fig-3-7">
   <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-7.png" alt="三条蓝色高斯密度曲线及其红色混合密度曲线">
   <figcaption>图 3.7：一维高斯混合分布示例：三条蓝色曲线分别表示乘以各自系数的高斯分布，红色曲线表示它们之和。</figcaption>
 </figure>
-
-图 3.6(b) 确实表明如此。像这样的叠加，是由高斯分布等更基本分布的线性组合形成的，可以构建成称为混合分布的概率模型（见第 15 章）。本节用高斯分布说明混合模型的框架。更一般地，混合模型也可以是其他分布的线性组合，例如二值变量的伯努利分布混合。图 3.7 表明，高斯分布的线性组合可以形成十分复杂的密度。只要使用足够多的高斯分布，并调整它们的均值、协方差以及线性组合中的系数，就可以把几乎任何连续分布近似到任意精度。
 
 因此，考虑以下由 $K$ 个高斯密度叠加而成的形式：
 
@@ -1035,10 +1045,7 @@ $$
 
 <!-- pdf-page: 109 -->
 
-<figure id="fig-3-9">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-9.png" alt="单位圆上的四个二维观测向量及其平均向量；平均向量的长度和角度分别标为 r 上加横线与 θ 上加横线">
-  <figcaption>图 3.9：将周期变量的取值 $\theta_n$ 表示为位于单位圆上的二维向量 $\mathbf x_n$。图中还画出了这些向量的平均值 $\bar{\mathbf x}$。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 $\mathbf x_n=(\cos\theta_n,\sin\theta_n)$，样本均值的笛卡儿坐标可写为 $\bar{\mathbf x}=(\bar r\cos\bar\theta,\bar r\sin\bar\theta)$。将其代入式 (3.117)，并分别比较 $x_1$ 和 $x_2$ 分量，得到
 
@@ -1047,6 +1054,11 @@ $$
 \qquad
 \bar x_2=\bar r\sin\bar\theta=\frac1N\sum_{n=1}^{N}\sin\theta_n.\tag{3.118}
 $$
+
+<figure id="fig-3-9">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-9.png" alt="单位圆上的四个二维观测向量及其平均向量；平均向量的长度和角度分别标为 r 上加横线与 θ 上加横线">
+  <figcaption>图 3.9：将周期变量的取值 $\theta_n$ 表示为位于单位圆上的二维向量 $\mathbf x_n$。图中还画出了这些向量的平均值 $\bar{\mathbf x}$。</figcaption>
+</figure>
 
 两式相除，利用恒等式 $\tan\bar\theta=\sin\bar\theta/\cos\bar\theta$，即可解得
 
@@ -1080,16 +1092,18 @@ $$
 
 <!-- pdf-page: 110 -->
 
-<figure id="fig-3-10">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-10.png" alt="二维高斯的蓝色等密度圆与红色单位圆相交，坐标轴为 x1 和 x2">
-  <figcaption>图 3.10：考虑式 (3.123) 所示的二维高斯分布，其等密度轮廓以蓝色表示，再将其限制在红色的单位圆上，便可导出冯·米塞斯分布。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 其均值为 $\boldsymbol\mu=(\mu_1,\mu_2)$，协方差矩阵为 $\boldsymbol\Sigma=\sigma^2\mathbf I$，其中 $\mathbf I$ 为 $2\times2$ 单位矩阵。于是
 
 $$
 p(x_1,x_2)=\frac1{2\pi\sigma^2}\exp\!\left\{-\frac{(x_1-\mu_1)^2+(x_2-\mu_2)^2}{2\sigma^2}\right\}.\tag{3.123}
 $$
+
+<figure id="fig-3-10">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-10.png" alt="二维高斯的蓝色等密度圆与红色单位圆相交，坐标轴为 x1 和 x2">
+  <figcaption>图 3.10：考虑式 (3.123) 所示的二维高斯分布，其等密度轮廓以蓝色表示，再将其限制在红色的单位圆上，便可导出冯·米塞斯分布。</figcaption>
+</figure>
 
 $p(\mathbf x)$ 的等值轮廓是圆，如图 3.10 所示。
 
@@ -1457,16 +1471,18 @@ $$
 
 <!-- pdf-page: 118 -->
 
-<figure id="fig-3-13">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-13.png" alt="同一组 50 个数据点的三幅直方图密度估计，区间宽度依次为 0.04、0.08 和 0.25，绿色曲线为生成数据的真实分布">
-  <figcaption>图 3.13：直方图密度估计示例。50 个数据点来自绿色曲线所示的分布。图中展示了根据式 (3.175) 得到的直方图密度估计，三个直方图分别采用不同的公共区间宽度 $\Delta$。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 第 $i$ 个区间的观测值个数 $n_i$。为了将计数转为归一化的概率密度，只需除以观测总数 $N$ 和该区间宽度 $\Delta_i$，便得到每个区间的密度值：
 
 $$
 p_i=\frac{n_i}{N\Delta_i}.\tag{3.175}
 $$
+
+<figure id="fig-3-13">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-13.png" alt="同一组 50 个数据点的三幅直方图密度估计，区间宽度依次为 0.04、0.08 和 0.25，绿色曲线为生成数据的真实分布">
+  <figcaption>图 3.13：直方图密度估计示例。50 个数据点来自绿色曲线所示的分布。图中展示了根据式 (3.175) 得到的直方图密度估计，三个直方图分别采用不同的公共区间宽度 $\Delta$。</figcaption>
+</figure>
 
 容易看出，它满足 $\int p(x)\,\mathrm dx=1$。这得到一个在各区间内部取常数值的密度模型 $p(x)$。通常各区间取相同宽度 $\Delta_i=\Delta$。
 
@@ -1547,16 +1563,18 @@ $$
 
 <!-- pdf-page: 121 -->
 
-<figure id="fig-3-14">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-14.png" alt="同一数据集的三幅高斯核密度估计，带宽 h 分别为 0.005、0.07 和 0.2；绿色为真实分布，蓝色为估计密度">
-  <figcaption>图 3.14：将核密度模型 (3.184) 应用于图 3.13 用来展示直方图方法的同一数据集。$h$ 是平滑参数；$h$ 太小（上图）时，密度模型噪声很大；$h$ 太大（下图）时，生成数据的底层分布（绿色曲线）的双峰性质被抹平；在中间某个 $h$ 值（中图）下，模型效果最好。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 密度模型。一种常见选择是高斯核，它给出如下核密度模型：
 
 $$
 p(\mathbf x)=\frac1N\sum_{n=1}^{N}\frac1{(2\pi h^2)^{D/2}}\exp\!\left\{-\frac{\|\mathbf x-\mathbf x_n\|^2}{2h^2}\right\}.\tag{3.184}
 $$
+
+<figure id="fig-3-14">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-14.png" alt="同一数据集的三幅高斯核密度估计，带宽 h 分别为 0.005、0.07 和 0.2；绿色为真实分布，蓝色为估计密度">
+  <figcaption>图 3.14：将核密度模型 (3.184) 应用于图 3.13 用来展示直方图方法的同一数据集。$h$ 是平滑参数；$h$ 太小（上图）时，密度模型噪声很大；$h$ 太大（下图）时，生成数据的底层分布（绿色曲线）的双峰性质被抹平；在中间某个 $h$ 值（中图）下，模型效果最好。</figcaption>
+</figure>
 
 其中 $h$ 表示高斯分量的标准差。也就是说，在每个数据点上放置一个高斯分布，将它们对整个数据集的贡献相加，最后除以 $N$，便得到正确归一化的密度。图 3.14 将模型 (3.184) 用于此前展示直方图技术的数据集。符合预期，参数 $h$ 起平滑作用：$h$ 小时对噪声敏感，$h$ 大时会过度平滑。优化 $h$ 同样是模型复杂度问题，类似于为直方图密度估计选择区间宽度，或为曲线拟合选择多项式次数。
 
@@ -1589,16 +1607,18 @@ $$
 
 <!-- pdf-page: 123 -->
 
-<figure id="fig-3-16">
-  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-16.png" alt="K 最近邻分类示意：左图黑色菱形按三个最近的训练点归类；右图绿色边界由不同类别训练点之间连线的垂直平分超平面组成">
-  <figcaption>图 3.16：(a) 在 $K$ 最近邻分类器中，新点以黑色菱形表示，按距离最近的 $K$ 个训练数据点的多数类别归类，此处 $K=3$。(b) 在最近邻（$K=1$）分类方法中，得到的决策边界由不同类别的点对之间的垂直平分超平面组成。</figcaption>
-</figure>
+<!-- join-previous-paragraph -->
 
 各类别对应的密度估计：
 
 $$
 p(\mathbf x\mid\mathcal C_k)=\frac{K_k}{N_kV}.\tag{3.187}
 $$
+
+<figure id="fig-3-16">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-03/fig-3-16.png" alt="K 最近邻分类示意：左图黑色菱形按三个最近的训练点归类；右图绿色边界由不同类别训练点之间连线的垂直平分超平面组成">
+  <figcaption>图 3.16：(a) 在 $K$ 最近邻分类器中，新点以黑色菱形表示，按距离最近的 $K$ 个训练数据点的多数类别归类，此处 $K=3$。(b) 在最近邻（$K=1$）分类方法中，得到的决策边界由不同类别的点对之间的垂直平分超平面组成。</figcaption>
+</figure>
 
 类似地，无条件密度为
 

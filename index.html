@@ -60,6 +60,10 @@
           </aside>
           <div class="reader-main">
             <p id="reader-status" class="reader-status" role="status" hidden></p>
+            <div id="offline-panel" class="offline-panel" role="status" aria-live="polite" hidden>
+              <span id="offline-status"></span>
+              <button id="offline-retry" class="text-button" type="button" hidden>重试</button>
+            </div>
             <article id="reader-article" class="reader-article"></article>
             <nav id="chapter-navigation" class="chapter-navigation" aria-label="切换章节" hidden></nav>
           </div>

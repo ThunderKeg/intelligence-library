@@ -495,7 +495,7 @@ $$
 
 ### 14.2.3 Metropolis–Hastings 算法
 
-前面介绍了基本 Metropolis 算法，但尚未证明它确实能从目标分布采样。在给出证明前，先讨论一种推广，即 **Metropolis–Hastings 算法**（Hastings，1970）；当提议分布的两个参数不再对称时，它仍然适用。具体地，在算法第 $\tau$ 步，当前状态为 $\mathbf z^{(\tau)}$，从分布 $q_k(\mathbf z\mid\mathbf z^{(\tau)})$ 抽取候选 $\mathbf z^\star$，再以概率 $A_k(\mathbf z^\star,\mathbf z^{(\tau)})$ 接受它，其中
+前面介绍了基本 Metropolis 算法，但尚未证明它确实能从目标分布采样。在给出证明前，先讨论一种推广，即 **Metropolis–Hastings 算法**（Hastings，1970）；当提议分布不满足 $q(\mathbf z_A\mid\mathbf z_B)=q(\mathbf z_B\mid\mathbf z_A)$ 的对称条件时，它仍然适用。具体地，在算法第 $\tau$ 步，当前状态为 $\mathbf z^{(\tau)}$，从分布 $q_k(\mathbf z\mid\mathbf z^{(\tau)})$ 抽取候选 $\mathbf z^\star$，再以概率 $A_k(\mathbf z^\star,\mathbf z^{(\tau)})$ 接受它，其中
 
 $$
 A_k(\mathbf z^\star,\mathbf z^{(\tau)})=\min\left(1,\frac{\tilde p(\mathbf z^\star)q_k(\mathbf z^{(\tau)}\mid\mathbf z^\star)}{\tilde p(\mathbf z^{(\tau)})q_k(\mathbf z^\star\mid\mathbf z^{(\tau)})}\right).\tag{14.40}

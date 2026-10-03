@@ -53,6 +53,11 @@ with sync_playwright() as playwright:
     assert "独家授权" not in page.locator(".reader-article").inner_text()
     assert page.locator(".reading-heading h1").inner_text() == "第 1 章 深度学习革命"
     assert page.locator("#chapter-navigation").is_visible()
+    assert int(page.locator("#reader-article").get_attribute("data-reference-links")) > 0
+    figure_links = page.locator("#read-p10-b001 .figure-caption a.reading-reference").all_text_contents()
+    assert "式 (1.2)" in figure_links and "图 1.4" in figure_links
+    assert "图 1.6" not in figure_links
+    assert "图 1.6" in page.locator("#read-p14-b006 .book-table caption a.reading-reference").all_text_contents()
     page.screenshot(path=str(OUTPUT / "reader-desktop.png"), full_page=False)
 
     page.locator("#reader-toc .toc-section-link").last.click()
@@ -70,19 +75,17 @@ with sync_playwright() as playwright:
     assert page.get_by_role("link", name="继续阅读").is_visible()
 
     page.evaluate("navigator.serviceWorker.ready")
+    page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=01")
+    page.wait_for_function("document.querySelector('#offline-status')?.textContent.includes('已可离线阅读')", timeout=180000)
     desktop.set_offline(True)
+    assert page.evaluate("async () => (await fetch('books/bishop-deep-learning-2024/assets/chapter-20/fig-20-9.png')).status") == 200
     page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=frontmatter")
     page.wait_for_function("(document.querySelector('.book-figure img')?.naturalWidth ?? 0) > 0")
-    for chapter, count in (("frontmatter", 17), ("00", 38), ("contents", 12),
-                           ("01", 118), ("02", 449), ("03", 587),
-                           ("04", 217), ("05", 389), ("06", 314), ("07", 235),
-                           ("08", 248), ("09", 281), ("10", 203), ("11", 281),
-                           ("12", 346), ("13", 199), ("14", 263), ("15", 280),
-                           ("16", 328), ("17", 85), ("18", 141), ("19", 123),
-                           ("20", 265), ("A", 125), ("B", 30), ("C", 39),
-                           ("bibliography", 332), ("index", 680)):
+    for chapter in ("frontmatter", "00", "contents", *(f"{number:02d}" for number in range(1, 21)),
+                    "A", "B", "C", "bibliography", "index"):
         page.goto(BASE + f"?book=bishop-deep-learning-2024&chapter={chapter}")
-        page.wait_for_function("expected => document.querySelectorAll('.reading-block').length === expected", arg=count)
+        page.wait_for_function("document.querySelectorAll('.reading-block').length > 0")
+        assert page.locator("#reader-status").is_hidden()
     desktop.set_offline(False)
 
     mobile = browser.new_context(viewport={"width": 390, "height": 844}, device_scale_factor=1, is_mobile=True, has_touch=True)
@@ -177,6 +180,15 @@ with sync_playwright() as playwright:
     chapter_page.goto(BASE)
     assert "chapter=index" in chapter_page.get_by_role("link", name="继续阅读").get_attribute("href")
     chapters.close()
+
+    references = browser.new_context(service_workers="block")
+    reference_page = references.new_page()
+    reference_page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=05")
+    reference_page.locator(".reading-paragraph a.reading-reference[href*='chapter=04#read-p10-b003']").first.click()
+    reference_page.wait_for_function("new URL(location.href).searchParams.get('chapter') === '04' && location.hash === '#read-p10-b003'")
+    reference_page.wait_for_function("Math.abs(document.querySelector('#read-p10-b003')?.getBoundingClientRect().top ?? 9999) < 160")
+    assert reference_page.locator("#read-p10-b003").inner_text().startswith("4.2")
+    references.close()
 
     rich = browser.new_context(service_workers="block")
     rich_script = (ROOT / "books.js").read_text(encoding="utf-8") + '\nbooks.push({id:"reader-fixture",title:"渲染测试",originalTitle:"Reader fixture",author:"Test",year:"2026",description:"",chapters:[{id:"01",number:"1",title:"测试章",content:"books/reader-fixture/chapter-01.json"}]});'

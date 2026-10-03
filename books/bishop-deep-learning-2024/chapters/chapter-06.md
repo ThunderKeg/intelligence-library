@@ -45,15 +45,15 @@ $$
 
 的形式为
 
+$$
+y(\mathbf{x},\mathbf{w})=w_0+\sum_{i=1}^{D}w_ix_i+\sum_{i=1}^{D}\sum_{j=1}^{D}w_{ij}x_ix_j+\sum_{i=1}^{D}\sum_{j=1}^{D}\sum_{k=1}^{D}w_{ijk}x_ix_jx_k. \tag{6.3}
+$$
+
 <figure id="fig-6-1">
   <img src="books/bishop-deep-learning-2024/assets/chapter-06/fig-6-1.png" alt="鸢尾花数据中红绿蓝三类样本和叉号测试点按萼片长度与宽度绘制的散点图">
   <figcaption>图 6.1：鸢尾花数据的散点图。红、绿、蓝色点表示三个鸢尾花物种；坐标轴分别表示萼片长度和宽度的测量值。我们的目标是对叉号所示的新测试点分类。</figcaption>
   <p class="figure-translation">图内文字：sepal width → 萼片宽度；sepal length → 萼片长度。</p>
 </figure>
-
-$$
-y(\mathbf{x},\mathbf{w})=w_0+\sum_{i=1}^{D}w_ix_i+\sum_{i=1}^{D}\sum_{j=1}^{D}w_{ij}x_ix_j+\sum_{i=1}^{D}\sum_{j=1}^{D}\sum_{k=1}^{D}w_{ijk}x_ix_jx_k. \tag{6.3}
-$$
 
 随着 $D$ 增大，独立系数的数量按 $O(D^3)$ 增长；对于 $M$ 阶多项式，系数数量按 $O(D^M)$ 增长（Bishop, 2006）。可见，在更高维的空间中，多项式会迅速变得笨重，实际用途很小。
 
@@ -278,15 +278,15 @@ $$
 
 生物神经元性质的研究。与它密切相关的函数是 tanh，定义为
 
+$$
+\tanh(a)=\frac{e^a-e^{-a}}{e^a+e^{-a}}, \tag{6.14}
+$$
+
 <figure id="fig-6-12">
   <img src="books/bishop-deep-learning-2024/assets/chapter-06/fig-6-12.png" alt="六种非线性激活函数的曲线：双曲正切、硬双曲正切、softplus、ReLU、带泄漏的 ReLU 和绝对值">
   <figcaption>图 6.12：各种非线性激活函数。</figcaption>
   <p class="figure-translation">图内文字：tanh → 双曲正切；hard tanh → 硬双曲正切；softplus → 软加函数；ReLU → 修正线性单元；leaky ReLU → 带泄漏的修正线性单元；absolute → 绝对值。</p>
 </figure>
-
-$$
-\tanh(a)=\frac{e^a-e^{-a}}{e^a+e^{-a}}, \tag{6.14}
-$$
 
 见图 6.12(a)。该函数与 logistic sigmoid 只差输入值和输出值的线性变换，所以任何以 logistic sigmoid 为隐藏单元激活函数的网络，都有一个以 tanh 为激活函数的等价网络（习题 6.4）。然而，对网络训练而言二者未必等价，因为基于梯度的优化需要初始化网络权重和偏置；若改变激活函数，就必须相应调整初始化方法。tanh 函数的“硬”版本（Collobert, 2004）是
 

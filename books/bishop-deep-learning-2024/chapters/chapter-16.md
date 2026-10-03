@@ -475,11 +475,11 @@ $$
 
 ### 16.2.3 极大似然
 
-接下来考虑如何用极大似然法确定模型参数。给定观测数据集 $\mathcal X=\{\mathbf x_n\}$，概率 PCA 模型可表示为图 16.8 中的有向图。由式 (16.35)，相应的对数似然函数是
+接下来考虑如何用极大似然法确定模型参数。给定观测数据集 $\mathbf X=\{\mathbf x_n\}$，概率 PCA 模型可表示为图 16.8 中的有向图。由式 (16.35)，相应的对数似然函数是
 
 $$
 \begin{aligned}
-\ln p(\mathcal X\mid\boldsymbol\mu,\mathbf W,\sigma^2)
+\ln p(\mathbf X\mid\boldsymbol\mu,\mathbf W,\sigma^2)
 &=\sum_{n=1}^{N}\ln p(\mathbf x_n\mid\mathbf W,\boldsymbol\mu,\sigma^2)\\
 &=-\frac{ND}{2}\ln(2\pi)-\frac{N}{2}\ln|\mathbf C|
 -\frac{1}{2}\sum_{n=1}^{N}(\mathbf x_n-\boldsymbol\mu)^{\mathsf T}
@@ -492,7 +492,7 @@ $$
 令对数似然对 $\boldsymbol\mu$ 的导数为零，得到预期的结果 $\boldsymbol\mu=\bar{\mathbf x}$，其中 $\bar{\mathbf x}$ 是式 (16.1) 定义的样本均值（习题 16.9）。由于对数似然是 $\boldsymbol\mu$ 的二次函数，这个解是唯一的最大值；计算二阶导数也可验证。将它代回，对数似然可写为
 
 $$
-\ln p(\mathcal X\mid\mathbf W,\boldsymbol\mu,\sigma^2)
+\ln p(\mathbf X\mid\mathbf W,\boldsymbol\mu,\sigma^2)
 =-\frac{N}{2}\left\{D\ln(2\pi)+\ln|\mathbf C|
 +\operatorname{Tr}(\mathbf C^{-1}\mathbf S)\right\}, \tag{16.45}
 $$
