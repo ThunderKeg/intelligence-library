@@ -36,6 +36,11 @@ jobs:
             mkdir -p "site/$(dirname "$file")"
             cp "$file" "site/$file"
           done
+          for name in reference-index offline-images; do
+            file="books/sutton-barto-reinforcement-learning-2e/${name}.json"
+            mkdir -p "site/$(dirname "$file")"
+            cp "$file" "site/$file"
+          done
           cp icons/*.png site/icons/
           sed -i "s/__BUILD_VERSION__/${GITHUB_SHA}/g" site/sw.js
       - uses: actions/upload-pages-artifact@v3

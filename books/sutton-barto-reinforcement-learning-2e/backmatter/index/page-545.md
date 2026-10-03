@@ -1,0 +1,94 @@
+- prioritized sweeping, **170**, 168–171
+- projected Bellman error, 285
+  - vector, 267, *269*
+- proximal TD methods, 286
+- pseudo termination, 282, *308*
+- psychology, 4, 13, 19, 20, *341–376*
+- Q(λ), Watkins’s, 312–314
+- Q-function, *see* action-value function
+- Q-learning, 21, **131**, *131–135*
+  - double, **136**
+- Q-planning, **161**
+- Q(σ), **156**, 154–156
+- queuing example, 252
+- R-learning, 256
+- racetrack exercise, 111
+- radial basis functions (RBFs), 221–222
+- random walk, 95
+  - 5-state, *125*, 126, 127
+  - 19-state, *144*, 291
+    - TD(λ) results on, *294, 295*, 299
+  - 1000-state, *203–209*, 217, 218
+    - Fourier and polynomial bases, 214
+- real-time dynamic programming, 177–180
+- recycling robot example, 52
+- REINFORCE, **328**, 326–331
+  - with baseline, **330**
+- reinforcement learning, 1–22
+- reinforcement signal, *380*
+- representation learning, 473
+- residual-gradient algorithm, *272–274*, 277
+  - naive, 270, 271
+- return, 54–58
+  - n-step, 143
+    - for Q(σ), 155
+    - for action values, 146
+    - for Expected Sarsa, 148
+    - for Tree Backup, 153
+    - with control variates, 150, 151
+    - with function approximation, 209
+  - differential, 250, 255, 334
+  - flat partial, 113
+  - with state-dependent termination, 308
+  - λ-return, 288–291
+    - truncated, 296
+- reward prediction error hypothesis, *381–383*, 387–395
+- reward signal, 1, 6, *48*, *53*, 361, 380, 383, 397
+  - and reinforcement, 373–375, 380–381
+  - design of, *469–472*, 477
+  - intrinsic, 474
+  - sparse, 469–470
+- rod maneuvering example, 171
+- rollout algorithms, 183–185
+- root mean square (RMS) error, 125
+- safety, 434, *478*
+- sample and expected updates, *121*, 170–174
+- sample or simulation model, 115
+- sample-average method, 27
+- Samuel’s checkers player, 20, 241, *426–429*
+- Sarsa, **130**, *129–131*, **244**
+  - vs Q-learning, 132
+  - differential, one-step, **251**
+  - Expected, *133–134*, 140
+    - n-step, 148
+    - n-step off-policy, 150
+    - double, 136
+  - n-step, **147**, *145–148*, **247**
+    - differential, **255**
+    - off-policy, **149**
+- Sarsa(λ), **305**, 303–307
+  - true online, **307**
+- Schultz, Wolfram, 387–395, *410*
+- search control, 163
+- secondary reinforcement, *20*, 346, 354, 369
+- selective bootstrap adaptation, 239
+- semi-gradient methods, 202, *258–259*
+- SGD, *see* stochastic gradient descent
+- Shannon, Claude, 16, *20*, 71, 426
+- shaping, *360*, 470
+- Skinner, B. F., *359–360*, 375, 470, 479
+- soap bubble example, 95
+- soft and ε-soft policies, 100–103, 110
+- soft-max, *322–323*, 329, 336, 400, 445, 455
+  - for bandits, *37*, 45
+- spike-timing-dependent plasticity (STDP), 401
+- state, *7*, 48, 49
+  - kth-order history approach, 468
+  - and observations, 464–468
+    - Markov property, 465–468
+  - belief, 467
+  - latent, 467
+  - observable operator models (OOMs), 467
+  - partially observable MDPs, 14, 467
+  - predictive state representations, 467
+  - state-update function, 465

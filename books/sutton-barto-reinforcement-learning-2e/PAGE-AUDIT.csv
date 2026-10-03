@@ -1,0 +1,549 @@
+﻿pdf_physical_page,book_page,section,source,review,reader_blocks,figures,figure_annotations,tables,formulas,code_blocks,algorithm_boxes,exercises,footnotes,lists
+1,front matter,front matter,frontmatter/page-01.md,REVIEW-FRONTMATTER.md,4,1,4,0,0,0,0,0,0,0
+2,front matter,front matter,frontmatter/page-02.md,REVIEW-FRONTMATTER.md,3,0,0,0,0,0,0,0,0,0
+3,front matter,front matter,frontmatter/page-03.md,REVIEW-FRONTMATTER.md,5,0,0,0,0,0,0,0,0,0
+4,front matter,front matter,frontmatter/page-04.md,REVIEW-FRONTMATTER.md,11,0,0,0,0,0,0,0,0,0
+5,front matter,front matter,frontmatter/page-05.md,REVIEW-FRONTMATTER.md,1,0,0,0,0,0,0,0,0,0
+6,front matter,front matter,frontmatter/page-06.md,REVIEW-FRONTMATTER.md,0,0,0,0,0,0,0,0,0,0
+7,front matter,front matter,frontmatter/page-07.md,REVIEW-FRONTMATTER.md,7,0,0,0,0,0,0,0,0,3
+8,front matter,front matter,frontmatter/page-08.md,REVIEW-FRONTMATTER.md,9,0,0,0,0,0,0,0,0,4
+9,front matter,front matter,frontmatter/page-09.md,REVIEW-FRONTMATTER.md,8,0,0,0,0,0,0,0,0,3
+10,front matter,front matter,frontmatter/page-10.md,REVIEW-FRONTMATTER.md,8,0,0,0,0,0,0,0,0,4
+11,front matter,front matter,frontmatter/page-11.md,REVIEW-FRONTMATTER.md,8,0,0,0,0,0,0,0,0,3
+12,front matter,front matter,frontmatter/page-12.md,REVIEW-FRONTMATTER.md,5,0,0,0,0,0,0,0,0,2
+13,front matter,front matter,frontmatter/page-13.md,REVIEW-FRONTMATTER.md,3,0,0,0,0,0,0,0,0,0
+14,front matter,front matter,frontmatter/page-14.md,REVIEW-FRONTMATTER.md,3,0,0,0,0,0,0,0,0,0
+15,front matter,front matter,frontmatter/page-15.md,REVIEW-FRONTMATTER.md,4,0,0,0,0,0,0,0,0,0
+16,front matter,front matter,frontmatter/page-16.md,REVIEW-FRONTMATTER.md,3,0,0,0,0,0,0,0,0,0
+17,front matter,front matter,frontmatter/page-17.md,REVIEW-FRONTMATTER.md,4,0,0,0,0,0,0,0,0,0
+18,front matter,front matter,frontmatter/page-18.md,REVIEW-FRONTMATTER.md,5,0,0,0,0,0,0,0,0,0
+19,front matter,front matter,frontmatter/page-19.md,REVIEW-FRONTMATTER.md,6,0,0,3,0,0,0,0,0,0
+20,front matter,front matter,frontmatter/page-20.md,REVIEW-FRONTMATTER.md,8,0,0,6,0,0,0,0,0,0
+21,front matter,front matter,frontmatter/page-21.md,REVIEW-FRONTMATTER.md,7,0,0,6,0,0,0,0,0,0
+22,front matter,front matter,frontmatter/page-22.md,REVIEW-FRONTMATTER.md,3,0,0,2,0,0,0,0,0,0
+23,1,chapter 1,translation/page-01.md,REVIEW-CH1.md,6,0,0,0,0,0,0,0,0,0
+24,2,chapter 1,translation/page-02.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+25,3,chapter 1,translation/page-03.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+26,4,chapter 1,translation/page-04.md,REVIEW-CH1.md,5,0,0,0,0,0,0,0,0,1
+27,5,chapter 1,translation/page-05.md,REVIEW-CH1.md,3,0,0,0,0,0,0,0,0,0
+28,6,chapter 1,translation/page-06.md,REVIEW-CH1.md,6,0,0,0,0,0,0,0,0,0
+29,7,chapter 1,translation/page-07.md,REVIEW-CH1.md,5,0,0,0,0,0,0,0,0,0
+30,8,chapter 1,translation/page-08.md,REVIEW-CH1.md,5,1,0,0,0,0,0,0,0,0
+31,9,chapter 1,translation/page-09.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+32,10,chapter 1,translation/page-10.md,REVIEW-CH1.md,4,1,4,0,1,0,0,0,0,0
+33,11,chapter 1,translation/page-11.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+34,12,chapter 1,translation/page-12.md,REVIEW-CH1.md,7,0,0,0,0,0,0,3,0,0
+35,13,chapter 1,translation/page-13.md,REVIEW-CH1.md,8,0,0,0,0,0,0,2,0,0
+36,14,chapter 1,translation/page-14.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+37,15,chapter 1,translation/page-15.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+38,16,chapter 1,translation/page-16.md,REVIEW-CH1.md,5,0,0,0,0,0,0,0,0,0
+39,17,chapter 1,translation/page-17.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+40,18,chapter 1,translation/page-18.md,REVIEW-CH1.md,2,0,0,0,0,0,0,0,0,0
+41,19,chapter 1,translation/page-19.md,REVIEW-CH1.md,3,0,0,0,0,0,0,0,0,0
+42,20,chapter 1,translation/page-20.md,REVIEW-CH1.md,5,0,0,0,0,0,0,0,0,0
+43,21,chapter 1,translation/page-21.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+44,22,chapter 1,translation/page-22.md,REVIEW-CH1.md,4,0,0,0,0,0,0,0,0,0
+45,23,part I,parts/part-01.md,REVIEW-CH2.md,5,0,0,0,0,0,0,0,0,0
+46,24,part I,parts/part-01.md,REVIEW-CH2.md,0,0,0,0,0,0,0,0,0,0
+47,25,chapter 2,translation/chapter-02/page-25.md,REVIEW-CH2.md,7,0,0,0,0,0,0,0,0,0
+48,26,chapter 2,translation/chapter-02/page-26.md,REVIEW-CH2.md,6,0,0,0,1,0,0,0,0,0
+49,27,chapter 2,translation/chapter-02/page-27.md,REVIEW-CH2.md,8,0,0,0,2,0,0,0,0,0
+50,28,chapter 2,translation/chapter-02/page-28.md,REVIEW-CH2.md,4,1,4,0,0,0,0,1,0,0
+51,29,chapter 2,translation/chapter-02/page-29.md,REVIEW-CH2.md,2,1,4,0,0,0,0,0,0,0
+52,30,chapter 2,translation/chapter-02/page-30.md,REVIEW-CH2.md,5,0,0,0,0,0,0,2,0,0
+53,31,chapter 2,translation/chapter-02/page-31.md,REVIEW-CH2.md,15,0,0,0,8,0,0,0,0,0
+54,32,chapter 2,translation/chapter-02/page-32.md,REVIEW-CH2.md,13,0,0,0,7,1,0,0,0,0
+55,33,chapter 2,translation/chapter-02/page-33.md,REVIEW-CH2.md,7,0,0,0,1,0,0,2,0,0
+56,34,chapter 2,translation/chapter-02/page-34.md,REVIEW-CH2.md,5,1,4,0,0,0,0,0,0,0
+57,35,chapter 2,translation/chapter-02/page-35.md,REVIEW-CH2.md,10,0,0,0,3,0,0,2,0,0
+58,36,chapter 2,translation/chapter-02/page-36.md,REVIEW-CH2.md,4,1,4,0,0,0,0,1,0,0
+59,37,chapter 2,translation/chapter-02/page-37.md,REVIEW-CH2.md,10,0,0,0,2,0,0,1,1,0
+60,38,chapter 2,translation/chapter-02/page-38.md,REVIEW-CH2.md,7,1,4,0,2,0,0,0,0,0
+61,39,chapter 2,translation/chapter-02/page-39.md,REVIEW-CH2.md,16,0,0,0,9,0,0,0,0,0
+62,40,chapter 2,translation/chapter-02/page-40.md,REVIEW-CH2.md,12,0,0,0,8,0,0,0,0,0
+63,41,chapter 2,translation/chapter-02/page-41.md,REVIEW-CH2.md,5,0,0,0,0,0,0,1,0,0
+64,42,chapter 2,translation/chapter-02/page-42.md,REVIEW-CH2.md,4,1,5,0,0,0,0,0,0,0
+65,43,chapter 2,translation/chapter-02/page-43.md,REVIEW-CH2.md,5,0,0,0,0,0,0,0,0,0
+66,44,chapter 2,translation/chapter-02/page-44.md,REVIEW-CH2.md,10,0,0,0,0,0,0,1,0,0
+67,45,chapter 2,translation/chapter-02/page-45.md,REVIEW-CH2.md,3,0,0,0,0,0,0,0,0,0
+68,46,chapter 2,translation/chapter-02/page-46.md,REVIEW-CH2.md,0,0,0,0,0,0,0,0,0,0
+69,47,chapter 3,translation/chapter-03/page-47.md,REVIEW-CH3.md,6,0,0,0,0,0,0,0,0,0
+70,48,chapter 3,translation/chapter-03/page-48.md,REVIEW-CH3.md,10,1,7,0,2,0,0,0,4,0
+71,49,chapter 3,translation/chapter-03/page-49.md,REVIEW-CH3.md,11,0,0,0,4,0,0,0,0,0
+72,50,chapter 3,translation/chapter-03/page-50.md,REVIEW-CH3.md,5,0,0,0,0,0,0,0,0,0
+73,51,chapter 3,translation/chapter-03/page-51.md,REVIEW-CH3.md,5,0,0,0,0,0,0,3,0,0
+74,52,chapter 3,translation/chapter-03/page-52.md,REVIEW-CH3.md,5,1,9,1,0,0,0,0,0,0
+75,53,chapter 3,translation/chapter-03/page-53.md,REVIEW-CH3.md,7,0,0,0,0,0,0,1,0,0
+76,54,chapter 3,translation/chapter-03/page-54.md,REVIEW-CH3.md,8,0,0,0,1,0,0,0,3,0
+77,55,chapter 3,translation/chapter-03/page-55.md,REVIEW-CH3.md,10,0,0,0,3,0,0,1,0,0
+78,56,chapter 3,translation/chapter-03/page-56.md,REVIEW-CH3.md,8,1,0,0,0,0,0,5,0,0
+79,57,chapter 3,translation/chapter-03/page-57.md,REVIEW-CH3.md,8,1,2,0,1,0,0,0,0,0
+80,58,chapter 3,translation/chapter-03/page-58.md,REVIEW-CH3.md,13,0,0,0,2,0,0,3,0,0
+81,59,chapter 3,translation/chapter-03/page-59.md,REVIEW-CH3.md,5,1,6,0,1,0,0,0,0,0
+82,60,chapter 3,translation/chapter-03/page-60.md,REVIEW-CH3.md,6,1,3,1,0,0,0,1,0,0
+83,61,chapter 3,translation/chapter-03/page-61.md,REVIEW-CH3.md,6,2,14,0,0,0,0,3,0,0
+84,62,chapter 3,translation/chapter-03/page-62.md,REVIEW-CH3.md,9,2,6,0,1,0,0,2,0,0
+85,63,chapter 3,translation/chapter-03/page-63.md,REVIEW-CH3.md,8,0,0,0,4,0,0,0,0,0
+86,64,chapter 3,translation/chapter-03/page-64.md,REVIEW-CH3.md,6,1,5,0,1,0,0,0,0,0
+87,65,chapter 3,translation/chapter-03/page-65.md,REVIEW-CH3.md,6,1,4,1,1,0,0,0,0,0
+88,66,chapter 3,translation/chapter-03/page-66.md,REVIEW-CH3.md,9,1,2,0,1,0,0,3,0,0
+89,67,chapter 3,translation/chapter-03/page-67.md,REVIEW-CH3.md,11,0,0,0,0,0,0,7,0,0
+90,68,chapter 3,translation/chapter-03/page-68.md,REVIEW-CH3.md,5,0,0,0,0,0,0,0,0,0
+91,69,chapter 3,translation/chapter-03/page-69.md,REVIEW-CH3.md,8,0,0,0,0,0,0,0,0,0
+92,70,chapter 3,translation/chapter-03/page-70.md,REVIEW-CH3.md,6,0,0,0,0,0,0,0,0,0
+93,71,chapter 3,translation/chapter-03/page-71.md,REVIEW-CH3.md,4,0,0,0,0,0,0,0,0,0
+94,72,chapter 3,translation/chapter-03/page-72.md,REVIEW-CH3.md,0,0,0,0,0,0,0,0,0,0
+95,73,chapter 4,translation/chapter-04/page-73.md,REVIEW-CH4.md,8,0,0,0,2,0,0,0,0,0
+96,74,chapter 4,translation/chapter-04/page-74.md,REVIEW-CH4.md,10,0,0,0,3,0,0,0,0,0
+97,75,chapter 4,translation/chapter-04/page-75.md,REVIEW-CH4.md,5,0,0,0,0,0,0,0,0,1
+98,76,chapter 4,translation/chapter-04/page-76.md,REVIEW-CH4.md,8,1,3,0,0,0,0,3,0,0
+99,77,chapter 4,translation/chapter-04/page-77.md,REVIEW-CH4.md,1,1,5,0,0,0,0,0,0,0
+100,78,chapter 4,translation/chapter-04/page-78.md,REVIEW-CH4.md,12,0,0,0,4,0,0,0,0,0
+101,79,chapter 4,translation/chapter-04/page-79.md,REVIEW-CH4.md,8,0,0,0,2,0,0,0,0,0
+102,80,chapter 4,translation/chapter-04/page-80.md,REVIEW-CH4.md,8,0,0,0,1,0,0,0,0,1
+103,81,chapter 4,translation/chapter-04/page-81.md,REVIEW-CH4.md,2,1,5,0,0,0,0,0,0,0
+104,82,chapter 4,translation/chapter-04/page-82.md,REVIEW-CH4.md,8,0,0,0,0,0,0,4,0,0
+105,83,chapter 4,translation/chapter-04/page-83.md,REVIEW-CH4.md,7,0,0,0,1,0,0,0,0,1
+106,84,chapter 4,translation/chapter-04/page-84.md,REVIEW-CH4.md,5,1,5,0,0,0,0,3,0,0
+107,85,chapter 4,translation/chapter-04/page-85.md,REVIEW-CH4.md,7,0,0,0,0,0,0,0,0,0
+108,86,chapter 4,translation/chapter-04/page-86.md,REVIEW-CH4.md,8,1,3,0,0,0,0,0,0,0
+109,87,chapter 4,translation/chapter-04/page-87.md,REVIEW-CH4.md,5,1,4,0,0,0,0,0,0,0
+110,88,chapter 4,translation/chapter-04/page-88.md,REVIEW-CH4.md,6,0,0,0,0,0,0,0,0,0
+111,89,chapter 4,translation/chapter-04/page-89.md,REVIEW-CH4.md,6,0,0,0,0,0,0,0,0,0
+112,90,chapter 4,translation/chapter-04/page-90.md,REVIEW-CH4.md,3,0,0,0,0,0,0,0,0,0
+113,91,chapter 5,translation/chapter-05/page-91.md,REVIEW-CH5.md,5,0,0,0,0,0,0,0,0,0
+114,92,chapter 5,translation/chapter-05/page-92.md,REVIEW-CH5.md,6,0,0,0,0,1,0,0,0,0
+115,93,chapter 5,translation/chapter-05/page-93.md,REVIEW-CH5.md,5,0,0,0,0,0,0,0,0,0
+116,94,chapter 5,translation/chapter-05/page-94.md,REVIEW-CH5.md,6,2,5,0,0,0,0,2,0,0
+117,95,chapter 5,translation/chapter-05/page-95.md,REVIEW-CH5.md,5,1,1,0,0,0,0,0,0,0
+118,96,chapter 5,translation/chapter-05/page-96.md,REVIEW-CH5.md,6,0,0,0,0,0,0,0,0,0
+119,97,chapter 5,translation/chapter-05/page-97.md,REVIEW-CH5.md,11,1,2,0,3,0,0,1,0,0
+120,98,chapter 5,translation/chapter-05/page-98.md,REVIEW-CH5.md,5,0,0,0,0,0,0,0,0,0
+121,99,chapter 5,translation/chapter-05/page-99.md,REVIEW-CH5.md,5,0,0,0,0,1,0,1,0,0
+122,100,chapter 5,translation/chapter-05/page-100.md,REVIEW-CH5.md,4,1,5,0,0,0,0,0,0,0
+123,101,chapter 5,translation/chapter-05/page-101.md,REVIEW-CH5.md,7,0,0,0,2,1,0,0,0,0
+124,102,chapter 5,translation/chapter-05/page-102.md,REVIEW-CH5.md,7,0,0,0,2,0,0,0,0,0
+125,103,chapter 5,translation/chapter-05/page-103.md,REVIEW-CH5.md,5,0,0,0,0,0,0,0,0,0
+126,104,chapter 5,translation/chapter-05/page-104.md,REVIEW-CH5.md,9,0,0,0,4,0,0,0,0,0
+127,105,chapter 5,translation/chapter-05/page-105.md,REVIEW-CH5.md,7,0,0,0,1,0,0,1,0,0
+128,106,chapter 5,translation/chapter-05/page-106.md,REVIEW-CH5.md,3,1,3,0,0,0,0,0,0,0
+129,107,chapter 5,translation/chapter-05/page-107.md,REVIEW-CH5.md,8,1,3,0,3,0,0,0,0,0
+130,108,chapter 5,translation/chapter-05/page-108.md,REVIEW-CH5.md,3,0,0,0,0,0,0,3,0,0
+131,109,chapter 5,translation/chapter-05/page-109.md,REVIEW-CH5.md,12,0,0,0,3,0,0,2,0,0
+132,110,chapter 5,translation/chapter-05/page-110.md,REVIEW-CH5.md,6,0,0,0,0,1,0,0,0,0
+133,111,chapter 5,translation/chapter-05/page-111.md,REVIEW-CH5.md,5,0,0,0,0,1,0,2,0,0
+134,112,chapter 5,translation/chapter-05/page-112.md,REVIEW-CH5.md,4,1,1,0,0,0,0,0,0,0
+135,113,chapter 5,translation/chapter-05/page-113.md,REVIEW-CH5.md,9,0,0,0,4,0,0,0,0,0
+136,114,chapter 5,translation/chapter-05/page-114.md,REVIEW-CH5.md,16,0,0,0,7,0,0,0,0,0
+137,115,chapter 5,translation/chapter-05/page-115.md,REVIEW-CH5.md,10,0,0,0,1,0,0,2,0,0
+138,116,chapter 5,translation/chapter-05/page-116.md,REVIEW-CH5.md,7,0,0,0,0,0,0,0,0,0
+139,117,chapter 5,translation/chapter-05/page-117.md,REVIEW-CH5.md,7,0,0,0,0,0,0,1,0,0
+140,118,chapter 5,translation/chapter-05/page-118.md,REVIEW-CH5.md,0,0,0,0,0,0,0,0,0,0
+141,119,chapter 6,translation/chapter-06/page-119.md,REVIEW-CH6.md,7,0,0,0,1,0,0,0,0,0
+142,120,chapter 6,translation/chapter-06/page-120.md,REVIEW-CH6.md,11,0,0,0,4,1,0,0,0,0
+143,121,chapter 6,translation/chapter-06/page-121.md,REVIEW-CH6.md,14,1,0,0,7,0,0,1,0,0
+144,122,chapter 6,translation/chapter-06/page-122.md,REVIEW-CH6.md,6,0,0,1,0,0,0,0,1,0
+145,123,chapter 6,translation/chapter-06/page-123.md,REVIEW-CH6.md,4,1,5,0,0,0,0,1,0,0
+146,124,chapter 6,translation/chapter-06/page-124.md,REVIEW-CH6.md,6,0,0,0,0,0,0,0,0,0
+147,125,chapter 6,translation/chapter-06/page-125.md,REVIEW-CH6.md,6,2,5,0,0,0,0,0,0,0
+148,126,chapter 6,translation/chapter-06/page-126.md,REVIEW-CH6.md,8,0,0,0,0,0,0,4,0,0
+149,127,chapter 6,translation/chapter-06/page-127.md,REVIEW-CH6.md,7,2,8,1,0,0,0,0,0,0
+150,128,chapter 6,translation/chapter-06/page-128.md,REVIEW-CH6.md,5,0,0,0,0,0,0,1,0,0
+151,129,chapter 6,translation/chapter-06/page-129.md,REVIEW-CH6.md,11,2,5,0,1,0,0,1,0,0
+152,130,chapter 6,translation/chapter-06/page-130.md,REVIEW-CH6.md,5,1,4,0,0,1,0,0,0,0
+153,131,chapter 6,translation/chapter-06/page-131.md,REVIEW-CH6.md,8,0,0,0,1,1,0,2,0,0
+154,132,chapter 6,translation/chapter-06/page-132.md,REVIEW-CH6.md,6,1,4,0,0,0,0,2,0,0
+155,133,chapter 6,translation/chapter-06/page-133.md,REVIEW-CH6.md,6,1,3,0,1,0,0,0,0,0
+156,134,chapter 6,translation/chapter-06/page-134.md,REVIEW-CH6.md,6,1,2,0,0,0,0,0,0,0
+157,135,chapter 6,translation/chapter-06/page-135.md,REVIEW-CH6.md,3,1,5,0,0,0,0,0,0,0
+158,136,chapter 6,translation/chapter-06/page-136.md,REVIEW-CH6.md,7,0,0,0,1,1,0,1,0,0
+159,137,chapter 6,translation/chapter-06/page-137.md,REVIEW-CH6.md,6,1,2,0,0,0,0,1,0,0
+160,138,chapter 6,translation/chapter-06/page-138.md,REVIEW-CH6.md,5,0,0,0,0,0,0,0,0,0
+161,139,chapter 6,translation/chapter-06/page-139.md,REVIEW-CH6.md,7,0,0,0,0,0,0,0,0,0
+162,140,chapter 6,translation/chapter-06/page-140.md,REVIEW-CH6.md,4,0,0,0,0,0,0,0,0,0
+163,141,chapter 7,translation/chapter-07/page-141.md,REVIEW-CH7.md,6,0,0,0,0,0,0,0,0,0
+164,142,chapter 7,translation/chapter-07/page-142.md,REVIEW-CH7.md,5,1,6,0,0,0,0,0,0,0
+165,143,chapter 7,translation/chapter-07/page-143.md,REVIEW-CH7.md,13,0,0,0,5,0,0,2,0,0
+166,144,chapter 7,translation/chapter-07/page-144.md,REVIEW-CH7.md,6,0,0,0,1,1,0,0,0,0
+167,145,chapter 7,translation/chapter-07/page-145.md,REVIEW-CH7.md,5,1,3,0,0,0,0,1,0,0
+168,146,chapter 7,translation/chapter-07/page-146.md,REVIEW-CH7.md,6,1,7,0,2,0,0,0,0,0
+169,147,chapter 7,translation/chapter-07/page-147.md,REVIEW-CH7.md,3,1,4,0,0,1,0,0,0,0
+170,148,chapter 7,translation/chapter-07/page-148.md,REVIEW-CH7.md,12,0,0,0,5,0,0,1,0,0
+171,149,chapter 7,translation/chapter-07/page-149.md,REVIEW-CH7.md,5,0,0,0,1,1,0,0,0,0
+172,150,chapter 7,translation/chapter-07/page-150.md,REVIEW-CH7.md,9,0,0,0,2,0,0,1,0,0
+173,151,chapter 7,translation/chapter-07/page-151.md,REVIEW-CH7.md,10,0,0,0,1,0,0,5,0,0
+174,152,chapter 7,translation/chapter-07/page-152.md,REVIEW-CH7.md,5,1,6,0,0,0,0,0,0,0
+175,153,chapter 7,translation/chapter-07/page-153.md,REVIEW-CH7.md,13,0,0,0,5,0,0,1,0,0
+176,154,chapter 7,translation/chapter-07/page-154.md,REVIEW-CH7.md,5,0,0,0,0,1,0,0,0,0
+177,155,chapter 7,translation/chapter-07/page-155.md,REVIEW-CH7.md,6,1,6,0,2,0,0,0,0,0
+178,156,chapter 7,translation/chapter-07/page-156.md,REVIEW-CH7.md,3,0,0,0,0,1,0,0,0,0
+179,157,chapter 7,translation/chapter-07/page-157.md,REVIEW-CH7.md,5,1,5,0,0,0,0,0,0,0
+180,158,chapter 7,translation/chapter-07/page-158.md,REVIEW-CH7.md,6,0,0,0,0,0,0,0,0,0
+181,159,chapter 8,translation/chapter-08/page-159.md,REVIEW-CH8.md,5,0,0,0,0,0,0,0,0,0
+182,160,chapter 8,translation/chapter-08/page-160.md,REVIEW-CH8.md,8,2,8,0,0,0,0,0,0,0
+183,161,chapter 8,translation/chapter-08/page-161.md,REVIEW-CH8.md,9,0,0,0,1,0,0,0,0,1
+184,162,chapter 8,translation/chapter-08/page-162.md,REVIEW-CH8.md,5,1,8,0,0,0,0,0,0,0
+185,163,chapter 8,translation/chapter-08/page-163.md,REVIEW-CH8.md,4,1,9,0,0,0,0,0,0,0
+186,164,chapter 8,translation/chapter-08/page-164.md,REVIEW-CH8.md,16,0,0,0,0,0,1,0,0,0
+187,165,chapter 8,translation/chapter-08/page-165.md,REVIEW-CH8.md,3,2,10,0,0,0,0,0,0,0
+188,166,chapter 8,translation/chapter-08/page-166.md,REVIEW-CH8.md,7,0,0,0,0,0,0,1,0,0
+189,167,chapter 8,translation/chapter-08/page-167.md,REVIEW-CH8.md,4,2,7,0,0,0,0,0,0,0
+190,168,chapter 8,translation/chapter-08/page-168.md,REVIEW-CH8.md,9,0,0,0,0,0,0,4,0,0
+191,169,chapter 8,translation/chapter-08/page-169.md,REVIEW-CH8.md,3,0,0,0,0,0,0,0,0,0
+192,170,chapter 8,translation/chapter-08/page-170.md,REVIEW-CH8.md,21,1,3,0,0,0,1,0,0,0
+193,171,chapter 8,translation/chapter-08/page-171.md,REVIEW-CH8.md,4,1,3,0,0,0,0,0,0,0
+194,172,chapter 8,translation/chapter-08/page-172.md,REVIEW-CH8.md,5,1,4,0,0,0,0,0,0,0
+195,173,chapter 8,translation/chapter-08/page-173.md,REVIEW-CH8.md,9,0,0,0,2,0,0,0,0,0
+196,174,chapter 8,translation/chapter-08/page-174.md,REVIEW-CH8.md,6,1,5,0,0,0,0,1,0,0
+197,175,chapter 8,translation/chapter-08/page-175.md,REVIEW-CH8.md,5,0,0,0,0,0,0,0,0,0
+198,176,chapter 8,translation/chapter-08/page-176.md,REVIEW-CH8.md,4,1,5,0,0,0,0,0,0,0
+199,177,chapter 8,translation/chapter-08/page-177.md,REVIEW-CH8.md,8,1,3,0,0,0,0,2,0,0
+200,178,chapter 8,translation/chapter-08/page-178.md,REVIEW-CH8.md,6,0,0,0,0,0,0,0,0,0
+201,179,chapter 8,translation/chapter-08/page-179.md,REVIEW-CH8.md,6,0,0,1,0,0,0,0,0,0
+202,180,chapter 8,translation/chapter-08/page-180.md,REVIEW-CH8.md,6,0,0,0,0,0,0,0,0,0
+203,181,chapter 8,translation/chapter-08/page-181.md,REVIEW-CH8.md,6,0,0,0,0,0,0,0,0,0
+204,182,chapter 8,translation/chapter-08/page-182.md,REVIEW-CH8.md,4,0,0,0,0,0,0,0,0,0
+205,183,chapter 8,translation/chapter-08/page-183.md,REVIEW-CH8.md,5,1,2,0,0,0,0,0,0,0
+206,184,chapter 8,translation/chapter-08/page-184.md,REVIEW-CH8.md,5,0,0,0,0,0,0,0,0,0
+207,185,chapter 8,translation/chapter-08/page-185.md,REVIEW-CH8.md,5,0,0,0,0,0,0,0,0,0
+208,186,chapter 8,translation/chapter-08/page-186.md,REVIEW-CH8.md,3,1,7,0,0,0,0,0,0,0
+209,187,chapter 8,translation/chapter-08/page-187.md,REVIEW-CH8.md,5,0,0,0,0,0,0,0,0,1
+210,188,chapter 8,translation/chapter-08/page-188.md,REVIEW-CH8.md,7,0,0,0,0,0,0,0,0,0
+211,189,chapter 8,translation/chapter-08/page-189.md,REVIEW-CH8.md,6,0,0,0,0,0,0,0,0,0
+212,190,chapter 8,translation/chapter-08/page-190.md,REVIEW-CH8.md,4,1,6,0,0,0,0,0,0,0
+213,191,chapter 8,translation/chapter-08/page-191.md,REVIEW-CH8.md,5,0,0,0,0,0,0,0,0,1
+214,192,chapter 8,translation/chapter-08/page-192.md,REVIEW-CH8.md,7,0,0,0,0,0,0,0,0,0
+215,193,chapter 8,translation/chapter-08/page-193.md,REVIEW-CH8.md,4,0,0,0,0,0,0,0,0,0
+216,194,chapter 8,translation/chapter-08/page-194.md,REVIEW-CH8.md,0,0,0,0,0,0,0,0,0,0
+217,195,part II,parts/part-02.md,REVIEW-PART2.md,5,0,0,0,0,0,0,0,0,0
+218,196,part II,parts/part-02.md,REVIEW-PART2.md,0,0,0,0,0,0,0,0,0,0
+219,197,chapter 9,translation/chapter-09/page-197.md,REVIEW-CH9.md,4,0,0,0,0,0,0,0,0,0
+220,198,chapter 9,translation/chapter-09/page-198.md,REVIEW-CH9.md,4,0,0,0,0,0,0,0,0,0
+221,199,chapter 9,translation/chapter-09/page-199.md,REVIEW-CH9.md,10,0,0,0,3,0,0,0,0,0
+222,200,chapter 9,translation/chapter-09/page-200.md,REVIEW-CH9.md,8,0,0,0,0,0,0,0,1,0
+223,201,chapter 9,translation/chapter-09/page-201.md,REVIEW-CH9.md,8,0,0,0,3,0,0,0,0,0
+224,202,chapter 9,translation/chapter-09/page-202.md,REVIEW-CH9.md,7,0,0,0,1,1,0,0,0,0
+225,203,chapter 9,translation/chapter-09/page-203.md,REVIEW-CH9.md,5,0,0,0,0,1,0,0,0,0
+226,204,chapter 9,translation/chapter-09/page-204.md,REVIEW-CH9.md,4,1,5,0,0,0,0,0,0,0
+227,205,chapter 9,translation/chapter-09/page-205.md,REVIEW-CH9.md,13,0,0,0,5,0,0,0,0,0
+228,206,chapter 9,translation/chapter-09/page-206.md,REVIEW-CH9.md,12,0,0,0,4,0,0,0,0,0
+229,207,chapter 9,translation/chapter-09/page-207.md,REVIEW-CH9.md,7,0,0,0,2,0,0,0,0,0
+230,208,chapter 9,translation/chapter-09/page-208.md,REVIEW-CH9.md,5,1,4,0,0,0,0,0,0,0
+231,209,chapter 9,translation/chapter-09/page-209.md,REVIEW-CH9.md,9,0,0,0,2,1,0,1,0,0
+232,210,chapter 9,translation/chapter-09/page-210.md,REVIEW-CH9.md,6,0,0,0,0,0,0,0,0,0
+233,211,chapter 9,translation/chapter-09/page-211.md,REVIEW-CH9.md,9,0,0,0,1,0,0,2,0,0
+234,212,chapter 9,translation/chapter-09/page-212.md,REVIEW-CH9.md,9,1,2,0,2,0,0,0,0,0
+235,213,chapter 9,translation/chapter-09/page-213.md,REVIEW-CH9.md,3,1,2,0,0,0,0,0,0,0
+236,214,chapter 9,translation/chapter-09/page-214.md,REVIEW-CH9.md,5,1,4,0,0,0,0,0,1,0
+237,215,chapter 9,translation/chapter-09/page-215.md,REVIEW-CH9.md,5,2,5,0,0,0,0,0,0,0
+238,216,chapter 9,translation/chapter-09/page-216.md,REVIEW-CH9.md,3,1,5,0,0,0,0,0,0,0
+239,217,chapter 9,translation/chapter-09/page-217.md,REVIEW-CH9.md,6,1,4,0,0,0,0,0,0,0
+240,218,chapter 9,translation/chapter-09/page-218.md,REVIEW-CH9.md,3,1,4,0,0,0,0,0,0,0
+241,219,chapter 9,translation/chapter-09/page-219.md,REVIEW-CH9.md,3,1,2,0,0,0,0,0,0,0
+242,220,chapter 9,translation/chapter-09/page-220.md,REVIEW-CH9.md,3,1,3,0,0,0,0,0,0,0
+243,221,chapter 9,translation/chapter-09/page-221.md,REVIEW-CH9.md,8,2,4,0,1,0,0,1,0,0
+244,222,chapter 9,translation/chapter-09/page-222.md,REVIEW-CH9.md,6,0,0,0,0,0,0,0,0,0
+245,223,chapter 9,translation/chapter-09/page-223.md,REVIEW-CH9.md,8,0,0,0,1,0,0,2,0,0
+246,224,chapter 9,translation/chapter-09/page-224.md,REVIEW-CH9.md,5,1,0,0,0,0,0,0,0,0
+247,225,chapter 9,translation/chapter-09/page-225.md,REVIEW-CH9.md,4,0,0,0,0,0,0,0,0,0
+248,226,chapter 9,translation/chapter-09/page-226.md,REVIEW-CH9.md,4,0,0,0,0,0,0,0,0,0
+249,227,chapter 9,translation/chapter-09/page-227.md,REVIEW-CH9.md,4,1,12,0,0,0,0,0,0,0
+250,228,chapter 9,translation/chapter-09/page-228.md,REVIEW-CH9.md,11,0,0,0,3,0,0,0,0,0
+251,229,chapter 9,translation/chapter-09/page-229.md,REVIEW-CH9.md,8,0,0,0,2,0,0,0,0,0
+252,230,chapter 9,translation/chapter-09/page-230.md,REVIEW-CH9.md,22,0,0,0,7,0,0,0,0,0
+253,231,chapter 9,translation/chapter-09/page-231.md,REVIEW-CH9.md,4,0,0,0,0,0,0,0,0,0
+254,232,chapter 9,translation/chapter-09/page-232.md,REVIEW-CH9.md,7,0,0,0,1,0,0,0,0,0
+255,233,chapter 9,translation/chapter-09/page-233.md,REVIEW-CH9.md,6,0,0,0,1,0,0,0,0,0
+256,234,chapter 9,translation/chapter-09/page-234.md,REVIEW-CH9.md,8,0,0,0,2,0,0,0,0,0
+257,235,chapter 9,translation/chapter-09/page-235.md,REVIEW-CH9.md,7,1,3,0,0,0,0,0,0,0
+258,236,chapter 9,translation/chapter-09/page-236.md,REVIEW-CH9.md,6,0,0,0,0,0,0,0,0,0
+259,237,chapter 9,translation/chapter-09/page-237.md,REVIEW-CH9.md,8,0,0,0,0,0,0,2,0,0
+260,238,chapter 9,translation/chapter-09/page-238.md,REVIEW-CH9.md,7,0,0,0,0,0,0,0,0,0
+261,239,chapter 9,translation/chapter-09/page-239.md,REVIEW-CH9.md,1,0,0,0,0,0,0,0,0,0
+262,240,chapter 9,translation/chapter-09/page-240.md,REVIEW-CH9.md,4,0,0,0,0,0,0,0,0,0
+263,241,chapter 9,translation/chapter-09/page-241.md,REVIEW-CH9.md,4,0,0,0,0,0,0,0,0,0
+264,242,chapter 9,translation/chapter-09/page-242.md,REVIEW-CH9.md,1,0,0,0,0,0,0,0,0,0
+265,243,chapter 10,translation/chapter-10/page-243.md,REVIEW-CH10.md,6,0,0,0,0,0,0,0,0,0
+266,244,chapter 10,translation/chapter-10/page-244.md,REVIEW-CH10.md,20,0,0,0,4,0,0,0,0,0
+267,245,chapter 10,translation/chapter-10/page-245.md,REVIEW-CH10.md,6,1,7,0,2,0,0,0,0,0
+268,246,chapter 10,translation/chapter-10/page-246.md,REVIEW-CH10.md,8,1,6,0,1,0,0,0,2,0
+269,247,chapter 10,translation/chapter-10/page-247.md,REVIEW-CH10.md,29,0,0,0,4,0,0,0,0,0
+270,248,chapter 10,translation/chapter-10/page-248.md,REVIEW-CH10.md,5,2,11,0,0,0,0,3,0,0
+271,249,chapter 10,translation/chapter-10/page-249.md,REVIEW-CH10.md,10,0,0,0,4,0,0,0,0,0
+272,250,chapter 10,translation/chapter-10/page-250.md,REVIEW-CH10.md,19,0,0,0,8,0,0,2,0,0
+273,251,chapter 10,translation/chapter-10/page-251.md,REVIEW-CH10.md,19,0,0,0,6,0,0,3,0,0
+274,252,chapter 10,translation/chapter-10/page-252.md,REVIEW-CH10.md,3,1,3,0,0,0,0,0,0,0
+275,253,chapter 10,translation/chapter-10/page-253.md,REVIEW-CH10.md,6,0,0,0,0,0,0,0,0,0
+276,254,chapter 10,translation/chapter-10/page-254.md,REVIEW-CH10.md,18,0,0,0,9,0,0,0,0,0
+277,255,chapter 10,translation/chapter-10/page-255.md,REVIEW-CH10.md,23,0,0,0,6,0,0,1,0,0
+278,256,chapter 10,translation/chapter-10/page-256.md,REVIEW-CH10.md,8,0,0,0,0,0,0,0,0,0
+279,257,chapter 11,translation/chapter-11/page-257.md,REVIEW-CH11.md,5,0,0,0,0,0,0,0,0,0
+280,258,chapter 11,translation/chapter-11/page-258.md,REVIEW-CH11.md,10,0,0,0,4,0,0,0,0,0
+281,259,chapter 11,translation/chapter-11/page-259.md,REVIEW-CH11.md,17,0,0,0,8,0,0,2,0,0
+282,260,chapter 11,translation/chapter-11/page-260.md,REVIEW-CH11.md,12,1,3,0,2,0,0,0,0,0
+283,261,chapter 11,translation/chapter-11/page-261.md,REVIEW-CH11.md,3,1,5,0,0,0,0,0,0,0
+284,262,chapter 11,translation/chapter-11/page-262.md,REVIEW-CH11.md,5,1,3,0,1,0,0,0,0,0
+285,263,chapter 11,translation/chapter-11/page-263.md,REVIEW-CH11.md,6,1,2,0,1,0,0,0,0,0
+286,264,chapter 11,translation/chapter-11/page-264.md,REVIEW-CH11.md,9,0,0,0,0,0,0,1,0,1
+287,265,chapter 11,translation/chapter-11/page-265.md,REVIEW-CH11.md,3,0,0,0,0,0,0,0,0,0
+288,266,chapter 11,translation/chapter-11/page-266.md,REVIEW-CH11.md,8,0,0,0,1,0,0,0,0,0
+289,267,chapter 11,translation/chapter-11/page-267.md,REVIEW-CH11.md,5,1,13,0,2,0,0,0,0,0
+290,268,chapter 11,translation/chapter-11/page-268.md,REVIEW-CH11.md,15,0,0,0,6,0,0,0,0,0
+291,269,chapter 11,translation/chapter-11/page-269.md,REVIEW-CH11.md,11,0,0,0,3,0,0,0,0,0
+292,270,chapter 11,translation/chapter-11/page-270.md,REVIEW-CH11.md,8,0,0,0,3,0,0,0,0,0
+293,271,chapter 11,translation/chapter-11/page-271.md,REVIEW-CH11.md,8,1,3,0,0,0,0,0,0,0
+294,272,chapter 11,translation/chapter-11/page-272.md,REVIEW-CH11.md,6,0,0,0,1,0,0,0,1,0
+295,273,chapter 11,translation/chapter-11/page-273.md,REVIEW-CH11.md,7,1,4,0,0,0,0,0,0,0
+296,274,chapter 11,translation/chapter-11/page-274.md,REVIEW-CH11.md,8,1,3,0,0,0,0,0,2,0
+297,275,chapter 11,translation/chapter-11/page-275.md,REVIEW-CH11.md,7,0,0,0,1,0,0,1,0,0
+298,276,chapter 11,translation/chapter-11/page-276.md,REVIEW-CH11.md,8,1,3,0,0,0,0,0,0,0
+299,277,chapter 11,translation/chapter-11/page-277.md,REVIEW-CH11.md,2,1,4,0,0,0,0,0,0,0
+300,278,chapter 11,translation/chapter-11/page-278.md,REVIEW-CH11.md,14,0,0,0,6,0,0,0,0,0
+301,279,chapter 11,translation/chapter-11/page-279.md,REVIEW-CH11.md,12,0,0,0,4,0,0,0,0,0
+302,280,chapter 11,translation/chapter-11/page-280.md,REVIEW-CH11.md,6,1,3,0,1,0,0,0,0,0
+303,281,chapter 11,translation/chapter-11/page-281.md,REVIEW-CH11.md,5,0,0,0,0,0,0,0,1,0
+304,282,chapter 11,translation/chapter-11/page-282.md,REVIEW-CH11.md,7,0,0,0,3,0,0,0,0,0
+305,283,chapter 11,translation/chapter-11/page-283.md,REVIEW-CH11.md,5,1,3,0,0,0,0,0,0,0
+306,284,chapter 11,translation/chapter-11/page-284.md,REVIEW-CH11.md,8,0,0,0,0,0,0,0,0,0
+307,285,chapter 11,translation/chapter-11/page-285.md,REVIEW-CH11.md,6,0,0,0,0,0,0,0,0,0
+308,286,chapter 11,translation/chapter-11/page-286.md,REVIEW-CH11.md,5,0,0,0,0,0,0,0,0,0
+309,287,chapter 12,translation/chapter-12/page-287.md,REVIEW-CH12.md,7,0,0,0,0,0,0,0,0,0
+310,288,chapter 12,translation/chapter-12/page-288.md,REVIEW-CH12.md,8,0,0,0,1,0,0,0,0,0
+311,289,chapter 12,translation/chapter-12/page-289.md,REVIEW-CH12.md,7,2,5,0,1,0,0,0,0,0
+312,290,chapter 12,translation/chapter-12/page-290.md,REVIEW-CH12.md,8,1,8,0,2,0,0,2,0,0
+313,291,chapter 12,translation/chapter-12/page-291.md,REVIEW-CH12.md,3,1,5,0,0,0,0,0,0,0
+314,292,chapter 12,translation/chapter-12/page-292.md,REVIEW-CH12.md,8,1,3,0,1,0,0,0,0,0
+315,293,chapter 12,translation/chapter-12/page-293.md,REVIEW-CH12.md,21,1,4,0,5,0,1,0,0,0
+316,294,chapter 12,translation/chapter-12/page-294.md,REVIEW-CH12.md,5,0,0,0,0,0,0,0,0,0
+317,295,chapter 12,translation/chapter-12/page-295.md,REVIEW-CH12.md,8,1,5,0,1,0,0,2,0,0
+318,296,chapter 12,translation/chapter-12/page-296.md,REVIEW-CH12.md,6,1,5,0,1,0,0,0,0,0
+319,297,chapter 12,translation/chapter-12/page-297.md,REVIEW-CH12.md,12,0,0,0,4,0,0,1,0,0
+320,298,chapter 12,translation/chapter-12/page-298.md,REVIEW-CH12.md,7,0,0,0,2,0,0,0,0,0
+321,299,chapter 12,translation/chapter-12/page-299.md,REVIEW-CH12.md,6,1,5,0,1,0,0,0,0,0
+322,300,chapter 12,translation/chapter-12/page-300.md,REVIEW-CH12.md,25,0,0,0,2,0,1,0,0,0
+323,301,chapter 12,translation/chapter-12/page-301.md,REVIEW-CH12.md,8,0,0,0,2,0,0,0,0,0
+324,302,chapter 12,translation/chapter-12/page-302.md,REVIEW-CH12.md,7,0,0,0,4,0,0,0,0,0
+325,303,chapter 12,translation/chapter-12/page-303.md,REVIEW-CH12.md,13,0,0,0,5,0,0,0,0,0
+326,304,chapter 12,translation/chapter-12/page-304.md,REVIEW-CH12.md,5,2,6,0,0,0,0,0,0,0
+327,305,chapter 12,translation/chapter-12/page-305.md,REVIEW-CH12.md,27,0,0,0,0,0,1,1,0,0
+328,306,chapter 12,translation/chapter-12/page-306.md,REVIEW-CH12.md,2,2,8,0,0,0,0,0,0,0
+329,307,chapter 12,translation/chapter-12/page-307.md,REVIEW-CH12.md,28,0,0,0,0,0,1,0,0,0
+330,308,chapter 12,translation/chapter-12/page-308.md,REVIEW-CH12.md,10,0,0,0,5,0,0,0,0,0
+331,309,chapter 12,translation/chapter-12/page-309.md,REVIEW-CH12.md,15,0,0,0,4,0,0,3,0,0
+332,310,chapter 12,translation/chapter-12/page-310.md,REVIEW-CH12.md,8,0,0,0,3,0,0,0,0,0
+333,311,chapter 12,translation/chapter-12/page-311.md,REVIEW-CH12.md,13,0,0,0,4,0,0,3,0,0
+334,312,chapter 12,translation/chapter-12/page-312.md,REVIEW-CH12.md,5,0,0,0,0,0,0,1,0,0
+335,313,chapter 12,translation/chapter-12/page-313.md,REVIEW-CH12.md,8,1,4,0,3,0,0,0,0,0
+336,314,chapter 12,translation/chapter-12/page-314.md,REVIEW-CH12.md,7,1,3,0,1,0,0,1,0,0
+337,315,chapter 12,translation/chapter-12/page-315.md,REVIEW-CH12.md,17,0,0,0,8,0,0,0,0,0
+338,316,chapter 12,translation/chapter-12/page-316.md,REVIEW-CH12.md,7,0,0,0,1,0,0,0,0,0
+339,317,chapter 12,translation/chapter-12/page-317.md,REVIEW-CH12.md,5,0,0,0,0,0,0,0,0,0
+340,318,chapter 12,translation/chapter-12/page-318.md,REVIEW-CH12.md,1,1,3,0,0,0,0,0,0,0
+341,319,chapter 12,translation/chapter-12/page-319.md,REVIEW-CH12.md,10,0,0,0,0,0,0,0,0,0
+342,320,chapter 12,translation/chapter-12/page-320.md,REVIEW-CH12.md,7,0,0,0,0,0,0,0,0,0
+343,321,chapter 13,translation/chapter-13/page-321.md,REVIEW-CH13.md,7,0,0,0,1,0,0,0,1,0
+344,322,chapter 13,translation/chapter-13/page-322.md,REVIEW-CH13.md,9,0,0,0,2,0,0,0,0,0
+345,323,chapter 13,translation/chapter-13/page-323.md,REVIEW-CH13.md,4,1,4,0,0,0,0,0,0,0
+346,324,chapter 13,translation/chapter-13/page-324.md,REVIEW-CH13.md,10,0,0,0,1,0,0,1,0,0
+347,325,chapter 13,translation/chapter-13/page-325.md,REVIEW-CH13.md,20,0,0,0,12,0,0,0,0,0
+348,326,chapter 13,translation/chapter-13/page-326.md,REVIEW-CH13.md,9,0,0,0,3,0,0,0,0,0
+349,327,chapter 13,translation/chapter-13/page-327.md,REVIEW-CH13.md,7,0,0,0,2,0,0,0,0,0
+350,328,chapter 13,translation/chapter-13/page-328.md,REVIEW-CH13.md,13,1,3,0,0,0,1,1,0,0
+351,329,chapter 13,translation/chapter-13/page-329.md,REVIEW-CH13.md,13,0,0,0,4,0,0,1,0,0
+352,330,chapter 13,translation/chapter-13/page-330.md,REVIEW-CH13.md,15,1,4,0,4,0,1,0,0,0
+353,331,chapter 13,translation/chapter-13/page-331.md,REVIEW-CH13.md,8,0,0,0,3,0,0,0,0,0
+354,332,chapter 13,translation/chapter-13/page-332.md,REVIEW-CH13.md,39,0,0,0,18,0,2,0,0,0
+355,333,chapter 13,translation/chapter-13/page-333.md,REVIEW-CH13.md,25,0,0,0,12,0,1,0,0,0
+356,334,chapter 13,translation/chapter-13/page-334.md,REVIEW-CH13.md,10,0,0,0,4,0,0,0,0,0
+357,335,chapter 13,translation/chapter-13/page-335.md,REVIEW-CH13.md,10,1,1,0,3,0,0,0,0,0
+358,336,chapter 13,translation/chapter-13/page-336.md,REVIEW-CH13.md,12,0,0,0,3,0,0,2,0,0
+359,337,chapter 13,translation/chapter-13/page-337.md,REVIEW-CH13.md,8,0,0,0,0,0,0,0,0,0
+360,338,chapter 13,translation/chapter-13/page-338.md,REVIEW-CH13.md,8,0,0,0,0,0,0,0,0,0
+361,339,part III,parts/part-03.md,REVIEW-CH14.md,2,0,0,0,0,0,0,0,0,0
+362,340,part III,parts/part-03.md,REVIEW-CH14.md,0,0,0,0,0,0,0,0,0,0
+363,341,chapter 14,translation/chapter-14/page-341.md,REVIEW-CH14.md,5,0,0,0,0,0,0,0,0,0
+364,342,chapter 14,translation/chapter-14/page-342.md,REVIEW-CH14.md,6,0,0,0,0,0,0,0,1,0
+365,343,chapter 14,translation/chapter-14/page-343.md,REVIEW-CH14.md,6,0,0,0,0,0,0,0,0,0
+366,344,chapter 14,translation/chapter-14/page-344.md,REVIEW-CH14.md,3,1,4,0,0,0,0,0,0,0
+367,345,chapter 14,translation/chapter-14/page-345.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,1,0
+368,346,chapter 14,translation/chapter-14/page-346.md,REVIEW-CH14.md,6,0,0,0,0,0,0,0,0,0
+369,347,chapter 14,translation/chapter-14/page-347.md,REVIEW-CH14.md,6,0,0,0,1,0,0,0,0,0
+370,348,chapter 14,translation/chapter-14/page-348.md,REVIEW-CH14.md,11,0,0,0,3,0,0,0,1,0
+371,349,chapter 14,translation/chapter-14/page-349.md,REVIEW-CH14.md,5,0,0,0,0,0,0,0,0,0
+372,350,chapter 14,translation/chapter-14/page-350.md,REVIEW-CH14.md,10,0,0,0,3,0,0,0,0,0
+373,351,chapter 14,translation/chapter-14/page-351.md,REVIEW-CH14.md,4,1,3,0,0,0,0,0,1,0
+374,352,chapter 14,translation/chapter-14/page-352.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,1,0
+375,353,chapter 14,translation/chapter-14/page-353.md,REVIEW-CH14.md,5,2,6,0,0,0,0,0,0,0
+376,354,chapter 14,translation/chapter-14/page-354.md,REVIEW-CH14.md,2,1,3,0,0,0,0,0,0,0
+377,355,chapter 14,translation/chapter-14/page-355.md,REVIEW-CH14.md,4,1,3,0,0,0,0,0,0,0
+378,356,chapter 14,translation/chapter-14/page-356.md,REVIEW-CH14.md,3,1,4,0,0,0,0,0,0,0
+379,357,chapter 14,translation/chapter-14/page-357.md,REVIEW-CH14.md,6,0,0,0,0,0,0,0,0,0
+380,358,chapter 14,translation/chapter-14/page-358.md,REVIEW-CH14.md,6,1,0,0,0,0,0,0,0,0
+381,359,chapter 14,translation/chapter-14/page-359.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,0,0
+382,360,chapter 14,translation/chapter-14/page-360.md,REVIEW-CH14.md,5,0,0,0,0,0,0,0,0,0
+383,361,chapter 14,translation/chapter-14/page-361.md,REVIEW-CH14.md,6,0,0,0,0,0,0,0,0,0
+384,362,chapter 14,translation/chapter-14/page-362.md,REVIEW-CH14.md,5,0,0,0,0,0,0,0,0,0
+385,363,chapter 14,translation/chapter-14/page-363.md,REVIEW-CH14.md,3,0,0,0,0,0,0,0,0,0
+386,364,chapter 14,translation/chapter-14/page-364.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,0,0
+387,365,chapter 14,translation/chapter-14/page-365.md,REVIEW-CH14.md,2,1,3,0,0,0,0,0,0,0
+388,366,chapter 14,translation/chapter-14/page-366.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,0,0
+389,367,chapter 14,translation/chapter-14/page-367.md,REVIEW-CH14.md,3,0,0,0,0,0,0,0,0,0
+390,368,chapter 14,translation/chapter-14/page-368.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,0,0
+391,369,chapter 14,translation/chapter-14/page-369.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,0,0
+392,370,chapter 14,translation/chapter-14/page-370.md,REVIEW-CH14.md,3,0,0,0,0,0,0,0,0,0
+393,371,chapter 14,translation/chapter-14/page-371.md,REVIEW-CH14.md,6,0,0,0,0,0,0,0,0,0
+394,372,chapter 14,translation/chapter-14/page-372.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,0,0
+395,373,chapter 14,translation/chapter-14/page-373.md,REVIEW-CH14.md,6,0,0,0,0,0,0,0,0,0
+396,374,chapter 14,translation/chapter-14/page-374.md,REVIEW-CH14.md,4,0,0,0,0,0,0,0,0,0
+397,375,chapter 14,translation/chapter-14/page-375.md,REVIEW-CH14.md,6,0,0,0,1,0,0,0,0,0
+398,376,chapter 14,translation/chapter-14/page-376.md,REVIEW-CH14.md,2,0,0,0,0,0,0,0,0,0
+399,377,chapter 15,translation/chapter-15/page-377.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+400,378,chapter 15,translation/chapter-15/page-378.md,REVIEW-CH15.md,6,0,0,0,0,0,0,0,0,0
+401,379,chapter 15,translation/chapter-15/page-379.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+402,380,chapter 15,translation/chapter-15/page-380.md,REVIEW-CH15.md,6,0,0,0,0,0,0,0,1,0
+403,381,chapter 15,translation/chapter-15/page-381.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+404,382,chapter 15,translation/chapter-15/page-382.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,1,0
+405,383,chapter 15,translation/chapter-15/page-383.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+406,384,chapter 15,translation/chapter-15/page-384.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+407,385,chapter 15,translation/chapter-15/page-385.md,REVIEW-CH15.md,4,1,2,0,0,0,0,0,0,0
+408,386,chapter 15,translation/chapter-15/page-386.md,REVIEW-CH15.md,2,1,9,0,0,0,0,0,0,0
+409,387,chapter 15,translation/chapter-15/page-387.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+410,388,chapter 15,translation/chapter-15/page-388.md,REVIEW-CH15.md,3,1,9,0,0,0,0,0,0,0
+411,389,chapter 15,translation/chapter-15/page-389.md,REVIEW-CH15.md,2,1,9,0,0,0,0,0,0,0
+412,390,chapter 15,translation/chapter-15/page-390.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+413,391,chapter 15,translation/chapter-15/page-391.md,REVIEW-CH15.md,3,1,8,0,0,0,0,0,0,0
+414,392,chapter 15,translation/chapter-15/page-392.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+415,393,chapter 15,translation/chapter-15/page-393.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+416,394,chapter 15,translation/chapter-15/page-394.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+417,395,chapter 15,translation/chapter-15/page-395.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+418,396,chapter 15,translation/chapter-15/page-396.md,REVIEW-CH15.md,2,1,13,0,0,0,0,0,0,0
+419,397,chapter 15,translation/chapter-15/page-397.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+420,398,chapter 15,translation/chapter-15/page-398.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+421,399,chapter 15,translation/chapter-15/page-399.md,REVIEW-CH15.md,8,0,0,0,2,0,0,0,0,0
+422,400,chapter 15,translation/chapter-15/page-400.md,REVIEW-CH15.md,5,0,0,0,2,0,0,0,0,0
+423,401,chapter 15,translation/chapter-15/page-401.md,REVIEW-CH15.md,3,0,0,0,0,0,0,0,0,0
+424,402,chapter 15,translation/chapter-15/page-402.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+425,403,chapter 15,translation/chapter-15/page-403.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+426,404,chapter 15,translation/chapter-15/page-404.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+427,405,chapter 15,translation/chapter-15/page-405.md,REVIEW-CH15.md,3,0,0,0,0,0,0,0,0,0
+428,406,chapter 15,translation/chapter-15/page-406.md,REVIEW-CH15.md,3,0,0,0,0,0,0,0,0,0
+429,407,chapter 15,translation/chapter-15/page-407.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+430,408,chapter 15,translation/chapter-15/page-408.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+431,409,chapter 15,translation/chapter-15/page-409.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+432,410,chapter 15,translation/chapter-15/page-410.md,REVIEW-CH15.md,6,0,0,0,0,0,0,0,0,0
+433,411,chapter 15,translation/chapter-15/page-411.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+434,412,chapter 15,translation/chapter-15/page-412.md,REVIEW-CH15.md,3,0,0,0,0,0,0,0,0,0
+435,413,chapter 15,translation/chapter-15/page-413.md,REVIEW-CH15.md,6,0,0,0,0,0,0,0,0,0
+436,414,chapter 15,translation/chapter-15/page-414.md,REVIEW-CH15.md,2,0,0,0,0,0,0,0,0,0
+437,415,chapter 15,translation/chapter-15/page-415.md,REVIEW-CH15.md,5,0,0,0,0,0,0,0,0,0
+438,416,chapter 15,translation/chapter-15/page-416.md,REVIEW-CH15.md,4,0,0,0,0,0,0,0,0,0
+439,417,chapter 15,translation/chapter-15/page-417.md,REVIEW-CH15.md,6,0,0,0,0,0,0,0,0,0
+440,418,chapter 15,translation/chapter-15/page-418.md,REVIEW-CH15.md,2,0,0,0,0,0,0,0,0,0
+441,419,chapter 15,translation/chapter-15/page-419.md,REVIEW-CH15.md,3,0,0,0,0,0,0,0,0,0
+442,420,chapter 15,translation/chapter-15/page-420.md,REVIEW-CH15.md,0,0,0,0,0,0,0,0,0,0
+443,421,chapter 16,translation/chapter-16/page-421.md,REVIEW-CH16.md,6,0,0,0,0,0,0,0,0,0
+444,422,chapter 16,translation/chapter-16/page-422.md,REVIEW-CH16.md,4,1,4,0,0,0,0,0,0,0
+445,423,chapter 16,translation/chapter-16/page-423.md,REVIEW-CH16.md,6,1,4,0,1,0,0,0,0,0
+446,424,chapter 16,translation/chapter-16/page-424.md,REVIEW-CH16.md,8,0,0,0,2,0,0,0,0,0
+447,425,chapter 16,translation/chapter-16/page-425.md,REVIEW-CH16.md,4,0,0,1,0,0,0,0,0,0
+448,426,chapter 16,translation/chapter-16/page-426.md,REVIEW-CH16.md,6,0,0,0,0,0,0,0,0,0
+449,427,chapter 16,translation/chapter-16/page-427.md,REVIEW-CH16.md,3,0,0,0,0,0,0,0,0,0
+450,428,chapter 16,translation/chapter-16/page-428.md,REVIEW-CH16.md,4,1,3,0,0,0,0,0,0,0
+451,429,chapter 16,translation/chapter-16/page-429.md,REVIEW-CH16.md,5,0,0,0,0,0,0,0,2,0
+452,430,chapter 16,translation/chapter-16/page-430.md,REVIEW-CH16.md,6,0,0,0,1,0,0,0,0,0
+453,431,chapter 16,translation/chapter-16/page-431.md,REVIEW-CH16.md,5,0,0,0,0,0,0,0,0,0
+454,432,chapter 16,translation/chapter-16/page-432.md,REVIEW-CH16.md,5,0,0,0,0,0,0,0,0,0
+455,433,chapter 16,translation/chapter-16/page-433.md,REVIEW-CH16.md,3,1,14,0,0,0,0,0,0,0
+456,434,chapter 16,translation/chapter-16/page-434.md,REVIEW-CH16.md,6,0,0,0,0,0,0,0,0,0
+457,435,chapter 16,translation/chapter-16/page-435.md,REVIEW-CH16.md,3,1,4,0,0,0,0,0,0,0
+458,436,chapter 16,translation/chapter-16/page-436.md,REVIEW-CH16.md,4,0,0,0,0,0,0,0,0,0
+459,437,chapter 16,translation/chapter-16/page-437.md,REVIEW-CH16.md,4,0,0,0,0,0,0,0,0,0
+460,438,chapter 16,translation/chapter-16/page-438.md,REVIEW-CH16.md,4,0,0,0,0,0,0,0,0,0
+461,439,chapter 16,translation/chapter-16/page-439.md,REVIEW-CH16.md,7,0,0,0,1,0,0,0,0,0
+462,440,chapter 16,translation/chapter-16/page-440.md,REVIEW-CH16.md,6,0,0,0,1,0,0,0,0,0
+463,441,chapter 16,translation/chapter-16/page-441.md,REVIEW-CH16.md,5,0,0,0,0,0,0,0,0,0
+464,442,chapter 16,translation/chapter-16/page-442.md,REVIEW-CH16.md,4,1,0,0,0,0,0,0,0,0
+465,443,chapter 16,translation/chapter-16/page-443.md,REVIEW-CH16.md,3,1,0,0,0,0,0,0,0,0
+466,444,chapter 16,translation/chapter-16/page-444.md,REVIEW-CH16.md,7,0,0,0,1,0,0,0,0,0
+467,445,chapter 16,translation/chapter-16/page-445.md,REVIEW-CH16.md,4,1,12,0,0,0,0,0,0,0
+468,446,chapter 16,translation/chapter-16/page-446.md,REVIEW-CH16.md,4,0,0,0,0,0,0,0,0,0
+469,447,chapter 16,translation/chapter-16/page-447.md,REVIEW-CH16.md,5,0,0,0,0,0,0,0,0,0
+470,448,chapter 16,translation/chapter-16/page-448.md,REVIEW-CH16.md,3,1,11,0,0,0,0,0,0,0
+471,449,chapter 16,translation/chapter-16/page-449.md,REVIEW-CH16.md,4,0,0,0,0,0,0,0,0,0
+472,450,chapter 16,translation/chapter-16/page-450.md,REVIEW-CH16.md,6,0,0,0,0,0,0,0,0,0
+473,451,chapter 16,translation/chapter-16/page-451.md,REVIEW-CH16.md,4,0,0,0,0,0,0,0,0,0
+474,452,chapter 16,translation/chapter-16/page-452.md,REVIEW-CH16.md,5,0,0,0,1,0,0,0,0,0
+475,453,chapter 16,translation/chapter-16/page-453.md,REVIEW-CH16.md,5,1,4,0,0,0,0,0,0,0
+476,454,chapter 16,translation/chapter-16/page-454.md,REVIEW-CH16.md,3,1,7,0,0,0,0,0,0,0
+477,455,chapter 16,translation/chapter-16/page-455.md,REVIEW-CH16.md,7,0,0,0,1,0,0,0,1,0
+478,456,chapter 16,translation/chapter-16/page-456.md,REVIEW-CH16.md,2,1,2,0,0,0,0,0,0,0
+479,457,chapter 16,translation/chapter-16/page-457.md,REVIEW-CH16.md,3,0,0,0,0,0,0,0,1,0
+480,458,chapter 16,translation/chapter-16/page-458.md,REVIEW-CH16.md,0,0,0,0,0,0,0,0,0,0
+481,459,chapter 17,translation/chapter-17/page-459.md,REVIEW-CH17.md,7,0,0,0,1,0,0,0,0,0
+482,460,chapter 17,translation/chapter-17/page-460.md,REVIEW-CH17.md,4,0,0,0,0,0,0,0,0,0
+483,461,chapter 17,translation/chapter-17/page-461.md,REVIEW-CH17.md,5,0,0,0,0,0,0,0,0,0
+484,462,chapter 17,translation/chapter-17/page-462.md,REVIEW-CH17.md,6,0,0,0,2,0,0,0,0,0
+485,463,chapter 17,translation/chapter-17/page-463.md,REVIEW-CH17.md,6,0,0,0,2,0,0,0,0,0
+486,464,chapter 17,translation/chapter-17/page-464.md,REVIEW-CH17.md,8,0,0,0,1,0,0,1,0,0
+487,465,chapter 17,translation/chapter-17/page-465.md,REVIEW-CH17.md,9,0,0,0,3,0,0,0,0,0
+488,466,chapter 17,translation/chapter-17/page-466.md,REVIEW-CH17.md,4,1,10,0,1,0,0,0,0,0
+489,467,chapter 17,translation/chapter-17/page-467.md,REVIEW-CH17.md,7,0,0,0,2,0,0,0,0,0
+490,468,chapter 17,translation/chapter-17/page-468.md,REVIEW-CH17.md,4,0,0,0,0,0,0,0,0,0
+491,469,chapter 17,translation/chapter-17/page-469.md,REVIEW-CH17.md,6,0,0,0,0,0,0,0,0,0
+492,470,chapter 17,translation/chapter-17/page-470.md,REVIEW-CH17.md,5,0,0,0,1,0,0,0,0,0
+493,471,chapter 17,translation/chapter-17/page-471.md,REVIEW-CH17.md,4,0,0,0,0,0,0,0,0,0
+494,472,chapter 17,translation/chapter-17/page-472.md,REVIEW-CH17.md,3,0,0,0,0,0,0,0,0,0
+495,473,chapter 17,translation/chapter-17/page-473.md,REVIEW-CH17.md,4,0,0,0,0,0,0,0,1,0
+496,474,chapter 17,translation/chapter-17/page-474.md,REVIEW-CH17.md,4,0,0,0,0,0,0,0,0,0
+497,475,chapter 17,translation/chapter-17/page-475.md,REVIEW-CH17.md,5,0,0,0,0,0,0,0,0,0
+498,476,chapter 17,translation/chapter-17/page-476.md,REVIEW-CH17.md,5,0,0,0,0,0,0,0,0,0
+499,477,chapter 17,translation/chapter-17/page-477.md,REVIEW-CH17.md,2,0,0,0,0,0,0,0,0,0
+500,478,chapter 17,translation/chapter-17/page-478.md,REVIEW-CH17.md,6,0,0,0,0,0,0,0,0,0
+501,479,chapter 17,translation/chapter-17/page-479.md,REVIEW-CH17.md,8,0,0,0,0,0,0,0,0,0
+502,480,chapter 17,translation/chapter-17/page-480.md,REVIEW-CH17.md,4,0,0,0,0,0,0,0,0,0
+503,481,references,backmatter/references/page-503.md,REVIEW-REFS-503-527.md,18,0,0,0,0,0,0,0,0,0
+504,482,references,backmatter/references/page-504.md,REVIEW-REFS-503-527.md,21,0,0,0,0,0,0,0,0,0
+505,483,references,backmatter/references/page-505.md,REVIEW-REFS-503-527.md,19,0,0,0,0,0,0,0,0,0
+506,484,references,backmatter/references/page-506.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+507,485,references,backmatter/references/page-507.md,REVIEW-REFS-503-527.md,24,0,0,0,0,0,0,0,0,0
+508,486,references,backmatter/references/page-508.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+509,487,references,backmatter/references/page-509.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+510,488,references,backmatter/references/page-510.md,REVIEW-REFS-503-527.md,21,0,0,0,0,0,0,0,0,0
+511,489,references,backmatter/references/page-511.md,REVIEW-REFS-503-527.md,22,0,0,0,0,0,0,0,0,0
+512,490,references,backmatter/references/page-512.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+513,491,references,backmatter/references/page-513.md,REVIEW-REFS-503-527.md,24,0,0,0,0,0,0,0,0,0
+514,492,references,backmatter/references/page-514.md,REVIEW-REFS-503-527.md,22,0,0,0,0,0,0,0,0,0
+515,493,references,backmatter/references/page-515.md,REVIEW-REFS-503-527.md,19,0,0,0,0,0,0,0,0,0
+516,494,references,backmatter/references/page-516.md,REVIEW-REFS-503-527.md,22,0,0,0,0,0,0,0,0,0
+517,495,references,backmatter/references/page-517.md,REVIEW-REFS-503-527.md,22,0,0,0,0,0,0,0,0,0
+518,496,references,backmatter/references/page-518.md,REVIEW-REFS-503-527.md,22,0,0,0,0,0,0,0,0,0
+519,497,references,backmatter/references/page-519.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+520,498,references,backmatter/references/page-520.md,REVIEW-REFS-503-527.md,21,0,0,0,0,0,0,0,0,0
+521,499,references,backmatter/references/page-521.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+522,500,references,backmatter/references/page-522.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+523,501,references,backmatter/references/page-523.md,REVIEW-REFS-503-527.md,19,0,0,0,0,0,0,0,0,0
+524,502,references,backmatter/references/page-524.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+525,503,references,backmatter/references/page-525.md,REVIEW-REFS-503-527.md,20,0,0,0,0,0,0,0,0,0
+526,504,references,backmatter/references/page-526.md,REVIEW-REFS-503-527.md,21,0,0,0,0,0,0,0,0,0
+527,505,references,backmatter/references/page-527.md,REVIEW-REFS-503-527.md,21,0,0,0,0,0,0,0,0,0
+528,506,references,backmatter/references/page-528.md,REVIEW-REFS-528-540.md,22,0,0,0,0,0,0,0,0,0
+529,507,references,backmatter/references/page-529.md,REVIEW-REFS-528-540.md,22,0,0,0,0,0,0,0,0,0
+530,508,references,backmatter/references/page-530.md,REVIEW-REFS-528-540.md,18,0,0,0,0,0,0,0,0,0
+531,509,references,backmatter/references/page-531.md,REVIEW-REFS-528-540.md,18,0,0,0,0,0,0,0,0,0
+532,510,references,backmatter/references/page-532.md,REVIEW-REFS-528-540.md,20,0,0,0,0,0,0,0,0,0
+533,511,references,backmatter/references/page-533.md,REVIEW-REFS-528-540.md,21,0,0,0,0,0,0,0,0,0
+534,512,references,backmatter/references/page-534.md,REVIEW-REFS-528-540.md,18,0,0,0,0,0,0,0,0,0
+535,513,references,backmatter/references/page-535.md,REVIEW-REFS-528-540.md,21,0,0,0,0,0,0,0,0,0
+536,514,references,backmatter/references/page-536.md,REVIEW-REFS-528-540.md,22,0,0,0,0,0,0,0,0,0
+537,515,references,backmatter/references/page-537.md,REVIEW-REFS-528-540.md,22,0,0,0,0,0,0,0,0,0
+538,516,references,backmatter/references/page-538.md,REVIEW-REFS-528-540.md,24,0,0,0,0,0,0,0,0,0
+539,517,references,backmatter/references/page-539.md,REVIEW-REFS-528-540.md,21,0,0,0,0,0,0,0,0,0
+540,518,references,backmatter/references/page-540.md,REVIEW-REFS-528-540.md,16,0,0,0,0,0,0,0,0,0
+541,519,index,backmatter/index/page-541.md,REVIEW-INDEX.md,89,0,0,0,0,0,0,0,0,0
+542,520,index,backmatter/index/page-542.md,REVIEW-INDEX.md,87,0,0,0,0,0,0,0,0,0
+543,521,index,backmatter/index/page-543.md,REVIEW-INDEX.md,92,0,0,0,0,0,0,0,0,0
+544,522,index,backmatter/index/page-544.md,REVIEW-INDEX.md,90,0,0,0,0,0,0,0,0,0
+545,523,index,backmatter/index/page-545.md,REVIEW-INDEX.md,94,0,0,0,0,0,0,0,0,0
+546,524,index,backmatter/index/page-546.md,REVIEW-INDEX.md,79,0,0,0,0,0,0,0,0,0
+547,525,series bibliography,backmatter/series/page-547.md,REVIEW-SERIES.md,16,0,0,0,0,0,0,0,0,0
+548,526,series bibliography,backmatter/series/page-548.md,REVIEW-SERIES.md,10,0,0,0,0,0,0,0,0,0

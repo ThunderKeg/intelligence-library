@@ -1,0 +1,7 @@
+**9.8** LSTD 由 Bradtke 和 Barto 提出（见 Bradtke，1993，1994；Bradtke 和 Barto，1996；Bradtke、Ydstie 和 Barto，1994），后来由 Boyan（1999，2002）、Nedić 和 Bertsekas（2003）以及 Yu（2010）进一步发展。逆矩阵的增量更新至少从 1949 年就已为人所知（Sherman 和 Morrison，1949）。Lagoudakis 和 Parr（2003；另见 Buşoniu、Lazaric、Ghavamzadeh、Munos、Babuška 和 De Schutter，2012）把最小二乘方法扩展到了控制任务。
+
+**9.9** 本章对基于记忆的函数近似的讨论，主要依据 Atkeson、Moore 和 Schaal（1997）对局部加权学习的综述。Atkeson（1992）讨论了局部加权回归在基于记忆的机器人学习中的使用，并提供了一份涵盖这一思想历史的丰富书目。Stanfill 和 Waltz（1986）有影响力地强调了基于记忆的方法在人工智能中的重要性，尤其考虑到当时开始出现的并行架构，例如 Connection Machine。Baird 和 Klopf（1993）提出一种新的基于记忆的方法，并把它作为应用于平衡杆任务的 Q-learning 的函数近似方法。Schaal 和 Atkeson（1994）把局部加权回归用于机器人抛接控制问题，以学习系统模型。Peng（1995）在平衡杆任务中实验了几种最近邻方法，分别用来近似价值函数、策略和环境模型。Tadepalli 和 Ok（1996）在模拟的自动导引车任务中，用局部加权线性回归学习价值函数，获得了有希望的结果。Bottou 和 Vapnik（1992）在一些模式识别任务中，展示了几种局部学习算法相对非局部算法出人意料的效率，并讨论了局部学习对泛化的影响。
+
+Bentley（1975）引入 k-d 树，并报告：在 \(n\) 条记录中搜索最近邻，观察到的平均运行时间为 \(O(\log n)\)。Friedman、Bentley 和 Finkel（1977）阐明了使用 k-d 树搜索最近邻的算法。Omohundro（1987）讨论了 k-d 树等层级数据结构可能带来的效率提升。Moore、Schneider 和 Deng（1997）引入 k-d 树，用于高效的局部加权回归。
+
+**9.10** 核回归源于 Aizerman、Braverman 和 Rozonoer（1964）的**势函数方法**。他们把数据比作分布在空间中、符号和大小各异的点电荷。把各点电荷产生的电势相加，得到空间中的电势分布；它对应于插值曲面。在这个类比中，核函数是一个点电荷产生的电势，并随离电荷距离的倒数衰减。Connell 和 Utgoff（1987）在平衡杆任务中应用 actor–critic 方法，其 critic 用按距离倒数加权的核回归近似价值函数。当时机器学习领域尚未广泛关注核回归，因此他们没有使用“核”一词，而称之为“**Shepard 方法**”（Shepard，1968）。强化学习中其他基于核的方法包括 Ormoneit 和 Sen（2002）、Dietterich 和 Wang（2002）、Xu、Xie、Hu 和 Lu（2005）、Taylor 和 Parr（2009）、Barreto、Precup 和 Pineau（2011），以及 Bhat、Farias 和 Moallemi（2012）的工作。

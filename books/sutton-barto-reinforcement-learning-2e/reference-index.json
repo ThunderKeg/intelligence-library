@@ -1,0 +1,2861 @@
+{
+  "bookId": "sutton-barto-reinforcement-learning-2e",
+  "targets": {
+    "chapter": {
+      "1": {
+        "block": "p01-t01",
+        "chapter": "01"
+      },
+      "10": {
+        "block": "p243-b01",
+        "chapter": "10"
+      },
+      "11": {
+        "block": "p257-b01",
+        "chapter": "11"
+      },
+      "12": {
+        "block": "p287-b01",
+        "chapter": "12"
+      },
+      "13": {
+        "block": "p321-b01",
+        "chapter": "13"
+      },
+      "14": {
+        "block": "p341-b01",
+        "chapter": "14"
+      },
+      "15": {
+        "block": "p377-b01",
+        "chapter": "15"
+      },
+      "16": {
+        "block": "p421-b01",
+        "chapter": "16"
+      },
+      "17": {
+        "block": "p459-b01",
+        "chapter": "17"
+      },
+      "2": {
+        "block": "p25-t01",
+        "chapter": "02"
+      },
+      "3": {
+        "block": "p47-b01",
+        "chapter": "03"
+      },
+      "4": {
+        "block": "p73-b01",
+        "chapter": "04"
+      },
+      "5": {
+        "block": "p91-b01",
+        "chapter": "05"
+      },
+      "6": {
+        "block": "p119-b01",
+        "chapter": "06"
+      },
+      "7": {
+        "block": "p141-b01",
+        "chapter": "07"
+      },
+      "8": {
+        "block": "p159-b01",
+        "chapter": "08"
+      },
+      "9": {
+        "block": "p197-b01",
+        "chapter": "09"
+      }
+    },
+    "example": {
+      "10.1": {
+        "block": "p244-b22",
+        "chapter": "10"
+      },
+      "10.2": {
+        "block": "p252-b01",
+        "chapter": "10"
+      },
+      "11.1": {
+        "block": "p263-b03",
+        "chapter": "11"
+      },
+      "11.2": {
+        "block": "p271-b02",
+        "chapter": "11"
+      },
+      "11.3": {
+        "block": "p273-b03",
+        "chapter": "11"
+      },
+      "11.4": {
+        "block": "p276-b02",
+        "chapter": "11"
+      },
+      "12.1": {
+        "block": "p304-b03",
+        "chapter": "12"
+      },
+      "12.2": {
+        "block": "p305-b28",
+        "chapter": "12"
+      },
+      "13.1": {
+        "block": "p323-b03",
+        "chapter": "13"
+      },
+      "3.1": {
+        "block": "p51-b01",
+        "chapter": "03"
+      },
+      "3.2": {
+        "block": "p51-b02",
+        "chapter": "03"
+      },
+      "3.3": {
+        "block": "p52-b01",
+        "chapter": "03"
+      },
+      "3.4": {
+        "block": "p56-b01",
+        "chapter": "03"
+      },
+      "3.5": {
+        "block": "p60-b02",
+        "chapter": "03"
+      },
+      "3.6": {
+        "block": "p61-b03",
+        "chapter": "03"
+      },
+      "3.7": {
+        "block": "p63-b05",
+        "chapter": "03"
+      },
+      "3.8": {
+        "block": "p65-b02",
+        "chapter": "03"
+      },
+      "3.9": {
+        "block": "p65-b05",
+        "chapter": "03"
+      },
+      "4.1": {
+        "block": "p76-b01",
+        "chapter": "04"
+      },
+      "4.2": {
+        "block": "p81-b01",
+        "chapter": "04"
+      },
+      "4.3": {
+        "block": "p84-b01",
+        "chapter": "04"
+      },
+      "5.1": {
+        "block": "p93-b03",
+        "chapter": "05"
+      },
+      "5.2": {
+        "block": "p95-b03",
+        "chapter": "05"
+      },
+      "5.3": {
+        "block": "p99-b05",
+        "chapter": "05"
+      },
+      "5.4": {
+        "block": "p106-b01",
+        "chapter": "05"
+      },
+      "5.5": {
+        "block": "p106-b03",
+        "chapter": "05"
+      },
+      "6.1": {
+        "block": "p122-b01",
+        "chapter": "06"
+      },
+      "6.2": {
+        "block": "p125-b01",
+        "chapter": "06"
+      },
+      "6.3": {
+        "block": "p126-b08",
+        "chapter": "06"
+      },
+      "6.4": {
+        "block": "p127-b03",
+        "chapter": "06"
+      },
+      "6.5": {
+        "block": "p130-b03",
+        "chapter": "06"
+      },
+      "6.6": {
+        "block": "p132-b02",
+        "chapter": "06"
+      },
+      "6.7": {
+        "block": "p134-b06",
+        "chapter": "06"
+      },
+      "7.1": {
+        "block": "p144-b06",
+        "chapter": "07"
+      },
+      "8.1": {
+        "block": "p164-b17",
+        "chapter": "08"
+      },
+      "8.2": {
+        "block": "p166-b06",
+        "chapter": "08"
+      },
+      "8.3": {
+        "block": "p167-b02",
+        "chapter": "08"
+      },
+      "8.4": {
+        "block": "p170-b20",
+        "chapter": "08"
+      },
+      "8.5": {
+        "block": "p171-b01",
+        "chapter": "08"
+      },
+      "8.6": {
+        "block": "p179-b01",
+        "chapter": "08"
+      },
+      "9.1": {
+        "block": "p203-b04",
+        "chapter": "09"
+      },
+      "9.2": {
+        "block": "p208-b03",
+        "chapter": "09"
+      },
+      "9.3": {
+        "block": "p216-b02",
+        "chapter": "09"
+      },
+      "9.4": {
+        "block": "p235-b03",
+        "chapter": "09"
+      }
+    },
+    "exercise": {
+      "1.1": {
+        "block": "p12-t05",
+        "chapter": "01"
+      },
+      "1.2": {
+        "block": "p12-t06",
+        "chapter": "01"
+      },
+      "1.3": {
+        "block": "p12-t07",
+        "chapter": "01"
+      },
+      "1.4": {
+        "block": "p13-t01",
+        "chapter": "01"
+      },
+      "1.5": {
+        "block": "p13-t02",
+        "chapter": "01"
+      },
+      "10.1": {
+        "block": "p248-b03",
+        "chapter": "10"
+      },
+      "10.2": {
+        "block": "p248-b04",
+        "chapter": "10"
+      },
+      "10.3": {
+        "block": "p248-b05",
+        "chapter": "10"
+      },
+      "10.4": {
+        "block": "p250-b18",
+        "chapter": "10"
+      },
+      "10.5": {
+        "block": "p250-b19",
+        "chapter": "10"
+      },
+      "10.6": {
+        "block": "p251-b17",
+        "chapter": "10"
+      },
+      "10.7": {
+        "block": "p251-b20",
+        "chapter": "10"
+      },
+      "10.8": {
+        "block": "p251-b21",
+        "chapter": "10"
+      },
+      "10.9": {
+        "block": "p255-b25",
+        "chapter": "10"
+      },
+      "11.1": {
+        "block": "p259-b16",
+        "chapter": "11"
+      },
+      "11.2": {
+        "block": "p259-b17",
+        "chapter": "11"
+      },
+      "11.3": {
+        "block": "p264-b02",
+        "chapter": "11"
+      },
+      "11.4": {
+        "block": "p275-b06",
+        "chapter": "11"
+      },
+      "12.1": {
+        "block": "p290-b05",
+        "chapter": "12"
+      },
+      "12.10": {
+        "block": "p311-b07",
+        "chapter": "12"
+      },
+      "12.11": {
+        "block": "p311-b08",
+        "chapter": "12"
+      },
+      "12.12": {
+        "block": "p311-b12",
+        "chapter": "12"
+      },
+      "12.13": {
+        "block": "p312-b03",
+        "chapter": "12"
+      },
+      "12.14": {
+        "block": "p314-b03",
+        "chapter": "12"
+      },
+      "12.2": {
+        "block": "p290-b06",
+        "chapter": "12"
+      },
+      "12.3": {
+        "block": "p295-b05",
+        "chapter": "12"
+      },
+      "12.4": {
+        "block": "p295-b06",
+        "chapter": "12"
+      },
+      "12.5": {
+        "block": "p297-b07",
+        "chapter": "12"
+      },
+      "12.6": {
+        "block": "p305-b27",
+        "chapter": "12"
+      },
+      "12.7": {
+        "block": "p309-b01",
+        "chapter": "12"
+      },
+      "12.8": {
+        "block": "p309-b11",
+        "chapter": "12"
+      },
+      "12.9": {
+        "block": "p309-b12",
+        "chapter": "12"
+      },
+      "13.1": {
+        "block": "p324-b03",
+        "chapter": "13"
+      },
+      "13.2": {
+        "block": "p328-b13",
+        "chapter": "13"
+      },
+      "13.3": {
+        "block": "p329-b02",
+        "chapter": "13"
+      },
+      "13.4": {
+        "block": "p336-b04",
+        "chapter": "13"
+      },
+      "13.5": {
+        "block": "p336-b08",
+        "chapter": "13"
+      },
+      "17.1": {
+        "block": "p464-b01",
+        "chapter": "17"
+      },
+      "2.1": {
+        "block": "p28-t01",
+        "chapter": "02"
+      },
+      "2.10": {
+        "block": "p41-t05",
+        "chapter": "02"
+      },
+      "2.11": {
+        "block": "p44-t01",
+        "chapter": "02"
+      },
+      "2.2": {
+        "block": "p30-t02",
+        "chapter": "02"
+      },
+      "2.3": {
+        "block": "p30-t03",
+        "chapter": "02"
+      },
+      "2.4": {
+        "block": "p33-t06",
+        "chapter": "02"
+      },
+      "2.5": {
+        "block": "p33-t07",
+        "chapter": "02"
+      },
+      "2.6": {
+        "block": "p35-t01",
+        "chapter": "02"
+      },
+      "2.7": {
+        "block": "p35-t02",
+        "chapter": "02"
+      },
+      "2.8": {
+        "block": "p36-t04",
+        "chapter": "02"
+      },
+      "2.9": {
+        "block": "p37-t05",
+        "chapter": "02"
+      },
+      "3.1": {
+        "block": "p51-b03",
+        "chapter": "03"
+      },
+      "3.10": {
+        "block": "p56-b08",
+        "chapter": "03"
+      },
+      "3.11": {
+        "block": "p58-b04",
+        "chapter": "03"
+      },
+      "3.12": {
+        "block": "p58-b11",
+        "chapter": "03"
+      },
+      "3.13": {
+        "block": "p58-b12",
+        "chapter": "03"
+      },
+      "3.14": {
+        "block": "p60-b06",
+        "chapter": "03"
+      },
+      "3.15": {
+        "block": "p61-b01",
+        "chapter": "03"
+      },
+      "3.16": {
+        "block": "p61-b02",
+        "chapter": "03"
+      },
+      "3.17": {
+        "block": "p61-b05",
+        "chapter": "03"
+      },
+      "3.18": {
+        "block": "p62-b01",
+        "chapter": "03"
+      },
+      "3.19": {
+        "block": "p62-b04",
+        "chapter": "03"
+      },
+      "3.2": {
+        "block": "p51-b04",
+        "chapter": "03"
+      },
+      "3.20": {
+        "block": "p66-b06",
+        "chapter": "03"
+      },
+      "3.21": {
+        "block": "p66-b07",
+        "chapter": "03"
+      },
+      "3.22": {
+        "block": "p66-b08",
+        "chapter": "03"
+      },
+      "3.23": {
+        "block": "p67-b01",
+        "chapter": "03"
+      },
+      "3.24": {
+        "block": "p67-b02",
+        "chapter": "03"
+      },
+      "3.25": {
+        "block": "p67-b03",
+        "chapter": "03"
+      },
+      "3.26": {
+        "block": "p67-b04",
+        "chapter": "03"
+      },
+      "3.27": {
+        "block": "p67-b05",
+        "chapter": "03"
+      },
+      "3.28": {
+        "block": "p67-b06",
+        "chapter": "03"
+      },
+      "3.29": {
+        "block": "p67-b07",
+        "chapter": "03"
+      },
+      "3.3": {
+        "block": "p51-b05",
+        "chapter": "03"
+      },
+      "3.4": {
+        "block": "p53-b01",
+        "chapter": "03"
+      },
+      "3.5": {
+        "block": "p55-b10",
+        "chapter": "03"
+      },
+      "3.6": {
+        "block": "p56-b04",
+        "chapter": "03"
+      },
+      "3.7": {
+        "block": "p56-b05",
+        "chapter": "03"
+      },
+      "3.8": {
+        "block": "p56-b06",
+        "chapter": "03"
+      },
+      "3.9": {
+        "block": "p56-b07",
+        "chapter": "03"
+      },
+      "4.1": {
+        "block": "p76-b04",
+        "chapter": "04"
+      },
+      "4.10": {
+        "block": "p84-b05",
+        "chapter": "04"
+      },
+      "4.2": {
+        "block": "p76-b05",
+        "chapter": "04"
+      },
+      "4.3": {
+        "block": "p76-b06",
+        "chapter": "04"
+      },
+      "4.4": {
+        "block": "p82-b02",
+        "chapter": "04"
+      },
+      "4.5": {
+        "block": "p82-b03",
+        "chapter": "04"
+      },
+      "4.6": {
+        "block": "p82-b04",
+        "chapter": "04"
+      },
+      "4.7": {
+        "block": "p82-b05",
+        "chapter": "04"
+      },
+      "4.8": {
+        "block": "p84-b03",
+        "chapter": "04"
+      },
+      "4.9": {
+        "block": "p84-b04",
+        "chapter": "04"
+      },
+      "5.1": {
+        "block": "p94-b02",
+        "chapter": "05"
+      },
+      "5.10": {
+        "block": "p109-b12",
+        "chapter": "05"
+      },
+      "5.11": {
+        "block": "p111-b04",
+        "chapter": "05"
+      },
+      "5.12": {
+        "block": "p111-b05",
+        "chapter": "05"
+      },
+      "5.13": {
+        "block": "p115-b05",
+        "chapter": "05"
+      },
+      "5.14": {
+        "block": "p115-b06",
+        "chapter": "05"
+      },
+      "5.15": {
+        "block": "p117-b07",
+        "chapter": "05"
+      },
+      "5.2": {
+        "block": "p94-b03",
+        "chapter": "05"
+      },
+      "5.3": {
+        "block": "p97-b01",
+        "chapter": "05"
+      },
+      "5.4": {
+        "block": "p99-b03",
+        "chapter": "05"
+      },
+      "5.5": {
+        "block": "p105-b07",
+        "chapter": "05"
+      },
+      "5.6": {
+        "block": "p108-b01",
+        "chapter": "05"
+      },
+      "5.7": {
+        "block": "p108-b02",
+        "chapter": "05"
+      },
+      "5.8": {
+        "block": "p108-b03",
+        "chapter": "05"
+      },
+      "5.9": {
+        "block": "p109-b11",
+        "chapter": "05"
+      },
+      "6.1": {
+        "block": "p121-b14",
+        "chapter": "06"
+      },
+      "6.10": {
+        "block": "p131-b02",
+        "chapter": "06"
+      },
+      "6.11": {
+        "block": "p132-b05",
+        "chapter": "06"
+      },
+      "6.12": {
+        "block": "p132-b06",
+        "chapter": "06"
+      },
+      "6.13": {
+        "block": "p136-b05",
+        "chapter": "06"
+      },
+      "6.14": {
+        "block": "p137-b06",
+        "chapter": "06"
+      },
+      "6.2": {
+        "block": "p123-b04",
+        "chapter": "06"
+      },
+      "6.3": {
+        "block": "p126-b01",
+        "chapter": "06"
+      },
+      "6.4": {
+        "block": "p126-b02",
+        "chapter": "06"
+      },
+      "6.5": {
+        "block": "p126-b03",
+        "chapter": "06"
+      },
+      "6.6": {
+        "block": "p126-b04",
+        "chapter": "06"
+      },
+      "6.7": {
+        "block": "p128-b05",
+        "chapter": "06"
+      },
+      "6.8": {
+        "block": "p129-b11",
+        "chapter": "06"
+      },
+      "6.9": {
+        "block": "p131-b01",
+        "chapter": "06"
+      },
+      "7.1": {
+        "block": "p143-b12",
+        "chapter": "07"
+      },
+      "7.10": {
+        "block": "p151-b09",
+        "chapter": "07"
+      },
+      "7.11": {
+        "block": "p153-b11",
+        "chapter": "07"
+      },
+      "7.2": {
+        "block": "p143-b13",
+        "chapter": "07"
+      },
+      "7.3": {
+        "block": "p145-b03",
+        "chapter": "07"
+      },
+      "7.4": {
+        "block": "p148-b01",
+        "chapter": "07"
+      },
+      "7.5": {
+        "block": "p150-b09",
+        "chapter": "07"
+      },
+      "7.6": {
+        "block": "p151-b05",
+        "chapter": "07"
+      },
+      "7.7": {
+        "block": "p151-b06",
+        "chapter": "07"
+      },
+      "7.8": {
+        "block": "p151-b07",
+        "chapter": "07"
+      },
+      "7.9": {
+        "block": "p151-b08",
+        "chapter": "07"
+      },
+      "8.1": {
+        "block": "p166-b02",
+        "chapter": "08"
+      },
+      "8.2": {
+        "block": "p168-b03",
+        "chapter": "08"
+      },
+      "8.3": {
+        "block": "p168-b04",
+        "chapter": "08"
+      },
+      "8.4": {
+        "block": "p168-b05",
+        "chapter": "08"
+      },
+      "8.5": {
+        "block": "p168-b06",
+        "chapter": "08"
+      },
+      "8.6": {
+        "block": "p174-b04",
+        "chapter": "08"
+      },
+      "8.7": {
+        "block": "p177-b02",
+        "chapter": "08"
+      },
+      "8.8": {
+        "block": "p177-b03",
+        "chapter": "08"
+      },
+      "9.1": {
+        "block": "p209-b09",
+        "chapter": "09"
+      },
+      "9.2": {
+        "block": "p211-b07",
+        "chapter": "09"
+      },
+      "9.3": {
+        "block": "p211-b08",
+        "chapter": "09"
+      },
+      "9.4": {
+        "block": "p221-b03",
+        "chapter": "09"
+      },
+      "9.5": {
+        "block": "p223-b04",
+        "chapter": "09"
+      },
+      "9.6": {
+        "block": "p223-b05",
+        "chapter": "09"
+      },
+      "9.7": {
+        "block": "p237-b01",
+        "chapter": "09"
+      },
+      "9.8": {
+        "block": "p237-b02",
+        "chapter": "09"
+      }
+    },
+    "figure": {
+      "1.1": {
+        "block": "p10-t01",
+        "chapter": "01"
+      },
+      "10.1": {
+        "block": "p245-b01",
+        "chapter": "10"
+      },
+      "10.2": {
+        "block": "p246-b06",
+        "chapter": "10"
+      },
+      "10.3": {
+        "block": "p248-b01",
+        "chapter": "10"
+      },
+      "10.4": {
+        "block": "p248-b02",
+        "chapter": "10"
+      },
+      "10.5": {
+        "block": "p252-b03",
+        "chapter": "10"
+      },
+      "11.1": {
+        "block": "p261-b03",
+        "chapter": "11"
+      },
+      "11.2": {
+        "block": "p262-b05",
+        "chapter": "11"
+      },
+      "11.3": {
+        "block": "p267-b01",
+        "chapter": "11"
+      },
+      "11.4": {
+        "block": "p277-b01",
+        "chapter": "11"
+      },
+      "11.5": {
+        "block": "p280-b06",
+        "chapter": "11"
+      },
+      "11.6": {
+        "block": "p283-b01",
+        "chapter": "11"
+      },
+      "12.1": {
+        "block": "p289-b07",
+        "chapter": "12"
+      },
+      "12.10": {
+        "block": "p306-b01",
+        "chapter": "12"
+      },
+      "12.11": {
+        "block": "p306-b02",
+        "chapter": "12"
+      },
+      "12.12": {
+        "block": "p313-b01",
+        "chapter": "12"
+      },
+      "12.13": {
+        "block": "p314-b01",
+        "chapter": "12"
+      },
+      "12.14": {
+        "block": "p318-b01",
+        "chapter": "12"
+      },
+      "12.2": {
+        "block": "p290-b01",
+        "chapter": "12"
+      },
+      "12.3": {
+        "block": "p291-b02",
+        "chapter": "12"
+      },
+      "12.4": {
+        "block": "p292-b01",
+        "chapter": "12"
+      },
+      "12.5": {
+        "block": "p293-b23",
+        "chapter": "12"
+      },
+      "12.6": {
+        "block": "p295-b01",
+        "chapter": "12"
+      },
+      "12.7": {
+        "block": "p296-b06",
+        "chapter": "12"
+      },
+      "12.8": {
+        "block": "p299-b01",
+        "chapter": "12"
+      },
+      "12.9": {
+        "block": "p304-b01",
+        "chapter": "12"
+      },
+      "13.1": {
+        "block": "p328-b15",
+        "chapter": "13"
+      },
+      "13.2": {
+        "block": "p330-b17",
+        "chapter": "13"
+      },
+      "14.1": {
+        "block": "p351-b01",
+        "chapter": "14"
+      },
+      "14.2": {
+        "block": "p354-b01",
+        "chapter": "14"
+      },
+      "14.3": {
+        "block": "p355-b01",
+        "chapter": "14"
+      },
+      "14.4": {
+        "block": "p356-b02",
+        "chapter": "14"
+      },
+      "14.5": {
+        "block": "p365-b02",
+        "chapter": "14"
+      },
+      "15.1": {
+        "block": "p386-b02",
+        "chapter": "15"
+      },
+      "15.2": {
+        "block": "p388-b03",
+        "chapter": "15"
+      },
+      "15.3": {
+        "block": "p389-b02",
+        "chapter": "15"
+      },
+      "15.4": {
+        "block": "p391-b03",
+        "chapter": "15"
+      },
+      "15.5": {
+        "block": "p396-b02",
+        "chapter": "15"
+      },
+      "16.1": {
+        "block": "p423-b01",
+        "chapter": "16"
+      },
+      "16.10": {
+        "block": "p456-b01",
+        "chapter": "16"
+      },
+      "16.2": {
+        "block": "p428-b01",
+        "chapter": "16"
+      },
+      "16.3": {
+        "block": "p433-b03",
+        "chapter": "16"
+      },
+      "16.4": {
+        "block": "p435-b03",
+        "chapter": "16"
+      },
+      "16.5": {
+        "block": "p443-b01",
+        "chapter": "16"
+      },
+      "16.6": {
+        "block": "p445-b02",
+        "chapter": "16"
+      },
+      "16.7": {
+        "block": "p448-b01",
+        "chapter": "16"
+      },
+      "16.8": {
+        "block": "p453-b01",
+        "chapter": "16"
+      },
+      "16.9": {
+        "block": "p454-b01",
+        "chapter": "16"
+      },
+      "17.1": {
+        "block": "p466-b01",
+        "chapter": "17"
+      },
+      "2.1": {
+        "block": "p28-t04",
+        "chapter": "02"
+      },
+      "2.2": {
+        "block": "p29-t02",
+        "chapter": "02"
+      },
+      "2.3": {
+        "block": "p34-t05",
+        "chapter": "02"
+      },
+      "2.4": {
+        "block": "p36-t03",
+        "chapter": "02"
+      },
+      "2.5": {
+        "block": "p38-t01",
+        "chapter": "02"
+      },
+      "2.6": {
+        "block": "p42-t04",
+        "chapter": "02"
+      },
+      "3.1": {
+        "block": "p48-b01",
+        "chapter": "03"
+      },
+      "3.2": {
+        "block": "p60-b03",
+        "chapter": "03"
+      },
+      "3.3": {
+        "block": "p61-b04",
+        "chapter": "03"
+      },
+      "3.4": {
+        "block": "p64-b04",
+        "chapter": "03"
+      },
+      "3.5": {
+        "block": "p65-b03",
+        "chapter": "03"
+      },
+      "4.1": {
+        "block": "p77-b01",
+        "chapter": "04"
+      },
+      "4.2": {
+        "block": "p81-b02",
+        "chapter": "04"
+      },
+      "4.3": {
+        "block": "p84-b02",
+        "chapter": "04"
+      },
+      "5.1": {
+        "block": "p94-b01",
+        "chapter": "05"
+      },
+      "5.2": {
+        "block": "p100-b01",
+        "chapter": "05"
+      },
+      "5.3": {
+        "block": "p106-b02",
+        "chapter": "05"
+      },
+      "5.4": {
+        "block": "p107-b01",
+        "chapter": "05"
+      },
+      "5.5": {
+        "block": "p112-b01",
+        "chapter": "05"
+      },
+      "6.1": {
+        "block": "p123-b01",
+        "chapter": "06"
+      },
+      "6.2": {
+        "block": "p127-b01",
+        "chapter": "06"
+      },
+      "6.3": {
+        "block": "p133-b06",
+        "chapter": "06"
+      },
+      "6.4": {
+        "block": "p134-b01",
+        "chapter": "06"
+      },
+      "6.5": {
+        "block": "p135-b01",
+        "chapter": "06"
+      },
+      "7.1": {
+        "block": "p142-b03",
+        "chapter": "07"
+      },
+      "7.2": {
+        "block": "p145-b02",
+        "chapter": "07"
+      },
+      "7.3": {
+        "block": "p146-b06",
+        "chapter": "07"
+      },
+      "7.4": {
+        "block": "p147-b03",
+        "chapter": "07"
+      },
+      "7.5": {
+        "block": "p155-b01",
+        "chapter": "07"
+      },
+      "8.1": {
+        "block": "p163-b03",
+        "chapter": "08"
+      },
+      "8.10": {
+        "block": "p186-b03",
+        "chapter": "08"
+      },
+      "8.11": {
+        "block": "p190-b01",
+        "chapter": "08"
+      },
+      "8.2": {
+        "block": "p165-b01",
+        "chapter": "08"
+      },
+      "8.3": {
+        "block": "p165-b03",
+        "chapter": "08"
+      },
+      "8.4": {
+        "block": "p167-b01",
+        "chapter": "08"
+      },
+      "8.5": {
+        "block": "p167-b03",
+        "chapter": "08"
+      },
+      "8.6": {
+        "block": "p172-b04",
+        "chapter": "08"
+      },
+      "8.7": {
+        "block": "p174-b01",
+        "chapter": "08"
+      },
+      "8.8": {
+        "block": "p176-b02",
+        "chapter": "08"
+      },
+      "8.9": {
+        "block": "p183-b03",
+        "chapter": "08"
+      },
+      "9.1": {
+        "block": "p204-b01",
+        "chapter": "09"
+      },
+      "9.10": {
+        "block": "p218-b01",
+        "chapter": "09"
+      },
+      "9.11": {
+        "block": "p219-b01",
+        "chapter": "09"
+      },
+      "9.12": {
+        "block": "p220-b02",
+        "chapter": "09"
+      },
+      "9.13": {
+        "block": "p221-b08",
+        "chapter": "09"
+      },
+      "9.14": {
+        "block": "p224-b01",
+        "chapter": "09"
+      },
+      "9.15": {
+        "block": "p227-b04",
+        "chapter": "09"
+      },
+      "9.2": {
+        "block": "p208-b05",
+        "chapter": "09"
+      },
+      "9.3": {
+        "block": "p212-b05",
+        "chapter": "09"
+      },
+      "9.4": {
+        "block": "p213-b02",
+        "chapter": "09"
+      },
+      "9.5": {
+        "block": "p214-b04",
+        "chapter": "09"
+      },
+      "9.6": {
+        "block": "p215-b03",
+        "chapter": "09"
+      },
+      "9.7": {
+        "block": "p215-b05",
+        "chapter": "09"
+      },
+      "9.8": {
+        "block": "p216-b03",
+        "chapter": "09"
+      },
+      "9.9": {
+        "block": "p217-b04",
+        "chapter": "09"
+      }
+    },
+    "formula": {
+      "10.1": {
+        "block": "p244-b01",
+        "chapter": "10"
+      },
+      "10.10": {
+        "block": "p250-b11",
+        "chapter": "10"
+      },
+      "10.11": {
+        "block": "p250-b13",
+        "chapter": "10"
+      },
+      "10.12": {
+        "block": "p250-b16",
+        "chapter": "10"
+      },
+      "10.13": {
+        "block": "p251-b18",
+        "chapter": "10"
+      },
+      "10.14": {
+        "block": "p255-b03",
+        "chapter": "10"
+      },
+      "10.15": {
+        "block": "p255-b05",
+        "chapter": "10"
+      },
+      "10.2": {
+        "block": "p244-b03",
+        "chapter": "10"
+      },
+      "10.3": {
+        "block": "p246-b02",
+        "chapter": "10"
+      },
+      "10.4": {
+        "block": "p247-b03",
+        "chapter": "10"
+      },
+      "10.5": {
+        "block": "p247-b05",
+        "chapter": "10"
+      },
+      "10.6": {
+        "block": "p249-b04",
+        "chapter": "10"
+      },
+      "10.7": {
+        "block": "p249-b05",
+        "chapter": "10"
+      },
+      "10.8": {
+        "block": "p249-b10",
+        "chapter": "10"
+      },
+      "10.9": {
+        "block": "p250-b02",
+        "chapter": "10"
+      },
+      "11.1": {
+        "block": "p258-b05",
+        "chapter": "11"
+      },
+      "11.10": {
+        "block": "p263-b05",
+        "chapter": "11"
+      },
+      "11.11": {
+        "block": "p266-b07",
+        "chapter": "11"
+      },
+      "11.12": {
+        "block": "p267-b02",
+        "chapter": "11"
+      },
+      "11.13": {
+        "block": "p268-b04",
+        "chapter": "11"
+      },
+      "11.14": {
+        "block": "p268-b06",
+        "chapter": "11"
+      },
+      "11.15": {
+        "block": "p268-b08",
+        "chapter": "11"
+      },
+      "11.16": {
+        "block": "p267-b05",
+        "chapter": "11"
+      },
+      "11.17": {
+        "block": "p268-b11",
+        "chapter": "11"
+      },
+      "11.18": {
+        "block": "p268-b12",
+        "chapter": "11"
+      },
+      "11.19": {
+        "block": "p268-b15",
+        "chapter": "11"
+      },
+      "11.2": {
+        "block": "p258-b07",
+        "chapter": "11"
+      },
+      "11.20": {
+        "block": "p269-b01",
+        "chapter": "11"
+      },
+      "11.21": {
+        "block": "p269-b04",
+        "chapter": "11"
+      },
+      "11.22": {
+        "block": "p269-b08",
+        "chapter": "11"
+      },
+      "11.23": {
+        "block": "p270-b07",
+        "chapter": "11"
+      },
+      "11.24": {
+        "block": "p275-b04",
+        "chapter": "11"
+      },
+      "11.25": {
+        "block": "p278-b04",
+        "chapter": "11"
+      },
+      "11.26": {
+        "block": "p278-b06",
+        "chapter": "11"
+      },
+      "11.27": {
+        "block": "p279-b02",
+        "chapter": "11"
+      },
+      "11.28": {
+        "block": "p279-b06",
+        "chapter": "11"
+      },
+      "11.29": {
+        "block": "p279-b11",
+        "chapter": "11"
+      },
+      "11.3": {
+        "block": "p258-b09",
+        "chapter": "11"
+      },
+      "11.4": {
+        "block": "p258-b10",
+        "chapter": "11"
+      },
+      "11.5": {
+        "block": "p259-b02",
+        "chapter": "11"
+      },
+      "11.6": {
+        "block": "p259-b07",
+        "chapter": "11"
+      },
+      "11.7": {
+        "block": "p259-b13",
+        "chapter": "11"
+      },
+      "11.8": {
+        "block": "p259-b14",
+        "chapter": "11"
+      },
+      "11.9": {
+        "block": "p262-b02",
+        "chapter": "11"
+      },
+      "12.1": {
+        "block": "p288-b05",
+        "chapter": "12"
+      },
+      "12.10": {
+        "block": "p297-b04",
+        "chapter": "12"
+      },
+      "12.11": {
+        "block": "p300-b03",
+        "chapter": "12"
+      },
+      "12.12": {
+        "block": "p301-b02",
+        "chapter": "12"
+      },
+      "12.13": {
+        "block": "p301-b07",
+        "chapter": "12"
+      },
+      "12.14": {
+        "block": "p302-b03",
+        "chapter": "12"
+      },
+      "12.15": {
+        "block": "p303-b06",
+        "chapter": "12"
+      },
+      "12.16": {
+        "block": "p303-b11",
+        "chapter": "12"
+      },
+      "12.17": {
+        "block": "p308-b01",
+        "chapter": "12"
+      },
+      "12.18": {
+        "block": "p308-b04",
+        "chapter": "12"
+      },
+      "12.19": {
+        "block": "p308-b06",
+        "chapter": "12"
+      },
+      "12.2": {
+        "block": "p289-b05",
+        "chapter": "12"
+      },
+      "12.20": {
+        "block": "p308-b08",
+        "chapter": "12"
+      },
+      "12.21": {
+        "block": "p308-b10",
+        "chapter": "12"
+      },
+      "12.22": {
+        "block": "p309-b05",
+        "chapter": "12"
+      },
+      "12.23": {
+        "block": "p309-b07",
+        "chapter": "12"
+      },
+      "12.24": {
+        "block": "p309-b09",
+        "chapter": "12"
+      },
+      "12.25": {
+        "block": "p310-b06",
+        "chapter": "12"
+      },
+      "12.26": {
+        "block": "p311-b01",
+        "chapter": "12"
+      },
+      "12.27": {
+        "block": "p311-b03",
+        "chapter": "12"
+      },
+      "12.28": {
+        "block": "p311-b05",
+        "chapter": "12"
+      },
+      "12.29": {
+        "block": "p311-b10",
+        "chapter": "12"
+      },
+      "12.3": {
+        "block": "p290-b03",
+        "chapter": "12"
+      },
+      "12.30": {
+        "block": "p315-b02",
+        "chapter": "12"
+      },
+      "12.4": {
+        "block": "p290-b08",
+        "chapter": "12"
+      },
+      "12.5": {
+        "block": "p292-b07",
+        "chapter": "12"
+      },
+      "12.6": {
+        "block": "p293-b02",
+        "chapter": "12"
+      },
+      "12.7": {
+        "block": "p293-b04",
+        "chapter": "12"
+      },
+      "12.8": {
+        "block": "p295-b03",
+        "chapter": "12"
+      },
+      "12.9": {
+        "block": "p296-b03",
+        "chapter": "12"
+      },
+      "13.1": {
+        "block": "p321-b05",
+        "chapter": "13"
+      },
+      "13.10": {
+        "block": "p329-b07",
+        "chapter": "13"
+      },
+      "13.11": {
+        "block": "p329-b11",
+        "chapter": "13"
+      },
+      "13.12": {
+        "block": "p331-b05",
+        "chapter": "13"
+      },
+      "13.13": {
+        "block": "p331-b06",
+        "chapter": "13"
+      },
+      "13.14": {
+        "block": "p331-b07",
+        "chapter": "13"
+      },
+      "13.15": {
+        "block": "p333-b03",
+        "chapter": "13"
+      },
+      "13.16": {
+        "block": "p333-b05",
+        "chapter": "13"
+      },
+      "13.17": {
+        "block": "p334-b02",
+        "chapter": "13"
+      },
+      "13.18": {
+        "block": "p335-b06",
+        "chapter": "13"
+      },
+      "13.19": {
+        "block": "p335-b10",
+        "chapter": "13"
+      },
+      "13.2": {
+        "block": "p322-b04",
+        "chapter": "13"
+      },
+      "13.20": {
+        "block": "p336-b02",
+        "chapter": "13"
+      },
+      "13.3": {
+        "block": "p322-b07",
+        "chapter": "13"
+      },
+      "13.4": {
+        "block": "p324-b08",
+        "chapter": "13"
+      },
+      "13.5": {
+        "block": "p326-b02",
+        "chapter": "13"
+      },
+      "13.6": {
+        "block": "p326-b06",
+        "chapter": "13"
+      },
+      "13.7": {
+        "block": "p326-b08",
+        "chapter": "13"
+      },
+      "13.8": {
+        "block": "p327-b04",
+        "chapter": "13"
+      },
+      "13.9": {
+        "block": "p329-b03",
+        "chapter": "13"
+      },
+      "14.1": {
+        "block": "p348-b01",
+        "chapter": "14"
+      },
+      "14.2": {
+        "block": "p348-b04",
+        "chapter": "14"
+      },
+      "14.3": {
+        "block": "p348-b06",
+        "chapter": "14"
+      },
+      "14.4": {
+        "block": "p350-b01",
+        "chapter": "14"
+      },
+      "14.5": {
+        "block": "p350-b03",
+        "chapter": "14"
+      },
+      "14.6": {
+        "block": "p350-b06",
+        "chapter": "14"
+      },
+      "15.1": {
+        "block": "p399-b04",
+        "chapter": "15"
+      },
+      "15.2": {
+        "block": "p400-b01",
+        "chapter": "15"
+      },
+      "15.3": {
+        "block": "p400-b03",
+        "chapter": "15"
+      },
+      "16.1": {
+        "block": "p424-b02",
+        "chapter": "16"
+      },
+      "16.2": {
+        "block": "p430-b04",
+        "chapter": "16"
+      },
+      "16.3": {
+        "block": "p439-b05",
+        "chapter": "16"
+      },
+      "16.4": {
+        "block": "p444-b05",
+        "chapter": "16"
+      },
+      "17.1": {
+        "block": "p459-b06",
+        "chapter": "17"
+      },
+      "17.10": {
+        "block": "p467-b04",
+        "chapter": "17"
+      },
+      "17.11": {
+        "block": "p470-b02",
+        "chapter": "17"
+      },
+      "17.2": {
+        "block": "p462-b03",
+        "chapter": "17"
+      },
+      "17.3": {
+        "block": "p462-b05",
+        "chapter": "17"
+      },
+      "17.4": {
+        "block": "p463-b02",
+        "chapter": "17"
+      },
+      "17.5": {
+        "block": "p465-b03",
+        "chapter": "17"
+      },
+      "17.6": {
+        "block": "p465-b05",
+        "chapter": "17"
+      },
+      "17.7": {
+        "block": "p465-b08",
+        "chapter": "17"
+      },
+      "17.8": {
+        "block": "p466-b03",
+        "chapter": "17"
+      },
+      "17.9": {
+        "block": "p467-b02",
+        "chapter": "17"
+      },
+      "2.1": {
+        "block": "p27-t04",
+        "chapter": "02"
+      },
+      "2.10": {
+        "block": "p35-t09",
+        "chapter": "02"
+      },
+      "2.11": {
+        "block": "p37-t03",
+        "chapter": "02"
+      },
+      "2.12": {
+        "block": "p37-t07",
+        "chapter": "02"
+      },
+      "2.13": {
+        "block": "p38-t04",
+        "chapter": "02"
+      },
+      "2.2": {
+        "block": "p27-t07",
+        "chapter": "02"
+      },
+      "2.3": {
+        "block": "p31-t10",
+        "chapter": "02"
+      },
+      "2.4": {
+        "block": "p31-t13",
+        "chapter": "02"
+      },
+      "2.5": {
+        "block": "p32-t06",
+        "chapter": "02"
+      },
+      "2.6": {
+        "block": "p32-t13",
+        "chapter": "02"
+      },
+      "2.7": {
+        "block": "p33-t03",
+        "chapter": "02"
+      },
+      "2.8": {
+        "block": "p35-t03",
+        "chapter": "02"
+      },
+      "2.9": {
+        "block": "p35-t05",
+        "chapter": "02"
+      },
+      "3.1": {
+        "block": "p48-b03",
+        "chapter": "03"
+      },
+      "3.10": {
+        "block": "p55-b09",
+        "chapter": "03"
+      },
+      "3.11": {
+        "block": "p57-b07",
+        "chapter": "03"
+      },
+      "3.12": {
+        "block": "p58-b06",
+        "chapter": "03"
+      },
+      "3.13": {
+        "block": "p58-b09",
+        "chapter": "03"
+      },
+      "3.14": {
+        "block": "p59-b02",
+        "chapter": "03"
+      },
+      "3.15": {
+        "block": "p62-b09",
+        "chapter": "03"
+      },
+      "3.16": {
+        "block": "p63-b02",
+        "chapter": "03"
+      },
+      "3.17": {
+        "block": "p63-b04",
+        "chapter": "03"
+      },
+      "3.18": {
+        "block": "p63-b07",
+        "chapter": "03"
+      },
+      "3.19": {
+        "block": "p63-b08",
+        "chapter": "03"
+      },
+      "3.2": {
+        "block": "p48-b05",
+        "chapter": "03"
+      },
+      "3.20": {
+        "block": "p64-b02",
+        "chapter": "03"
+      },
+      "3.3": {
+        "block": "p49-b02",
+        "chapter": "03"
+      },
+      "3.4": {
+        "block": "p49-b05",
+        "chapter": "03"
+      },
+      "3.5": {
+        "block": "p49-b07",
+        "chapter": "03"
+      },
+      "3.6": {
+        "block": "p49-b09",
+        "chapter": "03"
+      },
+      "3.7": {
+        "block": "p54-b03",
+        "chapter": "03"
+      },
+      "3.8": {
+        "block": "p55-b02",
+        "chapter": "03"
+      },
+      "3.9": {
+        "block": "p55-b06",
+        "chapter": "03"
+      },
+      "4.1": {
+        "block": "p73-b06",
+        "chapter": "04"
+      },
+      "4.10": {
+        "block": "p83-b01",
+        "chapter": "04"
+      },
+      "4.2": {
+        "block": "p73-b08",
+        "chapter": "04"
+      },
+      "4.3": {
+        "block": "p74-b04",
+        "chapter": "04"
+      },
+      "4.4": {
+        "block": "p74-b05",
+        "chapter": "04"
+      },
+      "4.5": {
+        "block": "p74-b08",
+        "chapter": "04"
+      },
+      "4.6": {
+        "block": "p78-b02",
+        "chapter": "04"
+      },
+      "4.7": {
+        "block": "p78-b05",
+        "chapter": "04"
+      },
+      "4.8": {
+        "block": "p78-b07",
+        "chapter": "04"
+      },
+      "4.9": {
+        "block": "p79-b02",
+        "chapter": "04"
+      },
+      "5.1": {
+        "block": "p97-b09",
+        "chapter": "05"
+      },
+      "5.10": {
+        "block": "p113-b08",
+        "chapter": "05"
+      },
+      "5.11": {
+        "block": "p114-b03",
+        "chapter": "05"
+      },
+      "5.12": {
+        "block": "p114-b05",
+        "chapter": "05"
+      },
+      "5.13": {
+        "block": "p114-b07",
+        "chapter": "05"
+      },
+      "5.14": {
+        "block": "p114-b09",
+        "chapter": "05"
+      },
+      "5.15": {
+        "block": "p115-b02",
+        "chapter": "05"
+      },
+      "5.2": {
+        "block": "p101-b05",
+        "chapter": "05"
+      },
+      "5.3": {
+        "block": "p104-b04",
+        "chapter": "05"
+      },
+      "5.4": {
+        "block": "p104-b07",
+        "chapter": "05"
+      },
+      "5.5": {
+        "block": "p104-b09",
+        "chapter": "05"
+      },
+      "5.6": {
+        "block": "p105-b03",
+        "chapter": "05"
+      },
+      "5.7": {
+        "block": "p109-b05",
+        "chapter": "05"
+      },
+      "5.8": {
+        "block": "p109-b07",
+        "chapter": "05"
+      },
+      "5.9": {
+        "block": "p113-b06",
+        "chapter": "05"
+      },
+      "6.1": {
+        "block": "p119-b07",
+        "chapter": "06"
+      },
+      "6.10": {
+        "block": "p136-b01",
+        "chapter": "06"
+      },
+      "6.2": {
+        "block": "p120-b02",
+        "chapter": "06"
+      },
+      "6.3": {
+        "block": "p120-b07",
+        "chapter": "06"
+      },
+      "6.4": {
+        "block": "p120-b10",
+        "chapter": "06"
+      },
+      "6.5": {
+        "block": "p121-b04",
+        "chapter": "06"
+      },
+      "6.6": {
+        "block": "p121-b12",
+        "chapter": "06"
+      },
+      "6.7": {
+        "block": "p129-b06",
+        "chapter": "06"
+      },
+      "6.8": {
+        "block": "p131-b05",
+        "chapter": "06"
+      },
+      "6.9": {
+        "block": "p133-b03",
+        "chapter": "06"
+      },
+      "7.1": {
+        "block": "p143-b07",
+        "chapter": "07"
+      },
+      "7.10": {
+        "block": "p148-b12",
+        "chapter": "07"
+      },
+      "7.11": {
+        "block": "p149-b02",
+        "chapter": "07"
+      },
+      "7.12": {
+        "block": "p150-b04",
+        "chapter": "07"
+      },
+      "7.13": {
+        "block": "p150-b06",
+        "chapter": "07"
+      },
+      "7.14": {
+        "block": "p151-b03",
+        "chapter": "07"
+      },
+      "7.15": {
+        "block": "p153-b03",
+        "chapter": "07"
+      },
+      "7.16": {
+        "block": "p153-b07",
+        "chapter": "07"
+      },
+      "7.17": {
+        "block": "p155-b06",
+        "chapter": "07"
+      },
+      "7.2": {
+        "block": "p143-b10",
+        "chapter": "07"
+      },
+      "7.3": {
+        "block": "p144-b04",
+        "chapter": "07"
+      },
+      "7.4": {
+        "block": "p146-b02",
+        "chapter": "07"
+      },
+      "7.5": {
+        "block": "p146-b04",
+        "chapter": "07"
+      },
+      "7.6": {
+        "block": "p148-b02",
+        "chapter": "07"
+      },
+      "7.7": {
+        "block": "p148-b04",
+        "chapter": "07"
+      },
+      "7.8": {
+        "block": "p148-b06",
+        "chapter": "07"
+      },
+      "7.9": {
+        "block": "p148-b10",
+        "chapter": "07"
+      },
+      "8.1": {
+        "block": "p173-b03",
+        "chapter": "08"
+      },
+      "8.2": {
+        "block": "p173-b05",
+        "chapter": "08"
+      },
+      "9.1": {
+        "block": "p199-b03",
+        "chapter": "09"
+      },
+      "9.10": {
+        "block": "p205-b13",
+        "chapter": "09"
+      },
+      "9.11": {
+        "block": "p206-b02",
+        "chapter": "09"
+      },
+      "9.12": {
+        "block": "p206-b04",
+        "chapter": "09"
+      },
+      "9.13": {
+        "block": "p206-b09",
+        "chapter": "09"
+      },
+      "9.14": {
+        "block": "p207-b07",
+        "chapter": "09"
+      },
+      "9.15": {
+        "block": "p209-b06",
+        "chapter": "09"
+      },
+      "9.16": {
+        "block": "p209-b08",
+        "chapter": "09"
+      },
+      "9.17": {
+        "block": "p211-b03",
+        "chapter": "09"
+      },
+      "9.18": {
+        "block": "p212-b09",
+        "chapter": "09"
+      },
+      "9.19": {
+        "block": "p223-b02",
+        "chapter": "09"
+      },
+      "9.2": {
+        "block": "p199-b08",
+        "chapter": "09"
+      },
+      "9.20": {
+        "block": "p228-b11",
+        "chapter": "09"
+      },
+      "9.21": {
+        "block": "p229-b02",
+        "chapter": "09"
+      },
+      "9.22": {
+        "block": "p229-b06",
+        "chapter": "09"
+      },
+      "9.23": {
+        "block": "p232-b07",
+        "chapter": "09"
+      },
+      "9.24": {
+        "block": "p233-b04",
+        "chapter": "09"
+      },
+      "9.25": {
+        "block": "p234-b05",
+        "chapter": "09"
+      },
+      "9.26": {
+        "block": "p234-b07",
+        "chapter": "09"
+      },
+      "9.3": {
+        "block": "p199-b10",
+        "chapter": "09"
+      },
+      "9.4": {
+        "block": "p201-b02",
+        "chapter": "09"
+      },
+      "9.5": {
+        "block": "p201-b03",
+        "chapter": "09"
+      },
+      "9.6": {
+        "block": "p201-b05",
+        "chapter": "09"
+      },
+      "9.7": {
+        "block": "p202-b01",
+        "chapter": "09"
+      },
+      "9.8": {
+        "block": "p205-b01",
+        "chapter": "09"
+      },
+      "9.9": {
+        "block": "p205-b11",
+        "chapter": "09"
+      }
+    },
+    "part": {
+      "一": {
+        "block": "p23-t01",
+        "chapter": "I"
+      },
+      "三": {
+        "block": "p339-t01",
+        "chapter": "III"
+      },
+      "二": {
+        "block": "p195-t01",
+        "chapter": "II"
+      }
+    },
+    "section": {
+      "1.1": {
+        "block": "p01-t05",
+        "chapter": "01"
+      },
+      "1.2": {
+        "block": "p04-t03",
+        "chapter": "01"
+      },
+      "1.3": {
+        "block": "p06-t01",
+        "chapter": "01"
+      },
+      "1.4": {
+        "block": "p07-t02",
+        "chapter": "01"
+      },
+      "1.5": {
+        "block": "p08-t01",
+        "chapter": "01"
+      },
+      "1.6": {
+        "block": "p13-t03",
+        "chapter": "01"
+      },
+      "1.7": {
+        "block": "p13-t07",
+        "chapter": "01"
+      },
+      "10.1": {
+        "block": "p243-b05",
+        "chapter": "10"
+      },
+      "10.2": {
+        "block": "p247-b01",
+        "chapter": "10"
+      },
+      "10.3": {
+        "block": "p249-b01",
+        "chapter": "10"
+      },
+      "10.4": {
+        "block": "p253-b01",
+        "chapter": "10"
+      },
+      "10.5": {
+        "block": "p255-b01",
+        "chapter": "10"
+      },
+      "10.6": {
+        "block": "p256-b01",
+        "chapter": "10"
+      },
+      "11.1": {
+        "block": "p258-b02",
+        "chapter": "11"
+      },
+      "11.10": {
+        "block": "p284-b04",
+        "chapter": "11"
+      },
+      "11.2": {
+        "block": "p260-b01",
+        "chapter": "11"
+      },
+      "11.3": {
+        "block": "p264-b03",
+        "chapter": "11"
+      },
+      "11.4": {
+        "block": "p266-b01",
+        "chapter": "11"
+      },
+      "11.5": {
+        "block": "p269-b10",
+        "chapter": "11"
+      },
+      "11.6": {
+        "block": "p274-b02",
+        "chapter": "11"
+      },
+      "11.7": {
+        "block": "p278-b01",
+        "chapter": "11"
+      },
+      "11.8": {
+        "block": "p281-b03",
+        "chapter": "11"
+      },
+      "11.9": {
+        "block": "p283-b02",
+        "chapter": "11"
+      },
+      "12.1": {
+        "block": "p288-b03",
+        "chapter": "12"
+      },
+      "12.10": {
+        "block": "p312-b04",
+        "chapter": "12"
+      },
+      "12.11": {
+        "block": "p314-b04",
+        "chapter": "12"
+      },
+      "12.12": {
+        "block": "p316-b05",
+        "chapter": "12"
+      },
+      "12.13": {
+        "block": "p317-b01",
+        "chapter": "12"
+      },
+      "12.2": {
+        "block": "p292-b02",
+        "chapter": "12"
+      },
+      "12.3": {
+        "block": "p295-b07",
+        "chapter": "12"
+      },
+      "12.4": {
+        "block": "p297-b08",
+        "chapter": "12"
+      },
+      "12.5": {
+        "block": "p299-b02",
+        "chapter": "12"
+      },
+      "12.6": {
+        "block": "p301-b04",
+        "chapter": "12"
+      },
+      "12.7": {
+        "block": "p303-b02",
+        "chapter": "12"
+      },
+      "12.8": {
+        "block": "p307-b28",
+        "chapter": "12"
+      },
+      "12.9": {
+        "block": "p309-b02",
+        "chapter": "12"
+      },
+      "13.1": {
+        "block": "p322-b01",
+        "chapter": "13"
+      },
+      "13.2": {
+        "block": "p324-b04",
+        "chapter": "13"
+      },
+      "13.3": {
+        "block": "p326-b04",
+        "chapter": "13"
+      },
+      "13.4": {
+        "block": "p329-b05",
+        "chapter": "13"
+      },
+      "13.5": {
+        "block": "p331-b02",
+        "chapter": "13"
+      },
+      "13.6": {
+        "block": "p333-b01",
+        "chapter": "13"
+      },
+      "13.7": {
+        "block": "p335-b03",
+        "chapter": "13"
+      },
+      "13.8": {
+        "block": "p337-b01",
+        "chapter": "13"
+      },
+      "14.1": {
+        "block": "p342-b02",
+        "chapter": "14"
+      },
+      "14.2": {
+        "block": "p343-b03",
+        "chapter": "14"
+      },
+      "14.2.1": {
+        "block": "p345-b01",
+        "chapter": "14"
+      },
+      "14.2.2": {
+        "block": "p346-b03",
+        "chapter": "14"
+      },
+      "14.2.3": {
+        "block": "p349-b01",
+        "chapter": "14"
+      },
+      "14.2.4": {
+        "block": "p350-b09",
+        "chapter": "14"
+      },
+      "14.3": {
+        "block": "p357-b05",
+        "chapter": "14"
+      },
+      "14.4": {
+        "block": "p361-b05",
+        "chapter": "14"
+      },
+      "14.5": {
+        "block": "p363-b01",
+        "chapter": "14"
+      },
+      "14.6": {
+        "block": "p364-b03",
+        "chapter": "14"
+      },
+      "14.7": {
+        "block": "p368-b03",
+        "chapter": "14"
+      },
+      "15.1": {
+        "block": "p378-b03",
+        "chapter": "15"
+      },
+      "15.10": {
+        "block": "p404-b02",
+        "chapter": "15"
+      },
+      "15.11": {
+        "block": "p407-b03",
+        "chapter": "15"
+      },
+      "15.12": {
+        "block": "p409-b03",
+        "chapter": "15"
+      },
+      "15.13": {
+        "block": "p410-b02",
+        "chapter": "15"
+      },
+      "15.2": {
+        "block": "p380-b01",
+        "chapter": "15"
+      },
+      "15.3": {
+        "block": "p381-b04",
+        "chapter": "15"
+      },
+      "15.4": {
+        "block": "p383-b03",
+        "chapter": "15"
+      },
+      "15.5": {
+        "block": "p387-b01",
+        "chapter": "15"
+      },
+      "15.6": {
+        "block": "p390-b02",
+        "chapter": "15"
+      },
+      "15.7": {
+        "block": "p395-b01",
+        "chapter": "15"
+      },
+      "15.8": {
+        "block": "p398-b02",
+        "chapter": "15"
+      },
+      "15.9": {
+        "block": "p402-b03",
+        "chapter": "15"
+      },
+      "16.1": {
+        "block": "p421-b04",
+        "chapter": "16"
+      },
+      "16.2": {
+        "block": "p426-b03",
+        "chapter": "16"
+      },
+      "16.3": {
+        "block": "p429-b01",
+        "chapter": "16"
+      },
+      "16.4": {
+        "block": "p432-b01",
+        "chapter": "16"
+      },
+      "16.5": {
+        "block": "p436-b02",
+        "chapter": "16"
+      },
+      "16.6": {
+        "block": "p441-b03",
+        "chapter": "16"
+      },
+      "16.6.1": {
+        "block": "p444-b01",
+        "chapter": "16"
+      },
+      "16.6.2": {
+        "block": "p447-b02",
+        "chapter": "16"
+      },
+      "16.7": {
+        "block": "p450-b03",
+        "chapter": "16"
+      },
+      "16.8": {
+        "block": "p453-b03",
+        "chapter": "16"
+      },
+      "17.1": {
+        "block": "p459-b04",
+        "chapter": "17"
+      },
+      "17.2": {
+        "block": "p461-b02",
+        "chapter": "17"
+      },
+      "17.3": {
+        "block": "p464-b02",
+        "chapter": "17"
+      },
+      "17.4": {
+        "block": "p469-b01",
+        "chapter": "17"
+      },
+      "17.5": {
+        "block": "p472-b01",
+        "chapter": "17"
+      },
+      "17.6": {
+        "block": "p475-b01",
+        "chapter": "17"
+      },
+      "2.1": {
+        "block": "p25-t06",
+        "chapter": "02"
+      },
+      "2.10": {
+        "block": "p42-t01",
+        "chapter": "02"
+      },
+      "2.2": {
+        "block": "p27-t02",
+        "chapter": "02"
+      },
+      "2.3": {
+        "block": "p28-t02",
+        "chapter": "02"
+      },
+      "2.4": {
+        "block": "p30-t04",
+        "chapter": "02"
+      },
+      "2.5": {
+        "block": "p32-t04",
+        "chapter": "02"
+      },
+      "2.6": {
+        "block": "p34-t01",
+        "chapter": "02"
+      },
+      "2.7": {
+        "block": "p35-t07",
+        "chapter": "02"
+      },
+      "2.8": {
+        "block": "p37-t01",
+        "chapter": "02"
+      },
+      "2.9": {
+        "block": "p41-t01",
+        "chapter": "02"
+      },
+      "3.1": {
+        "block": "p47-b05",
+        "chapter": "03"
+      },
+      "3.2": {
+        "block": "p53-b02",
+        "chapter": "03"
+      },
+      "3.3": {
+        "block": "p54-b01",
+        "chapter": "03"
+      },
+      "3.4": {
+        "block": "p57-b01",
+        "chapter": "03"
+      },
+      "3.5": {
+        "block": "p58-b01",
+        "chapter": "03"
+      },
+      "3.6": {
+        "block": "p62-b07",
+        "chapter": "03"
+      },
+      "3.7": {
+        "block": "p67-b08",
+        "chapter": "03"
+      },
+      "3.8": {
+        "block": "p68-b01",
+        "chapter": "03"
+      },
+      "4.1": {
+        "block": "p74-b02",
+        "chapter": "04"
+      },
+      "4.2": {
+        "block": "p76-b07",
+        "chapter": "04"
+      },
+      "4.3": {
+        "block": "p80-b02",
+        "chapter": "04"
+      },
+      "4.4": {
+        "block": "p82-b06",
+        "chapter": "04"
+      },
+      "4.5": {
+        "block": "p85-b01",
+        "chapter": "04"
+      },
+      "4.6": {
+        "block": "p86-b02",
+        "chapter": "04"
+      },
+      "4.7": {
+        "block": "p87-b02",
+        "chapter": "04"
+      },
+      "4.8": {
+        "block": "p88-b02",
+        "chapter": "04"
+      },
+      "5.1": {
+        "block": "p92-b02",
+        "chapter": "05"
+      },
+      "5.10": {
+        "block": "p115-b07",
+        "chapter": "05"
+      },
+      "5.2": {
+        "block": "p96-b01",
+        "chapter": "05"
+      },
+      "5.3": {
+        "block": "p97-b02",
+        "chapter": "05"
+      },
+      "5.4": {
+        "block": "p100-b02",
+        "chapter": "05"
+      },
+      "5.5": {
+        "block": "p103-b01",
+        "chapter": "05"
+      },
+      "5.6": {
+        "block": "p109-b01",
+        "chapter": "05"
+      },
+      "5.7": {
+        "block": "p110-b03",
+        "chapter": "05"
+      },
+      "5.8": {
+        "block": "p112-b02",
+        "chapter": "05"
+      },
+      "5.9": {
+        "block": "p114-b01",
+        "chapter": "05"
+      },
+      "6.1": {
+        "block": "p119-b05",
+        "chapter": "06"
+      },
+      "6.2": {
+        "block": "p124-b01",
+        "chapter": "06"
+      },
+      "6.3": {
+        "block": "p126-b05",
+        "chapter": "06"
+      },
+      "6.4": {
+        "block": "p129-b01",
+        "chapter": "06"
+      },
+      "6.5": {
+        "block": "p131-b03",
+        "chapter": "06"
+      },
+      "6.6": {
+        "block": "p133-b01",
+        "chapter": "06"
+      },
+      "6.7": {
+        "block": "p134-b04",
+        "chapter": "06"
+      },
+      "6.8": {
+        "block": "p136-b06",
+        "chapter": "06"
+      },
+      "6.9": {
+        "block": "p138-b01",
+        "chapter": "06"
+      },
+      "7.1": {
+        "block": "p142-b01",
+        "chapter": "07"
+      },
+      "7.2": {
+        "block": "p145-b04",
+        "chapter": "07"
+      },
+      "7.3": {
+        "block": "p148-b08",
+        "chapter": "07"
+      },
+      "7.4": {
+        "block": "p150-b02",
+        "chapter": "07"
+      },
+      "7.5": {
+        "block": "p152-b01",
+        "chapter": "07"
+      },
+      "7.6": {
+        "block": "p154-b03",
+        "chapter": "07"
+      },
+      "7.7": {
+        "block": "p157-b01",
+        "chapter": "07"
+      },
+      "8.1": {
+        "block": "p159-b04",
+        "chapter": "08"
+      },
+      "8.10": {
+        "block": "p183-b04",
+        "chapter": "08"
+      },
+      "8.11": {
+        "block": "p185-b03",
+        "chapter": "08"
+      },
+      "8.12": {
+        "block": "p188-b03",
+        "chapter": "08"
+      },
+      "8.13": {
+        "block": "p189-b03",
+        "chapter": "08"
+      },
+      "8.2": {
+        "block": "p161-b08",
+        "chapter": "08"
+      },
+      "8.3": {
+        "block": "p166-b03",
+        "chapter": "08"
+      },
+      "8.4": {
+        "block": "p168-b07",
+        "chapter": "08"
+      },
+      "8.5": {
+        "block": "p172-b01",
+        "chapter": "08"
+      },
+      "8.6": {
+        "block": "p174-b05",
+        "chapter": "08"
+      },
+      "8.7": {
+        "block": "p177-b04",
+        "chapter": "08"
+      },
+      "8.8": {
+        "block": "p180-b05",
+        "chapter": "08"
+      },
+      "8.9": {
+        "block": "p181-b05",
+        "chapter": "08"
+      },
+      "9.1": {
+        "block": "p198-b01",
+        "chapter": "09"
+      },
+      "9.10": {
+        "block": "p232-b03",
+        "chapter": "09"
+      },
+      "9.11": {
+        "block": "p234-b01",
+        "chapter": "09"
+      },
+      "9.12": {
+        "block": "p236-b01",
+        "chapter": "09"
+      },
+      "9.2": {
+        "block": "p199-b01",
+        "chapter": "09"
+      },
+      "9.3": {
+        "block": "p200-b05",
+        "chapter": "09"
+      },
+      "9.4": {
+        "block": "p204-b03",
+        "chapter": "09"
+      },
+      "9.5": {
+        "block": "p210-b01",
+        "chapter": "09"
+      },
+      "9.5.1": {
+        "block": "p210-b04",
+        "chapter": "09"
+      },
+      "9.5.2": {
+        "block": "p211-b09",
+        "chapter": "09"
+      },
+      "9.5.3": {
+        "block": "p215-b01",
+        "chapter": "09"
+      },
+      "9.5.4": {
+        "block": "p217-b01",
+        "chapter": "09"
+      },
+      "9.5.5": {
+        "block": "p221-b04",
+        "chapter": "09"
+      },
+      "9.6": {
+        "block": "p222-b03",
+        "chapter": "09"
+      },
+      "9.7": {
+        "block": "p223-b06",
+        "chapter": "09"
+      },
+      "9.8": {
+        "block": "p228-b04",
+        "chapter": "09"
+      },
+      "9.9": {
+        "block": "p230-b21",
+        "chapter": "09"
+      }
+    },
+    "table": {
+      "16.1": {
+        "block": "p425-b03",
+        "chapter": "16"
+      }
+    }
+  }
+}

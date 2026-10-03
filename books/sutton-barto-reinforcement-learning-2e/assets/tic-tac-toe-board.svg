@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" role="img" aria-label="井字棋局面：第一行 X、O、O；第二行 O、X、X；第三行前两格空白，最后一格 X">
+  <rect width="150" height="150" fill="white"/>
+  <g stroke="#222" stroke-width="1.5" fill="none">
+    <path d="M50 8V142M100 8V142M8 50H142M8 100H142"/>
+  </g>
+  <g fill="#222" font-family="Georgia,serif" font-size="31" text-anchor="middle" dominant-baseline="central">
+    <text x="25" y="25">X</text><text x="75" y="25">O</text><text x="125" y="25">O</text>
+    <text x="25" y="75">O</text><text x="75" y="75">X</text><text x="125" y="75">X</text>
+    <text x="125" y="125">X</text>
+  </g>
+</svg>

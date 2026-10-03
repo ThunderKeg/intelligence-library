@@ -1,0 +1,79 @@
+- state aggregation, 203–204
+- state-update function, 465
+- step-size parameter, 10, *31–33*, 120, 125, 126
+  - automatic adaptation, 238
+  - in DQN, 439, 440
+  - in psychological models, 347, 348
+  - selecting manually, 222–223
+  - with coarse coding, 216
+  - with Fourier features, 213
+  - with tile coding, *217*, 223
+- stochastic approx. convergence conditions, 33
+- stochastic gradient descent (SGD), 200–204
+  - in the Bellman error, 269–278
+- strong and weak methods, 4
+- supervised learning, xvii, *2*, 17–19, 198
+- sweeps, *75*, 160, *see also* prioritized sweeping
+- synaptic plasticity, 379
+  - Hebbian, 400
+  - two-factor and three factor, 400
+- system identification, 364
+- tabular solution methods, 23
+- target
+  - policy, *103*, 110
+  - of update, 31, 143, *198*
+- TD, *see* temporal-difference learning
+- TD error, 121
+  - n-step, 255
+  - differential, 250
+  - with function approximation, 270
+- TD(λ), **293**, 292–295
+  - truncated, 295–297
+  - true online, **300**, 299–301
+- TD-Gammon, 21, *421–426*
+- temporal abstraction, 461–464
+- temporal-difference learning, 10, *119–140*
+  - history of, 20–21
+  - advantages of, 124–126
+  - optimality of, 126–128
+  - TD(0), **120**, **203**
+  - TD(1), 294
+  - TD(λ), **293**, 292–295
+    - true online, **300**, 299–301
+  - λ-return methods
+    - off-line, 290
+    - online, 297–299
+  - n-step, **144**, *141–158*, **209**
+- termination function, 307, 459
+- Thompson sampling, *43*, 45
+- Thorndike, Edward, *see* Law of Effect
+- tic-tac-toe, *8–13*, 17, 137
+- tile coding, *217–221*, 223, 238, 246, 434, 435
+- Tolman, Edward, *364*, 408
+- trace-decay parameter (λ), 287, *289*, 290, 292
+  - state dependent, 307
+- trajectory sampling, 174–177
+- transition probabilities, 49
+- Tree Backup
+  - n-step, *152–153*, **154**
+  - Tree-Backup(λ), 312–314
+- trial-and-error, 1, 7, *15–21*, 403, 404, *see also* instrumental conditioning
+- true online TD(λ), **300**, 299–301
+- Tsitsiklis and Van Roy’s Counterexample, 263
+- undiscounted continuing tasks, *see* average reward setting
+- unsupervised learning, *2*, 226
+- value, *6*, 26, 47
+- value function, 6, *58–67*
+  - for a given policy: $v_\pi$ and $q_\pi$, 58
+  - for an optimal policy: $v_*$ and $q_*$, 62
+  - action, *58*, 63, 65, 71, 129, 131
+  - approximate action values: $\hat q(s,a,\mathbf w)$, 243
+  - approximate state values: $\hat v(s,\mathbf w)$, 197
+  - differential, 243
+  - vs evolutionary methods, 11
+- value iteration, **83**, 82–84
+- value-function approximation, 198
+- Watkins, Chris, *15*, 21, 89, 320
+- Watson (*Jeopardy!* player), 429–432
+- Werbos, Paul, 14, 21, *70*, 89, 139, 239
+- Witten, Ian, *21*, 70

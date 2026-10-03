@@ -1,0 +1,87 @@
+- BOXES, *18*, 71, 237
+- branching factor, *173–177*, 422
+- breakfast example, *5*, 22
+- bucket-brigade algorithm, 19, 21, *139*
+- catastrophic interference, 472
+- certainty-equivalence estimate, 128
+- chess, 4, 20, 54, 182, 450
+- classical conditioning, 20, *343–357*
+  - blocking, 371
+    - and higher-order conditioning, 345–355
+  - delay and trace conditioning, 344
+  - Rescorla-Wagner model, 346–349
+  - TD model, 349–357
+- classifier systems, *19*, 21
+- cliffwalking example, *132*, 133
+- CMAC, *see* tile coding
+- coarse coding, *215–220*, 238
+- cognitive maps, 363–364
+- collective reinforcement learning, 404–407
+- complex backups, *see* compound update
+- compound stimulus, 345, *346–356*, 371, 382
+- compound update/backup, 288, 319
+- conditioned/unconditioned stimulus, conditioned response (CS/US, CR), 344
+- constant-α MC, 120
+- contextual bandits, 41
+- continuing tasks, *54*, 57, 70, 124, 249, 294
+- continuous action, 73, 244, *335–336*
+- continuous state, *73*, 223, 238
+- continuous time, *11*, 71
+- control and prediction, 342
+- control theory, *4*, 71
+- control variates, *150–152*, 155, 281
+  - and eligibility traces, 309–312
+- credit assignment, 11, *17*, 19, 47, 294, 401
+  - in psychology, 346, *361*
+  - structural, *385*, 405, 407
+- critic, *18*, 239, 346, 417, *see* actor–critic
+- cumulant, 459
+- curiosity, 474
+- curse of dimensionality, 4, *14*, 221, 231
+- cybernetics, xvii, 477
+- deadly triad, 264
+- deep learning, 12, *223*, 441, 472–474, 479
+- deep reinforcement learning, 236
+- deep residual learning, 227
+- delayed reinforcement, 361–363
+- delayed reward, *1*, 47, 249
+- dimensions of reinforcement learning methods, 189–191
+- direct and indirect RL, *162*, 164, 192
+- discounting, *55*, 199, 243, 249, 282, 324, 328, 427, 459
+  - in pole balancing, 56
+  - state dependent, 307
+  - deprecated, *253*, 256
+- distribution models, *159*, 185
+- dopamine, 377, *381–387*, 413–419
+  - and addiction, 409–410
+- double learning, *134–136*, 140
+- DP, *see* dynamic programming
+- driving-home example, 122–123
+- Dyna architecture, **164**, 161–170
+- dynamic programming, 13–15, *73–90*, 174, 262
+  - and artificial intelligence, 89
+  - and function approximation, 241
+  - and options, 463
+  - and the deadly triad, 264
+  - computational efficiency of, 87
+- eligibility traces, *287–320*, 350, 362, 398–403
+  - accumulating, *300*, 306, 310
+  - replacing, *301*, 306
+  - dutch, 300–303
+  - contingent/non-contingent, 399–403, *411*
+  - off-policy, 309–316
+  - with state-dependent λ and γ, 309–316
+- Emphatic-TD methods, 234–235, *315*
+  - off-policy, 281–282
+- environment, 47–58
+- episodes, episodic tasks, 11, *54–58*, 91
+- error reduction property, *144*, 288
+- evaluative feedback, 17, *25*, 47
+- evolution, 7, 359, 374, 471
+- evolutionary methods, *7*, 8, 9, 11, 19
+- expected approximate value, *148*, 155
+- Expected Sarsa, 133, *see also* Sarsa, Expected
+- expected update, *75*, 172–181, 189
+- experience replay, 440–441
+- explore/exploit dilemma, *3*, 103, 472
+- exploring starts, *96*, 98–100, 178

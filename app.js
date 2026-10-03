@@ -232,13 +232,22 @@ function renderSegments(segments, fallback) {
         link.rel = "noopener noreferrer";
         content.append(link);
       } else if (segment.em === true || segment.strong === true) {
-        content.append(element(segment.strong === true ? "strong" : "em", "", segment.text || ""));
+        const emphasis = element(segment.strong === true ? "strong" : "em");
+        if (Array.isArray(segment.segments)) emphasis.append(renderSegments(segment.segments, segment.text));
+        else emphasis.textContent = segment.text || "";
+        content.append(emphasis);
       } else {
         content.append(document.createTextNode(segment.text || ""));
       }
     }
   }
   return content;
+}
+
+function readerContentsHref(value) {
+  return typeof value === "string" &&
+    (/^#read-[\w-]+$/.test(value) || /^\?book=[\w-]+&chapter=[\w-]+(?:#read-[\w-]+)?$/.test(value))
+    ? value : null;
 }
 
 function renderList(block) {
@@ -260,7 +269,9 @@ function renderList(block) {
       const li = element("li");
       if (typeof item === "string") li.append(document.createTextNode(item));
       else if (item && typeof item === "object") {
-        const paragraph = element("span");
+        const href = readerContentsHref(item.href);
+        const paragraph = element(href ? "a" : "span", href ? "contents-reader-link" : "");
+        if (href) paragraph.href = href;
         paragraph.append(renderSegments(item.segments, item.text));
         li.append(paragraph);
         if (Array.isArray(item.children) && item.children.length) {
@@ -384,7 +395,15 @@ function renderBlock(block, book) {
       const depth = Number.isInteger(block.level) ? block.level :
         (number ? number.split(".").length : (/^第\s*\d+\s*章/.test(block.text) ? 1 : 3));
       const heading = element(`h${Math.max(1, Math.min(depth, 3))}`);
-      heading.append(renderSegments(block.segments, block.text));
+      const href = readerContentsHref(block.href);
+      if (href) {
+        const link = element("a", "contents-reader-link");
+        link.href = href;
+        link.append(renderSegments(block.segments, block.text));
+        heading.append(link);
+      } else {
+        heading.append(renderSegments(block.segments, block.text));
+      }
       node.append(heading);
     }
   } else if (block.kind === "figure" || block.kind === "image") {
@@ -447,7 +466,7 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
   const matches = [];
   const chapters = new Set(book.chapters.map((chapter) => chapter.id));
   const number = "(?:[A-C]|\\d+)\\.\\d+(?:\\.\\d+)?";
-  const joined = `(?:\\s*(?:、|,|，|和|及|与)\\s*${number})+`;
+  const joined = `(?:\\s*(?:、|,|，|和|及|与|-|–|—|至|到)\\s*${number})+`;
 
   function add(kind, key, start, end) {
     const target = targets[kind]?.[key];
@@ -472,15 +491,18 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
   }
 
   singles("chapter", /第\s*(\d+)\s*章/g);
+  singles("part", /第\s*([一二三])\s*部分/g);
   singles("chapter", /附录\s*([A-C])(?![A-Za-z0-9])/g);
   singles("section", /(?:第\s*)?((?:[A-C]|\d+)(?:\.\d+){1,2})\s*(?:小)?节/g);
   singles("section", /附录\s*([A-C]\.\d+(?:\.\d+)?)\s*节?/g);
   singles("figure", /图\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
   singles("table", /表\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
   singles("algorithm", /算法\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
+  singles("exercise", /习题\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
+  singles("example", /(?:示例|例)\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
   singles("formula", /(?:公式|式)\s*[（(]\s*((?:[A-C]|\d+)\.\d+)\s*[）)]/g);
   singles("formula", /[（(]\s*((?:[A-C]|\d+)\.\d+)\s*[）)]/g);
-  groups("chapter", /第\s*(\d+(?:\s*(?:、|,|，|和|及|与)\s*\d+)+)\s*章/g, /\d+/g);
+  groups("chapter", /第\s*(\d+(?:\s*(?:、|,|，|和|及|与|-|–|—|至|到)\s*\d+)+)\s*章/g, /\d+/g);
   groups("section", new RegExp(`(?:第\\s*)?(${number}${joined})\\s*(?:小)?节`, "g"), new RegExp(number, "g"));
   groups("figure", new RegExp(`图\\s*(${number}${joined})`, "g"), new RegExp(number, "g"));
   groups("table", new RegExp(`表\\s*(${number}${joined})`, "g"), new RegExp(number, "g"));

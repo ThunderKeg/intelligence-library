@@ -135,6 +135,13 @@ a { color: var(--accent); }
 .book-box .book-code { margin: .7em 0 1em; padding: 0; border: 0; background: transparent; }
 .algorithm-view-hint { display: none; }
 .reading-reference { text-underline-offset: 3px; }
+.contents-reader-link { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.reading-heading .contents-reader-link { text-decoration: none; }
+.reading-heading .contents-reader-link:hover { text-decoration: underline; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] .reading-reference-entry p { padding-left: 1.3em; text-indent: -1.3em; font-size: 16px; line-height: 1.75; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] .reading-rich .sutton-index-level-1 { margin-left: 1.3em; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] .reading-rich .sutton-index-level-2 { margin-left: 2.6em; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] .reading-catalog-entry p { font-size: 16px; line-height: 1.75; }
 .book-inline-code { padding: .08em .24em; border-radius: 3px; background: var(--formula); font: .88em/1.4 ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
 .book-footnote-ref { font-size: .72em; line-height: 0; }
 .book-figure { margin: 2.2em 0; }

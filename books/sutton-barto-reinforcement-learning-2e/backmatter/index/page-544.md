@@ -1,0 +1,90 @@
+- Monte Carlo Tree Search (MCTS), 185–188
+- motivation, 360–361
+- mountain car example, *244–248*, 305, 306
+- multi-armed bandits, 25–45
+- n-step methods, *141–158*
+  - Q(σ), **156**
+  - Sarsa, **147**, **247**
+    - differential, **255**
+    - off-policy, **149**
+  - TD, **144**
+  - Tree Backup, **154**
+  - truncated λ-return, 295
+- naughts and crosses, *see* tic-tac-toe
+- neural networks, *see* artificial neural networks
+- neurodynamic programming, 15
+- neuroeconomics, *413*, 419
+- neuroscience, 4, 21, *377–419*
+- nonstationarity, 30, *32–36*, 44, 255
+  - inherent, 91, *198*
+- notation, xiii, *xix*
+- observations, 464
+- off-policy methods, 257–286
+  - vs on-policy methods, 100, 103
+  - Monte Carlo, 103–115
+  - Q-learning, **131**
+  - Expected Sarsa, 133–134
+  - n-step, 148–156
+  - n-step Q(σ), **156**
+  - n-step Sarsa, **149**
+  - n-step Tree Backup, **154**
+  - and eligibility traces, 309–316
+  - Emphatic-TD(λ), 315
+  - GQ(λ), 315
+  - GTD(λ), 314
+  - HTD(λ), 315
+  - Q(λ), 312–314
+  - Tree Backup(λ), 312–314
+  - reducing variance, 283–284
+- on-policy distribution, *175*, 199, 208, 258, 262, 281, 282
+  - vs uniform distribution, 176
+- on-policy methods, 100
+  - actor–critic, **332, 333**
+  - approximate
+    - control, **244**, **247**, **251**, **255**
+    - prediction, **202, 203**, **209**
+  - Monte Carlo, **101**, 100–103, **328**, **330**
+  - n-step, **144**, **147**
+  - Sarsa, **130**, 129–131
+  - TD(0), **120**, 119–128
+  - with eligibility traces, **293**, **300**, **305**, **307**
+- operant conditioning, *see* instrumental learning
+- optimal control, 2, *14–15*, 21
+- optimistic initial values, *34–35*, 192
+- optimizing memory control, 432–436
+- options, 461–464
+  - models of, 462
+- pain and pleasure, *6*, 16, 413
+- Partially Observable MDPs (POMDPs), *467*
+- Pavlov, Ivan, 16, *343–345*, 362
+- Pavlovian
+  - conditioning, *see* classical conditioning
+  - control, 343, *371*, 373, 478
+- personalizing web services, 450–453
+- planning, 3, 5, 7, 11, 138, *159–193*
+  - in psychology, 363, 364, 366
+  - with learned models, *161–168*, 473
+  - with options, 461, *463*
+- policy, 6, 41, *58*
+  - hierarchical, 462
+  - soft and ε-soft, 100–103, 110
+- policy approximation, 321–324
+- policy evaluation, 74–76, *see also* prediction
+  - iterative, **75**
+- policy gradient methods, 321–338
+  - REINFORCE, **328**, **330**
+  - actor–critic, **332, 333**
+- policy gradient theorem, 324–326
+  - proof, episodic case, 325
+  - proof, continuing case, 334
+- policy improvement, 76–80
+  - theorem, *78*, 101
+- policy iteration, 14, **80**, *80–82*
+- polynomial basis, 210–211
+- prediction, *74–76*, *see also* policy evaluation
+  - and control, 342
+  - Monte Carlo, 92–97
+  - off-policy, 103–108
+  - TD, 119–126
+  - with approximation, 197–242
+- prior knowledge, 12, 34, 54, 137, 236, 324, 471

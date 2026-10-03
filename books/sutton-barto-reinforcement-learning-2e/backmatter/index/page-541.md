@@ -1,0 +1,91 @@
+# 索引
+
+> 建议先查阅斜体页码。粗体页码所在页包含框内算法。
+
+- k-armed bandits, 25–45
+- absorbing state, 57
+- access-control queuing example, 256
+- action preferences, *322*, 329, 336, 455
+  - in bandit problems, *37*, 42
+- action-value function, *see* value function, action
+- action-value methods, 321
+  - for bandit problems, 27
+- actor–critic, 21, 239, 321, *331–332*, 338, 406
+  - advantage, A2C, 338
+  - one-step (episodic), **332**
+  - with eligibility traces (episodic), **332**
+  - with eligibility traces (continuing), **333**
+  - neural, 395–415
+- addiction, 409–410
+- afterstates, *137*, 140, 181, 182, 191, 424, 430
+- agent–environment interface, 47–58, 466
+- all-actions algorithm, 326
+- AlphaGo, AlphaGo Zero, AlphaZero, 441–450
+- Andreae, John, *17*, 21, 69, 89
+- ANN, *see* artificial neural networks
+- applications and case studies, 421–457
+- approximate dynamic programming, 15
+- artificial intelligence, xvii, 1, 472, *478*
+- artificial neural networks, *223–228*, 238–240, 395–398, 423, 430, 436–450, 472
+- associative reinforcement learning, *45*, 418
+- associative search, 41
+- asynchronous dynamic programming, *85*, 88
+- Atari video game play, 436–441
+- auxiliary tasks, *460–461*, 468, 474
+- average reward setting, *249–255*, 258, 464
+- averagers, 264
+- backgammon, 11, 21, 182, 184, *421–426*
+- backpropagation, 21, *225–227*, 239, 407, 424, 436, 439
+- backup diagram, *60*, 139
+  - for dynamic programming, 59, 61, 64, *172*
+  - for Monte Carlo methods, 94
+  - for Q-learning, 134
+  - for TD(0), 121
+  - for Sarsa, 129
+  - for Expected Sarsa, 134
+  - for Sarsa(λ), 304
+  - for TD(λ), 289
+  - for Q(λ), 313
+  - for Tree Backup(λ), 314
+  - for Truncated TD(λ), 296
+  - for n-step Q(σ), 155
+  - for n-step Expected Sarsa, 146
+  - for n-step Sarsa, 146
+  - for n-step TD, 142
+  - for n-step Tree Backup, 152
+  - for Samuel’s Checker Player, 428
+  - compound, 288
+  - half backups, 62
+- backward view of eligibility traces, 288, *293*
+- Baird’s counterexample, *261–264*, 280, 283, 285
+- bandit algorithm, simple, **32**
+- bandit problems, 25–45
+- basal ganglia, 386
+- baseline, 37–40, *329*, 330, 338
+- behavior policy, *103*, 110, *see* off-policy learning
+- Bellman equation, 14
+  - for $v_\pi$, 59
+  - for $q_\pi$, 78
+  - for optimal value functions: $v_*$ and $q_*$, 63
+  - differential, 250
+  - for options, 463
+- Bellman error, *268*, 270, 272, 273
+  - learnability of, 274–278
+  - vector, 267–269
+- Bellman operator, 267–269, 286
+- Bellman residual, 286, *see* Bellman error
+- Bellman, Richard, *14*, 71, 89, 241
+- binary features, *215*, 222, 245, 304, 305
+- bioreactor example, 51
+- blackjack example, *93–94*, *99*, 106
+- blocking maze example, 166
+- bootstrapping, *89*, 189, 308
+  - n-step, *141–158*, 255
+  - and dynamic programming, 89
+  - and function approximation, 208, *264–274*
+  - and Monte Carlo methods, 95
+  - and stability, 263–265
+  - and TD learning, 120
+  - assessment of, 124–128, 248, *264*, 291, 318
+  - in psychology, 345, 349, *354*, 355
+  - parameter (λ or n), *291*, 307, 399

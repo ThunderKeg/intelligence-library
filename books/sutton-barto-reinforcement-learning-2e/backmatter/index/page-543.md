@@ -1,0 +1,92 @@
+- feature construction, 210–223
+- final time step (T), 54
+- Fourier basis, 211–215
+- function approximation, 195–200
+- gambler’s example, 84
+- game theory, 19
+- gazelle calf example, 5
+- general value functions (GVFs), *459–463*, 474
+- generalized policy iteration (GPI), *86–87*, 92, 97, 138, 189
+- genetic algorithms, 19
+- Gittins index, 43
+- gliding/soaring case study, 453–457
+- goal, *see* reward signal
+- golf example, *61*, 63, 66
+- gradient, 201
+- gradient descent, *see* stochastic gradient descent
+- Gradient-TD methods, *278–281*, 314–315
+- greedy or ε-greedy
+  - as exploiting, 26–28
+  - as shortsighted, 64
+  - ε-greedy policies, 100
+- gridworld examples, 60, 65, 76, 147
+  - cliffwalking, 132
+  - Dyna blocking maze, 166
+  - Dyna maze, 164
+  - Dyna shortcut maze, 167
+  - windy, 130, 131
+- habitual and goal-directed control, 364–368
+- hedonistic neurons, 402–404
+- heuristic search, *181–183*, 190
+  - as sequences of backups, 183
+  - in Samuel’s checkers player, 426
+  - in TD-Gammon, 425
+- history of reinforcement learning, 13–22
+- Holland, John, *19*, 21, 44, 139, 241
+- Hull, Clark, 16, 359, 360, *362–363*
+- importance sampling, *103–117*, 151, 257
+  - ratio, *104*, 148, 258
+  - weighted and ordinary, *105*, 106
+  - and eligibility traces, 309–312
+  - and infinite variance, 106
+  - discounting aware, 112–113
+  - incremental implementation, 109
+  - per-decision, 114–115
+  - n-step, 148–156
+- incremental implementation
+  - of averages, 30–33
+  - of weighted averages, 109
+- instrumental conditioning, 357–361, *see also* Law of Effect
+  - and motivation, 360–361
+  - Thorndike’s puzzle boxes, 358
+- interest and emphasis, *234–235*, 282, 316
+- inverse reinforcement learning, 470
+- Jack’s car rental example, *81–82*, 137, 210
+- kernel-based function approximation, 232–233
+- Klopf, A. Harry, *xv*, xvii, 19–21, 402–404, 411
+- latent learning, 192, *363*, 366
+- Law of Effect, *15–16*, 45, 343, 358–361, 417
+- learning automata, 18
+- Least Mean Square (LMS) algorithm, 279, *301*
+- Least-Squares TD (LSTD), 228–229
+- linear function approx., *204–209*, 266–269
+- linear programming, 87, 90
+- local and global optima, 200
+- Markov decision process (MDP), 2, 14, *47–71*
+- Markov property, *49*, 115, 465–468
+- Markov reward process (MRP), 125
+- maximization bias, 134–136
+- maximum-likelihood estimate, 128
+- MC, *see* Monte Carlo methods
+- Mean Square
+  - Bellman Error, $\overline{\mathrm{BE}}$, 268
+  - Projected Bellman Error, $\overline{\mathrm{PBE}}$, 269
+  - Return Error, $\overline{\mathrm{RE}}$, 275
+  - TD Error, $\overline{\mathrm{TDE}}$, 270
+  - Value Error, $\overline{\mathrm{VE}}$, 199–200
+- memory-based function approx., 230–232
+- Michie, Donald, *17*, 71, 117
+- Minsky, Marvin, *16*, 17, 20, 89
+- model of the environment, 7, *159*
+- model-based and model-free methods, 7, *159*
+  - in animal learning, 363–368
+- model-based reinforcement learning, 159–193
+  - in neuroscience, 407–409
+- Monte Carlo methods, 91–117
+  - first- and every-visit MC, 92
+  - first-visit MC control, **101**
+  - first-visit MC prediction, **92**
+  - gradient method for $v_\pi$, **202**
+  - Monte Carlo ES (Exploring Starts), **99**
+  - off-policy control, **111**, 110–112
+  - off-policy prediction, 103–109, **110**
