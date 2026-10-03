@@ -59,10 +59,11 @@ with sync_playwright() as playwright:
     page.on("pageerror", lambda error: errors.append(str(error)))
     ready(page, "01")
     page.wait_for_function(
-        "document.querySelector('#offline-status')?.textContent.includes('已可离线阅读')",
+        "document.querySelector('#offline-panel')?.dataset.state === 'complete'",
         timeout=120000,
     )
-    assert "156 张图片" in page.locator("#offline-status").inner_text()
+    assert page.locator("#offline-panel").is_hidden()
+    assert page.locator("#offline-status").inner_text() == ""
     assert page.evaluate("""async () => {
       const cache = await caches.open('intelligence-library-images-v1');
       return (await cache.keys()).filter((request) =>

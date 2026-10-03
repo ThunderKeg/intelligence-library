@@ -76,7 +76,8 @@ with sync_playwright() as playwright:
 
     page.evaluate("navigator.serviceWorker.ready")
     page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=01")
-    page.wait_for_function("document.querySelector('#offline-status')?.textContent.includes('已可离线阅读')", timeout=180000)
+    page.wait_for_function("document.querySelector('#offline-panel')?.dataset.state === 'complete'", timeout=180000)
+    assert page.locator("#offline-panel").is_hidden()
     desktop.set_offline(True)
     assert page.evaluate("async () => (await fetch('books/bishop-deep-learning-2024/assets/chapter-20/fig-20-9.png')).status") == 200
     page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=frontmatter")

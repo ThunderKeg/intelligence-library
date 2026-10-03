@@ -560,6 +560,8 @@ function setupOfflineImages(book) {
     if (activePort) activePort.close();
     activePort = null;
     clearTimeout(timer);
+    panel.hidden = false;
+    panel.dataset.state = "checking";
     status.textContent = "正在检查离线图片…";
     retry.hidden = true;
     try {
@@ -578,6 +580,7 @@ function setupOfflineImages(book) {
         clearTimeout(timer);
         timer = setTimeout(() => {
           if (currentRun !== runId) return;
+          panel.dataset.state = "error";
           status.textContent = "离线图片准备未响应，请重试。";
           retry.hidden = false;
           channel.port1.close();
@@ -587,9 +590,11 @@ function setupOfflineImages(book) {
       channel.port1.onmessage = ({ data }) => {
         if (currentRun !== runId || data?.type !== "offline-images-status") return;
         clearTimeout(timer);
+        panel.dataset.state = data.state;
         const size = data.totalBytes ? `，约 ${Math.ceil(data.totalBytes / 1048576)} MB` : "";
         if (data.state === "complete") {
-          status.textContent = `本书 ${data.total} 张图片已可离线阅读`;
+          status.textContent = "";
+          panel.hidden = true;
           channel.port1.close();
           activePort = null;
         } else if (data.state === "error") {
@@ -606,6 +611,7 @@ function setupOfflineImages(book) {
       timeOut();
     } catch {
       if (currentRun !== runId) return;
+      panel.dataset.state = "error";
       status.textContent = "离线图片准备失败，请重试。";
       retry.hidden = false;
     }
