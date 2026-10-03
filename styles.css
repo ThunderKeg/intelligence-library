@@ -87,16 +87,108 @@ a { color: var(--accent); }
 .reader-status { color: var(--danger); }
 .reading-block { scroll-margin-top: 85px; }
 .reading-block p { margin: 0 0 1.28em; color: var(--body); font: 18px/2.05 var(--serif); letter-spacing: .012em; white-space: pre-wrap; overflow-wrap: anywhere; }
+.reading-intro { margin: 0 0 2.4em; padding: 16px 20px; border-left: 3px solid var(--accent); background: var(--surface); }
+.reading-intro p { margin: 0; }
+.reading-rich > p:has(> a.footnote-ref) { scroll-margin-top: 85px; }
+.reading-rich .book-formula { max-width: 100%; }
+.reading-rich p math[display="inline"], .reading-rich li math[display="inline"] { display: inline-block; max-width: 100%; overflow-x: auto; vertical-align: middle; }
+.reading-rich .figure-translation { margin: 12px 0 0; padding-left: 14px; border-left: 2px solid var(--caption-line); color: var(--muted); font: 14px/1.8 var(--sans); }
+.reading-rich .footnote { margin: 2em 0; padding-top: .7em; border-top: 1px solid var(--line); }
+.reading-rich .footnote p { font-size: 14px; line-height: 1.8; }
+.reading-rich .footnote hr { display: none; }
+.reading-rich .book-list li { white-space: normal; }
+.reading-rich .book-list li > p { margin: .5em 0; }
+.reading-rich [id] { scroll-margin-top: 85px; }
+.reading-rich .translator-note { margin: 1.3em 0; padding: 12px 16px; border-left: 2px solid var(--accent); background: var(--surface); color: var(--body); }
+.reading-rich .translator-note strong { color: var(--accent); font: 700 13px/1.7 var(--sans); }
+.reading-rich .translator-note p { margin: .3em 0 0; color: inherit; font: 14px/1.8 var(--sans); }
+.reading-rich .index-entry,
+.reading-rich .index-subentry { margin-bottom: .5em; font-size: 16px; line-height: 1.7; }
+.reading-rich .index-subentry { padding-left: 1.6em; }
+.reading-rich .reference-entry { margin-bottom: .85em; padding-left: 1.3em; text-indent: -1.3em; font-size: 16px; line-height: 1.75; }
 .reading-heading h1 { margin: 0 0 1.2em; font: 600 clamp(31px, 4vw, 42px)/1.4 var(--serif); }
+#read-p149-b001 h1, #read-p203-b001 h1 { white-space: pre-line; }
 .reading-heading h2 { margin: 2.2em 0 .85em; padding-top: .45em; border-top: 1px solid var(--line); font: 600 27px/1.5 var(--serif); }
 .reading-heading h3 { margin: 2em 0 .75em; font: 600 22px/1.5 var(--serif); }
 .reading-caption p { color: var(--muted); font: 14px/1.8 var(--sans); padding-left: 14px; border-left: 2px solid var(--caption-line); }
 .reading-formula p { margin: 1.6em 0; padding: 14px 18px; background: var(--formula); border-radius: 3px; color: var(--ink); font: 17px/1.85 Georgia, var(--serif); }
+.inline-math { display: inline-block; max-width: 100%; overflow-x: auto; vertical-align: middle; }
+.book-formula { position: relative; display: flex; align-items: center; gap: 12px; margin: 1.6em 0; padding: 16px 18px; background: var(--formula); border-radius: 3px; color: var(--ink); }
+.formula-scroll { flex: 1 1 auto; min-width: 0; overflow-x: auto; }
+.book-formula math { font-size: 1.1em; }
+#reader-article[data-book-id="mackay-information-theory-2003"] #read-p182-b014 .book-formula math mtable { border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; }
+#reader-article[data-book-id="mackay-information-theory-2003"] #read-p182-b014 .book-formula math mtr:nth-child(3) > mtd { border-top: 1px solid currentColor; }
+.formula-number { flex: 0 0 auto; font: 14px/1.5 var(--sans); white-space: nowrap; }
+.reading-formula p.formula-view-hint { display: none; margin: -1.2em 0 1.5em; padding: 0; background: transparent; color: var(--muted); font: 12px/1.5 var(--sans); }
+.reading-formula p.formula-view-hint[hidden] { display: none; }
+.formula-fallback { font: 17px/1.85 Georgia, var(--serif); white-space: pre-wrap; }
+.book-box { margin: 2.2em 0; padding: 18px 22px 1px; border-left: 3px solid var(--accent); background: var(--surface); }
+.book-box.outlined-box { border: 1px solid var(--line); border-left: 3px solid var(--accent); }
+.book-box .reading-heading h3 { margin-top: .2em; }
+.book-box .book-formula { background: var(--formula); }
+.book-box.algorithm-box { padding-bottom: 18px; overflow-x: auto; }
+.book-box.algorithm-box .reading-paragraph { margin: 0; }
+.book-box.algorithm-box .reading-paragraph p { width: max-content; margin: 0; font: 16px/1.8 var(--sans); letter-spacing: 0; white-space: pre; overflow-wrap: normal; }
+.book-box.algorithm-box .reading-heading h3 { margin-bottom: .55em; }
+.book-box .book-code { margin: .7em 0 1em; padding: 0; border: 0; background: transparent; }
+.algorithm-view-hint { display: none; }
+.reading-reference { text-underline-offset: 3px; }
+.book-inline-code { padding: .08em .24em; border-radius: 3px; background: var(--formula); font: .88em/1.4 ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
+.book-footnote-ref { font-size: .72em; line-height: 0; }
+.book-figure { margin: 2.2em 0; }
+.book-figure img { display: block; width: auto; height: auto; max-width: 100%; margin: 0 auto; }
+.book-figure img.has-image-size { width: min(100%, var(--figure-width)); aspect-ratio: var(--figure-ratio); }
+.figure-media { max-width: 100%; }
+.figure-image-link { display: block; }
+.figure-image-link img { cursor: zoom-in; }
+.wide-figure .figure-media { overflow-x: auto; }
+.figure-view-hint { margin: 7px 0 0; color: var(--muted); font: 12px/1.5 var(--sans); }
+.figure-caption { margin-top: 12px; padding-left: 14px; border-left: 2px solid var(--caption-line); color: var(--muted); font: 14px/1.8 var(--sans); }
+.reading-block .figure-caption p { margin: 0 0 .7em; color: inherit; font: 14px/1.8 var(--sans); letter-spacing: 0; }
+.figure-annotations { margin-top: .8em; }
+.figure-annotations-title { font-weight: 700 !important; }
+.figure-annotations ul { margin: 0; padding-left: 1.5em; }
+.figure-annotations li { margin: .2em 0; overflow-wrap: anywhere; }
+.figure-error { color: var(--danger) !important; }
+.book-code { margin: 1.6em 0; padding: 16px 18px; overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); color: var(--ink); font: 14px/1.65 Consolas, "SFMono-Regular", monospace; tab-size: 4; }
+.book-code code { font: inherit; white-space: pre; }
+.reading-code p.code-view-hint { display: none; margin: -1.2em 0 1.5em; color: var(--muted); font: 12px/1.5 var(--sans); }
+.reading-code p.code-view-hint[hidden] { display: none; }
+.book-list { margin: 0 0 1.6em; padding-left: 1.7em; color: var(--body); font: 18px/1.9 var(--serif); }
+.book-list li { margin: .4em 0; padding-left: .2em; overflow-wrap: anywhere; white-space: pre-wrap; }
+.book-list .book-list { margin: .5em 0; }
+.original-contents { padding-left: 0; list-style: none; }
+.original-contents li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1em; margin: 0; padding: .14em 0; white-space: normal; }
+.original-contents .contents-depth-0 { margin-top: .55em; color: var(--ink); }
+.original-contents .contents-depth-1 .contents-title { padding-left: 1.1em; }
+.original-contents .contents-depth-2 .contents-title { padding-left: 2.2em; }
+.original-contents .contents-page { color: var(--muted); white-space: nowrap; }
+.book-quote { margin: 1.5em 0 1.8em; padding: .2em 0 .2em 20px; border-left: 3px solid var(--caption-line); }
+.reading-block .book-quote p { margin: 0; font-size: 16px; line-height: 1.9; }
+.book-exercise { padding: 12px 16px; background: var(--surface); border-left: 2px solid var(--accent); }
+.book-exercise-icon { width: 42px; height: 46px; margin-right: .55em; object-fit: contain; vertical-align: middle; mix-blend-mode: multiply; }
+:root[data-theme="dark"] .book-exercise-icon { filter: grayscale(1) invert(1) brightness(5); mix-blend-mode: screen; }
+.book-exercise-label { margin-right: .5em; color: var(--ink); }
+.book-bibliographical-note { display: grid; grid-template-columns: 2.8em minmax(0, 1fr); gap: 12px; }
+.book-bibliographical-note-label { color: var(--ink); }
+.reading-bibliographical-note-continuation > p { margin-left: calc(2.8em + 12px); }
+.reading-footnote { padding-top: .7em; border-top: 1px solid var(--line); }
+.book-footnote { font-size: 14px !important; line-height: 1.8 !important; }
+.footnote-label { display: inline-block; min-width: 2em; margin-right: .4em; color: var(--accent); font-weight: 700; }
 .table-scroll { overflow-x: auto; margin: 0 0 2em; }
 .book-table { width: 100%; border-collapse: collapse; font: 13px/1.6 var(--sans); white-space: nowrap; }
-.book-table th, .book-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: right; }
+.book-table caption { padding: 0 0 10px; color: var(--muted); text-align: left; font: 14px/1.7 var(--sans); }
+.book-table th, .book-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: pre-wrap; }
 .book-table th:first-child, .book-table td:first-child { text-align: left; }
 .book-table th { color: var(--accent); border-bottom-color: var(--table-line); }
+.book-table.notation-table { font-size: 14px; line-height: 1.7; }
+.book-table.notation-table th, .book-table.notation-table td { text-align: left; vertical-align: top; }
+.book-table.notation-table th:first-child, .book-table.notation-table td:first-child { min-width: 7em; white-space: nowrap; }
+.book-table.code-table { width: max-content; min-width: 100%; }
+.book-table.code-table th, .book-table.code-table td, .book-table.code-table .book-inline-code { white-space: nowrap; overflow-wrap: normal; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] #read-p425-b03 .book-table { width: max-content; min-width: 100%; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] #read-p425-b03 .book-table th,
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] #read-p425-b03 .book-table td { white-space: nowrap; overflow-wrap: normal; }
 
 .toc-dialog { width: min(390px, calc(100vw - 32px)); max-height: min(760px, calc(100vh - 32px)); margin: 16px 16px 16px auto; padding: 20px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: var(--surface); box-shadow: 0 20px 55px #0005; }
 .toc-dialog::backdrop { background: #07150baa; }
@@ -106,49 +198,27 @@ a { color: var(--accent); }
 #reader-toc-mobile .toc-link { font-size: 14px; padding-top: 10px; padding-bottom: 10px; }
 
 @media (max-width: 800px) {
+  .algorithm-view-hint { display: block; position: sticky; left: 0; width: fit-content; margin: .7em 0 0; color: var(--muted); font: 12px/1.5 var(--sans); }
+  .reading-formula p.formula-view-hint { display: block; }
+  .reading-code p.code-view-hint { display: block; }
+  .wide-figure .figure-image-link { width: max-content; }
+  .wide-figure .figure-media img { width: min(var(--figure-width, 1000px), 240vw); max-width: none; }
   .reader-layout { display: block; }
   .reader-sidebar { display: none; }
   .toc-button { display: inline-block; }
   .reader-main { padding: 33px 24px 100px; }
   .reading-block p { font-size: 17px; line-height: 1.95; }
+  .book-list { font-size: 17px; }
+  .book-formula { padding: 13px 14px; }
+  .book-formula math { font-size: 1em; }
 }
 
 @media (max-width: 480px) {
+  .reading-rich .book-table { min-width: 700px; }
   .site-header { height: 60px; }
   .shelf { padding-top: 46px; }
   .book-card { padding: 23px 20px; }
   .book-title { font-size: 22px; }
   .reading-heading h2 { font-size: 24px; }
   .reading-heading h3 { font-size: 20px; }
-}
-
-/* Full-text Shannon edition. */
-.reading-intro { margin: 0 0 2.4em; padding: 16px 20px; border-left: 3px solid var(--accent); background: var(--surface); }
-.reading-intro p { margin: 0; }
-.reading-rich .book-formula { max-width: 100%; margin: 1.6em 0; padding: 16px 18px; overflow-x: auto; border-radius: 3px; background: var(--formula); color: var(--ink); }
-.reading-rich .book-formula math { font-size: 1.1em; }
-.reading-rich p math[display="inline"], .reading-rich li math[display="inline"] { display: inline-block; max-width: 100%; overflow-x: auto; vertical-align: middle; }
-.reading-rich .book-figure { margin: 2.2em 0; }
-.reading-rich .book-figure img { display: block; max-width: 100%; height: auto; margin: 0 auto; }
-.reading-rich .figure-caption { margin-top: 12px; padding-left: 14px; border-left: 2px solid var(--caption-line); color: var(--muted); font: 14px/1.8 var(--sans); }
-.reading-rich .figure-translation { margin: 12px 0 0; padding-left: 14px; border-left: 2px solid var(--caption-line); color: var(--muted); font: 14px/1.8 var(--sans); }
-.reading-rich .book-list { margin: 0 0 1.6em; padding-left: 1.7em; color: var(--body); font: 18px/1.9 var(--serif); }
-.reading-rich .book-list li { margin: .4em 0; padding-left: .2em; overflow-wrap: anywhere; white-space: normal; }
-.reading-rich .book-list li > p { margin: .5em 0; }
-.reading-rich .book-code { margin: 1.6em 0; padding: 16px 18px; overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); color: var(--ink); font: 14px/1.65 Consolas, "SFMono-Regular", monospace; tab-size: 4; }
-.reading-rich .book-code code { font: inherit; white-space: pre; }
-.reading-rich .footnote { margin: 2em 0; padding-top: .7em; border-top: 1px solid var(--line); }
-.reading-rich .footnote p { font-size: 14px; line-height: 1.8; }
-.reading-rich .footnote hr { display: none; }
-.reading-rich [id] { scroll-margin-top: 85px; }
-.reading-rich .translator-note { margin: 1.3em 0; padding: 12px 16px; border-left: 2px solid var(--accent); background: var(--surface); color: var(--body); }
-.reading-rich .translator-note strong { color: var(--accent); font: 700 13px/1.7 var(--sans); }
-.reading-rich .translator-note p { margin: .3em 0 0; color: inherit; font: 14px/1.8 var(--sans); }
-@media (max-width: 800px) {
-  .reading-rich .book-list { font-size: 17px; }
-  .reading-rich .book-formula { padding: 13px 14px; }
-  .reading-rich .book-formula math { font-size: 1em; }
-}
-@media (max-width: 480px) {
-  .reading-rich .book-table { min-width: 700px; }
 }

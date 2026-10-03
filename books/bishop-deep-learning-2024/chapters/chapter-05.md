@@ -1,0 +1,1353 @@
+# 第 5 章 单层网络：分类
+
+<aside class="chapter-guide"><strong>本章导读</strong><p>本章把单层网络从回归扩展到分类，先研究线性判别函数，再讨论生成式与判别式概率模型，以及如何利用预测概率作出决策。这些概念为后续的深层分类网络提供基础。</p></aside>
+
+<!-- pdf-page: 150 -->
+
+<figure class="chapter-art">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/chapter-art.jpeg" alt="本章开篇的彩色抽象图案">
+</figure>
+
+上一章研究了一类回归模型，其输出变量是模型参数的线性函数，因此可以表示为只有一层权重和偏置参数的简单神经网络。现在转向分类问题。本章重点研究一类类似的模型，它们同样可以表示为单层神经网络。借助这类模型，我们可以先介绍分类的许多关键概念，再在后续章节处理更一般的深层神经网络。
+
+分类的目标是取得输入向量 $\mathbf{x}\in\mathbb{R}^{D}$，并把它分配到 $K$ 个离散类别 $\mathcal{C}_k$ 之一，其中 $k=1,\ldots,K$。最常见的情形是假设类别互不相交，因此每个输入只分到一个类别。输入空间由此划分为多个决策区域（decision region），区域的边界称为决策边界（decision boundary）或决策曲面（decision surface）。本章考虑线性
+
+<!-- pdf-page: 151 -->
+
+分类模型，即决策曲面是输入向量 $\mathbf{x}$ 的线性函数，从而是 $D$ 维输入空间中的 $(D-1)$ 维超平面。若数据集中的不同类别能被线性决策曲面完全分开，就称该数据集线性可分（linearly separable）。线性分类模型也能用于线性不可分的数据集，只是并非所有输入都能正确分类。
+
+分类问题大体有三种不同解法。最简单的方法是构造判别函数（discriminant function），直接把每个向量 $\mathbf{x}$ 分配到某个类别。更有力的方法是在推断阶段建立条件概率分布 $p(\mathcal{C}_k\mid\mathbf{x})$ 的模型，再利用这些分布作出最优决策。把推断和决策分开有很多好处（见第 5.2.4 小节）。求取条件概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 也有两种不同方法。一种是直接建模，例如把它们表示为参数模型，再用训练集优化参数。这称为判别式概率模型（discriminative probabilistic model）。另一种方法是建立类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 及类别先验概率 $p(\mathcal{C}_k)$ 的模型，然后利用贝叶斯定理求所需的后验概率：
+
+$$
+p(\mathcal{C}_k\mid\mathbf{x})
+=\frac{p(\mathbf{x}\mid\mathcal{C}_k)p(\mathcal{C}_k)}{p(\mathbf{x})}. \tag{5.1}
+$$
+
+这种方法称为生成式概率模型（generative probabilistic model），因为它有可能从各类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 中生成样本。本章将讨论三种方法的示例：判别函数、生成式概率模型和判别式概率模型。
+
+## 5.1 判别函数
+
+判别函数接收一个输入向量 $\mathbf{x}$，将它分配到记为 $\mathcal{C}_k$ 的 $K$ 个类别之一。本章只考虑线性判别函数，即决策曲面为超平面的情形。为简化讨论，先考虑两个类别，再研究推广到 $K>2$ 个类别的情形。
+
+### 5.1.1 两个类别
+
+线性判别函数最简单的表示法是对输入向量取线性函数：
+
+$$
+y(\mathbf{x})=\mathbf{w}^{\mathrm T}\mathbf{x}+w_0 \tag{5.2}
+$$
+
+其中 $\mathbf{w}$ 称为权重向量，$w_0$ 是偏置（不要与统计意义上的偏差混淆）。若 $y(\mathbf{x})\geqslant0$，则把输入向量 $\mathbf{x}$ 分到类别 $\mathcal{C}_1$，否则分到类别 $\mathcal{C}_2$。因此，相应决策边界由 $y(\mathbf{x})=0$ 定义，对应 $D$ 维输入空间中的一个 $(D-1)$ 维超平面。
+
+<!-- pdf-page: 152 -->
+
+<figure id="fig-5-1">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-1.png" alt="二维线性判别函数的红色决策直线、权重向量、偏置和有符号距离">
+  <figcaption>图 5.1：二维线性判别函数的几何示意。红色决策曲面垂直于 $\mathbf{w}$，它相对于原点的位置由偏置参数 $w_0$ 控制。一般点 $\mathbf{x}$ 到决策曲面的有符号垂直距离为 $y(\mathbf{x})/\|\mathbf{w}\|$。</figcaption>
+</figure>
+
+考虑决策曲面上的两个点 $\mathbf{x}_A$ 和 $\mathbf{x}_B$。因为 $y(\mathbf{x}_A)=y(\mathbf{x}_B)=0$，所以 $\mathbf{w}^{\mathrm T}(\mathbf{x}_A-\mathbf{x}_B)=0$。因此，向量 $\mathbf{w}$ 与决策曲面内的任意向量正交，也就决定了该曲面的方向。类似地，若 $\mathbf{x}$ 是决策曲面上的一点，则 $y(\mathbf{x})=0$，所以原点到决策曲面的法向距离为
+
+$$
+-\frac{w_0}{\|\mathbf{w}\|}
+=\frac{\mathbf{w}^{\mathrm T}\mathbf{x}}{\|\mathbf{w}\|}. \tag{5.3}
+$$
+
+由此可见，偏置参数 $w_0$ 决定决策曲面的位置。图 5.1 展示了 $D=2$ 的情形。
+
+进一步注意，$y(\mathbf{x})$ 的值给出了点 $\mathbf{x}$ 到决策曲面的有符号垂直距离 $r$ 的量度。为说明这一点，考虑任意点 $\mathbf{x}$，令 $\mathbf{x}_{\perp}$ 为它在决策曲面上的正交投影，于是
+
+$$
+\mathbf{x}=\mathbf{x}_{\perp}+r\frac{\mathbf{w}}{\|\mathbf{w}\|}. \tag{5.4}
+$$
+
+用 $\mathbf{w}^{\mathrm T}$ 乘等式两边并加上 $w_0$，再利用 $y(\mathbf{x})=\mathbf{w}^{\mathrm T}\mathbf{x}+w_0$ 及 $y(\mathbf{x}_{\perp})=\mathbf{w}^{\mathrm T}\mathbf{x}_{\perp}+w_0=0$，得到
+
+$$
+r=\frac{y(\mathbf{x})}{\|\mathbf{w}\|}. \tag{5.5}
+$$
+
+图 5.1 也展示了这一结果。
+
+与线性回归模型一样，有时使用更紧凑的记号很方便（见第 4.1.1 小节）：引入额外的虚设“输入”值 $x_0=1$，并定义 $\widetilde{\mathbf{w}}=(w_0,\mathbf{w})$、$\widetilde{\mathbf{x}}=(x_0,\mathbf{x})$，于是
+
+$$
+y(\mathbf{x})=\widetilde{\mathbf{w}}^{\mathrm T}\widetilde{\mathbf{x}}. \tag{5.6}
+$$
+
+<!-- pdf-page: 153 -->
+
+<figure id="fig-5-2">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-2.png" alt="一对其余及一对一的多类判别方案产生绿色歧义区域的两幅示意图">
+  <figcaption>图 5.2：试图用一组二类别判别函数构造 $K$ 类判别函数，会产生绿色所示的歧义区域。左图有两个判别函数，分别用于区分类别 $\mathcal{C}_k$ 与非该类别的点。右图有三个判别函数，每个用于区分一对类别 $\mathcal{C}_k$ 和 $\mathcal{C}_j$。</figcaption>
+  <p class="figure-translation">图内文字：not C₁ → 非类别 C₁；not C₂ → 非类别 C₂。</p>
+</figure>
+
+在这种表示法下，决策曲面是扩展后 $(D+1)$ 维输入空间中经过原点的 $D$ 维超平面。
+
+### 5.1.2 多个类别
+
+现在考虑把线性判别函数推广到 $K>2$ 个类别。我们可能会想把若干二类别判别函数组合成一个 $K$ 类判别函数，但这会造成一些严重问题（Duda 和 Hart，1973），下面加以说明。
+
+考虑一个有 $K-1$ 个分类器的模型，每个分类器解决一个二类别问题：区分特定类别 $\mathcal{C}_k$ 的点与不属于该类的点。这称为一对其余（one-versus-the-rest）分类器。图 5.2 左侧展示了三个类别的例子：这种方法会使输入空间的某些区域产生分类歧义。
+
+另一种方法是引入 $K(K-1)/2$ 个二元判别函数，每一对可能的类别各用一个。这称为一对一（one-versus-one）分类器。随后根据各判别函数的多数票对每个点分类。不过，图 5.2 右侧表明，这种方法同样存在歧义区域问题。
+
+可以用单个 $K$ 类判别函数避开这些困难，它包含 $K$ 个如下形式的线性函数：
+
+$$
+y_k(\mathbf{x})=\mathbf{w}_k^{\mathrm T}\mathbf{x}+w_{k0} \tag{5.7}
+$$
+
+若对所有 $j\ne k$ 都有 $y_k(\mathbf{x})>y_j(\mathbf{x})$，就把点 $\mathbf{x}$ 分到类别 $\mathcal{C}_k$。因此，类别 $\mathcal{C}_k$ 与类别 $\mathcal{C}_j$ 之间的决策边界由 $y_k(\mathbf{x})=y_j(\mathbf{x})$ 给出，而且
+
+<!-- pdf-page: 154 -->
+
+<figure id="fig-5-3">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-3.png" alt="多类线性判别函数的三个凸决策区域及同一区域内两点的连线">
+  <figcaption>图 5.3：多类线性判别函数的决策区域，红线为决策边界。若两点 $\mathbf{x}_A$ 和 $\mathbf{x}_B$ 都位于同一决策区域 $\mathcal{R}_k$ 内，则连接两点的线段上的任意点 $\hat{\mathbf{x}}$ 也必在 $\mathcal{R}_k$ 内，因此决策区域必定单连通且为凸集。</figcaption>
+</figure>
+
+它对应由下式定义的 $(D-1)$ 维超平面：
+
+$$
+(\mathbf{w}_k-\mathbf{w}_j)^{\mathrm T}\mathbf{x}+(w_{k0}-w_{j0})=0. \tag{5.8}
+$$
+
+它与第 5.1.1 小节讨论的二类别决策边界具有相同形式，因此适用类似的几何性质。
+
+此类判别函数的决策区域始终单连通且为凸集。为说明这一点，考虑同处于决策区域 $\mathcal{R}_k$ 内的两点 $\mathbf{x}_A$ 和 $\mathbf{x}_B$，如图 5.3 所示。连接 $\mathbf{x}_A$ 和 $\mathbf{x}_B$ 的线段上的任意一点 $\hat{\mathbf{x}}$，可写为
+
+$$
+\hat{\mathbf{x}}=\lambda\mathbf{x}_A+(1-\lambda)\mathbf{x}_B \tag{5.9}
+$$
+
+其中 $0\leqslant\lambda\leqslant1$。判别函数的线性性意味着
+
+$$
+y_k(\hat{\mathbf{x}})
+=\lambda y_k(\mathbf{x}_A)+(1-\lambda)y_k(\mathbf{x}_B). \tag{5.10}
+$$
+
+由于 $\mathbf{x}_A$ 和 $\mathbf{x}_B$ 都位于 $\mathcal{R}_k$ 内，对所有 $j\ne k$ 都有 $y_k(\mathbf{x}_A)>y_j(\mathbf{x}_A)$ 和 $y_k(\mathbf{x}_B)>y_j(\mathbf{x}_B)$；因此 $y_k(\hat{\mathbf{x}})>y_j(\hat{\mathbf{x}})$，即 $\hat{\mathbf{x}}$ 也位于 $\mathcal{R}_k$ 内。所以 $\mathcal{R}_k$ 单连通且为凸集。
+
+注意，对两个类别既可以使用这里基于两个判别函数 $y_1(\mathbf{x})$ 和 $y_2(\mathbf{x})$ 的形式，也可以采用第 5.1.1 小节基于单个判别函数 $y(\mathbf{x})$ 的更简单、但本质等价的形式。
+
+### 5.1.3 1-of-K 编码
+
+在回归问题中，目标变量 $\boldsymbol{t}$ 只是我们希望预测取值的实数向量。分类问题则有多种用目标值表示类别标签的方法。对于二类别问题，最方便的是二值表示：使用单个目标变量 $t\in\{0,1\}$，其中 $t=1$ 表示类别 $\mathcal{C}_1$，$t=0$ 表示类别 $\mathcal{C}_2$。可将 $t$ 的值解释为类别为 $\mathcal{C}_1$ 的概率，只不过概率只取 0 和 1 两个极端值。对于 $K>2$ 个类别，使用 1-of-$K$ 编码方案（也称独热编码，one-hot encoding）很方便：$\boldsymbol{t}$ 是长度为 $K$ 的向量，如果类别是 $\mathcal{C}_j$，则 $\boldsymbol{t}$ 的所有元素 $t_k$ 都为零，
+
+<!-- pdf-page: 155 -->
+
+只有第 $j$ 个元素 $t_j$ 取值 1。例如，若有 $K=5$ 个类别，则属于类别 2 的数据点的目标向量为
+
+$$
+\boldsymbol{t}=(0,1,0,0,0)^{\mathrm T}. \tag{5.11}
+$$
+
+同样，可将 $t_k$ 的值解释为类别为 $\mathcal{C}_k$ 的概率，此时这些概率只取 0 或 1。
+
+### 5.1.4 分类中的最小二乘法
+
+对于线性回归模型，最小化平方和误差函数会得到参数值的简单闭式解（见第 4.1.3 小节）。因此，很容易想到把同样的最小二乘方法用于分类问题。考虑具有 $K$ 个类别的一般分类问题，并用 1-of-$K$ 二值编码表示目标向量 $\boldsymbol{t}$。在此情境中使用最小二乘法的一个理由是，它近似给定输入向量时目标值的条件期望 $\mathbb{E}[\boldsymbol{t}\mid\mathbf{x}]$。对于二值编码，该条件期望就是各类别后验概率组成的向量（习题 5.1）。遗憾的是，对这些概率的近似通常相当差，甚至可能超出区间 $(0,1)$。不过，考察这些简单模型并理解其局限性从何而来，仍很有价值。
+
+每个类别 $\mathcal{C}_k$ 都由自己的线性模型描述：
+
+$$
+y_k(\mathbf{x})=\mathbf{w}_k^{\mathrm T}\mathbf{x}+w_{k0}, \tag{5.12}
+$$
+
+其中 $k=1,\ldots,K$。使用向量记号，可以方便地把这些模型合并为
+
+$$
+\mathbf{y}(\mathbf{x})=\widetilde{\mathbf{W}}^{\mathrm T}\widetilde{\mathbf{x}} \tag{5.13}
+$$
+
+其中矩阵 $\widetilde{\mathbf{W}}$ 的第 $k$ 列为 $(D+1)$ 维向量 $\widetilde{\mathbf{w}}_k=(w_{k0},\mathbf{w}_k^{\mathrm T})^{\mathrm T}$；$\widetilde{\mathbf{x}}=(1,\mathbf{x}^{\mathrm T})^{\mathrm T}$ 是对应的扩展输入向量，含虚设输入 $x_0=1$。对新输入 $\mathbf{x}$，把它分配给输出 $y_k=\widetilde{\mathbf{w}}_k^{\mathrm T}\widetilde{\mathbf{x}}$ 最大的类别。
+
+现在通过最小化平方和误差函数确定参数矩阵 $\widetilde{\mathbf{W}}$。考虑训练数据集 $\{\mathbf{x}_n,\boldsymbol{t}_n\}$，其中 $n=1,\ldots,N$。定义矩阵 $\mathbf{T}$，其第 $n$ 行是向量 $\boldsymbol{t}_n^{\mathrm T}$；另定义矩阵 $\widetilde{\mathbf{X}}$，其第 $n$ 行是 $\widetilde{\mathbf{x}}_n^{\mathrm T}$。平方和误差函数可写为
+
+$$
+E_D(\widetilde{\mathbf{W}})
+=\frac{1}{2}\operatorname{Tr}\left\{
+(\widetilde{\mathbf{X}}\widetilde{\mathbf{W}}-\mathbf{T})^{\mathrm T}
+(\widetilde{\mathbf{X}}\widetilde{\mathbf{W}}-\mathbf{T})
+\right\}. \tag{5.14}
+$$
+
+令其对 $\widetilde{\mathbf{W}}$ 的导数为零，再整理，得到
+
+$$
+\widetilde{\mathbf{W}}
+=(\widetilde{\mathbf{X}}^{\mathrm T}\widetilde{\mathbf{X}})^{-1}
+\widetilde{\mathbf{X}}^{\mathrm T}\mathbf{T}
+=\widetilde{\mathbf{X}}^{\dagger}\mathbf{T} \tag{5.15}
+$$
+
+其中 $\widetilde{\mathbf{X}}^{\dagger}$ 是矩阵 $\widetilde{\mathbf{X}}$ 的伪逆（见第 4.1.3 小节）。因此得到判别
+
+<!-- pdf-page: 156 -->
+
+函数：
+
+$$
+\mathbf{y}(\mathbf{x})
+=\widetilde{\mathbf{W}}^{\mathrm T}\widetilde{\mathbf{x}}
+=\mathbf{T}^{\mathrm T}(\widetilde{\mathbf{X}}^{\dagger})^{\mathrm T}\widetilde{\mathbf{x}}. \tag{5.16}
+$$
+
+多目标变量最小二乘解有一项有趣的性质：如果训练集中每个目标向量都满足某个线性约束
+
+$$
+\mathbf{a}^{\mathrm T}\boldsymbol{t}_n+b=0 \tag{5.17}
+$$
+
+其中 $\mathbf{a}$ 和 $b$ 为常量，则模型对任意 $\mathbf{x}$ 的预测也满足同一约束（习题 5.3）：
+
+$$
+\mathbf{a}^{\mathrm T}\mathbf{y}(\mathbf{x})+b=0. \tag{5.18}
+$$
+
+所以，若对 $K$ 个类别使用 1-of-$K$ 编码，模型对任何 $\mathbf{x}$ 的预测都会满足 $\mathbf{y}(\mathbf{x})$ 各元素之和为 1 的性质。但是，仅有这一求和约束还不足以把模型输出解释为概率，因为并没有约束它们落在区间 $(0,1)$ 内。
+
+最小二乘法给出了判别函数参数的精确闭式解。不过，即使只把它用作直接决策的判别函数，完全不作概率解释，它仍有一些严重问题。我们已经看到，在假设高斯噪声分布时，平方和误差函数可视为负对数似然（见第 2.3.4 小节）。如果数据的真实分布与高斯分布明显不同，最小二乘法的结果就可能很差。特别是，它对离群点非常敏感；离群点是远离大部分数据的数据点。图 5.4 说明了这一点。右图虽然只是增加了几个数据点，却使决策边界的位置发生显著变化；而这些点即使用左图原有的决策边界，也能正确分类。平方和误差函数给予远离决策边界的数据点过大的权重，即使它们已被正确分类。离群点可能由罕见事件产生，也可能只是数据集中的错误。对极少数数据点敏感的技术称为缺乏稳健性。作为比较，图 5.4 也展示了一种称为逻辑回归的技术的结果，它对离群点更稳健（见第 5.4.3 小节）。
+
+回顾最小二乘法对应于假设高斯条件分布时的极大似然法，而二值目标向量的分布显然远非高斯，就不难理解它为什么表现不佳。采用更合适的概率模型，可以得到性质远优于最小二乘法的分类技术；后续章节将看到，这些技术还能推广为灵活的非线性神经网络模型。
+
+<!-- pdf-page: 157 -->
+
+<figure id="fig-5-4">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-4.png" alt="两类散点及最小二乘和逻辑回归边界在加入离群点前后的比较">
+  <figcaption>图 5.4：左图的两类数据分别以红色叉号和蓝色圆圈表示，同时显示最小二乘法（品红色曲线）和逻辑回归模型（绿色曲线）得到的决策边界。右图是在右下角加入额外数据点后的相应结果；与逻辑回归相比，最小二乘法对离群点高度敏感。</figcaption>
+</figure>
+
+## 5.2 决策理论
+
+讨论线性回归时，我们看到机器学习中的预测过程可分为推断和决策两个阶段（见第 4.2 节）。现在专门在分类器语境下，更深入地研究这一视角。
+
+假设有输入向量 $\mathbf{x}$ 和对应的目标变量向量 $\boldsymbol{t}$，目标是给定新 $\mathbf{x}$ 时预测 $\boldsymbol{t}$。对于回归问题，$\boldsymbol{t}$ 包含连续变量；一般来说，它是向量，因为我们可能想预测几个相互关联的量。对于分类问题，$\boldsymbol{t}$ 表示类别标签；如果有两个以上的类别，它通常也是向量。联合概率分布 $p(\mathbf{x},\boldsymbol{t})$ 完整概括了这些变量所涉及的不确定性。根据一组训练数据确定 $p(\mathbf{x},\boldsymbol{t})$ 是推断的一个例子，通常非常困难；如何解决这一问题构成本书大量内容。不过，在实际应用中，我们往往必须对 $\boldsymbol{t}$ 的值作出具体预测，或更一般地依据对 $\boldsymbol{t}$ 可能取值的认识采取具体行动；这一部分属于决策理论。
+
+例如，考虑前面讨论的医学诊断问题：已经拍摄了一名患者皮肤病变的图像，现在希望判断患者是否患有癌症。在这种情形下，输入向量 $\mathbf{x}$ 是图像中各像素强度组成的集合，
+
+<!-- pdf-page: 158 -->
+
+而输出变量 $t$ 表示是否患癌。我们将未患癌记作类别 $\mathcal{C}_1$，患癌记作类别 $\mathcal{C}_2$。例如，可以把 $t$ 取为二元变量，使 $t=0$ 对应类别 $\mathcal{C}_1$，$t=1$ 对应类别 $\mathcal{C}_2$。后面将看到，在处理概率时，这样选取标签值尤其方便。一般的推断问题是确定联合分布 $p(\mathbf{x},\mathcal{C}_k)$，或等价地确定 $p(\mathbf{x},t)$；它给出了关于这些变量最完整的概率描述。这个分布可能非常有用，也包含丰富信息，但最终我们仍须决定是否治疗患者，并希望按某个恰当的准则作出最优选择（Duda and Hart，1973）。这就是决策步骤。决策理论的目标是说明，在已知相关概率时，如何作出最优决策。我们将看到，一旦解决了推断问题，决策阶段通常非常简单，甚至不言自明。这里介绍本书后续部分所需的决策理论核心思想。更丰富的背景和更详细的论述见 Berger（1985）和 Bather（2000）。
+
+在作更详细的分析之前，先直观地看一看概率如何参与决策。当我们获得一名新患者的皮肤图像 $\mathbf{x}$ 时，目标是决定把这幅图像归入两个类别中的哪一个。因此，我们关心给定图像时两个类别的概率 $p(\mathcal{C}_k\mid\mathbf{x})$。由贝叶斯定理，这些概率可以写成
+
+$$
+p(\mathcal{C}_k\mid\mathbf{x})
+=\frac{p(\mathbf{x}\mid\mathcal{C}_k)p(\mathcal{C}_k)}
+{p(\mathbf{x})}. \tag{5.19}
+$$
+
+注意，对联合分布 $p(\mathbf{x},\mathcal{C}_k)$ 中相应的变量求边缘分布或进行条件化，就能得到贝叶斯定理中出现的任意一项。现在可以把 $p(\mathcal{C}_k)$ 解释为类别 $\mathcal{C}_k$ 的先验概率，把 $p(\mathcal{C}_k\mid\mathbf{x})$ 解释为相应的后验概率。因此，$p(\mathcal{C}_2)$ 表示拍摄图像之前一个人患癌的概率。类似地，$p(\mathcal{C}_2\mid\mathbf{x})$ 是利用图像中的信息按贝叶斯定理修正后的后验概率。如果目标是尽量减小把 $\mathbf{x}$ 分错类别的可能性，直觉上我们会选择后验概率较大的类别。下面将证明这个直觉是正确的，并讨论更一般的决策准则。
+
+**译注：** 原书此处将“患癌”的类别写作 $\mathcal{C}_1$，与上文“$\mathcal{C}_1$ 为未患癌、$\mathcal{C}_2$ 为患癌”的定义相反；这里按上文定义改为 $\mathcal{C}_2$。
+
+### 5.2.1 误分类率
+
+假设目标只是尽可能少地发生误分类。我们需要一条规则，把 $\mathbf{x}$ 的每一个取值分配给一个可用的类别。这条规则将输入空间划分为若干称为**决策区域**的区域 $\mathcal{R}_k$，每个类别对应一个区域，$\mathcal{R}_k$ 中的所有点都分配给类别 $\mathcal{C}_k$。决策区域之间的边界称为**决策边界**或**决策曲面**。每个决策区域不一定连通，也可能由若干互不相连的区域组成。为找出最优决策规则，先考虑癌症诊断问题这样的两类别情形。当一个属于
+
+<!-- pdf-page: 159 -->
+
+类别 $\mathcal{C}_1$ 的输入向量被分配给类别 $\mathcal{C}_2$，或反过来时，就发生了错误。这种情况的概率为
+
+$$
+\begin{aligned}
+p(\text{错误})
+&=p(\mathbf{x}\in\mathcal{R}_1,\mathcal{C}_2)
+ +p(\mathbf{x}\in\mathcal{R}_2,\mathcal{C}_1)\\
+&=\int_{\mathcal{R}_1}p(\mathbf{x},\mathcal{C}_2)\,\mathrm{d}\mathbf{x}
+ +\int_{\mathcal{R}_2}p(\mathbf{x},\mathcal{C}_1)\,\mathrm{d}\mathbf{x}.
+\end{aligned}\tag{5.20}
+$$
+
+我们可以自由选择把每个点 $\mathbf{x}$ 分配给两个类别之一的决策规则。显然，为使 $p(\text{错误})$ 最小，应把每个 $\mathbf{x}$ 分配给使式（5.20）的积分贡献较小的类别。因而，如果某个 $\mathbf{x}$ 满足 $p(\mathbf{x},\mathcal{C}_1)>p(\mathbf{x},\mathcal{C}_2)$，就应把它分配给类别 $\mathcal{C}_1$。由概率的乘法法则，$p(\mathbf{x},\mathcal{C}_k)=p(\mathcal{C}_k\mid\mathbf{x})p(\mathbf{x})$。因子 $p(\mathbf{x})$ 对两项相同，所以也可以表述为：要使出错概率最小，应把 $\mathbf{x}$ 的每一个取值分配给后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 最大的类别。图 5.5 用两个类别、单个输入变量 $x$ 的情况说明了这一结果。
+
+对于更一般的 $K$ 类情形，最大化正确分类的概率稍为方便。该概率为
+
+$$
+\begin{aligned}
+p(\text{正确})
+&=\sum_{k=1}^{K}p(\mathbf{x}\in\mathcal{R}_k,\mathcal{C}_k)\\
+&=\sum_{k=1}^{K}\int_{\mathcal{R}_k}
+p(\mathbf{x},\mathcal{C}_k)\,\mathrm{d}\mathbf{x}.
+\end{aligned}\tag{5.21}
+$$
+
+如果选择决策区域 $\mathcal{R}_k$，使每个 $\mathbf{x}$ 都分配给 $p(\mathbf{x},\mathcal{C}_k)$ 最大的类别，这个概率就达到最大。再次使用乘法法则 $p(\mathbf{x},\mathcal{C}_k)=p(\mathcal{C}_k\mid\mathbf{x})p(\mathbf{x})$，并注意到因子 $p(\mathbf{x})$ 对所有项都相同，可知应把每个 $\mathbf{x}$ 分配给后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 最大的类别。
+
+### 5.2.2 期望损失
+
+在很多应用中，我们的目标比单纯减少误分类次数更复杂。再考虑医学诊断问题。如果一名未患癌的患者被误诊为患癌，后果可能是患者受到惊吓，还须接受进一步检查。相反，如果一名癌症患者被诊断为健康，因未得到治疗而可能过早死亡。因此，这两类错误的后果可能有天壤之别。显然，即使为此要增加第一类错误，也应尽量减少第二类错误。
+
+可以引入**损失函数**（也称**代价函数**）来形式化这些问题。它是衡量采取各种可用决策或行动所造成损失的单一总体指标。我们的目标就是使总损失最小。注意，有些作者改用**效用函数**，并希望使它的值
+
+<!-- pdf-page: 160 -->
+
+<figure id="fig-5-5">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-5.png" alt="两类联合概率曲线与决策边界的示意图，包含两个子图">
+  <figcaption>图 5.5 两个类别的联合概率 $p(x,\mathcal{C}_k)$ 随 $x$ 变化的示意图，同时画出了决策边界 $x=\hat{x}$。$x\geqslant\hat{x}$ 的值被归为类别 $\mathcal{C}_2$，属于决策区域 $\mathcal{R}_2$；$x<\hat{x}$ 的点被归为 $\mathcal{C}_1$，属于 $\mathcal{R}_1$。蓝色、绿色和红色区域对应分类错误：当 $x<\hat{x}$ 时，错误来自把类别 $\mathcal{C}_2$ 的点错分为 $\mathcal{C}_1$（红色与绿色区域面积之和）；而当 $x\geqslant\hat{x}$ 时，错误来自把类别 $\mathcal{C}_1$ 的点错分为 $\mathcal{C}_2$（蓝色区域）。如（a）中红色双向箭头所示，改变决策边界 $\hat{x}$ 的位置时，蓝色与绿色区域的总面积保持不变，而红色区域的面积会变化。最优选择是令 $\hat{x}$ 位于 $p(x,\mathcal{C}_1)$ 与 $p(x,\mathcal{C}_2)$ 两条曲线的交点，即（b）中的 $\hat{x}=x_0$，因为此时红色区域消失。这等价于最小误分类率决策规则：把每个 $x$ 值分配给后验概率 $p(\mathcal{C}_k\mid x)$ 较大的类别。</figcaption>
+</figure>
+
+<!-- pdf-page: 161 -->
+
+<figure id="fig-5-6">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-6.png" alt="癌症治疗问题的损失矩阵">
+  <figcaption>图 5.6 癌症治疗问题中元素为 $L_{kj}$ 的损失矩阵示例。行对应真实类别，列对应决策准则分配的类别。</figcaption>
+  <p class="figure-translation">图内文字：normal＝未患癌；cancer＝患癌。行依次为真实类别“未患癌、患癌”，列依次为判定类别“未患癌、患癌”；矩阵数值为 $0,1;100,0$。</p>
+</figure>
+
+最大化。若把效用直接定义为损失的相反数，这两个概念就是等价的。本书通篇采用损失函数的约定。假设对一个新的 $\mathbf{x}$，真实类别是 $\mathcal{C}_k$，而我们把 $\mathbf{x}$ 分配给类别 $\mathcal{C}_j$（$j$ 可能等于 $k$，也可能不等于）。这样会产生某个水平的损失，记为 $L_{kj}$，可将它看作损失矩阵的第 $k,j$ 个元素。例如，癌症诊断示例可以采用图 5.6 所示的损失矩阵。这个矩阵表示：决策正确时没有损失；把健康患者诊断为患癌时损失为 1；把癌症患者诊断为健康时损失为 100。
+
+最优解应使损失函数最小。然而，损失函数取决于未知的真实类别。给定输入向量 $\mathbf{x}$ 时，我们对真实类别的不确定性由联合概率分布 $p(\mathbf{x},\mathcal{C}_k)$ 表示，因此转而寻求最小化相对于这个分布计算的**平均损失**：
+
+$$
+\mathbb{E}[L]
+=\sum_k\sum_j\int_{\mathcal{R}_j}
+L_{kj}p(\mathbf{x},\mathcal{C}_k)\,\mathrm{d}\mathbf{x}.
+\tag{5.22}
+$$
+
+每个 $\mathbf{x}$ 都可以独立分配给一个决策区域 $\mathcal{R}_j$。我们的目标是选择这些区域，使期望损失（5.22）最小。这意味着，对于每个 $\mathbf{x}$，应使 $\sum_k L_{kj}p(\mathbf{x},\mathcal{C}_k)$ 最小。和前面一样，可以用乘法法则 $p(\mathbf{x},\mathcal{C}_k)=p(\mathcal{C}_k\mid\mathbf{x})p(\mathbf{x})$ 消去公共因子 $p(\mathbf{x})$。因此，最小化期望损失的决策规则会把每个新的 $\mathbf{x}$ 分配给使下式最小的类别 $j$：
+
+$$
+\sum_k L_{kj}p(\mathcal{C}_k\mid\mathbf{x}).
+\tag{5.23}
+$$
+
+一旦选定损失矩阵的元素 $L_{kj}$，这显然很容易做到。
+
+### 5.2.3 拒判选项
+
+我们已经看到，分类错误发生在输入空间中最大后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 显著小于 1 的区域；等价地，也发生在联合分布 $p(\mathbf{x},\mathcal{C}_k)$ 取值相近的区域。在这些区域，我们对类别归属比较不确定。在某些应用中，避开难以判断的样本，只对其余样本作分类决策，可望降低已决策样本的错误率。这称为**拒判选项**。例如，在假想的癌症筛查场景中，可以适当采用自动
+
+<!-- pdf-page: 162 -->
+
+<figure id="fig-5-7">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-7.png" alt="两类后验概率曲线、阈值及拒判区域">
+  <figcaption>图 5.7 拒判选项示意图。当输入 $x$ 对应的两个后验概率中较大者不超过某一阈值 $\theta$ 时，拒绝分类。</figcaption>
+  <p class="figure-translation">图内文字：reject region＝拒判区域。</p>
+</figure>
+
+系统，对正确类别几乎没有疑问的图像直接分类，而对更模棱两可的病例要求进行活检。具体做法是引入阈值 $\theta$，当输入 $\mathbf{x}$ 对应的最大后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 小于或等于 $\theta$ 时予以拒判。图 5.7 展示了两类别、单个连续输入变量 $x$ 的情况。注意，设 $\theta=1$ 会使所有样本都被拒判；如果有 $K$ 个类别，设 $\theta<1/K$ 则不会拒判任何样本。因此，拒判样本的比例受 $\theta$ 的取值控制。
+
+如果给定损失矩阵，只需把拒判决策本身造成的损失考虑进去，就很容易扩展拒判准则，使期望损失最小。参见习题 5.10。
+
+### 5.2.4 推断与决策
+
+我们把分类问题分成两个阶段：在**推断阶段**，利用训练数据学习 $p(\mathcal{C}_k\mid\mathbf{x})$ 的模型；随后在**决策阶段**，用这些后验概率作出最优类别分配。另一种办法是同时解决两个问题，直接学习一个把输入 $\mathbf{x}$ 映射为决策的函数。这样的函数称为**判别函数**。
+
+实际上，可以区分出三种解决决策问题的方法，它们都曾用于实际应用。按复杂程度由高到低排列如下：
+
+（a）首先解决推断问题，分别确定每个类别 $\mathcal{C}_k$ 的类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$，并另行推断类别先验概率 $p(\mathcal{C}_k)$。然后用贝叶斯定理
+
+$$
+p(\mathcal{C}_k\mid\mathbf{x})
+=\frac{p(\mathbf{x}\mid\mathcal{C}_k)p(\mathcal{C}_k)}
+{p(\mathbf{x})}
+\tag{5.24}
+$$
+
+求得类别后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$。和往常一样，贝叶斯定理的分母可以
+
+<!-- pdf-page: 163 -->
+
+用分子中的量求出：
+
+$$
+p(\mathbf{x})=\sum_k p(\mathbf{x}\mid\mathcal{C}_k)p(\mathcal{C}_k).
+\tag{5.25}
+$$
+
+等价地，也可以直接对联合分布 $p(\mathbf{x},\mathcal{C}_k)$ 建模，然后通过归一化得到后验概率。求出后验概率后，再使用决策理论确定每个新输入 $\mathbf{x}$ 的类别。显式或隐式地对输入与输出的分布同时建模的方法称为**生成模型**，因为可以从模型中采样，在输入空间生成合成数据点。
+
+（b）首先解决确定类别后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 的推断问题，然后再用决策理论把每个新的 $\mathbf{x}$ 分配给某个类别。直接对后验概率建模的方法称为**判别模型**。
+
+（c）寻找一个称为**判别函数**的函数 $f(\mathbf{x})$，把每个输入 $\mathbf{x}$ 直接映射到类别标签。例如，对两类别问题，$f(\cdot)$ 可以是二值函数，其中 $f=0$ 表示类别 $\mathcal{C}_1$，$f=1$ 表示类别 $\mathcal{C}_2$。这种情况下，概率不参与其中。
+
+来比较这三种方法的优缺点。方法（a）要求最高，因为它要确定 $\mathbf{x}$ 与 $\mathcal{C}_k$ 的联合分布。很多应用的 $\mathbf{x}$ 维度很高，因此可能需要很大的训练集，才能以合理的精度确定类条件密度。注意，类别先验概率 $p(\mathcal{C}_k)$ 往往可以直接由训练集中各类别数据点所占的比例来估计。不过，方法（a）有一个优点：还可以由式（5.25）确定数据的边缘密度 $p(\mathbf{x})$。这有助于发现模型认为概率很低、预测可能不准确的新数据点，称为**离群点检测**或**新颖性检测**（Bishop，1994；Tarassenko，1995）。
+
+不过，如果我们只需作分类决策，那么确定联合分布 $p(\mathbf{x},\mathcal{C}_k)$ 可能浪费计算资源，而且对数据量的要求过高，因为实际上只需要后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$，可以通过方法（b）直接得到。事实上，类条件密度可能包含大量对后验概率几乎没有影响的结构，如图 5.8 所示。生成方法与判别方法在机器学习中的相对优缺点，以及如何结合两者，受到广泛关注（Jebara，2004；Lasserre、Bishop 和 Minka，2006）。
+
+更简单的是方法（c）：利用训练数据寻找判别函数 $f(\mathbf{x})$，直接把每个 $\mathbf{x}$ 映射到类别标签，从而把推断与决策合并为一个学习问题。就图 5.8 的例子而言，这相当于找出绿色竖线所示的 $x$ 值，
+
+<!-- pdf-page: 164 -->
+
+<figure id="fig-5-8">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-8.png" alt="两类的类条件密度与对应的后验概率曲线">
+  <figcaption>图 5.8 单个输入变量 $x$ 下两个类别的类条件密度示例（左图），以及对应的后验概率（右图）。注意，左图以蓝色显示的类条件密度 $p(x\mid\mathcal{C}_1)$ 的左侧峰值，对后验概率没有影响。假设两个类别的先验概率 $p(\mathcal{C}_1)$ 和 $p(\mathcal{C}_2)$ 相等，右图绿色竖线表示能使误分类率最小的 $x$ 决策边界。</figcaption>
+  <p class="figure-translation">图内文字：class densities＝类别密度。其余文字为概率与变量符号。</p>
+</figure>
+
+因为该位置的决策边界使误分类概率最小。
+
+不过，采用方法（c）就无法再得到后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$。即使最终仍用后验概率来决策，计算它们也有许多重要理由，包括：
+
+**使风险最小。** 考虑损失矩阵的元素不时修订的问题，例如金融应用。如果已知后验概率，只需相应修改式（5.23），就能轻松更新最小风险决策准则。如果只有判别函数，损失矩阵一变，就得重新使用训练数据解决推断问题。
+
+**拒判选项。** 利用后验概率，可以制定拒判准则，使某个既定拒判比例下的误分类率，或更一般地使期望损失，达到最小。
+
+**对类别先验概率作补偿。** 再来看癌症筛查示例（见第 2.1.1 节）。假设已从普通人群收集大量图像作为训练数据，用来建立自动筛查系统。由于普通人群中癌症罕见，可能发现例如每 1,000 个样本中只有 1 个对应癌症。
+
+<!-- pdf-page: 165 -->
+
+如果用这样的数据集训练自适应模型，癌症类别所占比例太小，可能带来严重困难。例如，把每个点都归为正常类别的分类器也能达到 99.9% 的准确率，可能难以避免这一平庸解。此外，即使数据集很大，癌症皮肤图像的样本仍然很少，学习算法就接触不到这类图像的广泛实例，因此不大可能很好地泛化。各类别样本数相等的平衡数据集有助于找到更准确的模型，但随后必须补偿我们对训练数据所作的修改。假设已经使用这种修改过的数据集，建立了后验概率模型。由贝叶斯定理（5.24）可见，后验概率与先验概率成比例，而先验概率可理解为各类别数据点所占的比例。因此，只需把从人工平衡数据集得到的后验概率除以该数据集中相应类别所占比例，再乘以模型目标应用人群中相应类别所占比例。最后归一化，使新的后验概率之和为 1。注意，如果直接学习的是判别函数，而非确定后验概率，就无法采用这一方法。
+
+**组合模型。** 对复杂应用，我们可能希望把问题拆成若干较小的子问题，分别由不同模块处理。例如，在假设的医学诊断问题中，除了皮肤图像，还可能有血液检测的信息。与其把所有这些异质信息放进一个巨大的输入空间，不如建立一个系统解读图像，另一个系统解读血液数据。如果两个模型都输出各类别的后验概率，就能按照概率法则系统地组合两者的输出。一种简单方法是分别对每个类别假设：图像输入的分布（记为 $\mathbf{x}_{\mathrm I}$）与血液数据的分布（记为 $\mathbf{x}_{\mathrm B}$）相互独立，于是
+
+$$
+p(\mathbf{x}_{\mathrm I},\mathbf{x}_{\mathrm B}\mid\mathcal{C}_k)
+=p(\mathbf{x}_{\mathrm I}\mid\mathcal{C}_k)
+p(\mathbf{x}_{\mathrm B}\mid\mathcal{C}_k).
+\tag{5.26}
+$$
+
+这是一个**条件独立**性质的例子（见第 11.2 节），因为在给定类别 $\mathcal{C}_k$ 的条件下，独立性才成立。给定图像和血液数据时，后验概率为
+
+$$
+\begin{aligned}
+p(\mathcal{C}_k\mid\mathbf{x}_{\mathrm I},\mathbf{x}_{\mathrm B})
+&\propto p(\mathbf{x}_{\mathrm I},\mathbf{x}_{\mathrm B}\mid\mathcal{C}_k)p(\mathcal{C}_k)\\
+&\propto p(\mathbf{x}_{\mathrm I}\mid\mathcal{C}_k)
+p(\mathbf{x}_{\mathrm B}\mid\mathcal{C}_k)p(\mathcal{C}_k)\\
+&\propto \frac{p(\mathcal{C}_k\mid\mathbf{x}_{\mathrm I})
+p(\mathcal{C}_k\mid\mathbf{x}_{\mathrm B})}{p(\mathcal{C}_k)}.
+\end{aligned}\tag{5.27}
+$$
+
+因此，需要类别先验概率 $p(\mathcal{C}_k)$（很容易从各类别的数据点比例估计），然后对所得后验概率归一化，
+
+<!-- pdf-page: 166 -->
+
+<figure id="fig-5-9">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-9.png" alt="癌症筛查的混淆矩阵">
+  <figcaption>图 5.9 癌症筛查问题的混淆矩阵：行对应真实类别，列对应决策准则分配的类别。矩阵元素给出真阴性、假阳性、假阴性和真阳性的数量。</figcaption>
+  <p class="figure-translation">图内文字：normal＝未患癌；cancer＝患癌。$N_{\mathrm{TN}}$＝真阴性数量，$N_{\mathrm{FP}}$＝假阳性数量，$N_{\mathrm{FN}}$＝假阴性数量，$N_{\mathrm{TP}}$＝真阳性数量。</p>
+</figure>
+
+使其总和为 1。式（5.26）的这种特殊条件独立假设，是一个**朴素贝叶斯模型**的例子（见第 11.2.3 节）。注意，在这个模型下，联合边缘分布 $p(\mathbf{x}_{\mathrm I},\mathbf{x}_{\mathrm B})$ 通常不能分解为乘积。后面章节将介绍如何构建无需式（5.26）条件独立假设的数据组合模型。与输出决策的模型相比，输出概率的模型还有一个好处：很容易使它们对可调参数（例如多项式回归中的权重系数）可微，从而能够组合起来，并用第 7 章介绍的基于梯度的优化方法共同训练。
+
+### 5.2.5 分类器准确率
+
+衡量分类器性能最简单的指标，是测试集中分类正确的数据点所占比例。不过我们已看到，不同类型的错误可能有不同的后果，损失矩阵正是对此的表达；因此我们通常并不只想减少误分类的数量。改变决策边界的位置，可以在不同类型的错误之间作取舍，例如为了使期望损失最小。这个概念十分重要，因此下面引入一些定义和术语，更好地刻画分类器的性能。
+
+再考虑癌症筛查示例（见第 2.1.1 节）。每名受检者都有一个表示是否患癌的“真实标签”，分类器也会给出预测。如果分类器对某人预测为患癌，而这确实是真实标签，就称该预测为**真阳性**；如果此人没有患癌，则称为**假阳性**。类似地，如果分类器预测某人未患癌，而且确实如此，就称为**真阴性**；否则是**假阴性**。假阳性也称为**第一类错误**，假阴性则称为**第二类错误**。若 $N$ 是接受检测的总人数，$N_{\mathrm{TP}}$、$N_{\mathrm{FP}}$、$N_{\mathrm{TN}}$ 和 $N_{\mathrm{FN}}$ 分别是真阳性、假阳性、真阴性和假阴性的数量，那么
+
+$$
+N=N_{\mathrm{TP}}+N_{\mathrm{FP}}+N_{\mathrm{TN}}+N_{\mathrm{FN}}.
+\tag{5.28}
+$$
+
+这可以表示为图 5.9 的混淆矩阵。**准确率**是分类正确的比例：
+
+$$
+\text{准确率}
+=\frac{N_{\mathrm{TP}}+N_{\mathrm{TN}}}
+{N_{\mathrm{TP}}+N_{\mathrm{FP}}+N_{\mathrm{TN}}+N_{\mathrm{FN}}}.
+\tag{5.29}
+$$
+
+<!-- pdf-page: 167 -->
+
+可以看到，类别高度不平衡时，准确率可能产生误导。例如，癌症筛查示例中每 1,000 人只有 1 人患癌，那么一个简单地断定所有人都不患癌的幼稚分类器，可以达到 99.9% 的准确率，却完全没有用处。
+
+这些计数还可以定义其他多个量，最常见的包括
+
+$$
+\text{精确率}=\frac{N_{\mathrm{TP}}}{N_{\mathrm{TP}}+N_{\mathrm{FP}}}
+\tag{5.30}
+$$
+
+$$
+\text{召回率}=\frac{N_{\mathrm{TP}}}{N_{\mathrm{TP}}+N_{\mathrm{FN}}}
+\tag{5.31}
+$$
+
+$$
+\text{假阳性率}=\frac{N_{\mathrm{FP}}}{N_{\mathrm{FP}}+N_{\mathrm{TN}}}
+\tag{5.32}
+$$
+
+$$
+\text{错误发现率}=\frac{N_{\mathrm{FP}}}{N_{\mathrm{FP}}+N_{\mathrm{TP}}}.
+\tag{5.33}
+$$
+
+在癌症筛查示例中，精确率估计检测结果为阳性的人确实患癌的概率；召回率估计癌症患者被检测正确识别的概率。假阳性率估计健康人被归为患癌的概率；错误发现率则表示检测结果为阳性的人中实际未患癌的比例。
+
+改变决策边界的位置，就能改变两类错误之间的取舍。为理解这种取舍，再看图 5.5，不过现在按图 5.10 给各个区域加上标签。可以把标记的区域与各种真、假结果的比率对应起来：
+
+$$
+N_{\mathrm{FP}}/N=E
+\tag{5.34}
+$$
+
+$$
+N_{\mathrm{TP}}/N=D+E
+\tag{5.35}
+$$
+
+$$
+N_{\mathrm{FN}}/N=B+C
+\tag{5.36}
+$$
+
+$$
+N_{\mathrm{TN}}/N=A+C.
+\tag{5.37}
+$$
+
+这里隐含地考虑了 $N\to\infty$ 的极限，以便把观察数量与概率联系起来。
+
+### 5.2.6 ROC 曲线
+
+概率分类器会输出后验概率，可以设定阈值把它转换成决策。改变阈值，就可以减少第一类错误，但要以增加第二类错误为代价，反之亦然。为更好地理解这种取舍，适合绘制**受试者工作特征曲线**，即 **ROC 曲线**（Fawcett，2006）。这一名称源于测量雷达接收机性能的方法。ROC 曲线以真阳性率对假阳性率作图，如图 5.11 所示。
+
+当图 5.10 的决策边界从 $-\infty$ 移到 $\infty$，就描绘出了 ROC 曲线。它可以通过在纵轴上绘制正确检出癌症的累积比例、在横轴上绘制错误检出的累积比例来生成。
+
+<!-- pdf-page: 168 -->
+
+<figure id="fig-5-10">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-10.png" alt="标注了 A 至 E 五个区域的两类联合概率图">
+  <figcaption>图 5.10 与图 5.5 相同，但为各个区域加上了标签。在癌症分类问题中，区域 $\mathcal{R}_1$ 被分配给正常类别，区域 $\mathcal{R}_2$ 被分配给癌症类别。</figcaption>
+</figure>
+
+注意，某个具体的混淆矩阵对应 ROC 曲线上的一个点。最好的分类器会落在 ROC 图的左上角。左下角表示一个简单的分类器，它把所有点都分配给正常类别，因此既没有真阳性，也没有假阳性。类似地，右上角表示把所有输入都分配给癌症类别的分类器，因此既没有假阴性，也没有真阴性。图 5.11 中，若固定例如假阳性率，蓝色曲线对应的分类器都优于红色曲线对应的分类器。不过，这类曲线也可能相交，此时哪条曲线更好取决于所选的工作点。
+
+作为基线，可以考虑一个随机分类器，它以概率 $\rho$ 把每个数据点分配给癌症类别，以概率 $1-\rho$ 分配给正常类别。改变 $\rho$ 时，它描绘出如图 5.11 所示的对角直线 ROC 曲线。对角线以下的分类器表现比随机猜测还差。
+
+有时需要一个数字来概括整条 ROC 曲线。一种办法是测量**曲线下面积**（AUC）。AUC 为 0.5 表示随机猜测，为 1.0 表示完美分类器。
+
+另一个指标是 **F 分数**，它是精确率与召回率的调和平均，因此定义为
+
+<!-- pdf-page: 169 -->
+
+<figure id="fig-5-11">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-11.png" alt="蓝色、红色与随机分类器的 ROC 曲线">
+  <figcaption>图 5.11 受试者工作特征（ROC）曲线绘制真阳性率与假阳性率的关系，刻画分类问题中第一类错误与第二类错误之间的取舍。上方蓝色曲线表示的分类器优于下方红色曲线表示的分类器。虚线表示一个简单的随机分类器的性能。</figcaption>
+  <p class="figure-translation">图内文字：True positive rate＝真阳性率；False positive rate＝假阳性率。</p>
+</figure>
+
+$$
+F=\frac{2\times\text{精确率}\times\text{召回率}}
+{\text{精确率}+\text{召回率}}
+\tag{5.38}
+$$
+
+$$
+=\frac{2N_{\mathrm{TP}}}
+{2N_{\mathrm{TP}}+N_{\mathrm{FP}}+N_{\mathrm{FN}}}.
+\tag{5.39}
+$$
+
+**译注：** 原书此处误称“几何平均”；式（5.38）给出的是调和平均。
+
+当然，也可以把图 5.9 的混淆矩阵与图 5.6 的损失矩阵结合起来，逐元素相乘后求和，计算期望损失。
+
+尽管 ROC 曲线可以推广到两个以上的类别，但随着类别数增加，它很快就会变得难以处理。
+
+## 5.3 生成式分类器
+
+接下来从概率角度考察分类，并说明，对数据分布作简单假设时，如何得到具有线性决策边界的模型。我们已在第 5.2.4 节讨论了判别式和生成式分类方法的区别。这里采用生成式方法：对类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 和类别先验概率 $p(\mathcal{C}_k)$ 建模，再用贝叶斯定理计算后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$。
+
+首先考虑两类别问题。
+
+<!-- pdf-page: 170 -->
+
+<figure id="fig-5-12">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-12.png" alt="逻辑 sigmoid 函数与缩放后的 probit 函数曲线">
+  <figcaption>图 5.12 红色曲线是式（5.42）定义的逻辑 sigmoid 函数 $\sigma(a)$，蓝色虚线是缩放后的 probit 函数 $\Phi(\lambda a)$，其中 $\lambda^2=\pi/8$，$\Phi(a)$ 由式（5.86）定义。选择 $\lambda$ 使 $\lambda^2=\pi/8$，两条曲线在 $a=0$ 时的导数便相等。</figcaption>
+</figure>
+
+**译注：** 原书图注将 $\pi/8$ 称为缩放系数；图中自变量的缩放系数是 $\lambda=\sqrt{\pi/8}$。
+
+类别 $\mathcal{C}_1$ 的后验概率可以写成
+
+$$
+\begin{aligned}
+p(\mathcal{C}_1\mid\mathbf{x})
+&=\frac{p(\mathbf{x}\mid\mathcal{C}_1)p(\mathcal{C}_1)}
+{p(\mathbf{x}\mid\mathcal{C}_1)p(\mathcal{C}_1)
++p(\mathbf{x}\mid\mathcal{C}_2)p(\mathcal{C}_2)}\\
+&=\frac{1}{1+\exp(-a)}=\sigma(a),
+\end{aligned}\tag{5.40}
+$$
+
+其中定义
+
+$$
+a=\ln\frac{p(\mathbf{x}\mid\mathcal{C}_1)p(\mathcal{C}_1)}
+{p(\mathbf{x}\mid\mathcal{C}_2)p(\mathcal{C}_2)},
+\tag{5.41}
+$$
+
+而 $\sigma(a)$ 是**逻辑 sigmoid 函数**：
+
+$$
+\sigma(a)=\frac{1}{1+\exp(-a)}.
+\tag{5.42}
+$$
+
+图 5.12 画出了这个函数。“sigmoid”指 S 形。这类函数有时也称为“压缩函数”，因为它把整条实数轴映射到一个有限区间。前面章节已遇到过逻辑 sigmoid；它在许多分类算法中起重要作用。它满足对称关系
+
+$$
+\sigma(-a)=1-\sigma(a),
+\tag{5.43}
+$$
+
+这一点很容易验证。逻辑 sigmoid 的反函数为
+
+$$
+a=\ln\left(\frac{\sigma}{1-\sigma}\right),
+\tag{5.44}
+$$
+
+称为 **logit 函数**。它表示两个类别的概率比的对数 $\ln[p(\mathcal{C}_1\mid\mathbf{x})/p(\mathcal{C}_2\mid\mathbf{x})]$，也称为**对数几率**。
+
+注意，式（5.40）只是把后验概率改写为等价形式，因此逻辑 sigmoid 的出现似乎显得刻意。
+
+<!-- pdf-page: 171 -->
+
+然而，只要 $a(\mathbf{x})$ 具有受约束的函数形式，它就有实际意义。很快将讨论 $a(\mathbf{x})$ 为 $\mathbf{x}$ 的线性函数的情形，此时后验概率由广义线性模型决定。
+
+如果类别数 $K>2$，则有
+
+$$
+\begin{aligned}
+p(\mathcal{C}_k\mid\mathbf{x})
+&=\frac{p(\mathbf{x}\mid\mathcal{C}_k)p(\mathcal{C}_k)}
+{\sum_j p(\mathbf{x}\mid\mathcal{C}_j)p(\mathcal{C}_j)}\\
+&=\frac{\exp(a_k)}{\sum_j\exp(a_j)}.
+\end{aligned}\tag{5.45}
+$$
+
+这称为**归一化指数函数**，可看作逻辑 sigmoid 的多类别推广。其中
+
+$$
+a_k=\ln\!\bigl(p(\mathbf{x}\mid\mathcal{C}_k)p(\mathcal{C}_k)\bigr).
+\tag{5.46}
+$$
+
+归一化指数函数也称为 **softmax 函数**。它是“max”函数的平滑版本：若 $a_k\gg a_j$ 对所有 $j\ne k$ 成立，那么 $p(\mathcal{C}_k\mid\mathbf{x})\simeq1$，而 $p(\mathcal{C}_j\mid\mathbf{x})\simeq0$。
+
+现在考察为类条件密度选择具体形式会带来什么结果。先看连续输入变量 $\mathbf{x}$，再简要讨论离散输入。
+
+### 5.3.1 连续输入
+
+假设类条件密度为高斯分布，考察由此得到的后验概率形式。起初假设所有类别共用同一个协方差矩阵 $\boldsymbol{\Sigma}$。那么类别 $\mathcal{C}_k$ 的密度为
+
+$$
+p(\mathbf{x}\mid\mathcal{C}_k)
+=\frac{1}{(2\pi)^{D/2}|\boldsymbol{\Sigma}|^{1/2}}
+\exp\left\{-\frac12(\mathbf{x}-\boldsymbol{\mu}_k)^{\mathsf T}
+\boldsymbol{\Sigma}^{-1}(\mathbf{x}-\boldsymbol{\mu}_k)\right\}.
+\tag{5.47}
+$$
+
+先设有两个类别。由式（5.40）和（5.41），得到
+
+$$
+p(\mathcal{C}_1\mid\mathbf{x})
+=\sigma(\mathbf{w}^{\mathsf T}\mathbf{x}+w_0),
+\tag{5.48}
+$$
+
+其中
+
+$$
+\mathbf{w}=\boldsymbol{\Sigma}^{-1}(\boldsymbol{\mu}_1-\boldsymbol{\mu}_2),
+\tag{5.49}
+$$
+
+$$
+w_0=-\frac12\boldsymbol{\mu}_1^{\mathsf T}\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_1
++\frac12\boldsymbol{\mu}_2^{\mathsf T}\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_2
++\ln\frac{p(\mathcal{C}_1)}{p(\mathcal{C}_2)}.
+\tag{5.50}
+$$
+
+高斯密度指数项中关于 $\mathbf{x}$ 的二次项相互抵消了（因为假设协方差矩阵相同），因此逻辑 sigmoid 的自变量成为 $\mathbf{x}$ 的线性函数。图 5.13 展示了二维输入空间 $\mathbf{x}$ 下的这一结果。相应的决策边界是后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$
+
+<!-- pdf-page: 172 -->
+
+<figure id="fig-5-13">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-13.png" alt="两类条件密度和对应的后验概率曲面">
+  <figcaption>图 5.13 左图显示以红色和蓝色表示的两个类别的类条件密度。右图显示对应的后验概率 $p(\mathcal{C}_1\mid\mathbf{x})$，它是 $\mathbf{x}$ 的线性函数经过逻辑 sigmoid 变换后的结果。右图曲面使用比例为 $p(\mathcal{C}_1\mid\mathbf{x})$ 的红色墨水和比例为 $p(\mathcal{C}_2\mid\mathbf{x})=1-p(\mathcal{C}_1\mid\mathbf{x})$ 的蓝色墨水着色。</figcaption>
+</figure>
+
+取常数的曲面，它由 $\mathbf{x}$ 的线性函数给出，因此决策边界在输入空间中是线性的。先验概率 $p(\mathcal{C}_k)$ 只通过偏置参数 $w_0$ 起作用，所以改变先验概率会使决策边界平行移动；更一般地，也会使后验概率相同的等值线平行移动。
+
+对于一般的 $K$ 类情形，后验概率由式（5.45）给出；根据式（5.46）和（5.47），有
+
+$$
+a_k(\mathbf{x})=\mathbf{w}_k^{\mathsf T}\mathbf{x}+w_{k0},
+\tag{5.51}
+$$
+
+其中
+
+$$
+\mathbf{w}_k=\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_k,
+\tag{5.52}
+$$
+
+$$
+w_{k0}=-\frac12\boldsymbol{\mu}_k^{\mathsf T}
+\boldsymbol{\Sigma}^{-1}\boldsymbol{\mu}_k+\ln p(\mathcal{C}_k).
+\tag{5.53}
+$$
+
+由于协方差矩阵相同，二次项抵消，$a_k(\mathbf{x})$ 再次是 $\mathbf{x}$ 的线性函数。使误分类率最小的决策边界，出现在两个最大的后验概率相等之处，因而也由 $\mathbf{x}$ 的线性函数定义。所以这里再次得到广义线性模型。
+
+如果不再假定共用协方差矩阵，而让每个类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 有自己的协方差矩阵 $\boldsymbol{\Sigma}_k$，前面的抵消就不会发生，将得到 $\mathbf{x}$ 的二次函数，即**二次判别式**。图 5.14 对比了线性和二次决策边界。
+
+### 5.3.2 极大似然解
+
+一旦指定了类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 的参数化函数形式，就可以
+
+<!-- pdf-page: 173 -->
+
+<figure id="fig-5-14">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-14.png" alt="三个高斯类的类条件密度与彩色后验概率、决策边界">
+  <figcaption>图 5.14 左图显示三个类别各自呈高斯分布的类条件密度，以红色、绿色和蓝色表示；其中红色和蓝色类别的协方差矩阵相同。右图显示对应的后验概率：图像中的每个点按三个类别各自的后验概率，以相应比例的红、蓝、绿三色墨水着色，同时画出了决策边界。注意，具有相同协方差矩阵的红、蓝两类之间的边界是线性的，其余类别对之间的边界则是二次的。</figcaption>
+</figure>
+
+使用**极大似然（maximum likelihood）**确定模型参数以及类别先验概率 $p(\mathcal{C}_k)$。这需要包含 $\mathbf{x}$ 观测值及其对应类别标签的数据集。
+
+先考虑两个类别，各自的类条件密度都是高斯分布，并共用一个协方差矩阵。设数据集为 $\{\mathbf{x}_n,t_n\}$，$n=1,\ldots,N$。其中，$t_n=1$ 表示类别 $\mathcal{C}_1$，$t_n=0$ 表示类别 $\mathcal{C}_2$。记类别 $\mathcal{C}_1$ 的先验概率为 $p(\mathcal{C}_1)=\pi$，故 $p(\mathcal{C}_2)=1-\pi$。若数据点 $\mathbf{x}_n$ 属于类别 $\mathcal{C}_1$，则 $t_n=1$，因而
+
+$$
+p(\mathbf{x}_n,\mathcal{C}_1)
+=p(\mathcal{C}_1)p(\mathbf{x}_n\mid\mathcal{C}_1)
+=\pi\mathcal{N}(\mathbf{x}_n\mid\boldsymbol{\mu}_1,\boldsymbol{\Sigma}).
+$$
+
+同理，若属于类别 $\mathcal{C}_2$，则 $t_n=0$，因而
+
+$$
+p(\mathbf{x}_n,\mathcal{C}_2)
+=p(\mathcal{C}_2)p(\mathbf{x}_n\mid\mathcal{C}_2)
+=(1-\pi)\mathcal{N}(\mathbf{x}_n\mid\boldsymbol{\mu}_2,\boldsymbol{\Sigma}).
+$$
+
+所以似然函数为
+
+$$
+p(\mathbf{t},\mathbf{X}\mid\pi,\boldsymbol{\mu}_1,\boldsymbol{\mu}_2,\boldsymbol{\Sigma})
+=\prod_{n=1}^{N}
+\left[\pi\mathcal{N}(\mathbf{x}_n\mid\boldsymbol{\mu}_1,\boldsymbol{\Sigma})\right]^{t_n}
+\left[(1-\pi)\mathcal{N}(\mathbf{x}_n\mid\boldsymbol{\mu}_2,\boldsymbol{\Sigma})\right]^{1-t_n}.
+\tag{5.54}
+$$
+
+其中 $\mathbf{t}=(t_1,\ldots,t_N)^{\mathsf T}$。和往常一样，最大化似然函数的对数更方便。先考察对 $\pi$ 的最大化。对数似然函数中依赖于 $\pi$ 的项
+
+<!-- pdf-page: 174 -->
+
+为
+
+$$
+\sum_{n=1}^{N}\{t_n\ln\pi+(1-t_n)\ln(1-\pi)\}.
+\tag{5.55}
+$$
+
+令其对 $\pi$ 的导数为零并整理，得到
+
+$$
+\pi=\frac1N\sum_{n=1}^{N}t_n
+=\frac{N_1}{N}
+=\frac{N_1}{N_1+N_2},
+\tag{5.56}
+$$
+
+其中 $N_1$ 是类别 $\mathcal{C}_1$ 的数据点总数，$N_2$ 是类别 $\mathcal{C}_2$ 的数据点总数。因此，如预期那样，$\pi$ 的极大似然估计就是类别 $\mathcal{C}_1$ 的数据点比例。这个结果很容易推广到多类别情形：类别 $\mathcal{C}_k$ 的先验概率的极大似然估计，同样是训练集中归入该类别的数据点比例。参见习题 5.13。
+
+现在考虑对 $\boldsymbol{\mu}_1$ 的最大化。再次从对数似然函数中选出依赖于 $\boldsymbol{\mu}_1$ 的项：
+
+$$
+\sum_{n=1}^{N}t_n\ln\mathcal{N}(\mathbf{x}_n\mid\boldsymbol{\mu}_1,\boldsymbol{\Sigma})
+=-\frac12\sum_{n=1}^{N}t_n
+(\mathbf{x}_n-\boldsymbol{\mu}_1)^{\mathsf T}\boldsymbol{\Sigma}^{-1}
+(\mathbf{x}_n-\boldsymbol{\mu}_1)+\text{常数}.
+\tag{5.57}
+$$
+
+令其对 $\boldsymbol{\mu}_1$ 的导数为零并整理，得到
+
+$$
+\boldsymbol{\mu}_1=\frac{1}{N_1}\sum_{n=1}^{N}t_n\mathbf{x}_n,
+\tag{5.58}
+$$
+
+这就是所有分配到类别 $\mathcal{C}_1$ 的输入向量 $\mathbf{x}_n$ 的均值。类似地，对 $\boldsymbol{\mu}_2$ 有
+
+$$
+\boldsymbol{\mu}_2=\frac{1}{N_2}\sum_{n=1}^{N}(1-t_n)\mathbf{x}_n,
+\tag{5.59}
+$$
+
+即所有分配到类别 $\mathcal{C}_2$ 的输入向量 $\mathbf{x}_n$ 的均值。
+
+最后考虑共用协方差矩阵 $\boldsymbol{\Sigma}$ 的极大似然解。选出对数似然函数中依赖于 $\boldsymbol{\Sigma}$ 的项，有
+
+$$
+\begin{aligned}
+&-\frac12\sum_{n=1}^{N}t_n\ln|\boldsymbol{\Sigma}|
+-\frac12\sum_{n=1}^{N}t_n
+(\mathbf{x}_n-\boldsymbol{\mu}_1)^{\mathsf T}
+\boldsymbol{\Sigma}^{-1}(\mathbf{x}_n-\boldsymbol{\mu}_1)\\
+&\quad-\frac12\sum_{n=1}^{N}(1-t_n)\ln|\boldsymbol{\Sigma}|
+-\frac12\sum_{n=1}^{N}(1-t_n)
+(\mathbf{x}_n-\boldsymbol{\mu}_2)^{\mathsf T}
+\boldsymbol{\Sigma}^{-1}(\mathbf{x}_n-\boldsymbol{\mu}_2)\\
+&=-\frac N2\ln|\boldsymbol{\Sigma}|
+-\frac N2\operatorname{Tr}\{\boldsymbol{\Sigma}^{-1}\mathbf{S}\}.
+\end{aligned}\tag{5.60}
+$$
+
+<!-- pdf-page: 175 -->
+
+其中定义
+
+$$
+\mathbf{S}=\frac{N_1}{N}\mathbf{S}_1+\frac{N_2}{N}\mathbf{S}_2
+\tag{5.61}
+$$
+
+$$
+\mathbf{S}_1=\frac{1}{N_1}
+\sum_{n\in\mathcal{C}_1}
+(\mathbf{x}_n-\boldsymbol{\mu}_1)
+(\mathbf{x}_n-\boldsymbol{\mu}_1)^{\mathsf T}
+\tag{5.62}
+$$
+
+$$
+\mathbf{S}_2=\frac{1}{N_2}
+\sum_{n\in\mathcal{C}_2}
+(\mathbf{x}_n-\boldsymbol{\mu}_2)
+(\mathbf{x}_n-\boldsymbol{\mu}_2)^{\mathsf T}.
+\tag{5.63}
+$$
+
+利用高斯分布极大似然解的标准结果，可得 $\boldsymbol{\Sigma}=\mathbf{S}$，即两个类别各自协方差矩阵的加权平均。
+
+这一结果很容易扩展到 $K$ 类问题，求出每个类条件密度都是高斯分布且共用协方差矩阵时对应的参数极大似然解。参见习题 5.14。注意，把高斯分布拟合到各类别的方法对离群点不稳健，因为高斯分布的极大似然估计本身不稳健，见第 5.1.4 节。
+
+### 5.3.3 离散特征
+
+现在考虑离散特征值 $x_i$。为简单起见，先看二值特征 $x_i\in\{0,1\}$，稍后再讨论更一般的离散特征。如果有 $D$ 个输入，那么一般分布对每个类别都需要一张含 $2^D$ 个数值的表，并有 $2^D-1$ 个独立变量（因为有求和约束）。其规模随特征数指数增长，因此可以寻找一种限制更多的表示。这里采用朴素贝叶斯假设（见第 11.2.3 节）：在给定类别 $\mathcal{C}_k$ 的条件下，把各特征值视为相互独立。于是类条件分布为
+
+$$
+p(\mathbf{x}\mid\mathcal{C}_k)
+=\prod_{i=1}^{D}\mu_{ki}^{x_i}(1-\mu_{ki})^{1-x_i},
+\tag{5.64}
+$$
+
+每个类别包含 $D$ 个独立参数。代入式（5.46），得到
+
+$$
+a_k(\mathbf{x})
+=\sum_{i=1}^{D}\{x_i\ln\mu_{ki}
++(1-x_i)\ln(1-\mu_{ki})\}+\ln p(\mathcal{C}_k),
+\tag{5.65}
+$$
+
+它仍是输入值 $x_i$ 的线性函数。对于 $K=2$ 的情况，也可以采用式（5.40）中的逻辑 sigmoid 表述。取 $L>2$ 个状态的离散变量会得到类似结果，参见习题 5.16。
+
+### 5.3.4 指数族
+
+我们已经看到，无论是高斯分布的输入，还是离散输入，类别后验概率都由广义线性模型给出：$K=2$ 类时激活函数为逻辑 sigmoid，
+
+<!-- pdf-page: 176 -->
+
+$K\geqslant2$ 类时为 softmax。这些情形是更一般结果的特例：假设类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 属于第 3.4 节介绍的指数族分布的一个子集，即
+
+$$
+p(\mathbf{x}\mid\boldsymbol{\lambda}_k,s)
+=\frac1s h\!\left(\frac{\mathbf{x}}s\right)
+g(\boldsymbol{\lambda}_k)
+\exp\left\{\frac1s\boldsymbol{\lambda}_k^{\mathsf T}\mathbf{x}\right\}.
+\tag{5.66}
+$$
+
+其中尺度参数 $s$ 为所有类别所共用。
+
+对于两类别问题，把这个类条件密度表达式代入式（5.41），可见类别后验概率仍由作用于线性函数 $a(\mathbf{x})$ 的逻辑 sigmoid 给出：
+
+$$
+a(\mathbf{x})=
+\frac1s(\boldsymbol{\lambda}_1-\boldsymbol{\lambda}_2)^{\mathsf T}\mathbf{x}
++\ln g(\boldsymbol{\lambda}_1)-\ln g(\boldsymbol{\lambda}_2)
++\ln p(\mathcal{C}_1)-\ln p(\mathcal{C}_2).
+\tag{5.67}
+$$
+
+类似地，对 $K$ 类问题，把类条件密度代入式（5.46），得到
+
+$$
+a_k(\mathbf{x})
+=\frac1s\boldsymbol{\lambda}_k^{\mathsf T}\mathbf{x}
++\ln g(\boldsymbol{\lambda}_k)+\ln p(\mathcal{C}_k),
+\tag{5.68}
+$$
+
+它再次是 $\mathbf{x}$ 的线性函数。
+
+**译注：** 原书式（5.67）、（5.68）的线性项均漏写 $1/s$；这里依据式（5.66）直接代入的结果补出。原书未设 $s=1$，也未重新定义 $\boldsymbol{\lambda}_k$。
+
+## 5.4 判别式分类器
+
+我们看到，对于来自指数族的多种类条件分布 $p(\mathbf{x}\mid\mathcal{C}_k)$，两类别分类问题中类别 $\mathcal{C}_1$ 的后验概率，都可以表示为作用于 $\mathbf{x}$ 的线性函数的逻辑 sigmoid。类似地，在多类别情形中，类别 $\mathcal{C}_k$ 的后验概率由 $\mathbf{x}$ 的线性函数经 softmax 变换得到。对于选定的类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$，我们用极大似然确定密度的参数以及类别先验概率 $p(\mathcal{C}_k)$，然后使用贝叶斯定理求后验概率。这是生成式建模的一个例子，因为可从边缘分布 $p(\mathbf{x})$ 或某个类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 中抽取 $\mathbf{x}$，生成合成数据。
+
+另一种方法是明确使用广义线性模型的函数形式，直接通过极大似然确定其参数。在这种直接方法中，我们最大化由条件分布 $p(\mathcal{C}_k\mid\mathbf{x})$ 定义的似然函数；这是判别式概率建模的一种形式。判别式方法的一个优点是需要确定的可学习参数通常更少，稍后会看到这一点。当假定的类条件密度形式不能很好地近似真实分布时，它还可能带来更好的预测表现。
+
+<!-- pdf-page: 177 -->
+
+### 5.4.1 激活函数
+
+在线性回归中，模型预测 $y(\mathbf{x},\mathbf{w})$ 是参数的线性函数（见第 4 章）：
+
+$$
+y(\mathbf{x},\mathbf{w})=\mathbf{w}^{\mathsf T}\mathbf{x}+w_0,
+\tag{5.69}
+$$
+
+它给出范围为 $(-\infty,\infty)$ 的连续输出。但在分类问题中，我们希望预测离散的类别标签，或更一般地预测取值在 $(0,1)$ 的后验概率。因此，考虑该模型的推广：用非线性函数 $f(\cdot)$ 变换 $\mathbf{w}$ 和 $w_0$ 的线性函数，使
+
+$$
+y(\mathbf{x},\mathbf{w})
+=f(\mathbf{w}^{\mathsf T}\mathbf{x}+w_0).
+\tag{5.70}
+$$
+
+在机器学习文献中，$f(\cdot)$ 称为**激活函数**；其反函数在统计学文献中称为**链接函数**。决策曲面对应 $y(\mathbf{x})=\text{常数}$，故 $\mathbf{w}^{\mathsf T}\mathbf{x}=\text{常数}$，所以即使 $f(\cdot)$ 是非线性的，决策曲面仍是 $\mathbf{x}$ 的线性函数。因此，式（5.70）描述的模型称为**广义线性模型**（McCullagh and Nelder，1989）。不过，与回归模型不同，由于 $f(\cdot)$ 的非线性，它们不再是参数的线性函数，因此其解析和计算性质会比线性回归模型复杂。尽管如此，这些模型仍比后续章节要研究的灵活得多的非线性模型相对简单。
+
+### 5.4.2 固定基函数
+
+到目前为止，本章讨论的分类模型直接使用原始输入向量 $\mathbf{x}$。不过，如果先用基函数向量 $\boldsymbol{\phi}(\mathbf{x})$ 对输入作固定的非线性变换，这些算法仍然适用。所得决策边界在特征空间 $\boldsymbol{\phi}$ 中是线性的，而在原始 $\mathbf{x}$ 空间中对应非线性决策边界，如图 5.15 所示。在特征空间 $\boldsymbol{\phi}(\mathbf{x})$ 中线性可分的类别，在原始观测空间 $\mathbf{x}$ 中不一定线性可分。
+
+注意，与讨论线性回归模型时一样，通常把一个基函数设为常数，例如 $\phi_0(\mathbf{x})=1$，使相应参数 $w_0$ 充当偏置。
+
+在许多实际问题中，类条件密度 $p(\mathbf{x}\mid\mathcal{C}_k)$ 在 $\mathbf{x}$ 空间中明显重叠。这意味着对至少某些 $\mathbf{x}$，后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 既不是 0，也不是 1。在这种情况下，最优解是准确建模后验概率，再应用标准决策理论（见第 5.2 节）。注意，非线性变换 $\boldsymbol{\phi}(\mathbf{x})$ 无法消除类别间的这种重叠；它们可能加剧重叠，甚至使原始观测空间中不存在的重叠出现。不过，选择合适的非线性变换有助于后验概率建模。然而，这种固定基函数模型有重要局限，后续章节将允许基函数自身适应数据，从而克服这些局限（见第 6.1 节）。
+
+<!-- pdf-page: 178 -->
+
+<figure id="fig-5-15">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-15.png" alt="原始二维输入空间与经高斯基函数变换的特征空间">
+  <figcaption>图 5.15 非线性基函数在线性分类模型中的作用。左图为原始输入空间 $(x_1,x_2)$，其中红、蓝两色标出两个类别的数据点。在此空间定义两个“高斯”基函数 $\phi_1(\mathbf{x})$ 和 $\phi_2(\mathbf{x})$，绿色叉号表示其中心，绿色圆圈表示其等值线。右图为相应特征空间 $(\phi_1,\phi_2)$，其中的线性决策边界由第 5.4.3 节所述形式的逻辑回归模型得到。它在原始输入空间中对应非线性决策边界，即左图黑色曲线。</figcaption>
+</figure>
+
+### 5.4.3 逻辑回归
+
+先考虑两类别分类。在第 5.3 节讨论生成式方法时，我们看到，在相当一般的假设下，类别 $\mathcal{C}_1$ 的后验概率可以写成作用于特征向量 $\boldsymbol{\phi}$ 的线性函数的逻辑 sigmoid：
+
+$$
+p(\mathcal{C}_1\mid\boldsymbol{\phi})
+=y(\boldsymbol{\phi})
+=\sigma(\mathbf{w}^{\mathsf T}\boldsymbol{\phi}),
+\tag{5.71}
+$$
+
+且 $p(\mathcal{C}_2\mid\boldsymbol{\phi})=1-p(\mathcal{C}_1\mid\boldsymbol{\phi})$。其中 $\sigma(\cdot)$ 是式（5.42）定义的逻辑 sigmoid 函数。按统计学术语，这个模型称为**逻辑回归**；但要强调，它是分类模型，不是连续变量的回归模型。
+
+当特征空间 $\boldsymbol{\phi}$ 为 $M$ 维时，该模型有 $M$ 个可调参数。相比之下，如果用极大似然拟合高斯类条件密度，均值需要 $2M$ 个参数，共用协方差矩阵需要 $M(M+1)/2$ 个参数。再加上类别先验概率 $p(\mathcal{C}_1)$，总计 $M(M+5)/2+1$ 个参数，随 $M$ 呈二次增长；而逻辑回归的参数数目只随 $M$ 线性增长。当 $M$ 很大时，直接使用逻辑回归模型显然更有优势。
+
+<!-- pdf-page: 179 -->
+
+现在用极大似然确定逻辑回归模型的参数。为此要用到逻辑 sigmoid 函数的导数，它可以方便地用 sigmoid 函数自身表示（见习题 5.18）：
+
+$$
+\frac{\mathrm{d}\sigma}{\mathrm{d}a}=\sigma(1-\sigma).
+\tag{5.72}
+$$
+
+对数据集 $\{\boldsymbol{\phi}_n,t_n\}$，其中 $\boldsymbol{\phi}_n=\boldsymbol{\phi}(\mathbf{x}_n)$、$t_n\in\{0,1\}$，$n=1,\ldots,N$，似然函数可写为
+
+$$
+p(\mathbf{t}\mid\mathbf{w})
+=\prod_{n=1}^{N}y_n^{t_n}(1-y_n)^{1-t_n},
+\tag{5.73}
+$$
+
+其中 $\mathbf{t}=(t_1,\ldots,t_N)^{\mathsf T}$，$y_n=p(\mathcal{C}_1\mid\boldsymbol{\phi}_n)$。照例，可取似然的负对数定义误差函数，得到**交叉熵误差函数**
+
+$$
+E(\mathbf{w})=-\ln p(\mathbf{t}\mid\mathbf{w})
+=-\sum_{n=1}^{N}\{t_n\ln y_n+(1-t_n)\ln(1-y_n)\},
+\tag{5.74}
+$$
+
+其中 $y_n=\sigma(a_n)$，$a_n=\mathbf{w}^{\mathsf T}\boldsymbol{\phi}_n$。对 $\mathbf{w}$ 求误差函数的梯度，得到
+
+$$
+\nabla E(\mathbf{w})
+=\sum_{n=1}^{N}(y_n-t_n)\boldsymbol{\phi}_n.
+\tag{5.75}
+$$
+
+推导中使用了式（5.72）。涉及逻辑 sigmoid 导数的因子抵消，使对数似然的梯度形式得到简化。具体地，数据点 $n$ 对梯度的贡献，是目标值与模型预测之差 $y_n-t_n$ 这一“误差”，乘以基函数向量 $\boldsymbol{\phi}_n$。与式（4.12）比较可知，它与线性回归模型平方和误差函数的梯度形式完全相同（见第 4.1.3 节）。
+
+极大似然解对应 $\nabla E(\mathbf{w})=0$。不过，由于 $y(\cdot)$ 的非线性，式（5.75）不再对应一组线性方程，因而没有闭式解。一种求极大似然解的方法是随机梯度下降，其中 $\nabla E_n$ 是式（5.75）右边的第 $n$ 项。随机梯度下降将是后续章节训练高度非线性神经网络的主要方法（见第 7 章）。不过，极大似然方程只是“略微”非线性。事实上，由式（5.71）定义模型时，误差函数（5.74）是参数的凸函数，可以通过称为**迭代重加权最小二乘法**（IRLS）的简单算法最小化（Bishop，2006）。但这个算法不容易推广到深度神经网络等更复杂的模型。
+
+<!-- pdf-page: 180 -->
+
+注意，对线性可分的数据集，极大似然可能发生严重过拟合。原因是：当对应 $\sigma=0.5$、即 $\mathbf{w}^{\mathsf T}\boldsymbol{\phi}=0$ 的超平面分开两类，而 $\mathbf{w}$ 的模趋于无穷大时，极大似然解才达到极限。此时，逻辑 sigmoid 在特征空间中变得无限陡峭，相当于 Heaviside 阶跃函数，每个类别 $k$ 的每个训练点都被分配后验概率 $p(\mathcal{C}_k\mid\mathbf{x})=1$。此外，通常存在连续无穷多个这样的解，因为任何分离超平面都会在训练数据点处得到相同的后验概率。极大似然无法偏好其中某一个解；实际找到哪个解，取决于优化算法和参数初始化。只要训练集线性可分，即使数据点数远大于模型参数数目，也会出现这一问题。可在误差函数中加入正则化项，以避免这种奇异性（见第 9 章）。参见习题 5.20。
+
+### 5.4.4 多类别逻辑回归
+
+讨论多类别分类的生成模型时（见第 5.3 节），我们看到，对于指数族中的一大类分布，后验概率由特征变量的线性函数经过 softmax 变换得到：
+
+$$
+p(\mathcal{C}_k\mid\boldsymbol{\phi})
+=y_k(\boldsymbol{\phi})
+=\frac{\exp(a_k)}{\sum_j\exp(a_j)},
+\tag{5.76}
+$$
+
+其中预激活值 $a_k$ 为
+
+$$
+a_k=\mathbf{w}_k^{\mathsf T}\boldsymbol{\phi}.
+\tag{5.77}
+$$
+
+此前，我们用极大似然分别确定类条件密度和类别先验概率，再经贝叶斯定理求出后验概率，从而隐式确定参数 $\{\mathbf{w}_k\}$。这里考虑直接用极大似然确定该模型的参数 $\{\mathbf{w}_k\}$。为此，需要求 $y_k$ 对所有预激活值 $a_j$ 的导数（见习题 5.21）：
+
+$$
+\frac{\partial y_k}{\partial a_j}
+=y_k(I_{kj}-y_j),
+\tag{5.78}
+$$
+
+其中 $I_{kj}$ 是单位矩阵的元素。
+
+接下来写出似然函数。最方便的是使用 1-of-$K$ 编码：若特征向量 $\boldsymbol{\phi}_n$ 属于类别 $\mathcal{C}_k$，对应的目标向量 $\mathbf{t}_n$ 是一个二值向量，除第 $k$ 个元素为 1 外，其余元素全为 0。于是似然函数为
+
+$$
+p(\mathbf{T}\mid\mathbf{w}_1,\ldots,\mathbf{w}_K)
+=\prod_{n=1}^{N}\prod_{k=1}^{K}
+p(\mathcal{C}_k\mid\boldsymbol{\phi}_n)^{t_{nk}}
+=\prod_{n=1}^{N}\prod_{k=1}^{K}y_{nk}^{t_{nk}}.
+\tag{5.79}
+$$
+
+<!-- pdf-page: 181 -->
+
+<figure id="fig-5-16">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-16.png" alt="单层连接的多类别线性分类神经网络">
+  <figcaption>图 5.16 把多类别线性分类模型表示为仅有一层连接的神经网络。每个基函数由一个节点表示；实心节点表示“偏置”基函数 $\phi_0$；每个输出 $y_1,\ldots,y_K$ 也由节点表示。节点之间的连线代表相应的权重和偏置参数。</figcaption>
+</figure>
+
+其中 $y_{nk}=y_k(\boldsymbol{\phi}_n)$，$\mathbf{T}$ 是元素为 $t_{nk}$ 的 $N\times K$ 目标变量矩阵。取负对数得到
+
+$$
+E(\mathbf{w}_1,\ldots,\mathbf{w}_K)
+=-\ln p(\mathbf{T}\mid\mathbf{w}_1,\ldots,\mathbf{w}_K)
+=-\sum_{n=1}^{N}\sum_{k=1}^{K}t_{nk}\ln y_{nk},
+\tag{5.80}
+$$
+
+这称为多类别分类问题的**交叉熵误差函数**。
+
+现在求误差函数对一个参数向量 $\mathbf{w}_j$ 的梯度。利用式（5.78）给出的 softmax 导数，得到（见习题 5.22）
+
+$$
+\nabla_{\mathbf{w}_j}E(\mathbf{w}_1,\ldots,\mathbf{w}_K)
+=\sum_{n=1}^{N}(y_{nj}-t_{nj})\boldsymbol{\phi}_n,
+\tag{5.81}
+$$
+
+这里利用了 $\sum_k t_{nk}=1$。同样，可以通过随机梯度下降优化参数（见第 7 章）。
+
+梯度再次呈现出与线性模型平方和误差函数、逻辑回归交叉熵误差函数相同的形式：误差 $(y_{nj}-t_{nj})$ 乘以基函数激活值 $\boldsymbol{\phi}_n$。这是一种更一般结果的例子，稍后将在第 5.4.6 节讨论。
+
+线性分类模型可以表示为图 5.16 所示的单层神经网络。若考察误差函数对权重 $w_{ik}$ 的导数，它连接基函数 $\phi_i(\mathbf{x})$ 与输出单元 $t_k$，根据式（5.81）有
+
+$$
+\frac{\partial E(\mathbf{w}_1,\ldots,\mathbf{w}_K)}
+{\partial w_{ik}}
+=\sum_{n=1}^{N}(y_{nk}-t_{nk})\phi_i(\mathbf{x}_n).
+\tag{5.82}
+$$
+
+与图 5.16 对照可见，对每个数据点 $n$，该梯度等于权重连线输入端的基函数输出，乘以输出端的“误差”$(y_{nk}-t_{nk})$。
+
+<!-- pdf-page: 182 -->
+
+<figure id="fig-5-17">
+  <img src="books/bishop-deep-learning-2024/assets/chapter-05/fig-5-17.png" alt="双高斯混合概率密度和对应累积分布函数">
+  <figcaption>图 5.17 蓝色曲线表示概率密度 $p(\theta)$，此例为两个高斯分布的混合；红色曲线表示其累积分布函数 $f(a)$。注意，蓝色曲线在任意一点的值，例如绿色竖线所示位置的值，对应红色曲线在同一点的斜率。反过来，红色曲线在该点的值，对应蓝色曲线下方绿色阴影区域的面积。在随机阈值模型中，若 $a=\mathbf{w}^{\mathsf T}\boldsymbol{\phi}$ 的值超过阈值，类别标签取 $t=1$；否则取 $t=0$。这等价于采用累积分布函数 $f(a)$ 作为激活函数。</figcaption>
+</figure>
+
+### 5.4.5 Probit 回归
+
+我们看到，对指数族所描述的广泛类条件分布，得到的类别后验概率由特征变量的线性函数经过逻辑变换（或 softmax 变换）给出。然而，并非所有类条件密度都能产生这样简单的后验概率形式，因此值得探索其他类型的判别式概率模型。考虑两类别情形，仍在广义线性模型框架中：
+
+$$
+p(t=1\mid a)=f(a),
+\tag{5.83}
+$$
+
+其中 $a=\mathbf{w}^{\mathsf T}\boldsymbol{\phi}$，$f(\cdot)$ 是激活函数。
+
+可以借助带噪声的阈值模型，为另一种链接函数选择提供动机。对于每个输入 $\boldsymbol{\phi}_n$，先计算 $a_n=\mathbf{w}^{\mathsf T}\boldsymbol{\phi}_n$，然后根据以下规则设定目标值：
+
+$$
+\begin{cases}
+t_n=1,&a_n\geqslant\theta,\\
+t_n=0,&\text{其他情况}.
+\end{cases}\tag{5.84}
+$$
+
+若阈值 $\theta$ 从概率密度 $p(\theta)$ 中抽取，则相应的激活函数是累积分布函数
+
+$$
+f(a)=\int_{-\infty}^{a}p(\theta)\,\mathrm{d}\theta,
+\tag{5.85}
+$$
+
+如图 5.17 所示。
+
+举个具体例子，假设密度 $p(\theta)$ 是均值为 0、方差为 1 的高斯分布。相应累积分布函数为
+
+$$
+\Phi(a)=\int_{-\infty}^{a}\mathcal{N}(\theta\mid0,1)\,\mathrm{d}\theta,
+\tag{5.86}
+$$
+
+<!-- pdf-page: 183 -->
+
+称为 **probit 函数**。它呈 sigmoid 形，图 5.12 把它与逻辑 sigmoid 函数作了比较。注意，采用一般均值和方差的高斯分布并不会改变模型，因为它等价于对线性系数 $\mathbf{w}$ 重新缩放。许多数值计算软件包能够计算一个密切相关的函数：
+
+$$
+\operatorname{erf}(a)=\frac{2}{\sqrt{\pi}}
+\int_0^a\exp(-\theta^2/2)\,\mathrm{d}\theta,
+\tag{5.87}
+$$
+
+称为 **erf 函数**或**误差函数**（不要与机器学习模型的误差函数混淆）。它与 probit 函数的关系为（见习题 5.23）
+
+$$
+\Phi(a)=\frac12\left\{1+\frac{1}{\sqrt2}\operatorname{erf}(a)\right\}.
+\tag{5.88}
+$$
+
+**译注：** 本书此处的 $\operatorname{erf}$ 与常用软件库采用的标准误差函数不同。若后者记为 $\operatorname{erf}_{\mathrm{std}}$，则本书的 $\operatorname{erf}(a)=\sqrt2\,\operatorname{erf}_{\mathrm{std}}(a/\sqrt2)$；式（5.88）与本书此处的定义一致。
+
+以 probit 激活函数为基础的广义线性模型称为 **probit 回归**。可以直接推广前面讨论的方法，用极大似然确定其参数。实际中，probit 回归和逻辑回归往往得到相似结果。
+
+实际应用中可能遇到离群点，例如测量输入向量 $\mathbf{x}$ 出错，或目标值 $t$ 被误标。这样的点可能落在理想决策边界错误一侧的远处，严重扭曲分类器。逻辑回归与 probit 回归对此表现不同：当 $|x|\to\infty$ 时，逻辑 sigmoid 的尾部渐近地按 $\exp(-x)$ 衰减，而 probit 激活函数的尾部按 $\exp(-x^2)$ 衰减，因此 probit 模型可能对离群点敏感得多。
+
+### 5.4.6 规范链接函数
+
+对于具有高斯噪声分布的线性回归模型，与负对数似然对应的误差函数由式（4.11）给出。取数据点 $n$ 对误差函数的贡献，并对参数向量 $\mathbf{w}$ 求导，得到的形式是“误差”$y_n-t_n$ 乘以特征向量 $\boldsymbol{\phi}_n$，其中 $y_n=\mathbf{w}^{\mathsf T}\boldsymbol{\phi}_n$。类似地，逻辑 sigmoid 激活函数配合交叉熵误差函数（5.74），以及 softmax 激活函数配合多类别交叉熵误差函数（5.80），都会得到相同的简单形式。现在要证明，这是对目标变量的条件分布采用指数族，并相应选择称为**规范链接函数**的激活函数时的一般结果。
+
+再次使用指数族分布的受限形式（3.169）。注意，这里把指数族分布的假设应用于目标变量 $t$，而在第 5.3.4 节中应用于输入向量 $\mathbf{x}$。因此，考虑如下形式的目标变量条件分布：
+
+$$
+p(t\mid\eta,s)=\frac1s h\!\left(\frac ts\right)
+g(\eta)\exp\left\{\frac{\eta t}{s}\right\}.
+\tag{5.89}
+$$
+
+<!-- pdf-page: 184 -->
+
+沿用推导式（3.172）的思路，可得 $t$ 的条件均值（记为 $y$）为
+
+$$
+y\equiv\mathbb{E}[t\mid\eta]
+=-s\frac{\mathrm{d}}{\mathrm{d}\eta}\ln g(\eta).
+\tag{5.90}
+$$
+
+因此，$y$ 与 $\eta$ 必然存在关系，记为 $\eta=\psi(y)$。
+
+按照 Nelder 和 Wedderburn（1972）的定义，**广义线性模型**是指：$y$ 是输入（或特征）变量的线性组合经过非线性变换后的结果，即
+
+$$
+y=f(\mathbf{w}^{\mathsf T}\boldsymbol{\phi}),
+\tag{5.91}
+$$
+
+其中 $f(\cdot)$ 在机器学习文献中称为激活函数，$f^{-1}(\cdot)$ 在统计学中称为链接函数。现在考虑该模型的对数似然函数，作为 $\eta$ 的函数，它是
+
+$$
+\begin{aligned}
+\ln p(\mathbf{t}\mid\boldsymbol{\eta},s)
+&=\sum_{n=1}^{N}\ln p(t_n\mid\eta_n,s)\\
+&=\sum_{n=1}^{N}\left\{\ln g(\eta_n)
++\frac{\eta_nt_n}{s}\right\}+\text{常数}.
+\end{aligned}\tag{5.92}
+$$
+
+这里假设所有观测共享同一个尺度参数（例如高斯分布时对应噪声方差），所以 $s$ 与 $n$ 无关。对数似然对模型参数 $\mathbf{w}$ 的导数为
+
+$$
+\begin{aligned}
+\nabla_{\mathbf{w}}\ln p(\mathbf{t}\mid\boldsymbol{\eta},s)
+&=\sum_{n=1}^{N}
+\left\{\frac{\mathrm{d}}{\mathrm{d}\eta_n}\ln g(\eta_n)
++\frac{t_n}{s}\right\}
+\frac{\mathrm{d}\eta_n}{\mathrm{d}y_n}
+\frac{\mathrm{d}y_n}{\mathrm{d}a_n}
+\nabla_{\mathbf{w}}a_n\\
+&=\sum_{n=1}^{N}\frac1s(t_n-y_n)
+\psi'(y_n)f'(a_n)\boldsymbol{\phi}_n.
+\end{aligned}\tag{5.93}
+$$
+
+其中 $a_n=\mathbf{w}^{\mathsf T}\boldsymbol{\phi}_n$；我们使用了 $y_n=f(a_n)$，以及式（5.90）关于 $\mathbb{E}[t\mid\eta]$ 的结果。如果把链接函数 $f^{-1}(y)$ 选为下面的特殊形式，就能大幅简化：
+
+$$
+f^{-1}(y)=\psi(y).
+\tag{5.94}
+$$
+
+它给出 $f(\psi(y))=y$，因而 $f'(\psi)\psi'(y)=1$。又因为 $a=f^{-1}(y)$，所以 $a=\psi$，进而 $f'(a)\psi'(y)=1$。这时，误差函数的梯度简化为
+
+$$
+\nabla E(\mathbf{w})
+=\frac1s\sum_{n=1}^{N}(y_n-t_n)\boldsymbol{\phi}_n.
+\tag{5.95}
+$$
+
+可见，误差函数与输出单元激活函数的选择之间存在自然的配对关系。虽然这里是在单层网络模型的背景下推导这一结果，但同样的考虑也适用于后续章节讨论的深度神经网络。
+
+<!-- pdf-page: 185 -->
+
+## 习题
+
+**5.1（⋆）** 考虑一个有 $K$ 个类别的分类问题，其目标向量 $\mathbf{t}$ 使用 1-of-$K$ 二值编码。证明条件期望 $\mathbb{E}[\mathbf{t}\mid\mathbf{x}]$ 由后验概率 $p(\mathcal{C}_k\mid\mathbf{x})$ 给出。
+
+**5.2（⋆⋆）** 给定一组数据点 $\{\mathbf{x}_n\}$，可把其**凸包**定义为所有满足下式的点 $\mathbf{x}$ 构成的集合：
+
+$$
+\mathbf{x}=\sum_n\alpha_n\mathbf{x}_n,
+\tag{5.96}
+$$
+
+其中 $\alpha_n\geqslant0$ 且 $\sum_n\alpha_n=1$。再考虑第二组点 $\{\mathbf{y}_n\}$ 及其凸包。根据定义，如果存在向量 $\widehat{\mathbf{w}}$ 和标量 $w_0$，使所有 $\mathbf{x}_n$ 都满足 $\widehat{\mathbf{w}}^{\mathsf T}\mathbf{x}_n+w_0>0$，而所有 $\mathbf{y}_n$ 都满足 $\widehat{\mathbf{w}}^{\mathsf T}\mathbf{y}_n+w_0<0$，则两组点线性可分。证明：如果两个凸包相交，则两组点不可能线性可分；反过来，如果两组点线性可分，则两个凸包不相交。
+
+**5.3（⋆⋆）** 考虑最小化平方和误差函数（5.14），并假设训练集中的所有目标向量都满足线性约束
+
+$$
+\mathbf{a}^{\mathsf T}\mathbf{t}_n+b=0,
+\tag{5.97}
+$$
+
+其中 $\mathbf{t}_n$ 对应式（5.14）中矩阵 $\mathbf{T}$ 的第 $n$ 行。证明，由于这一约束，最小二乘解（5.16）给出的模型预测 $\mathbf{y}(\mathbf{x})$ 的各元素也满足这一约束，即
+
+$$
+\mathbf{a}^{\mathsf T}\mathbf{y}(\mathbf{x})+b=0.
+\tag{5.98}
+$$
+
+为此，假设其中一个基函数 $\phi_0(\mathbf{x})=1$，使相应参数 $w_0$ 起到偏置的作用。
+
+**5.4（⋆⋆）** 推广习题 5.3 的结果，证明：如果目标向量同时满足多个线性约束，那么线性模型的最小二乘预测也满足相同的约束。
+
+**5.5（⋆）** 利用定义（5.38）以及式（5.30）和（5.31），推导 F 分数的结果（5.39）。
+
+**5.6（⋆⋆）** 考虑两个非负数 $a$ 和 $b$，证明若 $a\leqslant b$，则 $a\leqslant(ab)^{1/2}$。利用此结果证明：如果选择两类别分类问题的决策区域，使误分类概率最小，那么该概率满足
+
+$$
+p(\text{错误})\leqslant
+\int\{p(\mathbf{x},\mathcal{C}_1)p(\mathbf{x},\mathcal{C}_2)\}^{1/2}
+\,\mathrm{d}\mathbf{x}.
+\tag{5.99}
+$$
+
+**5.7（⋆）** 给定元素为 $L_{kj}$ 的损失矩阵，如果对每个 $\mathbf{x}$ 都选择使式（5.23）最小的类别，期望风险就达到最小。验证：当损失矩阵为 $L_{kj}=1-I_{kj}$，其中 $I_{kj}$ 是单位矩阵的元素时，这一准则简化为选择后验概率最大的类别。
+
+<!-- pdf-page: 186 -->
+
+这种损失矩阵的形式应如何解释？
+
+**5.8（⋆）** 当损失矩阵是一般形式、各类别的先验概率也取一般形式时，推导使期望损失最小的准则。
+
+**5.9（⋆）** 考虑一组 $N$ 个数据点的后验概率的平均值：
+
+$$
+\frac1N\sum_{n=1}^{N}p(\mathcal{C}_k\mid\mathbf{x}_n).
+\tag{5.100}
+$$
+
+令 $N\to\infty$，证明这个量趋近于类别先验概率 $p(\mathcal{C}_k)$。
+
+**5.10（⋆⋆）** 考虑一个分类问题：把类别 $\mathcal{C}_k$ 的输入向量判为类别 $\mathcal{C}_j$ 所造成的损失由损失矩阵 $L_{kj}$ 给出，而选择拒判选项的损失为 $\lambda$。找出使期望损失最小的决策准则。验证：若损失矩阵为 $L_{kj}=1-I_{kj}$，该准则就化为第 5.2.3 节讨论的拒判准则。$\lambda$ 与拒判阈值 $\theta$ 有何关系？
+
+**5.11（⋆）** 证明逻辑 sigmoid 函数（5.42）满足 $\sigma(-a)=1-\sigma(a)$，并证明其反函数为 $\sigma^{-1}(y)=\ln\{y/(1-y)\}$。
+
+**5.12（⋆）** 利用式（5.40）和（5.41），推导两类别高斯密度生成模型的后验类别概率（5.48），并验证参数 $\mathbf{w}$ 和 $w_0$ 的结果（5.49）和（5.50）。
+
+**5.13（⋆）** 考虑一个 $K$ 类生成式分类模型：类别先验概率为 $p(\mathcal{C}_k)=\pi_k$，一般的类条件密度为 $p(\boldsymbol{\phi}\mid\mathcal{C}_k)$，其中 $\boldsymbol{\phi}$ 是输入特征向量。给定训练数据集 $\{\boldsymbol{\phi}_n,\mathbf{t}_n\}$，$n=1,\ldots,N$；$\mathbf{t}_n$ 是长度为 $K$ 的二值目标向量，采用 1-of-$K$ 编码：若第 $n$ 个数据点属于类别 $\mathcal{C}_k$，则其分量 $t_{nj}=I_{jk}$。假设数据点独立地从此模型抽取，证明先验概率的极大似然解是
+
+$$
+\pi_k=\frac{N_k}{N},
+\tag{5.101}
+$$
+
+其中 $N_k$ 是分配给类别 $\mathcal{C}_k$ 的数据点数。
+
+**5.14（⋆⋆）** 考虑习题 5.13 的分类模型，现假设类条件密度是共用协方差矩阵的高斯分布：
+
+$$
+p(\boldsymbol{\phi}\mid\mathcal{C}_k)
+=\mathcal{N}(\boldsymbol{\phi}\mid\boldsymbol{\mu}_k,\boldsymbol{\Sigma}).
+\tag{5.102}
+$$
+
+<!-- pdf-page: 187 -->
+
+证明类别 $\mathcal{C}_k$ 的高斯分布均值的极大似然解为
+
+$$
+\boldsymbol{\mu}_k
+=\frac1{N_k}\sum_{n=1}^{N}t_{nk}\boldsymbol{\phi}_n,
+\tag{5.103}
+$$
+
+即分配给该类别的特征向量的均值。类似地，证明共用协方差矩阵的极大似然解为
+
+$$
+\boldsymbol{\Sigma}
+=\sum_{k=1}^{K}\frac{N_k}{N}\mathbf{S}_k,
+\tag{5.104}
+$$
+
+其中
+
+$$
+\mathbf{S}_k
+=\frac1{N_k}\sum_{n=1}^{N}
+t_{nk}(\boldsymbol{\phi}_n-\boldsymbol{\mu}_k)
+(\boldsymbol{\phi}_n-\boldsymbol{\mu}_k)^{\mathsf T}.
+\tag{5.105}
+$$
+
+因此，$\boldsymbol{\Sigma}$ 是各类别数据协方差的加权平均，其权重系数由各类别的先验概率给出。
+
+**5.15（⋆⋆）** 对第 5.3.3 节描述的、采用离散二值特征的概率朴素贝叶斯分类器，推导参数 $\{\mu_{ki}\}$ 的极大似然解。
+
+**5.16（⋆⋆）** 考虑一个 $K$ 类分类问题，特征向量 $\boldsymbol{\phi}$ 有 $M$ 个分量，每个分量可取 $L$ 个离散状态。各分量的取值用 1-of-$L$ 二值编码表示。进一步假设：在给定类别 $\mathcal{C}_k$ 的条件下，$\boldsymbol{\phi}$ 的 $M$ 个分量相互独立，使类条件密度可按特征向量的分量分解。证明：式（5.46）给出的、出现在后验类别概率的 softmax 函数自变量中的 $a_k$，是 $\boldsymbol{\phi}$ 分量的线性函数。注意，这也是朴素贝叶斯模型的一个例子，见第 11.2.3 节。
+
+**5.17（⋆⋆）** 对习题 5.16 描述的概率朴素贝叶斯分类器，推导其参数的极大似然解。
+
+**5.18（⋆）** 验证式（5.42）定义的逻辑 sigmoid 函数的导数关系（5.72）。
+
+**5.19（⋆）** 利用逻辑 sigmoid 导数的结果（5.72），证明逻辑回归模型误差函数（5.74）的导数由式（5.75）给出。
+
+**5.20（⋆）** 证明：对线性可分的数据集，逻辑回归模型的极大似然解可以这样得到：先找出决策边界 $\mathbf{w}^{\mathsf T}\boldsymbol{\phi}(\mathbf{x})=0$ 能分开各类别的向量 $\mathbf{w}$，再让 $\mathbf{w}$ 的模趋于无穷大。
+
+**5.21（⋆）** 证明：若 $a_k$ 由式（5.77）定义，则 softmax 激活函数（5.76）的导数由式（5.78）给出。
+
+<!-- pdf-page: 188 -->
+
+**5.22（⋆）** 利用 softmax 激活函数的导数结果（5.78），证明交叉熵误差（5.80）的梯度由式（5.81）给出。
+
+**5.23（⋆）** 证明 probit 函数（5.86）与 erf 函数（5.87）由式（5.88）联系起来。
+
+**5.24（⋆⋆）** 假设希望用缩放后的 probit 函数 $\Phi(\lambda a)$ 近似式（5.42）定义的逻辑 sigmoid $\sigma(a)$，其中 $\Phi(a)$ 由式（5.86）定义。证明：如果选择 $\lambda$ 使两个函数在 $a=0$ 处的导数相等，那么 $\lambda^2=\pi/8$。

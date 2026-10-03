@@ -86,24 +86,294 @@ function renderShelf() {
   draw();
 }
 
-function renderTable(text) {
+function renderTable(block) {
   const wrapper = element("div", "table-scroll");
   const table = element("table", "book-table");
-  text.split("\n").filter((line) => line.startsWith("|")).forEach((line, index) => {
-    if (index === 1) return;
-    const row = element("tr");
-    line.slice(1, -1).split("|").forEach((cell) => row.append(element(index === 0 ? "th" : "td", "", cell.trim())));
-    table.append(row);
-  });
+  if (block.notation === true) table.classList.add("notation-table");
+  if (block.codeTable === true) table.classList.add("code-table");
+  if (block.caption) {
+    const caption = element("caption");
+    caption.append(renderSegments(block.captionSegments, block.caption));
+    table.append(caption);
+  }
+  if (Array.isArray(block.rows)) {
+    function makeRow(cells, header) {
+      const row = element("tr");
+      for (const cell of cells) {
+        const value = cell && typeof cell === "object" ? cell : { text: String(cell ?? "") };
+        const td = element(header || value.header ? "th" : "td");
+        td.append(renderSegments(value.segments, value.text || ""));
+        if (Number.isSafeInteger(value.colspan) && value.colspan > 1) td.colSpan = value.colspan;
+        if (Number.isSafeInteger(value.rowspan) && value.rowspan > 1) td.rowSpan = value.rowspan;
+        row.append(td);
+      }
+      return row;
+    }
+    if (Array.isArray(block.headers)) {
+      const head = element("thead");
+      head.append(makeRow(block.headers, true));
+      table.append(head);
+    }
+    const body = element("tbody");
+    for (const cells of block.rows) if (Array.isArray(cells)) body.append(makeRow(cells, false));
+    table.append(body);
+  } else {
+    (block.text || "").split("\n").filter((line) => line.startsWith("|")).forEach((line, index) => {
+      if (index === 1) return;
+      const row = element("tr");
+      line.slice(1, -1).split("|").forEach((cell) => row.append(element(index === 0 ? "th" : "td", "", cell.trim())));
+      table.append(row);
+    });
+  }
   wrapper.append(table);
   return wrapper;
 }
 
-function renderBlock(block) {
+const mathNamespace = "http://www.w3.org/1998/Math/MathML";
+const mathTags = new Set([
+  "math", "mrow", "mi", "mn", "mo", "mtext", "mspace", "mfrac", "msqrt", "mroot",
+  "msup", "msub", "msubsup", "munder", "mover", "munderover", "mmultiscripts",
+  "mprescripts", "none", "mfenced", "menclose", "mtable", "mtr", "mtd", "mstyle",
+  "mpadded", "mphantom",
+]);
+const mathAttributes = new Set([
+  "mathvariant", "stretchy", "fence", "separator", "accent", "accentunder", "largeop",
+  "movablelimits", "linethickness", "lspace", "rspace", "minsize", "maxsize",
+  "columnalign", "rowalign", "columnspacing", "rowspacing", "columnspan", "rowspan",
+  "notation", "scriptlevel", "displaystyle",
+]);
+
+// Chromium retains mathvariant in MathML but can paint script and bold Latin
+// identifiers with the same face as ordinary variables. Use their Unicode
+// mathematical letters so a codebook 𝒞 and a capacity C remain distinct.
+const scriptCapitals = [..."𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵"];
+
+function visibleMathVariant(variant, value) {
+  if (typeof value !== "string" || value.length !== 1) return null;
+  const point = value.charCodeAt(0);
+  if (variant === "script" && point >= 65 && point <= 90) return scriptCapitals[point - 65];
+  if (variant === "bold") {
+    if (point >= 65 && point <= 90) return String.fromCodePoint(0x1d400 + point - 65);
+    if (point >= 97 && point <= 122) return String.fromCodePoint(0x1d41a + point - 97);
+  }
+  return null;
+}
+
+function renderMathml(source, display) {
+  if (typeof source !== "string" || !source.trim()) return null;
+  const parsed = new DOMParser().parseFromString(source, "application/xml");
+  const root = parsed.documentElement;
+  if (root.localName !== "math" || parsed.querySelector("parsererror")) return null;
+
+  function copy(node) {
+    if (node.nodeType === Node.TEXT_NODE) return document.createTextNode(node.textContent);
+    if (node.nodeType !== Node.ELEMENT_NODE || !mathTags.has(node.localName)) return null;
+    const result = document.createElementNS(mathNamespace, node.localName);
+    const variantGlyph = node.localName === "mi"
+      ? visibleMathVariant(node.getAttribute("mathvariant"), node.textContent) : null;
+    if (variantGlyph) {
+      result.textContent = variantGlyph;
+      return result;
+    }
+    for (const attribute of node.attributes) {
+      if (mathAttributes.has(attribute.localName) && !attribute.name.includes(":")) {
+        result.setAttribute(attribute.localName, attribute.value);
+      }
+    }
+    for (const child of node.childNodes) {
+      const safe = copy(child);
+      if (!safe) return null;
+      result.append(safe);
+    }
+    return result;
+  }
+
+  const math = copy(root);
+  if (math) math.setAttribute("display", display ? "block" : "inline");
+  return math;
+}
+
+function renderSegments(segments, fallback) {
+  const content = document.createDocumentFragment();
+  if (!Array.isArray(segments)) {
+    content.append(document.createTextNode(fallback || ""));
+    return content;
+  }
+  for (const segment of segments) {
+    if (typeof segment === "string") {
+      content.append(document.createTextNode(segment));
+    } else if (segment && typeof segment === "object") {
+      if (segment.mathml) {
+        const math = renderMathml(segment.mathml, false);
+        if (math) {
+          const wrapper = element("span", "inline-math");
+          wrapper.append(math);
+          content.append(wrapper);
+        } else {
+          content.append(document.createTextNode(segment.text || segment.tex || ""));
+        }
+      } else if (typeof segment.ref === "string" && /^[\w-]+$/.test(segment.ref)) {
+        const link = element("a", "reading-reference", segment.text || segment.ref);
+        link.href = `#read-${segment.ref}`;
+        content.append(link);
+      } else if (segment.code === true) {
+        content.append(element("code", "book-inline-code", segment.text || ""));
+      } else if (segment.footnote === true && typeof segment.href === "string" &&
+                 /^#read-fn-\d+-\d+$/.test(segment.href)) {
+        const superscript = element("sup", "book-footnote-ref");
+        const link = element("a", "reading-reference", segment.text || "");
+        link.href = segment.href;
+        superscript.append(link);
+        content.append(superscript);
+      } else if (typeof segment.href === "string" && /^https?:\/\//i.test(segment.href)) {
+        const link = element("a", "reading-reference", segment.text || segment.href);
+        link.href = segment.href;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        content.append(link);
+      } else if (segment.em === true || segment.strong === true) {
+        content.append(element(segment.strong === true ? "strong" : "em", "", segment.text || ""));
+      } else {
+        content.append(document.createTextNode(segment.text || ""));
+      }
+    }
+  }
+  return content;
+}
+
+function renderList(block) {
+  if (block.originalContents === true) {
+    const list = element("ul", "book-list original-contents");
+    for (const item of Array.isArray(block.items) ? block.items : []) {
+      const depth = Math.max(0, Math.min(2, Number(item.depth) || 0));
+      const row = element("li", `contents-depth-${depth}`);
+      const title = element(item.strong ? "strong" : "span", "contents-title", item.title || "");
+      row.append(title, element("span", "contents-page", item.pageLabel || ""));
+      list.append(row);
+    }
+    return list;
+  }
+  function makeList(items, ordered, start) {
+    const list = element(ordered ? "ol" : "ul", "book-list");
+    if (ordered && Number.isSafeInteger(start) && start > 0) list.start = start;
+    for (const item of items) {
+      const li = element("li");
+      if (typeof item === "string") li.append(document.createTextNode(item));
+      else if (item && typeof item === "object") {
+        const paragraph = element("span");
+        paragraph.append(renderSegments(item.segments, item.text));
+        li.append(paragraph);
+        if (Array.isArray(item.children) && item.children.length) {
+          li.append(makeList(item.children, item.ordered === true, item.start));
+        }
+      }
+      list.append(li);
+    }
+    return list;
+  }
+  return makeList(Array.isArray(block.items) ? block.items : [], block.ordered === true, block.start);
+}
+
+function figureUrl(book, source) {
+  if (typeof source !== "string" || !/^assets\/[\w./-]+\.(?:png|jpe?g|webp|gif|svg)$/i.test(source)) return null;
+  if (source.split("/").includes("..")) return null;
+  const root = new URL(`books/${book.id}/`, document.baseURI);
+  const url = new URL(source, root);
+  return url.origin === root.origin && url.pathname.startsWith(`${root.pathname}assets/`) ? url.href : null;
+}
+
+function renderFigure(block, book) {
+  const figure = element("figure", "book-figure");
+  if (block.wide) figure.classList.add("wide-figure");
+  const source = figureUrl(book, block.src);
+  if (source) {
+    const image = element("img");
+    image.src = source;
+    image.alt = block.alt || "";
+    image.loading = "lazy";
+    image.decoding = "async";
+    if (Number.isSafeInteger(block.width) && block.width > 0) image.width = block.width;
+    if (Number.isSafeInteger(block.height) && block.height > 0) image.height = block.height;
+    if (image.width > 0 && image.height > 0) {
+      image.classList.add("has-image-size");
+      image.style.setProperty("--figure-width", `${image.width}px`);
+      image.style.setProperty("--figure-ratio", `${image.width} / ${image.height}`);
+    }
+    image.addEventListener("error", () => figure.append(element("p", "figure-error", "图片无法加载")), { once: true });
+    const media = element("div", "figure-media");
+    if (block.wide) {
+      media.setAttribute("role", "region");
+      media.setAttribute("aria-label", `可横向滚动的图：${block.alt || block.caption || "原书插图"}`);
+      media.tabIndex = 0;
+    }
+    const link = element("a", "figure-image-link");
+    link.href = source;
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.setAttribute("aria-label", `打开原图：${block.alt || block.caption || "原书插图"}`);
+    link.append(image);
+    media.append(link);
+    figure.append(media);
+    if (block.wide) figure.append(element("p", "figure-view-hint", "左右滑动查看图 · 点击图片查看原图"));
+  } else {
+    figure.append(element("p", "figure-error", "图片路径无效"));
+  }
+  if (block.caption || (Array.isArray(block.annotations) && block.annotations.length)) {
+    const caption = element("figcaption", "figure-caption");
+    if (block.caption) {
+      const paragraph = element("p");
+      paragraph.append(renderSegments(block.captionSegments, block.caption));
+      caption.append(paragraph);
+    }
+    if (Array.isArray(block.annotations) && block.annotations.length) {
+      const notes = element("div", "figure-annotations");
+      notes.append(element("p", "figure-annotations-title", "图内文字译注"));
+      const list = element("ul");
+      block.annotations.forEach((annotation, index) => {
+        const item = element("li");
+        item.append(renderSegments(block.annotationSegments?.[index], annotation));
+        list.append(item);
+      });
+      notes.append(list);
+      caption.append(notes);
+    }
+    figure.append(caption);
+  }
+  return figure;
+}
+
+function renderLabeledParagraph(block, className, book) {
+  const paragraph = element("p", className);
+  const iconSource = figureUrl(book, block.recommendedIcon);
+  if (iconSource) {
+    const icon = element("img", `${className}-icon`);
+    icon.src = iconSource;
+    icon.alt = "原书推荐习题图标";
+    icon.width = 42;
+    icon.height = 46;
+    paragraph.append(icon);
+  }
+  if (block.label) paragraph.append(element("strong", `${className}-label`, block.label));
+  const body = element("span", `${className}-body`);
+  body.append(renderSegments(block.segments, block.text));
+  paragraph.append(body);
+  return paragraph;
+}
+
+function renderBlock(block, book) {
+  if (block.kind === "box" && Array.isArray(block.blocks)) {
+    const aside = element("aside", "book-box");
+    if (block.outlined === true) aside.classList.add("outlined-box");
+    if (block.algorithm === true) aside.classList.add("algorithm-box");
+    aside.id = `read-${block.id}`;
+    for (const child of block.blocks) aside.append(renderBlock(child, book));
+    if (block.algorithm === true) aside.append(element("p", "algorithm-view-hint", "左右滑动查看完整算法"));
+    return aside;
+  }
   const node = element("div", `reading-block reading-${block.kind}`);
   node.id = `read-${block.id}`;
   if (block.kind === "table") {
-    node.append(renderTable(block.text));
+    node.append(renderTable(block));
   } else if (block.kind === "heading") {
     if (typeof block.html === "string") {
       const fragment = document.createElement("template");
@@ -113,14 +383,52 @@ function renderBlock(block) {
       const number = block.text.match(/^(\d+(?:\.\d+)*)(?:\s|$)/)?.[1];
       const depth = Number.isInteger(block.level) ? block.level :
         (number ? number.split(".").length : (/^第\s*\d+\s*章/.test(block.text) ? 1 : 3));
-      node.append(element(`h${Math.max(1, Math.min(depth, 3))}`, "", block.text));
+      const heading = element(`h${Math.max(1, Math.min(depth, 3))}`);
+      heading.append(renderSegments(block.segments, block.text));
+      node.append(heading);
     }
+  } else if (block.kind === "figure" || block.kind === "image") {
+    node.append(renderFigure(block, book));
+  } else if (block.kind === "formula") {
+    const formula = element("div", "book-formula");
+    const scroller = element("div", "formula-scroll");
+    const math = block.mathml ? renderMathml(block.mathml, true) : null;
+    scroller.append(math || element("span", "formula-fallback", block.text || block.tex || "公式无法显示"));
+    formula.append(scroller);
+    if (block.number) formula.append(element("span", "formula-number", block.number));
+    if (block.text) formula.setAttribute("aria-label", block.text);
+    node.append(formula);
+  } else if (block.kind === "code") {
+    const pre = element("pre", "book-code");
+    const code = element("code", "", block.text || "");
+    if (block.language) code.dataset.language = block.language;
+    pre.append(code);
+    node.append(pre);
+  } else if (block.kind === "list") {
+    node.append(renderList(block));
+  } else if (block.kind === "footnote") {
+    const note = element("p", "book-footnote");
+    if (block.label) note.append(element("span", "footnote-label", block.label));
+    note.append(renderSegments(block.segments, block.text));
+    node.append(note);
+  } else if (block.kind === "quote") {
+    const quote = element("blockquote", "book-quote");
+    const paragraph = element("p");
+    paragraph.append(renderSegments(block.segments, block.text));
+    quote.append(paragraph);
+    node.append(quote);
+  } else if (block.kind === "exercise") {
+    node.append(renderLabeledParagraph(block, "book-exercise", book));
+  } else if (block.kind === "bibliographical-note") {
+    node.append(renderLabeledParagraph(block, "book-bibliographical-note", book));
   } else if (block.kind === "rich" && typeof block.html === "string") {
     const fragment = document.createElement("template");
     fragment.innerHTML = block.html;
     node.append(fragment.content);
   } else {
-    node.append(element("p", "", block.text));
+    const paragraph = element("p");
+    paragraph.append(renderSegments(block.segments, block.text));
+    node.append(paragraph);
   }
   return node;
 }
@@ -134,7 +442,8 @@ async function renderReader(book) {
   const chapters = Array.isArray(book.chapters) ? book.chapters : [];
   const saved = readProgress(book);
   const explicit = chapters.find((item) => item.id === params.get("chapter"));
-  const chapterInfo = explicit || (params.has("page") ? chapters[0] : chapters.find((item) => item.id === saved?.chapter)) || chapters[0];
+  const legacyChapter = chapters.find((item) => item.id === book.legacyPageChapter) || chapters[0];
+  const chapterInfo = explicit || (params.has("page") ? legacyChapter : chapters.find((item) => item.id === saved?.chapter)) || chapters[0];
   let chapter;
   try {
     if (!chapterInfo) throw new Error("No chapters");
@@ -151,8 +460,38 @@ async function renderReader(book) {
 
   const blocks = chapter.blocks;
   const article = document.querySelector("#reader-article");
-  article.replaceChildren(...blocks.map(renderBlock));
+  article.dataset.bookId = book.id;
+  article.replaceChildren(...blocks.map((block) => renderBlock(block, book)));
   const nodes = [...article.querySelectorAll(".reading-block")];
+  const updateFormulaHints = () => {
+    for (const formula of article.querySelectorAll(".book-formula")) {
+      const scroller = formula.querySelector(".formula-scroll");
+      const overflows = scroller.scrollWidth > scroller.clientWidth + 2;
+      let hint = formula.nextElementSibling;
+      if (overflows && !hint?.classList.contains("formula-view-hint")) {
+        hint = element("p", "formula-view-hint", "左右滑动查看完整公式");
+        formula.after(hint);
+      }
+      if (hint?.classList.contains("formula-view-hint")) hint.hidden = !overflows;
+      if (overflows) {
+        scroller.tabIndex = 0;
+        scroller.title = "左右滑动查看完整公式";
+      }
+    }
+    for (const code of article.querySelectorAll(".book-code")) {
+      const overflows = code.scrollWidth > code.clientWidth + 2;
+      let hint = code.nextElementSibling;
+      if (overflows && !hint?.classList.contains("code-view-hint")) {
+        hint = element("p", "code-view-hint", "左右滑动查看完整代码或算法");
+        code.after(hint);
+      }
+      if (hint?.classList.contains("code-view-hint")) hint.hidden = !overflows;
+      if (overflows) {
+        code.tabIndex = 0;
+        code.title = "左右滑动查看完整代码或算法";
+      }
+    }
+  };
   const indexById = new Map(nodes.map((node, index) => [node.id, index]));
   const toc = document.querySelector("#reader-toc");
   const mobileToc = document.querySelector("#reader-toc-mobile");
@@ -177,6 +516,7 @@ async function renderReader(book) {
         for (const entry of chapter.toc.slice(1)) {
           const level = Number.isInteger(entry.level) ? entry.level : Math.min(entry.number.split(".").length, 3);
           const link = element("a", `toc-link toc-section-link toc-level-${level}`, `${entry.number} ${entry.title}`.trim());
+          if (entry.segments) link.replaceChildren(renderSegments(entry.segments, `${entry.number} ${entry.title}`.trim()));
           link.href = `#read-${entry.block}`;
           if (closeOnSelect) link.addEventListener("click", () => dialog.close());
           links.push(link);
@@ -205,7 +545,7 @@ async function renderReader(book) {
   let lastSaved = "";
   function updatePosition() {
     let current = 0;
-    const threshold = innerHeight * 0.35;
+    const threshold = (Number.parseFloat(getComputedStyle(nodes[0]).scrollMarginTop) || 0) + 1;
     for (let index = 0; index < nodes.length; index += 1) {
       if (nodes[index].getBoundingClientRect().top <= threshold) current = index;
       else break;
@@ -229,13 +569,15 @@ async function renderReader(book) {
   const legacyBlock = blocks.find((block) => block.page === legacyPage)?.id;
   const requested = decodeURIComponent(location.hash.slice(1));
   const requestedNode = requested && document.getElementById(requested);
-  const canRestore = saved && (!params.has("chapter") || saved.chapter === chapterInfo.id || (!saved.chapter && chapterIndex === 0));
+  const canRestore = saved && (!params.has("chapter") || saved.chapter === chapterInfo.id || (!saved.chapter && chapterInfo.id === legacyChapter?.id));
   const restoreId = requestedNode && article.contains(requestedNode) ? requested :
     legacyBlock ? `read-${legacyBlock}` :
     canRestore && indexById.has(saved.block) ? saved.block :
     canRestore && saved.page ? `read-${blocks.find((block) => block.page === saved.page)?.id}` : null;
   const startTracking = () => {
+    updateFormulaHints();
     if (restoreId) document.getElementById(restoreId)?.scrollIntoView({ block: "start", behavior: "instant" });
+    else window.scrollTo({ top: 0, behavior: "instant" });
     updatePosition();
     let ticking = false;
     window.addEventListener("scroll", () => {
@@ -243,6 +585,7 @@ async function renderReader(book) {
       ticking = true;
       requestAnimationFrame(() => { ticking = false; updatePosition(); });
     }, { passive: true });
+    window.addEventListener("resize", () => requestAnimationFrame(updateFormulaHints), { passive: true });
   };
   document.fonts.ready.then(() => requestAnimationFrame(startTracking));
 }
