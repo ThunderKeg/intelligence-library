@@ -33,7 +33,7 @@ with sync_playwright() as playwright:
     page.locator(".reading-block").first.wait_for()
     assert page.locator(".reading-heading h1").inner_text() == "封面与出版信息"
     assert page.locator(".reading-block").count() == 17
-    page.wait_for_function("document.querySelector('.book-figure img').naturalWidth > 0")
+    page.wait_for_function("(document.querySelector('.book-figure img')?.naturalWidth ?? 0) > 0")
     page.get_by_role("link", name="下一章").click()
     page.locator(".reading-heading h1").get_by_text("前言").wait_for()
     assert page.locator(".reading-block").count() == 38
@@ -72,7 +72,7 @@ with sync_playwright() as playwright:
     page.evaluate("navigator.serviceWorker.ready")
     desktop.set_offline(True)
     page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=frontmatter")
-    page.wait_for_function("document.querySelector('.book-figure img').naturalWidth > 0")
+    page.wait_for_function("(document.querySelector('.book-figure img')?.naturalWidth ?? 0) > 0")
     for chapter, count in (("frontmatter", 17), ("00", 38), ("contents", 12),
                            ("01", 118), ("02", 449), ("03", 587),
                            ("04", 217), ("05", 389), ("06", 314), ("07", 235),
