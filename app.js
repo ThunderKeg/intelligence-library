@@ -763,6 +763,7 @@ async function renderReader(book) {
   chapterNavigation.hidden = !chapterNavigation.childElementCount;
 
   let lastSaved = "";
+  let historyReturnScrollY = null;
   let restoreScrollY = null;
   function updatePosition() {
     let current = 0;
@@ -785,6 +786,15 @@ async function renderReader(book) {
     const blockId = nodes[current].id;
     if (blockId !== lastSaved) {
       saveProgress(book, chapterInfo.id, blockId);
+      const entry = history.state;
+      if (entry?.readerReturn?.url === location.href) {
+        if (historyReturnScrollY !== null && Math.abs(window.scrollY - historyReturnScrollY) > 2) {
+          try {
+            history.replaceState({ ...entry, readerReturn: { ...entry.readerReturn, block: blockId } }, "");
+          } catch { /* Keep reading when history state is unavailable. */ }
+        }
+        historyReturnScrollY = window.scrollY;
+      }
       lastSaved = blockId;
     }
     document.querySelector("#reading-progress").style.width = `${((current + 1) / nodes.length) * 100}%`;
@@ -797,15 +807,38 @@ async function renderReader(book) {
     }
   }
 
+  // Keep the source paragraph in this history entry: another chapter can
+  // replace the book-wide reading progress before the reader presses Back.
+  article.addEventListener("click", (event) => {
+    const link = event.target.closest?.("a.reading-reference");
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey ||
+        event.ctrlKey || event.shiftKey || event.altKey || link.target === "_blank") return;
+    const destination = new URL(link.href, location.href);
+    const source = link.closest(".reading-block");
+    if (!source || destination.origin !== location.origin || destination.pathname !== location.pathname ||
+        destination.searchParams.get("book") !== book.id ||
+        destination.searchParams.get("chapter") === chapterInfo.id) return;
+    try {
+      history.replaceState({ ...history.state, readerReturn: {
+        book: book.id, chapter: chapterInfo.id, block: source.id, url: location.href,
+      } }, "");
+    } catch { /* Navigation remains available if history state is unavailable. */ }
+  });
+  const navigationType = performance.getEntriesByType("navigation")[0]?.type;
+  const historyReturn = history.state?.readerReturn;
+  const returnId = (navigationType === "back_forward" || navigationType === "reload") &&
+    historyReturn?.url === location.href && historyReturn.book === book.id && historyReturn.chapter === chapterInfo.id &&
+    indexById.has(historyReturn.block) ? historyReturn.block : null;
+
   const legacyPage = Number(params.get("page"));
   const legacyBlock = blocks.find((block) => block.page === legacyPage)?.id;
   const requested = decodeURIComponent(location.hash.slice(1));
   const requestedNode = requested && document.getElementById(requested);
   const canRestore = saved && (!params.has("chapter") || saved.chapter === chapterInfo.id || (!saved.chapter && chapterInfo.id === legacyChapter?.id));
-  const restoreId = requestedNode && article.contains(requestedNode) ? requested :
+  const restoreId = returnId || (requestedNode && article.contains(requestedNode) ? requested :
     legacyBlock ? `read-${legacyBlock}` :
     canRestore && indexById.has(saved.block) ? saved.block :
-    canRestore && saved.page ? `read-${blocks.find((block) => block.page === saved.page)?.id}` : null;
+    canRestore && saved.page ? `read-${blocks.find((block) => block.page === saved.page)?.id}` : null);
   const initialScrollY = window.scrollY;
   let movedBeforeTracking = false;
   const observePreTrackingScroll = () => {

@@ -1,0 +1,45 @@
+{
+  "scope": "Immutable global delta evidence; final site acceptance is recorded separately.",
+  "files": [
+    {
+      "file": "whole-book-links-delta.json",
+      "source": "tmp/convex/whole-book-links-delta.json",
+      "sha256": "408dc10764675f8acc7ed0cb7d222b87746af4a9558d32840dca00d052a1d33d"
+    },
+    {
+      "file": "global-toc-reference-fixes.json",
+      "source": "tmp/convex/global-toc-reference-fixes.json",
+      "sha256": "2da1071f3b0e611c6947b369593b2b845715cf95fef5559f9d136b68a68197b0"
+    },
+    {
+      "file": "global-terminology-fixes.json",
+      "source": "tmp/convex/global-terminology-fixes.json",
+      "sha256": "06a265d3f4e12cc69d9b535afd55d87b75e615b525bd9b893eb2288b3cf9c1bf"
+    },
+    {
+      "file": "operator-style-fixes.json",
+      "source": "tmp/convex/operator-style-fixes.json",
+      "sha256": "7e9f29ecdbdf7721763b054373aacafb837032c2b836416d0aaf08368f068497"
+    },
+    {
+      "file": "title-guide-fixes.json",
+      "source": "tmp/convex/title-guide-fixes.json",
+      "sha256": "5f8ea6091a22539dd7afa2e0ae389d48c17333b531c3efbec717ba7349450259"
+    },
+    {
+      "file": "operator-spacing-fixes.json",
+      "source": "tmp/convex/operator-spacing-fixes.json",
+      "sha256": "c3c18ea1425b3eb3ea1013a9d9471513b8a63184cd9c49b5c80df3b97d83ec37"
+    },
+    {
+      "file": "scripted-operator-spacing-fixes.json",
+      "source": "tmp/convex/scripted-operator-spacing-fixes.json",
+      "sha256": "9ec03862846d41a05791a5de8423d43fe0ecf70da8ea3315cbcf945509b55ad3"
+    },
+    {
+      "file": "final-backmatter-acceptance.json",
+      "source": "tmp/convex/final-backmatter-acceptance.json",
+      "sha256": "504733ad3b0c8aba811833e668e726d0cacdbf57c762f1475f35370ed4675d8f"
+    }
+  ]
+}

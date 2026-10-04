@@ -1,0 +1,327 @@
+{
+  "verdict": "PASS",
+  "scope": "Whole-book content consistency only: terminology, mathematical operator style, headings, editorial guides, and exact content preservation of accepted deltas",
+  "contentReviewPassed": true,
+  "unresolvedContentFindings": [],
+  "reviewer": "convex_build",
+  "generatedUtc": "2026-10-04T02:44:36.961318+00:00",
+  "actualFinalSpacingDisplayVerdict": "pending in separately owned whole-book visual review; not certified by this content verdict",
+  "actualRegistrationAndDeploymentVerdict": "outside this content review; requires integration acceptance",
+  "report": {
+    "path": "books/boyd-vandenberghe-convex-optimization-2004/reviews/global-content-review.md",
+    "sha256": "52ed66937de93f733675fff6490ea9c5187ecb73c1d7b25ec88e6d53c596acb9"
+  },
+  "acceptedContentIssues": [
+    "G-C01",
+    "G-C02",
+    "G-C03",
+    "G-C04",
+    "G-C05"
+  ],
+  "notAcceptedAsError": [
+    "maximum entropy problem on PDF 376",
+    "proper cone versus normal cone",
+    "source-specific plain operators excluded from 600-item fix"
+  ],
+  "sourceEvidenceCorrection": {
+    "ledgerUnchangedSha256": "e61b9bd2945febb41541e8db1c00c699a5ce3a5887ff65b1d6e277a42f0f4ecb",
+    "chapter": "03",
+    "sourceOffset": 1111,
+    "oldPdfPage": 82,
+    "correctPdfPage": 81,
+    "correctionPath": "tmp/convex/review-global-content/operator-ledger-page-correction.json"
+  },
+  "totals": {
+    "units": 23,
+    "matchingHeadingPairs": 99,
+    "clearlyEditorialGuides": 17,
+    "derivativePhraseFixes": 14,
+    "euclideanWordFixes": 3,
+    "operatorStyleFixes": 600,
+    "originalOperatorOccurrences": 595,
+    "editorialOperatorOccurrences": 5,
+    "titleAndGuideFixes": 6,
+    "mathNodes": 20149,
+    "generatedReferences": 2409
+  },
+  "independentChecks": {
+    "terminologyDeltaAll23JsonExact": true,
+    "600OperatorInverseWholeJsonExact": true,
+    "sixTextEditsWholeJsonExact": true,
+    "spacingInverseWholeJsonExact": true,
+    "allSourceBytesUnchangedBySpacing": true,
+    "newBuildTestsRun": 31,
+    "newBuildTestsPassed": 31,
+    "earlierReferenceLinkTestsRun": 9,
+    "earlierReferenceLinkTestsPassed": 9
+  },
+  "tools": {
+    "tools/build.py": "bb1ddd0fee3b1205f779e8a3eb66c36da37f5413c1df1031f10dff4069bc15f5",
+    "tools/test_build.py": "f2d1851747890e8a7a0136d413e3e8436261d5260d2dcbeea7418dffb0f84c13",
+    "tools/link_references.py": "8f8cd9d79f0325a47fd5a256c3f2cc26f2d8e03c3d0cf33b4eca70cb3618464b",
+    "tools/test_link_references.py": "670c0f1052a3417355180ccdb1a360a56bb0dcdfef6b7ba7e240ab76e51dffe4"
+  },
+  "terminologyTable": {
+    "path": "books/boyd-vandenberghe-convex-optimization-2004/TERMINOLOGY.md",
+    "sha256": "60d1ab3191f34341ea6069723b23a3c6ff6777c294f64bab6649ba6e8f155971"
+  },
+  "units": [
+    {
+      "unit": "frontmatter",
+      "sourceSha256": "5fa9213b485068cedeaad2db5d8ef84f0d3d9963f39037090c2c38dce951ed3d",
+      "jsonSha256": "93a126677af0db7664c6690c5329fdeac11cc28ce818917cde6361c7fdd93d3d",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "contents",
+      "sourceSha256": "e75749c815ca9e5c7d2514949edfc8edfc70040bdfb5424733f2cd96ace6c4bf",
+      "jsonSha256": "6a8aa807fab098831bdd75276f92fb2d70ce296f3bdc9f98da74f0c02a761cac",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "preface",
+      "sourceSha256": "8ea026c635b14435d2dab8907b6ccd6c21e025855b4551be5b4430b2fb352168",
+      "jsonSha256": "3ef242b39b38658e6b7c42700c3ad2dbd62c8e649147f880fc6fb9b537265c9b",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "01",
+      "sourceSha256": "164969c3497b1215eb0512c8610f230ecdffb3cf0a09f940af580464040f73fe",
+      "jsonSha256": "1b113973f2c1ff966f82881e7d10d5944f5b58ff5e2b9809fc0f2e2a831cc037",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "part-I",
+      "sourceSha256": "7e3eb854b35aff0b51b1f562ee1529da945ae45229bffb567f7d7fe3e9ff0676",
+      "jsonSha256": "15af3d780f7eae4108fcc6810757bbace9bd23afbb49f774dd408fcc14526a7c",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "02",
+      "sourceSha256": "c3b27ae1405bb081f4218fb34674a83f92078045b7b63f36543b7de957a0a2d1",
+      "jsonSha256": "40a9a87bc3b8ac326ad61a6b797af6b1367c0dfba16184b3f4e8fb0d475c97f9",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {
+        "applicationRspace": 48
+      }
+    },
+    {
+      "unit": "03",
+      "sourceSha256": "efa8cc862f526e84a14889c9235b3c8c225e0c5c7a0b0d9707302abbe40678b2",
+      "jsonSha256": "c9052de5af32843ddf1e1dc16937d76331f7c6ba7d3993a78a4e474b5ae5c6ce",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {
+        "applicationRspace": 274,
+        "scriptedMspace": 2
+      }
+    },
+    {
+      "unit": "04",
+      "sourceSha256": "754efcf3418fbe4e38601fc7e6754b66e1ae010034627b8eb598b44b076d01ec",
+      "jsonSha256": "3c65d72e6a02891287171f3d6a6fc7413ea08893adc55c6b125a3ca808d7e0e3",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {
+        "applicationRspace": 36
+      }
+    },
+    {
+      "unit": "05",
+      "sourceSha256": "02f0cbc6388cf9e2331c2305479bd08fbd83d5dd8442e63f79eb56771eefcf8c",
+      "jsonSha256": "4f612b37bf7de6fd27a19619b102fc13fb4cfd4c0bed0c3f56d2cf816c0d5c41",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {
+        "applicationRspace": 52
+      }
+    },
+    {
+      "unit": "part-II",
+      "sourceSha256": "2062e2e2f082baa6a15d28cf4fe8c9b551ab6916836e97fbeed43585a8844689",
+      "jsonSha256": "b12aea8bbe5718e74a55c628938c18d7d2c72869486addf4b5a5dac7b7997302",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "06",
+      "sourceSha256": "6c25ba49b68bdfb81307cbed9a68668d79003b49f395ce199f9bdd81c702d2dc",
+      "jsonSha256": "6b464f9b5cd6fecafa9c17de5dfb8003e2137997c4982a91448d35f818f8cf1d",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {
+        "applicationRspace": 12
+      }
+    },
+    {
+      "unit": "07",
+      "sourceSha256": "161cd348a6abd1abc651aae185e24de8d0d649c9e6eea8c3ee8d8d6b19656b84",
+      "jsonSha256": "38fea76bf9ac7988a1ab3ce4479b57214926ad5e76f0bf72a4dfff4ed85d9c53",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {
+        "applicationRspace": 7
+      }
+    },
+    {
+      "unit": "08",
+      "sourceSha256": "a8b8ef770c46e528fff93e6390bc8dfd825d2b08ee760520c3fb80c29a496900",
+      "jsonSha256": "49240b85c415272874ad820ad8cd5da9a516dda0f649d8fab9a65b7f91401d55",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "part-III",
+      "sourceSha256": "a9d58fe61a68c05510a26ddc285b6de17e020f28f60f30b0aa522a798812b93b",
+      "jsonSha256": "7769ff8c47305c8d4f41c2b95981a00bfc3d7eb6b79ef53cf81d9d6fac9c7074",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "09",
+      "sourceSha256": "9d8de78cab994a16c6ef9de5082367e568acc046f8cd657db9736327056d144c",
+      "jsonSha256": "acfd753abd18fec60c2e2cc8bce1848dec06acfa9ea1b67fbcb22195d0bc1ef2",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "10",
+      "sourceSha256": "161bdfe590c093229f860a77b3b5fa957ef137224c745d4072363a0639a3666d",
+      "jsonSha256": "78a63ac2e5b5ec1cf004918cde9473eb00cfbad7889ef0b2e8640783702add01",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "11",
+      "sourceSha256": "55db7c66f2875090fbb1fbe4d0f4abcc2050e04028791bf58447c076cfdf9967",
+      "jsonSha256": "a769cb56dbbe070532e8015ad99f6068b9ee884dc2e4bdda17e73093d46fe123",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "appendices",
+      "sourceSha256": "9fc923d4de3fd96aaebc997e217a58c7f1f0f78fff552710d6e8a1549af65f30",
+      "jsonSha256": "f3c00f2779feb9e28c321ad239aac4866a470b5efdaa525485ea9f9b579a7ef6",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "A",
+      "sourceSha256": "0db95d4fe6ab29476ffa5aae0481bc696673034fc58a1098b3f1d9c98db903b8",
+      "jsonSha256": "2bf5986d376b35f4677eb4b7b0350cf533e06cae702aa5d0b67564a8b48b66b1",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "B",
+      "sourceSha256": "d851da207218ab0ffbf711cda621ca5ba1c0132d49afc88e4526ddb4945b4ab9",
+      "jsonSha256": "e7e5012b1835c9fd3bd4684b1ce4edbf7d2392057dd2966fd90ede3b366add57",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "C",
+      "sourceSha256": "1e9145dd98b77d38b95441efe0bd2275b458e4f1d08052b98a92e277ce69141b",
+      "jsonSha256": "9eed920a2871d933b58ce2ba67ef2c00768292383f1809b60dffa9f7ecc15c6f",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "references",
+      "sourceSha256": "a540c591737380324bc44deee625a3366c8c0a0ec183f6ada81cd84eff78c328",
+      "jsonSha256": "42dd72b43cb3770ec54a1ae58cd1a97d8c02fd3b0f30052403152d0ffc3fe13d",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    },
+    {
+      "unit": "notation",
+      "sourceSha256": "0c19c4d420b5b4f5c1bdc941773452c1479b9a9e5952217ad23485f70eaa0f24",
+      "jsonSha256": "fb0e5b05248103571a01362f986ef78be0df70fdf0e724035d435cd46fae7bba",
+      "sourceBytesUnchanged": true,
+      "wholeJsonInverseExactlyEqualToIndependentlyVerifiedSnapshot": true,
+      "spacing": {}
+    }
+  ],
+  "evidence": [
+    {
+      "path": "tmp/convex/review-global-content/inventory.json",
+      "sha256": "f8f1bc6a6ea5e67532508054f0a28fd21eaabe882881ada3321945b21e45b0f2"
+    },
+    {
+      "path": "tmp/convex/review-global-content/titles-and-extra-terms.json",
+      "sha256": "3693bb49c7779f9a7b4a7fdae5f5deeefe63d6cc457d3551b14a0cee6fbad97d"
+    },
+    {
+      "path": "tmp/convex/review-global-content/operator-style-candidates.json",
+      "sha256": "e61b9bd2945febb41541e8db1c00c699a5ce3a5887ff65b1d6e277a42f0f4ecb"
+    },
+    {
+      "path": "tmp/convex/review-global-content/operator-ledger-page-correction.json",
+      "sha256": "b91d1a2dfeedf2b9565e4136a848104d15ade4219722ccbc711a255b3d367713"
+    },
+    {
+      "path": "tmp/convex/review-global-content/title-guide-fixes.json",
+      "sha256": "1d6f4d0c407582746985e4c9de13e81f64b62f3100fa8fb866a23243944fb6a5"
+    },
+    {
+      "path": "tmp/convex/review-global-content/terminology-delta-verification.json",
+      "sha256": "bf66ebd8edfbb5d846f3c972635efbfbb05870442391a0b1be984da3763e8385"
+    },
+    {
+      "path": "tmp/convex/review-global-content/final-delta-verification.json",
+      "sha256": "31a01b4bf472bea181055af756d10351cb33d92bfb46f15395ff6dd9d78fbb2f"
+    },
+    {
+      "path": "tmp/convex/review-global-content/spacing-content-verification.json",
+      "sha256": "43ccfdf3859c6b108f1902e430c0b4243e6bbeccfd0341a5a18aa7267cfbd6a9"
+    },
+    {
+      "path": "tmp/convex/review-global-content/visual-observations.json",
+      "sha256": "73bc0d446d01019baffaa33f9f438af389223c83cfa3817ef43748f6df65ccfb"
+    },
+    {
+      "path": "tmp/convex/review-global-content/reader/results.json",
+      "sha256": "c1bb87e54b2d4c71dd6a8f0d89726739c22bba8feb639cdc39906a888382544a"
+    },
+    {
+      "path": "tmp/convex/review-global-content/reader-focus/results.json",
+      "sha256": "322dc087e9bd8b1065e576217f09990e3fc89291075d33d6cc9d06391e34b6e7"
+    }
+  ],
+  "relatedAcceptedReviews": [
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/reviews/chapter-C-review.md",
+      "sha256": "a496adc63cb114139b749ec1a9544e1d621391132e14aceaa31e0d1ad882744b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/reviews/notation-review.md",
+      "sha256": "238bf9108cfc789c560f773e8609d2e97560d661f62490843abcec3e315fe738"
+    },
+    {
+      "path": "tmp/convex/review-reference-links/review.md",
+      "sha256": "c7585dfaeebda66e72959d79f15d60664e3dc5a705b5dc356f6f13d1b6e0affd"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Convex STIX Two Math";
+  src: url("fonts/STIXTwoMath-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+#reader-article[data-book-id="boyd-vandenberghe-convex-optimization-2004"] math {
+  font-family: "Convex STIX Two Math", "Cambria Math", math;
+}
+
+body:has(#reader-article[data-book-id="boyd-vandenberghe-convex-optimization-2004"])
+  :is(#reader-toc, #reader-toc-mobile) .toc-level-4 {
+  padding-left: 38px;
+}
+
+#reader-article[data-book-id="boyd-vandenberghe-convex-optimization-2004"]
+  :is(.example, .remark, .algorithm) {
+  margin: 1.6em 0;
+  padding: .8em clamp(0px, 1vw, 12px) 0;
+  border-block: 1px solid var(--line);
+}

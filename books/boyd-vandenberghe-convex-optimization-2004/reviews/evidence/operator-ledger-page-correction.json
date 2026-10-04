@@ -1,0 +1,25 @@
+{
+  "frozenLedgerSha256": "e61b9bd2945febb41541e8db1c00c699a5ce3a5887ff65b1d6e277a42f0f4ecb",
+  "ledgerNotModified": true,
+  "all600OffsetsRecheckedForInlinePageMarkers": true,
+  "corrections": [
+    {
+      "chapter": "03",
+      "sourceFile": "translation/chapter-03.md",
+      "line": 27,
+      "sourceOffset": 1111,
+      "fullTex": "x\\in\\operatorname{dom}f",
+      "recordedPdfPage": 82,
+      "correctedPdfPage": 81,
+      "correctSourceFont": "CMBX10",
+      "correctSourceBbox": [
+        416.3409729003906,
+        525.672119140625,
+        437.97222900390625,
+        535.634765625
+      ],
+      "originalPageDirectlyViewed": "tmp/convex/pages/page-081.png"
+    }
+  ],
+  "reason": "The old line-level locator applied an inline page marker to preceding math on the same line; the operator itself precedes that marker. Source manuscript and mathematical content are correct."
+}

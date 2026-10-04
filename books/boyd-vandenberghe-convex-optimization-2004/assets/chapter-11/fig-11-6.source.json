@@ -1,0 +1,14 @@
+{
+  "sourcePdf": "Convex Optimization – Boyd and Vandenberghe.pdf",
+  "pdfPage": 588,
+  "cropPoints": [
+    204.0,
+    122.0,
+    453.0,
+    305.0
+  ],
+  "scale": 3,
+  "imageSha256": "0186d3f70d0e1b194614cfc32b7a1b3e1e6b54bf816634d2d4cdccbe1c8854b6",
+  "reviewStatus": "reviewed",
+  "reviewRecord": "reviews/chapter-11-review.md"
+}

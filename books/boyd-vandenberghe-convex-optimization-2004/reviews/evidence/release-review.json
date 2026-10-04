@@ -1,0 +1,861 @@
+{
+  "reviewer": "independent release_review agent",
+  "status": "passed on final delivery tree",
+  "initialCandidateReview": {
+    "reviewer": "independent release_review agent",
+    "status": "passed for Convex release scope",
+    "baseCommit": "9af2265",
+    "testedFiles": {
+      "app.js": "4e9d1888830266a81e6e8f00e266201d9c079fde906cbfb2e1b2d90c20554622",
+      "styles.css": "d440576b6c086e562999c2586501be925497944f0d45aa0d26439e43679fde35",
+      "books.js": "692695a1c9b8843d257017899f667040350a56729d2094c6fa828b031bb3dcc6",
+      "sw.js": "0f2f23b8e7db00c5522446fb0ea294dbe2731563d34d4fb555ad4130a4808f38"
+    },
+    "chapterJsonSha256": {
+      "chapter-01.json": "1b113973f2c1ff966f82881e7d10d5944f5b58ff5e2b9809fc0f2e2a831cc037",
+      "chapter-02.json": "40a9a87bc3b8ac326ad61a6b797af6b1367c0dfba16184b3f4e8fb0d475c97f9",
+      "chapter-03.json": "c9052de5af32843ddf1e1dc16937d76331f7c6ba7d3993a78a4e474b5ae5c6ce",
+      "chapter-04.json": "3c65d72e6a02891287171f3d6a6fc7413ea08893adc55c6b125a3ca808d7e0e3",
+      "chapter-05.json": "4f612b37bf7de6fd27a19619b102fc13fb4cfd4c0bed0c3f56d2cf816c0d5c41",
+      "chapter-06.json": "6b464f9b5cd6fecafa9c17de5dfb8003e2137997c4982a91448d35f818f8cf1d",
+      "chapter-07.json": "38fea76bf9ac7988a1ab3ce4479b57214926ad5e76f0bf72a4dfff4ed85d9c53",
+      "chapter-08.json": "49240b85c415272874ad820ad8cd5da9a516dda0f649d8fab9a65b7f91401d55",
+      "chapter-09.json": "acfd753abd18fec60c2e2cc8bce1848dec06acfa9ea1b67fbcb22195d0bc1ef2",
+      "chapter-10.json": "78a63ac2e5b5ec1cf004918cde9473eb00cfbad7889ef0b2e8640783702add01",
+      "chapter-11.json": "a769cb56dbbe070532e8015ad99f6068b9ee884dc2e4bdda17e73093d46fe123",
+      "chapter-A.json": "2bf5986d376b35f4677eb4b7b0350cf533e06cae702aa5d0b67564a8b48b66b1",
+      "chapter-appendices.json": "f3c00f2779feb9e28c321ad239aac4866a470b5efdaa525485ea9f9b579a7ef6",
+      "chapter-B.json": "e7e5012b1835c9fd3bd4684b1ce4edbf7d2392057dd2966fd90ede3b366add57",
+      "chapter-C.json": "9eed920a2871d933b58ce2ba67ef2c00768292383f1809b60dffa9f7ecc15c6f",
+      "chapter-contents.json": "6a8aa807fab098831bdd75276f92fb2d70ce296f3bdc9f98da74f0c02a761cac",
+      "chapter-frontmatter.json": "93a126677af0db7664c6690c5329fdeac11cc28ce818917cde6361c7fdd93d3d",
+      "chapter-notation.json": "fb0e5b05248103571a01362f986ef78be0df70fdf0e724035d435cd46fae7bba",
+      "chapter-part-I.json": "15af3d780f7eae4108fcc6810757bbace9bd23afbb49f774dd408fcc14526a7c",
+      "chapter-part-II.json": "b12aea8bbe5718e74a55c628938c18d7d2c72869486addf4b5a5dac7b7997302",
+      "chapter-part-III.json": "7769ff8c47305c8d4f41c2b95981a00bfc3d7eb6b79ef53cf81d9d6fac9c7074",
+      "chapter-preface.json": "3ef242b39b38658e6b7c42700c3ad2dbd62c8e649147f880fc6fb9b537265c9b",
+      "chapter-references.json": "42dd72b43cb3770ec54a1ae58cd1a97d8c02fd3b0f30052403152d0ffc3fe13d"
+    },
+    "staticReferences": {
+      "count": 2409,
+      "kinds": {
+        "formula": 1194,
+        "section": 356,
+        "chapter": 62,
+        "exercise": 147,
+        "part": 12,
+        "reference": 382,
+        "figure": 197,
+        "example": 57,
+        "algorithm": 2
+      },
+      "invalidTargets": 0
+    },
+    "browserCases": [
+      {
+        "view": "desktop",
+        "kind": "algorithm",
+        "chapter": "C",
+        "source": "read-p012-b003",
+        "targetChapter": "C",
+        "target": "read-p012-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "chapter",
+        "chapter": "02",
+        "source": "read-p039-b006",
+        "targetChapter": "05",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p073-b012",
+        "targetChapter": "05",
+        "target": "read-p056-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p042-b007",
+        "targetChapter": "03",
+        "target": "read-p027-b003",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "exercise",
+        "chapter": "05",
+        "source": "read-p072-b002",
+        "targetChapter": "05",
+        "target": "read-p062-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "exercise",
+        "chapter": "09",
+        "source": "read-p063-b007",
+        "targetChapter": "04",
+        "target": "read-p085-b006",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "figure",
+        "chapter": "07",
+        "source": "read-p032-b003",
+        "targetChapter": "07",
+        "target": "read-p033-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "formula",
+        "chapter": "06",
+        "source": "read-p034-b005",
+        "targetChapter": "06",
+        "target": "read-p034-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "formula",
+        "chapter": "07",
+        "source": "read-p002-b011",
+        "targetChapter": "06",
+        "target": "read-p004-b014",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "part",
+        "chapter": "01",
+        "source": "read-p013-b002",
+        "targetChapter": "part-III",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "reference",
+        "chapter": "04",
+        "source": "read-p062-b010",
+        "targetChapter": "references",
+        "target": "read-p007-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "section",
+        "chapter": "09",
+        "source": "read-p047-b006",
+        "targetChapter": "09",
+        "target": "read-p032-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "section",
+        "chapter": "06",
+        "source": "read-p012-b004",
+        "targetChapter": "07",
+        "target": "read-p009-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "algorithm",
+        "chapter": "C",
+        "source": "read-p012-b003",
+        "targetChapter": "C",
+        "target": "read-p012-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "chapter",
+        "chapter": "02",
+        "source": "read-p039-b006",
+        "targetChapter": "05",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p073-b012",
+        "targetChapter": "05",
+        "target": "read-p056-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p042-b007",
+        "targetChapter": "03",
+        "target": "read-p027-b003",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "exercise",
+        "chapter": "05",
+        "source": "read-p072-b002",
+        "targetChapter": "05",
+        "target": "read-p062-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "exercise",
+        "chapter": "09",
+        "source": "read-p063-b007",
+        "targetChapter": "04",
+        "target": "read-p085-b006",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "figure",
+        "chapter": "07",
+        "source": "read-p032-b003",
+        "targetChapter": "07",
+        "target": "read-p033-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "formula",
+        "chapter": "06",
+        "source": "read-p034-b005",
+        "targetChapter": "06",
+        "target": "read-p034-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "formula",
+        "chapter": "07",
+        "source": "read-p002-b011",
+        "targetChapter": "06",
+        "target": "read-p004-b014",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "part",
+        "chapter": "01",
+        "source": "read-p013-b002",
+        "targetChapter": "part-III",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "reference",
+        "chapter": "04",
+        "source": "read-p062-b010",
+        "targetChapter": "references",
+        "target": "read-p007-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "section",
+        "chapter": "09",
+        "source": "read-p047-b006",
+        "targetChapter": "09",
+        "target": "read-p032-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "section",
+        "chapter": "06",
+        "source": "read-p012-b004",
+        "targetChapter": "07",
+        "target": "read-p009-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      }
+    ],
+    "fragmentHistoryCases": [
+      {
+        "view": "desktop",
+        "passed": true,
+        "existingSourceFragment": "read-p034-b001",
+        "crossSource": "read-p039-b006",
+        "newFragment": "read-p002-b001"
+      },
+      {
+        "view": "narrow-dark",
+        "passed": true,
+        "existingSourceFragment": "read-p034-b001",
+        "crossSource": "read-p039-b006",
+        "newFragment": "read-p002-b001"
+      }
+    ],
+    "scrollAfterReturn": {
+      "passed": true,
+      "beforeBlock": "read-p001-b001",
+      "afterBlock": "read-p001-b001",
+      "restoredBlockVisible": true,
+      "appSha256": "4e9d1888830266a81e6e8f00e266201d9c079fde906cbfb2e1b2d90c20554622"
+    },
+    "otherBookEntryCases": [
+      {
+        "id": "bishop-deep-learning-2024",
+        "chapter": "frontmatter",
+        "count": 28,
+        "view": "desktop",
+        "blocks": 17
+      },
+      {
+        "id": "shannon-mathematical-theory-1948",
+        "chapter": "00",
+        "count": 8,
+        "view": "desktop",
+        "blocks": 19
+      },
+      {
+        "id": "sutton-barto-reinforcement-learning-2e",
+        "chapter": "00",
+        "count": 24,
+        "view": "desktop",
+        "blocks": 115
+      },
+      {
+        "id": "bishop-deep-learning-2024",
+        "chapter": "frontmatter",
+        "count": 28,
+        "view": "narrow-dark",
+        "blocks": 17
+      },
+      {
+        "id": "shannon-mathematical-theory-1948",
+        "chapter": "00",
+        "count": 8,
+        "view": "narrow-dark",
+        "blocks": 19
+      },
+      {
+        "id": "sutton-barto-reinforcement-learning-2e",
+        "chapter": "00",
+        "count": 24,
+        "view": "narrow-dark",
+        "blocks": 115
+      }
+    ],
+    "baselineOnlyIssue": {
+      "book": "shannon-mathematical-theory-1948",
+      "chapter": "00",
+      "error": "Cannot read properties of null (reading 'scrollWidth')",
+      "alsoReproducedWith": "9af2265:app.js",
+      "unchangedByThisRelease": true
+    },
+    "offlineEvidenceIndependentlyChecked": {
+      "executedBy": "integrating agent",
+      "inspectedAndRehashedBy": "release_review agent",
+      "onlineChaptersVisited": [
+        "frontmatter"
+      ],
+      "imagesFetchedBeforeTheirChaptersWereVisited": 181,
+      "totalBytes": 4774071,
+      "allResponseHashesMatchAssets": true,
+      "evidenceSha256": "d285861ba9e4480e6eb57b667cb3dcdacc545e9bf3bf984f89425bb3f25f9e06"
+    },
+    "newUnresolvedIssues": [],
+    "temporaryEvidenceSha256": {
+      "result.json": "ea4ea8a99dd0f3aa53788a694c1e87bd5075f013cc839d5726663248f46440a7",
+      "scroll-after-back.json": "ac8e0395626e246cd1e8305d9ebef6cebce8ad25410e7ab8fe3dd989cba42434",
+      "existing-baseline.json": "0a429dd1e9ea557866465bbfe2c35c72f7623f419d738f0e285260732b41f203",
+      "check.py": "e1a82cc0158b980fd4b11ea265a6d4c5b98fc2ee8fd6bdeb6f00031c6aa8bc79",
+      "check_scroll.py": "e3e5164455e63c7dc25946ae4f252d2fe6d464829d68b2ec0b40a84f83967437",
+      "check_existing.py": "5ecd52ffc3012e8f384834a2e061dde49d275a90dc1e4b5114cbfdbd7713f59b"
+    }
+  },
+  "finalDeliveryReview": {
+    "baseCommit": "d4f34229c32387ef923a85cf01ca4118baac4b52",
+    "testedFiles": {
+      "app.js": "03b71ffe53a9c03bd981f9eaa124dfc149fc874c8af2a748adab5559fd9c2e31",
+      "styles.css": "a7cef1a214d978b40ac3f6952a4181ba1530c3fb4edc7fe7a7898378ddc2d0ac",
+      "books.js": "0af8b0b00d8d6001e0c45d6bd11d507da68795459034329a45bdfa91630ca4c6",
+      "sw.js": "dc90de0a7f3f4b797b29cee8fc8e559ec91b4f6eed547e4b2d0bd6226f3347dc"
+    },
+    "staticReferences": {
+      "count": 2409,
+      "kinds": {
+        "formula": 1194,
+        "section": 356,
+        "chapter": 62,
+        "exercise": 147,
+        "part": 12,
+        "reference": 382,
+        "figure": 197,
+        "example": 57,
+        "algorithm": 2
+      },
+      "invalidTargets": 0
+    },
+    "browserCases": [
+      {
+        "view": "desktop",
+        "kind": "algorithm",
+        "chapter": "C",
+        "source": "read-p012-b003",
+        "targetChapter": "C",
+        "target": "read-p012-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "chapter",
+        "chapter": "02",
+        "source": "read-p039-b006",
+        "targetChapter": "05",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p073-b012",
+        "targetChapter": "05",
+        "target": "read-p056-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p042-b007",
+        "targetChapter": "03",
+        "target": "read-p027-b003",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "exercise",
+        "chapter": "05",
+        "source": "read-p072-b002",
+        "targetChapter": "05",
+        "target": "read-p062-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "exercise",
+        "chapter": "09",
+        "source": "read-p063-b007",
+        "targetChapter": "04",
+        "target": "read-p085-b006",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "figure",
+        "chapter": "07",
+        "source": "read-p032-b003",
+        "targetChapter": "07",
+        "target": "read-p033-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "formula",
+        "chapter": "06",
+        "source": "read-p034-b005",
+        "targetChapter": "06",
+        "target": "read-p034-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "formula",
+        "chapter": "07",
+        "source": "read-p002-b011",
+        "targetChapter": "06",
+        "target": "read-p004-b014",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "part",
+        "chapter": "01",
+        "source": "read-p013-b002",
+        "targetChapter": "part-III",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "reference",
+        "chapter": "04",
+        "source": "read-p062-b010",
+        "targetChapter": "references",
+        "target": "read-p007-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "section",
+        "chapter": "09",
+        "source": "read-p047-b006",
+        "targetChapter": "09",
+        "target": "read-p032-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "desktop",
+        "kind": "section",
+        "chapter": "06",
+        "source": "read-p012-b004",
+        "targetChapter": "07",
+        "target": "read-p009-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "algorithm",
+        "chapter": "C",
+        "source": "read-p012-b003",
+        "targetChapter": "C",
+        "target": "read-p012-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "chapter",
+        "chapter": "02",
+        "source": "read-p039-b006",
+        "targetChapter": "05",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p073-b012",
+        "targetChapter": "05",
+        "target": "read-p056-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "example",
+        "chapter": "05",
+        "source": "read-p042-b007",
+        "targetChapter": "03",
+        "target": "read-p027-b003",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "exercise",
+        "chapter": "05",
+        "source": "read-p072-b002",
+        "targetChapter": "05",
+        "target": "read-p062-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "exercise",
+        "chapter": "09",
+        "source": "read-p063-b007",
+        "targetChapter": "04",
+        "target": "read-p085-b006",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "figure",
+        "chapter": "07",
+        "source": "read-p032-b003",
+        "targetChapter": "07",
+        "target": "read-p033-b002",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "formula",
+        "chapter": "06",
+        "source": "read-p034-b005",
+        "targetChapter": "06",
+        "target": "read-p034-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "formula",
+        "chapter": "07",
+        "source": "read-p002-b011",
+        "targetChapter": "06",
+        "target": "read-p004-b014",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "part",
+        "chapter": "01",
+        "source": "read-p013-b002",
+        "targetChapter": "part-III",
+        "target": "read-p001-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "reference",
+        "chapter": "04",
+        "source": "read-p062-b010",
+        "targetChapter": "references",
+        "target": "read-p007-b004",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "section",
+        "chapter": "09",
+        "source": "read-p047-b006",
+        "targetChapter": "09",
+        "target": "read-p032-b001",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      },
+      {
+        "view": "narrow-dark",
+        "kind": "section",
+        "chapter": "06",
+        "source": "read-p012-b004",
+        "targetChapter": "07",
+        "target": "read-p009-b015",
+        "clickVisible": true,
+        "refreshVisible": true,
+        "backVisible": true
+      }
+    ],
+    "fragmentHistoryCases": [
+      {
+        "view": "desktop",
+        "passed": true,
+        "existingSourceFragment": "read-p029-b005",
+        "crossSource": "read-p039-b006",
+        "newFragment": "read-p002-b001"
+      },
+      {
+        "view": "narrow-dark",
+        "passed": true,
+        "existingSourceFragment": "read-p029-b005",
+        "crossSource": "read-p039-b006",
+        "newFragment": "read-p002-b001"
+      }
+    ],
+    "scrollAfterReturn": [
+      {
+        "passed": true,
+        "viewWidth": 1440,
+        "beforeBlock": "read-p001-b001",
+        "afterBlock": "read-p001-b001",
+        "restoredBlockVisible": true,
+        "appSha256": "03b71ffe53a9c03bd981f9eaa124dfc149fc874c8af2a748adab5559fd9c2e31"
+      },
+      {
+        "passed": true,
+        "viewWidth": 320,
+        "beforeBlock": "read-p001-b001",
+        "afterBlock": "read-p001-b001",
+        "restoredBlockVisible": true,
+        "appSha256": "03b71ffe53a9c03bd981f9eaa124dfc149fc874c8af2a748adab5559fd9c2e31"
+      }
+    ],
+    "otherBookEntryCases": [
+      {
+        "id": "bishop-deep-learning-2024",
+        "chapter": "frontmatter",
+        "count": 28,
+        "view": "desktop",
+        "blocks": 17
+      },
+      {
+        "id": "shannon-mathematical-theory-1948",
+        "chapter": "00",
+        "count": 8,
+        "view": "desktop",
+        "blocks": 19
+      },
+      {
+        "id": "sutton-barto-reinforcement-learning-2e",
+        "chapter": "00",
+        "count": 24,
+        "view": "desktop",
+        "blocks": 115
+      },
+      {
+        "id": "mackay-information-theory-2003",
+        "chapter": "00",
+        "count": 81,
+        "view": "desktop",
+        "blocks": 132
+      },
+      {
+        "id": "bishop-deep-learning-2024",
+        "chapter": "frontmatter",
+        "count": 28,
+        "view": "narrow-dark",
+        "blocks": 17
+      },
+      {
+        "id": "shannon-mathematical-theory-1948",
+        "chapter": "00",
+        "count": 8,
+        "view": "narrow-dark",
+        "blocks": 19
+      },
+      {
+        "id": "sutton-barto-reinforcement-learning-2e",
+        "chapter": "00",
+        "count": 24,
+        "view": "narrow-dark",
+        "blocks": 115
+      },
+      {
+        "id": "mackay-information-theory-2003",
+        "chapter": "00",
+        "count": 81,
+        "view": "narrow-dark",
+        "blocks": 132
+      }
+    ],
+    "javascriptErrors": [],
+    "unresolvedIssues": [],
+    "chapterArtifactsMatchInitialReview": true,
+    "offlineEvidenceIndependentlyChecked": {
+      "executedBy": "integrating agent",
+      "inspectedAndRehashedBy": "release_review agent",
+      "onlineChaptersVisited": [
+        "frontmatter"
+      ],
+      "imagesFetchedBeforeTheirChaptersWereVisited": 181,
+      "allResponseHashesMatchAssets": true,
+      "offlineViews": 92,
+      "coldEvidenceSha256": "a1a360079dd758139ba46f69f89e4ef2cd515a1bf6dd607fe592745ef58967a9",
+      "fullOfflineEvidenceSha256": "71f51b7dfe0eceda08a36afa4b1fcb3e474cda8a9eddf2e678e02ef15607748c"
+    },
+    "temporaryEvidenceSha256": {
+      "result.json": "2a3b8724161a34ba740831f15905ed264666bd4c38deeb19e90bf135537902a7",
+      "scroll-after-back.json": "cc599e5359df24d26c4fe60aa945b087db32ae9a688e9a259e080840c5eb1f9e",
+      "scroll-after-back-320.json": "41806fd3e8ea7069dc7c2de63cb236d2935a6ccf9624a80aa03213e31ac77b50"
+    }
+  }
+}

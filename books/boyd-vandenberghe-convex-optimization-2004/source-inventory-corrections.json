@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "sourcePdfSha256": "40d976c83c18cce1900eff8c41bd5ad408c102b813af39d05ff85678ccf8d76e",
+  "equationAdditions": [
+    {
+      "pdfPage": 246,
+      "candidate": {
+        "number": "5.36",
+        "bbox": [
+          492.37,
+          207.94,
+          517.8,
+          217.91
+        ],
+        "status": "source-location-confirmed",
+        "method": "manual-original-page-check",
+        "reviewNote": "Visible on PDF 246. The equation number shares its text line with the formula, so isolated-number extraction missed it. Translation and formula semantics are reviewed separately in reviews/chapter-05-review.md."
+      }
+    },
+    {
+      "pdfPage": 437,
+      "candidate": {
+        "number": "8.22",
+        "bbox": [
+          438.57,
+          606.8,
+          464.0,
+          616.76
+        ],
+        "status": "source-location-confirmed",
+        "method": "manual-original-page-check",
+        "reviewNote": "Original PDF 437 directly viewed. Number shares a text line with the formula, so isolated-number extraction missed it. Translation/semantics are reviewed separately in reviews/chapter-08-review.md."
+      }
+    },
+    {
+      "pdfPage": 439,
+      "candidate": {
+        "number": "8.24",
+        "bbox": [
+          438.57,
+          683.33,
+          464.0,
+          693.29
+        ],
+        "status": "source-location-confirmed",
+        "method": "manual-original-page-check",
+        "reviewNote": "Original PDF 439 directly viewed. Number shares a text line with the formula, so isolated-number extraction missed it. Translation/semantics are reviewed separately in reviews/chapter-08-review.md."
+      }
+    },
+    {
+      "pdfPage": 519,
+      "candidate": {
+        "number": "9.56",
+        "bbox": [
+          438.57,
+          525.54,
+          464.0,
+          535.5
+        ],
+        "status": "source-location-confirmed",
+        "method": "manual-original-page-check",
+        "reviewNote": "Original PDF 519 directly viewed by author, root and independent reviewer. Number shares a text line with the formula, so isolated-number extraction missed it. Translation/semantics are reviewed separately in reviews/chapter-09-review.md."
+      }
+    }
+  ]
+}

@@ -188,4 +188,153 @@ const books = [
       { id: "IDX", number: "书后", title: "索引", content: "books/mackay-information-theory-2003/chapter-IDX.json" },
     ],
   },
+  {
+    "id": "boyd-vandenberghe-convex-optimization-2004",
+    "title": "凸优化",
+    "originalTitle": "Convex Optimization",
+    "author": "Stephen Boyd · Lieven Vandenberghe",
+    "year": "2004",
+    "description": "《凸优化》中文译文",
+    "offlineImages": "books/boyd-vandenberghe-convex-optimization-2004/offline-images.json",
+    "chapters": [
+      {
+        "id": "frontmatter",
+        "number": "",
+        "title": "书名、出版信息与献词",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-frontmatter.json"
+      },
+      {
+        "id": "contents",
+        "number": "",
+        "title": "原书目录",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-contents.json"
+      },
+      {
+        "id": "preface",
+        "number": "",
+        "title": "前言",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-preface.json"
+      },
+      {
+        "id": "01",
+        "number": "1",
+        "title": "绪论",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-01.json"
+      },
+      {
+        "id": "part-I",
+        "number": "",
+        "title": "第一部分 理论",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-part-I.json"
+      },
+      {
+        "id": "02",
+        "number": "2",
+        "title": "凸集",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-02.json"
+      },
+      {
+        "id": "03",
+        "number": "3",
+        "title": "凸函数",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-03.json"
+      },
+      {
+        "id": "04",
+        "number": "4",
+        "title": "凸优化问题",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-04.json"
+      },
+      {
+        "id": "05",
+        "number": "5",
+        "title": "对偶性",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-05.json"
+      },
+      {
+        "id": "part-II",
+        "number": "",
+        "title": "第二部分 应用",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-part-II.json"
+      },
+      {
+        "id": "06",
+        "number": "6",
+        "title": "逼近与拟合",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-06.json"
+      },
+      {
+        "id": "07",
+        "number": "7",
+        "title": "统计估计",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-07.json"
+      },
+      {
+        "id": "08",
+        "number": "8",
+        "title": "几何问题",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-08.json"
+      },
+      {
+        "id": "part-III",
+        "number": "",
+        "title": "第三部分 算法",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-part-III.json"
+      },
+      {
+        "id": "09",
+        "number": "9",
+        "title": "无约束最小化",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-09.json"
+      },
+      {
+        "id": "10",
+        "number": "10",
+        "title": "等式约束最小化",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-10.json"
+      },
+      {
+        "id": "11",
+        "number": "11",
+        "title": "内点法",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-11.json"
+      },
+      {
+        "id": "appendices",
+        "number": "",
+        "title": "附录",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-appendices.json"
+      },
+      {
+        "id": "A",
+        "number": "附录 A",
+        "title": "数学基础",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-A.json"
+      },
+      {
+        "id": "B",
+        "number": "附录 B",
+        "title": "涉及两个二次函数的问题",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-B.json"
+      },
+      {
+        "id": "C",
+        "number": "附录 C",
+        "title": "数值线性代数基础",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-C.json"
+      },
+      {
+        "id": "references",
+        "number": "",
+        "title": "参考文献",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-references.json"
+      },
+      {
+        "id": "notation",
+        "number": "",
+        "title": "符号表",
+        "content": "books/boyd-vandenberghe-convex-optimization-2004/chapter-notation.json"
+      }
+    ]
+  },
 ];

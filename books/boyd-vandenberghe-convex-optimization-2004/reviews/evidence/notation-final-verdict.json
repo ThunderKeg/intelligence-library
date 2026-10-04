@@ -1,0 +1,41 @@
+{
+  "verdict": "PASS",
+  "reviewer": "convex_build",
+  "initialTranslator": false,
+  "unit": "notation",
+  "sourceSha256": "0c19c4d420b5b4f5c1bdc941773452c1479b9a9e5952217ad23485f70eaa0f24",
+  "jsonSha256": "fb0e5b05248103571a01362f986ef78be0df70fdf0e724035d435cd46fae7bba",
+  "reviewReportSha256": "238bf9108cfc789c560f773e8609d2e97560d661f62490843abcec3e315fe738",
+  "originalPdfPages": [
+    711,
+    714
+  ],
+  "contentDirectlyComparedWithOriginalPages": true,
+  "visualScreenshotsDirectlyInspected": true,
+  "readerViewportWidths": [
+    1440,
+    390,
+    390,
+    320
+  ],
+  "readerThemes": [
+    "light",
+    "light",
+    "dark",
+    "dark"
+  ],
+  "all23StaticReferencesExist": true,
+  "all23StaticReferenceCount": 2409,
+  "actualReferenceClicks": 0,
+  "previousNextAndMobileDirectoryPassed": true,
+  "progressReloadPassed": true,
+  "unresolvedUnitFindings": [],
+  "evidence": {
+    "tmp\\convex\\review-notation\\reader\\independent-check.json": "fc9bfa35fa0e22bb2bc27a52bb80c8ea8171a791959c87a803c46c72cae49a75",
+    "tmp\\convex\\review-notation\\navigation\\results.json": "c3d27496e471a27434c0f30d41a8ba43d6529a56abfb5596c111fcc4692484ca",
+    "tmp\\convex\\review-notation\\reader-after-term\\independent-check.json": "2c402861da8c46b0bca927e0192275ed43bf8c3890e9ebfd26219c60387b83ab",
+    "tmp\\convex\\review-notation\\content-structure-check.json": "8951912645d798d9347882189dbeffc86133e0d739f59d081b74988e0aacf3cf",
+    "tmp\\convex\\review-notation\\terminology-delta-check.json": "69bc47061974e11344730f37989b3717e6bcee18198fab275bf6ef9140bd3122"
+  },
+  "scope": "Exact source/JSON above. Later whole-book changes require separate hash delta closure."
+}

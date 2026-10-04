@@ -18,4 +18,6 @@ python -m http.server 8787 --bind 127.0.0.1
 
 MacKay 全书译稿、任务清单与逐章独立审查记录在 `books/mackay-information-theory-2003/`。正式阅读内容覆盖原书 PDF 物理页 1–640；`tools/build_reference_index.py` 生成正文编号跳转索引，`tools/build_offline_manifest.py` 生成全书图片离线清单，`tools/verify_book_static.py` 校验结构与资源。首次打开本书并等图片准备完成后，尚未访问的图也可离线阅读。
 
+《凸优化》（Stephen Boyd、Lieven Vandenberghe，2004；依据 2009 年第七次印刷）已完成卷首、第 1–11 章、三篇附录、250 条参考文献与 67 行符号表的中文翻译和独立审查。全书按原序提供 23 个阅读单元，保留 180 幅原图并附图内文字译注；每章有独立导读，公式保留可复制 TeX，支持目录、交叉引用、阅读进度及全书离线阅读。首次联网打开本书时会自动准备全书图片，准备完成后，无需逐章访问即可离线阅读；正文编号与文献键可以直接点击跳转。译稿、术语、任务与审查记录位于 `books/boyd-vandenberghe-convex-optimization-2004/`。运行 `python books/boyd-vandenberghe-convex-optimization-2004/tools/build.py` 重建内容，再运行 `python books/boyd-vandenberghe-convex-optimization-2004/tools/link_references.py` 与 `python books/boyd-vandenberghe-convex-optimization-2004/tools/offline_manifest.py` 更新引用及离线清单；使用 `python books/boyd-vandenberghe-convex-optimization-2004/tools/validate.py` 核对结构。
+
 新增图书或章节时，在 `books.js` 中为图书设置唯一 `id`，在 `chapters` 中按阅读顺序列出章节编号、标题与内容 JSON 路径。Pages 工作流会发布 `books` 下的 `chapter-*.json`、Bishop 前后附属 JSON、Sutton 的引用索引和图片清单，以及 `assets/`；已访问的章节会进入离线缓存。`main` 分支更新会自动部署。

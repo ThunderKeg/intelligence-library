@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "reviewer": "/root/convex_review",
+  "independentOfInitialTranslation": true,
+  "scope": "Final whole-book reader, all references/TOC targets, mathematics geometry and operator styling/spacing, reading progress, actual registered local-site entry; parent actual-offline execution independently checked for coverage and response hash equality.",
+  "createdUtc": "2026-10-04T03:03:56.546980+00:00",
+  "sourcePdfSha256": "40d976c83c18cce1900eff8c41bd5ad408c102b813af39d05ff85678ccf8d76e",
+  "report": "books/boyd-vandenberghe-convex-optimization-2004/reviews/global-reader-review.md",
+  "reportSha256": "19e4c865a69d5754b5a84b118d1a4ffa56ae9a65c5bde4c6bd5affb86406ead6",
+  "inputManifest": "tmp/convex/review-global/input-04/manifest.json",
+  "inputManifestSha256": "3544ec6d8e27791532891a2ddd1e98c57390d9f9772275ee891ad7ba548bb584",
+  "units": {
+    "frontmatter": {
+      "jsonSha256": "93a126677af0db7664c6690c5329fdeac11cc28ce818917cde6361c7fdd93d3d",
+      "sourceSha256": "5fa9213b485068cedeaad2db5d8ef84f0d3d9963f39037090c2c38dce951ed3d",
+      "sourceName": "frontmatter.md"
+    },
+    "contents": {
+      "jsonSha256": "6a8aa807fab098831bdd75276f92fb2d70ce296f3bdc9f98da74f0c02a761cac",
+      "sourceSha256": "e75749c815ca9e5c7d2514949edfc8edfc70040bdfb5424733f2cd96ace6c4bf",
+      "sourceName": "contents.md"
+    },
+    "preface": {
+      "jsonSha256": "3ef242b39b38658e6b7c42700c3ad2dbd62c8e649147f880fc6fb9b537265c9b",
+      "sourceSha256": "8ea026c635b14435d2dab8907b6ccd6c21e025855b4551be5b4430b2fb352168",
+      "sourceName": "preface.md"
+    },
+    "01": {
+      "jsonSha256": "1b113973f2c1ff966f82881e7d10d5944f5b58ff5e2b9809fc0f2e2a831cc037",
+      "sourceSha256": "164969c3497b1215eb0512c8610f230ecdffb3cf0a09f940af580464040f73fe",
+      "sourceName": "chapter-01.md"
+    },
+    "part-I": {
+      "jsonSha256": "15af3d780f7eae4108fcc6810757bbace9bd23afbb49f774dd408fcc14526a7c",
+      "sourceSha256": "7e3eb854b35aff0b51b1f562ee1529da945ae45229bffb567f7d7fe3e9ff0676",
+      "sourceName": "part-I.md"
+    },
+    "02": {
+      "jsonSha256": "40a9a87bc3b8ac326ad61a6b797af6b1367c0dfba16184b3f4e8fb0d475c97f9",
+      "sourceSha256": "c3b27ae1405bb081f4218fb34674a83f92078045b7b63f36543b7de957a0a2d1",
+      "sourceName": "chapter-02.md"
+    },
+    "03": {
+      "jsonSha256": "c9052de5af32843ddf1e1dc16937d76331f7c6ba7d3993a78a4e474b5ae5c6ce",
+      "sourceSha256": "efa8cc862f526e84a14889c9235b3c8c225e0c5c7a0b0d9707302abbe40678b2",
+      "sourceName": "chapter-03.md"
+    },
+    "04": {
+      "jsonSha256": "3c65d72e6a02891287171f3d6a6fc7413ea08893adc55c6b125a3ca808d7e0e3",
+      "sourceSha256": "754efcf3418fbe4e38601fc7e6754b66e1ae010034627b8eb598b44b076d01ec",
+      "sourceName": "chapter-04.md"
+    },
+    "05": {
+      "jsonSha256": "4f612b37bf7de6fd27a19619b102fc13fb4cfd4c0bed0c3f56d2cf816c0d5c41",
+      "sourceSha256": "02f0cbc6388cf9e2331c2305479bd08fbd83d5dd8442e63f79eb56771eefcf8c",
+      "sourceName": "chapter-05.md"
+    },
+    "part-II": {
+      "jsonSha256": "b12aea8bbe5718e74a55c628938c18d7d2c72869486addf4b5a5dac7b7997302",
+      "sourceSha256": "2062e2e2f082baa6a15d28cf4fe8c9b551ab6916836e97fbeed43585a8844689",
+      "sourceName": "part-II.md"
+    },
+    "06": {
+      "jsonSha256": "6b464f9b5cd6fecafa9c17de5dfb8003e2137997c4982a91448d35f818f8cf1d",
+      "sourceSha256": "6c25ba49b68bdfb81307cbed9a68668d79003b49f395ce199f9bdd81c702d2dc",
+      "sourceName": "chapter-06.md"
+    },
+    "07": {
+      "jsonSha256": "38fea76bf9ac7988a1ab3ce4479b57214926ad5e76f0bf72a4dfff4ed85d9c53",
+      "sourceSha256": "161cd348a6abd1abc651aae185e24de8d0d649c9e6eea8c3ee8d8d6b19656b84",
+      "sourceName": "chapter-07.md"
+    },
+    "08": {
+      "jsonSha256": "49240b85c415272874ad820ad8cd5da9a516dda0f649d8fab9a65b7f91401d55",
+      "sourceSha256": "a8b8ef770c46e528fff93e6390bc8dfd825d2b08ee760520c3fb80c29a496900",
+      "sourceName": "chapter-08.md"
+    },
+    "part-III": {
+      "jsonSha256": "7769ff8c47305c8d4f41c2b95981a00bfc3d7eb6b79ef53cf81d9d6fac9c7074",
+      "sourceSha256": "a9d58fe61a68c05510a26ddc285b6de17e020f28f60f30b0aa522a798812b93b",
+      "sourceName": "part-III.md"
+    },
+    "09": {
+      "jsonSha256": "acfd753abd18fec60c2e2cc8bce1848dec06acfa9ea1b67fbcb22195d0bc1ef2",
+      "sourceSha256": "9d8de78cab994a16c6ef9de5082367e568acc046f8cd657db9736327056d144c",
+      "sourceName": "chapter-09.md"
+    },
+    "10": {
+      "jsonSha256": "78a63ac2e5b5ec1cf004918cde9473eb00cfbad7889ef0b2e8640783702add01",
+      "sourceSha256": "161bdfe590c093229f860a77b3b5fa957ef137224c745d4072363a0639a3666d",
+      "sourceName": "chapter-10.md"
+    },
+    "11": {
+      "jsonSha256": "a769cb56dbbe070532e8015ad99f6068b9ee884dc2e4bdda17e73093d46fe123",
+      "sourceSha256": "55db7c66f2875090fbb1fbe4d0f4abcc2050e04028791bf58447c076cfdf9967",
+      "sourceName": "chapter-11.md"
+    },
+    "appendices": {
+      "jsonSha256": "f3c00f2779feb9e28c321ad239aac4866a470b5efdaa525485ea9f9b579a7ef6",
+      "sourceSha256": "9fc923d4de3fd96aaebc997e217a58c7f1f0f78fff552710d6e8a1549af65f30",
+      "sourceName": "appendices.md"
+    },
+    "A": {
+      "jsonSha256": "2bf5986d376b35f4677eb4b7b0350cf533e06cae702aa5d0b67564a8b48b66b1",
+      "sourceSha256": "0db95d4fe6ab29476ffa5aae0481bc696673034fc58a1098b3f1d9c98db903b8",
+      "sourceName": "chapter-A.md"
+    },
+    "B": {
+      "jsonSha256": "e7e5012b1835c9fd3bd4684b1ce4edbf7d2392057dd2966fd90ede3b366add57",
+      "sourceSha256": "d851da207218ab0ffbf711cda621ca5ba1c0132d49afc88e4526ddb4945b4ab9",
+      "sourceName": "chapter-B.md"
+    },
+    "C": {
+      "jsonSha256": "9eed920a2871d933b58ce2ba67ef2c00768292383f1809b60dffa9f7ecc15c6f",
+      "sourceSha256": "1e9145dd98b77d38b95441efe0bd2275b458e4f1d08052b98a92e277ce69141b",
+      "sourceName": "chapter-C.md"
+    },
+    "references": {
+      "jsonSha256": "42dd72b43cb3770ec54a1ae58cd1a97d8c02fd3b0f30052403152d0ffc3fe13d",
+      "sourceSha256": "a540c591737380324bc44deee625a3366c8c0a0ec183f6ada81cd84eff78c328",
+      "sourceName": "references.md"
+    },
+    "notation": {
+      "jsonSha256": "fb0e5b05248103571a01362f986ef78be0df70fdf0e724035d435cd46fae7bba",
+      "sourceSha256": "0c19c4d420b5b4f5c1bdc941773452c1479b9a9e5952217ad23485f70eaa0f24",
+      "sourceName": "notation.md"
+    }
+  },
+  "tools": {
+    "build.py": "bb1ddd0fee3b1205f779e8a3eb66c36da37f5413c1df1031f10dff4069bc15f5",
+    "link_references.py": "8f8cd9d79f0325a47fd5a256c3f2cc26f2d8e03c3d0cf33b4eca70cb3618464b",
+    "qa_reader.py": "572f6b26b3ebce3e7ffab14120ffbbe6e8223825dee545fe212a37159eccf6b7"
+  },
+  "bookStyleSha256": "0250f3714c4edd9b84ff53c7493965db1bf280432e3d2fe58796230fd547e846",
+  "sharedHashesAtClose": {
+    "books.js": "6364181927afda321fde5daa375407fb2367f30e212739049922a1c432a46417",
+    "app.js": "7cfed5604cadb18d4cbb45091f4d8f12c1c5cab12420aa884909507a02d7fca7",
+    "styles.css": "b77324570b0e579ddd76740e9942d0ae5a8737b43823f6f9fd57e1dd8d0f8ff0",
+    "sw.js": "eb22db06d0669981ab4327c527b66bc206e5c1a7e02b8b44044c582df53a22ef",
+    "index.html": "984c18b42a9181bd00b941fe38e562cf53223667bd44f8ead7f64f0d4d5c7866"
+  },
+  "checks": {
+    "unitCount": 23,
+    "referencesWithActualTargetContentVerified": 2409,
+    "tocEntriesVerified": 876,
+    "bibliographicTargets": 250,
+    "citationGroups": 366,
+    "protectedExternalChapterOrPageDetailGroups": 86,
+    "finalFourViewLayoutChecks": 92,
+    "finalMathNodeMeasurements": 80596,
+    "operatorGlyphs": 600,
+    "operatorMeasurementsInTwoViews": 1200,
+    "ordinaryOperatorSpaceMeasurements": 858,
+    "scriptedOperatorSpaceMeasurements": 4,
+    "fenceNoExtraSpaceMeasurements": 336,
+    "tocGroupsInActualBrowser": 46,
+    "actualTocClicks": 90,
+    "actualAdjacentUnitClicks": 88,
+    "actualCrossReferenceClicks": 48,
+    "finalReadingProgressCases": 168,
+    "finalReloadAndReopenChecks": 336,
+    "actualRegisteredSiteViewsWithoutInterception": 4,
+    "actualRegisteredAppendixClicks": 12,
+    "actualRegisteredReloadAndShelfResumeChecks": 8,
+    "parentActualOfflineViewsIndependentlyEvidenceChecked": 92,
+    "parentActualOfflineCoreAssets": 25,
+    "parentActualOfflineImageResponsesIndependentlyHashChecked": 181,
+    "offlineImageResponseBytes": 4774071,
+    "javascriptErrors": 0
+  },
+  "evidenceSha256": {
+    "input-04/manifest.json": "3544ec6d8e27791532891a2ddd1e98c57390d9f9772275ee891ad7ba548bb584",
+    "final-evidence-independent.json": "f6a0afc91b02b567663d84bb36427b21a8f7a6e1512940323acb154e12e548e2",
+    "terminology-delta-independent.json": "75787d2e783a4cdd26d56a5e103dccaa42f8ba49d252fefaeec205f86b02f37c",
+    "operator-guide-delta-independent.json": "4caf6f816689b6126ac3c0da1603a4125920d55c16764306f71ca3ba2316d210",
+    "spacing-delta-independent.json": "fe474a8440606c434fdf0c175e98c3c74662b1b2e6cb801c7ff06bf44d86e44c",
+    "operator-source-visual-independent.json": "f989dfed7322966be2b1d3200a209f74f0a20ff47c6051e5587eeae1c6fd937b",
+    "static-input04.json": "5b429aeced1aa2976f4f6ade216810690efb154f6eaa799b3977ebfeff249e04",
+    "standard-input04/results.json": "b0f552d7decd1bf9177614862a4a8e7ce253f3f66718b60a150c2530c8c70a8e",
+    "geometry-input04/results.json": "60c984485876e0efade17a156f1a35c11409057614abd067f11385307c592657",
+    "operators-input04/results.json": "98abb9d47c5d5ae29444e399faa8c34bbb7a9de5f95ea783b172d32917214cf3",
+    "restore-input04/results.json": "b644cb8e4d92ed8ea2cec5ce780bce8f81ed6c7510ad4ea9771fc2ea9bbadcaf",
+    "navigation-input03/results.json": "a70e26f964e0f3742221d47045f53c1967c508c618683e12bcd998a07ccac0e7",
+    "real-site/results.json": "560e4ac2b6ca4ce68bcc593ad6bb1e332c5a6b55ea61276aaa95631dca45691c",
+    "site-registration-delta-independent.json": "97d800bdee246f57eb15c5ce000b9e45ac72a7cc9730296fda2a78322415f5e4",
+    "shared-style-scope-independent.json": "583886896368a84b28ada9d4332c28a1e604599165604b8b28865631e77e7df8",
+    "close_reader_evidence.py": "b5814ca0e77239c336139d3569b0d74ff382852441aaac579df0667f135c746e"
+  },
+  "parentOfflineReport": "tmp/convex/final-real-site-qa/results.json",
+  "parentOfflineReportSha256": "71f51b7dfe0eceda08a36afa4b1fcb3e474cda8a9eddf2e678e02ef15607748c",
+  "referencesFinalVerdictSha256": "52588486ffbc2646c926b4d6dd3f6dabe4923d61a2462c71701c96604ee18fdd",
+  "unresolvedIssues": [],
+  "limits": [
+    "This reader verdict supplements, and does not replace, source-page semantic chapter reviews and independent global content/structure reviews.",
+    "The 92 offline executions were performed by the parent. This reviewer checked their script, coverage, and all 181 byte lengths/hashes, and independently performed the four actual online entry views.",
+    "Local registration and reading are verified. Remote deployment and a persistent preview server are not claimed."
+  ]
+}

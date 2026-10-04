@@ -1,0 +1,26 @@
+{
+  "project": "STIX Fonts",
+  "version": "v2.13b171",
+  "license": "SIL Open Font License 1.1",
+  "source": "https://github.com/stipub/stixfonts/tree/v2.13b171",
+  "files": [
+    {
+      "path": "STIXTwoMath-Regular.woff2",
+      "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/fonts/static_otf_woff2/STIXTwoMath-Regular.woff2",
+      "bytes": 551908,
+      "sha256": "094191335def3f0452c81ec0713cfc2f29bb6af8cecbf79b60881fbf2db97562"
+    },
+    {
+      "path": "OFL.txt",
+      "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/OFL.txt",
+      "bytes": 4519,
+      "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a"
+    },
+    {
+      "path": "FONTLOG.txt",
+      "url": "https://raw.githubusercontent.com/stipub/stixfonts/v2.13b171/FONTLOG.txt",
+      "bytes": 42578,
+      "sha256": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204"
+    }
+  ]
+}

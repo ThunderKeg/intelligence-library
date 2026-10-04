@@ -1,0 +1,2052 @@
+{
+  "passed": true,
+  "scope": "Actual local shared registration and book-local Pages staging; no deployment/browser/offline certification",
+  "deltaManifestSha256": "9a8db8048df0492bfe1e3da019b84f8c514d64aa8f7d306d6da092bbf7339b39",
+  "exactInsertionFiles": [
+    {
+      "path": "books.js",
+      "beforeSha256": "76da4906c27418ba86a235e9e3a3d57c713639d1229e47b96ca723805632905d",
+      "afterSha256": "6364181927afda321fde5daa375407fb2367f30e212739049922a1c432a46417",
+      "exactSingleInsertion": true,
+      "insertedBytes": 4670
+    },
+    {
+      "path": "sw.js",
+      "beforeSha256": "c1526ee68dc9103e85b629ef486e7680bf01801fb9dc6ccdd075c88f2fcfe164",
+      "afterSha256": "eb22db06d0669981ab4327c527b66bc206e5c1a7e02b8b44044c582df53a22ef",
+      "exactSingleInsertion": true,
+      "insertedBytes": 1881
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "beforeSha256": "79aec0c73f819f14a64d42ae4df8c82e85e48a330914ca18689634c50c42a43c",
+      "afterSha256": "85c47e33dbcb7a1e897ae1427e8cf8cb8e7f8b9c598fcbcc73ee740796c18cd1",
+      "exactSingleInsertion": true,
+      "insertedBytes": 137
+    },
+    {
+      "path": "README.md",
+      "beforeSha256": "6bdaefcfa12ed786b865adc0e1c431bb00cd22e2d18caf5b7d04af263690993c",
+      "afterSha256": "f7a008e583a88341e6835f5516d24e7f341ffb49631b545ef08e74c1fa3745d3",
+      "exactSingleInsertion": true,
+      "insertedBytes": 930
+    }
+  ],
+  "finalHashChainSha256": "034e33742378151dfa86a97730cd273570b6edcc3fb0a94be2f58d9e4e3c9aee",
+  "otherBooksExactlyPreserved": true,
+  "appAndStylesMatchIntegrationHash": true,
+  "all23FinalSourcesAndJsonUnchanged": true,
+  "allCoreAssets": 140,
+  "allCoreAssetsExistAndAreCoveredByWorkflow": true,
+  "newBookCoreAssets": 25,
+  "stagedBookJson": 23,
+  "stagedImages": 181,
+  "stagedPaths": 400,
+  "imageManifestVersion": "cf86f67704b11f2c9e91",
+  "fontStaged": true,
+  "originalPdfAbsent": true,
+  "all181ImagesMatchIndependentlyAuditedBytes": true,
+  "all180SidecarsMatchIndependentlyAuditedBytes": true,
+  "copiedFiles": [
+    {
+      "path": "index.html",
+      "bytes": 3831,
+      "sha256": "984c18b42a9181bd00b941fe38e562cf53223667bd44f8ead7f64f0d4d5c7866"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 41322,
+      "sha256": "5dd88cec55c3317ee01544586947d0b5fc9effcf61122aa741092d41e7b14e00"
+    },
+    {
+      "path": "app.js",
+      "bytes": 40367,
+      "sha256": "7cfed5604cadb18d4cbb45091f4d8f12c1c5cab12420aa884909507a02d7fca7"
+    },
+    {
+      "path": "books.js",
+      "bytes": 29442,
+      "sha256": "6364181927afda321fde5daa375407fb2367f30e212739049922a1c432a46417"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 1111,
+      "sha256": "0b881a115580b2d9a7091d4f3b5b0635371cf90b7949ce5cc9124ed264ab919d"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 505,
+      "sha256": "04ff8dc6571e33bbee4ee419c5c11a67ffafc5d537edc09cba7768d267bfa879"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 14719,
+      "sha256": "eb22db06d0669981ab4327c527b66bc206e5c1a7e02b8b44044c582df53a22ef"
+    },
+    {
+      "path": "icons/icon-180.png",
+      "bytes": 6521,
+      "sha256": "ffc353002208055786b08c729626d2ab129865b56c7e233179829fb48bd23c27"
+    },
+    {
+      "path": "icons/icon-192.png",
+      "bytes": 6902,
+      "sha256": "c004575bc0a346ac6bf4417a6526f9ea6747fec6600175995dc2777fc601ef51"
+    },
+    {
+      "path": "icons/icon-512.png",
+      "bytes": 19803,
+      "sha256": "28d39c165e503bfbd62ad03e41765c0a768884fdb52a6c34c2119eb8d308e615"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-01.json",
+      "bytes": 172076,
+      "sha256": "1b113973f2c1ff966f82881e7d10d5944f5b58ff5e2b9809fc0f2e2a831cc037"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-02.json",
+      "bytes": 894018,
+      "sha256": "40a9a87bc3b8ac326ad61a6b797af6b1367c0dfba16184b3f4e8fb0d475c97f9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-03.json",
+      "bytes": 1443737,
+      "sha256": "c9052de5af32843ddf1e1dc16937d76331f7c6ba7d3993a78a4e474b5ae5c6ce"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-04.json",
+      "bytes": 1828185,
+      "sha256": "3c65d72e6a02891287171f3d6a6fc7413ea08893adc55c6b125a3ca808d7e0e3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-05.json",
+      "bytes": 1548785,
+      "sha256": "4f612b37bf7de6fd27a19619b102fc13fb4cfd4c0bed0c3f56d2cf816c0d5c41"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-06.json",
+      "bytes": 952287,
+      "sha256": "6b464f9b5cd6fecafa9c17de5dfb8003e2137997c4982a91448d35f818f8cf1d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-07.json",
+      "bytes": 913026,
+      "sha256": "38fea76bf9ac7988a1ab3ce4479b57214926ad5e76f0bf72a4dfff4ed85d9c53"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-08.json",
+      "bytes": 1099562,
+      "sha256": "49240b85c415272874ad820ad8cd5da9a516dda0f649d8fab9a65b7f91401d55"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-09.json",
+      "bytes": 1185597,
+      "sha256": "acfd753abd18fec60c2e2cc8bce1848dec06acfa9ea1b67fbcb22195d0bc1ef2"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-10.json",
+      "bytes": 785145,
+      "sha256": "78a63ac2e5b5ec1cf004918cde9473eb00cfbad7889ef0b2e8640783702add01"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-11.json",
+      "bytes": 1302724,
+      "sha256": "a769cb56dbbe070532e8015ad99f6068b9ee884dc2e4bdda17e73093d46fe123"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-A.json",
+      "bytes": 449918,
+      "sha256": "2bf5986d376b35f4677eb4b7b0350cf533e06cae702aa5d0b67564a8b48b66b1"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-appendices.json",
+      "bytes": 1237,
+      "sha256": "f3c00f2779feb9e28c321ad239aac4866a470b5efdaa525485ea9f9b579a7ef6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-B.json",
+      "bytes": 163131,
+      "sha256": "e7e5012b1835c9fd3bd4684b1ce4edbf7d2392057dd2966fd90ede3b366add57"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-C.json",
+      "bytes": 450864,
+      "sha256": "9eed920a2871d933b58ce2ba67ef2c00768292383f1809b60dffa9f7ecc15c6f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-contents.json",
+      "bytes": 46876,
+      "sha256": "6a8aa807fab098831bdd75276f92fb2d70ce296f3bdc9f98da74f0c02a761cac"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-frontmatter.json",
+      "bytes": 7604,
+      "sha256": "93a126677af0db7664c6690c5329fdeac11cc28ce818917cde6361c7fdd93d3d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-notation.json",
+      "bytes": 57951,
+      "sha256": "fb0e5b05248103571a01362f986ef78be0df70fdf0e724035d435cd46fae7bba"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-part-I.json",
+      "bytes": 1278,
+      "sha256": "15af3d780f7eae4108fcc6810757bbace9bd23afbb49f774dd408fcc14526a7c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-part-II.json",
+      "bytes": 1283,
+      "sha256": "b12aea8bbe5718e74a55c628938c18d7d2c72869486addf4b5a5dac7b7997302"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-part-III.json",
+      "bytes": 1285,
+      "sha256": "7769ff8c47305c8d4f41c2b95981a00bfc3d7eb6b79ef53cf81d9d6fac9c7074"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-preface.json",
+      "bytes": 19486,
+      "sha256": "3ef242b39b38658e6b7c42700c3ad2dbd62c8e649147f880fc6fb9b537265c9b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-references.json",
+      "bytes": 140262,
+      "sha256": "42dd72b43cb3770ec54a1ae58cd1a97d8c02fd3b0f30052403152d0ffc3fe13d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/reader.css",
+      "bytes": 708,
+      "sha256": "0250f3714c4edd9b84ff53c7493965db1bf280432e3d2fe58796230fd547e846"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-1.png",
+      "bytes": 11519,
+      "sha256": "9766468791f9a8f639a87738fbc8b2bcfe4f36e2bc5fea5aca84d6710802084a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-1.source.json",
+      "bytes": 347,
+      "sha256": "9c874dcb2ff7a747916dc51e032faa3c8fe37c1df8a497b2609b6fd43738e3e9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-10.png",
+      "bytes": 61230,
+      "sha256": "e75dcb296f5f3555dc9de56d51b7bf2fb569f718550aae75eea51817dece6a4e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-10.source.json",
+      "bytes": 347,
+      "sha256": "5184f1c32849f0f0a37601c26dc0ad5b35352bed861609bfe798075f0272da96"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-11.png",
+      "bytes": 18710,
+      "sha256": "1f88f79c8caa3c166118035c990e5f61072125d9b175809b4b10fcb475097877"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-11.source.json",
+      "bytes": 347,
+      "sha256": "41273580996fbf528dcf29d47e3d88d8d5656a9905632d10f4e820c8331d54ad"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-12.png",
+      "bytes": 86621,
+      "sha256": "39e2a750a46515d8749b2e5b6df7020cd5798a43e6b02be6c9064342e913e08b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-12.source.json",
+      "bytes": 347,
+      "sha256": "baf4e30438ab644a6120325ad28b5ae39e7c9aabee454d026fd33e87f362194f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-13.png",
+      "bytes": 23047,
+      "sha256": "aaaf7acd3674d2955a50d3a77cb7fe96bf302b0a343e80a0130d070fed52c870"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-13.source.json",
+      "bytes": 347,
+      "sha256": "6da404ef0d05c6b68b78df2ad5a3841a7d7f15190515907b9a624accbcbc1e94"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-14.png",
+      "bytes": 100023,
+      "sha256": "0bdaf10b5667c592eca76651acc0d00eaf34455209491365a79dded79836d992"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-14.source.json",
+      "bytes": 347,
+      "sha256": "4ce31197d9d2052554060b5703b5e23d5cdd6fbdcdcbe8d531855206b589deb9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-15.png",
+      "bytes": 12742,
+      "sha256": "3b7c6061abad956c04696d13fc872f12b25edcf1061584a92a40bb4e20d752c6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-15.source.json",
+      "bytes": 347,
+      "sha256": "672d4b13aa4ca4ad5ffb7b92fb25ed783d05b50cdb10415eb2e9fafe38087739"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-16.png",
+      "bytes": 28260,
+      "sha256": "8a16ff70bdc8c52c0ca967d2dbdd8b9c72af1b34680ee5a611a2205fe3479455"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-16.source.json",
+      "bytes": 347,
+      "sha256": "fd9720377dd81a19559402d82898d47a3c24de3778b3782afdff052c0933315d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-17.png",
+      "bytes": 13374,
+      "sha256": "c38e25133865cff0317d662435cb719abfa49eff7adad03c7fa47591440bde50"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-17.source.json",
+      "bytes": 347,
+      "sha256": "f829d59554ff70eb75ca44cf9c75c8a68cdd6f377e4696bb86c207dd8b83fe18"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-18.png",
+      "bytes": 18625,
+      "sha256": "ccde0e72bf6036f93d34a7e960bf202b9d464cc8151645dde85c110b60103a8b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-18.source.json",
+      "bytes": 347,
+      "sha256": "735604662d01e622aeff45bdb1b7fa8bb98d0096004b2bcb6cbadadad3f16c4e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-19.png",
+      "bytes": 19691,
+      "sha256": "acbcf941d945d764a5604cd3b2bd45f5456176ef4e3895bb73479a5eedde1879"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-19.source.json",
+      "bytes": 347,
+      "sha256": "a580751392d6b520cc021e58267c5c1a54547e506b0b335737ba78741af30814"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-2.png",
+      "bytes": 14518,
+      "sha256": "432b085f444bb64b68b3a0898106522f73a131cdb6305856bdf65540285a4d7d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-2.source.json",
+      "bytes": 347,
+      "sha256": "f40e7f433ed74445596b6d2dcae62ded50ff78807ecd2c1cb84b9ec1efa055ff"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-20.png",
+      "bytes": 17461,
+      "sha256": "5ade411fb8e997c9033c864bab918b6ef94bff90902c530c5bc1d31cd52b0de7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-20.source.json",
+      "bytes": 347,
+      "sha256": "74a17246c6be954adb76694607e5bacd87113a1808abfbc2ec8f91f77ef80533"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-21.png",
+      "bytes": 14308,
+      "sha256": "dd39b52037a27a7d86fe6e1a7a84a7a6ceb379ba0a04d048d445fdf3d0ec2efe"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-21.source.json",
+      "bytes": 347,
+      "sha256": "f92766517fcdf2a19fbc4fbfd6008c1466349bdf2d7d1dfa9fb6780c1c2db258"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-22.png",
+      "bytes": 10872,
+      "sha256": "812edc75ab9f0909c52c5d0820df5176581adffec374992d78d1f512d14088b9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-22.source.json",
+      "bytes": 347,
+      "sha256": "64c3de54b27d7a2fef6fc94c30102ffdbba06adfb24eb54966c5bcfec44e8ed7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-23.png",
+      "bytes": 17183,
+      "sha256": "c1da06a9215a67e418c292a85c1c2114cdf6b58edf2098fc1b7dc5acd4bc2189"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-23.source.json",
+      "bytes": 347,
+      "sha256": "4317216e2ca99ff2888d22e930c1bf01f8e998368c2a4bb5f44c3de9574ba41a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-24.png",
+      "bytes": 20468,
+      "sha256": "3e9d04476a451cdaf5b0c2a7d600056ce9c9b8626929ca04bfb736ffc07ad4a0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-24.source.json",
+      "bytes": 347,
+      "sha256": "92d0d28b60735499bdacf98d6c54fc23eb5ac348ba3201b5cf2dedae875eac9a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-25.png",
+      "bytes": 10426,
+      "sha256": "969faa6c229c2e1f27efdbfbd91ab32071a5242fc02242a425e6209d6eae4adb"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-25.source.json",
+      "bytes": 347,
+      "sha256": "0856ce9aca5b962fef370d5d033dc4b50ff76f02ae677582a798cc84f445f2af"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-26.png",
+      "bytes": 12218,
+      "sha256": "b605f2b5aa98c1ad5826e29e13a1116f189343e0449f0a7cf91538a6a0988523"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-26.source.json",
+      "bytes": 347,
+      "sha256": "2fbe1e588c940316eff8c26ec801c1ab002883d48b5ab94e05214a2eecbca385"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-27.png",
+      "bytes": 20849,
+      "sha256": "7f61addc9fc835813338ef933a159131ff5dc8961c32ad33f6459651ae0b1440"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-27.source.json",
+      "bytes": 347,
+      "sha256": "53f1ecac2f4dcb3bd218aa14c26843a628101140fcd469ddb71cf78852e47f25"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-3.png",
+      "bytes": 11964,
+      "sha256": "6c1e140c8a7af27ad92386f12bf3eef304382e7ec3431dd4d1b54f80a84c4a32"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-3.source.json",
+      "bytes": 347,
+      "sha256": "295cbc86c1abf9c54d6024e79b324b08dc83467c0243a549d01b32f62c203450"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-4.png",
+      "bytes": 6345,
+      "sha256": "4394cfa49d743780d3cc4e9836ec1f116ea02978f8f66ae3ed5ed3d8260fb6b1"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-4.source.json",
+      "bytes": 347,
+      "sha256": "c30cf7f613c0b00a389a31214ee66e3fcfd96739299edce5d0fc9495ea78b3bb"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-5.png",
+      "bytes": 20902,
+      "sha256": "52b31736d245b60114d6373f362161ac56b2d59eb7c828989c55c1a1ce1653ee"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-5.source.json",
+      "bytes": 347,
+      "sha256": "f8275f59d37b0e5830e6f422288bc79357096c2f77a97e1b07ef8f97d63867fc"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-6.png",
+      "bytes": 7514,
+      "sha256": "8348a4c02b431f03854fc5a85648d574c854b5b02f9d946954e9e28829c97dc1"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-6.source.json",
+      "bytes": 347,
+      "sha256": "240c5beb4bced8269445b7cfca8f7113f7356c2f4d57ad7adfdb28a420167da1"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-7.png",
+      "bytes": 11191,
+      "sha256": "649784b2e58e8f9420e04f07f3824c8172dada88bfbdb640f1f35a350513799e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-7.source.json",
+      "bytes": 347,
+      "sha256": "e15d5af6840f2d3874e5db6a0a0c9e081c235fcdf8e1b893e15887e7b0e134f6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-8.png",
+      "bytes": 11294,
+      "sha256": "a6aa27685e6fa6fc24d1da4fe81e8c3e354bd2bd7faeff647184f13906bdac3c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-8.source.json",
+      "bytes": 347,
+      "sha256": "1a2be1595d8f5f4f5b02da525eb3d971fedd5b4259f3569b4a9d5a1eb87510de"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-9.png",
+      "bytes": 10956,
+      "sha256": "fdb45208c5cc63baa0d2bc20342418e61935a84eb6bd64f4547ec04baf6f868b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-02/fig-2-9.source.json",
+      "bytes": 347,
+      "sha256": "1be1402e91b57d5b6d01913feae6efcb83fd89df6632bbb256da506edf278095"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/exercise-3-2-a.png",
+      "bytes": 13873,
+      "sha256": "8b35385e970b6bb66e684c81929e1848b991419805cb5b1dcba82619621bd3f7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/exercise-3-2-a.source.json",
+      "bytes": 348,
+      "sha256": "68ee5d33949d2c37bc368ba2ab495c22557627efb6f85257733f7c6f9381fd1b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/exercise-3-2-b.png",
+      "bytes": 19644,
+      "sha256": "7c9424a7322a700d57d1dc48476f82326d5ab7f5976e3d9e18611fa05c426eab"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/exercise-3-2-b.source.json",
+      "bytes": 348,
+      "sha256": "8cdf81387d7fd6317c64bfde91225a0c9adffc83f8312e78a7df83e9e48b5659"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-1.png",
+      "bytes": 12379,
+      "sha256": "deef383db1e2c58e6be386b03e70200983cdcc2a928586f6accd93a8507ecaef"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-1.source.json",
+      "bytes": 347,
+      "sha256": "717a8a0d13b7c15634c036b3483c038dfe889ea9f778039be1489e322be97908"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-10.png",
+      "bytes": 15230,
+      "sha256": "115d4d1fe0be0ff52f07483e3c450d7c44fc59ddaffaa1e2fbccdcb01a0e94cd"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-10.source.json",
+      "bytes": 348,
+      "sha256": "5b94a6ba9a07e61cfcdd3c264d0a23cbcbd53197d3e095b1c9f02d50f4190195"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-11.png",
+      "bytes": 7429,
+      "sha256": "347971c18c0b73f1a051596752544db182906c421d255967542f8dc3ff77813a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-11.source.json",
+      "bytes": 348,
+      "sha256": "0329be68e571db35e6cb68cea3b1209b889429fc022f89d5f8ed7f70ac514f4f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-12.png",
+      "bytes": 23343,
+      "sha256": "3356d22bc0937cbef31eac4ce5824aaa060ecf39cb152b90c43d7c478f93c144"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-12.source.json",
+      "bytes": 348,
+      "sha256": "710bb4fcced1f4ee1c7b3ae2dd46dc11a9c29b2cf4503ca4b1e7497fc9940e49"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-2.png",
+      "bytes": 15357,
+      "sha256": "2cfd9f8a3e6267a47071a4df929cabf7bad2cdc1fba3f72a94d74b494332d3a2"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-2.source.json",
+      "bytes": 347,
+      "sha256": "25eafc2aaedd5ac414ceb4a9e09ab87af9b0c54e82b7da7b7e4fbd2ef31e371b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-3.png",
+      "bytes": 82369,
+      "sha256": "d33f07ef1e749cfdc5bd40201473e47014f609c92d4189c1518a9b88e2cf8c6b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-3.source.json",
+      "bytes": 347,
+      "sha256": "a1bf939375e16a722c39ca1e3b93e35966a06cef6f81e3534b5615d49d01bd97"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-4.png",
+      "bytes": 83429,
+      "sha256": "69e093b65151fc2400b654a73fdea9965351abed683aab5c1e078210c092eee6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-4.source.json",
+      "bytes": 347,
+      "sha256": "4d6a3c3ca35df8b49e31e913b6f886653420d80b5272b8bf1b3c6fde437d30d8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-5.png",
+      "bytes": 11866,
+      "sha256": "719937aeef881daf6ee0f6e8192a857bb975148f4fab88cf900b1d6b21683379"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-5.source.json",
+      "bytes": 347,
+      "sha256": "6a0e526ed0d53b2cd8b00d85df38cd374baf624aa6949194a537ef47dae04d7b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-6.png",
+      "bytes": 15308,
+      "sha256": "7487d1374748e49c831025c90feb6718a1256e275dc4dbf3f8a9c0706d725757"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-6.source.json",
+      "bytes": 347,
+      "sha256": "f2f0a96c2d5d83a82474d0b2dacf8bac58f8059673fd5a74b5f8ff7e9db1c5c2"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-7.png",
+      "bytes": 18852,
+      "sha256": "769f87988301226887b63fb62adcdba562b2c2afd01942e73b53608ea8dc7024"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-7.source.json",
+      "bytes": 347,
+      "sha256": "e39a9c80fedca115e2e3dbb3f17451e8adea387ad0bc460bf625f3a90a7d06b9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-8.png",
+      "bytes": 20047,
+      "sha256": "45f4aae2c3bf05f0c6628501883f12cd3227f51879de6e5711248cf654c12f45"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-8.source.json",
+      "bytes": 348,
+      "sha256": "9993f028d46745ed2db5d3367eb5028504cec18300a9866e5de0bf8e7bce6eda"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-9.png",
+      "bytes": 10982,
+      "sha256": "748b200b2f709b7c62ead88bd65fc5eeaabd8005c28c4c5e154f1919075d8a18"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-03/fig-3-9.source.json",
+      "bytes": 348,
+      "sha256": "dcaee9d1286e391b744109830053e2b8532ca40ea4a78d3e1b5258fd4ca25241"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/exercise-4-65.png",
+      "bytes": 16704,
+      "sha256": "1e79c750b6a4e12efd5dd7312b7aa2c9e63917865e9536196c26453016bb1941"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/exercise-4-65.source.json",
+      "bytes": 348,
+      "sha256": "06aee014364c40898ad27286080ce0b42da510b32a439c6b4ea7fe7198deb3f3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-1.png",
+      "bytes": 12462,
+      "sha256": "959aa5107adca5f31435133f0dfe5710d4efa70905888ec9a846b169471958d2"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-1.source.json",
+      "bytes": 348,
+      "sha256": "f7025e1de45fab3beceaf3398a3a4a8c3665bc2569f1db1612f4ca619636df03"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-10.png",
+      "bytes": 33695,
+      "sha256": "5afaea4b786e569f0e781fbb65a313c060c6eb09ea3d96037c00fa512fe483bf"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-10.source.json",
+      "bytes": 348,
+      "sha256": "b8e7f5d7c6b8105e6175808ac2b77607ab264874aee7e446335fdf7d64d9555d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-11.png",
+      "bytes": 21873,
+      "sha256": "d5216de53d048cc32e7a72e285deebce762d367d207ee7b3d84304b9786dac33"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-11.source.json",
+      "bytes": 348,
+      "sha256": "57a655c3f54a6b2fb6e9a31dc7607c4daedbfbfb74dde72e1e4c4ff84b78599f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-12.png",
+      "bytes": 51868,
+      "sha256": "8a7a6804b868b1cd3e6e06b17b5be0b7ffe1936bf82d9237027ac65f29f1b38f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-12.source.json",
+      "bytes": 348,
+      "sha256": "7ff2d7da8813765bede575f6a5de5239103398ad981cb794b6b17a6ce909e69f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-2.png",
+      "bytes": 18546,
+      "sha256": "22e0c94c433174529c16779a5b9a504ff1b98467925144b8e63be0ab903d6edb"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-2.source.json",
+      "bytes": 348,
+      "sha256": "28ef1204e2af9218e0550933fb6a7262815e49e4bfb9134c8c7226c3cabf4a7c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-3.png",
+      "bytes": 10783,
+      "sha256": "e2d488d641be817ef6b547a56c8039b6d6475220e5e23ab855e3651e2cb4a01d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-3.source.json",
+      "bytes": 348,
+      "sha256": "1d363756705d0cda43d1204e697100bd7f94819d0daa77594850d3086fdbedc6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-4.png",
+      "bytes": 14256,
+      "sha256": "7943cd98a7cd1a5ff80ea0484f6a3d0abce3696043723c92e2b393f0c9854ffd"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-4.source.json",
+      "bytes": 348,
+      "sha256": "fbc5338cf48256b80f67d8471f68b8a7b56a301a6c3bbf4d83a4af263b94053d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-5.png",
+      "bytes": 26802,
+      "sha256": "f2ba9a0395c1f523901744ab2f6d93ff2de4f3daf33be2e2848f310ce9edb739"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-5.source.json",
+      "bytes": 348,
+      "sha256": "c105ee8c0ffdf971cc3cd7cf1aee3dc4520cd464d9d59ef9292403b7c1dcd928"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-6.png",
+      "bytes": 12229,
+      "sha256": "fd266fd32702ce19099c9d415aaa5ddb31c8ac7016efab5ab508f354c2d071dc"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-6.source.json",
+      "bytes": 348,
+      "sha256": "18af7122e5fb08a10a4e2b3eb70b51b925660cb86e23aba582bc1f0a9c3b47e4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-7.png",
+      "bytes": 14559,
+      "sha256": "fa465866d4beb508a63802b34ffbb10ac9c9790b592f33c70cda75f5d82cf014"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-7.source.json",
+      "bytes": 348,
+      "sha256": "935a3cce8ac61c8b2211ca5d024d60e2012f7f8ff62e4bf0b6ab073ad0013711"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-8.png",
+      "bytes": 13920,
+      "sha256": "542da8326c45d41789ee7f4907f413d4780ddb988faea6a4383ff5baf6f31c47"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-8.source.json",
+      "bytes": 348,
+      "sha256": "575ffbd8791c3afd1b028ea67b974122e3f8c87c26b8a20736bd40d656fcca78"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-9.png",
+      "bytes": 22532,
+      "sha256": "6b0e43cac00489ffb5058f643e1b0d71ec591aca6b2c56940993d64fc32d6c52"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-04/fig-4-9.source.json",
+      "bytes": 348,
+      "sha256": "850a452757738d6a15bf3e1eaef58f6224379c16c3a22f6be06402c734345b0c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-1.png",
+      "bytes": 25451,
+      "sha256": "fefed77c969f729f7da5f59dd2a49e77afdcc0898ed65cba6cc55b6edd6bd927"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-1.source.json",
+      "bytes": 348,
+      "sha256": "964d50243cee13f59f996cec4d366145ad69f12883a1d37ec3d54e08f03f75f7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-10.png",
+      "bytes": 16447,
+      "sha256": "a33bab67d849aa7cf2c6b3486d1ec113f2e729be5d54b703702886688c948377"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-10.source.json",
+      "bytes": 348,
+      "sha256": "71233998eb88e001dd01af98ac21e59f6083e0a14d1e3ed49e6062dd409be0cc"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-2.png",
+      "bytes": 17899,
+      "sha256": "86ec89521b5ff693ada936d85506224564daea4bfa42f61d278da2dd3168993d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-2.source.json",
+      "bytes": 348,
+      "sha256": "96eb844454792cf708cb297f2a95893ffded960bf752e311afbb3951f520f05b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-3.png",
+      "bytes": 20456,
+      "sha256": "9ee7dc236f30468edbbae1ddbadd53b672dbc6e4770aeffb279ba83549219c06"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-3.source.json",
+      "bytes": 348,
+      "sha256": "7102c95162eda36ad7e83294feb0fe15fa42afce1d7a629f900f1391054ae083"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-4.png",
+      "bytes": 29579,
+      "sha256": "6c3fbcc9b09c596af3504996ea71460c99ef43ad77ea0229d8bda55082b783fa"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-4.source.json",
+      "bytes": 348,
+      "sha256": "c890a43da689fd0f87ce73e2a419e69addcc1b8fa4aa5b0a4a2d32c97e4b7c89"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-5.png",
+      "bytes": 22879,
+      "sha256": "beb404260f30d2ef252ded79556ebe8b4614bc6008e6a334a188b0bb6cd4162a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-5.source.json",
+      "bytes": 348,
+      "sha256": "87af1841dfc5bebe0c404ce3265a51825369191641c599cfad348b9c520522a5"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-6.png",
+      "bytes": 16049,
+      "sha256": "0ba23f3f8a732e117c6490d4e47c505cd72b4b5eb2c9cbd0db91e85f3dcaba1f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-6.source.json",
+      "bytes": 348,
+      "sha256": "ecd0cc5e897e11aaf15e4a0a966576651c16fe7f2e0d6435bba78b2b343c5faa"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-7.png",
+      "bytes": 7576,
+      "sha256": "1d1b30349d9ad1d2b1aa89cc68168cef7b57f8dd4d70e5ec6ecc7cf6dce237fc"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-7.source.json",
+      "bytes": 348,
+      "sha256": "7780c1af32d66e81f73e2d2e9736807520ac0933f12fe4d9c88a69901685515a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-8.png",
+      "bytes": 16175,
+      "sha256": "a13638decc9d8d9fb9111bd8eaffc183dad7d89da093f9cb83c7463eda510d19"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-8.source.json",
+      "bytes": 348,
+      "sha256": "b7f67d79731c02800f75b0f5863351b91f987844fa0542cf3d597d31c9b35fcd"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-9.png",
+      "bytes": 9035,
+      "sha256": "089df66b2e237fabe56fdf00ce64ff001afd92c997c6286c73e6144eeb13bdf4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-05/fig-5-9.source.json",
+      "bytes": 348,
+      "sha256": "339dac406697f652368cde2a452dc19d26c642f2e060feb7b791db0080eec1aa"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-1.png",
+      "bytes": 41946,
+      "sha256": "c6dfcdb5ec0cdbd25b344cd2ba8c9c5deafa8924e0092c5bcd11874f5df092df"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-1.source.json",
+      "bytes": 348,
+      "sha256": "f0dccad49fe72f1d72767340c54d3b95db7aa1b2aa0370388d2b57d5b9559b65"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-10.png",
+      "bytes": 73306,
+      "sha256": "b09da41049da25f2ae0279279db25b8caf8800a479ba0e379abda080ded20dea"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-10.source.json",
+      "bytes": 348,
+      "sha256": "4b868e88a41e89cc525ee1a7ffca5eddf4fe54548827326bf943ae270f728a3f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-11.png",
+      "bytes": 57677,
+      "sha256": "4989b84e98cbca99cf3a3d7c8853d97bc565bc1f1e3f5bff2ba99f0dd893569c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-11.source.json",
+      "bytes": 348,
+      "sha256": "fe0b952b236539b7c3857313a270e9ff27573acd2d6cf599c44133424fc42a53"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-12.png",
+      "bytes": 45585,
+      "sha256": "35d0a6f7df0813bb64419b6a5d0c03361f9638d289d778b5a0e0370f242880f4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-12.source.json",
+      "bytes": 348,
+      "sha256": "64412eca3c39a147407d9d71e1f9063009c3432da5283f584d57f0376a7d90b7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-13.png",
+      "bytes": 20635,
+      "sha256": "16c8adf22babc618b63024de6e5317ab310fed8b901572ef7f738a1efc3a2d4d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-13.source.json",
+      "bytes": 348,
+      "sha256": "883a45de8e5afded69e0cb071c3e04c515c987877994e431235fb5e808db5329"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-14.png",
+      "bytes": 30956,
+      "sha256": "3edb8a1b1b6df766b3068bb765d96b61d96fdeb702229749dc8c68f003e49ee3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-14.source.json",
+      "bytes": 348,
+      "sha256": "bbfcb9cfee51cedd26cc2bf73cb307f79bd42ff03e08845fd566bab96dbd9cfe"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-15.png",
+      "bytes": 29088,
+      "sha256": "1df1cca598c178cda4bb3983935dc5a0dc22d2193c00974674acba94d1d0ed6d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-15.source.json",
+      "bytes": 348,
+      "sha256": "ac66016913df7969db8bd2bef84ab0eefa45a1ce5b6d36f3e23074daf6caebf4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-16.png",
+      "bytes": 27189,
+      "sha256": "27fcf7293039edf2f757a41f48e3a060282d455c2cec128ce2c67ff1eeb7410f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-16.source.json",
+      "bytes": 348,
+      "sha256": "9c34e779495555b3b890b690424e60c9ab8d8c951a788c321053d1c1e61eee82"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-17.png",
+      "bytes": 71019,
+      "sha256": "67039ccf24fcac2c9ada29a13d1d89d747e64901fa847e319846d1fb72f95bcb"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-17.source.json",
+      "bytes": 348,
+      "sha256": "aba7602c0286f5d35df5dd476c6f376a51654160c72f6eedd5c0e9aa52fdbbff"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-18.png",
+      "bytes": 22381,
+      "sha256": "160a35b4877e6ea00b277851997bed5d6994dd8c37c680e2b0dfa81e9c11964b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-18.source.json",
+      "bytes": 348,
+      "sha256": "ebbb8ac47a2b960aa4ea6b69ebed31b0f739b52ec0a422a9080fabdfeb54b641"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-19.png",
+      "bytes": 28401,
+      "sha256": "17c7666d60160ba7e50042ed6d031c6b461d2eefa6e12b90c7fdf1e772d88716"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-19.source.json",
+      "bytes": 348,
+      "sha256": "51b593619a9e23de3ea38f4b0e4a4cbce6d3efa0c944d8c8a01e555352e8e97f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-2.png",
+      "bytes": 59929,
+      "sha256": "fa7c157a292a8e8b723fd58f0fa6b3a4dcdb2002ab33921f1a6214af3435017f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-2.source.json",
+      "bytes": 348,
+      "sha256": "80e5cfa180ad7260fec65b78991569654e9466954b96734e3c8f3ae7fca4b57c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-20.png",
+      "bytes": 29928,
+      "sha256": "96020181fa5873bd386beb24120701de82977aa494a9d147311b984da20ff936"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-20.source.json",
+      "bytes": 348,
+      "sha256": "cf8f4f07fea80c0bfee3846ca1d271faa999ccf48caf151eff4c26988ced8035"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-21.png",
+      "bytes": 38436,
+      "sha256": "bd6c6e7a57229c6e7e6679ca6666e6f04117b91793721b8c84515ccba9253bf3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-21.source.json",
+      "bytes": 348,
+      "sha256": "741e576054cbd4099dfd2d475548d621d07085df7033872b733baa501a906f8f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-22.png",
+      "bytes": 86847,
+      "sha256": "57e2e54da6bd8140a2ed9081948ec2d5c64190d92ede070a23d5209df040e076"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-22.source.json",
+      "bytes": 348,
+      "sha256": "0aa15230f857eda757ddee777037b83d884a884dcd852a97b0afc5b2b05cc1ac"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-23.png",
+      "bytes": 74877,
+      "sha256": "305234b43d6a3290951ada2e502ff361c59cf93707fe3b6a5ab37ca42fe9db45"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-23.source.json",
+      "bytes": 348,
+      "sha256": "768888de30f3eea073d654a1b307e37e635af91a367152c8b7cd7ec25a3d6829"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-24.png",
+      "bytes": 19242,
+      "sha256": "28606d5cfce8c81c80c9ef5f4f63f195041e2812bcc6ce0f398d00e1add29a4f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-24.source.json",
+      "bytes": 348,
+      "sha256": "0e33389d869848519ce02b2730021465b624cd4f88c1300299c0be8ad29686da"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-25.png",
+      "bytes": 31304,
+      "sha256": "a3e796f9d014a60ff14d394ac3fa13facaaae110c69e915221efbd9aea1592ae"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-25.source.json",
+      "bytes": 348,
+      "sha256": "6e7fc9ed222925ed30aa95ee1e53537154d329d11a80348df01de5fbf3d35570"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-26.png",
+      "bytes": 19249,
+      "sha256": "d36b46f2513d0479a5cef4d192b951264e9532dfbb4ce9ee417d9d38c2157f8d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-26.source.json",
+      "bytes": 348,
+      "sha256": "e671b7a878e75dbb5d6afa78a11db9a7f684813e97735fd808a86ed756fb180a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-3.png",
+      "bytes": 14493,
+      "sha256": "4d76459e78bcc9caf40067968481b98e72285a0bb8599a81d78c1574594566aa"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-3.source.json",
+      "bytes": 348,
+      "sha256": "ec568eb0950db9f0170de339397122941345d3fb235d9f883689e9148bef2562"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-4.png",
+      "bytes": 19904,
+      "sha256": "9b4a14f2fc505869ff3a7bd8911dc0485f6b1dbeffdae6d532c763c940669dbf"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-4.source.json",
+      "bytes": 348,
+      "sha256": "11d600ddc30a5cbdde7ee9bd3d7f7190dbc97c75ba0332ae462fcb65aa079848"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-5.png",
+      "bytes": 23721,
+      "sha256": "2fd4e6377ea768ad174ed1f8f3eb794bf229b8aedba035a0a5219a3b03345b63"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-5.source.json",
+      "bytes": 348,
+      "sha256": "47fd31fb73336e5afc52f8e6286ce839968de311f0d792a79a029872f37e7b58"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-6.png",
+      "bytes": 92993,
+      "sha256": "2eeb27772c2bc9845b6374008db7fe31c2c04f62c3865ac393417504ed2cdbc8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-6.source.json",
+      "bytes": 347,
+      "sha256": "be254c50338940c9328bf3b10b20c10dafb0e3d6e54e68316bbb27b18d0c8a1e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-7.png",
+      "bytes": 18768,
+      "sha256": "cbf3d8b79ecc08bf5380a674d35a33109e2d26c84e9b9d0b6a183b5c61292cd9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-7.source.json",
+      "bytes": 348,
+      "sha256": "5075b8384cfef5274fa75bdd9c717170f1dbc78a2ae79bf910db56e7cc8575d6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-8.png",
+      "bytes": 77825,
+      "sha256": "07b70bfdd32e434fa0482cb18875951130bce290b6fbe46bb5b6a7c41e13e265"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-8.source.json",
+      "bytes": 348,
+      "sha256": "e3de2b97ba552576f2759d90f8cdf3199f458c27c117cb4cb4de3bff497d7627"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-9.png",
+      "bytes": 17335,
+      "sha256": "9c2a5c473c198d53870445f3a462dc08a537ec6a907593eaeb9c6767b5616d47"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-06/fig-6-9.source.json",
+      "bytes": 348,
+      "sha256": "bad42630f1d7cb797c2fce60c14f299785596835f695f4c61632b6c1c51a0459"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-1.png",
+      "bytes": 28549,
+      "sha256": "4b7b92b5ae7dfdff71a7dc1867e0577e6a6f0f3fd68241b132d9a3af5065d200"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-1.source.json",
+      "bytes": 348,
+      "sha256": "33a3bda052474506e0508812623522b93b6328436fc87e97f15f1bd4654336ed"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-10.png",
+      "bytes": 14929,
+      "sha256": "3fb691cad397da024e4adb5dab4387986479a359ee1d8d0b1918c7d2793379cf"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-10.source.json",
+      "bytes": 348,
+      "sha256": "230ac2cf4e7f2ad1a82dba310a29deb33333e65c5419c54bb104a8d15120d5d5"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-11.png",
+      "bytes": 17414,
+      "sha256": "6249c847f300a01e1f2a20e279caebf215ae4161cc4471282eb13e3d3b1b13f3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-11.source.json",
+      "bytes": 348,
+      "sha256": "3f559b2d76968954b2ba404529907db47d650b65c81680a4255c177fb5d76523"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-12.png",
+      "bytes": 27672,
+      "sha256": "5a076bf1853a160e7cc45675f9095c1dbf64dc25cae827dd0749135343af17a7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-12.source.json",
+      "bytes": 348,
+      "sha256": "afa4febeb29d0f914cd55d7eab223255b2d4278926d9456092c6799dbd48fc08"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-2.png",
+      "bytes": 17564,
+      "sha256": "a63c300894006d6571ecc39492b2a39758bc923c86012382aa6fcf5a5df07939"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-2.source.json",
+      "bytes": 348,
+      "sha256": "576188dba9ebf48e40d196ee4c22eaf7e291415678a3572f3e2cdb2758312fc9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-3.png",
+      "bytes": 25303,
+      "sha256": "c8ca79ba8d4dc5178501b57d1c139446b987e20efb6963dd735b4e714f2d04a7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-3.source.json",
+      "bytes": 348,
+      "sha256": "91b3bac2d65a4867c9735ed56cee0ee107301755927a5a0d282b6f6da851633d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-4.png",
+      "bytes": 28286,
+      "sha256": "a9168ae265cb318192af1632735bcbe0353450c66ee52b264035c56d51f0644b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-4.source.json",
+      "bytes": 348,
+      "sha256": "26ac85a1b136031150567dc313012792949fdc9b3f2675859b3e7f11e794fae4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-5.png",
+      "bytes": 21016,
+      "sha256": "5cce1922caf2381cb784b30a937a2216f1b1ca4bba671a6f4717d4e5cc05359f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-5.source.json",
+      "bytes": 348,
+      "sha256": "f5bd0054dfa2d9a21c119b79ac2bf9fff2d6c33172a896e64d823a178e334c48"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-6.png",
+      "bytes": 33385,
+      "sha256": "b52062ee6c2e4e8a65e12627eae6e5b318ecd4fbc1aedca35f317187bcbb3b91"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-6.source.json",
+      "bytes": 348,
+      "sha256": "25b53a6107bd2f095668ad3b60ff72cecbd96081ab210c89d9be0e91cf29f293"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-7.png",
+      "bytes": 23872,
+      "sha256": "74b2d8b92a903ea0e858be9eece9a815885fda8f6ed3f7d5aab2ad4b07e8959a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-7.source.json",
+      "bytes": 348,
+      "sha256": "6af01b5ee53386d8188da3d7a7dc5b07f81315dbc54726bbda83944b501efc1e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-8.png",
+      "bytes": 24021,
+      "sha256": "c843a59f25559210ac57eae71b77581456cc01d52dff27197bc86f3f08052763"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-8.source.json",
+      "bytes": 348,
+      "sha256": "b861e128b134ca97ee327f253ebade1041707b13c268fb5bad10867be0a7ca69"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-9.png",
+      "bytes": 18112,
+      "sha256": "6e6f017907367c0718de4d0b1f521eff30027d0940479578927cafab4a847a6a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-07/fig-7-9.source.json",
+      "bytes": 348,
+      "sha256": "c56f6888afa426c5b95372df81a15f63c5cc2deb151e1463a84ddf1935b70c2e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/exercise-8-30-a.png",
+      "bytes": 18179,
+      "sha256": "60b7614459237621afa3e7e723ed3da887aded508976c071b8d93f6f729cc051"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/exercise-8-30-a.source.json",
+      "bytes": 334,
+      "sha256": "8f3e41b0d0c65e5c449aca95312ba11b4c70d39edaa24f9f519153ba6227fe9b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/exercise-8-30-b.png",
+      "bytes": 14717,
+      "sha256": "2019a3eaf37fd889cc3d4f8578e490726c5d76ca943910e48bc4f3fd95a8d7f9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/exercise-8-30-b.source.json",
+      "bytes": 334,
+      "sha256": "39bb430331fbedab8fa2ec33288a4bcc12e0e6f16fc1ae8ac6c557a9c496f471"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-1.png",
+      "bytes": 13776,
+      "sha256": "e2ddbc880a09e4928f6c0b74698aafbaea52b37ba6331282c379e5123ab5d06b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-1.source.json",
+      "bytes": 334,
+      "sha256": "4791ee86c377b461cc299a4855ff19ff331513840691ed047015838e569fae39"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-10.png",
+      "bytes": 30827,
+      "sha256": "c9636113ff94b7bd51ccdd959793f9b28e72aa6a8e540b5b0a1979f345fea17f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-10.source.json",
+      "bytes": 334,
+      "sha256": "8d66bea4dc03baabecd934ae7190d4cce1feb969b0f61b9f23315a1159df6f1d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-11.png",
+      "bytes": 30750,
+      "sha256": "55ce6396ce9bc46c7182948a152f526db134252bc679e5365d988fbbcce99faf"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-11.source.json",
+      "bytes": 334,
+      "sha256": "ac3ea3eae82bfa2ccef6190380f7b2577c228791a66e2e5cdee8ef72319d542f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-12.png",
+      "bytes": 27593,
+      "sha256": "cba69751aa885afbe3f133cb4bec997c5d285b85000e372488716df132596d8e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-12.source.json",
+      "bytes": 334,
+      "sha256": "b821e4dbb7811287cdce26b2d3bcf1304d3051f3dd1e722d8cccf50d033e19d9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-13.png",
+      "bytes": 26427,
+      "sha256": "3f9bebbe7008f538f4a9dcf79a146ffe6ace76644a6b40887be49c1806d6d7ba"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-13.source.json",
+      "bytes": 334,
+      "sha256": "2b5b23c3d8e8f8f055044b846da40e6e0f8a3e891ea908c62fee0107e804eb77"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-14.png",
+      "bytes": 38731,
+      "sha256": "7590a8ef8e5b2e3be14eb3a866324cf3539caa0f38c7c27739bd7f17ad32f286"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-14.source.json",
+      "bytes": 334,
+      "sha256": "93c108836d307c1d1ae7df3932891d0fb688a089bb536712d612245a7ed87e63"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-15.png",
+      "bytes": 33274,
+      "sha256": "ce4e417323f8e01d6ec5ca0952eb00f578a4b40f7bb5e80cdb4dd030f2df85a4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-15.source.json",
+      "bytes": 333,
+      "sha256": "e799b97f9776663654572cd1bfda141023ae5935039a55e662d412dd0dd75b0a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-16.png",
+      "bytes": 33076,
+      "sha256": "9c9469a7078fe80f8a639bf6d44efc0d166d285da61cdda664b4a17998014a86"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-16.source.json",
+      "bytes": 333,
+      "sha256": "33761319d5b156eb716a1eec4a738ba7b98fff6f2c25c581ec009f325ad0cf1a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-17.png",
+      "bytes": 33418,
+      "sha256": "fa46de425e92efedc6b978e7d7542b44ad54899ebfe6be30763a033b94270c8f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-17.source.json",
+      "bytes": 334,
+      "sha256": "0eb331f5ef4ffee4107bdaa1073b6273bc9e1ccaea4ba3e32dd1eb00b83acebc"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-18.png",
+      "bytes": 11548,
+      "sha256": "15c5dfb542bc70157fbe7b00eaba5135703bc540473cf11025166ee1c486447f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-18.source.json",
+      "bytes": 334,
+      "sha256": "6ce735df6d794e3ec443c98ff7a2dd1806661a5b65f441fe11f4a881ad89bac6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-19.png",
+      "bytes": 20786,
+      "sha256": "d9279f1ed371200ffaae3419edbcf1ca434dea7a5b6636cdc5b328b2be7ce7a7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-19.source.json",
+      "bytes": 334,
+      "sha256": "26fbd56a8add7263e84d1d576ee83f90e5d6b1036905b66d10a016a60dba8589"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-2.png",
+      "bytes": 8346,
+      "sha256": "6d2101f4b1f2b4d8248d1c4e3b323ec1f802b89283db3637d8b60dfbefe753a0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-2.source.json",
+      "bytes": 334,
+      "sha256": "06df15b6e20011d1dcc22c2e176a2e69800cd5b30d0854e4da0beaf3ed712457"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-20.png",
+      "bytes": 19798,
+      "sha256": "b0f3511cecfa5d459103789b41be06355c44e9bad4401f5179feecf4708ec65f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-20.source.json",
+      "bytes": 334,
+      "sha256": "4b73cdb0a88163c7fe82582c08e7f863e9c17b9a566176c254818a3f3f8e3a02"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-3.png",
+      "bytes": 21808,
+      "sha256": "bbed9e677b7b0dd2f11aeca8caeac60ad9259a83a52707b3fa5b2213d3203aa2"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-3.source.json",
+      "bytes": 334,
+      "sha256": "f31975dd60f04ba5ad1f8e8113ca32fe5cf32e53df1431d98f933e8fc6418ed8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-4.png",
+      "bytes": 22089,
+      "sha256": "6d2ac1076776cb8a7fb0d9a3a7f8ad98d3a82c974085acb25c68bcc66bcfaa24"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-4.source.json",
+      "bytes": 334,
+      "sha256": "6c4379a0f27212ae914ee5bf16bc49fae82c7ce3c6a80e8b930c4cb98e26b33d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-5.png",
+      "bytes": 17179,
+      "sha256": "fb1a830a9cfaa361b48b2a9999584b224f30fccb97aaac9760ed4e79ac8d9bf9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-5.source.json",
+      "bytes": 334,
+      "sha256": "c66f2843767692554406fe15d4784237e60e3b7b36fff2bac540b2c5ffed8ee9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-6.png",
+      "bytes": 17131,
+      "sha256": "4dfe6ffb6669df7fd95d62538ac20e5ba45ed2ab75813bd513457a110c3b7f9a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-6.source.json",
+      "bytes": 334,
+      "sha256": "3286069758b2671dd6e9a793174b582b98a5fdeb753cc429377cd01426bfc17c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-7.png",
+      "bytes": 33107,
+      "sha256": "b226d7c827366b194639a27ca6ac9f62579d6133690eda49925d975d1ab57947"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-7.source.json",
+      "bytes": 334,
+      "sha256": "18b552057d9abc41731c089c8a147d0f1267c57de81f2dda19a260f99a73c2ae"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-8.png",
+      "bytes": 12157,
+      "sha256": "bae3ae7fc58c4cda226ce72afcf934d293d4c90b5e06e4f5c77e1cf39f3cb788"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-8.source.json",
+      "bytes": 334,
+      "sha256": "7585692d9f2c15c0586aab86f425a5afc55dac7a62db91982a269371beb9e6a0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-9.png",
+      "bytes": 20125,
+      "sha256": "e5f1e297b5f812a3898cf006c9b83da08b168a7c016cd22163bfa4596e52a6e0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-08/fig-8-9.source.json",
+      "bytes": 334,
+      "sha256": "654cb2c81b54ea368776ed2e34d21fa02f65ae3e9dd822a75f3e77e471f56e81"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-1.png",
+      "bytes": 22818,
+      "sha256": "f9b5c2c607088d1962285a26b5132948abac4f959f1b39ecfa28bbe9679e2614"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-1.source.json",
+      "bytes": 334,
+      "sha256": "7e29a5f9c5234c474390a7afa425f9b045de2d075ae870591e49f2636e58bf69"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-10.png",
+      "bytes": 12279,
+      "sha256": "6d2f50c903e2c75a3cce239b99dc26c68139039b9f282f856fb9b6986c8cba44"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-10.source.json",
+      "bytes": 334,
+      "sha256": "174f26b961875e2d9daa361022ceb2064d8f55becffb63e0eedb95d63b1a6ecd"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-11.png",
+      "bytes": 37715,
+      "sha256": "0d07ded84bdfec49d9ed0913ed4ede0387c41cce96174fb5f5ed90c185f32bbf"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-11.source.json",
+      "bytes": 334,
+      "sha256": "ae5c50e7f8afe79c349c64cecc75f78e89a84556a2c591c3960569268728edab"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-12.png",
+      "bytes": 42187,
+      "sha256": "38391160bf2eec23364e659fac77202b5116c527e1dc19a0b1ddf13df3f27290"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-12.source.json",
+      "bytes": 334,
+      "sha256": "9f62465f082e0234c5787f670cc04d67b558654cf38814ff128c6fb6477977da"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-13.png",
+      "bytes": 29365,
+      "sha256": "0a611db33576b5d5a90c5154eb8ff44b4b38a0cfdbcd77d5280059c8a9f1d2aa"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-13.source.json",
+      "bytes": 334,
+      "sha256": "8443138a1aff7cf49507ece7710c4f3fd414e5290931582d6e9cd22ff37c3fda"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-14.png",
+      "bytes": 35230,
+      "sha256": "d2cf1731c45b8c2ec8cde682758f93cf245ad56545453f7b1fb5100ea173fe09"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-14.source.json",
+      "bytes": 334,
+      "sha256": "fc0e42523a1217353f62f87fd245a699d7f957ddf82dbdca1ca42c77b532f656"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-15.png",
+      "bytes": 29487,
+      "sha256": "702c5a13084a1797fe91e92981911d8387e9973608907bbfe0f678a4f910839d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-15.source.json",
+      "bytes": 334,
+      "sha256": "f7fa15949f06e350ec455072c286b66b31d558485154ac25a57927a85e4ee1ec"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-16.png",
+      "bytes": 16130,
+      "sha256": "4b2513cbd82e38b6109f708f5fa1817a192179251d670e16da80274cef4454da"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-16.source.json",
+      "bytes": 334,
+      "sha256": "d4929fcc38140b674325aae82befab26b8e2bb161ca6bfd90f9e2a6ad4b2009b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-17.png",
+      "bytes": 25745,
+      "sha256": "19dfaf186e1753ca74db154debb374ea77420e549e442c4783901b9c8e7a5a83"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-17.source.json",
+      "bytes": 334,
+      "sha256": "415f6e95556a866e6f4712cad9ba391d817549776f9d6c69a56fce2338f7d8fe"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-18.png",
+      "bytes": 15747,
+      "sha256": "7135b95ba5129ad1350a69e9230ad1e263e3dc1c043eaec9c13bd79e4cd1b312"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-18.source.json",
+      "bytes": 334,
+      "sha256": "d89eb3f115de4ad2a3fbd65e903701b9efcf8e0c72a8183a63df29842004efad"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-19.png",
+      "bytes": 33815,
+      "sha256": "9066d5a1f198e06b5aacc3cbc80f8a2a8706caa7e930d7b39de533c849884c1d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-19.source.json",
+      "bytes": 334,
+      "sha256": "9887dc16343ef82be708e7b6c41558675dabd8a690ff82ed4d27850494bf56e3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-2.png",
+      "bytes": 27692,
+      "sha256": "c09851c5e26f2b3eda651e4aacd640402784ef7cfaa7280f42b3ed9df75f4c73"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-2.source.json",
+      "bytes": 334,
+      "sha256": "cc7159e6420826b5c7d1950e24318728b56a5e3a88095109d6e0b09d5b49887a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-20.png",
+      "bytes": 20396,
+      "sha256": "fb8829e9a636f737a75ec7f747bcb8c830b6022a23453297d2fe73e47e7ebac7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-20.source.json",
+      "bytes": 334,
+      "sha256": "22c9e55e1aa90f69f5ff5cead3cfb13edbbe55e5690ed8af9e50eea9a8e2d4f5"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-21.png",
+      "bytes": 31449,
+      "sha256": "043b1a12f8983b863edc24ea68b37e4d5ed593e6ca7ed7505497f90d24a546d4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-21.source.json",
+      "bytes": 334,
+      "sha256": "259a7792c3e0bacb8e6e3afb1e676eeab5ed4fa7524bd9a540d26d50049d4e15"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-22.png",
+      "bytes": 25637,
+      "sha256": "7fdd7fddda0a2d705906369a0bf36b11f579a8905efb147c1db18ee73cf1938e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-22.source.json",
+      "bytes": 334,
+      "sha256": "c32eb5a22acca1c0f1c487800f45329b43014274f61ff0566ac2fbfeff93a79c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-23.png",
+      "bytes": 20935,
+      "sha256": "352d6b070d3affd1bad037fa418ccddc64a5543700fa987c03cbecae7cecd948"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-23.source.json",
+      "bytes": 334,
+      "sha256": "cbdd7c9cffa796f8159e39163979cda905a0a6114804b5006c04375ff3fcdf4e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-24.png",
+      "bytes": 16539,
+      "sha256": "aecd83f4391ef917c3e6fc7884225e532a9aeb5525c01f9197ed4053c594b574"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-24.source.json",
+      "bytes": 334,
+      "sha256": "c8cb18d8faab1b22c0502569b6de54bc2779aa4e1e9a31d72341d6b12eb99db9"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-25.png",
+      "bytes": 31312,
+      "sha256": "ac1ad0539e2dcfd38b3fe8adef52184b78f56ec354552deced8206456ff193f8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-25.source.json",
+      "bytes": 334,
+      "sha256": "99d873799b84a9496e769ba9a6a115e5d6dfc5d5d836ea185d24cc0034704eb7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-3.png",
+      "bytes": 34992,
+      "sha256": "40f139a69439ba1bec7e4c6f02d85db905bbc79021c7b253bfb5d11dfe6c1a50"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-3.source.json",
+      "bytes": 334,
+      "sha256": "c4c51119a4ca535b56158db1da6d0c74b7533ae8291e970015cd54ede7f457cb"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-4.png",
+      "bytes": 34347,
+      "sha256": "4a3ec2e3a4d2937d191c7114bfcdf9c1aa47807ea9504a6cd9dc482ce627a0e0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-4.source.json",
+      "bytes": 334,
+      "sha256": "fafdfe49080b01872ee5a74da894f0637199dc08154cf76ff98b549de3149a57"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-5.png",
+      "bytes": 29752,
+      "sha256": "a8b1e21a3eeb0814fbb7763c74e17d4740c108f635dac1507643b1dda7f7d46e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-5.source.json",
+      "bytes": 334,
+      "sha256": "912eb5bc64acaaf981e264364140d3a28bf2dbad588d2df390f6f72480bcae52"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-6.png",
+      "bytes": 27556,
+      "sha256": "022119bdba7849d2cc44e0e694093df974bf9002d8ffc8003d8eaec6486f08e0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-6.source.json",
+      "bytes": 334,
+      "sha256": "786c78fa592d6705d64fa9c651862616e7fdd613b61b31971abc4bb969aa4229"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-7.png",
+      "bytes": 21272,
+      "sha256": "2f6dd6f496d18b5fa44871aa88f8e33d65064c8bfeb4a170196a3da66711545a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-7.source.json",
+      "bytes": 334,
+      "sha256": "d3452e39aec5ea46c53385003a4cb17f8337f314e70a8cea6ac89f9695254b25"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-8.png",
+      "bytes": 20527,
+      "sha256": "4ee0690e0d42dd3aff9ef526816b0a1eec475cc10de867d56191a878837c9b8d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-8.source.json",
+      "bytes": 334,
+      "sha256": "21d84652bb77fad068f94e3893a2f67f141931da3f4edcf19f11b73e6fed1e22"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-9.png",
+      "bytes": 16328,
+      "sha256": "1167faae260ff7481fa241ffef57b17f13539712756cf26df00e65cc09111d3b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-09/fig-9-9.source.json",
+      "bytes": 334,
+      "sha256": "30dd0c69bd5e5d2403b7bf39675460447cc3e7b783889d2650a03586376989b3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-1.png",
+      "bytes": 31488,
+      "sha256": "958139ce40b620f93b592e76303c1e293e77c53116d1f55d3e66954a54ff44d8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-1.source.json",
+      "bytes": 334,
+      "sha256": "25e9ef2e2614a4cc79b6a07089d5b03b7d1826e3e67da7c0f3e29d789b0f1b2d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-2.png",
+      "bytes": 16897,
+      "sha256": "da0ce728d48b0c1fe6696152a43c69e3511ed974a2c3dfa34e05e79a02988b6d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-2.source.json",
+      "bytes": 334,
+      "sha256": "4f717ad416211a338599d5976928262652ba292f0e2160607b9bfb018db7ef0d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-3.png",
+      "bytes": 30346,
+      "sha256": "a82a318d3e646176f6307ccb323d6f33ee19b025014a34fffbda95f361eb19ab"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-3.source.json",
+      "bytes": 334,
+      "sha256": "268b5ee2414b611d5cbef669b91f1c7818130b39d0c8bb756ef942cd4be2c040"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-4.png",
+      "bytes": 20559,
+      "sha256": "df6f37374d8ccf28cc80ff08b2ea148d5be313219e90198f0669dfd732e3a3f5"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-4.source.json",
+      "bytes": 334,
+      "sha256": "128914718908bb013734b8cc5dcc3daccae300d9804b4a1ba8512b237f79a98e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-5.png",
+      "bytes": 25337,
+      "sha256": "1d552c82cd0d1f0f2e2c6010369417fe347439db4496269af30aff2359808d4a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-5.source.json",
+      "bytes": 334,
+      "sha256": "48f20bea145ac6d1dd2475dcaba483bac057ff8f2f3a0202dacaaef457ecbd2d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-6.png",
+      "bytes": 36801,
+      "sha256": "617905a93feef45e71c1e9a8dbd7e3e789628145a00b626fe71e4c58a8ad83a3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-6.source.json",
+      "bytes": 334,
+      "sha256": "2201d04db9826c54fad318e6190a7ca103a9fc492a2a44a8d969ce5ab092acab"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-7.png",
+      "bytes": 34594,
+      "sha256": "76703585a2a63f81a656991e731fdd06f120b72d7854a6fbd05c31383e558fd6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-7.source.json",
+      "bytes": 334,
+      "sha256": "ef5b4f5b8ebf95d26669cfecf2d802a45db41bf4c73e89abcd47b7ea4b85733a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-8.png",
+      "bytes": 39009,
+      "sha256": "dcf9c1c365147381877852d3ccd77195011023999f4d40bafa7d0465796ffe1d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-10/fig-10-8.source.json",
+      "bytes": 334,
+      "sha256": "1e122f22a788348310f9d3e72d7d8d2013dd66c85da0fb2d1d808ec4cc428ca3"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-1.png",
+      "bytes": 16818,
+      "sha256": "ebfb685418956005eb0db184769305fb189b722d7e0f3ecf6157118419d154c8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-1.source.json",
+      "bytes": 334,
+      "sha256": "457efb0107c43b74b0206136c4ac240d30d01098a82d5271077c1ece0f03c885"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-10.png",
+      "bytes": 27460,
+      "sha256": "ffbb728cc2ff6255fa819f3da0a95211019202e44141d9dd12fa8ecaead22f57"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-10.source.json",
+      "bytes": 334,
+      "sha256": "2ebdf846929a864e755f1a3a36387560adaf1c8f6390b769535166ee4870e673"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-11.png",
+      "bytes": 32277,
+      "sha256": "c254944480d00f749f6b5a75e6fdfaa2e492a0cf02d39785820c3d93e0a090f7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-11.source.json",
+      "bytes": 334,
+      "sha256": "df9eeddec26bb50fcdf7082adc5c1bc68f3cd30ba238190b352f318814d479f4"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-12.png",
+      "bytes": 25314,
+      "sha256": "894ba1eb072a80a82e0f30882cd429a6a2ecfea235d0adfc143b1069c430898f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-12.source.json",
+      "bytes": 334,
+      "sha256": "d14f2ad2c70fe359b39a898075f56b333726818dc8fe91ebbe587a1bc30743bd"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-13.png",
+      "bytes": 17685,
+      "sha256": "b3cc89d3a8c6cbd0b5d27bc2b89402181af33ea1c994f425f2e8fb217b4b603b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-13.source.json",
+      "bytes": 334,
+      "sha256": "2759ccf3f0aba2fcbd75f5046450c0948b1b8da98bced4d436c76510b298fe79"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-14.png",
+      "bytes": 21441,
+      "sha256": "279a0b400f1733148a78f3c578a82925ffaf28fbf10e4448ed59c0b3f5259f14"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-14.source.json",
+      "bytes": 334,
+      "sha256": "d46f9ef55611fc2aaa538d490c30f96acfe00e6c03c324e47f8b5927a08b5401"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-15.png",
+      "bytes": 24204,
+      "sha256": "699868fcca87f2c5677e2048c2cc5c59cd6aa452ca974662d491f2df4387617c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-15.source.json",
+      "bytes": 334,
+      "sha256": "9db188a24a6c44ae8994520a924f4a37a986d7bfabd17be1c05988381834fa52"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-16.png",
+      "bytes": 26905,
+      "sha256": "0847858f9f624a6417cf6b9f593d0f75069b0c01782a9a8f2a4e03abcbabbc86"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-16.source.json",
+      "bytes": 334,
+      "sha256": "e595af31ab0a2b613df41e8dc4b87d1c5e7387ef019aab5d135a66bc64b90c15"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-17.png",
+      "bytes": 25107,
+      "sha256": "a5ac38da8acc56ae16cd935aea832a6561999e6b7f0a90f2dae66e7e91da02d7"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-17.source.json",
+      "bytes": 334,
+      "sha256": "04bf8c3796fb4984981d19a74145be0bdb93ecc4f4d509c31d8d827a9bdb47f0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-18.png",
+      "bytes": 26587,
+      "sha256": "0506930193a5b489f404bcb1c1e050b627f18fbe4d033b46e982a31aa5dac0e0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-18.source.json",
+      "bytes": 334,
+      "sha256": "803017f19d5f21b3a12153c58b43795866a00a6fdab69150113ad3f86b1ba34f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-19.png",
+      "bytes": 23749,
+      "sha256": "1a51390dd5bf5a6d05c179677d89b3cf69dc1731ddfb4991267d92fb1b34536b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-19.source.json",
+      "bytes": 334,
+      "sha256": "171ba802e2b882efb9e517ca3ec87ff0bbccbb7d6adc48a3f9c31bc3001b100e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-2.png",
+      "bytes": 23293,
+      "sha256": "d3bbe72dc014b5da7912ce06832ec722e80f7160986893babec354d3f15a58ff"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-2.source.json",
+      "bytes": 334,
+      "sha256": "89da62bd9286079812cb58383df1a9c9bd580f3b9f6268c3a437b4ab3f74719f"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-20.png",
+      "bytes": 22186,
+      "sha256": "da292293ce7cb0d68cc3e87dfe988e47f6c0a0536b7c1c12497c037eca523dc1"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-20.source.json",
+      "bytes": 334,
+      "sha256": "83ba36440b395fba16f612ceaf05af52bac92d3ea1e2c435d52d64dcc9416f4d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-21.png",
+      "bytes": 40806,
+      "sha256": "8c62c7db623b33a68fedf797bb675687d257cb6f0e11123a59ce8140e8d6b702"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-21.source.json",
+      "bytes": 334,
+      "sha256": "0d599cdcda83ca95d484e98af50911a537fc3729f6a781f59b43a094f443f2b1"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-22.png",
+      "bytes": 39186,
+      "sha256": "cc719bb73d216cb3535bb6f6704da63950b0c21c6c778094208600d519788c67"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-22.source.json",
+      "bytes": 334,
+      "sha256": "39f50855ab11066c6780e0a5524dc90f50c61ccb2212666222974ba7f5ae812b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-23.png",
+      "bytes": 21296,
+      "sha256": "17a15b102e3de435ff0b0a07d6ae04b5dd84b8de4d43cc85e3e42f8f3285af58"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-23.source.json",
+      "bytes": 334,
+      "sha256": "cd6a2395fdd465e1029f7d48478ea345690e4be10698c9d55abfd099af94f0a2"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-3.png",
+      "bytes": 24671,
+      "sha256": "80c9c45070483da129676279de70d9ac34e7dc64b13865b4d2f5a22ff2373b63"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-3.source.json",
+      "bytes": 334,
+      "sha256": "e77e4e490864f0b4e7d70c5fb42558800084ba2c9f409c1536cefb13ca21c63a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-4.png",
+      "bytes": 24290,
+      "sha256": "55727b116a9a10a541ce1d87b7955773ca7497c69397fe87b04fe20d260890a8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-4.source.json",
+      "bytes": 334,
+      "sha256": "123608c40edb69361cecf0495e4ace4295ff4bdf5fff1ba5e879ba4cd33de7f0"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-5.png",
+      "bytes": 26914,
+      "sha256": "6936c34aa5d316cb5167c9fbb629b727fc3ed3dded15896b492b5e7d8468f8a8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-5.source.json",
+      "bytes": 334,
+      "sha256": "01df5b34cba246c27d20e44dfc0241fae37dda1073b2aceb724bb5bb4065955e"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-6.png",
+      "bytes": 24589,
+      "sha256": "0186d3f70d0e1b194614cfc32b7a1b3e1e6b54bf816634d2d4cdccbe1c8854b6"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-6.source.json",
+      "bytes": 334,
+      "sha256": "fba1670592e7959460a4cc89a85e03158a009027f949f09d31e24ec5dc02636b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-7.png",
+      "bytes": 26330,
+      "sha256": "60fd36b938872f24997f5b78c4dee779e8a5dfadcfc6cc86ccebe01630813f87"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-7.source.json",
+      "bytes": 334,
+      "sha256": "79097b6c6a5b9d6c48cee9406dbc35d8a8f84b6c418d814b262806e5085f417b"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-8.png",
+      "bytes": 22873,
+      "sha256": "3927bb6d34bc2939fc283f5a8199270f84e488323ec97f1573f36692a359ecc8"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-8.source.json",
+      "bytes": 334,
+      "sha256": "75fa9d033405bf47745926e7d53ee0dc2b9d1cb09c4419f9bfbf12681bd19572"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-9.png",
+      "bytes": 25539,
+      "sha256": "96e89aeac96361bbbeaf6209dbf72795ee098c758b2d45ec8df63769e29a4d9c"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/chapter-11/fig-11-9.source.json",
+      "bytes": 333,
+      "sha256": "a737db8c0a713ca3bbaf6a29d0e203a257b975c26f305f3c24954bcd210c7c2d"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/fonts/FONTLOG.txt",
+      "bytes": 42578,
+      "sha256": "72370ec269d5a7941ab4d45b3057599db771d119e3546ee516ddee8c3bff4204"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/fonts/OFL.txt",
+      "bytes": 4519,
+      "sha256": "0c8825913b60d858aacdb33c4ca6660a7d64b0d6464702efbb19313f5765861a"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/fonts/source.json",
+      "bytes": 958,
+      "sha256": "4b968f6f09abfe4b043631fad689710f240cf905510a23db663806c82ff8b126"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/fonts/STIXTwoMath-Regular.woff2",
+      "bytes": 551908,
+      "sha256": "094191335def3f0452c81ec0713cfc2f29bb6af8cecbf79b60881fbf2db97562"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/assets/frontmatter/cambridge-university-press.png",
+      "bytes": 18075,
+      "sha256": "0f5967d61b20e75c1a2e7ee8cca0c839c6f80de71a8b2090a3ea8ebe93334f29"
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/offline-images.json",
+      "bytes": 16068,
+      "sha256": "7ca6922343e5224ff9674bbdfa4a40ccb363c6491027f2936c24914bc1f25e7e"
+    }
+  ]
+}

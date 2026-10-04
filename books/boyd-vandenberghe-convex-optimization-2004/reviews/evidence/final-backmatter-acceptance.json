@@ -1,0 +1,21 @@
+{
+  "accepted": {
+    "C": {
+      "verdictSha256": "98d95c9770592766e6aafcd771d6ac60e9c632c2ad0d029f654e6a8bb2dff19e",
+      "sourceSha256": "1e9145dd98b77d38b95441efe0bd2275b458e4f1d08052b98a92e277ce69141b",
+      "jsonSha256": "9eed920a2871d933b58ce2ba67ef2c00768292383f1809b60dffa9f7ecc15c6f"
+    },
+    "references": {
+      "verdictSha256": "102535875febd29deaea9f2aac4d9ae8caf8ddf600cc6e375d0e576e74e32f94",
+      "sourceSha256": "f0dad10cd7c6515b16d74b311abbb1bae3dbaac3e1b2590572b67c4e955460bc",
+      "jsonSha256": "dfcf781f580a47949b703b8e737275e850e2513c8aeb0ce2bded383e268ab6ab"
+    },
+    "notation": {
+      "verdictSha256": "d997297ddfc6869a124ea2f56f9cf5cec2921129f09f0ebcac47029ccb4e0c5b",
+      "sourceSha256": "0c19c4d420b5b4f5c1bdc941773452c1479b9a9e5952217ad23485f70eaa0f24",
+      "jsonSha256": "fb0e5b05248103571a01362f986ef78be0df70fdf0e724035d435cd46fae7bba"
+    }
+  },
+  "checklistItemsMarked": 82,
+  "wholeBookAccepted": false
+}

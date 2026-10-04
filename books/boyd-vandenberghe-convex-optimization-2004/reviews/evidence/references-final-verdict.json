@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "chapter": "references",
+  "sourceSha256": "a540c591737380324bc44deee625a3366c8c0a0ec183f6ada81cd84eff78c328",
+  "jsonSha256": "42dd72b43cb3770ec54a1ae58cd1a97d8c02fd3b0f30052403152d0ffc3fe13d",
+  "reportSha256": "93fdec96f1a61f2df138a9d56bc2ceb58d9fb9204b743d3b32e44ce593bb9b32",
+  "evidenceSha256": {
+    "entry-review-ledger.json": "ad5102b2f369303ea5686ee04e54346b0f4043005ba0834bb868b4c283ab13b7",
+    "source-crop-provenance.json": "44f89a5a1fec537aa882ef0343df4a248ca5d879a5f289caf2c446a3a0ac5d96",
+    "wording-correction-independent.json": "7886f4ab0e4d0365ff1dda31c97a23c3dd2929f5e0383a83bd181193b2a63455",
+    "final-source-dom-independent.json": "068928fed98a853f65adb7df3916778b9fd7be7d72a5ad1d9d72e7b73a9f4bb2",
+    "final-web-input02/results.json": "781c229949a7f4d0049277a0875b605b49ded05f7613bff5397df3ee09fe839d",
+    "final-web-input02/adjacent-navigation.json": "4b8c42b2ac841a5564297f561842b7cc90166fccd36687d10bdbb4124efab402",
+    "../review-global/terminology-delta-independent.json": "75787d2e783a4cdd26d56a5e103dccaa42f8ba49d252fefaeec205f86b02f37c",
+    "../review-global/static-input02.json": "2bb36b60115134286979c0c2f7d51b553a5992db5338d150b438682ea78e3446",
+    "../review-global/restore-references-input02/results.json": "124b3c777a33b82970fc9f64f6851d3175ada19ef9b0e7d8fea8ace90d577c88",
+    "guide-prefix-independent.json": "f041c57b3a11f30e2e704600476280850a990fa067d987d943366f49d9c27588",
+    "final-web-input03/results.json": "fde81db6c17d4d3b71a22cc130fd5c0faffe630e2552704e5599f61f5483b042",
+    "../review-global/restore-input03/results.json": "bbfbfa5d66df25ac0c77183d321d2a504b531695335be7babd0056d2a59f8baa"
+  },
+  "counts": {
+    "pdfPages": 12,
+    "entries": 250,
+    "blocks": 252,
+    "inlineMath": 2,
+    "displayMath": 0,
+    "urls": 13,
+    "superscriptPlusKeys": 3,
+    "accentedKeys": 6,
+    "readerViews": 4,
+    "actualCitationClicks": 22,
+    "actualAdjacentNavigationClicks": 4,
+    "reloadAndReopenChecks": 16
+  },
+  "closedIssues": [
+    "REF-P01",
+    "REF-P02",
+    "REF-P03",
+    "REF-P04",
+    "REF-L01"
+  ],
+  "unresolvedIssues": [],
+  "scope": "References including the final editorial-guide label accepted; whole-reader and real site registration closure remain separate."
+}

@@ -43,6 +43,7 @@ jobs:
           done
           mkdir -p site/books/mackay-information-theory-2003
           cp books/mackay-information-theory-2003/reference-index.json books/mackay-information-theory-2003/offline-images.json site/books/mackay-information-theory-2003/
+          cp books/boyd-vandenberghe-convex-optimization-2004/offline-images.json site/books/boyd-vandenberghe-convex-optimization-2004/
           cp icons/*.png site/icons/
           sed -i "s/__BUILD_VERSION__/${GITHUB_SHA}/g" site/sw.js
       - uses: actions/upload-pages-artifact@v3

@@ -1,0 +1,40 @@
+{
+  "verdict": "PASS",
+  "reviewer": "convex_build",
+  "initialTranslator": false,
+  "unit": "C",
+  "sourceSha256": "1e9145dd98b77d38b95441efe0bd2275b458e4f1d08052b98a92e277ce69141b",
+  "jsonSha256": "9eed920a2871d933b58ce2ba67ef2c00768292383f1809b60dffa9f7ecc15c6f",
+  "reviewReportSha256": "a496adc63cb114139b749ec1a9544e1d621391132e14aceaa31e0d1ad882744b",
+  "originalPdfPages": [
+    675,
+    698
+  ],
+  "contentDirectlyComparedWithOriginalPages": true,
+  "visualScreenshotsDirectlyInspected": true,
+  "readerViewportWidths": [
+    1440,
+    390,
+    390,
+    320
+  ],
+  "readerThemes": [
+    "light",
+    "light",
+    "dark",
+    "dark"
+  ],
+  "all23StaticReferencesExist": true,
+  "all23StaticReferenceCount": 2409,
+  "actualReferenceClicks": 108,
+  "previousNextAndMobileDirectoryPassed": true,
+  "progressReloadPassed": true,
+  "unresolvedUnitFindings": [],
+  "evidence": {
+    "tmp\\convex\\review-appendixC\\reader\\independent-check.json": "d1907f4982e6411839d45e37e1194021ff1e66d734218c713700f614f9c31383",
+    "tmp\\convex\\review-appendixC\\navigation\\results.json": "40eadbcd8a0a6eb01c7feb4e84186bdfa36651f626ea7e52aef1f424504eac83",
+    "tmp\\convex\\review-appendixC\\long-formula-reader\\independent-check.json": "ce8035fceba3cd0479e5a0c96fefaba5ef0c7cda17198a6f544b057e83b6d4aa",
+    "tmp\\convex\\review-appendixC\\snapshots\\integrated\\compile-check.json": "3a4762bf3e6df277e4576efe6c5767122a3723b3064becfcb3283e6551114a76"
+  },
+  "scope": "Exact source/JSON above. Later whole-book changes require separate hash delta closure."
+}
