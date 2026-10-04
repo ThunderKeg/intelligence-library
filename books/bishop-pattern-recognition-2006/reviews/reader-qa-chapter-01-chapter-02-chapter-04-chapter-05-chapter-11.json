@@ -1,0 +1,1142 @@
+{
+  "results": [
+    {
+      "unit": "chapter-01",
+      "screen": "desktop-light",
+      "blocks": 563,
+      "images": 36,
+      "math": 1404,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p18-b006",
+          "fenceHeight": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "block": "read-p18-b006",
+          "fenceHeight": 41.078125,
+          "fractionHeight": 39.9375
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p66-b002",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p58-b002",
+        "top": 85.03125,
+        "bottom": 138.671875,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 81009
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-01",
+      "screen": "mobile-dark",
+      "blocks": 563,
+      "images": 36,
+      "math": 1404,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p18-b006",
+          "fenceHeight": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "block": "read-p18-b006",
+          "fenceHeight": 37.609375,
+          "fractionHeight": 37.03125
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p66-b002",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p58-b002",
+        "top": 84.609375,
+        "bottom": 132.40625,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 110343
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-02",
+      "screen": "desktop-light",
+      "blocks": 790,
+      "images": 32,
+      "math": 1501,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 56,
+          "tableHeight": 54.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 46.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 46.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 51.28125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 51.28125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 39.953125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 39.953125
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 52,
+          "tableHeight": 51.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72.375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72.375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        }
+      ],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p30-b011",
+          "fenceHeight": 53.140625,
+          "fractionHeight": 35.9375
+        },
+        {
+          "block": "read-p52-b004",
+          "fenceHeight": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "block": "read-p52-b004",
+          "fenceHeight": 41.078125,
+          "fractionHeight": 39.9375
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p70-b014",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p61-b003",
+        "top": 84.625,
+        "bottom": 138.265625,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 86574
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-02",
+      "screen": "mobile-dark",
+      "blocks": 790,
+      "images": 32,
+      "math": 1501,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 48.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.78125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.78125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 50,
+          "tableHeight": 46.78125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 50,
+          "tableHeight": 46.78125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 45.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 45.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.875
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 46,
+          "tableHeight": 45.484375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 69.421875,
+          "tableHeight": 66.328125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 69.421875,
+          "tableHeight": 66.328125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 69.421875,
+          "tableHeight": 65.765625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 69.421875,
+          "tableHeight": 65.765625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        }
+      ],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p30-b011",
+          "fenceHeight": 50.578125,
+          "fractionHeight": 33.03125
+        },
+        {
+          "block": "read-p52-b004",
+          "fenceHeight": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "block": "read-p52-b004",
+          "fenceHeight": 37.609375,
+          "fractionHeight": 37.03125
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p70-b014",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p61-b003",
+        "top": 85.34375,
+        "bottom": 133.140625,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 108698
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-04",
+      "screen": "desktop-light",
+      "blocks": 495,
+      "images": 16,
+      "math": 963,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 48,
+          "tableHeight": 46.625
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 56,
+          "tableHeight": 55
+        }
+      ],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p30-b012",
+          "fenceHeight": 44.078125,
+          "fractionHeight": 42.9375
+        },
+        {
+          "block": "read-p36-b005",
+          "fenceHeight": 38.578125,
+          "fractionHeight": 37.4375
+        },
+        {
+          "block": "read-p36-b009",
+          "fenceHeight": 41.03125,
+          "fractionHeight": 39.890625
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p46-b001",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p42-b009",
+        "top": 84.6875,
+        "bottom": 138.328125,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 57410
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-04",
+      "screen": "mobile-dark",
+      "blocks": 495,
+      "images": 16,
+      "math": 963,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 42,
+          "tableHeight": 41.125
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 48.84375
+        }
+      ],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p30-b012",
+          "fenceHeight": 40.328125,
+          "fractionHeight": 39.75
+        },
+        {
+          "block": "read-p36-b005",
+          "fenceHeight": 34.609375,
+          "fractionHeight": 34.03125
+        },
+        {
+          "block": "read-p36-b009",
+          "fenceHeight": 36.9375,
+          "fractionHeight": 36.359375
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p46-b001",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p42-b009",
+        "top": 84.953125,
+        "bottom": 132.75,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 74578
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-05",
+      "screen": "desktop-light",
+      "blocks": 672,
+      "images": 24,
+      "math": 984,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p14-b004",
+          "fenceHeight": 43.765625,
+          "fractionHeight": 42.625
+        },
+        {
+          "block": "read-p15-b008",
+          "fenceHeight": 41.03125,
+          "fractionHeight": 39.890625
+        },
+        {
+          "block": "read-p40-b002",
+          "fenceHeight": 43.578125,
+          "fractionHeight": 42.4375
+        },
+        {
+          "block": "read-p40-b004",
+          "fenceHeight": 45.390625,
+          "fractionHeight": 44.25
+        },
+        {
+          "block": "read-p40-b004",
+          "fenceHeight": 51.1875,
+          "fractionHeight": 42.9375
+        },
+        {
+          "block": "read-p40-b008",
+          "fenceHeight": 45.390625,
+          "fractionHeight": 44.25
+        },
+        {
+          "block": "read-p42-b004",
+          "fenceHeight": 42.078125,
+          "fractionHeight": 40.9375
+        },
+        {
+          "block": "read-p42-b004",
+          "fenceHeight": 51.484375,
+          "fractionHeight": 48.84375
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p66-b003",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p60-b006",
+        "top": 85.390625,
+        "bottom": 139.03125,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 82954
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-05",
+      "screen": "mobile-dark",
+      "blocks": 672,
+      "images": 24,
+      "math": 984,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p14-b004",
+          "fenceHeight": 38.96875,
+          "fractionHeight": 38.390625
+        },
+        {
+          "block": "read-p15-b008",
+          "fenceHeight": 36.9375,
+          "fractionHeight": 36.359375
+        },
+        {
+          "block": "read-p40-b002",
+          "fenceHeight": 39.421875,
+          "fractionHeight": 38.84375
+        },
+        {
+          "block": "read-p40-b004",
+          "fenceHeight": 40.96875,
+          "fractionHeight": 40.390625
+        },
+        {
+          "block": "read-p40-b004",
+          "fenceHeight": 46.09375,
+          "fractionHeight": 39.75
+        },
+        {
+          "block": "read-p40-b008",
+          "fenceHeight": 40.96875,
+          "fractionHeight": 40.390625
+        },
+        {
+          "block": "read-p42-b004",
+          "fenceHeight": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "block": "read-p42-b004",
+          "fenceHeight": 45.078125,
+          "fractionHeight": 43.6875
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p66-b003",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p60-b006",
+        "top": 84.921875,
+        "bottom": 132.71875,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 108913
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-11",
+      "screen": "desktop-light",
+      "blocks": 290,
+      "images": 19,
+      "math": 725,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 61,
+          "tableHeight": 56.3125
+        }
+      ],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p04-b007",
+          "fenceHeight": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "block": "read-p04-b007",
+          "fenceHeight": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "block": "read-p05-b006",
+          "fenceHeight": 46.390625,
+          "fractionHeight": 45.25
+        },
+        {
+          "block": "read-p05-b006",
+          "fenceHeight": 46.390625,
+          "fractionHeight": 45.25
+        },
+        {
+          "block": "read-p06-b004",
+          "fenceHeight": 46.390625,
+          "fractionHeight": 45.25
+        },
+        {
+          "block": "read-p06-b004",
+          "fenceHeight": 46.390625,
+          "fractionHeight": 45.25
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p36-b001",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p34-b001",
+        "top": 84.859375,
+        "bottom": 138.5,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 45611
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-11",
+      "screen": "mobile-dark",
+      "blocks": 290,
+      "images": 19,
+      "math": 725,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 49.484375
+        }
+      ],
+      "fractionFenceGeometry": [
+        {
+          "block": "read-p04-b007",
+          "fenceHeight": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "block": "read-p04-b007",
+          "fenceHeight": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "block": "read-p05-b006",
+          "fenceHeight": 42.328125,
+          "fractionHeight": 41.75
+        },
+        {
+          "block": "read-p05-b006",
+          "fenceHeight": 42.328125,
+          "fractionHeight": 41.75
+        },
+        {
+          "block": "read-p06-b004",
+          "fenceHeight": 42.328125,
+          "fractionHeight": 41.75
+        },
+        {
+          "block": "read-p06-b004",
+          "fenceHeight": 42.328125,
+          "fractionHeight": 41.75
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p36-b001",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p34-b001",
+        "top": 85.046875,
+        "bottom": 132.84375,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 61106
+      },
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\navigation",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

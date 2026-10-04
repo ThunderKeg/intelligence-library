@@ -1,0 +1,25 @@
+{
+  "scope": "Structural checks only; no automatic semantic or editorial acceptance.",
+  "units": [
+    {
+      "unit": "chapter-13",
+      "sourceNormalizedSha256": "23a7a231dd8934f49bef0e30577142ff2e912685185de87be04e3a47c6cb3333",
+      "sourceFileSha256": "4ae3d565acc41c1ea1d82dda06fc54682036f34dc2d8d0f64d8e0edbef7c4528",
+      "rootBlocks": 404,
+      "blockKinds": {
+        "heading": 15,
+        "intro": 1,
+        "figure": 24,
+        "paragraph": 232,
+        "formula": 132
+      },
+      "numberedEquations": 128,
+      "images": 24,
+      "mathFragments": 884,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 34,
+      "status": "structural-checks-passed"
+    }
+  ]
+}

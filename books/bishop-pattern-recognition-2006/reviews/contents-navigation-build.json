@@ -1,0 +1,1903 @@
+{
+  "scope": "Link and heading alignment only; independent editorial review remains required.",
+  "rows": [
+    {
+      "title": "前言",
+      "pageLabel": "vii",
+      "pdfPage": 7,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001"
+    },
+    {
+      "title": "数学记号",
+      "pageLabel": "xi",
+      "pdfPage": 11,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=notation#read-p01-b001"
+    },
+    {
+      "title": "目录",
+      "pageLabel": "xiii",
+      "pdfPage": 13,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=contents#read-p01-b001"
+    },
+    {
+      "title": "1 绪论",
+      "pageLabel": "1",
+      "pdfPage": 21,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p01-b001"
+    },
+    {
+      "title": "1.1 示例：多项式曲线拟合",
+      "pageLabel": "4",
+      "pdfPage": 24,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p04-b004"
+    },
+    {
+      "title": "1.2 概率论",
+      "pageLabel": "12",
+      "pdfPage": 32,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p12-b002"
+    },
+    {
+      "title": "1.2.1 概率密度",
+      "pageLabel": "17",
+      "pdfPage": 37,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p17-b006"
+    },
+    {
+      "title": "1.2.2 期望与协方差",
+      "pageLabel": "19",
+      "pdfPage": 39,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p19-b010"
+    },
+    {
+      "title": "1.2.3 贝叶斯概率",
+      "pageLabel": "21",
+      "pdfPage": 41,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p21-b001"
+    },
+    {
+      "title": "1.2.4 高斯分布",
+      "pageLabel": "24",
+      "pdfPage": 44,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p24-b003"
+    },
+    {
+      "title": "1.2.5 再谈曲线拟合",
+      "pageLabel": "28",
+      "pdfPage": 48,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p28-b004"
+    },
+    {
+      "title": "1.2.6 贝叶斯曲线拟合",
+      "pageLabel": "30",
+      "pdfPage": 50,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p30-b011"
+    },
+    {
+      "title": "1.3 模型选择",
+      "pageLabel": "32",
+      "pdfPage": 52,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p32-b002"
+    },
+    {
+      "title": "1.4 维数灾难",
+      "pageLabel": "33",
+      "pdfPage": 53,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p33-b007"
+    },
+    {
+      "title": "1.5 决策论",
+      "pageLabel": "38",
+      "pdfPage": 58,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p38-b002"
+    },
+    {
+      "title": "1.5.1 最小化误分类率",
+      "pageLabel": "39",
+      "pdfPage": 59,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p39-b005"
+    },
+    {
+      "title": "1.5.2 最小化期望损失",
+      "pageLabel": "41",
+      "pdfPage": 61,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p41-b003"
+    },
+    {
+      "title": "1.5.3 拒绝选项",
+      "pageLabel": "42",
+      "pdfPage": 62,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p42-b005"
+    },
+    {
+      "title": "1.5.4 推断与决策",
+      "pageLabel": "42",
+      "pdfPage": 62,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p42-b008"
+    },
+    {
+      "title": "1.5.5 回归的损失函数",
+      "pageLabel": "46",
+      "pdfPage": 66,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p46-b006"
+    },
+    {
+      "title": "1.6 信息论",
+      "pageLabel": "48",
+      "pdfPage": 68,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p48-b007"
+    },
+    {
+      "title": "1.6.1 相对熵与互信息",
+      "pageLabel": "55",
+      "pdfPage": 75,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p55-b004"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "58",
+      "pdfPage": 78,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p58-b002"
+    },
+    {
+      "title": "2 概率分布",
+      "pageLabel": "67",
+      "pdfPage": 87,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p01-b001"
+    },
+    {
+      "title": "2.1 二元变量",
+      "pageLabel": "68",
+      "pdfPage": 88,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p02-b005"
+    },
+    {
+      "title": "2.1.1 Beta 分布",
+      "pageLabel": "71",
+      "pdfPage": 91,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p05-b005"
+    },
+    {
+      "title": "2.2 多项变量",
+      "pageLabel": "74",
+      "pdfPage": 94,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p08-b011"
+    },
+    {
+      "title": "2.2.1 狄利克雷分布",
+      "pageLabel": "76",
+      "pdfPage": 96,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p10-b010"
+    },
+    {
+      "title": "2.3 高斯分布",
+      "pageLabel": "78",
+      "pdfPage": 98,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p12-b003"
+    },
+    {
+      "title": "2.3.1 条件高斯分布",
+      "pageLabel": "85",
+      "pdfPage": 105,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p19-b002"
+    },
+    {
+      "title": "2.3.2 边缘高斯分布",
+      "pageLabel": "88",
+      "pdfPage": 108,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p22-b001"
+    },
+    {
+      "title": "2.3.3 高斯变量的贝叶斯定理",
+      "pageLabel": "90",
+      "pdfPage": 110,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p24-b009"
+    },
+    {
+      "title": "2.3.4 高斯分布的最大似然估计",
+      "pageLabel": "93",
+      "pdfPage": 113,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p27-b010"
+    },
+    {
+      "title": "2.3.5 序贯估计",
+      "pageLabel": "94",
+      "pdfPage": 114,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p28-b010"
+    },
+    {
+      "title": "2.3.6 高斯分布的贝叶斯推断",
+      "pageLabel": "97",
+      "pdfPage": 117,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p31-b005"
+    },
+    {
+      "title": "2.3.7 Student t 分布",
+      "pageLabel": "102",
+      "pdfPage": 122,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p36-b009"
+    },
+    {
+      "title": "2.3.8 周期变量",
+      "pageLabel": "105",
+      "pdfPage": 125,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p39-b009"
+    },
+    {
+      "title": "2.3.9 高斯混合",
+      "pageLabel": "110",
+      "pdfPage": 130,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p44-b005"
+    },
+    {
+      "title": "2.4 指数族",
+      "pageLabel": "113",
+      "pdfPage": 133,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p47-b002"
+    },
+    {
+      "title": "2.4.1 最大似然与充分统计量",
+      "pageLabel": "116",
+      "pdfPage": 136,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p50-b006"
+    },
+    {
+      "title": "2.4.2 共轭先验",
+      "pageLabel": "117",
+      "pdfPage": 137,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p51-b004"
+    },
+    {
+      "title": "2.4.3 无信息先验",
+      "pageLabel": "117",
+      "pdfPage": 137,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p51-b010"
+    },
+    {
+      "title": "2.5 非参数方法",
+      "pageLabel": "120",
+      "pdfPage": 140,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p54-b004"
+    },
+    {
+      "title": "2.5.1 核密度估计",
+      "pageLabel": "122",
+      "pdfPage": 142,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p56-b002"
+    },
+    {
+      "title": "2.5.2 近邻方法",
+      "pageLabel": "124",
+      "pdfPage": 144,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p58-b007"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "127",
+      "pdfPage": 147,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p61-b003"
+    },
+    {
+      "title": "3 用于回归的线性模型",
+      "pageLabel": "137",
+      "pdfPage": 157,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p01-b001"
+    },
+    {
+      "title": "3.1 线性基函数模型",
+      "pageLabel": "138",
+      "pdfPage": 158,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p02-b003"
+    },
+    {
+      "title": "3.1.1 最大似然与最小二乘",
+      "pageLabel": "140",
+      "pdfPage": 160,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p04-b004"
+    },
+    {
+      "title": "3.1.2 最小二乘的几何解释",
+      "pageLabel": "143",
+      "pdfPage": 163,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p07-b003"
+    },
+    {
+      "title": "3.1.3 序贯学习",
+      "pageLabel": "143",
+      "pdfPage": 163,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p07-b006"
+    },
+    {
+      "title": "3.1.4 正则化最小二乘",
+      "pageLabel": "144",
+      "pdfPage": 164,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p08-b007"
+    },
+    {
+      "title": "3.1.5 多输出",
+      "pageLabel": "146",
+      "pdfPage": 166,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p10-b003"
+    },
+    {
+      "title": "3.2 偏差—方差分解",
+      "pageLabel": "147",
+      "pdfPage": 167,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p11-b007"
+    },
+    {
+      "title": "3.3 贝叶斯线性回归",
+      "pageLabel": "152",
+      "pdfPage": 172,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p16-b004"
+    },
+    {
+      "title": "3.3.1 参数分布",
+      "pageLabel": "152",
+      "pdfPage": 172,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p16-b007"
+    },
+    {
+      "title": "3.3.2 预测分布",
+      "pageLabel": "156",
+      "pdfPage": 176,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p20-b005"
+    },
+    {
+      "title": "3.3.3 等效核",
+      "pageLabel": "159",
+      "pdfPage": 179,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p23-b002"
+    },
+    {
+      "title": "3.4 贝叶斯模型比较",
+      "pageLabel": "161",
+      "pdfPage": 181,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p25-b005"
+    },
+    {
+      "title": "3.5 证据近似",
+      "pageLabel": "165",
+      "pdfPage": 185,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p29-b003"
+    },
+    {
+      "title": "3.5.1 计算证据函数",
+      "pageLabel": "166",
+      "pdfPage": 186,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p30-b006"
+    },
+    {
+      "title": "3.5.2 最大化证据函数",
+      "pageLabel": "168",
+      "pdfPage": 188,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p32-b003"
+    },
+    {
+      "title": "3.5.3 参数的有效数目",
+      "pageLabel": "170",
+      "pdfPage": 190,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p34-b002"
+    },
+    {
+      "title": "3.6 固定基函数的局限性",
+      "pageLabel": "172",
+      "pdfPage": 192,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p36-b004"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "173",
+      "pdfPage": 193,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p37-b005"
+    },
+    {
+      "title": "4 用于分类的线性模型",
+      "pageLabel": "179",
+      "pdfPage": 199,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b001"
+    },
+    {
+      "title": "4.1 判别函数",
+      "pageLabel": "181",
+      "pdfPage": 201,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p03-b003"
+    },
+    {
+      "title": "4.1.1 二分类",
+      "pageLabel": "181",
+      "pdfPage": 201,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p03-b005"
+    },
+    {
+      "title": "4.1.2 多分类",
+      "pageLabel": "182",
+      "pdfPage": 202,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p04-b010"
+    },
+    {
+      "title": "4.1.3 用于分类的最小二乘",
+      "pageLabel": "184",
+      "pdfPage": 204,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p06-b007"
+    },
+    {
+      "title": "4.1.4 Fisher 线性判别",
+      "pageLabel": "186",
+      "pdfPage": 206,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p08-b005"
+    },
+    {
+      "title": "4.1.5 与最小二乘的关系",
+      "pageLabel": "189",
+      "pdfPage": 209,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p11-b012"
+    },
+    {
+      "title": "4.1.6 多分类的 Fisher 判别",
+      "pageLabel": "191",
+      "pdfPage": 211,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p13-b001"
+    },
+    {
+      "title": "4.1.7 感知机算法",
+      "pageLabel": "192",
+      "pdfPage": 212,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p14-b013"
+    },
+    {
+      "title": "4.2 概率生成式模型",
+      "pageLabel": "196",
+      "pdfPage": 216,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p18-b005"
+    },
+    {
+      "title": "4.2.1 连续输入",
+      "pageLabel": "198",
+      "pdfPage": 218,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p20-b008"
+    },
+    {
+      "title": "4.2.2 最大似然解",
+      "pageLabel": "200",
+      "pdfPage": 220,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p22-b002"
+    },
+    {
+      "title": "4.2.3 离散特征",
+      "pageLabel": "202",
+      "pdfPage": 222,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p24-b007"
+    },
+    {
+      "title": "4.2.4 指数族",
+      "pageLabel": "202",
+      "pdfPage": 222,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p24-b013"
+    },
+    {
+      "title": "4.3 概率判别式模型",
+      "pageLabel": "203",
+      "pdfPage": 223,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p25-b012"
+    },
+    {
+      "title": "4.3.1 固定基函数",
+      "pageLabel": "204",
+      "pdfPage": 224,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p26-b003"
+    },
+    {
+      "title": "4.3.2 逻辑回归",
+      "pageLabel": "205",
+      "pdfPage": 225,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p27-b004"
+    },
+    {
+      "title": "4.3.3 迭代重加权最小二乘",
+      "pageLabel": "207",
+      "pdfPage": 227,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p29-b001"
+    },
+    {
+      "title": "4.3.4 多类别逻辑回归",
+      "pageLabel": "209",
+      "pdfPage": 229,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p31-b001"
+    },
+    {
+      "title": "4.3.5 Probit 回归",
+      "pageLabel": "210",
+      "pdfPage": 230,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p32-b006"
+    },
+    {
+      "title": "4.3.6 典范连接函数",
+      "pageLabel": "212",
+      "pdfPage": 232,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p34-b006"
+    },
+    {
+      "title": "4.4 拉普拉斯近似",
+      "pageLabel": "213",
+      "pdfPage": 233,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p35-b014"
+    },
+    {
+      "title": "4.4.1 模型比较与 BIC",
+      "pageLabel": "216",
+      "pdfPage": 236,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p38-b003"
+    },
+    {
+      "title": "4.5 贝叶斯逻辑回归",
+      "pageLabel": "217",
+      "pdfPage": 237,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p39-b008"
+    },
+    {
+      "title": "4.5.1 拉普拉斯近似",
+      "pageLabel": "217",
+      "pdfPage": 237,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p39-b010"
+    },
+    {
+      "title": "4.5.2 预测分布",
+      "pageLabel": "218",
+      "pdfPage": 238,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p40-b010"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "220",
+      "pdfPage": 240,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p42-b009"
+    },
+    {
+      "title": "5 神经网络",
+      "pageLabel": "225",
+      "pdfPage": 245,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p01-b001"
+    },
+    {
+      "title": "5.1 前馈网络函数",
+      "pageLabel": "227",
+      "pdfPage": 247,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p03-b001"
+    },
+    {
+      "title": "5.1.1 权重空间的对称性",
+      "pageLabel": "231",
+      "pdfPage": 251,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p07-b004"
+    },
+    {
+      "title": "5.2 网络训练",
+      "pageLabel": "232",
+      "pdfPage": 252,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p08-b005"
+    },
+    {
+      "title": "5.2.1 参数优化",
+      "pageLabel": "236",
+      "pdfPage": 256,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p12-b007"
+    },
+    {
+      "title": "5.2.2 局部二次近似",
+      "pageLabel": "237",
+      "pdfPage": 257,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p13-b009"
+    },
+    {
+      "title": "5.2.3 梯度信息的使用",
+      "pageLabel": "239",
+      "pdfPage": 259,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p15-b010"
+    },
+    {
+      "title": "5.2.4 梯度下降优化",
+      "pageLabel": "240",
+      "pdfPage": 260,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p16-b003"
+    },
+    {
+      "title": "5.3 误差反向传播",
+      "pageLabel": "241",
+      "pdfPage": 261,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p17-b004"
+    },
+    {
+      "title": "5.3.1 误差函数导数的计算",
+      "pageLabel": "242",
+      "pdfPage": 262,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p18-b002"
+    },
+    {
+      "title": "5.3.2 一个简单例子",
+      "pageLabel": "245",
+      "pdfPage": 265,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p21-b004"
+    },
+    {
+      "title": "5.3.3 反向传播的效率",
+      "pageLabel": "246",
+      "pdfPage": 266,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p22-b007"
+    },
+    {
+      "title": "5.3.4 雅可比矩阵",
+      "pageLabel": "247",
+      "pdfPage": 267,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p23-b004"
+    },
+    {
+      "title": "5.4 Hessian 矩阵",
+      "pageLabel": "249",
+      "pdfPage": 269,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p25-b005"
+    },
+    {
+      "title": "5.4.1 对角近似",
+      "pageLabel": "250",
+      "pdfPage": 270,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p26-b002"
+    },
+    {
+      "title": "5.4.2 外积近似",
+      "pageLabel": "251",
+      "pdfPage": 271,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p27-b001"
+    },
+    {
+      "title": "5.4.3 Hessian 矩阵的逆",
+      "pageLabel": "252",
+      "pdfPage": 272,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p28-b001"
+    },
+    {
+      "title": "5.4.4 有限差分",
+      "pageLabel": "252",
+      "pdfPage": 272,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p28-b012"
+    },
+    {
+      "title": "5.4.5 Hessian 矩阵的精确计算",
+      "pageLabel": "253",
+      "pdfPage": 273,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p29-b005"
+    },
+    {
+      "title": "5.4.6 与 Hessian 矩阵的快速乘法",
+      "pageLabel": "254",
+      "pdfPage": 274,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p30-b006"
+    },
+    {
+      "title": "5.5 神经网络中的正则化",
+      "pageLabel": "256",
+      "pdfPage": 276,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p32-b006"
+    },
+    {
+      "title": "5.5.1 一致的高斯先验",
+      "pageLabel": "257",
+      "pdfPage": 277,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p33-b005"
+    },
+    {
+      "title": "5.5.2 提前停止",
+      "pageLabel": "259",
+      "pdfPage": 279,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p35-b010"
+    },
+    {
+      "title": "5.5.3 不变性",
+      "pageLabel": "261",
+      "pdfPage": 281,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p37-b003"
+    },
+    {
+      "title": "5.5.4 切向传播",
+      "pageLabel": "263",
+      "pdfPage": 283,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p39-b003"
+    },
+    {
+      "title": "5.5.5 使用变换后的数据训练",
+      "pageLabel": "265",
+      "pdfPage": 285,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p41-b003"
+    },
+    {
+      "title": "5.5.6 卷积网络",
+      "pageLabel": "267",
+      "pdfPage": 287,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p43-b009"
+    },
+    {
+      "title": "5.5.7 软权重共享",
+      "pageLabel": "269",
+      "pdfPage": 289,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p45-b005"
+    },
+    {
+      "title": "5.6 混合密度网络",
+      "pageLabel": "272",
+      "pdfPage": 292,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p48-b004"
+    },
+    {
+      "title": "5.7 贝叶斯神经网络",
+      "pageLabel": "277",
+      "pdfPage": 297,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p53-b007"
+    },
+    {
+      "title": "5.7.1 参数的后验分布",
+      "pageLabel": "278",
+      "pdfPage": 298,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p54-b002"
+    },
+    {
+      "title": "5.7.2 超参数优化",
+      "pageLabel": "280",
+      "pdfPage": 300,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p56-b004"
+    },
+    {
+      "title": "5.7.3 用于分类的贝叶斯神经网络",
+      "pageLabel": "281",
+      "pdfPage": 301,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p57-b009"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "284",
+      "pdfPage": 304,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p60-b006"
+    },
+    {
+      "title": "6 核方法",
+      "pageLabel": "291",
+      "pdfPage": 311,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p01-b001"
+    },
+    {
+      "title": "6.1 对偶表示",
+      "pageLabel": "293",
+      "pdfPage": 313,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p03-b001"
+    },
+    {
+      "title": "6.2 核的构造",
+      "pageLabel": "294",
+      "pdfPage": 314,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p04-b006"
+    },
+    {
+      "title": "6.3 径向基函数网络",
+      "pageLabel": "299",
+      "pdfPage": 319,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p09-b007"
+    },
+    {
+      "title": "6.3.1 Nadaraya–Watson 模型",
+      "pageLabel": "301",
+      "pdfPage": 321,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p11-b003"
+    },
+    {
+      "title": "6.4 高斯过程",
+      "pageLabel": "303",
+      "pdfPage": 323,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p13-b007"
+    },
+    {
+      "title": "6.4.1 重新考察线性回归",
+      "pageLabel": "304",
+      "pdfPage": 324,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p14-b005"
+    },
+    {
+      "title": "6.4.2 用于回归的高斯过程",
+      "pageLabel": "306",
+      "pdfPage": 326,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p16-b002"
+    },
+    {
+      "title": "6.4.3 学习超参数",
+      "pageLabel": "311",
+      "pdfPage": 331,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p21-b002"
+    },
+    {
+      "title": "6.4.4 自动相关性确定",
+      "pageLabel": "312",
+      "pdfPage": 332,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p22-b003"
+    },
+    {
+      "title": "6.4.5 用于分类的高斯过程",
+      "pageLabel": "313",
+      "pdfPage": 333,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p23-b006"
+    },
+    {
+      "title": "6.4.6 拉普拉斯近似",
+      "pageLabel": "315",
+      "pdfPage": 335,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p25-b007"
+    },
+    {
+      "title": "6.4.7 与神经网络的联系",
+      "pageLabel": "319",
+      "pdfPage": 339,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p29-b002"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "320",
+      "pdfPage": 340,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p30-b002"
+    },
+    {
+      "title": "7 稀疏核机器",
+      "pageLabel": "325",
+      "pdfPage": 345,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p01-b001"
+    },
+    {
+      "title": "7.1 最大间隔分类器",
+      "pageLabel": "326",
+      "pdfPage": 346,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p02-b003"
+    },
+    {
+      "title": "7.1.1 类别分布重叠",
+      "pageLabel": "331",
+      "pdfPage": 351,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p07-b004"
+    },
+    {
+      "title": "7.1.2 与逻辑回归的关系",
+      "pageLabel": "336",
+      "pdfPage": 356,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p12-b008"
+    },
+    {
+      "title": "7.1.3 多类 SVM",
+      "pageLabel": "338",
+      "pdfPage": 358,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p14-b003"
+    },
+    {
+      "title": "7.1.4 用于回归的 SVM",
+      "pageLabel": "339",
+      "pdfPage": 359,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p15-b005"
+    },
+    {
+      "title": "7.1.5 计算学习理论",
+      "pageLabel": "344",
+      "pdfPage": 364,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p20-b002"
+    },
+    {
+      "title": "7.2 相关向量机",
+      "pageLabel": "345",
+      "pdfPage": 365,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p21-b003"
+    },
+    {
+      "title": "7.2.1 用于回归的 RVM",
+      "pageLabel": "345",
+      "pdfPage": 365,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p21-b007"
+    },
+    {
+      "title": "7.2.2 稀疏性分析",
+      "pageLabel": "349",
+      "pdfPage": 369,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p25-b005"
+    },
+    {
+      "title": "7.2.3 用于分类的 RVM",
+      "pageLabel": "353",
+      "pdfPage": 373,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p29-b013"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "357",
+      "pdfPage": 377,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p33-b001"
+    },
+    {
+      "title": "8 图模型",
+      "pageLabel": "359",
+      "pdfPage": 379,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p01-b001"
+    },
+    {
+      "title": "8.1 贝叶斯网络",
+      "pageLabel": "360",
+      "pdfPage": 380,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p02-b004"
+    },
+    {
+      "title": "8.1.1 示例：多项式回归",
+      "pageLabel": "362",
+      "pdfPage": 382,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p04-b009"
+    },
+    {
+      "title": "8.1.2 生成式模型",
+      "pageLabel": "365",
+      "pdfPage": 385,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p07-b005"
+    },
+    {
+      "title": "8.1.3 离散变量",
+      "pageLabel": "366",
+      "pdfPage": 386,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p08-b006"
+    },
+    {
+      "title": "8.1.4 线性高斯模型",
+      "pageLabel": "370",
+      "pdfPage": 390,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p12-b001"
+    },
+    {
+      "title": "8.2 条件独立",
+      "pageLabel": "372",
+      "pdfPage": 392,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p14-b005"
+    },
+    {
+      "title": "8.2.1 三个图的例子",
+      "pageLabel": "373",
+      "pdfPage": 393,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p15-b007"
+    },
+    {
+      "title": "8.2.2 d 分离",
+      "pageLabel": "378",
+      "pdfPage": 398,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p20-b004"
+    },
+    {
+      "title": "8.3 马尔可夫随机场",
+      "pageLabel": "383",
+      "pdfPage": 403,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p25-b003"
+    },
+    {
+      "title": "8.3.1 条件独立性质",
+      "pageLabel": "383",
+      "pdfPage": 403,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p25-b006"
+    },
+    {
+      "title": "8.3.2 因子分解性质",
+      "pageLabel": "384",
+      "pdfPage": 404,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p26-b008"
+    },
+    {
+      "title": "8.3.3 示例：图像去噪",
+      "pageLabel": "387",
+      "pdfPage": 407,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p29-b007"
+    },
+    {
+      "title": "8.3.4 与有向图的关系",
+      "pageLabel": "390",
+      "pdfPage": 410,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p32-b005"
+    },
+    {
+      "title": "8.4 图模型中的推断",
+      "pageLabel": "393",
+      "pdfPage": 413,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p35-b008"
+    },
+    {
+      "title": "8.4.1 链上的推断",
+      "pageLabel": "394",
+      "pdfPage": 414,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p36-b008"
+    },
+    {
+      "title": "8.4.2 树",
+      "pageLabel": "398",
+      "pdfPage": 418,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p40-b008"
+    },
+    {
+      "title": "8.4.3 因子图",
+      "pageLabel": "399",
+      "pdfPage": 419,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p41-b005"
+    },
+    {
+      "title": "8.4.4 和积算法",
+      "pageLabel": "402",
+      "pdfPage": 422,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p44-b003"
+    },
+    {
+      "title": "8.4.5 最大和算法",
+      "pageLabel": "411",
+      "pdfPage": 431,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p53-b004"
+    },
+    {
+      "title": "8.4.6 一般图中的精确推断",
+      "pageLabel": "416",
+      "pdfPage": 436,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p58-b001"
+    },
+    {
+      "title": "8.4.7 有环信念传播",
+      "pageLabel": "417",
+      "pdfPage": 437,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p59-b002"
+    },
+    {
+      "title": "8.4.8 学习图结构",
+      "pageLabel": "418",
+      "pdfPage": 438,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p60-b003"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "418",
+      "pdfPage": 438,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p60-b009"
+    },
+    {
+      "title": "9 混合模型与 EM",
+      "pageLabel": "423",
+      "pdfPage": 443,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b001"
+    },
+    {
+      "title": "9.1 K 均值聚类",
+      "pageLabel": "424",
+      "pdfPage": 444,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p02-b003"
+    },
+    {
+      "title": "9.1.1 图像分割与压缩",
+      "pageLabel": "428",
+      "pdfPage": 448,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p06-b005"
+    },
+    {
+      "title": "9.2 高斯混合",
+      "pageLabel": "430",
+      "pdfPage": 450,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p08-b002"
+    },
+    {
+      "title": "9.2.1 最大似然",
+      "pageLabel": "432",
+      "pdfPage": 452,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p10-b007"
+    },
+    {
+      "title": "9.2.2 高斯混合的 EM 算法",
+      "pageLabel": "435",
+      "pdfPage": 455,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p13-b004"
+    },
+    {
+      "title": "9.3 从另一角度看 EM",
+      "pageLabel": "439",
+      "pdfPage": 459,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p17-b002"
+    },
+    {
+      "title": "9.3.1 再论高斯混合",
+      "pageLabel": "441",
+      "pdfPage": 461,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p19-b004"
+    },
+    {
+      "title": "9.3.2 与 K 均值的关系",
+      "pageLabel": "443",
+      "pdfPage": 463,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p21-b008"
+    },
+    {
+      "title": "9.3.3 伯努利分布的混合",
+      "pageLabel": "444",
+      "pdfPage": 464,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p22-b011"
+    },
+    {
+      "title": "9.3.4 用于贝叶斯线性回归的 EM",
+      "pageLabel": "448",
+      "pdfPage": 468,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p26-b004"
+    },
+    {
+      "title": "9.4 一般的 EM 算法",
+      "pageLabel": "450",
+      "pdfPage": 470,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p28-b004"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "455",
+      "pdfPage": 475,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p33-b008"
+    },
+    {
+      "title": "10 近似推断",
+      "pageLabel": "461",
+      "pdfPage": 481,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p01-b001"
+    },
+    {
+      "title": "10.1 变分推断",
+      "pageLabel": "462",
+      "pdfPage": 482,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p02-b005"
+    },
+    {
+      "title": "10.1.1 因子化分布",
+      "pageLabel": "464",
+      "pdfPage": 484,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p04-b005"
+    },
+    {
+      "title": "10.1.2 因子化近似的性质",
+      "pageLabel": "466",
+      "pdfPage": 486,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p06-b008"
+    },
+    {
+      "title": "10.1.3 示例：一元高斯分布",
+      "pageLabel": "470",
+      "pdfPage": 490,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p10-b006"
+    },
+    {
+      "title": "10.1.4 模型比较",
+      "pageLabel": "473",
+      "pdfPage": 493,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p13-b006"
+    },
+    {
+      "title": "10.2 示例：高斯混合的变分推断",
+      "pageLabel": "474",
+      "pdfPage": 494,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p14-b002"
+    },
+    {
+      "title": "10.2.1 变分分布",
+      "pageLabel": "475",
+      "pdfPage": 495,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p15-b008"
+    },
+    {
+      "title": "10.2.2 变分下界",
+      "pageLabel": "481",
+      "pdfPage": 501,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p21-b002"
+    },
+    {
+      "title": "10.2.3 预测密度",
+      "pageLabel": "482",
+      "pdfPage": 502,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p22-b007"
+    },
+    {
+      "title": "10.2.4 确定分量数",
+      "pageLabel": "483",
+      "pdfPage": 503,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p23-b010"
+    },
+    {
+      "title": "10.2.5 诱导的因子化",
+      "pageLabel": "485",
+      "pdfPage": 505,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p25-b002"
+    },
+    {
+      "title": "10.3 变分线性回归",
+      "pageLabel": "486",
+      "pdfPage": 506,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p26-b003"
+    },
+    {
+      "title": "10.3.1 变分分布",
+      "pageLabel": "486",
+      "pdfPage": 506,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p26-b013"
+    },
+    {
+      "title": "10.3.2 预测分布",
+      "pageLabel": "488",
+      "pdfPage": 508,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p28-b012"
+    },
+    {
+      "title": "10.3.3 下界",
+      "pageLabel": "489",
+      "pdfPage": 509,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p29-b004"
+    },
+    {
+      "title": "10.4 指数族分布",
+      "pageLabel": "490",
+      "pdfPage": 510,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p30-b002"
+    },
+    {
+      "title": "10.4.1 变分消息传递",
+      "pageLabel": "491",
+      "pdfPage": 511,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p31-b015"
+    },
+    {
+      "title": "10.5 局部变分方法",
+      "pageLabel": "493",
+      "pdfPage": 513,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p33-b001"
+    },
+    {
+      "title": "10.6 变分逻辑回归",
+      "pageLabel": "498",
+      "pdfPage": 518,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p38-b002"
+    },
+    {
+      "title": "10.6.1 变分后验分布",
+      "pageLabel": "498",
+      "pdfPage": 518,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p38-b004"
+    },
+    {
+      "title": "10.6.2 优化变分参数",
+      "pageLabel": "500",
+      "pdfPage": 520,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p40-b009"
+    },
+    {
+      "title": "10.6.3 超参数推断",
+      "pageLabel": "502",
+      "pdfPage": 522,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p42-b005"
+    },
+    {
+      "title": "10.7 期望传播",
+      "pageLabel": "505",
+      "pdfPage": 525,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p45-b008"
+    },
+    {
+      "title": "10.7.1 示例：杂波问题",
+      "pageLabel": "511",
+      "pdfPage": 531,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p51-b002"
+    },
+    {
+      "title": "10.7.2 图上的期望传播",
+      "pageLabel": "513",
+      "pdfPage": 533,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p53-b007"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "517",
+      "pdfPage": 537,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p57-b004"
+    },
+    {
+      "title": "11 采样方法",
+      "pageLabel": "523",
+      "pdfPage": 543,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p01-b001"
+    },
+    {
+      "title": "11.1 基本采样算法",
+      "pageLabel": "526",
+      "pdfPage": 546,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p04-b003"
+    },
+    {
+      "title": "11.1.1 标准分布",
+      "pageLabel": "526",
+      "pdfPage": 546,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p04-b005"
+    },
+    {
+      "title": "11.1.2 拒绝采样",
+      "pageLabel": "528",
+      "pdfPage": 548,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p06-b008"
+    },
+    {
+      "title": "11.1.3 自适应拒绝采样",
+      "pageLabel": "530",
+      "pdfPage": 550,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p08-b004"
+    },
+    {
+      "title": "11.1.4 重要性采样",
+      "pageLabel": "532",
+      "pdfPage": 552,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p10-b003"
+    },
+    {
+      "title": "11.1.5 采样重要性重采样",
+      "pageLabel": "534",
+      "pdfPage": 554,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p12-b006"
+    },
+    {
+      "title": "11.1.6 采样与 EM 算法",
+      "pageLabel": "536",
+      "pdfPage": 556,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p14-b003"
+    },
+    {
+      "title": "11.2 马尔可夫链蒙特卡洛",
+      "pageLabel": "537",
+      "pdfPage": 557,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p15-b004"
+    },
+    {
+      "title": "11.2.1 马尔可夫链",
+      "pageLabel": "539",
+      "pdfPage": 559,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p17-b007"
+    },
+    {
+      "title": "11.2.2 Metropolis–Hastings 算法",
+      "pageLabel": "541",
+      "pdfPage": 561,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p19-b004"
+    },
+    {
+      "title": "11.3 Gibbs 采样",
+      "pageLabel": "542",
+      "pdfPage": 562,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p20-b003"
+    },
+    {
+      "title": "11.4 切片采样",
+      "pageLabel": "546",
+      "pdfPage": 566,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p24-b005"
+    },
+    {
+      "title": "11.5 混合蒙特卡洛算法",
+      "pageLabel": "548",
+      "pdfPage": 568,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p26-b003"
+    },
+    {
+      "title": "11.5.1 动力系统",
+      "pageLabel": "548",
+      "pdfPage": 568,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p26-b006"
+    },
+    {
+      "title": "11.5.2 混合蒙特卡洛",
+      "pageLabel": "552",
+      "pdfPage": 572,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p30-b001"
+    },
+    {
+      "title": "11.6 估计配分函数",
+      "pageLabel": "554",
+      "pdfPage": 574,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p32-b003"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "556",
+      "pdfPage": 576,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p34-b001"
+    },
+    {
+      "title": "12 连续潜变量",
+      "pageLabel": "559",
+      "pdfPage": 579,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p01-b001"
+    },
+    {
+      "title": "12.1 主成分分析",
+      "pageLabel": "561",
+      "pdfPage": 581,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p03-b003"
+    },
+    {
+      "title": "12.1.1 最大方差表述",
+      "pageLabel": "561",
+      "pdfPage": 581,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p03-b006"
+    },
+    {
+      "title": "12.1.2 最小误差表述",
+      "pageLabel": "563",
+      "pdfPage": 583,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p05-b003"
+    },
+    {
+      "title": "12.1.3 PCA 的应用",
+      "pageLabel": "565",
+      "pdfPage": 585,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p07-b011"
+    },
+    {
+      "title": "12.1.4 高维数据的 PCA",
+      "pageLabel": "569",
+      "pdfPage": 589,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p11-b003"
+    },
+    {
+      "title": "12.2 概率 PCA",
+      "pageLabel": "570",
+      "pdfPage": 590,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p12-b012"
+    },
+    {
+      "title": "12.2.1 最大似然 PCA",
+      "pageLabel": "574",
+      "pdfPage": 594,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p16-b002"
+    },
+    {
+      "title": "12.2.2 PCA 的 EM 算法",
+      "pageLabel": "577",
+      "pdfPage": 597,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p19-b004"
+    },
+    {
+      "title": "12.2.3 贝叶斯 PCA",
+      "pageLabel": "580",
+      "pdfPage": 600,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p22-b004"
+    },
+    {
+      "title": "12.2.4 因子分析",
+      "pageLabel": "583",
+      "pdfPage": 603,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p25-b009"
+    },
+    {
+      "title": "12.3 核 PCA",
+      "pageLabel": "586",
+      "pdfPage": 606,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p28-b006"
+    },
+    {
+      "title": "12.4 非线性潜变量模型",
+      "pageLabel": "591",
+      "pdfPage": 611,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b001"
+    },
+    {
+      "title": "12.4.1 独立成分分析",
+      "pageLabel": "591",
+      "pdfPage": 611,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b004"
+    },
+    {
+      "title": "12.4.2 自联想神经网络",
+      "pageLabel": "592",
+      "pdfPage": 612,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p34-b007"
+    },
+    {
+      "title": "12.4.3 非线性流形建模",
+      "pageLabel": "595",
+      "pdfPage": 615,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p37-b002"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "599",
+      "pdfPage": 619,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p41-b003"
+    },
+    {
+      "title": "13 序列数据",
+      "pageLabel": "605",
+      "pdfPage": 625,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p01-b001"
+    },
+    {
+      "title": "13.1 马尔可夫模型",
+      "pageLabel": "607",
+      "pdfPage": 627,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p03-b004"
+    },
+    {
+      "title": "13.2 隐马尔可夫模型",
+      "pageLabel": "610",
+      "pdfPage": 630,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p06-b005"
+    },
+    {
+      "title": "13.2.1 HMM 的最大似然",
+      "pageLabel": "615",
+      "pdfPage": 635,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p11-b003"
+    },
+    {
+      "title": "13.2.2 前向—后向算法",
+      "pageLabel": "618",
+      "pdfPage": 638,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p14-b010"
+    },
+    {
+      "title": "13.2.3 HMM 的和积算法",
+      "pageLabel": "625",
+      "pdfPage": 645,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p21-b004"
+    },
+    {
+      "title": "13.2.4 缩放因子",
+      "pageLabel": "627",
+      "pdfPage": 647,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p23-b007"
+    },
+    {
+      "title": "13.2.5 Viterbi 算法",
+      "pageLabel": "629",
+      "pdfPage": 649,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p25-b002"
+    },
+    {
+      "title": "13.2.6 隐马尔可夫模型的扩展",
+      "pageLabel": "631",
+      "pdfPage": 651,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p27-b002"
+    },
+    {
+      "title": "13.3 线性动力系统",
+      "pageLabel": "635",
+      "pdfPage": 655,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p31-b003"
+    },
+    {
+      "title": "13.3.1 LDS 中的推断",
+      "pageLabel": "638",
+      "pdfPage": 658,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p34-b001"
+    },
+    {
+      "title": "13.3.2 LDS 中的学习",
+      "pageLabel": "642",
+      "pdfPage": 662,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p38-b001"
+    },
+    {
+      "title": "13.3.3 LDS 的扩展",
+      "pageLabel": "644",
+      "pdfPage": 664,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p40-b002"
+    },
+    {
+      "title": "13.3.4 粒子滤波器",
+      "pageLabel": "645",
+      "pdfPage": 665,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p41-b001"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "646",
+      "pdfPage": 666,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p42-b009"
+    },
+    {
+      "title": "14 模型组合",
+      "pageLabel": "653",
+      "pdfPage": 673,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p01-b001"
+    },
+    {
+      "title": "14.1 贝叶斯模型平均",
+      "pageLabel": "654",
+      "pdfPage": 674,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p02-b005"
+    },
+    {
+      "title": "14.2 委员会",
+      "pageLabel": "655",
+      "pdfPage": 675,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p03-b011"
+    },
+    {
+      "title": "14.3 提升",
+      "pageLabel": "657",
+      "pdfPage": 677,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p05-b004"
+    },
+    {
+      "title": "14.3.1 最小化指数误差",
+      "pageLabel": "659",
+      "pdfPage": 679,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p07-b004"
+    },
+    {
+      "title": "14.3.2 提升的误差函数",
+      "pageLabel": "661",
+      "pdfPage": 681,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p09-b012"
+    },
+    {
+      "title": "14.4 基于树的模型",
+      "pageLabel": "663",
+      "pdfPage": 683,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p11-b003"
+    },
+    {
+      "title": "14.5 条件混合模型",
+      "pageLabel": "666",
+      "pdfPage": 686,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p14-b008"
+    },
+    {
+      "title": "14.5.1 线性回归模型的混合",
+      "pageLabel": "667",
+      "pdfPage": 687,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p15-b002"
+    },
+    {
+      "title": "14.5.2 逻辑模型的混合",
+      "pageLabel": "670",
+      "pdfPage": 690,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p18-b002"
+    },
+    {
+      "title": "14.5.3 专家混合",
+      "pageLabel": "672",
+      "pdfPage": 692,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p20-b007"
+    },
+    {
+      "title": "习题",
+      "pageLabel": "674",
+      "pdfPage": 694,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p22-b002"
+    },
+    {
+      "title": "附录 A 数据集",
+      "pageLabel": "677",
+      "pdfPage": 697,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p01-b001"
+    },
+    {
+      "title": "附录 B 概率分布",
+      "pageLabel": "685",
+      "pdfPage": 705,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001"
+    },
+    {
+      "title": "附录 C 矩阵的性质",
+      "pageLabel": "695",
+      "pdfPage": 715,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p01-b001"
+    },
+    {
+      "title": "附录 D 变分法",
+      "pageLabel": "703",
+      "pdfPage": 723,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p01-b001"
+    },
+    {
+      "title": "附录 E 拉格朗日乘子",
+      "pageLabel": "707",
+      "pdfPage": 727,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p01-b001"
+    },
+    {
+      "title": "参考文献",
+      "pageLabel": "711",
+      "pdfPage": 731,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=references#read-p01-b001"
+    },
+    {
+      "title": "索引",
+      "pageLabel": "729",
+      "pdfPage": 749,
+      "target": "?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b001"
+    }
+  ],
+  "titleChanges": [
+    {
+      "original": "2.1.1 贝塔分布",
+      "aligned": "2.1.1 Beta 分布",
+      "pageLabel": "71",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p05-b005"
+    },
+    {
+      "original": "2.5.1 核密度估计器",
+      "aligned": "2.5.1 核密度估计",
+      "pageLabel": "122",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p56-b002"
+    },
+    {
+      "original": "2.5.2 最近邻方法",
+      "aligned": "2.5.2 近邻方法",
+      "pageLabel": "124",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p58-b007"
+    },
+    {
+      "original": "3.3.3 等价核",
+      "aligned": "3.3.3 等效核",
+      "pageLabel": "159",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p23-b002"
+    },
+    {
+      "original": "3.5.1 证据函数的计算",
+      "aligned": "3.5.1 计算证据函数",
+      "pageLabel": "166",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p30-b006"
+    },
+    {
+      "original": "3.5.2 证据函数的最大化",
+      "aligned": "3.5.2 最大化证据函数",
+      "pageLabel": "168",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p32-b003"
+    },
+    {
+      "original": "3.5.3 参数的有效个数",
+      "aligned": "3.5.3 参数的有效数目",
+      "pageLabel": "170",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p34-b002"
+    },
+    {
+      "original": "3.6 固定基函数的局限",
+      "aligned": "3.6 固定基函数的局限性",
+      "pageLabel": "172",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p36-b004"
+    },
+    {
+      "original": "4.1.1 两个类别",
+      "aligned": "4.1.1 二分类",
+      "pageLabel": "181",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p03-b005"
+    },
+    {
+      "original": "4.1.2 多个类别",
+      "aligned": "4.1.2 多分类",
+      "pageLabel": "182",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p04-b010"
+    },
+    {
+      "original": "4.1.6 多类别 Fisher 判别",
+      "aligned": "4.1.6 多分类的 Fisher 判别",
+      "pageLabel": "191",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p13-b001"
+    },
+    {
+      "original": "5.3.2 一个简单示例",
+      "aligned": "5.3.2 一个简单例子",
+      "pageLabel": "245",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p21-b004"
+    },
+    {
+      "original": "5.4.3 Hessian 逆矩阵",
+      "aligned": "5.4.3 Hessian 矩阵的逆",
+      "pageLabel": "252",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p28-b001"
+    },
+    {
+      "original": "6.2 构造核",
+      "aligned": "6.2 核的构造",
+      "pageLabel": "294",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p04-b006"
+    },
+    {
+      "original": "6.4.1 再谈线性回归",
+      "aligned": "6.4.1 重新考察线性回归",
+      "pageLabel": "304",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p14-b005"
+    },
+    {
+      "original": "7.1.1 相互重叠的类别分布",
+      "aligned": "7.1.1 类别分布重叠",
+      "pageLabel": "331",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p07-b004"
+    },
+    {
+      "original": "7.1.3 多类别 SVM",
+      "aligned": "7.1.3 多类 SVM",
+      "pageLabel": "338",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p14-b003"
+    },
+    {
+      "original": "8.2.1 三个图示例",
+      "aligned": "8.2.1 三个图的例子",
+      "pageLabel": "373",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p15-b007"
+    },
+    {
+      "original": "8.2.2 D 分离",
+      "aligned": "8.2.2 d 分离",
+      "pageLabel": "378",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p20-b004"
+    },
+    {
+      "original": "8.4.7 有环置信传播",
+      "aligned": "8.4.7 有环信念传播",
+      "pageLabel": "417",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p59-b002"
+    },
+    {
+      "original": "9.3 EM 的另一种解释",
+      "aligned": "9.3 从另一角度看 EM",
+      "pageLabel": "439",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p17-b002"
+    },
+    {
+      "original": "9.3.1 再谈高斯混合",
+      "aligned": "9.3.1 再论高斯混合",
+      "pageLabel": "441",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p19-b004"
+    },
+    {
+      "original": "9.3.4 贝叶斯线性回归的 EM 算法",
+      "aligned": "9.3.4 用于贝叶斯线性回归的 EM",
+      "pageLabel": "448",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p26-b004"
+    },
+    {
+      "original": "9.4 一般形式的 EM 算法",
+      "aligned": "9.4 一般的 EM 算法",
+      "pageLabel": "450",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p28-b004"
+    },
+    {
+      "original": "10.2 示例：变分高斯混合",
+      "aligned": "10.2 示例：高斯混合的变分推断",
+      "pageLabel": "474",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p14-b002"
+    },
+    {
+      "original": "10.2.4 确定分量个数",
+      "aligned": "10.2.4 确定分量数",
+      "pageLabel": "483",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p23-b010"
+    },
+    {
+      "original": "10.2.5 诱导出的因子分解",
+      "aligned": "10.2.5 诱导的因子化",
+      "pageLabel": "485",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p25-b002"
+    },
+    {
+      "original": "11.1.5 采样—重要性—重采样",
+      "aligned": "11.1.5 采样重要性重采样",
+      "pageLabel": "534",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p12-b006"
+    },
+    {
+      "original": "13.2.1 HMM 的最大似然估计",
+      "aligned": "13.2.1 HMM 的最大似然",
+      "pageLabel": "615",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p11-b003"
+    },
+    {
+      "original": "14.3 提升方法",
+      "aligned": "14.3 提升",
+      "pageLabel": "657",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p05-b004"
+    },
+    {
+      "original": "14.3.2 提升方法的误差函数",
+      "aligned": "14.3.2 提升的误差函数",
+      "pageLabel": "661",
+      "target": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p09-b012"
+    }
+  ]
+}

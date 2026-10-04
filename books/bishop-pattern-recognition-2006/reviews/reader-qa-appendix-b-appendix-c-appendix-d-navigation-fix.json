@@ -1,0 +1,300 @@
+{
+  "results": [
+    {
+      "unit": "appendix-b",
+      "screen": "desktop-light",
+      "blocks": 155,
+      "images": 9,
+      "math": 238,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 56,
+          "tableHeight": 53.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        }
+      ],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p09-b014",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p09-b006",
+        "top": 84.75,
+        "bottom": 138.390625,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 15495
+      },
+      "detailBlocks": [
+        "p05-b018",
+        "p05-b002",
+        "p06-b009"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-b",
+      "screen": "mobile-dark",
+      "blocks": 155,
+      "images": 9,
+      "math": 238,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 48.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        }
+      ],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p09-b014",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p09-b006",
+        "top": 85.09375,
+        "bottom": 132.890625,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 16977
+      },
+      "detailBlocks": [
+        "p05-b018",
+        "p05-b002",
+        "p06-b009"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-c",
+      "screen": "desktop-light",
+      "blocks": 117,
+      "images": 0,
+      "math": 168,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "∣",
+          "fenceHeight": 43.140625,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "∣",
+          "fenceHeight": 43.140625,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 40.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 40.625
+        }
+      ],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p07-b011",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p04-b018",
+        "top": 85.171875,
+        "bottom": 138.8125,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 6003
+      },
+      "detailBlocks": [
+        "p02-b003",
+        "p02-b007",
+        "p04-b002"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-c",
+      "screen": "mobile-dark",
+      "blocks": 117,
+      "images": 0,
+      "math": 168,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "∣",
+          "fenceHeight": 38.421875,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "∣",
+          "fenceHeight": 38.421875,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 37.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 37.125
+        }
+      ],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p07-b011",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p04-b018",
+        "top": 84.921875,
+        "bottom": 132.71875,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 6624
+      },
+      "detailBlocks": [
+        "p02-b003",
+        "p02-b007",
+        "p04-b002"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-d",
+      "screen": "desktop-light",
+      "blocks": 30,
+      "images": 1,
+      "math": 76,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p03-b010",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [
+        "p02-b012",
+        "p02-b010",
+        "p01-b008"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-d",
+      "screen": "mobile-dark",
+      "blocks": 30,
+      "images": 1,
+      "math": 76,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p03-b010",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [
+        "p02-b012",
+        "p02-b010",
+        "p01-b008"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "tmp\\prml-navigation-fix-bcd",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

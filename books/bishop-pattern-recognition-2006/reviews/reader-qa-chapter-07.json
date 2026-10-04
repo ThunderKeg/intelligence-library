@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "unit": "chapter-07",
+      "screen": "desktop-light",
+      "blocks": 348,
+      "images": 14,
+      "math": 733,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 56,
+          "tableHeight": 55.625
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p34-b012",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [
+        "p24-b006",
+        "p12-b002",
+        "p30-b005",
+        "p05-b010",
+        "p28-b009"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-07",
+      "screen": "mobile-dark",
+      "blocks": 348,
+      "images": 14,
+      "math": 733,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 54,
+          "tableHeight": 50.125
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p34-b012",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [
+        "p24-b006",
+        "p12-b002",
+        "p30-b005",
+        "p05-b010",
+        "p28-b009"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

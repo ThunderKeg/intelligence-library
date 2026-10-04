@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "scope": "Only one Chinese character in one source entry and compiled rich HTML block changed; reversing it restores the prior accepted UI fingerprints exactly. All 1097 hrefs unchanged.",
+  "previous": {
+    "sourceNormalizedSha256": "b30ee56d2504b5052e286f9a7b5a44858440bc4b15b50a9938f2e915e376406c",
+    "renderedContentSha256": "19b263c0064614222a7ef03c0ee0deee4741c12578d7ae88241d18918ce3157e",
+    "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "current": {
+    "sourceNormalizedSha256": "d5d87f058e2acdb1b44195a0f49903f16a8026e5d404bfb502a150df5f48b805",
+    "renderedContentSha256": "78a299e251219eb00848a0c53249795cd0e466c6307bb0e4457dc46ea5861a44",
+    "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "screenshots": [
+    {
+      "file": "tmp\\prml-root-review\\index\\ib01-ui\\p10-b004-1440-light.png",
+      "sha256": "c0f5b63c66b0bce2ad0a2d7d55bfdf803650a79ce654aeecfd7ea3cc5f2fb49a",
+      "actuallyViewed": true
+    },
+    {
+      "file": "tmp\\prml-root-review\\index\\ib01-ui\\p10-b004-390-dark.png",
+      "sha256": "e059d0fbee0f8964fca871c0b8aecf769b8416f1c6b8d0809d1ba2b9681ccf9f",
+      "actuallyViewed": true
+    }
+  ]
+}

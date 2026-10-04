@@ -1,0 +1,22 @@
+[
+  {
+    "target": "p03-b004",
+    "block": "p03-b004",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-targets\\appendix-e\\p03-b004-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p03-b004",
+    "block": "p03-b004",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-targets\\appendix-e\\p03-b004-390-dark.png"
+    ],
+    "pans": []
+  }
+]

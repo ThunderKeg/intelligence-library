@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "unit": "chapter-06",
+      "screen": "desktop-light",
+      "blocks": 314,
+      "images": 13,
+      "math": 658,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p33-b003",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [
+        "p25-b009",
+        "p28-b003",
+        "p03-b009",
+        "p06-b001"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-06",
+      "screen": "mobile-dark",
+      "blocks": 314,
+      "images": 13,
+      "math": 658,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p33-b003",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [
+        "p25-b009",
+        "p28-b003",
+        "p03-b009",
+        "p06-b001"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

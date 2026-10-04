@@ -21,8 +21,8 @@ function readProgress(book) {
   } catch { return null; }
 }
 
-function saveProgress(book, chapterId, blockId) {
-  const page = Number(blockId.match(/^read-p(\d+)-/)?.[1]);
+function saveProgress(book, chapterId, blockId, sourcePdfPage) {
+  const page = Number(blockId.match(/^read-p(\d+)-/)?.[1] ?? sourcePdfPage);
   try {
     localStorage.setItem(progressPrefix + book.id, JSON.stringify({ chapter: chapterId, page, block: blockId, updatedAt: Date.now() }));
   } catch { /* Reading remains available when storage is disabled. */ }
@@ -142,7 +142,7 @@ const mathTags = new Set([
 const mathAttributes = new Set([
   "mathvariant", "stretchy", "fence", "separator", "accent", "accentunder", "largeop",
   "movablelimits", "linethickness", "lspace", "rspace", "minsize", "maxsize",
-  "columnalign", "rowalign", "columnspacing", "rowspacing", "columnspan", "rowspan",
+  "columnalign", "rowalign", "columnspacing", "rowspacing", "columnlines", "rowlines", "columnspan", "rowspan",
   "notation", "scriptlevel", "displaystyle",
 ]);
 
@@ -181,6 +181,10 @@ function renderMathml(source, display) {
     for (const attribute of node.attributes) {
       if (mathAttributes.has(attribute.localName) && !attribute.name.includes(":")) {
         result.setAttribute(attribute.localName, attribute.value);
+      }
+      if (node.localName === "mspace" && attribute.name === "width" &&
+          /^-?(?:\d+(?:\.\d*)?|\.\d+)(?:em|ex|px|pt|pc|cm|mm|in|%)$/.test(attribute.value)) {
+        result.setAttribute("width", attribute.value);
       }
     }
     for (const child of node.childNodes) {
@@ -396,6 +400,7 @@ function renderBlock(block, book) {
   }
   const node = element("div", `reading-block reading-${block.kind}`);
   node.id = `read-${block.id}`;
+  if (Number.isFinite(block.pdfPage)) node.dataset.pdfPage = block.pdfPage;
   if (block.kind === "table") {
     node.append(renderTable(block));
   } else if (block.kind === "heading") {
@@ -478,7 +483,7 @@ async function loadReferenceIndex(book) {
 function referenceMatches(text, targets, book, currentChapter, selfBlock) {
   const matches = [];
   const chapters = new Set(book.chapters.map((chapter) => chapter.id));
-  const number = "(?:[A-C]|\\d+)\\.\\d+(?:\\.\\d+)?";
+  const number = "(?:[A-E]|\\d+)\\.\\d+(?:\\.\\d+)?";
   const joined = `(?:\\s*(?:、|,|，|和|及|与|-|–|—|至|到)\\s*${number})+`;
 
   function add(kind, key, start, end) {
@@ -505,16 +510,16 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
 
   singles("chapter", /第\s*(\d+)\s*章/g);
   singles("part", /第\s*([一二三四五六七])\s*部分/g);
-  singles("chapter", /附录\s*([A-C])(?![A-Za-z0-9])/g);
-  singles("section", /(?:第\s*)?((?:[A-C]|\d+)(?:\.\d+){1,2})\s*(?:小)?节/g);
-  singles("section", /附录\s*([A-C]\.\d+(?:\.\d+)?)\s*节?/g);
-  singles("figure", /图\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
-  singles("table", /表\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
-  singles("algorithm", /算法\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
-  singles("exercise", /习题\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
-  singles("example", /(?:示例|例)\s*((?:[A-C]|\d+)\.\d+)(?![\d.])/g);
-  singles("formula", /(?:公式|式)\s*[（(]\s*((?:[A-C]|\d+)\.\d+)\s*[）)]/g);
-  singles("formula", /[（(]\s*((?:[A-C]|\d+)\.\d+)\s*[）)]/g);
+  singles("chapter", /附录\s*([A-E])(?![A-Za-z0-9])/g);
+  singles("section", /(?:第\s*)?((?:[A-E]|\d+)(?:\.\d+){1,2})\s*(?:小)?节/g);
+  singles("section", /附录\s*([A-E]\.\d+(?:\.\d+)?)\s*节?/g);
+  singles("figure", /图\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
+  singles("table", /表\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
+  singles("algorithm", /算法\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
+  singles("exercise", /习题\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
+  singles("example", /(?:示例|例)\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
+  singles("formula", /(?:公式|式)\s*[（(]\s*((?:[A-E]|\d+)\.\d+)\s*[）)]/g);
+  singles("formula", /[（(]\s*((?:[A-E]|\d+)\.\d+)\s*[）)]/g);
   groups("chapter", /第\s*(\d+(?:\s*(?:、|,|，|和|及|与|-|–|—|至|到)\s*\d+)+)\s*章/g, /\d+/g);
   groups("section", new RegExp(`(?:第\\s*)?(${number}${joined})\\s*(?:小)?节`, "g"), new RegExp(number, "g"));
   groups("figure", new RegExp(`图\\s*(${number}${joined})`, "g"), new RegExp(number, "g"));
@@ -785,7 +790,7 @@ async function renderReader(book) {
     }
     const blockId = nodes[current].id;
     if (blockId !== lastSaved) {
-      saveProgress(book, chapterInfo.id, blockId);
+      saveProgress(book, chapterInfo.id, blockId, nodes[current].dataset.pdfPage);
       const entry = history.state;
       if (entry?.readerReturn?.url === location.href) {
         if (historyReturnScrollY !== null && Math.abs(window.scrollY - historyReturnScrollY) > 2) {

@@ -1,0 +1,310 @@
+<!-- pdf-page: 13 -->
+
+# 原书目录
+
+- **[前言](?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001)** — vii
+- **[数学记号](?book=bishop-pattern-recognition-2006&chapter=notation#read-p01-b001)** — xi
+- **[目录](?book=bishop-pattern-recognition-2006&chapter=contents#read-p01-b001)** — xiii
+- **[1 绪论](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p01-b001)** — 1
+- [1.1 示例：多项式曲线拟合](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p04-b004) — 4
+- [1.2 概率论](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p12-b002) — 12
+- [1.2.1 概率密度](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p17-b006) — 17
+- [1.2.2 期望与协方差](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p19-b010) — 19
+- [1.2.3 贝叶斯概率](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p21-b001) — 21
+- [1.2.4 高斯分布](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p24-b003) — 24
+- [1.2.5 再谈曲线拟合](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p28-b004) — 28
+- [1.2.6 贝叶斯曲线拟合](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p30-b011) — 30
+- [1.3 模型选择](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p32-b002) — 32
+- [1.4 维数灾难](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p33-b007) — 33
+- [1.5 决策论](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p38-b002) — 38
+- [1.5.1 最小化误分类率](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p39-b005) — 39
+- [1.5.2 最小化期望损失](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p41-b003) — 41
+- [1.5.3 拒绝选项](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p42-b005) — 42
+- [1.5.4 推断与决策](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p42-b008) — 42
+- [1.5.5 回归的损失函数](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p46-b006) — 46
+- [1.6 信息论](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p48-b007) — 48
+- [1.6.1 相对熵与互信息](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p55-b004) — 55
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p58-b002) — 58
+
+<!-- pdf-page: 14 -->
+
+- **[2 概率分布](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p01-b001)** — 67
+- [2.1 二元变量](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p02-b005) — 68
+- [2.1.1 Beta 分布](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p05-b005) — 71
+- [2.2 多项变量](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p08-b011) — 74
+- [2.2.1 狄利克雷分布](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p10-b010) — 76
+- [2.3 高斯分布](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p12-b003) — 78
+- [2.3.1 条件高斯分布](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p19-b002) — 85
+- [2.3.2 边缘高斯分布](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p22-b001) — 88
+- [2.3.3 高斯变量的贝叶斯定理](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p24-b009) — 90
+- [2.3.4 高斯分布的最大似然估计](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p27-b010) — 93
+- [2.3.5 序贯估计](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p28-b010) — 94
+- [2.3.6 高斯分布的贝叶斯推断](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p31-b005) — 97
+- [2.3.7 Student t 分布](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p36-b009) — 102
+- [2.3.8 周期变量](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p39-b009) — 105
+- [2.3.9 高斯混合](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p44-b005) — 110
+- [2.4 指数族](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p47-b002) — 113
+- [2.4.1 最大似然与充分统计量](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p50-b006) — 116
+- [2.4.2 共轭先验](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p51-b004) — 117
+- [2.4.3 无信息先验](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p51-b010) — 117
+- [2.5 非参数方法](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p54-b004) — 120
+- [2.5.1 核密度估计](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p56-b002) — 122
+- [2.5.2 近邻方法](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p58-b007) — 124
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p61-b003) — 127
+- **[3 用于回归的线性模型](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p01-b001)** — 137
+- [3.1 线性基函数模型](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p02-b003) — 138
+- [3.1.1 最大似然与最小二乘](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p04-b004) — 140
+- [3.1.2 最小二乘的几何解释](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p07-b003) — 143
+- [3.1.3 序贯学习](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p07-b006) — 143
+- [3.1.4 正则化最小二乘](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p08-b007) — 144
+- [3.1.5 多输出](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p10-b003) — 146
+- [3.2 偏差—方差分解](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p11-b007) — 147
+- [3.3 贝叶斯线性回归](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p16-b004) — 152
+- [3.3.1 参数分布](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p16-b007) — 152
+- [3.3.2 预测分布](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p20-b005) — 156
+- [3.3.3 等效核](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p23-b002) — 159
+- [3.4 贝叶斯模型比较](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p25-b005) — 161
+- [3.5 证据近似](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p29-b003) — 165
+- [3.5.1 计算证据函数](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p30-b006) — 166
+- [3.5.2 最大化证据函数](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p32-b003) — 168
+- [3.5.3 参数的有效数目](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p34-b002) — 170
+- [3.6 固定基函数的局限性](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p36-b004) — 172
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p37-b005) — 173
+
+<!-- pdf-page: 15 -->
+
+- **[4 用于分类的线性模型](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b001)** — 179
+- [4.1 判别函数](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p03-b003) — 181
+- [4.1.1 二分类](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p03-b005) — 181
+- [4.1.2 多分类](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p04-b010) — 182
+- [4.1.3 用于分类的最小二乘](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p06-b007) — 184
+- [4.1.4 Fisher 线性判别](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p08-b005) — 186
+- [4.1.5 与最小二乘的关系](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p11-b012) — 189
+- [4.1.6 多分类的 Fisher 判别](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p13-b001) — 191
+- [4.1.7 感知机算法](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p14-b013) — 192
+- [4.2 概率生成式模型](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p18-b005) — 196
+- [4.2.1 连续输入](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p20-b008) — 198
+- [4.2.2 最大似然解](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p22-b002) — 200
+- [4.2.3 离散特征](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p24-b007) — 202
+- [4.2.4 指数族](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p24-b013) — 202
+- [4.3 概率判别式模型](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p25-b012) — 203
+- [4.3.1 固定基函数](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p26-b003) — 204
+- [4.3.2 逻辑回归](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p27-b004) — 205
+- [4.3.3 迭代重加权最小二乘](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p29-b001) — 207
+- [4.3.4 多类别逻辑回归](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p31-b001) — 209
+- [4.3.5 Probit 回归](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p32-b006) — 210
+- [4.3.6 典范连接函数](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p34-b006) — 212
+- [4.4 拉普拉斯近似](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p35-b014) — 213
+- [4.4.1 模型比较与 BIC](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p38-b003) — 216
+- [4.5 贝叶斯逻辑回归](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p39-b008) — 217
+- [4.5.1 拉普拉斯近似](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p39-b010) — 217
+- [4.5.2 预测分布](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p40-b010) — 218
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p42-b009) — 220
+- **[5 神经网络](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p01-b001)** — 225
+- [5.1 前馈网络函数](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p03-b001) — 227
+- [5.1.1 权重空间的对称性](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p07-b004) — 231
+- [5.2 网络训练](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p08-b005) — 232
+- [5.2.1 参数优化](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p12-b007) — 236
+- [5.2.2 局部二次近似](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p13-b009) — 237
+- [5.2.3 梯度信息的使用](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p15-b010) — 239
+- [5.2.4 梯度下降优化](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p16-b003) — 240
+- [5.3 误差反向传播](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p17-b004) — 241
+- [5.3.1 误差函数导数的计算](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p18-b002) — 242
+- [5.3.2 一个简单例子](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p21-b004) — 245
+- [5.3.3 反向传播的效率](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p22-b007) — 246
+- [5.3.4 雅可比矩阵](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p23-b004) — 247
+- [5.4 Hessian 矩阵](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p25-b005) — 249
+- [5.4.1 对角近似](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p26-b002) — 250
+- [5.4.2 外积近似](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p27-b001) — 251
+- [5.4.3 Hessian 矩阵的逆](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p28-b001) — 252
+
+<!-- pdf-page: 16 -->
+
+- [5.4.4 有限差分](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p28-b012) — 252
+- [5.4.5 Hessian 矩阵的精确计算](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p29-b005) — 253
+- [5.4.6 与 Hessian 矩阵的快速乘法](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p30-b006) — 254
+- [5.5 神经网络中的正则化](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p32-b006) — 256
+- [5.5.1 一致的高斯先验](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p33-b005) — 257
+- [5.5.2 提前停止](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p35-b010) — 259
+- [5.5.3 不变性](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p37-b003) — 261
+- [5.5.4 切向传播](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p39-b003) — 263
+- [5.5.5 使用变换后的数据训练](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p41-b003) — 265
+- [5.5.6 卷积网络](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p43-b009) — 267
+- [5.5.7 软权重共享](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p45-b005) — 269
+- [5.6 混合密度网络](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p48-b004) — 272
+- [5.7 贝叶斯神经网络](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p53-b007) — 277
+- [5.7.1 参数的后验分布](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p54-b002) — 278
+- [5.7.2 超参数优化](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p56-b004) — 280
+- [5.7.3 用于分类的贝叶斯神经网络](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p57-b009) — 281
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p60-b006) — 284
+- **[6 核方法](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p01-b001)** — 291
+- [6.1 对偶表示](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p03-b001) — 293
+- [6.2 核的构造](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p04-b006) — 294
+- [6.3 径向基函数网络](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p09-b007) — 299
+- [6.3.1 Nadaraya–Watson 模型](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p11-b003) — 301
+- [6.4 高斯过程](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p13-b007) — 303
+- [6.4.1 重新考察线性回归](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p14-b005) — 304
+- [6.4.2 用于回归的高斯过程](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p16-b002) — 306
+- [6.4.3 学习超参数](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p21-b002) — 311
+- [6.4.4 自动相关性确定](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p22-b003) — 312
+- [6.4.5 用于分类的高斯过程](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p23-b006) — 313
+- [6.4.6 拉普拉斯近似](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p25-b007) — 315
+- [6.4.7 与神经网络的联系](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p29-b002) — 319
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p30-b002) — 320
+- **[7 稀疏核机器](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p01-b001)** — 325
+- [7.1 最大间隔分类器](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p02-b003) — 326
+- [7.1.1 类别分布重叠](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p07-b004) — 331
+- [7.1.2 与逻辑回归的关系](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p12-b008) — 336
+- [7.1.3 多类 SVM](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p14-b003) — 338
+- [7.1.4 用于回归的 SVM](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p15-b005) — 339
+- [7.1.5 计算学习理论](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p20-b002) — 344
+- [7.2 相关向量机](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p21-b003) — 345
+- [7.2.1 用于回归的 RVM](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p21-b007) — 345
+- [7.2.2 稀疏性分析](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p25-b005) — 349
+- [7.2.3 用于分类的 RVM](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p29-b013) — 353
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p33-b001) — 357
+
+<!-- pdf-page: 17 -->
+
+- **[8 图模型](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p01-b001)** — 359
+- [8.1 贝叶斯网络](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p02-b004) — 360
+- [8.1.1 示例：多项式回归](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p04-b009) — 362
+- [8.1.2 生成式模型](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p07-b005) — 365
+- [8.1.3 离散变量](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p08-b006) — 366
+- [8.1.4 线性高斯模型](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p12-b001) — 370
+- [8.2 条件独立](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p14-b005) — 372
+- [8.2.1 三个图的例子](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p15-b007) — 373
+- [8.2.2 d 分离](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p20-b004) — 378
+- [8.3 马尔可夫随机场](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p25-b003) — 383
+- [8.3.1 条件独立性质](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p25-b006) — 383
+- [8.3.2 因子分解性质](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p26-b008) — 384
+- [8.3.3 示例：图像去噪](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p29-b007) — 387
+- [8.3.4 与有向图的关系](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p32-b005) — 390
+- [8.4 图模型中的推断](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p35-b008) — 393
+- [8.4.1 链上的推断](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p36-b008) — 394
+- [8.4.2 树](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p40-b008) — 398
+- [8.4.3 因子图](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p41-b005) — 399
+- [8.4.4 和积算法](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p44-b003) — 402
+- [8.4.5 最大和算法](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p53-b004) — 411
+- [8.4.6 一般图中的精确推断](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p58-b001) — 416
+- [8.4.7 有环信念传播](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p59-b002) — 417
+- [8.4.8 学习图结构](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p60-b003) — 418
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p60-b009) — 418
+- **[9 混合模型与 EM](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b001)** — 423
+- [9.1 K 均值聚类](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p02-b003) — 424
+- [9.1.1 图像分割与压缩](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p06-b005) — 428
+- [9.2 高斯混合](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p08-b002) — 430
+- [9.2.1 最大似然](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p10-b007) — 432
+- [9.2.2 高斯混合的 EM 算法](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p13-b004) — 435
+- [9.3 从另一角度看 EM](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p17-b002) — 439
+- [9.3.1 再论高斯混合](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p19-b004) — 441
+- [9.3.2 与 K 均值的关系](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p21-b008) — 443
+- [9.3.3 伯努利分布的混合](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p22-b011) — 444
+- [9.3.4 用于贝叶斯线性回归的 EM](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p26-b004) — 448
+- [9.4 一般的 EM 算法](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p28-b004) — 450
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p33-b008) — 455
+- **[10 近似推断](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p01-b001)** — 461
+- [10.1 变分推断](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p02-b005) — 462
+- [10.1.1 因子化分布](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p04-b005) — 464
+- [10.1.2 因子化近似的性质](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p06-b008) — 466
+- [10.1.3 示例：一元高斯分布](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p10-b006) — 470
+- [10.1.4 模型比较](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p13-b006) — 473
+- [10.2 示例：高斯混合的变分推断](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p14-b002) — 474
+
+<!-- pdf-page: 18 -->
+
+- [10.2.1 变分分布](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p15-b008) — 475
+- [10.2.2 变分下界](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p21-b002) — 481
+- [10.2.3 预测密度](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p22-b007) — 482
+- [10.2.4 确定分量数](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p23-b010) — 483
+- [10.2.5 诱导的因子化](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p25-b002) — 485
+- [10.3 变分线性回归](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p26-b003) — 486
+- [10.3.1 变分分布](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p26-b013) — 486
+- [10.3.2 预测分布](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p28-b012) — 488
+- [10.3.3 下界](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p29-b004) — 489
+- [10.4 指数族分布](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p30-b002) — 490
+- [10.4.1 变分消息传递](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p31-b015) — 491
+- [10.5 局部变分方法](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p33-b001) — 493
+- [10.6 变分逻辑回归](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p38-b002) — 498
+- [10.6.1 变分后验分布](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p38-b004) — 498
+- [10.6.2 优化变分参数](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p40-b009) — 500
+- [10.6.3 超参数推断](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p42-b005) — 502
+- [10.7 期望传播](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p45-b008) — 505
+- [10.7.1 示例：杂波问题](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p51-b002) — 511
+- [10.7.2 图上的期望传播](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p53-b007) — 513
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p57-b004) — 517
+- **[11 采样方法](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p01-b001)** — 523
+- [11.1 基本采样算法](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p04-b003) — 526
+- [11.1.1 标准分布](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p04-b005) — 526
+- [11.1.2 拒绝采样](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p06-b008) — 528
+- [11.1.3 自适应拒绝采样](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p08-b004) — 530
+- [11.1.4 重要性采样](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p10-b003) — 532
+- [11.1.5 采样重要性重采样](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p12-b006) — 534
+- [11.1.6 采样与 EM 算法](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p14-b003) — 536
+- [11.2 马尔可夫链蒙特卡洛](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p15-b004) — 537
+- [11.2.1 马尔可夫链](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p17-b007) — 539
+- [11.2.2 Metropolis–Hastings 算法](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p19-b004) — 541
+- [11.3 Gibbs 采样](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p20-b003) — 542
+- [11.4 切片采样](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p24-b005) — 546
+- [11.5 混合蒙特卡洛算法](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p26-b003) — 548
+- [11.5.1 动力系统](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p26-b006) — 548
+- [11.5.2 混合蒙特卡洛](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p30-b001) — 552
+- [11.6 估计配分函数](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p32-b003) — 554
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p34-b001) — 556
+- **[12 连续潜变量](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p01-b001)** — 559
+- [12.1 主成分分析](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p03-b003) — 561
+- [12.1.1 最大方差表述](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p03-b006) — 561
+- [12.1.2 最小误差表述](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p05-b003) — 563
+- [12.1.3 PCA 的应用](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p07-b011) — 565
+- [12.1.4 高维数据的 PCA](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p11-b003) — 569
+
+<!-- pdf-page: 19 -->
+
+- [12.2 概率 PCA](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p12-b012) — 570
+- [12.2.1 最大似然 PCA](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p16-b002) — 574
+- [12.2.2 PCA 的 EM 算法](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p19-b004) — 577
+- [12.2.3 贝叶斯 PCA](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p22-b004) — 580
+- [12.2.4 因子分析](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p25-b009) — 583
+- [12.3 核 PCA](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p28-b006) — 586
+- [12.4 非线性潜变量模型](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b001) — 591
+- [12.4.1 独立成分分析](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b004) — 591
+- [12.4.2 自联想神经网络](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p34-b007) — 592
+- [12.4.3 非线性流形建模](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p37-b002) — 595
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p41-b003) — 599
+- **[13 序列数据](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p01-b001)** — 605
+- [13.1 马尔可夫模型](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p03-b004) — 607
+- [13.2 隐马尔可夫模型](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p06-b005) — 610
+- [13.2.1 HMM 的最大似然](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p11-b003) — 615
+- [13.2.2 前向—后向算法](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p14-b010) — 618
+- [13.2.3 HMM 的和积算法](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p21-b004) — 625
+- [13.2.4 缩放因子](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p23-b007) — 627
+- [13.2.5 Viterbi 算法](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p25-b002) — 629
+- [13.2.6 隐马尔可夫模型的扩展](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p27-b002) — 631
+- [13.3 线性动力系统](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p31-b003) — 635
+- [13.3.1 LDS 中的推断](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p34-b001) — 638
+- [13.3.2 LDS 中的学习](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p38-b001) — 642
+- [13.3.3 LDS 的扩展](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p40-b002) — 644
+- [13.3.4 粒子滤波器](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p41-b001) — 645
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p42-b009) — 646
+- **[14 模型组合](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p01-b001)** — 653
+- [14.1 贝叶斯模型平均](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p02-b005) — 654
+- [14.2 委员会](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p03-b011) — 655
+- [14.3 提升](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p05-b004) — 657
+- [14.3.1 最小化指数误差](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p07-b004) — 659
+- [14.3.2 提升的误差函数](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p09-b012) — 661
+- [14.4 基于树的模型](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p11-b003) — 663
+- [14.5 条件混合模型](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p14-b008) — 666
+- [14.5.1 线性回归模型的混合](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p15-b002) — 667
+- [14.5.2 逻辑模型的混合](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p18-b002) — 670
+- [14.5.3 专家混合](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p20-b007) — 672
+- [习题](?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p22-b002) — 674
+- **[附录 A 数据集](?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p01-b001)** — 677
+- **[附录 B 概率分布](?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001)** — 685
+- **[附录 C 矩阵的性质](?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p01-b001)** — 695
+
+<!-- pdf-page: 20 -->
+
+- **[附录 D 变分法](?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p01-b001)** — 703
+- **[附录 E 拉格朗日乘子](?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p01-b001)** — 707
+- **[参考文献](?book=bishop-pattern-recognition-2006&chapter=references#read-p01-b001)** — 711
+- **[索引](?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b001)** — 729

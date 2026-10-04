@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "unit": "notation",
+      "screen": "desktop-light",
+      "blocks": 9,
+      "images": 0,
+      "math": 63,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p02-b002",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "notation",
+      "screen": "mobile-dark",
+      "blocks": 9,
+      "images": 0,
+      "math": 63,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p02-b002",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "chapter-01",
+      "screen": "desktop-light",
+      "blocks": 563,
+      "images": 36,
+      "math": 1404,
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p66-b002",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [
+        "p46-b004",
+        "p20-b020",
+        "p47-b004",
+        "p08-b005",
+        "p11-b003",
+        "p41-b002",
+        "p53-b005",
+        "p55-b008",
+        "p65-b002",
+        "p65-b015"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-01",
+      "screen": "mobile-dark",
+      "blocks": 563,
+      "images": 36,
+      "math": 1404,
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p66-b002",
+      "restoredEndBlockVisible": true,
+      "detailBlocks": [
+        "p46-b004",
+        "p20-b020",
+        "p47-b004",
+        "p08-b005",
+        "p11-b003",
+        "p41-b002",
+        "p53-b005",
+        "p55-b008",
+        "p65-b002",
+        "p65-b015"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

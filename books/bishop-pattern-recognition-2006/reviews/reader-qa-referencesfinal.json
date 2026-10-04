@@ -1,0 +1,42 @@
+{
+  "results": [
+    {
+      "unit": "references",
+      "screen": "desktop-light",
+      "blocks": 409,
+      "images": 0,
+      "math": 0,
+      "mathFontLoaded": null,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p18-b015",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "references",
+      "screen": "mobile-dark",
+      "blocks": 409,
+      "images": 0,
+      "math": 0,
+      "mathFontLoaded": null,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p18-b015",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [],
+      "inChapterReferenceJump": false
+    }
+  ],
+  "screenshots": "tmp\\prml-references-ui",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "target": "p10-b004",
+    "block": "p10-b004",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-root-review\\index\\ib01-ui\\p10-b004-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p10-b004",
+    "block": "p10-b004",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-root-review\\index\\ib01-ui\\p10-b004-390-dark.png"
+    ],
+    "pans": []
+  }
+]

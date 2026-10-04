@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "unit": "chapter-11",
+      "screen": "desktop-light",
+      "blocks": 290,
+      "images": 19,
+      "math": 725,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 61,
+          "tableHeight": 56.3125
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p36-b001",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p34-b001",
+        "top": 85.4375,
+        "bottom": 139.078125,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 45607
+      },
+      "detailBlocks": [
+        "p22-b005",
+        "p19-b009",
+        "p28-b002",
+        "p15-b002",
+        "p21-b009",
+        "p21-b010",
+        "p27-b013"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-11",
+      "screen": "mobile-dark",
+      "blocks": 290,
+      "images": 19,
+      "math": 725,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 49.484375
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p36-b001",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p34-b001",
+        "top": 85.3125,
+        "bottom": 133.109375,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 61104
+      },
+      "detailBlocks": [
+        "p22-b005",
+        "p19-b009",
+        "p28-b002",
+        "p15-b002",
+        "p21-b009",
+        "p21-b010",
+        "p27-b013"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

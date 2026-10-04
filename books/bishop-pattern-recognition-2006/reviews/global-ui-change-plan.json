@@ -1,0 +1,1300 @@
+{
+  "chapter-04": [
+    {
+      "id": "p18-b005",
+      "pdfPage": 216,
+      "kind": "heading",
+      "originalAuthor": "a"
+    }
+  ],
+  "chapter-05": [
+    {
+      "id": "p01-b002",
+      "pdfPage": 245,
+      "kind": "intro",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b004",
+      "pdfPage": 246,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p17-b006",
+      "pdfPage": 261,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p23-b001",
+      "pdfPage": 267,
+      "kind": "figure",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p23-b004",
+      "pdfPage": 267,
+      "kind": "heading",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p23-b005",
+      "pdfPage": 267,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p23-b007",
+      "pdfPage": 267,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p23-b009",
+      "pdfPage": 267,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p23-b010",
+      "pdfPage": 267,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p24-b003",
+      "pdfPage": 268,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p24-b004",
+      "pdfPage": 268,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p24-b012",
+      "pdfPage": 268,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p40-b005",
+      "pdfPage": 284,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    },
+    {
+      "id": "p40-b011",
+      "pdfPage": 284,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    },
+    {
+      "id": "p62-b005",
+      "pdfPage": 306,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    }
+  ],
+  "chapter-06": [
+    {
+      "id": "p07-b011",
+      "pdfPage": 317,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b012",
+      "pdfPage": 317,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b004",
+      "pdfPage": 318,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b007",
+      "pdfPage": 318,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p13-b008",
+      "pdfPage": 323,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    }
+  ],
+  "chapter-08": [
+    {
+      "id": "p07-b005",
+      "pdfPage": 385,
+      "kind": "heading",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b004",
+      "pdfPage": 386,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b005",
+      "pdfPage": 386,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p10-b005",
+      "pdfPage": 388,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p11-b001",
+      "pdfPage": 389,
+      "kind": "figure",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p22-b008",
+      "pdfPage": 400,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    }
+  ],
+  "chapter-12": [
+    {
+      "id": "p33-b008",
+      "pdfPage": 611,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    },
+    {
+      "id": "p35-b003",
+      "pdfPage": 613,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    }
+  ],
+  "chapter-13": [
+    {
+      "id": "p07-b008",
+      "pdfPage": 631,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b001",
+      "pdfPage": 632,
+      "kind": "figure",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b007",
+      "pdfPage": 632,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p09-b003",
+      "pdfPage": 633,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p10-b004",
+      "pdfPage": 634,
+      "kind": "figure",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p11-b006",
+      "pdfPage": 635,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p17-b001",
+      "pdfPage": 641,
+      "kind": "figure",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p17-b002",
+      "pdfPage": 641,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p18-b001",
+      "pdfPage": 642,
+      "kind": "figure",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p19-b003",
+      "pdfPage": 643,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p23-b009",
+      "pdfPage": 647,
+      "kind": "paragraph",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p25-b004",
+      "pdfPage": 649,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    },
+    {
+      "id": "p26-b001",
+      "pdfPage": 650,
+      "kind": "figure",
+      "originalAuthor": "b"
+    },
+    {
+      "id": "p27-b001",
+      "pdfPage": 651,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    },
+    {
+      "id": "p27-b004",
+      "pdfPage": 651,
+      "kind": "paragraph",
+      "originalAuthor": "b"
+    }
+  ],
+  "references": [
+    {
+      "id": "p01-b002",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b003",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b004",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b005",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b006",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b007",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b008",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b009",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b010",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b011",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b012",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b013",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b014",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b015",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b016",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p01-b017",
+      "pdfPage": 731,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b002",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b003",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b005",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b006",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b007",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b008",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b009",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b010",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b011",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b012",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b013",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b014",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b015",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b016",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b017",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b018",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b020",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b021",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b022",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b023",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p02-b024",
+      "pdfPage": 732,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b001",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b002",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b003",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b004",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b005",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b006",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b007",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b008",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b009",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b010",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b011",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b012",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b013",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b014",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b015",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b016",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b017",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b018",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b019",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p03-b020",
+      "pdfPage": 733,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b001",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b002",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b003",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b004",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b005",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b006",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b007",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b008",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b009",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b010",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b011",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b012",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b013",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b014",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b015",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b016",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b017",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b018",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b019",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b020",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b022",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b023",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b024",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b025",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p04-b026",
+      "pdfPage": 734,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b001",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b002",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b003",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b004",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b005",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b007",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b008",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b009",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b010",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b011",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b012",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b014",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b015",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b016",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b017",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b018",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b019",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b020",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b021",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b022",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b023",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b025",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b026",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p05-b027",
+      "pdfPage": 735,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b002",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b003",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b004",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b005",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b006",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b007",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b008",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b009",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b010",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b014",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b015",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b016",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b017",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b018",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b019",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b020",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b021",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b023",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b024",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p06-b025",
+      "pdfPage": 736,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b001",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b003",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b004",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b005",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b006",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b007",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b008",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b009",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b010",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b011",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b012",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b013",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b014",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b015",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b016",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b017",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b019",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b020",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b021",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b022",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p07-b023",
+      "pdfPage": 737,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b001",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b002",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b003",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b004",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b005",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b006",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b007",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b008",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b009",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b010",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b011",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b012",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b013",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b014",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b015",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b016",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b017",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b018",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b019",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b020",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b021",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b022",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    },
+    {
+      "id": "p08-b023",
+      "pdfPage": 738,
+      "kind": "rich",
+      "originalAuthor": "a"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "target": "9.33",
+    "block": "p19-b001-step4",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.33-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "9.33",
+    "block": "p19-b001-step4",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.33-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 60,
+        "client": 218,
+        "scroll": 278,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.33-390-dark-pan-0.png"
+      }
+    ]
+  }
+]

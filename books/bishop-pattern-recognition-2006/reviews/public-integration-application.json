@@ -1,0 +1,42 @@
+[
+  {
+    "path": "books.js",
+    "sourceRawSha256": "cd8db831518c85b1415af349b95b5b917ab697094c5530ce44909026792ad9bb",
+    "sourceFile": "tmp\\prml-global-review\\public-proposed\\before-books.js",
+    "sourceLfSha256": "b4909f06263f2fa7a9d6494cbfd979874895d9ee78e8bf4b10218ad51ce27c6b",
+    "proposedSha256": "3d5be645f1aeb538929ecf4e9dba5f9e7f3d5a264dc7d0c37e630f77446dcb8a",
+    "proposedLfSha256": "3d5be645f1aeb538929ecf4e9dba5f9e7f3d5a264dc7d0c37e630f77446dcb8a",
+    "proposedFile": "tmp\\prml-global-review\\public-proposed\\books.js",
+    "appliedRawSha256": "3d5be645f1aeb538929ecf4e9dba5f9e7f3d5a264dc7d0c37e630f77446dcb8a"
+  },
+  {
+    "path": "sw.js",
+    "sourceRawSha256": "2431e1f0b4dd9a10ebf4ac61786a1b8689a1f4e63d9704542ff9f7c03707832c",
+    "sourceFile": "tmp\\prml-global-review\\public-proposed\\before-sw.js",
+    "sourceLfSha256": "2431e1f0b4dd9a10ebf4ac61786a1b8689a1f4e63d9704542ff9f7c03707832c",
+    "proposedSha256": "c1526ee68dc9103e85b629ef486e7680bf01801fb9dc6ccdd075c88f2fcfe164",
+    "proposedLfSha256": "c1526ee68dc9103e85b629ef486e7680bf01801fb9dc6ccdd075c88f2fcfe164",
+    "proposedFile": "tmp\\prml-global-review\\public-proposed\\sw.js",
+    "appliedRawSha256": "c1526ee68dc9103e85b629ef486e7680bf01801fb9dc6ccdd075c88f2fcfe164"
+  },
+  {
+    "path": "README.md",
+    "sourceRawSha256": "59d2024c7b8f52d6655d46bccc29d01adbffdd052e6da0f5745e9adcaf20c132",
+    "sourceFile": "tmp\\prml-global-review\\public-proposed\\before-README.md",
+    "sourceLfSha256": "2492f88c1bd944f03a02a6b084b87008f40b974e1b208658ea43586490d601e1",
+    "proposedSha256": "d0b9612c3ffc9943ecd8263fe75608295eb6d76fb166b55aeb7badc2f0b870f1",
+    "proposedLfSha256": "d0b9612c3ffc9943ecd8263fe75608295eb6d76fb166b55aeb7badc2f0b870f1",
+    "proposedFile": "tmp\\prml-global-review\\public-proposed\\README.md",
+    "appliedRawSha256": "d0b9612c3ffc9943ecd8263fe75608295eb6d76fb166b55aeb7badc2f0b870f1"
+  },
+  {
+    "path": ".github/workflows/pages.yml",
+    "sourceRawSha256": "1438e91235a536ee4bab14ddbbda229cf5cc3c8c550a0f7f72706d155f1dfe0d",
+    "sourceFile": "tmp\\prml-global-review\\public-proposed\\before-pages.yml",
+    "sourceLfSha256": "1438e91235a536ee4bab14ddbbda229cf5cc3c8c550a0f7f72706d155f1dfe0d",
+    "proposedSha256": "79aec0c73f819f14a64d42ae4df8c82e85e48a330914ca18689634c50c42a43c",
+    "proposedLfSha256": "79aec0c73f819f14a64d42ae4df8c82e85e48a330914ca18689634c50c42a43c",
+    "proposedFile": "tmp\\prml-global-review\\public-proposed\\pages.yml",
+    "appliedRawSha256": "79aec0c73f819f14a64d42ae4df8c82e85e48a330914ca18689634c50c42a43c"
+  }
+]

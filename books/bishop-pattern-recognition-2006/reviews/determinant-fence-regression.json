@@ -1,0 +1,713 @@
+{
+  "results": [
+    {
+      "unit": "chapter-01",
+      "block": "p18-b006",
+      "number": "(1.27)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "stretchy": "true",
+          "height": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "stretchy": "true",
+          "height": 20.46875,
+          "fractionHeight": null
+        },
+        {
+          "stretchy": "true",
+          "height": 20.46875,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-01-p18-b006-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-02",
+      "block": "p30-b011",
+      "number": "(2.133)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 53.140625,
+          "fractionHeight": 35.9375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-02-p30-b011-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-02",
+      "block": "p52-b004",
+      "number": "(2.231)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "stretchy": "true",
+          "height": 41.078125,
+          "fractionHeight": 39.9375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-02-p52-b004-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p30-b012",
+      "number": "(4.103)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 44.078125,
+          "fractionHeight": 42.9375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p30-b012-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p36-b005",
+      "number": "(4.126)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 38.578125,
+          "fractionHeight": 37.4375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p36-b005-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p36-b009",
+      "number": "(4.128)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 41.03125,
+          "fractionHeight": 39.890625
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p36-b009-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p37-b005",
+      "number": "(4.132)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 19.140625,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p37-b005-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p14-b002",
+      "number": "(5.29)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 17,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p14-b002-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p14-b004",
+      "number": "(5.30)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 43.765625,
+          "fractionHeight": 42.625
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p14-b004-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p15-b008",
+      "number": "(5.40)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 41.03125,
+          "fractionHeight": 39.890625
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p15-b008-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p40-b002",
+      "number": "(5.125)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 43.578125,
+          "fractionHeight": 42.4375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b002-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p40-b004",
+      "number": "(5.126)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 45.390625,
+          "fractionHeight": 44.25
+        },
+        {
+          "stretchy": "true",
+          "height": 51.1875,
+          "fractionHeight": 42.9375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b004-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p40-b008",
+      "number": "(5.128)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 45.390625,
+          "fractionHeight": 44.25
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b008-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p42-b004",
+      "number": "inline",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 42.078125,
+          "fractionHeight": 40.9375
+        },
+        {
+          "stretchy": "true",
+          "height": 51.484375,
+          "fractionHeight": 48.84375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p42-b004-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p55-b013",
+      "number": "(5.170)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 19.140625,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p55-b013-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-11",
+      "block": "p04-b007",
+      "number": "(11.5)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 41.078125,
+          "fractionHeight": 39.9375
+        },
+        {
+          "stretchy": "true",
+          "height": 41.078125,
+          "fractionHeight": 39.9375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p04-b007-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-11",
+      "block": "p05-b006",
+      "number": "(11.9)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 46.390625,
+          "fractionHeight": 45.25
+        },
+        {
+          "stretchy": "true",
+          "height": 46.390625,
+          "fractionHeight": 45.25
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p05-b006-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-11",
+      "block": "p06-b004",
+      "number": "(11.12)",
+      "width": 1440,
+      "theme": "light",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 46.390625,
+          "fractionHeight": 45.25
+        },
+        {
+          "stretchy": "true",
+          "height": 46.390625,
+          "fractionHeight": 45.25
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p06-b004-1440-light.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-01",
+      "block": "p18-b006",
+      "number": "(1.27)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "stretchy": "true",
+          "height": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "stretchy": "true",
+          "height": 18.328125,
+          "fractionHeight": null
+        },
+        {
+          "stretchy": "true",
+          "height": 18.328125,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-01-p18-b006-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-02",
+      "block": "p30-b011",
+      "number": "(2.133)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 50.578125,
+          "fractionHeight": 33.03125
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-02-p30-b011-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-02",
+      "block": "p52-b004",
+      "number": "(2.231)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "stretchy": "true",
+          "height": 37.609375,
+          "fractionHeight": 37.03125
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-02-p52-b004-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p30-b012",
+      "number": "(4.103)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 40.328125,
+          "fractionHeight": 39.75
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p30-b012-390-dark.png",
+      "pans": [
+        {
+          "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p30-b012-390-dark-pan-0.png",
+          "scrollLeft": 41,
+          "client": 256,
+          "scroll": 297
+        }
+      ]
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p36-b005",
+      "number": "(4.126)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 34.609375,
+          "fractionHeight": 34.03125
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p36-b005-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p36-b009",
+      "number": "(4.128)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 36.9375,
+          "fractionHeight": 36.359375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p36-b009-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-04",
+      "block": "p37-b005",
+      "number": "(4.132)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 16.578125,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-04-p37-b005-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p14-b002",
+      "number": "(5.29)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 15,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p14-b002-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p14-b004",
+      "number": "(5.30)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 38.96875,
+          "fractionHeight": 38.390625
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p14-b004-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p15-b008",
+      "number": "(5.40)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 36.9375,
+          "fractionHeight": 36.359375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p15-b008-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p40-b002",
+      "number": "(5.125)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 39.421875,
+          "fractionHeight": 38.84375
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b002-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p40-b004",
+      "number": "(5.126)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 40.96875,
+          "fractionHeight": 40.390625
+        },
+        {
+          "stretchy": "true",
+          "height": 46.09375,
+          "fractionHeight": 39.75
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b004-390-dark.png",
+      "pans": [
+        {
+          "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b004-390-dark-pan-0.png",
+          "scrollLeft": 18,
+          "client": 256,
+          "scroll": 274
+        }
+      ]
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p40-b008",
+      "number": "(5.128)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 40.96875,
+          "fractionHeight": 40.390625
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b008-390-dark.png",
+      "pans": [
+        {
+          "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p40-b008-390-dark-pan-0.png",
+          "scrollLeft": 104,
+          "client": 256,
+          "scroll": 360
+        }
+      ]
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p42-b004",
+      "number": "inline",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "stretchy": "true",
+          "height": 45.078125,
+          "fractionHeight": 43.6875
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p42-b004-390-dark.png",
+      "pans": [
+        {
+          "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p42-b004-390-dark-pan-0.png",
+          "scrollLeft": 134,
+          "client": 314,
+          "scroll": 448
+        }
+      ]
+    },
+    {
+      "unit": "chapter-05",
+      "block": "p55-b013",
+      "number": "(5.170)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 17.578125,
+          "fractionHeight": null
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-05-p55-b013-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-11",
+      "block": "p04-b007",
+      "number": "(11.5)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 37.609375,
+          "fractionHeight": 37.03125
+        },
+        {
+          "stretchy": "true",
+          "height": 37.609375,
+          "fractionHeight": 37.03125
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p04-b007-390-dark.png",
+      "pans": []
+    },
+    {
+      "unit": "chapter-11",
+      "block": "p05-b006",
+      "number": "(11.9)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 42.328125,
+          "fractionHeight": 41.75
+        },
+        {
+          "stretchy": "true",
+          "height": 42.328125,
+          "fractionHeight": 41.75
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p05-b006-390-dark.png",
+      "pans": [
+        {
+          "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p05-b006-390-dark-pan-0.png",
+          "scrollLeft": 56,
+          "client": 265,
+          "scroll": 321
+        }
+      ]
+    },
+    {
+      "unit": "chapter-11",
+      "block": "p06-b004",
+      "number": "(11.12)",
+      "width": 390,
+      "theme": "dark",
+      "geometry": [
+        {
+          "stretchy": "true",
+          "height": 42.328125,
+          "fractionHeight": 41.75
+        },
+        {
+          "stretchy": "true",
+          "height": 42.328125,
+          "fractionHeight": 41.75
+        }
+      ],
+      "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p06-b004-390-dark.png",
+      "pans": [
+        {
+          "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-determinant-qa\\chapter-11-p06-b004-390-dark-pan-0.png",
+          "scrollLeft": 127,
+          "client": 256,
+          "scroll": 383
+        }
+      ]
+    }
+  ],
+  "scope": "Only explicit scalable vertical fences; source TeX and ordinary mid untouched."
+}

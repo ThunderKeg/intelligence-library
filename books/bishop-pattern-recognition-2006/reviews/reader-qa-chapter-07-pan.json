@@ -1,0 +1,26 @@
+[
+  {
+    "block": "p16-b005",
+    "width": 265,
+    "scrollWidth": 342,
+    "left": 77
+  },
+  {
+    "block": "p03-b001",
+    "width": 342,
+    "scrollWidth": 936,
+    "left": 594
+  },
+  {
+    "block": "p26-b001",
+    "width": 342,
+    "scrollWidth": 936,
+    "left": 594
+  },
+  {
+    "block": "p32-b001",
+    "width": 342,
+    "scrollWidth": 936,
+    "left": 594
+  }
+]

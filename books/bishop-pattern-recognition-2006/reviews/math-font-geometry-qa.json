@@ -1,0 +1,788 @@
+{
+  "font": "STIX Two Math v2.13b171",
+  "sha256": "094191335def3f0452c81ec0713cfc2f29bb6af8cecbf79b60881fbf2db97562",
+  "results": [
+    {
+      "unit": "chapter-01",
+      "width": 1440,
+      "theme": "light",
+      "fontLoaded": true,
+      "matrixFenceGeometry": []
+    },
+    {
+      "unit": "chapter-02",
+      "width": 1440,
+      "theme": "light",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 56,
+          "tableHeight": 54.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 45.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.53125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 49.578125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 46.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 46.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 51.28125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 51.28125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 39.953125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 39.953125
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 52,
+          "tableHeight": 51.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 41.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72.375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72.375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 76.265625,
+          "tableHeight": 72
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.625
+        }
+      ]
+    },
+    {
+      "unit": "chapter-03",
+      "width": 1440,
+      "theme": "light",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 111.53125,
+          "tableHeight": 109.6875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 111.53125,
+          "tableHeight": 109.6875
+        }
+      ]
+    },
+    {
+      "unit": "chapter-04",
+      "width": 1440,
+      "theme": "light",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 48,
+          "tableHeight": 46.625
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 56,
+          "tableHeight": 55
+        }
+      ]
+    },
+    {
+      "unit": "chapter-05",
+      "width": 1440,
+      "theme": "light",
+      "fontLoaded": true,
+      "matrixFenceGeometry": []
+    },
+    {
+      "unit": "chapter-06",
+      "width": 1440,
+      "theme": "light",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 50.265625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 50.265625
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 56,
+          "tableHeight": 53.625
+        }
+      ]
+    },
+    {
+      "unit": "chapter-01",
+      "width": 390,
+      "theme": "dark",
+      "fontLoaded": true,
+      "matrixFenceGeometry": []
+    },
+    {
+      "unit": "chapter-02",
+      "width": 390,
+      "theme": "dark",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 48.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.78125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.78125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 42.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 50,
+          "tableHeight": 46.78125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 50,
+          "tableHeight": 46.78125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 50,
+          "tableHeight": 46.453125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 45.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 45.625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.875
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 46,
+          "tableHeight": 45.484375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 38.125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 69.421875,
+          "tableHeight": 66.328125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 69.421875,
+          "tableHeight": 66.328125
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 69.421875,
+          "tableHeight": 65.765625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 69.421875,
+          "tableHeight": 65.765625
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 35.125
+        }
+      ]
+    },
+    {
+      "unit": "chapter-03",
+      "width": 390,
+      "theme": "dark",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 101.53125,
+          "tableHeight": 100.890625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 101.53125,
+          "tableHeight": 100.890625
+        }
+      ]
+    },
+    {
+      "unit": "chapter-04",
+      "width": 390,
+      "theme": "dark",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 42,
+          "tableHeight": 41.125
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 48.84375
+        }
+      ]
+    },
+    {
+      "unit": "chapter-05",
+      "width": 390,
+      "theme": "dark",
+      "fontLoaded": true,
+      "matrixFenceGeometry": []
+    },
+    {
+      "unit": "chapter-06",
+      "width": 390,
+      "theme": "dark",
+      "fontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 50,
+          "tableHeight": 46.8125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 50,
+          "tableHeight": 46.8125
+        },
+        {
+          "glyph": "{",
+          "fenceHeight": 50,
+          "tableHeight": 46.125
+        }
+      ]
+    }
+  ]
+}

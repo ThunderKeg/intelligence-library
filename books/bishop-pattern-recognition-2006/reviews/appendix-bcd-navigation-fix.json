@@ -1,0 +1,133 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "number": "B.25",
+      "unit": "appendix-b",
+      "linkText": "式（B.25）",
+      "href": "#read-p03-b018",
+      "geometry": {
+        "top": 85.46875,
+        "bottom": 153.40625,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "width": 1440,
+      "theme": "light",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\B.25-1440-light.png",
+      "sha256": "6eba6df8c2b39710b69450bf5656b0c23a7b28e20a239b625ff1f3c291bb2996"
+    },
+    {
+      "number": "C.22",
+      "unit": "appendix-c",
+      "linkText": "式（C.22）",
+      "href": "#read-p04-b006",
+      "geometry": {
+        "top": 85.015625,
+        "bottom": 160.015625,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "width": 1440,
+      "theme": "light",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\C.22-1440-light.png",
+      "sha256": "878ae484435eb3f4a654a3889b1875cdb8121e96a95b6c64401911709abdc63d"
+    },
+    {
+      "number": "C.29",
+      "unit": "appendix-c",
+      "linkText": "式（C.29）",
+      "href": "#read-p04-b020",
+      "geometry": {
+        "top": 84.703125,
+        "bottom": 137.703125,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "width": 1440,
+      "theme": "light",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\C.29-1440-light.png",
+      "sha256": "1d17603b31079d44c1804fc65c7768454068bda20d0a5cd3ab64b293bf255b20"
+    },
+    {
+      "number": "D.3",
+      "unit": "appendix-d",
+      "linkText": "式（D.3）",
+      "href": "#read-p02-b003",
+      "geometry": {
+        "top": 85.203125,
+        "bottom": 160.203125,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "width": 1440,
+      "theme": "light",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\D.3-1440-light.png",
+      "sha256": "cc1cc40c056df33f0ef6e495d2d11c46cf53b543243db7d11c8f09b51b885232"
+    },
+    {
+      "number": "B.25",
+      "unit": "appendix-b",
+      "linkText": "式（B.25）",
+      "href": "#read-p03-b018",
+      "geometry": {
+        "top": 84.59375,
+        "bottom": 143.625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "width": 390,
+      "theme": "dark",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\B.25-390-dark.png",
+      "sha256": "0dadccaeef7a61a1345dacb2831dce1570e5f2c671dfab1baaa886ce266fc628"
+    },
+    {
+      "number": "C.22",
+      "unit": "appendix-c",
+      "linkText": "式（C.22）",
+      "href": "#read-p04-b006",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 150.484375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "width": 390,
+      "theme": "dark",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\C.22-390-dark.png",
+      "sha256": "8c32752b2c92f4ba1c19f5b71e028d98d20f6adeb3f57caaf0c02a329148f13a"
+    },
+    {
+      "number": "C.29",
+      "unit": "appendix-c",
+      "linkText": "式（C.29）",
+      "href": "#read-p04-b020",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 132.421875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "width": 390,
+      "theme": "dark",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\C.29-390-dark.png",
+      "sha256": "b8feb9e427e315c868f6ce632e6ab9eaae4f6a8c3357a265005fd30080d905db"
+    },
+    {
+      "number": "D.3",
+      "unit": "appendix-d",
+      "linkText": "式（D.3）",
+      "href": "#read-p02-b003",
+      "geometry": {
+        "top": 84.890625,
+        "bottom": 179.015625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "width": 390,
+      "theme": "dark",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reference-jumps\\appendix-bcd-navigation-fix\\D.3-390-dark.png",
+      "sha256": "afcca160182b60d584e9370d048fae86ca50b17c872f994ae61ce5a37da7cb40"
+    }
+  ]
+}

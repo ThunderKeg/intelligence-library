@@ -1,0 +1,91 @@
+[
+  {
+    "target": "p25-b004",
+    "block": "p25-b004",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p25-b004-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p26-b001",
+    "block": "p26-b001",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p26-b001-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p27-b001",
+    "block": "p27-b001",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p27-b001-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p27-b004",
+    "block": "p27-b004",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p27-b004-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p25-b004",
+    "block": "p25-b004",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p25-b004-390-dark.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p26-b001",
+    "block": "p26-b001",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p26-b001-390-dark.png",
+      "tmp\\prml-global-ui-b\\chapter-13\\p26-b001-390-dark-pan-0.png",
+      "tmp\\prml-global-ui-b\\chapter-13\\p26-b001-390-dark-continuation-1.png"
+    ],
+    "pans": [
+      {
+        "scrollLeft": 390,
+        "client": 342,
+        "scroll": 732
+      }
+    ]
+  },
+  {
+    "target": "p27-b001",
+    "block": "p27-b001",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p27-b001-390-dark.png",
+      "tmp\\prml-global-ui-b\\chapter-13\\p27-b001-390-dark-continuation-1.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p27-b004",
+    "block": "p27-b004",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-13\\p27-b004-390-dark.png"
+    ],
+    "pans": []
+  }
+]

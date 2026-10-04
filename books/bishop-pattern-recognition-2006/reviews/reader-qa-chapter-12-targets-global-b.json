@@ -1,0 +1,42 @@
+[
+  {
+    "target": "p33-b008",
+    "block": "p33-b008",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-12\\p33-b008-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p35-b003",
+    "block": "p35-b003",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-12\\p35-b003-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p33-b008",
+    "block": "p33-b008",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-12\\p33-b008-390-dark.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p35-b003",
+    "block": "p35-b003",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-12\\p35-b003-390-dark.png"
+    ],
+    "pans": []
+  }
+]

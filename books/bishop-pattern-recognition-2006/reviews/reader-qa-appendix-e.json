@@ -1,0 +1,50 @@
+{
+  "results": [
+    {
+      "unit": "appendix-e",
+      "screen": "desktop-light",
+      "blocks": 39,
+      "images": 3,
+      "math": 141,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p04-b009",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [
+        "p04-b008",
+        "p01-b010",
+        "p02-b007"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-e",
+      "screen": "mobile-dark",
+      "blocks": 39,
+      "images": 3,
+      "math": 141,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p04-b009",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [
+        "p04-b008",
+        "p01-b010",
+        "p02-b007"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

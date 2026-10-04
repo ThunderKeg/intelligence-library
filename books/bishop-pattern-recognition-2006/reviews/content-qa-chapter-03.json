@@ -1,0 +1,24 @@
+{
+  "scope": "Structural checks only; no automatic semantic or editorial acceptance.",
+  "units": [
+    {
+      "unit": "chapter-03",
+      "sourceNormalizedSha256": "696f20a6ae2e8a0ed67e4986765c237999161ad5946385c56ac3385a01595422",
+      "sourceFileSha256": "3b767544a464736d7cfa729dae81a26e7ef96e1dffe7f30c15dee1fef55e8c00",
+      "rootBlocks": 377,
+      "blockKinds": {
+        "heading": 19,
+        "intro": 1,
+        "figure": 18,
+        "paragraph": 220,
+        "formula": 119
+      },
+      "numberedEquations": 119,
+      "images": 18,
+      "mathFragments": 795,
+      "sourceMathRoundTrip": true,
+      "exercises": 24,
+      "status": "structural-checks-passed"
+    }
+  ]
+}

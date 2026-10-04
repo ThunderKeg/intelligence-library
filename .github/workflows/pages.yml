@@ -36,6 +36,11 @@ jobs:
             mkdir -p "site/$(dirname "$file")"
             cp "$file" "site/$file"
           done
+          for name in frontmatter preface notation contents appendix-a appendix-b appendix-c appendix-d appendix-e references index reference-index offline-images; do
+            file="books/bishop-pattern-recognition-2006/${name}.json"
+            mkdir -p "site/$(dirname "$file")"
+            cp "$file" "site/$file"
+          done
           for name in reference-index offline-images; do
             file="books/sutton-barto-reinforcement-learning-2e/${name}.json"
             mkdir -p "site/$(dirname "$file")"

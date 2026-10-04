@@ -1,0 +1,22 @@
+[
+  {
+    "target": "p01-b003",
+    "block": "p01-b003",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-references-ra01\\p01-b003-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p01-b003",
+    "block": "p01-b003",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-references-ra01\\p01-b003-390-dark.png"
+    ],
+    "pans": []
+  }
+]

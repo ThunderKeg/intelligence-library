@@ -1,0 +1,20 @@
+[
+  {
+    "target": "p25-b001",
+    "block": "p25-b001",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-12-target-p25-b001-1440-light.png",
+    "continuations": [],
+    "pans": []
+  },
+  {
+    "target": "p25-b001",
+    "block": "p25-b001",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-12-target-p25-b001-390-dark.png",
+    "continuations": [],
+    "pans": []
+  }
+]

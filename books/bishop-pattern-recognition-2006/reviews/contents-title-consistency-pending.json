@@ -1,0 +1,290 @@
+[
+  {
+    "number": "2.1.1",
+    "contents": "贝塔分布",
+    "chapter": "Beta 分布",
+    "target": {
+      "chapter": "chapter-02",
+      "block": "p05-b005"
+    }
+  },
+  {
+    "number": "2.5.1",
+    "contents": "核密度估计器",
+    "chapter": "核密度估计",
+    "target": {
+      "chapter": "chapter-02",
+      "block": "p56-b002"
+    }
+  },
+  {
+    "number": "2.5.2",
+    "contents": "最近邻方法",
+    "chapter": "近邻方法",
+    "target": {
+      "chapter": "chapter-02",
+      "block": "p58-b007"
+    }
+  },
+  {
+    "number": "3.3.3",
+    "contents": "等价核",
+    "chapter": "等效核",
+    "target": {
+      "chapter": "chapter-03",
+      "block": "p23-b002"
+    }
+  },
+  {
+    "number": "3.5.1",
+    "contents": "证据函数的计算",
+    "chapter": "计算证据函数",
+    "target": {
+      "chapter": "chapter-03",
+      "block": "p30-b006"
+    }
+  },
+  {
+    "number": "3.5.2",
+    "contents": "证据函数的最大化",
+    "chapter": "最大化证据函数",
+    "target": {
+      "chapter": "chapter-03",
+      "block": "p32-b003"
+    }
+  },
+  {
+    "number": "3.5.3",
+    "contents": "参数的有效个数",
+    "chapter": "参数的有效数目",
+    "target": {
+      "chapter": "chapter-03",
+      "block": "p34-b002"
+    }
+  },
+  {
+    "number": "3.6",
+    "contents": "固定基函数的局限",
+    "chapter": "固定基函数的局限性",
+    "target": {
+      "chapter": "chapter-03",
+      "block": "p36-b004"
+    }
+  },
+  {
+    "number": "4.1.1",
+    "contents": "两个类别",
+    "chapter": "二分类",
+    "target": {
+      "chapter": "chapter-04",
+      "block": "p03-b005"
+    }
+  },
+  {
+    "number": "4.1.2",
+    "contents": "多个类别",
+    "chapter": "多分类",
+    "target": {
+      "chapter": "chapter-04",
+      "block": "p04-b010"
+    }
+  },
+  {
+    "number": "4.1.6",
+    "contents": "多类别 Fisher 判别",
+    "chapter": "多分类的 Fisher 判别",
+    "target": {
+      "chapter": "chapter-04",
+      "block": "p13-b001"
+    }
+  },
+  {
+    "number": "4.2",
+    "contents": "概率生成式模型",
+    "chapter": "概率生成模型",
+    "target": {
+      "chapter": "chapter-04",
+      "block": "p18-b005"
+    }
+  },
+  {
+    "number": "5.3.2",
+    "contents": "一个简单示例",
+    "chapter": "一个简单例子",
+    "target": {
+      "chapter": "chapter-05",
+      "block": "p21-b004"
+    }
+  },
+  {
+    "number": "5.3.4",
+    "contents": "雅可比矩阵",
+    "chapter": "Jacobian 矩阵",
+    "target": {
+      "chapter": "chapter-05",
+      "block": "p23-b004"
+    }
+  },
+  {
+    "number": "5.4.3",
+    "contents": "Hessian 逆矩阵",
+    "chapter": "Hessian 矩阵的逆",
+    "target": {
+      "chapter": "chapter-05",
+      "block": "p28-b001"
+    }
+  },
+  {
+    "number": "6.2",
+    "contents": "构造核",
+    "chapter": "核的构造",
+    "target": {
+      "chapter": "chapter-06",
+      "block": "p04-b006"
+    }
+  },
+  {
+    "number": "6.4.1",
+    "contents": "再谈线性回归",
+    "chapter": "重新考察线性回归",
+    "target": {
+      "chapter": "chapter-06",
+      "block": "p14-b005"
+    }
+  },
+  {
+    "number": "7.1.1",
+    "contents": "相互重叠的类别分布",
+    "chapter": "类别分布重叠",
+    "target": {
+      "chapter": "chapter-07",
+      "block": "p07-b004"
+    }
+  },
+  {
+    "number": "7.1.3",
+    "contents": "多类别 SVM",
+    "chapter": "多类 SVM",
+    "target": {
+      "chapter": "chapter-07",
+      "block": "p14-b003"
+    }
+  },
+  {
+    "number": "8.1.2",
+    "contents": "生成式模型",
+    "chapter": "生成模型",
+    "target": {
+      "chapter": "chapter-08",
+      "block": "p07-b005"
+    }
+  },
+  {
+    "number": "8.2.1",
+    "contents": "三个图示例",
+    "chapter": "三个图的例子",
+    "target": {
+      "chapter": "chapter-08",
+      "block": "p15-b007"
+    }
+  },
+  {
+    "number": "8.2.2",
+    "contents": "D 分离",
+    "chapter": "d 分离",
+    "target": {
+      "chapter": "chapter-08",
+      "block": "p20-b004"
+    }
+  },
+  {
+    "number": "8.4.7",
+    "contents": "有环置信传播",
+    "chapter": "有环信念传播",
+    "target": {
+      "chapter": "chapter-08",
+      "block": "p59-b002"
+    }
+  },
+  {
+    "number": "9.3",
+    "contents": "EM 的另一种解释",
+    "chapter": "从另一角度看 EM",
+    "target": {
+      "chapter": "chapter-09",
+      "block": "p17-b002"
+    }
+  },
+  {
+    "number": "9.3.1",
+    "contents": "再谈高斯混合",
+    "chapter": "再论高斯混合",
+    "target": {
+      "chapter": "chapter-09",
+      "block": "p19-b004"
+    }
+  },
+  {
+    "number": "9.3.4",
+    "contents": "贝叶斯线性回归的 EM 算法",
+    "chapter": "用于贝叶斯线性回归的 EM",
+    "target": {
+      "chapter": "chapter-09",
+      "block": "p26-b004"
+    }
+  },
+  {
+    "number": "9.4",
+    "contents": "一般形式的 EM 算法",
+    "chapter": "一般的 EM 算法",
+    "target": {
+      "chapter": "chapter-09",
+      "block": "p28-b004"
+    }
+  },
+  {
+    "number": "10.2",
+    "contents": "示例：变分高斯混合",
+    "chapter": "示例：高斯混合的变分推断",
+    "target": {
+      "chapter": "chapter-10",
+      "block": "p14-b002"
+    }
+  },
+  {
+    "number": "10.2.4",
+    "contents": "确定分量个数",
+    "chapter": "确定分量数",
+    "target": {
+      "chapter": "chapter-10",
+      "block": "p23-b010"
+    }
+  },
+  {
+    "number": "10.2.5",
+    "contents": "诱导出的因子分解",
+    "chapter": "诱导的因子化",
+    "target": {
+      "chapter": "chapter-10",
+      "block": "p25-b002"
+    }
+  },
+  {
+    "number": "11.1.5",
+    "contents": "采样—重要性—重采样",
+    "chapter": "采样重要性重采样",
+    "target": {
+      "chapter": "chapter-11",
+      "block": "p12-b006"
+    }
+  },
+  {
+    "number": "13.2.1",
+    "contents": "HMM 的最大似然估计",
+    "chapter": "HMM 的最大似然",
+    "target": {
+      "chapter": "chapter-13",
+      "block": "p11-b003"
+    }
+  }
+]

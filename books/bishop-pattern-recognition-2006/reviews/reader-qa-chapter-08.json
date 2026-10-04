@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "unit": "chapter-08",
+      "screen": "desktop-light",
+      "blocks": 523,
+      "images": 55,
+      "math": 1198,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 76.265625,
+          "tableHeight": 75
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 76.265625,
+          "tableHeight": 75
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p64-b005",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p60-b009",
+        "top": 85,
+        "bottom": 138.640625,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 81893
+      },
+      "detailBlocks": [
+        "p38-b002",
+        "p52-b003",
+        "p13-b003",
+        "p53-b002",
+        "p61-b002"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-08",
+      "screen": "mobile-dark",
+      "blocks": 523,
+      "images": 55,
+      "math": 1198,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 69.421875,
+          "tableHeight": 66.828125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 69.421875,
+          "tableHeight": 66.828125
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p64-b005",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p60-b009",
+        "top": 85.4375,
+        "bottom": 133.234375,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 109529
+      },
+      "detailBlocks": [
+        "p38-b002",
+        "p52-b003",
+        "p13-b003",
+        "p53-b002",
+        "p61-b002"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

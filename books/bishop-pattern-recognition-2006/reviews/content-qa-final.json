@@ -1,0 +1,511 @@
+{
+  "scope": "Structural checks only; no automatic semantic or editorial acceptance.",
+  "units": [
+    {
+      "unit": "frontmatter",
+      "sourceNormalizedSha256": "58597ab72d5daba1fb2423499de046158b4a3926d61c968751526c5096f03a67",
+      "sourceFileSha256": "58597ab72d5daba1fb2423499de046158b4a3926d61c968751526c5096f03a67",
+      "rootBlocks": 37,
+      "blockKinds": {
+        "heading": 6,
+        "figure": 3,
+        "paragraph": 26,
+        "list": 2
+      },
+      "numberedEquations": 0,
+      "images": 3,
+      "mathFragments": 0,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "preface",
+      "sourceNormalizedSha256": "8ad20fe44d2e1b4bce59751f311a95c8200b1248c337f60072662f7fd65c6816",
+      "sourceFileSha256": "8ad20fe44d2e1b4bce59751f311a95c8200b1248c337f60072662f7fd65c6816",
+      "rootBlocks": 20,
+      "blockKinds": {
+        "heading": 3,
+        "paragraph": 17
+      },
+      "numberedEquations": 0,
+      "images": 0,
+      "mathFragments": 0,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "notation",
+      "sourceNormalizedSha256": "8f143026a4c4fbee272dd4d1bfe37e13eba756a9f08549c94eb4893b25d01d7d",
+      "sourceFileSha256": "8f143026a4c4fbee272dd4d1bfe37e13eba756a9f08549c94eb4893b25d01d7d",
+      "rootBlocks": 9,
+      "blockKinds": {
+        "heading": 1,
+        "paragraph": 8
+      },
+      "numberedEquations": 0,
+      "images": 0,
+      "mathFragments": 63,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "contents",
+      "sourceNormalizedSha256": "027afd298316f481f33b48319ed73f5fbc43e7e999e3cb95c505a0bfbeebc615",
+      "sourceFileSha256": "eaae16bdd37d751a3abf45711198cd1e579f22672b9a3a5e2025f894f4be7f84",
+      "rootBlocks": 9,
+      "blockKinds": {
+        "heading": 1,
+        "list": 8
+      },
+      "numberedEquations": 0,
+      "images": 0,
+      "mathFragments": 0,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-01",
+      "sourceNormalizedSha256": "ac5811c8ab1a92e76aec2676256e03203a7dfeb893e320aab0802afc3fd5276d",
+      "sourceFileSha256": "5adaaec4134c39247552c7179cd3ebd129cbd74706754476850e22c254edcd5c",
+      "rootBlocks": 563,
+      "blockKinds": {
+        "heading": 20,
+        "intro": 1,
+        "figure": 36,
+        "paragraph": 346,
+        "formula": 157,
+        "table": 5,
+        "rich": 2,
+        "box": 2
+      },
+      "numberedEquations": 152,
+      "images": 36,
+      "mathFragments": 1404,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 41,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-02",
+      "sourceNormalizedSha256": "7634d73c050d1245cb9426090663a782655fda82af8f1bf4d3776db949107e2a",
+      "sourceFileSha256": "474ddbd98eb34e82374a824e2575398c56dc3767e856febec2abf0ceaa831b76",
+      "rootBlocks": 790,
+      "blockKinds": {
+        "heading": 23,
+        "intro": 1,
+        "figure": 32,
+        "paragraph": 439,
+        "formula": 301,
+        "box": 3
+      },
+      "numberedEquations": 300,
+      "images": 32,
+      "mathFragments": 1501,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 61,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-03",
+      "sourceNormalizedSha256": "696f20a6ae2e8a0ed67e4986765c237999161ad5946385c56ac3385a01595422",
+      "sourceFileSha256": "3b767544a464736d7cfa729dae81a26e7ef96e1dffe7f30c15dee1fef55e8c00",
+      "rootBlocks": 377,
+      "blockKinds": {
+        "heading": 19,
+        "intro": 1,
+        "figure": 18,
+        "paragraph": 220,
+        "formula": 119
+      },
+      "numberedEquations": 119,
+      "images": 18,
+      "mathFragments": 795,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 24,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-04",
+      "sourceNormalizedSha256": "bb9130ea6047c9cbf72fecc768f5ececc6597891c63b91b43f2bb438582aef0f",
+      "sourceFileSha256": "7a40c5a44158418cb3df72ec0aefd2f024e7498d93b6f0d01cd4c81f036ccb51",
+      "rootBlocks": 495,
+      "blockKinds": {
+        "heading": 27,
+        "intro": 1,
+        "figure": 16,
+        "paragraph": 288,
+        "formula": 166,
+        "box": 1
+      },
+      "numberedEquations": 163,
+      "images": 16,
+      "mathFragments": 963,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 26,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-05",
+      "sourceNormalizedSha256": "86d176447cd5ca6a722ea8ff20c07fe22902c5ee3a3dcab579215d69ea0e848e",
+      "sourceFileSha256": "f515996b0e9fde0ed5dd1e30b141984e9198a992f43623c255dc8f97e9e6a89a",
+      "rootBlocks": 672,
+      "blockKinds": {
+        "heading": 35,
+        "intro": 1,
+        "figure": 24,
+        "paragraph": 394,
+        "formula": 212,
+        "box": 1,
+        "list": 7
+      },
+      "numberedEquations": 208,
+      "images": 24,
+      "mathFragments": 984,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 41,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-06",
+      "sourceNormalizedSha256": "31b710aa3db87acebb4a444ab3bd8275f51026ceba5827a95ccddc5949884080",
+      "sourceFileSha256": "6b58f492e4ba3abddebc384db49e031e68576d4d819d4a31093d1f760048dffa",
+      "rootBlocks": 314,
+      "blockKinds": {
+        "heading": 15,
+        "intro": 1,
+        "figure": 13,
+        "paragraph": 197,
+        "formula": 100,
+        "box": 1
+      },
+      "numberedEquations": 99,
+      "images": 13,
+      "mathFragments": 658,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 27,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-07",
+      "sourceNormalizedSha256": "5e7fb17eec963b6fafb2c59a2f5f23ea7cab76508a1d6dfdefc69ed9f174783c",
+      "sourceFileSha256": "bd915648bb6503427cc62cdb004d1e4529fe79858bebd9b8250bd02af4f2d65d",
+      "rootBlocks": 348,
+      "blockKinds": {
+        "heading": 13,
+        "intro": 1,
+        "figure": 14,
+        "paragraph": 197,
+        "formula": 125,
+        "box": 2,
+        "list": 2
+      },
+      "numberedEquations": 125,
+      "images": 14,
+      "mathFragments": 733,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 19,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-08",
+      "sourceNormalizedSha256": "878e81ddc6642a7adb6b9eb23723969404653d3a9e4617959a792d7d0013b1c3",
+      "sourceFileSha256": "aa8194744386c2be322544f2057a650102c2192e8c2568a66260e9c572fdd284",
+      "rootBlocks": 523,
+      "blockKinds": {
+        "heading": 24,
+        "intro": 1,
+        "figure": 55,
+        "paragraph": 315,
+        "list": 3,
+        "formula": 123,
+        "table": 2
+      },
+      "numberedEquations": 106,
+      "images": 55,
+      "mathFragments": 1198,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 29,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-09",
+      "sourceNormalizedSha256": "ba52998a2b7207f329a20a74c2149163a8b8369bcb6736fcdbe861c1f84a3f78",
+      "sourceFileSha256": "5809182f3750b73fac3138df1c007376daa87b7538bbabccd7a4f2afeaf63529",
+      "rootBlocks": 285,
+      "blockKinds": {
+        "heading": 15,
+        "intro": 1,
+        "figure": 15,
+        "paragraph": 182,
+        "formula": 87,
+        "box": 2,
+        "list": 6
+      },
+      "numberedEquations": 85,
+      "images": 15,
+      "mathFragments": 725,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 27,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-10",
+      "sourceNormalizedSha256": "e201180124fba5819995bb5654b36d1c5648ec29999eb5a6ee1411bcd2884ca4",
+      "sourceFileSha256": "09027bfaebf6a6d4064b38a3262bfde8ffda05ccc654a7dac824a8b92f99e2b7",
+      "rootBlocks": 648,
+      "blockKinds": {
+        "heading": 28,
+        "intro": 1,
+        "figure": 20,
+        "paragraph": 365,
+        "formula": 250,
+        "box": 2,
+        "list": 3
+      },
+      "numberedEquations": 245,
+      "images": 20,
+      "mathFragments": 1285,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 39,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-11",
+      "sourceNormalizedSha256": "637c919597f67d4ea8764a72c8ac94215f452f563be7ae232b80461a2a696edc",
+      "sourceFileSha256": "7098eaee4ee7b3b01abdfb05e31109c9b5c31ddd7c2256746d8a72e3a69dd7d5",
+      "rootBlocks": 290,
+      "blockKinds": {
+        "heading": 20,
+        "intro": 1,
+        "figure": 19,
+        "paragraph": 193,
+        "formula": 79,
+        "box": 4,
+        "list": 1
+      },
+      "numberedEquations": 75,
+      "images": 19,
+      "mathFragments": 725,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 17,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-12",
+      "sourceNormalizedSha256": "b6de66774fe90ae65b8cbb5fdd37611b133ffe4e8fb3fbe0e21bc5ebc6dbdbd7",
+      "sourceFileSha256": "8d8a062577991cecb512090bdd62504885efd6eb5a33d3e76e80b9a4d68e82c9",
+      "rootBlocks": 357,
+      "blockKinds": {
+        "heading": 17,
+        "intro": 1,
+        "figure": 22,
+        "paragraph": 220,
+        "formula": 95,
+        "list": 2
+      },
+      "numberedEquations": 95,
+      "images": 22,
+      "mathFragments": 874,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "reviews\\source-checks-chapter-12.json",
+      "exercises": 29,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-13",
+      "sourceNormalizedSha256": "7a3e655c7d422a16dd1e391d275ff9832eb02b79ad4edad46ea21c08ab96fbe8",
+      "sourceFileSha256": "ea3443b209e5bb1ec99878133a795b15fefb1dc57cfb119cbecb496ba85124d8",
+      "rootBlocks": 404,
+      "blockKinds": {
+        "heading": 15,
+        "intro": 1,
+        "figure": 24,
+        "paragraph": 232,
+        "formula": 132
+      },
+      "numberedEquations": 128,
+      "images": 24,
+      "mathFragments": 884,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 34,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "chapter-14",
+      "sourceNormalizedSha256": "684e8fddb1b7b8bac4c01b940cf4d116fb4883d217785b3bf2aa122328d42d43",
+      "sourceFileSha256": "9333a5514b9fb0d1427cfe0485601077277a914ce834a9a4f5af329f37d5d787",
+      "rootBlocks": 195,
+      "blockKinds": {
+        "heading": 13,
+        "intro": 1,
+        "figure": 11,
+        "paragraph": 121,
+        "formula": 59,
+        "box": 1,
+        "list": 2
+      },
+      "numberedEquations": 58,
+      "images": 11,
+      "mathFragments": 354,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": 17,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "appendix-a",
+      "sourceNormalizedSha256": "e00e26f96d01067e70d4c70e21be34ac12b3de669386b166b26eed6bba177ffb",
+      "sourceFileSha256": "4023f8da481bcf682190d418af81fab3c6d2e96761f80ff35241137bd928ed39",
+      "rootBlocks": 35,
+      "blockKinds": {
+        "heading": 5,
+        "intro": 1,
+        "paragraph": 19,
+        "figure": 7,
+        "list": 2,
+        "formula": 1
+      },
+      "numberedEquations": 1,
+      "images": 7,
+      "mathFragments": 15,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "appendix-b",
+      "sourceNormalizedSha256": "fa15c9d8bed3e44e8c72ecd773f6f08df0bc83ba1936ad3a5dea3a61721e9df4",
+      "sourceFileSha256": "b2976ae6b552ca9c67253123eaab8f299ccf6b1f11dbdcf25c14ae7ee0a89969",
+      "rootBlocks": 155,
+      "blockKinds": {
+        "heading": 15,
+        "intro": 1,
+        "paragraph": 48,
+        "formula": 82,
+        "figure": 9
+      },
+      "numberedEquations": 82,
+      "images": 9,
+      "mathFragments": 238,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "appendix-c",
+      "sourceNormalizedSha256": "ab3abb3b109a1b7869d782b04dc6dc063b72e8cecdc15080b15b8ae1c0c692c3",
+      "sourceFileSha256": "d36b4a6b0f57e444948ff28c9acdd7c9349c405761b9933b10c26f3256f5d572",
+      "rootBlocks": 117,
+      "blockKinds": {
+        "heading": 5,
+        "intro": 1,
+        "paragraph": 62,
+        "formula": 49
+      },
+      "numberedEquations": 49,
+      "images": 0,
+      "mathFragments": 168,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "appendix-d",
+      "sourceNormalizedSha256": "ead60185a8b8207e98669e45fe5d49901dde883cfc2911cd012ffadb46e60086",
+      "sourceFileSha256": "e511951476c61d0e71d6222cb8fa75786043ce5f78f10b5adac39aed8b178011",
+      "rootBlocks": 30,
+      "blockKinds": {
+        "heading": 1,
+        "intro": 1,
+        "paragraph": 17,
+        "formula": 10,
+        "figure": 1
+      },
+      "numberedEquations": 10,
+      "images": 1,
+      "mathFragments": 76,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "appendix-e",
+      "sourceNormalizedSha256": "e8e84a30a757477301d8b62f53db951608e97ed861131fadf9c9a908757378bb",
+      "sourceFileSha256": "6bb485ea8ffc07f27489663e75b69a540c4ad6f9b945bc323fe89b986bd899c4",
+      "rootBlocks": 39,
+      "blockKinds": {
+        "heading": 1,
+        "intro": 1,
+        "paragraph": 22,
+        "formula": 12,
+        "figure": 3
+      },
+      "numberedEquations": 12,
+      "images": 3,
+      "mathFragments": 141,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "references",
+      "sourceNormalizedSha256": "06993aaa4eeea1a892bef925a2b219430bcc7089d36c9d720bc1e413c8a9eb35",
+      "sourceFileSha256": "2d3d1bbce6e57891f41943deb18d16d244adfaf47e5d71ce8eed0ad1c66d83df",
+      "rootBlocks": 409,
+      "blockKinds": {
+        "heading": 1,
+        "rich": 408
+      },
+      "numberedEquations": 0,
+      "images": 0,
+      "mathFragments": 0,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    },
+    {
+      "unit": "index",
+      "sourceNormalizedSha256": "d5d87f058e2acdb1b44195a0f49903f16a8026e5d404bfb502a150df5f48b805",
+      "sourceFileSha256": "1e78916bb619e3360975e3f6c4678008804ce02b0c86957087c058a1c8ce862b",
+      "rootBlocks": 795,
+      "blockKinds": {
+        "heading": 1,
+        "paragraph": 1,
+        "rich": 793
+      },
+      "numberedEquations": 0,
+      "images": 0,
+      "mathFragments": 0,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    }
+  ]
+}

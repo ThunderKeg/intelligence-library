@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "unit": "chapter-14",
+      "screen": "desktop-light",
+      "blocks": 195,
+      "images": 11,
+      "math": 354,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p24-b004",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p22-b002",
+        "top": 84.96875,
+        "bottom": 138.609375,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 28550
+      },
+      "detailBlocks": [
+        "p16-b005",
+        "p09-b002",
+        "p19-b009",
+        "p06-b002"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-14",
+      "screen": "mobile-dark",
+      "blocks": 195,
+      "images": 11,
+      "math": 354,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p24-b004",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p22-b002",
+        "top": 84.703125,
+        "bottom": 132.5,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 37133
+      },
+      "detailBlocks": [
+        "p16-b005",
+        "p09-b002",
+        "p19-b009",
+        "p06-b002"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

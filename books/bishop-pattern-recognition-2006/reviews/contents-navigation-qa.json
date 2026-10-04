@@ -1,0 +1,778 @@
+{
+  "passed": true,
+  "scope": "contents",
+  "casesPerScreen": 24,
+  "indexDestinationUnits": 20,
+  "contentsDestinationUnits": 24,
+  "seeLinks": 77,
+  "results": [
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001",
+      "kind": "contents",
+      "label": "前言",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=notation#read-p01-b001",
+      "kind": "contents",
+      "label": "数学记号",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=notation#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=contents#read-p01-b001",
+      "kind": "contents",
+      "label": "目录",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=contents#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p01-b001",
+      "kind": "contents",
+      "label": "1 绪论",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p01-b001",
+      "kind": "contents",
+      "label": "2 概率分布",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p01-b001",
+      "kind": "contents",
+      "label": "3 用于回归的线性模型",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b001",
+      "kind": "contents",
+      "label": "4 用于分类的线性模型",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p01-b001",
+      "kind": "contents",
+      "label": "5 神经网络",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p01-b001",
+      "kind": "contents",
+      "label": "6 核方法",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p01-b001",
+      "kind": "contents",
+      "label": "7 稀疏核机器",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p01-b001",
+      "kind": "contents",
+      "label": "8 图模型",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b001",
+      "kind": "contents",
+      "label": "9 混合模型与 EM",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p01-b001",
+      "kind": "contents",
+      "label": "10 近似推断",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p01-b001",
+      "kind": "contents",
+      "label": "11 采样方法",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p01-b001",
+      "kind": "contents",
+      "label": "12 连续潜变量",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p01-b001",
+      "kind": "contents",
+      "label": "13 序列数据",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p01-b001",
+      "kind": "contents",
+      "label": "14 模型组合",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 A 数据集",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 B 概率分布",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 C 矩阵的性质",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 D 变分法",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 E 拉格朗日乘子",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=references#read-p01-b001",
+      "kind": "contents",
+      "label": "参考文献",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=references#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b001",
+      "kind": "contents",
+      "label": "索引",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001",
+      "kind": "contents",
+      "label": "前言",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=notation#read-p01-b001",
+      "kind": "contents",
+      "label": "数学记号",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=notation#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=contents#read-p01-b001",
+      "kind": "contents",
+      "label": "目录",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=contents#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p01-b001",
+      "kind": "contents",
+      "label": "1 绪论",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p01-b001",
+      "kind": "contents",
+      "label": "2 概率分布",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p01-b001",
+      "kind": "contents",
+      "label": "3 用于回归的线性模型",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 171.78125,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b001",
+      "kind": "contents",
+      "label": "4 用于分类的线性模型",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 171.78125,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p01-b001",
+      "kind": "contents",
+      "label": "5 神经网络",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p01-b001",
+      "kind": "contents",
+      "label": "6 核方法",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p01-b001",
+      "kind": "contents",
+      "label": "7 稀疏核机器",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p01-b001",
+      "kind": "contents",
+      "label": "8 图模型",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b001",
+      "kind": "contents",
+      "label": "9 混合模型与 EM",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p01-b001",
+      "kind": "contents",
+      "label": "10 近似推断",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p01-b001",
+      "kind": "contents",
+      "label": "11 采样方法",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p01-b001",
+      "kind": "contents",
+      "label": "12 连续潜变量",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p01-b001",
+      "kind": "contents",
+      "label": "13 序列数据",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p01-b001",
+      "kind": "contents",
+      "label": "14 模型组合",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 A 数据集",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 B 概率分布",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 C 矩阵的性质",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 D 变分法",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p01-b001",
+      "kind": "contents",
+      "label": "附录 E 拉格朗日乘子",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=references#read-p01-b001",
+      "kind": "contents",
+      "label": "参考文献",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=references#read-p01-b001"
+    },
+    {
+      "unit": "contents",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b001",
+      "kind": "contents",
+      "label": "索引",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b001"
+    }
+  ]
+}

@@ -487,3 +487,30 @@ a { color: var(--accent); }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p449-b001 .mackay-ch34-title-part { display: block; white-space: nowrap; }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p469-b001 .mackay-ch37-title-part { display: block; white-space: nowrap; }
 }
+
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] .original-contents strong.contents-title + .contents-page { font-weight: 700; color: var(--ink); }
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] .book-table caption { white-space: normal; overflow-wrap: anywhere; }
+@font-face {
+  font-family: "PRML Math";
+  src: url("books/bishop-pattern-recognition-2006/assets/fonts/STIXTwoMath-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math {
+  font-family: "PRML Math", "Cambria Math", math;
+}
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right left"] > mtr > mtd:nth-child(odd),
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right"] > mtr > mtd { text-align: right; }
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right left"] > mtr > mtd:nth-child(even),
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="left left"] > mtr > mtd { text-align: left; }
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math munder > mo[stretchy="true"][minsize="100%"]:last-child {
+  display: block;
+  width: 100%;
+  height: .5em;
+  color: transparent;
+  background-color: var(--ink);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 12' preserveAspectRatio='none'%3E%3Cpath d='M1 1 C1 6 5 6 10 6 H44 C48 6 50 8 50 11 C50 8 52 6 56 6 H90 C95 6 99 6 99 1' fill='none' stroke='black' stroke-width='1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}

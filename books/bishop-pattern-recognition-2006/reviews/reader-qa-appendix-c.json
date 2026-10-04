@@ -1,0 +1,106 @@
+{
+  "results": [
+    {
+      "unit": "appendix-c",
+      "screen": "desktop-light",
+      "blocks": 117,
+      "images": 0,
+      "math": 168,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "∣",
+          "fenceHeight": 43.140625,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "∣",
+          "fenceHeight": 43.140625,
+          "tableHeight": 42
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 43,
+          "tableHeight": 40.625
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 43,
+          "tableHeight": 40.625
+        }
+      ],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p07-b011",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p04-b018",
+        "top": 85.171875,
+        "bottom": 138.8125,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 6003
+      },
+      "detailBlocks": [
+        "p02-b003",
+        "p02-b007",
+        "p04-b002"
+      ],
+      "inChapterReferenceJump": false
+    },
+    {
+      "unit": "appendix-c",
+      "screen": "mobile-dark",
+      "blocks": 117,
+      "images": 0,
+      "math": 168,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "∣",
+          "fenceHeight": 38.421875,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "∣",
+          "fenceHeight": 38.421875,
+          "tableHeight": 37.84375
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 39,
+          "tableHeight": 37.125
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 39,
+          "tableHeight": 37.125
+        }
+      ],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p07-b011",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p04-b018",
+        "top": 84.921875,
+        "bottom": 132.71875,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 6624
+      },
+      "detailBlocks": [
+        "p02-b003",
+        "p02-b007",
+        "p04-b002"
+      ],
+      "inChapterReferenceJump": false
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

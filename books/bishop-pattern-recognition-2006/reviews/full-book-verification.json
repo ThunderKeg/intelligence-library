@@ -1,0 +1,360 @@
+{
+  "status": "passed",
+  "scope": "Verify current full-book acceptance, source coverage and navigation artifacts.\n\nThis audit checks recorded decisions and their fingerprints. It does not make\neditorial decisions or replace the independent page and reader reviews.\n",
+  "sourcePdfSha256": "4ee767e0a6b04fa05ba7e599e9dbb4637a94a4407ccedf0b4d316b1fd7c8ec64",
+  "sourcePages": 758,
+  "units": [
+    {
+      "unit": "frontmatter",
+      "pdfPages": [
+        1,
+        6
+      ],
+      "blocks": 37,
+      "images": 3,
+      "sourceNormalizedSha256": "58597ab72d5daba1fb2423499de046158b4a3926d61c968751526c5096f03a67",
+      "renderedContentSha256": "6713328d5d9ada8e6202396dabeadb645982d9e2826c2f42c78f5de6f643f478",
+      "imagesSha256": "8b2058a77f2bb48d03d67a0d9660e8281e2d6591956c081851b165554f534c74",
+      "review": "reviews/frontmatter-review.md"
+    },
+    {
+      "unit": "preface",
+      "pdfPages": [
+        7,
+        10
+      ],
+      "blocks": 20,
+      "images": 0,
+      "sourceNormalizedSha256": "8ad20fe44d2e1b4bce59751f311a95c8200b1248c337f60072662f7fd65c6816",
+      "renderedContentSha256": "dd8c0da7a93e0ad58d4998bc4b7f87a78e9302078a5c184d4bed508ceb195d6c",
+      "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "reviews/frontmatter-review.md"
+    },
+    {
+      "unit": "notation",
+      "pdfPages": [
+        11,
+        12
+      ],
+      "blocks": 9,
+      "images": 0,
+      "sourceNormalizedSha256": "8f143026a4c4fbee272dd4d1bfe37e13eba756a9f08549c94eb4893b25d01d7d",
+      "renderedContentSha256": "718c59cf19f35902eade679311bd36caf47b6e2160aed8d52faaf65b3ba88726",
+      "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "reviews/frontmatter-review.md"
+    },
+    {
+      "unit": "contents",
+      "pdfPages": [
+        13,
+        20
+      ],
+      "blocks": 9,
+      "images": 0,
+      "sourceNormalizedSha256": "027afd298316f481f33b48319ed73f5fbc43e7e999e3cb95c505a0bfbeebc615",
+      "renderedContentSha256": "486fa7a99e3c94dcf3b8685edcf30e2717c6a18554e07a09db33b03ad19c722a",
+      "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "reviews/contents-final-review.md"
+    },
+    {
+      "unit": "chapter-01",
+      "pdfPages": [
+        21,
+        86
+      ],
+      "blocks": 569,
+      "images": 36,
+      "sourceNormalizedSha256": "ac5811c8ab1a92e76aec2676256e03203a7dfeb893e320aab0802afc3fd5276d",
+      "renderedContentSha256": "68c20aaa5489146a97c0e3343b821b971b689ae2b6983815ca85eac4acede6e1",
+      "imagesSha256": "5cbacd0350e4fd46e6fd6960b20092d871c433fc400834cdda3857f568916a63",
+      "review": "reviews/chapter-01-review.md"
+    },
+    {
+      "unit": "chapter-02",
+      "pdfPages": [
+        87,
+        156
+      ],
+      "blocks": 799,
+      "images": 32,
+      "sourceNormalizedSha256": "7634d73c050d1245cb9426090663a782655fda82af8f1bf4d3776db949107e2a",
+      "renderedContentSha256": "7a320b41919438cb295fde8e42f928568c5b34f0a025fede6102980b042a9eff",
+      "imagesSha256": "596400b21c42e3bd47e62c834587ab4961cd4429bd1abf27fd9fcf43c0573871",
+      "review": "reviews/chapter-02-review.md"
+    },
+    {
+      "unit": "chapter-03",
+      "pdfPages": [
+        157,
+        198
+      ],
+      "blocks": 377,
+      "images": 18,
+      "sourceNormalizedSha256": "696f20a6ae2e8a0ed67e4986765c237999161ad5946385c56ac3385a01595422",
+      "renderedContentSha256": "f4d8bbd8b5014d77acbefae078d6376485e36230c0d4351fbc14eb414f7a48ba",
+      "imagesSha256": "2f832fee74c05174d3ff63d14ac309bc626e9c9d4b65871a9ac8786b4fa12c92",
+      "review": "reviews/chapter-03-review.md"
+    },
+    {
+      "unit": "chapter-04",
+      "pdfPages": [
+        199,
+        244
+      ],
+      "blocks": 499,
+      "images": 16,
+      "sourceNormalizedSha256": "bb9130ea6047c9cbf72fecc768f5ececc6597891c63b91b43f2bb438582aef0f",
+      "renderedContentSha256": "d52b6e8ddf333ad97b83b4b93b9608c32ddb61ee1063708069833d3b78542328",
+      "imagesSha256": "6ccdc62baf5ded80114be88720082ba461733dc1f09e6eb2e4310f7d70cc30ae",
+      "review": "reviews/global-terminology-review.md"
+    },
+    {
+      "unit": "chapter-05",
+      "pdfPages": [
+        245,
+        310
+      ],
+      "blocks": 674,
+      "images": 24,
+      "sourceNormalizedSha256": "86d176447cd5ca6a722ea8ff20c07fe22902c5ee3a3dcab579215d69ea0e848e",
+      "renderedContentSha256": "8351fbc88cd7be5e96d14c7a6c90f91522282a2c306d77341c394ced1081c3d3",
+      "imagesSha256": "82c4ebb836c18944be6bf7e9e6d5a43cbfe7f8d87c4cb821267831c6a543bbe5",
+      "review": "reviews/global-terminology-review.md"
+    },
+    {
+      "unit": "chapter-06",
+      "pdfPages": [
+        311,
+        344
+      ],
+      "blocks": 327,
+      "images": 13,
+      "sourceNormalizedSha256": "31b710aa3db87acebb4a444ab3bd8275f51026ceba5827a95ccddc5949884080",
+      "renderedContentSha256": "209e9f4cb107e4a26b543a7579ef5a9108e5cdcc9d480b37d69c8d90b827f193",
+      "imagesSha256": "f2989e6bb8d7d519fd3c1901f373b22b78ed632be0f40a78f39b524292ccae62",
+      "review": "reviews/global-terminology-review.md"
+    },
+    {
+      "unit": "chapter-07",
+      "pdfPages": [
+        345,
+        378
+      ],
+      "blocks": 354,
+      "images": 14,
+      "sourceNormalizedSha256": "5e7fb17eec963b6fafb2c59a2f5f23ea7cab76508a1d6dfdefc69ed9f174783c",
+      "renderedContentSha256": "cdbc12032ccf7cdff26259dafbc14fe1f05823f6d033bd4af2c4238b8d91a88c",
+      "imagesSha256": "f444d80623c12dd13dfee6a5c806ae78fbbbcae48afdd179d00bc42e2a310b4f",
+      "review": "reviews/chapter-07-review.md"
+    },
+    {
+      "unit": "chapter-08",
+      "pdfPages": [
+        379,
+        442
+      ],
+      "blocks": 523,
+      "images": 55,
+      "sourceNormalizedSha256": "878e81ddc6642a7adb6b9eb23723969404653d3a9e4617959a792d7d0013b1c3",
+      "renderedContentSha256": "66f86d8127626a8251be8f3adfe08c87bdb17375bc97f9807736f43117f895b5",
+      "imagesSha256": "0e993a5c1fb3fabe561f8f6be1a1a849a0a11ac3f855727ac8813526a07d9fe0",
+      "review": "reviews/global-terminology-review.md"
+    },
+    {
+      "unit": "chapter-09",
+      "pdfPages": [
+        443,
+        480
+      ],
+      "blocks": 308,
+      "images": 15,
+      "sourceNormalizedSha256": "ba52998a2b7207f329a20a74c2149163a8b8369bcb6736fcdbe861c1f84a3f78",
+      "renderedContentSha256": "6cb0a4d099516f73228bb1869f36dcad8f33531b5b514e6b2f31a209220b192d",
+      "imagesSha256": "c82032a7102f8ef5ece32a64a4932a818bfe2db833befd3b0d4b773861de2326",
+      "review": "reviews/chapter-09-review.md"
+    },
+    {
+      "unit": "chapter-10",
+      "pdfPages": [
+        481,
+        542
+      ],
+      "blocks": 669,
+      "images": 20,
+      "sourceNormalizedSha256": "e201180124fba5819995bb5654b36d1c5648ec29999eb5a6ee1411bcd2884ca4",
+      "renderedContentSha256": "d6addc275e62b3aa4c45b0277a9e1ee3b132c13b952b20fd30be59ea2d3f1ed8",
+      "imagesSha256": "b0ea23519f30df38beb63aacfcf8f0db14c9e2e5ba34a72c56dc96f5d7146b14",
+      "review": "reviews/chapter-10-review.md"
+    },
+    {
+      "unit": "chapter-11",
+      "pdfPages": [
+        543,
+        578
+      ],
+      "blocks": 317,
+      "images": 19,
+      "sourceNormalizedSha256": "637c919597f67d4ea8764a72c8ac94215f452f563be7ae232b80461a2a696edc",
+      "renderedContentSha256": "274c9eb439bf439b194588cf8986edb95c60cb278e6618339fc9c2bd537c0901",
+      "imagesSha256": "cb6dd6f9cc51a089ab408252b3ee7d691e4c44589a1f6b44c42b220fea0504fa",
+      "review": "reviews/chapter-11-review.md"
+    },
+    {
+      "unit": "chapter-12",
+      "pdfPages": [
+        579,
+        624
+      ],
+      "blocks": 357,
+      "images": 22,
+      "sourceNormalizedSha256": "b6de66774fe90ae65b8cbb5fdd37611b133ffe4e8fb3fbe0e21bc5ebc6dbdbd7",
+      "renderedContentSha256": "35124a771ec9227f6a8e9ade2a928bf5800c8639df96e3496f5e4f3bd3b45a62",
+      "imagesSha256": "04a759b0addbefbda6855dd5e8989d71dc975bfbcdf5aa2906fc05280bcb02a3",
+      "review": "reviews/global-terminology-review.md"
+    },
+    {
+      "unit": "chapter-13",
+      "pdfPages": [
+        625,
+        672
+      ],
+      "blocks": 404,
+      "images": 24,
+      "sourceNormalizedSha256": "7a3e655c7d422a16dd1e391d275ff9832eb02b79ad4edad46ea21c08ab96fbe8",
+      "renderedContentSha256": "644b2f2598c8a7b2b985a9e89ca937323909d02b220097a41cf528ba2a4a0d43",
+      "imagesSha256": "e411a39da2957ee19016e30644b49f3aa4c36f80c0b27ca00aaea0992b8867fd",
+      "review": "reviews/global-terminology-review.md"
+    },
+    {
+      "unit": "chapter-14",
+      "pdfPages": [
+        673,
+        696
+      ],
+      "blocks": 208,
+      "images": 11,
+      "sourceNormalizedSha256": "684e8fddb1b7b8bac4c01b940cf4d116fb4883d217785b3bf2aa122328d42d43",
+      "renderedContentSha256": "aeae36e964b974fcce601d4cafb3b7d427bc8f91c7ee7b6815ed7287b6f1cc24",
+      "imagesSha256": "acd64c4220f8f41cf7b77a2b889f6f99774f6001622d60b358b41e8a51aea6cf",
+      "review": "reviews/chapter-14-review.md"
+    },
+    {
+      "unit": "appendix-a",
+      "pdfPages": [
+        697,
+        704
+      ],
+      "blocks": 35,
+      "images": 7,
+      "sourceNormalizedSha256": "e00e26f96d01067e70d4c70e21be34ac12b3de669386b166b26eed6bba177ffb",
+      "renderedContentSha256": "04c5ffebc9d0759a088dcaac484c480a85db73c7da5209c19fb0b6bc2cd0af4c",
+      "imagesSha256": "abee45a85d32ca15ff92338440420d647b16c685ec0c9d698d82fb59b3695e81",
+      "review": "reviews/appendix-a-review.md"
+    },
+    {
+      "unit": "appendix-b",
+      "pdfPages": [
+        705,
+        714
+      ],
+      "blocks": 155,
+      "images": 9,
+      "sourceNormalizedSha256": "fa15c9d8bed3e44e8c72ecd773f6f08df0bc83ba1936ad3a5dea3a61721e9df4",
+      "renderedContentSha256": "1a9db9aa1a582076ad3baea5441bff445891b8ca33cc9ed1447040aed5d56aff",
+      "imagesSha256": "9bb996d101ed28700e3b66912210e3da31f4adae990c3b06480e77402ee48f57",
+      "review": "reviews/appendix-b-review.md"
+    },
+    {
+      "unit": "appendix-c",
+      "pdfPages": [
+        715,
+        722
+      ],
+      "blocks": 117,
+      "images": 0,
+      "sourceNormalizedSha256": "ab3abb3b109a1b7869d782b04dc6dc063b72e8cecdc15080b15b8ae1c0c692c3",
+      "renderedContentSha256": "9fc6428cf3bac5a00c615144c5709ba226f652bbf1c2285624d65736c7ed85b1",
+      "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "reviews/appendix-c-review.md"
+    },
+    {
+      "unit": "appendix-d",
+      "pdfPages": [
+        723,
+        726
+      ],
+      "blocks": 30,
+      "images": 1,
+      "sourceNormalizedSha256": "ead60185a8b8207e98669e45fe5d49901dde883cfc2911cd012ffadb46e60086",
+      "renderedContentSha256": "19084c5b7aaf740e43ec87d41541453710cd73e66d085557df11ea683366f4f4",
+      "imagesSha256": "2275cdccd5c21fc60d634ef7ca8d63299b642f25703cd83d1d4b028e68d38186",
+      "review": "reviews/appendix-d-review.md"
+    },
+    {
+      "unit": "appendix-e",
+      "pdfPages": [
+        727,
+        730
+      ],
+      "blocks": 39,
+      "images": 3,
+      "sourceNormalizedSha256": "e8e84a30a757477301d8b62f53db951608e97ed861131fadf9c9a908757378bb",
+      "renderedContentSha256": "428f3f2c8f73e1a8f008e577fa4767ebad4bdf9f19b43a64a5dd7ae3dfda21a2",
+      "imagesSha256": "6c49814a55e782c14d643cdf3d0a9fc91f964a636b529b6189fbf296f6458ff7",
+      "review": "reviews/appendix-e-review.md"
+    },
+    {
+      "unit": "references",
+      "pdfPages": [
+        731,
+        748
+      ],
+      "blocks": 409,
+      "images": 0,
+      "sourceNormalizedSha256": "06993aaa4eeea1a892bef925a2b219430bcc7089d36c9d720bc1e413c8a9eb35",
+      "renderedContentSha256": "77a412ab80da394e2b71d5ea2646829d857385ca04e4293ba1b3018d5f94557c",
+      "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "reviews/global-terminology-review.md"
+    },
+    {
+      "unit": "index",
+      "pdfPages": [
+        749,
+        758
+      ],
+      "blocks": 795,
+      "images": 0,
+      "sourceNormalizedSha256": "d5d87f058e2acdb1b44195a0f49903f16a8026e5d404bfb502a150df5f48b805",
+      "renderedContentSha256": "78a299e251219eb00848a0c53249795cd0e466c6307bb0e4457dc46ea5861a44",
+      "imagesSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "review": "reviews/index-b-review.md"
+    }
+  ],
+  "blockKinds": {
+    "heading": 324,
+    "figure": 342,
+    "paragraph": 3929,
+    "list": 38,
+    "intro": 19,
+    "formula": 2159,
+    "table": 7,
+    "rich": 1203,
+    "box": 19
+  },
+  "images": 342,
+  "navigationLinks": {
+    "contents": 285,
+    "index": 1097
+  },
+  "referenceTargets": {
+    "chapter": 19,
+    "section": 247,
+    "figure": 304,
+    "table": 5,
+    "formula": 2112,
+    "exercise": 431,
+    "algorithm": 0
+  },
+  "references": 408,
+  "indexEntries": 793
+}

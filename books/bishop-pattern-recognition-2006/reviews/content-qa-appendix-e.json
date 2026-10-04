@@ -1,0 +1,25 @@
+{
+  "scope": "Structural checks only; no automatic semantic or editorial acceptance.",
+  "units": [
+    {
+      "unit": "appendix-e",
+      "sourceNormalizedSha256": "98e045316023ecc89f68dcb84144e7bd2990c1b6959ea46b4dbb23543fdd46f4",
+      "sourceFileSha256": "1ae4eb62ca965164fcedd14ca990f8cf3f42bd81ea9ea55e12cc21d1a236e9ec",
+      "rootBlocks": 39,
+      "blockKinds": {
+        "heading": 1,
+        "intro": 1,
+        "paragraph": 22,
+        "formula": 12,
+        "figure": 3
+      },
+      "numberedEquations": 12,
+      "images": 3,
+      "mathFragments": 141,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "PDF text candidates with independent page review",
+      "exercises": null,
+      "status": "structural-checks-passed"
+    }
+  ]
+}

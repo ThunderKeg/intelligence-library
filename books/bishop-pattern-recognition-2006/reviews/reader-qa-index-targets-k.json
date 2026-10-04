@@ -1,0 +1,22 @@
+[
+  {
+    "target": "p05-b050",
+    "block": "p05-b050",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-index-k-ui\\p05-b050-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p05-b050",
+    "block": "p05-b050",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-index-k-ui\\p05-b050-390-dark.png"
+    ],
+    "pans": []
+  }
+]

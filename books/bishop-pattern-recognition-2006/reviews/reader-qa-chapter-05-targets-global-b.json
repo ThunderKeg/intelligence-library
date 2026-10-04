@@ -1,0 +1,62 @@
+[
+  {
+    "target": "p40-b005",
+    "block": "p40-b005",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-05\\p40-b005-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p40-b011",
+    "block": "p40-b011",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-05\\p40-b011-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p62-b005",
+    "block": "p62-b005",
+    "width": 1440,
+    "theme": "light",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-05\\p62-b005-1440-light.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p40-b005",
+    "block": "p40-b005",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-05\\p40-b005-390-dark.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p40-b011",
+    "block": "p40-b011",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-05\\p40-b011-390-dark.png"
+    ],
+    "pans": []
+  },
+  {
+    "target": "p62-b005",
+    "block": "p62-b005",
+    "width": 390,
+    "theme": "dark",
+    "images": [
+      "tmp\\prml-global-ui-b\\chapter-05\\p62-b005-390-dark.png"
+    ],
+    "pans": []
+  }
+]

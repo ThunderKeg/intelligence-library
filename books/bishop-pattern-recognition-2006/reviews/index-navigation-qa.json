@@ -1,0 +1,3332 @@
+{
+  "passed": true,
+  "scope": "index",
+  "casesPerScreen": 97,
+  "indexDestinationUnits": 20,
+  "contentsDestinationUnits": 0,
+  "seeLinks": 77,
+  "results": [
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b005",
+      "kind": "page",
+      "label": "1-of-K coding scheme",
+      "sourceBlock": "p01-b003",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.46875,
+        "bottom": 417.484375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p15-b005",
+      "kind": "page",
+      "label": "acceptance criterion",
+      "sourceBlock": "p01-b004",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.734375,
+        "bottom": 269.1875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p15-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b005",
+      "kind": "page",
+      "label": "activation function",
+      "sourceBlock": "p01-b005",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.734375,
+        "bottom": 313.421875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p03-b001",
+      "kind": "page",
+      "label": "activation function",
+      "sourceBlock": "p01-b005",
+      "capture": true,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.078125,
+        "bottom": 138.71875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p03-b001",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\003-1440-light.png",
+      "sha256": "c4d8fb8b05002c8d6a65848840006d4a9d68448b652ea2245dd746242e3cf84d"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p03-b008",
+      "kind": "page",
+      "label": "active constraint",
+      "sourceBlock": "p01-b006",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.59375,
+        "bottom": 235.09375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p03-b008"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p03-b001",
+      "kind": "page",
+      "label": "active constraint",
+      "sourceBlock": "p01-b006",
+      "capture": true,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.59375,
+        "bottom": 718.40625,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p03-b001",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\005-1440-light.png",
+      "sha256": "a9fc7e3692f321741985ed3ec83926fca1bfb784983b86829d405f52792f0bb0"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p05-b001",
+      "kind": "page",
+      "label": "AdaBoost",
+      "sourceBlock": "p01-b007",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 121.890625,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p05-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p32-b005",
+      "kind": "page",
+      "label": "Akaike information criterion",
+      "sourceBlock": "p01-b012",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.25,
+        "bottom": 309.53125,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p32-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p09-b001",
+      "kind": "page",
+      "label": "α family of divergences",
+      "sourceBlock": "p01-b013",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.015625,
+        "bottom": 513.09375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p09-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p15-b014",
+      "kind": "page",
+      "label": "α recursion",
+      "sourceBlock": "p01-b014",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.578125,
+        "bottom": 236.546875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p15-b014"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p07-b001",
+      "kind": "page",
+      "label": "ancestral sampling",
+      "sourceBlock": "p01-b015",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.703125,
+        "bottom": 564.515625,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p07-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p02-b005",
+      "kind": "page",
+      "label": "annular flow",
+      "sourceBlock": "p01-b016",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.953125,
+        "bottom": 306.296875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p02-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b008",
+      "kind": "page",
+      "label": "autoassociative networks",
+      "sourceBlock": "p01-b022",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.09375,
+        "bottom": 343.328125,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b008"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p21-b011",
+      "kind": "page",
+      "label": "automatic relevance determination",
+      "sourceBlock": "p01-b023",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.15625,
+        "bottom": 276.953125,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p21-b011"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p02-b001",
+      "kind": "page",
+      "label": "basis function",
+      "sourceBlock": "p01-b031",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.265625,
+        "bottom": 352.3125,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p02-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001",
+      "kind": "page",
+      "label": "Bayesian analysis",
+      "sourceBlock": "p01-b036",
+      "capture": true,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\015-1440-light.png",
+      "sha256": "55d31ac951da584e555a4a81aebc2ff6833f4aabd79afef03d76d244b11aa169"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p03-b001",
+      "kind": "page",
+      "label": "Bernoulli distribution",
+      "sourceBlock": "p01-b044",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.1875,
+        "bottom": 123.546875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p03-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001",
+      "kind": "page",
+      "label": "Bernoulli distribution",
+      "sourceBlock": "p01-b044",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85,
+        "bottom": 143.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p03-b001",
+      "kind": "page",
+      "label": "Euler-Lagrange equations",
+      "sourceBlock": "p03-b047",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 122.3125,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p03-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p02-b001",
+      "kind": "page",
+      "label": "linear independence",
+      "sourceBlock": "p06-b014",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.96875,
+        "bottom": 121.859375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p02-b001"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b021",
+      "kind": "see",
+      "label": "ADF",
+      "sourceBlock": "p01-b010",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 112.671875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b021"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b012",
+      "kind": "see",
+      "label": "AIC",
+      "sourceBlock": "p01-b011",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 111.984375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b012"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b025",
+      "kind": "see",
+      "label": "AR model",
+      "sourceBlock": "p01-b017",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 112.421875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b025"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b023",
+      "kind": "see",
+      "label": "ARD",
+      "sourceBlock": "p01-b019",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b023"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b026",
+      "kind": "see",
+      "label": "ARMA",
+      "sourceBlock": "p01-b020",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 112.609375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b026"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b039",
+      "kind": "see",
+      "label": "BIC",
+      "sourceBlock": "p01-b053",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b039"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b033",
+      "kind": "see",
+      "label": "CART",
+      "sourceBlock": "p02-b018",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 112.234375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b033"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b016",
+      "kind": "see",
+      "label": "CCA",
+      "sourceBlock": "p02-b021",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b016"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p10-b024",
+      "kind": "see",
+      "label": "circular normal",
+      "sourceBlock": "p02-b030",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 155.359375,
+        "bottom": 182.546875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p10-b024"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b010",
+      "kind": "see",
+      "label": "conditional mixture model",
+      "sourceBlock": "p02-b050",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 112.421875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b010"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b002",
+      "kind": "see",
+      "label": "D map",
+      "sourceBlock": "p02-b073",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.546875,
+        "bottom": 111.734375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b002"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b007",
+      "kind": "see",
+      "label": "DAG",
+      "sourceBlock": "p02-b075",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 112.671875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b007"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b079",
+      "kind": "see",
+      "label": "decision surface",
+      "sourceBlock": "p02-b081",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 111.859375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b079"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b057",
+      "kind": "see",
+      "label": "E step",
+      "sourceBlock": "p03-b022",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b057"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b051",
+      "kind": "see",
+      "label": "ECM",
+      "sourceBlock": "p03-b024",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.734375,
+        "bottom": 111.921875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b051"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b052",
+      "kind": "see",
+      "label": "EM",
+      "sourceBlock": "p03-b029",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b052"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "empirical Bayes",
+      "sourceBlock": "p03-b031",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b056",
+      "kind": "see",
+      "label": "EP",
+      "sourceBlock": "p03-b037",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 111.859375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b056"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b029",
+      "kind": "see",
+      "label": "error backpropagation",
+      "sourceBlock": "p03-b043",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 112.171875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b054",
+      "kind": "see",
+      "label": "GEM",
+      "sourceBlock": "p04-b019",
+      "capture": true,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 112.484375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b054",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\039-1440-light.png",
+      "sha256": "8ea172bd089100f85dbe59a7333b275127af279b677bf201205bf0765e6e5770"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "generalized maximum likelihood",
+      "sourceBlock": "p04-b022",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b024",
+      "kind": "see",
+      "label": "GTM",
+      "sourceBlock": "p04-b047",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b024"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b080",
+      "kind": "see",
+      "label": "HME",
+      "sourceBlock": "p04-b084",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 111.859375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b080"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b019",
+      "kind": "see",
+      "label": "I map",
+      "sourceBlock": "p05-b005",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.734375,
+        "bottom": 111.921875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b019"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b022",
+      "kind": "see",
+      "label": "i.i.d.",
+      "sourceBlock": "p05-b006",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 112.484375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b022"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b020",
+      "kind": "see",
+      "label": "ICA",
+      "sourceBlock": "p05-b007",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b020"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b044",
+      "kind": "see",
+      "label": "ICM",
+      "sourceBlock": "p05-b008",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b044"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b016",
+      "kind": "see",
+      "label": "IP algorithm",
+      "sourceBlock": "p05-b039",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b016"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b045",
+      "kind": "see",
+      "label": "IRLS",
+      "sourceBlock": "p05-b040",
+      "capture": true,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 111.984375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b045",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\048-1440-light.png",
+      "sha256": "55373301d5ec82cd1c710a9ec971bc6e5b619d280546791b1006aa756f5c1b64"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b058",
+      "kind": "see",
+      "label": "KKT",
+      "sourceBlock": "p05-b071",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 112.421875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b058"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b074",
+      "kind": "see",
+      "label": "KL divergence",
+      "sourceBlock": "p05-b072",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 112.609375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b074"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b015",
+      "kind": "see",
+      "label": "kriging",
+      "sourceBlock": "p05-b073",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 112.671875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b015"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b051",
+      "kind": "see",
+      "label": "large margin",
+      "sourceBlock": "p05-b081",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 112.234375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b051"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b012",
+      "kind": "see",
+      "label": "LDS",
+      "sourceBlock": "p06-b002",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.734375,
+        "bottom": 111.921875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b012"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b029",
+      "kind": "see",
+      "label": "LLE",
+      "sourceBlock": "p06-b025",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b006",
+      "kind": "see",
+      "label": "LMS algorithm",
+      "sourceBlock": "p06-b026",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b006"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b070",
+      "kind": "see",
+      "label": "M step",
+      "sourceBlock": "p06-b045",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b070"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b076",
+      "kind": "see",
+      "label": "MAP",
+      "sourceBlock": "p06-b050",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.734375,
+        "bottom": 111.921875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b076"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b056",
+      "kind": "see",
+      "label": "Markov boundary",
+      "sourceBlock": "p06-b057",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 112.171875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b056"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b066",
+      "kind": "see",
+      "label": "Markov network",
+      "sourceBlock": "p06-b065",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b066"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "maximum likelihood::type 2",
+      "sourceBlock": "p06-b074",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b051",
+      "kind": "see",
+      "label": "maximum margin",
+      "sourceBlock": "p06-b075",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 112.234375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b051"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b062",
+      "kind": "see",
+      "label": "MCMC",
+      "sourceBlock": "p06-b077",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.109375,
+        "bottom": 112.296875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b062"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b008",
+      "kind": "see",
+      "label": "MDN",
+      "sourceBlock": "p06-b078",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b008"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b029",
+      "kind": "see",
+      "label": "MDS",
+      "sourceBlock": "p06-b079",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 111.984375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b010",
+      "kind": "see",
+      "label": "mixture distribution",
+      "sourceBlock": "p07-b009",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 112.421875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b010"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b030",
+      "kind": "see",
+      "label": "MLP",
+      "sourceBlock": "p07-b017",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 112.171875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b030"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b055",
+      "kind": "see",
+      "label": "Moore-Penrose pseudo-inverse",
+      "sourceBlock": "p07-b026",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b055"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b066",
+      "kind": "see",
+      "label": "MRF",
+      "sourceBlock": "p07-b028",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b066"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b067",
+      "kind": "see",
+      "label": "Nadaraya-Watson",
+      "sourceBlock": "p07-b035",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b067"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b006",
+      "kind": "see",
+      "label": "normal distribution",
+      "sourceBlock": "p07-b051",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 111.984375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b006"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b029",
+      "kind": "see",
+      "label": "normalized exponential",
+      "sourceBlock": "p07-b055",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 112.171875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b008",
+      "kind": "see",
+      "label": "on-line learning",
+      "sourceBlock": "p07-b063",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 112.234375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b008"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b048",
+      "kind": "see",
+      "label": "PAC learning",
+      "sourceBlock": "p07-b073",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b059",
+      "kind": "see",
+      "label": "Parzen estimator",
+      "sourceBlock": "p07-b079",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 112.609375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b059"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b022",
+      "kind": "see",
+      "label": "PCA",
+      "sourceBlock": "p07-b082",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 112.171875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b022"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b036",
+      "kind": "see",
+      "label": "probabilistic graphical model",
+      "sourceBlock": "p08-b036",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 112.609375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b036"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b079",
+      "kind": "see",
+      "label": "RMS error",
+      "sourceBlock": "p08-b074",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 111.859375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b079"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b060",
+      "kind": "see",
+      "label": "RTS equations",
+      "sourceBlock": "p08-b082",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.109375,
+        "bottom": 112.296875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b060"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b071",
+      "kind": "see",
+      "label": "RVM",
+      "sourceBlock": "p08-b084",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b071"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b039",
+      "kind": "see",
+      "label": "Schwarz criterion",
+      "sourceBlock": "p09-b003",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b039"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b037",
+      "kind": "see",
+      "label": "sigmoid",
+      "sourceBlock": "p09-b015",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 112.609375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b037"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b087",
+      "kind": "see",
+      "label": "SIR",
+      "sourceBlock": "p09-b020",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.359375,
+        "bottom": 112.546875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b087"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b009",
+      "kind": "see",
+      "label": "SMO",
+      "sourceBlock": "p09-b024",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 112.421875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b009"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b004",
+      "kind": "see",
+      "label": "SOM",
+      "sourceBlock": "p09-b030",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 112.484375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b004"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b050",
+      "kind": "see",
+      "label": "statistical bias",
+      "sourceBlock": "p09-b042",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b050"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b023",
+      "kind": "see",
+      "label": "statistical independence",
+      "sourceBlock": "p09-b043",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 112.671875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b023"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b043",
+      "kind": "see",
+      "label": "statistical learning theory",
+      "sourceBlock": "p09-b044",
+      "capture": true,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b043",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\087-1440-light.png",
+      "sha256": "1648824da5b09da10d01fec8cd01549b26d3c7abae242c250f012dc6df682886"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b018",
+      "kind": "see",
+      "label": "SVD",
+      "sourceBlock": "p09-b065",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b018"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b061",
+      "kind": "see",
+      "label": "SVM",
+      "sourceBlock": "p09-b066",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b061"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b001",
+      "kind": "see",
+      "label": "trellis diagram",
+      "sourceBlock": "p10-b001",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 111.859375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b001"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "type 2 maximum likelihood",
+      "sourceBlock": "p10-b003",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 112.359375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b075",
+      "kind": "see",
+      "label": "undetermined multiplier",
+      "sourceBlock": "p10-b004",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b075"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b066",
+      "kind": "see",
+      "label": "undirected graph",
+      "sourceBlock": "p10-b005",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b066"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b085",
+      "kind": "see",
+      "label": "unobserved variable",
+      "sourceBlock": "p10-b009",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 112.671875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b085"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p10-b013",
+      "kind": "see",
+      "label": "VC dimension",
+      "sourceBlock": "p10-b019",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 112.484375,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p10-b013"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b046",
+      "kind": "see",
+      "label": "vertex",
+      "sourceBlock": "p10-b021",
+      "capture": false,
+      "width": 1440,
+      "theme": "light",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 112.171875,
+        "bar": 62,
+        "viewport": 1000
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b046"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b005",
+      "kind": "page",
+      "label": "1-of-K coding scheme",
+      "sourceBlock": "p01-b003",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.34375,
+        "bottom": 681.875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-09#read-p01-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p15-b005",
+      "kind": "page",
+      "label": "acceptance criterion",
+      "sourceBlock": "p01-b004",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.359375,
+        "bottom": 449.90625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-11#read-p15-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b005",
+      "kind": "page",
+      "label": "activation function",
+      "sourceBlock": "p01-b005",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.453125,
+        "bottom": 535.78125,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-04#read-p01-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p03-b001",
+      "kind": "page",
+      "label": "activation function",
+      "sourceBlock": "p01-b005",
+      "capture": true,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 133.28125,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-05#read-p03-b001",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\003-390-dark.png",
+      "sha256": "f91ecb19b1cc402f74ef515fa942de6e19c2f69951403385eb79e11b9a0873ef"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p03-b008",
+      "kind": "page",
+      "label": "active constraint",
+      "sourceBlock": "p01-b006",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.953125,
+        "bottom": 359.828125,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-07#read-p03-b008"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p03-b001",
+      "kind": "page",
+      "label": "active constraint",
+      "sourceBlock": "p01-b006",
+      "capture": true,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.515625,
+        "bottom": 676.59375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-e#read-p03-b001",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\005-390-dark.png",
+      "sha256": "03b20ecdd42374b01b8a6254314a6e29ab1e14a64cc44dabd580a5383fdca46d"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p05-b001",
+      "kind": "page",
+      "label": "AdaBoost",
+      "sourceBlock": "p01-b007",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.90625,
+        "bottom": 118.046875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-14#read-p05-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p32-b005",
+      "kind": "page",
+      "label": "Akaike information criterion",
+      "sourceBlock": "p01-b012",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.59375,
+        "bottom": 454.015625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-01#read-p32-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p09-b001",
+      "kind": "page",
+      "label": "α family of divergences",
+      "sourceBlock": "p01-b013",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.53125,
+        "bottom": 708.359375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-10#read-p09-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p15-b014",
+      "kind": "page",
+      "label": "α recursion",
+      "sourceBlock": "p01-b014",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.203125,
+        "bottom": 329.375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-13#read-p15-b014"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p07-b001",
+      "kind": "page",
+      "label": "ancestral sampling",
+      "sourceBlock": "p01-b015",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.75,
+        "bottom": 488.4375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-08#read-p07-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p02-b005",
+      "kind": "page",
+      "label": "annular flow",
+      "sourceBlock": "p01-b016",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 515.4375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-a#read-p02-b005"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b008",
+      "kind": "page",
+      "label": "autoassociative networks",
+      "sourceBlock": "p01-b022",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.15625,
+        "bottom": 582.265625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-12#read-p33-b008"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p21-b011",
+      "kind": "page",
+      "label": "automatic relevance determination",
+      "sourceBlock": "p01-b023",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.5625,
+        "bottom": 433.03125,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-06#read-p21-b011"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p02-b001",
+      "kind": "page",
+      "label": "basis function",
+      "sourceBlock": "p01-b031",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.578125,
+        "bottom": 537.34375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-03#read-p02-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001",
+      "kind": "page",
+      "label": "Bayesian analysis",
+      "sourceBlock": "p01-b036",
+      "capture": true,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=preface#read-p01-b001",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\015-390-dark.png",
+      "sha256": "07b1c2b58d8abfeaa6852c8e9091a5fe96b92f31d09d6964472069fd46bca70a"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p03-b001",
+      "kind": "page",
+      "label": "Bernoulli distribution",
+      "sourceBlock": "p01-b044",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.21875,
+        "bottom": 156.375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=chapter-02#read-p03-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001",
+      "kind": "page",
+      "label": "Bernoulli distribution",
+      "sourceBlock": "p01-b044",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85,
+        "bottom": 128.390625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-b#read-p01-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p03-b001",
+      "kind": "page",
+      "label": "Euler-Lagrange equations",
+      "sourceBlock": "p03-b047",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 151.453125,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-d#read-p03-b001"
+    },
+    {
+      "unit": "index",
+      "href": "?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p02-b001",
+      "kind": "page",
+      "label": "linear independence",
+      "sourceBlock": "p06-b014",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.875,
+        "bottom": 151.15625,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=appendix-c#read-p02-b001"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b021",
+      "kind": "see",
+      "label": "ADF",
+      "sourceBlock": "p01-b010",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 139.796875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b021"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b012",
+      "kind": "see",
+      "label": "AIC",
+      "sourceBlock": "p01-b011",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 138.984375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b012"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b025",
+      "kind": "see",
+      "label": "AR model",
+      "sourceBlock": "p01-b017",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b025"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b023",
+      "kind": "see",
+      "label": "ARD",
+      "sourceBlock": "p01-b019",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 139.546875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b023"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b026",
+      "kind": "see",
+      "label": "ARMA",
+      "sourceBlock": "p01-b020",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.109375,
+        "bottom": 139.484375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b026"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b039",
+      "kind": "see",
+      "label": "BIC",
+      "sourceBlock": "p01-b053",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 139.671875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b039"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b033",
+      "kind": "see",
+      "label": "CART",
+      "sourceBlock": "p02-b018",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 139.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b033"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b016",
+      "kind": "see",
+      "label": "CCA",
+      "sourceBlock": "p02-b021",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.546875,
+        "bottom": 138.921875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b016"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p10-b024",
+      "kind": "see",
+      "label": "circular normal",
+      "sourceBlock": "p02-b030",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 139.171875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p10-b024"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b010",
+      "kind": "see",
+      "label": "conditional mixture model",
+      "sourceBlock": "p02-b050",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 111.984375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b010"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b002",
+      "kind": "see",
+      "label": "D map",
+      "sourceBlock": "p02-b073",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.359375,
+        "bottom": 112.546875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b002"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b007",
+      "kind": "see",
+      "label": "DAG",
+      "sourceBlock": "p02-b075",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 112.484375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b007"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b079",
+      "kind": "see",
+      "label": "decision surface",
+      "sourceBlock": "p02-b081",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.109375,
+        "bottom": 112.296875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b079"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b057",
+      "kind": "see",
+      "label": "E step",
+      "sourceBlock": "p03-b022",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b057"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b051",
+      "kind": "see",
+      "label": "ECM",
+      "sourceBlock": "p03-b024",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 139.296875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b051"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b052",
+      "kind": "see",
+      "label": "EM",
+      "sourceBlock": "p03-b029",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 139.671875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b052"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "empirical Bayes",
+      "sourceBlock": "p03-b031",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 139.546875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b056",
+      "kind": "see",
+      "label": "EP",
+      "sourceBlock": "p03-b037",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 139.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b056"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b029",
+      "kind": "see",
+      "label": "error backpropagation",
+      "sourceBlock": "p03-b043",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b054",
+      "kind": "see",
+      "label": "GEM",
+      "sourceBlock": "p04-b019",
+      "capture": true,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b054",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\039-390-dark.png",
+      "sha256": "5069b50433f9f81734785ac01f9b5e7e5151f138c049f98cade1b65686c18461"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "generalized maximum likelihood",
+      "sourceBlock": "p04-b022",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 139.546875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b024",
+      "kind": "see",
+      "label": "GTM",
+      "sourceBlock": "p04-b047",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 139.859375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b024"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b080",
+      "kind": "see",
+      "label": "HME",
+      "sourceBlock": "p04-b084",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 139.171875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b080"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b019",
+      "kind": "see",
+      "label": "I map",
+      "sourceBlock": "p05-b005",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 112.484375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b019"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b022",
+      "kind": "see",
+      "label": "i.i.d.",
+      "sourceBlock": "p05-b006",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 139.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b022"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b020",
+      "kind": "see",
+      "label": "ICA",
+      "sourceBlock": "p05-b007",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 139.859375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b020"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b044",
+      "kind": "see",
+      "label": "ICM",
+      "sourceBlock": "p05-b008",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 139.796875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b044"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b016",
+      "kind": "see",
+      "label": "IP algorithm",
+      "sourceBlock": "p05-b039",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.359375,
+        "bottom": 139.734375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b016"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b045",
+      "kind": "see",
+      "label": "IRLS",
+      "sourceBlock": "p05-b040",
+      "capture": true,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 139.171875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b045",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\048-390-dark.png",
+      "sha256": "4a383587fe58f1df089cae0e5d4e295a42e9ee179cfa699f2f775bb430c5960f"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b058",
+      "kind": "see",
+      "label": "KKT",
+      "sourceBlock": "p05-b071",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 139.359375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b058"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b074",
+      "kind": "see",
+      "label": "KL divergence",
+      "sourceBlock": "p05-b072",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 139.671875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b074"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b015",
+      "kind": "see",
+      "label": "kriging",
+      "sourceBlock": "p05-b073",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 112.671875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b015"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b051",
+      "kind": "see",
+      "label": "large margin",
+      "sourceBlock": "p05-b081",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 112.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b051"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b012",
+      "kind": "see",
+      "label": "LDS",
+      "sourceBlock": "p06-b002",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 139.421875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b012"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b029",
+      "kind": "see",
+      "label": "LLE",
+      "sourceBlock": "p06-b025",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 139.359375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b006",
+      "kind": "see",
+      "label": "LMS algorithm",
+      "sourceBlock": "p06-b026",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.546875,
+        "bottom": 138.921875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b006"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b070",
+      "kind": "see",
+      "label": "M step",
+      "sourceBlock": "p06-b045",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b070"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b076",
+      "kind": "see",
+      "label": "MAP",
+      "sourceBlock": "p06-b050",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b076"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b056",
+      "kind": "see",
+      "label": "Markov boundary",
+      "sourceBlock": "p06-b057",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.359375,
+        "bottom": 139.734375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b056"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b066",
+      "kind": "see",
+      "label": "Markov network",
+      "sourceBlock": "p06-b065",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 139.359375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b066"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "maximum likelihood::type 2",
+      "sourceBlock": "p06-b074",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 139.546875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b051",
+      "kind": "see",
+      "label": "maximum margin",
+      "sourceBlock": "p06-b075",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 112.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b051"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b062",
+      "kind": "see",
+      "label": "MCMC",
+      "sourceBlock": "p06-b077",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 139.234375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b062"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b008",
+      "kind": "see",
+      "label": "MDN",
+      "sourceBlock": "p06-b078",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 139.421875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b008"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b029",
+      "kind": "see",
+      "label": "MDS",
+      "sourceBlock": "p06-b079",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 139.234375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b010",
+      "kind": "see",
+      "label": "mixture distribution",
+      "sourceBlock": "p07-b009",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 111.984375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b010"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b030",
+      "kind": "see",
+      "label": "MLP",
+      "sourceBlock": "p07-b017",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 139.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b030"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b055",
+      "kind": "see",
+      "label": "Moore-Penrose pseudo-inverse",
+      "sourceBlock": "p07-b026",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b055"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b066",
+      "kind": "see",
+      "label": "MRF",
+      "sourceBlock": "p07-b028",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 139.359375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b066"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b067",
+      "kind": "see",
+      "label": "Nadaraya-Watson",
+      "sourceBlock": "p07-b035",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 112.234375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b067"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b006",
+      "kind": "see",
+      "label": "normal distribution",
+      "sourceBlock": "p07-b051",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b006"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b029",
+      "kind": "see",
+      "label": "normalized exponential",
+      "sourceBlock": "p07-b055",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 139.421875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b029"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b008",
+      "kind": "see",
+      "label": "on-line learning",
+      "sourceBlock": "p07-b063",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.796875,
+        "bottom": 111.984375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b008"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b048",
+      "kind": "see",
+      "label": "PAC learning",
+      "sourceBlock": "p07-b073",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.046875,
+        "bottom": 139.421875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b059",
+      "kind": "see",
+      "label": "Parzen estimator",
+      "sourceBlock": "p07-b079",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.359375,
+        "bottom": 139.734375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b059"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b022",
+      "kind": "see",
+      "label": "PCA",
+      "sourceBlock": "p07-b082",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 138.984375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b022"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p04-b036",
+      "kind": "see",
+      "label": "probabilistic graphical model",
+      "sourceBlock": "p08-b036",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.109375,
+        "bottom": 112.296875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p04-b036"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b079",
+      "kind": "see",
+      "label": "RMS error",
+      "sourceBlock": "p08-b074",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.734375,
+        "bottom": 111.921875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b079"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b060",
+      "kind": "see",
+      "label": "RTS equations",
+      "sourceBlock": "p08-b082",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 139.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b060"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b071",
+      "kind": "see",
+      "label": "RVM",
+      "sourceBlock": "p08-b084",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 139.046875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b071"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b039",
+      "kind": "see",
+      "label": "Schwarz criterion",
+      "sourceBlock": "p09-b003",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 139.671875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b039"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b037",
+      "kind": "see",
+      "label": "sigmoid",
+      "sourceBlock": "p09-b015",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 139.046875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b037"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p08-b087",
+      "kind": "see",
+      "label": "SIR",
+      "sourceBlock": "p09-b020",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.359375,
+        "bottom": 139.734375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p08-b087"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b009",
+      "kind": "see",
+      "label": "SMO",
+      "sourceBlock": "p09-b024",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 139.359375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b009"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b004",
+      "kind": "see",
+      "label": "SOM",
+      "sourceBlock": "p09-b030",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 112.046875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b004"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p01-b050",
+      "kind": "see",
+      "label": "statistical bias",
+      "sourceBlock": "p09-b042",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.109375,
+        "bottom": 112.296875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p01-b050"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b023",
+      "kind": "see",
+      "label": "statistical independence",
+      "sourceBlock": "p09-b043",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.609375,
+        "bottom": 111.796875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b023"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p02-b043",
+      "kind": "see",
+      "label": "statistical learning theory",
+      "sourceBlock": "p09-b044",
+      "capture": true,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.296875,
+        "bottom": 139.671875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p02-b043",
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-navigation\\index-navigation-qa\\087-390-dark.png",
+      "sha256": "e8b2550625ed8c3702dc20041d37c2e658e46dafefaee973e688ea30aa056e6d"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b018",
+      "kind": "see",
+      "label": "SVD",
+      "sourceBlock": "p09-b065",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.234375,
+        "bottom": 139.609375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b018"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p09-b061",
+      "kind": "see",
+      "label": "SVM",
+      "sourceBlock": "p09-b066",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 111.859375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p09-b061"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b001",
+      "kind": "see",
+      "label": "trellis diagram",
+      "sourceBlock": "p10-b001",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.859375,
+        "bottom": 139.234375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b001"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p03-b048",
+      "kind": "see",
+      "label": "type 2 maximum likelihood",
+      "sourceBlock": "p10-b003",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.171875,
+        "bottom": 139.546875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p03-b048"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b075",
+      "kind": "see",
+      "label": "undetermined multiplier",
+      "sourceBlock": "p10-b004",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.671875,
+        "bottom": 111.859375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b075"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p06-b066",
+      "kind": "see",
+      "label": "undirected graph",
+      "sourceBlock": "p10-b005",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.984375,
+        "bottom": 139.359375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p06-b066"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p05-b085",
+      "kind": "see",
+      "label": "unobserved variable",
+      "sourceBlock": "p10-b009",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.484375,
+        "bottom": 139.859375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p05-b085"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p10-b013",
+      "kind": "see",
+      "label": "VC dimension",
+      "sourceBlock": "p10-b019",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 85.421875,
+        "bottom": 139.796875,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p10-b013"
+    },
+    {
+      "unit": "index",
+      "href": "#read-p07-b046",
+      "kind": "see",
+      "label": "vertex",
+      "sourceBlock": "p10-b021",
+      "capture": false,
+      "width": 390,
+      "theme": "dark",
+      "geometry": {
+        "top": 84.921875,
+        "bottom": 112.109375,
+        "bar": 62,
+        "viewport": 844
+      },
+      "finalUrl": "http://127.0.0.1:8794/?book=bishop-pattern-recognition-2006&chapter=index#read-p07-b046"
+    }
+  ]
+}

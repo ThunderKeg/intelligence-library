@@ -1,0 +1,44 @@
+{
+  "pageStarts": {
+    "749": "p01-b003",
+    "750": "p02-b001",
+    "751": "p03-b001",
+    "752": "p04-b001",
+    "753": "p05-b001",
+    "754": "p06-b001",
+    "755": "p07-b001",
+    "756": "p08-b001",
+    "757": "p09-b001",
+    "758": "p10-b001"
+  },
+  "specials": {
+    "covariance matrix": "p02-b061",
+    "ϵ-tube": "p03-b038",
+    "GEM": "p04-b019",
+    "iterative reweighted least squares": "p05-b045",
+    "machine learning": "p06-b046",
+    "probability": "p08-b038",
+    "statistical learning theory": "p09-b044",
+    "Yellowstone National Park": "p10-b040"
+  },
+  "targets": [
+    "p01-b003",
+    "p02-b001",
+    "p03-b001",
+    "p04-b001",
+    "p05-b001",
+    "p06-b001",
+    "p07-b001",
+    "p08-b001",
+    "p09-b001",
+    "p10-b001",
+    "p02-b061",
+    "p03-b038",
+    "p04-b019",
+    "p05-b045",
+    "p06-b046",
+    "p08-b038",
+    "p09-b044",
+    "p10-b040"
+  ]
+}

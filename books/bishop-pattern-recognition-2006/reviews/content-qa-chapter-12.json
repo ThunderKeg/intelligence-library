@@ -1,0 +1,26 @@
+{
+  "scope": "Structural checks only; no automatic semantic or editorial acceptance.",
+  "units": [
+    {
+      "unit": "chapter-12",
+      "sourceNormalizedSha256": "67f3ba3d431897acbe558f491464a881aa0449908d25ea54b8c93254f5a57962",
+      "sourceFileSha256": "a4f392569af0639315602f7ebdb49fe74bfa0ec8d7859f36301b1b24fb8c1de7",
+      "rootBlocks": 357,
+      "blockKinds": {
+        "heading": 17,
+        "intro": 1,
+        "figure": 22,
+        "paragraph": 220,
+        "formula": 95,
+        "list": 2
+      },
+      "numberedEquations": 95,
+      "images": 22,
+      "mathFragments": 874,
+      "sourceMathRoundTrip": true,
+      "sourceInventoryBasis": "reviews\\source-checks-chapter-12.json",
+      "exercises": 29,
+      "status": "structural-checks-passed"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "unit": "appendix-a",
+      "screen": "desktop-light",
+      "blocks": 35,
+      "images": 7,
+      "math": 15,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p07-b002",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p06-b002",
+        "top": 84.703125,
+        "bottom": 138.34375,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 7709
+      },
+      "detailBlocks": [
+        "p04-b005"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-a",
+      "screen": "mobile-dark",
+      "blocks": 35,
+      "images": 7,
+      "math": 15,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p07-b002",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p06-b002",
+        "top": 85.3125,
+        "bottom": 133.109375,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 9853
+      },
+      "detailBlocks": [
+        "p04-b005"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

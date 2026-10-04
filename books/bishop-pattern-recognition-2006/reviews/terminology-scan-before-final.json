@@ -1,0 +1,123 @@
+{
+  "scope": "Candidate word forms only; no automatic replacements or acceptance.",
+  "units": [
+    {
+      "unit": "chapter-01",
+      "guideCount": 1,
+      "variants": {
+        "雅可比": 2,
+        "Jacobian": 1,
+        "生成式模型": 1,
+        "判别式模型": 1
+      }
+    },
+    {
+      "unit": "chapter-02",
+      "guideCount": 1,
+      "variants": {
+        "雅可比": 2
+      }
+    },
+    {
+      "unit": "chapter-03",
+      "guideCount": 1,
+      "variants": {
+        "拉普拉斯近似": 3,
+        "等效核": 15,
+        "基函数": 92
+      }
+    },
+    {
+      "unit": "chapter-04",
+      "guideCount": 1,
+      "variants": {
+        "拉普拉斯近似": 19,
+        "基函数": 18,
+        "生成式模型": 2,
+        "生成模型": 1,
+        "判别式模型": 1,
+        "判别模型": 1
+      }
+    },
+    {
+      "unit": "chapter-05",
+      "guideCount": 1,
+      "variants": {
+        "拉普拉斯近似": 10,
+        "Jacobian": 20,
+        "基函数": 17
+      }
+    },
+    {
+      "unit": "chapter-06",
+      "guideCount": 1,
+      "variants": {
+        "拉普拉斯近似": 10,
+        "等效核": 2,
+        "基函数": 52,
+        "生成模型": 10,
+        "判别模型": 2
+      }
+    },
+    {
+      "unit": "chapter-07",
+      "guideCount": 1,
+      "variants": {
+        "拉普拉斯近似": 6,
+        "基函数": 27
+      }
+    },
+    {
+      "unit": "chapter-08",
+      "guideCount": 1,
+      "variants": {
+        "Dirichlet 分布": 1,
+        "Dirichlet 先验": 2,
+        "信念传播": 5,
+        "生成模型": 7
+      }
+    },
+    {
+      "unit": "chapter-09",
+      "guideCount": 1,
+      "variants": {}
+    },
+    {
+      "unit": "chapter-10",
+      "guideCount": 1,
+      "variants": {
+        "信念传播": 7,
+        "拉普拉斯近似": 11,
+        "基函数": 3
+      }
+    },
+    {
+      "unit": "chapter-11",
+      "guideCount": 1,
+      "variants": {
+        "雅可比": 1
+      }
+    },
+    {
+      "unit": "chapter-12",
+      "guideCount": 1,
+      "variants": {
+        "拉普拉斯近似": 1,
+        "生成模型": 1
+      }
+    },
+    {
+      "unit": "chapter-13",
+      "guideCount": 1,
+      "variants": {
+        "生成模型": 1,
+        "判别模型": 1
+      }
+    },
+    {
+      "unit": "chapter-14",
+      "guideCount": 1,
+      "variants": {}
+    }
+  ]
+}

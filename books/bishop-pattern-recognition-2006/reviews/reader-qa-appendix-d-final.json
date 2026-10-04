@@ -1,0 +1,50 @@
+{
+  "results": [
+    {
+      "unit": "appendix-d",
+      "screen": "desktop-light",
+      "blocks": 30,
+      "images": 1,
+      "math": 76,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p03-b010",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [
+        "p02-b012",
+        "p02-b010",
+        "p01-b008"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "appendix-d",
+      "screen": "mobile-dark",
+      "blocks": 30,
+      "images": 1,
+      "math": 76,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [],
+      "fractionFenceGeometry": [],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p03-b010",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": null,
+      "detailBlocks": [
+        "p02-b012",
+        "p02-b010",
+        "p01-b008"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "tmp\\prml-appendix-d-final",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

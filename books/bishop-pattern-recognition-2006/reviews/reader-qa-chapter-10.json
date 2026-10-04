@@ -1,0 +1,108 @@
+{
+  "results": [
+    {
+      "unit": "chapter-10",
+      "screen": "desktop-light",
+      "blocks": 648,
+      "images": 20,
+      "math": 1285,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 52,
+          "tableHeight": 48.25
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 48,
+          "tableHeight": 48
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p62-b008",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p57-b004",
+        "top": 85.34375,
+        "bottom": 138.984375,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 78780
+      },
+      "detailBlocks": [
+        "p21-b005",
+        "p28-b014",
+        "p22-b001",
+        "p05-b009",
+        "p49-b007"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-10",
+      "screen": "mobile-dark",
+      "blocks": 648,
+      "images": 20,
+      "math": 1285,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 44.21875
+        },
+        {
+          "glyph": "(",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        },
+        {
+          "glyph": ")",
+          "fenceHeight": 46,
+          "tableHeight": 43.84375
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p62-b008",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p57-b004",
+        "top": 84.734375,
+        "bottom": 132.53125,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 101764
+      },
+      "detailBlocks": [
+        "p21-b005",
+        "p28-b014",
+        "p22-b001",
+        "p05-b009",
+        "p49-b007"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

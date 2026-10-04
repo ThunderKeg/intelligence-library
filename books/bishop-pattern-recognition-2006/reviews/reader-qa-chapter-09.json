@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "unit": "chapter-09",
+      "screen": "desktop-light",
+      "blocks": 285,
+      "images": 15,
+      "math": 725,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 61,
+          "tableHeight": 60.390625
+        }
+      ],
+      "pageWidth": 1440,
+      "scrollWidth": 1440,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p37-b003",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p33-b008",
+        "top": 84.5625,
+        "bottom": 138.203125,
+        "toolbarBottom": 62,
+        "viewport": 1000,
+        "scrollY": 42658
+      },
+      "detailBlocks": [
+        "p21-b004",
+        "p31-b004",
+        "p30-b003",
+        "p16-b003",
+        "p18-b010"
+      ],
+      "inChapterReferenceJump": true
+    },
+    {
+      "unit": "chapter-09",
+      "screen": "mobile-dark",
+      "blocks": 285,
+      "images": 15,
+      "math": 725,
+      "mathFontLoaded": true,
+      "matrixFenceGeometry": [
+        {
+          "glyph": "{",
+          "fenceHeight": 54,
+          "tableHeight": 54
+        }
+      ],
+      "pageWidth": 390,
+      "scrollWidth": 390,
+      "consoleErrors": [],
+      "savedEndBlock": "read-p37-b003",
+      "restoredEndBlockVisible": true,
+      "settledTocLanding": {
+        "target": "#read-p33-b008",
+        "top": 84.640625,
+        "bottom": 132.4375,
+        "toolbarBottom": 62,
+        "viewport": 844,
+        "scrollY": 57433
+      },
+      "detailBlocks": [
+        "p21-b004",
+        "p31-b004",
+        "p30-b003",
+        "p16-b003",
+        "p18-b010"
+      ],
+      "inChapterReferenceJump": true
+    }
+  ],
+  "screenshots": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa",
+  "scope": "Rendering checks only; source fidelity requires independent review."
+}

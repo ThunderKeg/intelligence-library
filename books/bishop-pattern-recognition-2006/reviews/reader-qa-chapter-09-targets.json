@@ -1,0 +1,314 @@
+[
+  {
+    "target": "9.2",
+    "block": "p03-b003",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.2-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "9.16",
+    "block": "p13-b007",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.16-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "9.66",
+    "block": "p27-b013",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.66-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p04-b001",
+    "block": "p04-b001",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p04-b001-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p07-b001",
+    "block": "p07-b001",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p07-b001-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p11-b001",
+    "block": "p11-b001",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p11-b001-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p15-b001",
+    "block": "p15-b001",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p15-b001-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p26-b001",
+    "block": "p26-b001",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p26-b001-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p17-b001-step1",
+    "block": "p17-b001-step1",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p17-b001-step1-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p17-b001-step7",
+    "block": "p17-b001-step7",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p17-b001-step7-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p19-b001-step1",
+    "block": "p19-b001-step1",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p19-b001-step1-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p19-b001-step5",
+    "block": "p19-b001-step5",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p19-b001-step5-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p16-b003-step1",
+    "block": "p16-b003-step1",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p16-b003-step1-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "p18-b010-step1",
+    "block": "p18-b010-step1",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p18-b010-step1-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "9.25",
+    "block": "p17-b001-step3",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.25-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "9.28",
+    "block": "p17-b001-step8",
+    "width": 1440,
+    "theme": "light",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.28-1440-light.png",
+    "pans": []
+  },
+  {
+    "target": "9.2",
+    "block": "p03-b003",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.2-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "9.16",
+    "block": "p13-b007",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.16-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 28,
+        "client": 265,
+        "scroll": 293,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.16-390-dark-pan-0.png"
+      }
+    ]
+  },
+  {
+    "target": "9.66",
+    "block": "p27-b013",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.66-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "p04-b001",
+    "block": "p04-b001",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p04-b001-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 594,
+        "client": 342,
+        "scroll": 936,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p04-b001-390-dark-pan-0.png"
+      }
+    ]
+  },
+  {
+    "target": "p07-b001",
+    "block": "p07-b001",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p07-b001-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 594,
+        "client": 342,
+        "scroll": 936,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p07-b001-390-dark-pan-0.png"
+      }
+    ]
+  },
+  {
+    "target": "p11-b001",
+    "block": "p11-b001",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p11-b001-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 594,
+        "client": 342,
+        "scroll": 936,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p11-b001-390-dark-pan-0.png"
+      }
+    ]
+  },
+  {
+    "target": "p15-b001",
+    "block": "p15-b001",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p15-b001-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 594,
+        "client": 342,
+        "scroll": 936,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p15-b001-390-dark-pan-0.png"
+      }
+    ]
+  },
+  {
+    "target": "p26-b001",
+    "block": "p26-b001",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p26-b001-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 594,
+        "client": 342,
+        "scroll": 936,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p26-b001-390-dark-pan-0.png"
+      }
+    ]
+  },
+  {
+    "target": "p17-b001-step1",
+    "block": "p17-b001-step1",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p17-b001-step1-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "p17-b001-step7",
+    "block": "p17-b001-step7",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p17-b001-step7-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "p19-b001-step1",
+    "block": "p19-b001-step1",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p19-b001-step1-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "p19-b001-step5",
+    "block": "p19-b001-step5",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p19-b001-step5-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "p16-b003-step1",
+    "block": "p16-b003-step1",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p16-b003-step1-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "p18-b010-step1",
+    "block": "p18-b010-step1",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-p18-b010-step1-390-dark.png",
+    "pans": []
+  },
+  {
+    "target": "9.25",
+    "block": "p17-b001-step3",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.25-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 85,
+        "client": 218,
+        "scroll": 303,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.25-390-dark-pan-0.png"
+      }
+    ]
+  },
+  {
+    "target": "9.28",
+    "block": "p17-b001-step8",
+    "width": 390,
+    "theme": "dark",
+    "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.28-390-dark.png",
+    "pans": [
+      {
+        "scrollLeft": 111,
+        "client": 218,
+        "scroll": 329,
+        "image": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-browser-qa\\chapter-09-target-9.28-390-dark-pan-0.png"
+      }
+    ]
+  }
+]

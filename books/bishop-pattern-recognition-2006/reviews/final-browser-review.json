@@ -1,0 +1,161 @@
+{
+  "reviewer": "root",
+  "passed": true,
+  "scope": "最终浏览器回归与实际视觉抽查；逐页语义验收沿用独立章节及增量报告。",
+  "readerReport": "reviews/reader-qa-final.json",
+  "readerReportSha256": "77fdd298a0f3e367ef08dee73515add2dd9db6c33fc04b8438f16aa74f77be9b",
+  "readerChecks": 50,
+  "readerUnits": 25,
+  "mathFontChecks": 40,
+  "tocLandings": 38,
+  "detailBlockChecks": 162,
+  "inChapterReferenceJumps": 38,
+  "offlineReport": "reviews/offline-final-qa.json",
+  "offlineReportSha256": "ee70d174b5bd8de728e5de1eb9d52c9874c7558b1c5bd7eb64178e09fc71ae4e",
+  "offlineUnits": 25,
+  "offlineImages": 342,
+  "offlineResources": 370,
+  "offlineResponses": 885,
+  "offlineNavigationScope": "逐一直接进入全部 25 单元，并核对当前/相邻单元 href；并非逐一点击所有离线链接。",
+  "beforeRunInputs": {
+    "app.js": "691764e7332fef7da7d090ed46c54b688fbf630a52449adad8959f07bcb52013",
+    "styles.css": "25e40832a416523480942dc2b4c884f868f6d66970c0199dc1e8bb87862267e9",
+    "books.js": "3d5be645f1aeb538929ecf4e9dba5f9e7f3d5a264dc7d0c37e630f77446dcb8a",
+    "sw.js": "c1526ee68dc9103e85b629ef486e7680bf01801fb9dc6ccdd075c88f2fcfe164",
+    "books\\bishop-pattern-recognition-2006\\frontmatter.json": "1db6d1841f2a614c70bbd8d25173b5fdb1704a572f8378be3de54766107e5476",
+    "books\\bishop-pattern-recognition-2006\\preface.json": "fd08eb81c721f124db4fc960ded05db879170294179875c154794a9ea0ed73c1",
+    "books\\bishop-pattern-recognition-2006\\notation.json": "c35f6af88af9159a9103942bc333f91570110109c7f404ee0287d555aaeb71aa",
+    "books\\bishop-pattern-recognition-2006\\contents.json": "238ebb294c82ad5e2e5f2699e56505a132a1cccd61ae9c2bbd9d306affa4d564",
+    "books\\bishop-pattern-recognition-2006\\chapter-01.json": "d67343a3f89d75bb95cb01d8f22ba0ef27f14a475a77ca827951133f2fc0edfd",
+    "books\\bishop-pattern-recognition-2006\\chapter-02.json": "ef6d248d2327e637b6f253cd314d90634f828eb8dde72016f703012ba001ae60",
+    "books\\bishop-pattern-recognition-2006\\chapter-03.json": "5c1bc56ea7375450785fd9f7765f59fd466a1dcb5ea6f32013a927b9782b2acf",
+    "books\\bishop-pattern-recognition-2006\\chapter-04.json": "130c306bc9d7cdeb3ee9b97913e281e9560e81a4bb31d2e19f4931ec39518176",
+    "books\\bishop-pattern-recognition-2006\\chapter-05.json": "7d2d2da952b6dc5c06acfa1e7e316a812703d145f26ec2166b8e083946fdbaf3",
+    "books\\bishop-pattern-recognition-2006\\chapter-06.json": "2acb19ba98d30da4e164c84068d1cd64d3cba21c481ea2c7703bb09ab2ff0432",
+    "books\\bishop-pattern-recognition-2006\\chapter-07.json": "462f11609d2235810cf2698be801c3b8e3a18cb803bbd8936f30d56b9c53c716",
+    "books\\bishop-pattern-recognition-2006\\chapter-08.json": "1ce7b53a1d7e7969d90cded29c694ca3f1f4b1492e1566cd3f091caec80c9b92",
+    "books\\bishop-pattern-recognition-2006\\chapter-09.json": "71f214ed460eb4acff01cae7e6752e87626550d24e2c7cbfa5f66c617128a5b1",
+    "books\\bishop-pattern-recognition-2006\\chapter-10.json": "422c3a01bcc9eff42ffc7b81468f3ca74a44f7ffef579b9e7b7b47567dd1fd77",
+    "books\\bishop-pattern-recognition-2006\\chapter-11.json": "8c09706c4dbcee3faba948d592df27875db080e411c3f8238924c03ce2b1e4c7",
+    "books\\bishop-pattern-recognition-2006\\chapter-12.json": "cd23c31093f090ad59f00d2d536aa546d8a63bb484a454d1788f739678a88d78",
+    "books\\bishop-pattern-recognition-2006\\chapter-13.json": "b4f1c0c4f73e1d3f3bba1d00a2c75f1008413b7fd403a41dd3bb76036f3ae701",
+    "books\\bishop-pattern-recognition-2006\\chapter-14.json": "1ff1b278161c471d1d199dd018581552c3bfa60b86b0e62ee43106f9411431bd",
+    "books\\bishop-pattern-recognition-2006\\appendix-a.json": "9902df05a3cec1b31f9d3876e56f829a150fba3b2ccf1f7f58438600619285b2",
+    "books\\bishop-pattern-recognition-2006\\appendix-b.json": "98352c400ab073735b2b16adf00640a91695652ddb5beb11016e508cbdc2e1f2",
+    "books\\bishop-pattern-recognition-2006\\appendix-c.json": "13dfe3e1e820fac24cfa16987e0ecd56da607a50354c8bd6c4c762eca8110f58",
+    "books\\bishop-pattern-recognition-2006\\appendix-d.json": "ef58b5324b758c0774ce94f39771e80f9092be9f55b1f7d977b986da635abf1b",
+    "books\\bishop-pattern-recognition-2006\\appendix-e.json": "02fa8d3ecd762a743959baa0a181779a0c48777d856926d72e3cc20e4876455e",
+    "books\\bishop-pattern-recognition-2006\\references.json": "8df335ea39080b50f0126e6f4badfed3609b3172d296218776098fd639c50945",
+    "books\\bishop-pattern-recognition-2006\\index.json": "0dbde053012b359473a925f98ced60854275864a366214a131b06a28b4696b87",
+    "books\\bishop-pattern-recognition-2006\\reference-index.json": "13863e290c4f81db983c5a45b48be3f910b6595199460e133b9721bc077b48a7",
+    "books\\bishop-pattern-recognition-2006\\offline-images.json": "83ea8245c0d69f31c6bf5ee0682055780907e7c72284e772c2e49f10b09b20d9",
+    "books\\bishop-pattern-recognition-2006\\assets\\fonts\\STIXTwoMath-Regular.woff2": "094191335def3f0452c81ec0713cfc2f29bb6af8cecbf79b60881fbf2db97562"
+  },
+  "afterRunInputs": {
+    "app.js": "691764e7332fef7da7d090ed46c54b688fbf630a52449adad8959f07bcb52013",
+    "styles.css": "25e40832a416523480942dc2b4c884f868f6d66970c0199dc1e8bb87862267e9",
+    "books.js": "23140eadce3467a3df2abce719f96634f870737c778ac42126920d8735c42291",
+    "sw.js": "c1526ee68dc9103e85b629ef486e7680bf01801fb9dc6ccdd075c88f2fcfe164",
+    "books\\bishop-pattern-recognition-2006\\frontmatter.json": "1db6d1841f2a614c70bbd8d25173b5fdb1704a572f8378be3de54766107e5476",
+    "books\\bishop-pattern-recognition-2006\\preface.json": "fd08eb81c721f124db4fc960ded05db879170294179875c154794a9ea0ed73c1",
+    "books\\bishop-pattern-recognition-2006\\notation.json": "c35f6af88af9159a9103942bc333f91570110109c7f404ee0287d555aaeb71aa",
+    "books\\bishop-pattern-recognition-2006\\contents.json": "238ebb294c82ad5e2e5f2699e56505a132a1cccd61ae9c2bbd9d306affa4d564",
+    "books\\bishop-pattern-recognition-2006\\chapter-01.json": "d67343a3f89d75bb95cb01d8f22ba0ef27f14a475a77ca827951133f2fc0edfd",
+    "books\\bishop-pattern-recognition-2006\\chapter-02.json": "ef6d248d2327e637b6f253cd314d90634f828eb8dde72016f703012ba001ae60",
+    "books\\bishop-pattern-recognition-2006\\chapter-03.json": "5c1bc56ea7375450785fd9f7765f59fd466a1dcb5ea6f32013a927b9782b2acf",
+    "books\\bishop-pattern-recognition-2006\\chapter-04.json": "130c306bc9d7cdeb3ee9b97913e281e9560e81a4bb31d2e19f4931ec39518176",
+    "books\\bishop-pattern-recognition-2006\\chapter-05.json": "7d2d2da952b6dc5c06acfa1e7e316a812703d145f26ec2166b8e083946fdbaf3",
+    "books\\bishop-pattern-recognition-2006\\chapter-06.json": "2acb19ba98d30da4e164c84068d1cd64d3cba21c481ea2c7703bb09ab2ff0432",
+    "books\\bishop-pattern-recognition-2006\\chapter-07.json": "462f11609d2235810cf2698be801c3b8e3a18cb803bbd8936f30d56b9c53c716",
+    "books\\bishop-pattern-recognition-2006\\chapter-08.json": "1ce7b53a1d7e7969d90cded29c694ca3f1f4b1492e1566cd3f091caec80c9b92",
+    "books\\bishop-pattern-recognition-2006\\chapter-09.json": "71f214ed460eb4acff01cae7e6752e87626550d24e2c7cbfa5f66c617128a5b1",
+    "books\\bishop-pattern-recognition-2006\\chapter-10.json": "422c3a01bcc9eff42ffc7b81468f3ca74a44f7ffef579b9e7b7b47567dd1fd77",
+    "books\\bishop-pattern-recognition-2006\\chapter-11.json": "8c09706c4dbcee3faba948d592df27875db080e411c3f8238924c03ce2b1e4c7",
+    "books\\bishop-pattern-recognition-2006\\chapter-12.json": "cd23c31093f090ad59f00d2d536aa546d8a63bb484a454d1788f739678a88d78",
+    "books\\bishop-pattern-recognition-2006\\chapter-13.json": "b4f1c0c4f73e1d3f3bba1d00a2c75f1008413b7fd403a41dd3bb76036f3ae701",
+    "books\\bishop-pattern-recognition-2006\\chapter-14.json": "1ff1b278161c471d1d199dd018581552c3bfa60b86b0e62ee43106f9411431bd",
+    "books\\bishop-pattern-recognition-2006\\appendix-a.json": "9902df05a3cec1b31f9d3876e56f829a150fba3b2ccf1f7f58438600619285b2",
+    "books\\bishop-pattern-recognition-2006\\appendix-b.json": "98352c400ab073735b2b16adf00640a91695652ddb5beb11016e508cbdc2e1f2",
+    "books\\bishop-pattern-recognition-2006\\appendix-c.json": "13dfe3e1e820fac24cfa16987e0ecd56da607a50354c8bd6c4c762eca8110f58",
+    "books\\bishop-pattern-recognition-2006\\appendix-d.json": "ef58b5324b758c0774ce94f39771e80f9092be9f55b1f7d977b986da635abf1b",
+    "books\\bishop-pattern-recognition-2006\\appendix-e.json": "02fa8d3ecd762a743959baa0a181779a0c48777d856926d72e3cc20e4876455e",
+    "books\\bishop-pattern-recognition-2006\\references.json": "8df335ea39080b50f0126e6f4badfed3609b3172d296218776098fd639c50945",
+    "books\\bishop-pattern-recognition-2006\\index.json": "0dbde053012b359473a925f98ced60854275864a366214a131b06a28b4696b87",
+    "books\\bishop-pattern-recognition-2006\\reference-index.json": "13863e290c4f81db983c5a45b48be3f910b6595199460e133b9721bc077b48a7",
+    "books\\bishop-pattern-recognition-2006\\offline-images.json": "83ea8245c0d69f31c6bf5ee0682055780907e7c72284e772c2e49f10b09b20d9",
+    "books\\bishop-pattern-recognition-2006\\assets\\fonts\\STIXTwoMath-Regular.woff2": "094191335def3f0452c81ec0713cfc2f29bb6af8cecbf79b60881fbf2db97562"
+  },
+  "inputDrift": {
+    "books.js": {
+      "before": "3d5be645f1aeb538929ecf4e9dba5f9e7f3d5a264dc7d0c37e630f77446dcb8a",
+      "after": "23140eadce3467a3df2abce719f96634f870737c778ac42126920d8735c42291"
+    }
+  },
+  "prmlCatalogObjectUnchanged": true,
+  "inputDriftReview": "人工核对 books.js 全部差异，仅 MacKay 描述 43→44 和新增第 44 章；PRML 对象、渲染器、样式、SW、25 单元、引用/离线清单与字体未变。其他书增量保留，最终当前目录烟雾见独立公共集成报告。",
+  "actuallyViewedScreenshots": [
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-offline-final\\contents.png",
+      "sha256": "0cd4105ebe81f79c1fe1dc820504e81fcc56b42ba65fd4fa59789b1aaea34bd6",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "断网窄屏暗色：目录缩进、条目与页码"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-offline-final\\chapter-05.png",
+      "sha256": "ecbbc79bf9d07118f12ac26c2f64aa10902c8e97b2c55997f824adb3be594808",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "断网窄屏暗色：导读、正文与原图"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-offline-final\\index.png",
+      "sha256": "60a66175126ae32b43404fae0d698901f98f5fff0859c77c651453391cc393db",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "断网窄屏暗色：索引层级、字体与页码"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reader-final\\chapter-02-formula-desktop-light.png",
+      "sha256": "b44257262c82ff4692db0d113d57c76ce1c1bd565ad9f3040cba3d59f980455d",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "桌面亮色：公式、上下标、编号与正文"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reader-final\\appendix-c-formula-mobile-dark.png",
+      "sha256": "42bcafb424411f4d6f221d91667c0aa3fff3a34a48012f8555cd6d36a6e3002d",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "窄屏暗色：矩阵记号与编号公式"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reader-final\\chapter-13-end-mobile-dark.png",
+      "sha256": "5158fabbc085c5673192d1143f967cb28217ff4b817e85b2f8fc654cf1b4c414",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "窄屏暗色：章末习题、星号、www 与相邻章导航"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reader-final\\chapter-10-p49-b007-mobile-dark.png",
+      "sha256": "2f46b58ea253361f71dc3f81328c69f5f6244b130d84ee6c6de8dd9ed678ed57",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "窄屏暗色：算法框、分步列表与框内公式"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reader-final\\chapter-11-p21-b010-desktop-light.png",
+      "sha256": "dba50932811b20c5103f6e264a6361db6d07f152f9fb4b1da67f4f1f8eada07b",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "桌面亮色：Gibbs 算法与人物介绍图框"
+    },
+    {
+      "file": "D:\\code\\github\\thunderkeg\\intelligence-library\\tmp\\prml-reader-final\\chapter-01-p11-b003-mobile-dark.png",
+      "sha256": "89910bbf05b8f6cd2413d8d470229c8775136225bc5fab56c14325922dbc18fe",
+      "actuallyViewed": true,
+      "result": "通过",
+      "scope": "窄屏暗色：完整表 1.2 的标题、表头与单元格"
+    }
+  ]
+}
