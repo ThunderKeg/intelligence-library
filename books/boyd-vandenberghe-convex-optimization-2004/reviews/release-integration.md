@@ -27,4 +27,12 @@
 
 对[正式网站](https://thunderkeg.github.io/intelligence-library/?book=boyd-vandenberghe-convex-optimization-2004&chapter=frontmatter)重新创建浏览器上下文，确认线上 Service Worker 的版本等于上述提交。只在联网状态打开卷首，图片准备完成后断网，先于任何其他章节访问逐一读取 181 个图像，其字节数和 SHA-256 均与已验收资产一致。随后全部 23 份线上章节 JSON 与本地验收内容一致，23 个手机深色阅读视图、八类引用点击／刷新／Back 均通过，没有 JavaScript 错误。195 个核心资源的线上 HTTP 检查全部返回 200。
 
-完整结果见 [release-published.json](evidence/release-published.json)；本节随后的提交仅补充验收记录，不改动正文、图像、阅读器或工作流。
+完整结果见 [release-published.json](evidence/release-published.json)；`1928ab2` 仅补充上述验收记录。其后的首次下载提示修复见下节。
+
+## 首次下载提示修复与部署
+
+线上首次安装可能超过 30 秒，原等待上限会在下载仍正常进行时短暂显示失败。本次将首次安装的等待上限改为 300 秒，并在首次下载期间明确显示“正在下载离线阅读内容，请保持联网…”。图片下载阶段的进度、失败与重试处理保持原样。
+
+独立 Agent 使用真实 Service Worker 完成 35 秒慢安装、脚本求值失败后重试、单张图片 HTTP 503 后重试三项检查，全部通过；恢复后断网读取未访问图片亦通过，见 [增量审查](release-review.md)。
+
+修复提交 `e544e9a1fe56dbada2fa5bfa49f1caa0bc90b4bc` 的 [Pages 运行 37192831545](https://github.com/ThunderKeg/intelligence-library/actions/runs/37192831545) 成功。部署后直接下载六个代表资源，与该提交的 Git blob 逐字节比较；Service Worker 先按工作流替换提交版本，所有比较通过，见 [release-deployed.json](evidence/release-deployed.json)。本段之后的收尾提交只补充任务状态和本次验收记录。

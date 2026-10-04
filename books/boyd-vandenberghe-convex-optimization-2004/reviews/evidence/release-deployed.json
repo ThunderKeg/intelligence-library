@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "commit": "e544e9a1fe56dbada2fa5bfa49f1caa0bc90b4bc",
+  "files": [
+    {
+      "path": "app.js",
+      "sha256": "75c524d6fa6010ddbbc1e7046bd8ef526be2fa0cb79b0d08ec6790d56bb333a1",
+      "bytes": 42288
+    },
+    {
+      "path": "books.js",
+      "sha256": "0af8b0b00d8d6001e0c45d6bd11d507da68795459034329a45bdfa91630ca4c6",
+      "bytes": 25183
+    },
+    {
+      "path": "sw.js",
+      "sha256": "6d57054081545776f78baff91daa5c6011934b6c5f79fbea182eafbf6a9ab0b9",
+      "bytes": 13912
+    },
+    {
+      "path": "styles.css",
+      "sha256": "7f504383e81226f8c612b36637d3d07898a66af80584b2070f192bafab68dcb7",
+      "bytes": 42395
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/offline-images.json",
+      "sha256": "7ca6922343e5224ff9674bbdfa4a40ccb363c6491027f2936c24914bc1f25e7e",
+      "bytes": 16068
+    },
+    {
+      "path": "books/boyd-vandenberghe-convex-optimization-2004/chapter-11.json",
+      "sha256": "a769cb56dbbe070532e8015ad99f6068b9ee884dc2e4bdda17e73093d46fe123",
+      "bytes": 1302724
+    }
+  ]
+}

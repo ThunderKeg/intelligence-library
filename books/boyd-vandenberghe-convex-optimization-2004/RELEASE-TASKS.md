@@ -15,4 +15,6 @@
 ## 线上首次下载提示补验
 
 - [x] 修正首次安装超过 30 秒时过早显示失败的问题；独立模拟慢速首次安装。
-- [ ] 推送补充修复并确认最终部署版本。
+- [x] 推送补充修复并确认最终部署版本。
+
+首次下载提示修复已在 `e544e9a1fe56dbada2fa5bfa49f1caa0bc90b4bc` 推送并部署，[Pages 运行 37192831545](https://github.com/ThunderKeg/intelligence-library/actions/runs/37192831545) 成功。线上读取的阅读器、书架、样式、Service Worker、图片清单和第 11 章均与该 Git 提交逐字节一致；无待解决的发布问题。
