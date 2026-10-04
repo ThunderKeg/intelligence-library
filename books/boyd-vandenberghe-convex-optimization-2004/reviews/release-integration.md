@@ -20,3 +20,11 @@
 - 提交检查保留已验收文件的原始字节。Windows CRLF 按行尾处理；上游 `assets/fonts/OFL.txt` 第 20 行原有尾空格作为原许可证保留，其余暂存文件的空白检查通过。
 
 本文件记录发布前的验收。部署后的检查使用 `tools/qa_published.py`，按实际提交 SHA 核对线上 Service Worker，并再次验证冷缓存离线图像、章节 JSON 和交叉引用。
+
+## 线上验收
+
+`6ec1b8c57a6f3a4541818fae6f6413017e4ad0f8` 已推送至远端 main，[GitHub Pages 运行 37192172967](https://github.com/ThunderKeg/intelligence-library/actions/runs/37192172967) 成功完成。
+
+对[正式网站](https://thunderkeg.github.io/intelligence-library/?book=boyd-vandenberghe-convex-optimization-2004&chapter=frontmatter)重新创建浏览器上下文，确认线上 Service Worker 的版本等于上述提交。只在联网状态打开卷首，图片准备完成后断网，先于任何其他章节访问逐一读取 181 个图像，其字节数和 SHA-256 均与已验收资产一致。随后全部 23 份线上章节 JSON 与本地验收内容一致，23 个手机深色阅读视图、八类引用点击／刷新／Back 均通过，没有 JavaScript 错误。195 个核心资源的线上 HTTP 检查全部返回 200。
+
+完整结果见 [release-published.json](evidence/release-published.json)；本节随后的提交仅补充验收记录，不改动正文、图像、阅读器或工作流。
