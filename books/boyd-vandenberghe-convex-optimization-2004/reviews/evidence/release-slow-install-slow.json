@@ -1,0 +1,28 @@
+{
+  "mode": "slow",
+  "passed": true,
+  "appSha256": "75c524d6fa6010ddbbc1e7046bd8ef526be2fa0cb79b0d08ec6790d56bb333a1",
+  "realServiceWorker": true,
+  "javascriptErrors": [],
+  "checkpoint32s": {
+    "state": "checking",
+    "hidden": false,
+    "text": "正在下载离线阅读内容，请保持联网…",
+    "retryHidden": true,
+    "controlled": false,
+    "secondsAfterDelayedRequest": 32.00907179999922
+  },
+  "completePanel": {
+    "state": "complete",
+    "hidden": true,
+    "text": "",
+    "retryHidden": true,
+    "controlled": true
+  },
+  "unvisitedImageAfterDisconnect": {
+    "ok": true,
+    "bytes": 11519
+  },
+  "actualDelaySeconds": 35.0001013000001,
+  "failureRequestCount": 0
+}

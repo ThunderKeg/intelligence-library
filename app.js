@@ -580,9 +580,10 @@ function setupOfflineImages(book) {
     try {
       let registration = await navigator.serviceWorker.getRegistration();
       if (!registration) registration = await navigator.serviceWorker.register("./sw.js", { updateViaCache: "none" });
+      if (!registration.active) status.textContent = "正在下载离线阅读内容，请保持联网…";
       const ready = registration.active ? registration : await Promise.race([
         navigator.serviceWorker.ready,
-        new Promise((_, reject) => setTimeout(() => reject(new Error("Service Worker timeout")), 30000)),
+        new Promise((_, reject) => setTimeout(() => reject(new Error("Service Worker timeout")), 300000)),
       ]);
       if (currentRun !== runId) return;
       const worker = ready.active || navigator.serviceWorker.controller;

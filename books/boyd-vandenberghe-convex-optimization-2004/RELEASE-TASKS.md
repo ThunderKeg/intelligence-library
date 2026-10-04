@@ -11,3 +11,8 @@
 - [x] GitHub Pages 部署成功，线上版本与发布内容一致；线上离线图片与跳转复验。
 
 发布提交：`6ec1b8c57a6f3a4541818fae6f6413017e4ad0f8`，已推送至远端 `main`；[Pages 运行 37192172967](https://github.com/ThunderKeg/intelligence-library/actions/runs/37192172967) 部署成功。线上全新浏览器只联网访问卷首，断网后全部 181 个图像字节及哈希、23 个阅读单元、八类引用点击／刷新／返回均通过。详见 [发布记录](reviews/release-integration.md) 与 [线上实测证据](reviews/evidence/release-published.json)。
+
+## 线上首次下载提示补验
+
+- [x] 修正首次安装超过 30 秒时过早显示失败的问题；独立模拟慢速首次安装。
+- [ ] 推送补充修复并确认最终部署版本。
