@@ -1,0 +1,26 @@
+{
+  "mode": "image-failure",
+  "passed": true,
+  "appSha256": "75c524d6fa6010ddbbc1e7046bd8ef526be2fa0cb79b0d08ec6790d56bb333a1",
+  "realServiceWorker": true,
+  "javascriptErrors": [],
+  "failurePanel": {
+    "state": "error",
+    "hidden": false,
+    "text": "离线图片已准备 180/181 张；联网后可重试。",
+    "retryHidden": false,
+    "controlled": true
+  },
+  "completePanel": {
+    "state": "complete",
+    "hidden": true,
+    "text": "",
+    "retryHidden": true,
+    "controlled": true
+  },
+  "unvisitedImageAfterDisconnect": {
+    "ok": true,
+    "bytes": 11519
+  },
+  "failureRequestCount": 1
+}

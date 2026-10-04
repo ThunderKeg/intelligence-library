@@ -1,0 +1,26 @@
+{
+  "mode": "install-failure",
+  "passed": true,
+  "appSha256": "75c524d6fa6010ddbbc1e7046bd8ef526be2fa0cb79b0d08ec6790d56bb333a1",
+  "realServiceWorker": true,
+  "javascriptErrors": [],
+  "failurePanel": {
+    "state": "error",
+    "hidden": false,
+    "text": "离线图片准备失败，请重试。",
+    "retryHidden": false,
+    "controlled": false
+  },
+  "completePanel": {
+    "state": "complete",
+    "hidden": true,
+    "text": "",
+    "retryHidden": true,
+    "controlled": true
+  },
+  "unvisitedImageAfterDisconnect": {
+    "ok": true,
+    "bytes": 11519
+  },
+  "failureRequestCount": 2
+}
