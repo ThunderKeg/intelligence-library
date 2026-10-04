@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="190" viewBox="0 0 360 190" role="img" aria-labelledby="title desc">
+  <title id="title">图 1.4：二元对称信道</title>
+  <desc id="desc">输入 x 可以是 0 或 1；输出 y 也可以是 0 或 1。输入不变的概率为 1−f，翻转的概率为 f。</desc>
+  <rect width="360" height="190" rx="8" fill="#f8faf7"/>
+  <g fill="#1e3027" font-family="Georgia, serif" font-size="23" text-anchor="middle">
+    <text x="55" y="30">x</text><text x="305" y="30">y</text>
+    <text x="55" y="75">0</text><text x="55" y="157">1</text>
+    <text x="305" y="75">0</text><text x="305" y="157">1</text>
+  </g>
+  <g fill="none" stroke="#315d47" stroke-width="2.3" stroke-linecap="round">
+    <path d="M85 68H275M85 150H275M85 77L275 142M85 141L275 77"/>
+  </g>
+  <g fill="#315d47">
+    <path d="m275 68-11-5v10zm0 82-11-5v10zm0-8-12-2 6-9zm0-65-6 10-6-8z"/>
+  </g>
+  <g fill="#1e3027" font-family="Georgia, serif" font-size="17" text-anchor="middle">
+    <text x="180" y="58">1−f</text>
+    <text x="180" y="177">1−f</text>
+    <text x="129" y="91">f</text>
+    <text x="129" y="140">f</text>
+  </g>
+</svg>

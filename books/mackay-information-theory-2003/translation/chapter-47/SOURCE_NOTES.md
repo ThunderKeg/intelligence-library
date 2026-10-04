@@ -1,0 +1,21 @@
+# 第 47 章原书核对笔记
+
+- PDF 569（印刷 557）：§47.1、§47.2 标题左侧均有实心三角；全章构建器须保留这种标题装饰。图 47.1 的原图在右侧，矩阵 $\mathbf H$ 和下方二部图作为一个图裁取，图内的 $1$、空心圆、带加号校验方框和连线均须完整。
+- PDF 570（印刷 558）：图 47.2 为同一编号下的 (a)–(c) 三幅因子图；原书右侧并排的三组英文说明及公式已逐组译为紧邻图的中文段落，图本体保留 $t_n$、$P(r_n\mid t_n)$、$n_n$、$P(n_n)$、$z_m$ 标签。印本的图注在三组说明下方，译稿也依 (a)–(c) 排完说明后再置图注。构建器将该段标记为 caption 以保留网站样式。
+- PDF 570→571（印刷 558→559）：末段 “For other channels such as the Gaussian channel with output $\mathbf y$, we may define a received” 续到 PDF 571 首行 “binary vector $\mathbf r$ however we wish ...”。为使网页段落完整，整句译文放在 `pdf-570.md`，`pdf-571.md` 从下一句起。
+- PDF 571（印刷 559）：在用信念网络解释噪声 $\mathbf n$ 和伴随式 $\mathbf z$ 的段落里，印本先称上方变量为 $\mathbf n$，随后却写 “every bit $x_n$ is the parent ...”。译稿照印本保留 $x_n$，不凭上下文改成 $n_n$。
+- PDF 571→572（印刷 559→560）：PDF 571 末段 “The graph in” 续 PDF 572 的 “which $\mathbf x$ and $\mathbf z$ live is then ...”。译稿在 `pdf-571.md` 合成完整段落，`pdf-572.md` 从下一段集合定义开始。
+- PDF 573→574（印刷 561→562）：PDF 573 末段 “In our procedure, ‘undetected’ errors occur if the decoder finds an $\hat{\mathbf x}$” 续 PDF 574 图 47.3 下方正文的 “satisfying $\mathbf H\hat{\mathbf x}=\mathbf z\pmod 2$ ...”。译稿在 `pdf-573.md` 合成完整段落；`pdf-574.md` 从新的 **Cost.** 段落开始。
+- PDF 574（印刷 562）：图 47.3 原页是四个嵌入的单色位图加版面文字/箭头/标号组成的完整图，资产从 PDF 页可视区域整体裁取，保留 (a)–(c)、气泡、`parity bits`、箭头与全部像素；图内英文紧邻译注。图注末尾的 Dilbert 版权和许可声明按印本保留。§47.4 前的实心三角需由构建器为标题添加可视标记。脚注 1 网址按原页完整保留。
+- PDF 574（印刷 562）代价段落原文先写每轮约 $6Nj$ 次浮点乘法，再写 $20$ 轮时每个译出比特约 $120t/R$ 次运算；两个字母 $j/t$ 按可视印本原样保留，不凭推导擅改。
+- PDF 574（印刷 562）图 47.3 漫画气泡首行在嵌入位图中只能辨出 `REDUNDAN…`，末字截断；次行 `GLASS` 清楚。译注记录可辨字形及中文意思，不把未显示的 `T` 写成原图可见文字。独立源审 S47-02 据原页放大复核。
+- PDF 576（印刷 564）：图 47.5 的整张 0、1、2、3、10、11、12、13 轮迭代图及最终译码图按原书完整裁出；气泡英文字与图 47.3 一样是嵌入位图，末字截断。图 47.6 独立裁出，轴、刻度、误差棒、两条指向说明及 `GV`/`C` 均在图中保留并紧邻译注。
+- PDF 577→578（印刷 565→566）：PDF 577 页末“Among the values”续 PDF 578 的“of $j$ shown in the figure, $j=3$ is the best ...”。译稿在 `pdf-577.md` 合完整句，`pdf-578.md` 从后面的新段开始。图 47.7 四面板与图 47.8 两曲线图均从可视原页独立裁取，轴/曲线/小图标号完整。
+- PDF 578→579（印刷 566→567）：PDF 578 的密度演化蒙特卡罗段落末尾 “At the $i$th iteration, probabilities $r$ at” 续 PDF 579 的 “radius $I-i+1$ are transformed ...”。译稿在 `pdf-578.md` 合完整段落，`pdf-579.md` 从 “As an example” 新段起。
+- PDF 579→580（印刷 567→568）：PDF 579 最后一段 “With carefully optimized constructions, the resulting codes over $GF(4)$,” 续 PDF 580 的 “$GF(8)$, and $GF(16)$ perform nearly one decibel better ...”。译稿在 `pdf-579.md` 合完整段落，`pdf-580.md` 从下一段开始。表 47.13/47.14/47.15 按原页逐格转为可复制表格，表 47.15 的每个 $2\times2$ 矩阵保持原位置和数值。
+- PDF 580→581（印刷 568→569）：PDF 580 最后一段 “switching from $GF(2)$ to $GF(16)$ gives” 续 PDF 581 的 “about 0.6 dB; and Matthew Davey’s code ...”。译稿在 `pdf-580.md` 合完整段落，`pdf-581.md` 从下一段起。算法 47.16 的四行原公式属于单个完整描边框；构建器须将这一个数学块编为 `outlined` 算法框，算法说明段保留在框外。图 47.17 资产只含完整曲线图区；图内原字拼写 `Gallileo` 与图注 `Galileo` 不同，译注分别照录。
+- PDF 581→582（印刷 569→570）：PDF 581 “as illustrated by the right-hand side of [图形矩阵式 47.16]” 续 PDF 582 的 “and if the data $\mathbf s$ are loaded ...”。为避免网页句子悬空，在 `pdf-581.md` 把完整条件句写在式图之前，后页从式 (47.17) 开始。式 (47.16) 含 12 行、28 列共 71 个稀疏 $1$；原页裁图保留字形、虚线分区和式号，另经可视原页逐格核对，以前 16 列｜后 12 列的二元矩阵完整转写为可复制公式（原图空白格写为 $0$）。左块每行恰有四个 $1$、每列恰有三个 $1$；右块为阶梯矩阵。原图与转写同时保留，供读者对照。
+- PDF 581（印刷 569）图 47.18：左侧差集循环码表格的第一行仅有跨全部七列的标题，第二行才为 $N$ 与六个块长；$N=273$ 为常规字重，$M$ 行的 $10/28/82/244/730$、$d$ 行的 $6/10/18$、$k$ 行的 $3/5/9$ 共 11 个数字为粗体。页稿按原表结构编排；专属构建器将粗体数字编为可复制的 MathML 粗体，以免通用 Markdown 数学解析丢失 `<strong>`。
+- PDF 583（印刷 571）：快速编码步骤 3–6 分属同一个跨页编号列表；式 (47.21) 的两项间印本为减号，式 (47.25) 的右端未印句末标点，均照录。§47.8 首句印本为 “Low-density parity-check codes codes were first studied ...”，重复 `codes` 是印本重复词，中文按其实际语义译一次。
+- PDF 583→584（印刷 571→572）：§47.8 末段的 Offer 和 Soljanin（2000；2001）文献句续至 PDF 584 页首的硬盘和卫星通信应用，译文在 `pdf-583.md` 合成完整段落。PDF 584 新段从量子纠错文献开始。
+- PDF 584→585（印刷 572→573）：§47.10 习题 47.2 解答的 “Let all / the codes have their bits ordered ...” 跨页同句在 `pdf-584.md` 合完，PDF 585 从式 (47.28) 开始。PDF 585 右栏另有两条未编号公式 $\log\mathcal N_1\simeq N^2R(1-R)$ 与 $\log\mathcal N_2<Nk\log N$，译稿单独保留；第 48 章始于 PDF 586。

@@ -1,0 +1,3 @@
+# Reader drafts are local QA inputs; only reviewed chapter-*.json files are published.
+chapter-*.draft.json
+chapter-*.partial.json

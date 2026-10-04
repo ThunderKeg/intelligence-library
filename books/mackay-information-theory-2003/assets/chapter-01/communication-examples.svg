@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" role="img" aria-labelledby="title desc">
+  <title id="title">四种通信信道</title>
+  <desc id="desc">调制解调器经电话线通信；伽利略号经无线电波与地球通信；母细胞产生两个子细胞；计算机内存通过磁盘驱动器跨时间传递信息。</desc>
+  <rect width="760" height="320" rx="8" fill="#f8faf7"/>
+  <g fill="#1e3027" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="18" text-anchor="middle">
+    <text x="155" y="48">调制解调器</text><text x="380" y="48">电话线</text><text x="605" y="48">调制解调器</text>
+    <text x="155" y="110">伽利略号</text><text x="380" y="110">无线电波</text><text x="605" y="110">地球</text>
+    <text x="155" y="202">母细胞</text><text x="605" y="172">子细胞</text><text x="605" y="226">子细胞</text>
+    <text x="155" y="292">计算机内存</text><text x="380" y="292">磁盘驱动器</text><text x="605" y="292">计算机内存</text>
+  </g>
+  <g fill="none" stroke="#315d47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 42H315M445 42H510M250 104H305M455 104H520M250 194H355M355 194L505 166M355 194L505 220M255 286H290M470 286H505"/>
+  </g>
+  <g fill="#315d47">
+    <path d="m315 42-9-5v10zm195 0-9-5v10zM305 104l-9-5v10zm215 0-9-5v10zM505 166l-10-4 2 10zm0 54-8-6-2 10zM290 286l-9-5v10zm215 0-9-5v10z"/>
+  </g>
+</svg>

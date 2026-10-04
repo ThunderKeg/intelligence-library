@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="210" viewBox="0 0 740 210" role="img" aria-labelledby="title desc">
+  <title id="title">图 1.8：R3 重复码的一次传输</title>
+  <desc id="desc">源位 s 为 0 0 1 0 1 1 0；每位重复三次得到 t；噪声 n 的七组三位为 000、001、000、000、101、000、000；接收向量 r 为 t 与 n 按模 2 相加，七组三位为 000、001、111、000、010、111、000。</desc>
+  <rect width="740" height="210" rx="8" fill="#f8faf7"/>
+  <g fill="#1e3027" font-family="Consolas, monospace" font-size="20" text-anchor="middle">
+    <text x="42" y="46">s</text><text x="42" y="88">t</text><text x="42" y="130">n</text><text x="42" y="172">r</text>
+    <text x="122" y="46">0</text><text x="215" y="46">0</text><text x="308" y="46">1</text><text x="401" y="46">0</text><text x="494" y="46">1</text><text x="587" y="46">1</text><text x="680" y="46">0</text>
+    <text x="122" y="88">000</text><text x="215" y="88">000</text><text x="308" y="88">111</text><text x="401" y="88">000</text><text x="494" y="88">111</text><text x="587" y="88">111</text><text x="680" y="88">000</text>
+    <text x="122" y="130">000</text><text x="215" y="130">001</text><text x="308" y="130">000</text><text x="401" y="130">000</text><text x="494" y="130">101</text><text x="587" y="130">000</text><text x="680" y="130">000</text>
+    <text x="122" y="172">000</text><text x="215" y="172">001</text><text x="308" y="172">111</text><text x="401" y="172">000</text><text x="494" y="172">010</text><text x="587" y="172">111</text><text x="680" y="172">000</text>
+  </g>
+  <g fill="none" stroke="#315d47" stroke-width="1.5">
+    <path d="M82 143H725"/>
+    <path d="M89 52H154M182 52H247M275 52H340M368 52H433M461 52H526M554 52H619M647 52H712"/>
+  </g>
+</svg>

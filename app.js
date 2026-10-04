@@ -3,6 +3,9 @@ const params = new URLSearchParams(location.search);
 const activeBook = shelf.find((book) => book.id === params.get("book"));
 const progressPrefix = "intelligence-library:progress:v2:";
 const themeKey = "intelligence-library:theme:v1";
+if (activeBook?.id === "mackay-information-theory-2003" && "scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
 
 function element(tag, className, content) {
   const node = document.createElement(tag);
@@ -218,6 +221,10 @@ function renderSegments(segments, fallback) {
         content.append(link);
       } else if (segment.code === true) {
         content.append(element("code", "book-inline-code", segment.text || ""));
+      } else if (segment.nowrap === true) {
+        content.append(element("span", "book-inline-nowrap", segment.text || ""));
+      } else if (segment.break === true) {
+        content.append(document.createElement("wbr"));
       } else if (segment.footnote === true && typeof segment.href === "string" &&
                  /^#read-fn-\d+-\d+$/.test(segment.href)) {
         const superscript = element("sup", "book-footnote-ref");
@@ -256,7 +263,13 @@ function renderList(block) {
     for (const item of Array.isArray(block.items) ? block.items : []) {
       const depth = Math.max(0, Math.min(2, Number(item.depth) || 0));
       const row = element("li", `contents-depth-${depth}`);
-      const title = element(item.strong ? "strong" : "span", "contents-title", item.title || "");
+      const title = element(item.strong ? "strong" : "span", "contents-title");
+      const href = readerContentsHref(item.href);
+      if (href) {
+        const link = element("a", "contents-reader-link", item.title || "");
+        link.href = href;
+        title.append(link);
+      } else title.textContent = item.title || "";
       row.append(title, element("span", "contents-page", item.pageLabel || ""));
       list.append(row);
     }
@@ -491,7 +504,7 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
   }
 
   singles("chapter", /第\s*(\d+)\s*章/g);
-  singles("part", /第\s*([一二三])\s*部分/g);
+  singles("part", /第\s*([一二三四五六七])\s*部分/g);
   singles("chapter", /附录\s*([A-C])(?![A-Za-z0-9])/g);
   singles("section", /(?:第\s*)?((?:[A-C]|\d+)(?:\.\d+){1,2})\s*(?:小)?节/g);
   singles("section", /附录\s*([A-C]\.\d+(?:\.\d+)?)\s*节?/g);
@@ -659,7 +672,7 @@ async function renderReader(book) {
   const nodes = [...article.querySelectorAll(".reading-block")];
   const updateFormulaHints = () => {
     for (const formula of article.querySelectorAll(".book-formula")) {
-      const scroller = formula.querySelector(".formula-scroll");
+      const scroller = formula.querySelector(".formula-scroll") || formula;
       const overflows = scroller.scrollWidth > scroller.clientWidth + 2;
       let hint = formula.nextElementSibling;
       if (overflows && !hint?.classList.contains("formula-view-hint")) {
@@ -670,6 +683,19 @@ async function renderReader(book) {
       if (overflows) {
         scroller.tabIndex = 0;
         scroller.title = "左右滑动查看完整公式";
+      }
+    }
+    for (const inlineMath of article.querySelectorAll(".inline-math")) {
+      const overflows = inlineMath.scrollWidth > inlineMath.clientWidth + 2;
+      let hint = inlineMath.nextElementSibling;
+      if (overflows && !hint?.classList.contains("inline-math-view-hint")) {
+        hint = element("span", "inline-math-view-hint", "（左右滑动查看完整公式）");
+        inlineMath.after(hint);
+      }
+      if (hint?.classList.contains("inline-math-view-hint")) hint.hidden = !overflows;
+      if (overflows) {
+        inlineMath.tabIndex = 0;
+        inlineMath.title = "左右滑动查看完整公式";
       }
     }
     for (const code of article.querySelectorAll(".book-code")) {
@@ -737,12 +763,24 @@ async function renderReader(book) {
   chapterNavigation.hidden = !chapterNavigation.childElementCount;
 
   let lastSaved = "";
+  let restoreScrollY = null;
   function updatePosition() {
     let current = 0;
     const threshold = (Number.parseFloat(getComputedStyle(nodes[0]).scrollMarginTop) || 0) + 1;
     for (let index = 0; index < nodes.length; index += 1) {
       if (nodes[index].getBoundingClientRect().top <= threshold) current = index;
       else break;
+    }
+    const restoredNode = restoreId && document.getElementById(restoreId);
+    const stillAtRestoredBlock = restoredNode && indexById.has(restoreId) &&
+      restoreId !== nodes[nodes.length - 1].id &&
+      restoreScrollY !== null && Math.abs(window.scrollY - restoreScrollY) <= 2 &&
+      Math.abs(restoredNode.getBoundingClientRect().top - threshold) <= 24;
+    if (stillAtRestoredBlock) current = indexById.get(restoreId);
+    const bottomGap = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+    const lastBlockVisible = nodes[nodes.length - 1].getBoundingClientRect().top < window.innerHeight;
+    if (!stillAtRestoredBlock && bottomGap <= 64 && lastBlockVisible) {
+      current = nodes.length - 1;
     }
     const blockId = nodes[current].id;
     if (blockId !== lastSaved) {
@@ -768,10 +806,28 @@ async function renderReader(book) {
     legacyBlock ? `read-${legacyBlock}` :
     canRestore && indexById.has(saved.block) ? saved.block :
     canRestore && saved.page ? `read-${blocks.find((block) => block.page === saved.page)?.id}` : null;
+  const initialScrollY = window.scrollY;
+  let movedBeforeTracking = false;
+  const observePreTrackingScroll = () => {
+    if (Math.abs(window.scrollY - initialScrollY) > 2) movedBeforeTracking = true;
+  };
+  window.addEventListener("scroll", observePreTrackingScroll, { passive: true });
   const startTracking = () => {
+    const preserveEarlyScroll = movedBeforeTracking || Math.abs(window.scrollY - initialScrollY) > 2;
+    window.removeEventListener("scroll", observePreTrackingScroll);
     updateFormulaHints();
-    if (restoreId) document.getElementById(restoreId)?.scrollIntoView({ block: "start", behavior: "instant" });
-    else window.scrollTo({ top: 0, behavior: "instant" });
+    const bottomGap = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+    const restoreLastAtBottom = restoreId === nodes[nodes.length - 1].id && bottomGap <= 64;
+    if (!preserveEarlyScroll || restoreLastAtBottom) {
+      if (restoreId === nodes[nodes.length - 1].id) {
+        window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "instant" });
+      } else if (restoreId) {
+        document.getElementById(restoreId)?.scrollIntoView({ block: "start", behavior: "instant" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "instant" });
+      }
+    }
+    restoreScrollY = (!preserveEarlyScroll || restoreLastAtBottom) && restoreId ? window.scrollY : null;
     updatePosition();
     let ticking = false;
     window.addEventListener("scroll", () => {

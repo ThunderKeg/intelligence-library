@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="290" viewBox="0 0 560 290" role="img" aria-labelledby="title desc">
+  <title id="title">图 1.6：有噪声信道的编码和解码系统</title>
+  <desc id="desc">源消息 s 进入编码器，输出发送向量 t，经有噪声信道成为接收向量 r，解码器据此给出估计消息 ŝ。</desc>
+  <rect width="560" height="290" rx="8" fill="#f8faf7"/>
+  <g fill="#1e3027" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" font-size="20" text-anchor="middle">
+    <text x="105" y="36">源消息</text><text x="105" y="61" font-family="Georgia, serif">s</text>
+    <text x="455" y="36">估计消息</text><text x="455" y="61" font-family="Georgia, serif">ŝ</text>
+    <text x="105" y="135">编码器</text><text x="280" y="226">有噪声信道</text><text x="455" y="135">解码器</text>
+    <text x="105" y="207" font-family="Georgia, serif">t</text><text x="455" y="207" font-family="Georgia, serif">r</text>
+  </g>
+  <g fill="none" stroke="#315d47" stroke-width="2.3">
+    <rect x="35" y="93" width="140" height="67"/>
+    <rect x="210" y="190" width="140" height="67"/>
+    <rect x="385" y="93" width="140" height="67"/>
+    <path d="M105 65V89M105 162V223H205M352 223H455V164M455 91V65"/>
+  </g>
+  <g fill="#315d47">
+    <path d="m105 89-5-10h10zm100 134-10-5v10zm147 0 10-5v10zm103-59-5 10h10zm0-99-5 10h10z"/>
+  </g>
+</svg>

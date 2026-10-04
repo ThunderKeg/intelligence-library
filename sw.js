@@ -88,6 +88,22 @@ const CORE_ASSETS = [
   "./books/sutton-barto-reinforcement-learning-2e/offline-images.json",
 ];
 
+const MACKAY_CHAPTER_IDS = [
+  "00", "01", "02", "03-intro", "03", "I", "04-intro", "04", "05-intro", "05",
+  "06-intro", "06", "07", "II", "08", "09-intro", "09", "10-intro", "10", "11-intro",
+  "11", "III", "12-intro", "12", "13-intro", "13", "14-intro", "14", "15", "16",
+  "17", "18", "19", "IV", "IV-intro", "20", "21", "22", "23", "24",
+  "25", "26", "27", "28", "29-intro", "29", "30", "31-intro", "31", "32",
+  "33", "34", "35", "36", "37", "V", "38", "39", "40-prelude", "40",
+  "41", "41-postscript", "42", "43", "44", "45-prelude", "45", "46", "VI", "VI-intro",
+  "47", "48", "49", "50-intro", "50", "VII", "A", "B", "C", "REF", "IDX",
+];
+CORE_ASSETS.push(
+  "./books/mackay-information-theory-2003/reference-index.json",
+  "./books/mackay-information-theory-2003/offline-images.json",
+  ...MACKAY_CHAPTER_IDS.map((id) => `./books/mackay-information-theory-2003/chapter-${id}.json`),
+);
+
 self.addEventListener("install", (event) => {
   const freshAssets = CORE_ASSETS.map((path) => new Request(new URL(path, self.registration.scope), { cache: "reload" }));
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(freshAssets)).then(() => self.skipWaiting()));

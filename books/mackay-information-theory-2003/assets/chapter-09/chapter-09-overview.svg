@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="380" viewBox="0 0 720 380" role="img" aria-labelledby="title desc">
+  <title id="title">信源编码、信道编码与有噪信道的通信流程</title>
+  <desc id="desc">信源依次经过压缩器、编码器、有噪信道、解码器和解压器；压缩与解压属于信源编码，编码与解码属于信道编码。</desc>
+  <rect x="0" y="0" width="720" height="380" fill="white"/>
+  <g fill="none" stroke="#111" stroke-width="2">
+    <rect x="185" y="69" width="156" height="58"/>
+    <rect x="479" y="69" width="156" height="58"/>
+    <rect x="185" y="186" width="156" height="58"/>
+    <rect x="479" y="186" width="156" height="58"/>
+    <rect x="332" y="298" width="156" height="58"/>
+    <path d="M263 27v37M263 128v51M263 245v82h64M557 64V27M557 179v-51M488 327h69v-82"/>
+  </g>
+  <g fill="#111">
+    <path d="m263 69-5-8h10zM263 186l-5-8h10zM332 327l-8-5v10zM557 22l-5 8h10zM557 128l-5 8h10zM557 245l-5 8h10z"/>
+  </g>
+  <g fill="#111" font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif" text-anchor="middle">
+    <text x="263" y="21" font-size="22">信源</text>
+    <text x="263" y="105" font-size="23">压缩器</text>
+    <text x="557" y="105" font-size="23">解压器</text>
+    <text x="263" y="222" font-size="23">编码器</text>
+    <text x="557" y="222" font-size="23">解码器</text>
+    <text x="410" y="335" font-size="22">有噪信道</text>
+    <text x="81" y="93" font-size="19">信源编码</text>
+    <text x="81" y="211" font-size="19">信道编码</text>
+  </g>
+</svg>
