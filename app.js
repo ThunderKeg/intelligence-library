@@ -513,11 +513,14 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
 
   function add(kind, key, start, end) {
     const target = targets[kind]?.[key];
-    if (!target || !chapters.has(target.chapter) || !/^[\w-]+$/.test(target.block)) return;
+    if (!target || !chapters.has(target.chapter) || !/^[\w-]+$/.test(target.block) ||
+        (target.element && !/^[\w-]+$/.test(target.element))) return;
     if (target.chapter === currentChapter && target.block === selfBlock) return;
-    const href = target.chapter === currentChapter ? `#read-${target.block}` :
-      `${bookUrl(book, target.chapter)}#read-${target.block}`;
-    matches.push({ start, end, href, kind, number: key, chapter: target.chapter, block: target.block });
+    const fragment = target.element || `read-${target.block}`;
+    const href = target.chapter === currentChapter ? `#${fragment}` :
+      `${bookUrl(book, target.chapter)}#${fragment}`;
+    matches.push({ start, end, href, kind, number: key, chapter: target.chapter, block: target.block,
+      element: target.element, previewable: target.preview !== false });
   }
 
   function singles(kind, pattern) {
@@ -539,6 +542,7 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
   singles("section", /(?:第\s*)?((?:[A-E]|\d+)(?:\.\d+){1,2})\s*(?:小)?节/g);
   singles("section", /附录\s*([A-E]\.\d+(?:\.\d+)?)\s*节?/g);
   singles("figure", /图\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
+  if (book.richReferenceAuto === true) singles("figure", /图\s*(\d+)(?![\d.])/g);
   singles("table", /表\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
   singles("algorithm", /算法\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
   singles("exercise", /习题\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
@@ -559,15 +563,17 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
 
 function linkReferences(article, book, currentChapter, targets) {
   let linked = 0;
-  const containers = article.querySelectorAll(
-    ".reading-paragraph, .reading-list, .reading-footnote, .reading-quote, .reading-exercise, .reading-bibliographical-note, .reading-figure .figure-caption, .reading-table .book-table, .reading-heading");
+  const selector = ".reading-paragraph, .reading-list, .reading-footnote, .reading-quote, .reading-exercise, .reading-bibliographical-note, .reading-figure .figure-caption, .reading-table .book-table, .reading-heading" +
+    (book.richReferenceAuto === true ? ", .reading-rich" : "");
+  const containers = article.querySelectorAll(selector);
   for (const container of containers) {
     const selfBlock = container.closest(".reading-block")?.id.slice(5);
     const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
     for (const node of nodes) {
-      if (node.parentElement?.closest("a, code, pre, math, .reading-intro")) continue;
+      if (node.parentElement?.closest("a, code, pre, math, .reading-intro") ||
+          (container.classList.contains("reading-rich") && node.parentElement?.closest("figure, .book-formula, .footnote"))) continue;
       const matches = referenceMatches(node.textContent, targets, book, currentChapter, selfBlock);
       if (!matches.length) continue;
       const fragment = document.createDocumentFragment();
@@ -577,11 +583,12 @@ function linkReferences(article, book, currentChapter, targets) {
         fragment.append(document.createTextNode(node.textContent.slice(offset, match.start)));
         const link = element("a", "reading-reference", node.textContent.slice(match.start, match.end));
         link.href = match.href;
-        if (book.referencePreview === true && (match.kind === "figure" || match.kind === "formula")) {
+        if (book.referencePreview === true && match.previewable && (match.kind === "figure" || match.kind === "formula")) {
           link.dataset.previewKind = match.kind;
           link.dataset.previewNumber = match.number;
           link.dataset.previewChapter = match.chapter;
           link.dataset.previewBlock = match.block;
+          if (match.element) link.dataset.previewElement = match.element;
           link.setAttribute("aria-haspopup", "dialog");
         }
         fragment.append(link);
@@ -590,6 +597,25 @@ function linkReferences(article, book, currentChapter, targets) {
       }
       fragment.append(document.createTextNode(node.textContent.slice(offset)));
       node.replaceWith(fragment);
+    }
+  }
+  if (book.referencePreview === true) {
+    for (const link of article.querySelectorAll("a.reading-reference[data-convex-reference]")) {
+      const kind = link.dataset.convexReference;
+      if (kind !== "figure" && kind !== "formula") continue;
+      const number = link.textContent.match(/(?:[A-C]|\d+)\.\d+(?:\.\d+)?/)?.[0];
+      const target = targets[kind]?.[number];
+      if (!target?.element || !/^[\w-]+$/.test(target.element) || !/^[\w-]+$/.test(target.block) ||
+          !book.chapters.some((chapter) => chapter.id === target.chapter)) continue;
+      link.href = target.chapter === currentChapter ? `#${target.element}` :
+        `${bookUrl(book, target.chapter)}#${target.element}`;
+      link.dataset.previewKind = kind;
+      link.dataset.previewNumber = number;
+      link.dataset.previewChapter = target.chapter;
+      link.dataset.previewBlock = target.block;
+      link.dataset.previewElement = target.element;
+      link.setAttribute("aria-haspopup", "dialog");
+      linked += 1;
     }
   }
   article.dataset.referenceLinks = String(linked);

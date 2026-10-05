@@ -69,20 +69,44 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
   }
 
   async function loadTarget(link) {
-    const { previewChapter: chapterId, previewBlock: blockId, previewKind: kind } = link.dataset;
-    if (!chapters.has(chapterId) || !/^[\w-]+$/.test(blockId || "") || !["figure", "formula"].includes(kind)) {
+    const { previewChapter: chapterId, previewBlock: blockId, previewKind: kind,
+      previewElement: elementId } = link.dataset;
+    if (!chapters.has(chapterId) || !/^[\w-]+$/.test(blockId || "") ||
+        (elementId && !/^[\w-]+$/.test(elementId)) || !["figure", "formula"].includes(kind)) {
       throw new Error("Invalid reference");
     }
     const data = await loadChapter(chapterId);
-    const block = data.blocks.find((item) => item.id === blockId);
-    if (!block || block.kind !== kind) throw new Error("Reference target unavailable");
-    return block;
+    function findBlock(blocks) {
+      for (const item of blocks) {
+        if (item.id === blockId) return item;
+        const nested = Array.isArray(item.blocks) && findBlock(item.blocks);
+        if (nested) return nested;
+      }
+      return null;
+    }
+    const block = findBlock(data.blocks);
+    if (!block || (elementId ? block.kind !== "rich" : block.kind !== kind)) {
+      throw new Error("Reference target unavailable");
+    }
+    return { block, kind, elementId };
   }
 
-  function fill(container, block) {
-    const rendered = renderBlock(block, book);
+  function fill(container, target) {
+    let rendered = renderBlock(target.block, book);
+    const sourceId = rendered.id;
+    if (target.elementId) {
+      const element = [...rendered.querySelectorAll("[id]")].find((item) => item.id === target.elementId);
+      if (!element || (target.kind === "figure" ? element.tagName !== "FIGURE" :
+          !element.classList.contains("book-formula"))) throw new Error("Reference element unavailable");
+      const wrapper = document.createElement("div");
+      wrapper.className = "reading-block reading-rich";
+      wrapper.append(element);
+      rendered = wrapper;
+    }
     rendered.removeAttribute("id");
     rendered.removeAttribute("data-pdf-page");
+    rendered.dataset.previewSourceId = sourceId;
+    for (const duplicate of rendered.querySelectorAll("[id]")) duplicate.removeAttribute("id");
     rendered.classList.add("reference-preview-content");
     for (const image of rendered.querySelectorAll("img")) image.loading = "eager";
     container.replaceChildren(rendered);
@@ -126,9 +150,9 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
       tooltip.hidden = false;
       positionTooltip(link);
       try {
-        const block = await loadTarget(link);
+        const target = await loadTarget(link);
         if (version !== hoverVersion || dialog.open) return;
-        fill(tooltipBody, block);
+        fill(tooltipBody, target);
       } catch {
         if (version !== hoverVersion || dialog.open) return;
         tooltipBody.textContent = "预览暂时无法加载，可点击引用后跳转原文。";
@@ -171,8 +195,8 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
     document.documentElement.classList.add("reference-preview-open");
     const version = ++dialogVersion;
     try {
-      const block = await loadTarget(link);
-      if (version === dialogVersion && dialog.open) fill(body, block);
+      const target = await loadTarget(link);
+      if (version === dialogVersion && dialog.open) fill(body, target);
     } catch {
       if (version === dialogVersion && dialog.open) {
         body.textContent = "预览暂时无法加载，可跳转到原文查看。";

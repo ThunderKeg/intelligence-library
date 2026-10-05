@@ -68,6 +68,7 @@ const CORE_ASSETS = [
   "./books/bishop-deep-learning-2024/reference-index.json",
   "./books/bishop-deep-learning-2024/offline-images.json",
   "./books/shannon-mathematical-theory-1948/chapter-00.json",
+  "./books/shannon-mathematical-theory-1948/reference-index.json",
   "./books/shannon-mathematical-theory-1948/chapter-01.json",
   "./books/shannon-mathematical-theory-1948/chapter-02.json",
   "./books/shannon-mathematical-theory-1948/chapter-a1-a4.json",
@@ -138,6 +139,7 @@ const CORE_ASSETS = [
   "./books/boyd-vandenberghe-convex-optimization-2004/chapter-references.json",
   "./books/boyd-vandenberghe-convex-optimization-2004/chapter-notation.json",
   "./books/boyd-vandenberghe-convex-optimization-2004/offline-images.json",
+  "./books/boyd-vandenberghe-convex-optimization-2004/reference-index.json",
   "./books/boyd-vandenberghe-convex-optimization-2004/assets/fonts/STIXTwoMath-Regular.woff2",
 ];
 

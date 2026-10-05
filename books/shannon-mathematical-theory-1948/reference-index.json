@@ -1,0 +1,67 @@
+{
+  "bookId": "shannon-mathematical-theory-1948",
+  "targets": {
+    "figure": {
+      "1": {
+        "chapter": "00",
+        "block": "p02-b001",
+        "element": "fig-1"
+      },
+      "10": {
+        "chapter": "02",
+        "block": "p05-b008",
+        "element": "fig-10"
+      },
+      "11": {
+        "chapter": "02",
+        "block": "p07-b009",
+        "element": "fig-11"
+      },
+      "12": {
+        "chapter": "02",
+        "block": "p09-b001",
+        "element": "fig-12"
+      },
+      "2": {
+        "chapter": "01",
+        "block": "p02-b007",
+        "element": "fig-2"
+      },
+      "3": {
+        "chapter": "01",
+        "block": "p06-b005",
+        "element": "fig-3"
+      },
+      "4": {
+        "chapter": "01",
+        "block": "p06-b006",
+        "element": "fig-4"
+      },
+      "5": {
+        "chapter": "01",
+        "block": "p07-b004",
+        "element": "fig-5"
+      },
+      "6": {
+        "chapter": "01",
+        "block": "p08-b015",
+        "element": "fig-6"
+      },
+      "7": {
+        "chapter": "01",
+        "block": "p09-b010",
+        "element": "fig-7"
+      },
+      "8": {
+        "chapter": "02",
+        "block": "p03-b001",
+        "element": "fig-8"
+      },
+      "9": {
+        "chapter": "02",
+        "block": "p04-b011",
+        "element": "fig-9"
+      }
+    }
+  }
+}

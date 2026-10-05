@@ -50,6 +50,7 @@ const books = [
     "year": "2006",
     "description": "《模式识别与机器学习》中文译文",
     "referenceIndex": "books/bishop-pattern-recognition-2006/reference-index.json",
+    "referencePreview": true,
     "offlineImages": "books/bishop-pattern-recognition-2006/offline-images.json",
     "chapters": [
       {
@@ -211,6 +212,9 @@ const books = [
     author: "C. E. Shannon",
     year: "1948",
     description: "引言、五篇正文与七个附录的完整中文译文",
+    referenceIndex: "books/shannon-mathematical-theory-1948/reference-index.json",
+    referencePreview: true,
+    richReferenceAuto: true,
     chapters: [
       { id: "00", number: "序", title: "引言", content: "books/shannon-mathematical-theory-1948/chapter-00.json" },
       { id: "01", number: "I", title: "无噪离散系统", content: "books/shannon-mathematical-theory-1948/chapter-01.json" },
@@ -230,6 +234,7 @@ const books = [
     year: "2018／2020",
     description: "卷首、三部分引言、17 章及书后材料的中文译编",
     referenceIndex: "books/sutton-barto-reinforcement-learning-2e/reference-index.json",
+    referencePreview: true,
     offlineImages: "books/sutton-barto-reinforcement-learning-2e/offline-images.json",
     chapters: [
       { id: "00", number: "卷首", title: "目录、前言与记号表", content: "books/sutton-barto-reinforcement-learning-2e/chapter-00.json" },
@@ -266,6 +271,7 @@ const books = [
     year: "2003／2005",
     description: "前置内容、第 1–50 章、相关导页、七部分扉页、附录 A–C、参考文献、索引及神经网络后记中文译文",
     referenceIndex: "books/mackay-information-theory-2003/reference-index.json",
+    referencePreview: true,
     offlineImages: "books/mackay-information-theory-2003/offline-images.json",
     chapters: [
       { id: "00", number: "前置", title: "前言与第一章预备知识", content: "books/mackay-information-theory-2003/chapter-00.json" },
@@ -358,6 +364,8 @@ const books = [
     "author": "Stephen Boyd · Lieven Vandenberghe",
     "year": "2004",
     "description": "《凸优化》中文译文",
+    "referenceIndex": "books/boyd-vandenberghe-convex-optimization-2004/reference-index.json",
+    "referencePreview": true,
     "offlineImages": "books/boyd-vandenberghe-convex-optimization-2004/offline-images.json",
     "chapters": [
       {

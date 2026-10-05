@@ -1,0 +1,3644 @@
+{
+  "bookId": "boyd-vandenberghe-convex-optimization-2004",
+  "targets": {
+    "figure": {
+      "10.1": {
+        "chapter": "10",
+        "block": "p023-b001",
+        "element": "fig-10-1"
+      },
+      "10.2": {
+        "chapter": "10",
+        "block": "p023-b002",
+        "element": "fig-10-2"
+      },
+      "10.3": {
+        "chapter": "10",
+        "block": "p024-b001",
+        "element": "fig-10-3"
+      },
+      "10.4": {
+        "chapter": "10",
+        "block": "p024-b002",
+        "element": "fig-10-4"
+      },
+      "10.5": {
+        "chapter": "10",
+        "block": "p025-b001",
+        "element": "fig-10-5"
+      },
+      "10.6": {
+        "chapter": "10",
+        "block": "p029-b001",
+        "element": "fig-10-6"
+      },
+      "10.7": {
+        "chapter": "10",
+        "block": "p029-b002",
+        "element": "fig-10-7"
+      },
+      "10.8": {
+        "chapter": "10",
+        "block": "p030-b008",
+        "element": "fig-10-8"
+      },
+      "11.1": {
+        "chapter": "11",
+        "block": "p003-b006",
+        "element": "fig-11-1"
+      },
+      "11.10": {
+        "chapter": "11",
+        "block": "p024-b001",
+        "element": "fig-11-10"
+      },
+      "11.11": {
+        "chapter": "11",
+        "block": "p024-b002",
+        "element": "fig-11-11"
+      },
+      "11.12": {
+        "chapter": "11",
+        "block": "p025-b001",
+        "element": "fig-11-12"
+      },
+      "11.13": {
+        "chapter": "11",
+        "block": "p029-b006",
+        "element": "fig-11-13"
+      },
+      "11.14": {
+        "chapter": "11",
+        "block": "p031-b001",
+        "element": "fig-11-14"
+      },
+      "11.15": {
+        "chapter": "11",
+        "block": "p042-b002",
+        "element": "fig-11-15"
+      },
+      "11.16": {
+        "chapter": "11",
+        "block": "p043-b001",
+        "element": "fig-11-16"
+      },
+      "11.17": {
+        "chapter": "11",
+        "block": "p044-b001",
+        "element": "fig-11-17"
+      },
+      "11.18": {
+        "chapter": "11",
+        "block": "p044-b002",
+        "element": "fig-11-18"
+      },
+      "11.19": {
+        "chapter": "11",
+        "block": "p045-b003",
+        "element": "fig-11-19"
+      },
+      "11.2": {
+        "chapter": "11",
+        "block": "p005-b003",
+        "element": "fig-11-2"
+      },
+      "11.20": {
+        "chapter": "11",
+        "block": "p046-b001",
+        "element": "fig-11-20"
+      },
+      "11.21": {
+        "chapter": "11",
+        "block": "p054-b001",
+        "element": "fig-11-21"
+      },
+      "11.22": {
+        "chapter": "11",
+        "block": "p054-b002",
+        "element": "fig-11-22"
+      },
+      "11.23": {
+        "chapter": "11",
+        "block": "p055-b003",
+        "element": "fig-11-23"
+      },
+      "11.3": {
+        "chapter": "11",
+        "block": "p007-b014",
+        "element": "fig-11-3"
+      },
+      "11.4": {
+        "chapter": "11",
+        "block": "p012-b004",
+        "element": "fig-11-4"
+      },
+      "11.5": {
+        "chapter": "11",
+        "block": "p013-b001",
+        "element": "fig-11-5"
+      },
+      "11.6": {
+        "chapter": "11",
+        "block": "p014-b004",
+        "element": "fig-11-6"
+      },
+      "11.7": {
+        "chapter": "11",
+        "block": "p016-b001",
+        "element": "fig-11-7"
+      },
+      "11.8": {
+        "chapter": "11",
+        "block": "p016-b002",
+        "element": "fig-11-8"
+      },
+      "11.9": {
+        "chapter": "11",
+        "block": "p020-b007",
+        "element": "fig-11-9"
+      },
+      "2.1": {
+        "chapter": "02",
+        "block": "p002-b001",
+        "element": "fig-2-1"
+      },
+      "2.10": {
+        "chapter": "02",
+        "block": "p011-b001",
+        "element": "fig-2-10"
+      },
+      "2.11": {
+        "chapter": "02",
+        "block": "p012-b001",
+        "element": "fig-2-11"
+      },
+      "2.12": {
+        "chapter": "02",
+        "block": "p015-b001",
+        "element": "fig-2-12"
+      },
+      "2.13": {
+        "chapter": "02",
+        "block": "p017-b001",
+        "element": "fig-2-13"
+      },
+      "2.14": {
+        "chapter": "02",
+        "block": "p017-b002",
+        "element": "fig-2-14"
+      },
+      "2.15": {
+        "chapter": "02",
+        "block": "p019-b008",
+        "element": "fig-2-15"
+      },
+      "2.16": {
+        "chapter": "02",
+        "block": "p022-b001",
+        "element": "fig-2-16"
+      },
+      "2.17": {
+        "chapter": "02",
+        "block": "p026-b001",
+        "element": "fig-2-17"
+      },
+      "2.18": {
+        "chapter": "02",
+        "block": "p027-b001",
+        "element": "fig-2-18"
+      },
+      "2.19": {
+        "chapter": "02",
+        "block": "p027-b002",
+        "element": "fig-2-19"
+      },
+      "2.2": {
+        "chapter": "02",
+        "block": "p004-b001",
+        "element": "fig-2-2"
+      },
+      "2.20": {
+        "chapter": "02",
+        "block": "p028-b001",
+        "element": "fig-2-20"
+      },
+      "2.21": {
+        "chapter": "02",
+        "block": "p031-b001",
+        "element": "fig-2-21"
+      },
+      "2.22": {
+        "chapter": "02",
+        "block": "p032-b001",
+        "element": "fig-2-22"
+      },
+      "2.23": {
+        "chapter": "02",
+        "block": "p035-b001",
+        "element": "fig-2-23"
+      },
+      "2.24": {
+        "chapter": "02",
+        "block": "p036-b001",
+        "element": "fig-2-24"
+      },
+      "2.25": {
+        "chapter": "02",
+        "block": "p036-b002",
+        "element": "fig-2-25"
+      },
+      "2.26": {
+        "chapter": "02",
+        "block": "p037-b001",
+        "element": "fig-2-26"
+      },
+      "2.27": {
+        "chapter": "02",
+        "block": "p038-b001",
+        "element": "fig-2-27"
+      },
+      "2.3": {
+        "chapter": "02",
+        "block": "p004-b002",
+        "element": "fig-2-3"
+      },
+      "2.4": {
+        "chapter": "02",
+        "block": "p006-b001",
+        "element": "fig-2-4"
+      },
+      "2.5": {
+        "chapter": "02",
+        "block": "p006-b002",
+        "element": "fig-2-5"
+      },
+      "2.6": {
+        "chapter": "02",
+        "block": "p008-b001",
+        "element": "fig-2-6"
+      },
+      "2.7": {
+        "chapter": "02",
+        "block": "p008-b002",
+        "element": "fig-2-7"
+      },
+      "2.8": {
+        "chapter": "02",
+        "block": "p009-b001",
+        "element": "fig-2-8"
+      },
+      "2.9": {
+        "chapter": "02",
+        "block": "p010-b001",
+        "element": "fig-2-9"
+      },
+      "3.1": {
+        "chapter": "03",
+        "block": "p001-b009",
+        "element": "fig-3-1"
+      },
+      "3.10": {
+        "chapter": "03",
+        "block": "p033-b001",
+        "element": "fig-3-10"
+      },
+      "3.11": {
+        "chapter": "03",
+        "block": "p034-b001",
+        "element": "fig-3-11"
+      },
+      "3.12": {
+        "chapter": "03",
+        "block": "p034-b002",
+        "element": "fig-3-12"
+      },
+      "3.2": {
+        "chapter": "03",
+        "block": "p003-b001",
+        "element": "fig-3-2"
+      },
+      "3.3": {
+        "chapter": "03",
+        "block": "p006-b001",
+        "element": "fig-3-3"
+      },
+      "3.4": {
+        "chapter": "03",
+        "block": "p007-b001",
+        "element": "fig-3-4"
+      },
+      "3.5": {
+        "chapter": "03",
+        "block": "p010-b001",
+        "element": "fig-3-5"
+      },
+      "3.6": {
+        "chapter": "03",
+        "block": "p011-b001",
+        "element": "fig-3-6"
+      },
+      "3.7": {
+        "chapter": "03",
+        "block": "p019-b001",
+        "element": "fig-3-7"
+      },
+      "3.8": {
+        "chapter": "03",
+        "block": "p025-b001",
+        "element": "fig-3-8"
+      },
+      "3.9": {
+        "chapter": "03",
+        "block": "p030-b001",
+        "element": "fig-3-9"
+      },
+      "4.1": {
+        "chapter": "04",
+        "block": "p009-b001",
+        "element": "fig-4-1"
+      },
+      "4.10": {
+        "chapter": "04",
+        "block": "p054-b005",
+        "element": "fig-4-10"
+      },
+      "4.11": {
+        "chapter": "04",
+        "block": "p059-b001",
+        "element": "fig-4-11"
+      },
+      "4.12": {
+        "chapter": "04",
+        "block": "p061-b001",
+        "element": "fig-4-12"
+      },
+      "4.2": {
+        "chapter": "04",
+        "block": "p013-b001",
+        "element": "fig-4-2"
+      },
+      "4.3": {
+        "chapter": "04",
+        "block": "p019-b001",
+        "element": "fig-4-3"
+      },
+      "4.4": {
+        "chapter": "04",
+        "block": "p021-b002",
+        "element": "fig-4-4"
+      },
+      "4.5": {
+        "chapter": "04",
+        "block": "p027-b002",
+        "element": "fig-4-5"
+      },
+      "4.6": {
+        "chapter": "04",
+        "block": "p038-b001",
+        "element": "fig-4-6"
+      },
+      "4.7": {
+        "chapter": "04",
+        "block": "p050-b002",
+        "element": "fig-4-7"
+      },
+      "4.8": {
+        "chapter": "04",
+        "block": "p052-b001",
+        "element": "fig-4-8"
+      },
+      "4.9": {
+        "chapter": "04",
+        "block": "p053-b001",
+        "element": "fig-4-9"
+      },
+      "5.1": {
+        "chapter": "05",
+        "block": "p003-b001",
+        "element": "fig-5-1"
+      },
+      "5.10": {
+        "chapter": "05",
+        "block": "p037-b001",
+        "element": "fig-5-10"
+      },
+      "5.2": {
+        "chapter": "05",
+        "block": "p003-b002",
+        "element": "fig-5-2"
+      },
+      "5.3": {
+        "chapter": "05",
+        "block": "p019-b001",
+        "element": "fig-5-3"
+      },
+      "5.4": {
+        "chapter": "05",
+        "block": "p019-b002",
+        "element": "fig-5-4"
+      },
+      "5.5": {
+        "chapter": "05",
+        "block": "p020-b001",
+        "element": "fig-5-5"
+      },
+      "5.6": {
+        "chapter": "05",
+        "block": "p022-b001",
+        "element": "fig-5-6"
+      },
+      "5.7": {
+        "chapter": "05",
+        "block": "p032-b001",
+        "element": "fig-5-7"
+      },
+      "5.8": {
+        "chapter": "05",
+        "block": "p032-b002",
+        "element": "fig-5-8"
+      },
+      "5.9": {
+        "chapter": "05",
+        "block": "p033-b001",
+        "element": "fig-5-9"
+      },
+      "6.1": {
+        "chapter": "06",
+        "block": "p005-b001",
+        "element": "fig-6-1"
+      },
+      "6.10": {
+        "chapter": "06",
+        "block": "p024-b002",
+        "element": "fig-6-10"
+      },
+      "6.11": {
+        "chapter": "06",
+        "block": "p025-b001",
+        "element": "fig-6-11"
+      },
+      "6.12": {
+        "chapter": "06",
+        "block": "p026-b001",
+        "element": "fig-6-12"
+      },
+      "6.13": {
+        "chapter": "06",
+        "block": "p026-b002",
+        "element": "fig-6-13"
+      },
+      "6.14": {
+        "chapter": "06",
+        "block": "p027-b001",
+        "element": "fig-6-14"
+      },
+      "6.15": {
+        "chapter": "06",
+        "block": "p029-b015",
+        "element": "fig-6-15"
+      },
+      "6.16": {
+        "chapter": "06",
+        "block": "p035-b001",
+        "element": "fig-6-16"
+      },
+      "6.17": {
+        "chapter": "06",
+        "block": "p037-b006",
+        "element": "fig-6-17"
+      },
+      "6.18": {
+        "chapter": "06",
+        "block": "p038-b001",
+        "element": "fig-6-18"
+      },
+      "6.19": {
+        "chapter": "06",
+        "block": "p042-b001",
+        "element": "fig-6-19"
+      },
+      "6.2": {
+        "chapter": "06",
+        "block": "p007-b001",
+        "element": "fig-6-2"
+      },
+      "6.20": {
+        "chapter": "06",
+        "block": "p042-b002",
+        "element": "fig-6-20"
+      },
+      "6.21": {
+        "chapter": "06",
+        "block": "p045-b006",
+        "element": "fig-6-21"
+      },
+      "6.22": {
+        "chapter": "06",
+        "block": "p046-b003",
+        "element": "fig-6-22"
+      },
+      "6.23": {
+        "chapter": "06",
+        "block": "p047-b002",
+        "element": "fig-6-23"
+      },
+      "6.24": {
+        "chapter": "06",
+        "block": "p049-b002",
+        "element": "fig-6-24"
+      },
+      "6.25": {
+        "chapter": "06",
+        "block": "p052-b001",
+        "element": "fig-6-25"
+      },
+      "6.26": {
+        "chapter": "06",
+        "block": "p052-b002",
+        "element": "fig-6-26"
+      },
+      "6.3": {
+        "chapter": "06",
+        "block": "p008-b001",
+        "element": "fig-6-3"
+      },
+      "6.4": {
+        "chapter": "06",
+        "block": "p009-b001",
+        "element": "fig-6-4"
+      },
+      "6.5": {
+        "chapter": "06",
+        "block": "p009-b006",
+        "element": "fig-6-5"
+      },
+      "6.6": {
+        "chapter": "06",
+        "block": "p019-b001",
+        "element": "fig-6-6"
+      },
+      "6.7": {
+        "chapter": "06",
+        "block": "p021-b001",
+        "element": "fig-6-7"
+      },
+      "6.8": {
+        "chapter": "06",
+        "block": "p023-b001",
+        "element": "fig-6-8"
+      },
+      "6.9": {
+        "chapter": "06",
+        "block": "p023-b002",
+        "element": "fig-6-9"
+      },
+      "7.1": {
+        "chapter": "07",
+        "block": "p005-b003",
+        "element": "fig-7-1"
+      },
+      "7.10": {
+        "chapter": "07",
+        "block": "p039-b002",
+        "element": "fig-7-10"
+      },
+      "7.11": {
+        "chapter": "07",
+        "block": "p039-b003",
+        "element": "fig-7-11"
+      },
+      "7.12": {
+        "chapter": "07",
+        "block": "p040-b001",
+        "element": "fig-7-12"
+      },
+      "7.2": {
+        "chapter": "07",
+        "block": "p012-b013",
+        "element": "fig-7-2"
+      },
+      "7.3": {
+        "chapter": "07",
+        "block": "p012-b013",
+        "element": "fig-7-3"
+      },
+      "7.4": {
+        "chapter": "07",
+        "block": "p021-b004",
+        "element": "fig-7-4"
+      },
+      "7.5": {
+        "chapter": "07",
+        "block": "p032-b001",
+        "element": "fig-7-5"
+      },
+      "7.6": {
+        "chapter": "07",
+        "block": "p033-b001",
+        "element": "fig-7-6"
+      },
+      "7.7": {
+        "chapter": "07",
+        "block": "p033-b002",
+        "element": "fig-7-7"
+      },
+      "7.8": {
+        "chapter": "07",
+        "block": "p034-b001",
+        "element": "fig-7-8"
+      },
+      "7.9": {
+        "chapter": "07",
+        "block": "p039-b001",
+        "element": "fig-7-9"
+      },
+      "8.1": {
+        "chapter": "08",
+        "block": "p004-b003",
+        "element": "fig-8-1"
+      },
+      "8.10": {
+        "chapter": "08",
+        "block": "p030-b004",
+        "element": "fig-8-10"
+      },
+      "8.11": {
+        "chapter": "08",
+        "block": "p031-b003",
+        "element": "fig-8-11"
+      },
+      "8.12": {
+        "chapter": "08",
+        "block": "p033-b001",
+        "element": "fig-8-12"
+      },
+      "8.13": {
+        "chapter": "08",
+        "block": "p035-b001",
+        "element": "fig-8-13"
+      },
+      "8.14": {
+        "chapter": "08",
+        "block": "p035-b002",
+        "element": "fig-8-14"
+      },
+      "8.15": {
+        "chapter": "08",
+        "block": "p038-b013",
+        "element": "fig-8-15"
+      },
+      "8.16": {
+        "chapter": "08",
+        "block": "p038-b013",
+        "element": "fig-8-16"
+      },
+      "8.17": {
+        "chapter": "08",
+        "block": "p038-b013",
+        "element": "fig-8-17"
+      },
+      "8.18": {
+        "chapter": "08",
+        "block": "p043-b001",
+        "element": "fig-8-18"
+      },
+      "8.19": {
+        "chapter": "08",
+        "block": "p045-b001",
+        "element": "fig-8-19"
+      },
+      "8.2": {
+        "chapter": "08",
+        "block": "p007-b008",
+        "element": "fig-8-2"
+      },
+      "8.20": {
+        "chapter": "08",
+        "block": "p048-b001",
+        "element": "fig-8-20"
+      },
+      "8.3": {
+        "chapter": "08",
+        "block": "p016-b001",
+        "element": "fig-8-3"
+      },
+      "8.4": {
+        "chapter": "08",
+        "block": "p020-b001",
+        "element": "fig-8-4"
+      },
+      "8.5": {
+        "chapter": "08",
+        "block": "p021-b001",
+        "element": "fig-8-5"
+      },
+      "8.6": {
+        "chapter": "08",
+        "block": "p023-b001",
+        "element": "fig-8-6"
+      },
+      "8.7": {
+        "chapter": "08",
+        "block": "p025-b001",
+        "element": "fig-8-7"
+      },
+      "8.8": {
+        "chapter": "08",
+        "block": "p027-b001",
+        "element": "fig-8-8"
+      },
+      "8.9": {
+        "chapter": "08",
+        "block": "p029-b005",
+        "element": "fig-8-9"
+      },
+      "9.1": {
+        "chapter": "09",
+        "block": "p009-b001",
+        "element": "fig-9-1"
+      },
+      "9.10": {
+        "chapter": "09",
+        "block": "p022-b006",
+        "element": "fig-9-10"
+      },
+      "9.11": {
+        "chapter": "09",
+        "block": "p025-b007",
+        "element": "fig-9-11"
+      },
+      "9.12": {
+        "chapter": "09",
+        "block": "p026-b001",
+        "element": "fig-9-12"
+      },
+      "9.13": {
+        "chapter": "09",
+        "block": "p026-b002",
+        "element": "fig-9-13"
+      },
+      "9.14": {
+        "chapter": "09",
+        "block": "p027-b001",
+        "element": "fig-9-14"
+      },
+      "9.15": {
+        "chapter": "09",
+        "block": "p027-b002",
+        "element": "fig-9-15"
+      },
+      "9.16": {
+        "chapter": "09",
+        "block": "p028-b013",
+        "element": "fig-9-16"
+      },
+      "9.17": {
+        "chapter": "09",
+        "block": "p029-b006",
+        "element": "fig-9-17"
+      },
+      "9.18": {
+        "chapter": "09",
+        "block": "p030-b001",
+        "element": "fig-9-18"
+      },
+      "9.19": {
+        "chapter": "09",
+        "block": "p036-b007",
+        "element": "fig-9-19"
+      },
+      "9.2": {
+        "chapter": "09",
+        "block": "p013-b001",
+        "element": "fig-9-2"
+      },
+      "9.20": {
+        "chapter": "09",
+        "block": "p037-b001",
+        "element": "fig-9-20"
+      },
+      "9.21": {
+        "chapter": "09",
+        "block": "p037-b002",
+        "element": "fig-9-21"
+      },
+      "9.22": {
+        "chapter": "09",
+        "block": "p038-b001",
+        "element": "fig-9-22"
+      },
+      "9.23": {
+        "chapter": "09",
+        "block": "p039-b003",
+        "element": "fig-9-23"
+      },
+      "9.24": {
+        "chapter": "09",
+        "block": "p047-b001",
+        "element": "fig-9-24"
+      },
+      "9.25": {
+        "chapter": "09",
+        "block": "p050-b007",
+        "element": "fig-9-25"
+      },
+      "9.3": {
+        "chapter": "09",
+        "block": "p015-b001",
+        "element": "fig-9-3"
+      },
+      "9.4": {
+        "chapter": "09",
+        "block": "p015-b002",
+        "element": "fig-9-4"
+      },
+      "9.5": {
+        "chapter": "09",
+        "block": "p016-b001",
+        "element": "fig-9-5"
+      },
+      "9.6": {
+        "chapter": "09",
+        "block": "p017-b001",
+        "element": "fig-9-6"
+      },
+      "9.7": {
+        "chapter": "09",
+        "block": "p018-b001",
+        "element": "fig-9-7"
+      },
+      "9.8": {
+        "chapter": "09",
+        "block": "p018-b002",
+        "element": "fig-9-8"
+      },
+      "9.9": {
+        "chapter": "09",
+        "block": "p021-b001",
+        "element": "fig-9-9"
+      }
+    },
+    "formula": {
+      "1.1": {
+        "chapter": "01",
+        "block": "p001-b006",
+        "element": "eq-1-1"
+      },
+      "1.2": {
+        "chapter": "01",
+        "block": "p001-b009",
+        "element": "eq-1-2"
+      },
+      "1.3": {
+        "chapter": "01",
+        "block": "p001-b012",
+        "element": "eq-1-3"
+      },
+      "1.4": {
+        "chapter": "01",
+        "block": "p004-b005",
+        "element": "eq-1-4"
+      },
+      "1.5": {
+        "chapter": "01",
+        "block": "p006-b003",
+        "element": "eq-1-5"
+      },
+      "1.6": {
+        "chapter": "01",
+        "block": "p006-b011",
+        "element": "eq-1-6"
+      },
+      "1.7": {
+        "chapter": "01",
+        "block": "p007-b002",
+        "element": "eq-1-7"
+      },
+      "1.8": {
+        "chapter": "01",
+        "block": "p007-b008",
+        "element": "eq-1-8"
+      },
+      "10.1": {
+        "chapter": "10",
+        "block": "p001-b005",
+        "element": "eq-10-1"
+      },
+      "10.10": {
+        "chapter": "10",
+        "block": "p006-b006",
+        "element": "eq-10-10"
+      },
+      "10.11": {
+        "chapter": "10",
+        "block": "p006-b009",
+        "element": "eq-10-11"
+      },
+      "10.12": {
+        "chapter": "10",
+        "block": "p007-b003",
+        "element": "eq-10-12"
+      },
+      "10.13": {
+        "chapter": "10",
+        "block": "p007-b008",
+        "element": "eq-10-13"
+      },
+      "10.14": {
+        "chapter": "10",
+        "block": "p007-b011",
+        "element": "eq-10-14"
+      },
+      "10.15": {
+        "chapter": "10",
+        "block": "p008-b015",
+        "element": "eq-10-15"
+      },
+      "10.16": {
+        "chapter": "10",
+        "block": "p009-b007",
+        "element": "eq-10-16"
+      },
+      "10.17": {
+        "chapter": "10",
+        "block": "p010-b001",
+        "element": "eq-10-17"
+      },
+      "10.18": {
+        "chapter": "10",
+        "block": "p010-b007",
+        "element": "eq-10-18"
+      },
+      "10.19": {
+        "chapter": "10",
+        "block": "p012-b005",
+        "element": "eq-10-19"
+      },
+      "10.2": {
+        "chapter": "10",
+        "block": "p001-b008",
+        "element": "eq-10-2"
+      },
+      "10.20": {
+        "chapter": "10",
+        "block": "p012-b016",
+        "element": "eq-10-20"
+      },
+      "10.21": {
+        "chapter": "10",
+        "block": "p013-b002",
+        "element": "eq-10-21"
+      },
+      "10.22": {
+        "chapter": "10",
+        "block": "p013-b004",
+        "element": "eq-10-22"
+      },
+      "10.23": {
+        "chapter": "10",
+        "block": "p013-b015",
+        "element": "eq-10-23"
+      },
+      "10.24": {
+        "chapter": "10",
+        "block": "p014-b003",
+        "element": "eq-10-24"
+      },
+      "10.25": {
+        "chapter": "10",
+        "block": "p015-b009",
+        "element": "eq-10-25"
+      },
+      "10.26": {
+        "chapter": "10",
+        "block": "p016-b010",
+        "element": "eq-10-26"
+      },
+      "10.27": {
+        "chapter": "10",
+        "block": "p016-b010",
+        "element": "eq-10-27"
+      },
+      "10.28": {
+        "chapter": "10",
+        "block": "p017-b012",
+        "element": "eq-10-28"
+      },
+      "10.29": {
+        "chapter": "10",
+        "block": "p019-b008",
+        "element": "eq-10-29"
+      },
+      "10.3": {
+        "chapter": "10",
+        "block": "p002-b004",
+        "element": "eq-10-3"
+      },
+      "10.30": {
+        "chapter": "10",
+        "block": "p020-b009",
+        "element": "eq-10-30"
+      },
+      "10.31": {
+        "chapter": "10",
+        "block": "p021-b002",
+        "element": "eq-10-31"
+      },
+      "10.32": {
+        "chapter": "10",
+        "block": "p022-b005",
+        "element": "eq-10-32"
+      },
+      "10.33": {
+        "chapter": "10",
+        "block": "p025-b002",
+        "element": "eq-10-33"
+      },
+      "10.34": {
+        "chapter": "10",
+        "block": "p028-b012",
+        "element": "eq-10-34"
+      },
+      "10.35": {
+        "chapter": "10",
+        "block": "p028-b017",
+        "element": "eq-10-35"
+      },
+      "10.36": {
+        "chapter": "10",
+        "block": "p031-b008",
+        "element": "eq-10-36"
+      },
+      "10.37": {
+        "chapter": "10",
+        "block": "p033-b013",
+        "element": "eq-10-37"
+      },
+      "10.38": {
+        "chapter": "10",
+        "block": "p033-b015",
+        "element": "eq-10-38"
+      },
+      "10.39": {
+        "chapter": "10",
+        "block": "p034-b006",
+        "element": "eq-10-39"
+      },
+      "10.4": {
+        "chapter": "10",
+        "block": "p002-b009",
+        "element": "eq-10-4"
+      },
+      "10.40": {
+        "chapter": "10",
+        "block": "p034-b014",
+        "element": "eq-10-40"
+      },
+      "10.41": {
+        "chapter": "10",
+        "block": "p035-b002",
+        "element": "eq-10-41"
+      },
+      "10.42": {
+        "chapter": "10",
+        "block": "p038-b013",
+        "element": "eq-10-42"
+      },
+      "10.5": {
+        "chapter": "10",
+        "block": "p003-b009",
+        "element": "eq-10-5"
+      },
+      "10.6": {
+        "chapter": "10",
+        "block": "p003-b014",
+        "element": "eq-10-6"
+      },
+      "10.7": {
+        "chapter": "10",
+        "block": "p005-b005",
+        "element": "eq-10-7"
+      },
+      "10.8": {
+        "chapter": "10",
+        "block": "p005-b005",
+        "element": "eq-10-8"
+      },
+      "10.9": {
+        "chapter": "10",
+        "block": "p005-b005",
+        "element": "eq-10-9"
+      },
+      "11.1": {
+        "chapter": "11",
+        "block": "p001-b005",
+        "element": "eq-11-1"
+      },
+      "11.10": {
+        "chapter": "11",
+        "block": "p005-b006",
+        "element": "eq-11-10"
+      },
+      "11.11": {
+        "chapter": "11",
+        "block": "p007-b003",
+        "element": "eq-11-11"
+      },
+      "11.12": {
+        "chapter": "11",
+        "block": "p011-b002",
+        "element": "eq-11-12"
+      },
+      "11.13": {
+        "chapter": "11",
+        "block": "p017-b003",
+        "element": "eq-11-13"
+      },
+      "11.14": {
+        "chapter": "11",
+        "block": "p017-b010",
+        "element": "eq-11-14"
+      },
+      "11.15": {
+        "chapter": "11",
+        "block": "p017-b012",
+        "element": "eq-11-15"
+      },
+      "11.16": {
+        "chapter": "11",
+        "block": "p018-b002",
+        "element": "eq-11-16"
+      },
+      "11.17": {
+        "chapter": "11",
+        "block": "p018-b007",
+        "element": "eq-11-17"
+      },
+      "11.18": {
+        "chapter": "11",
+        "block": "p019-b005",
+        "element": "eq-11-18"
+      },
+      "11.19": {
+        "chapter": "11",
+        "block": "p019-b008",
+        "element": "eq-11-19"
+      },
+      "11.2": {
+        "chapter": "11",
+        "block": "p001-b008",
+        "element": "eq-11-2"
+      },
+      "11.20": {
+        "chapter": "11",
+        "block": "p020-b003",
+        "element": "eq-11-20"
+      },
+      "11.21": {
+        "chapter": "11",
+        "block": "p021-b005",
+        "element": "eq-11-21"
+      },
+      "11.22": {
+        "chapter": "11",
+        "block": "p022-b001",
+        "element": "eq-11-22"
+      },
+      "11.23": {
+        "chapter": "11",
+        "block": "p026-b013",
+        "element": "eq-11-23"
+      },
+      "11.24": {
+        "chapter": "11",
+        "block": "p027-b016",
+        "element": "eq-11-24"
+      },
+      "11.25": {
+        "chapter": "11",
+        "block": "p028-b008",
+        "element": "eq-11-25"
+      },
+      "11.26": {
+        "chapter": "11",
+        "block": "p029-b004",
+        "element": "eq-11-26"
+      },
+      "11.27": {
+        "chapter": "11",
+        "block": "p030-b003",
+        "element": "eq-11-27"
+      },
+      "11.28": {
+        "chapter": "11",
+        "block": "p031-b002",
+        "element": "eq-11-28"
+      },
+      "11.29": {
+        "chapter": "11",
+        "block": "p031-b008",
+        "element": "eq-11-29"
+      },
+      "11.3": {
+        "chapter": "11",
+        "block": "p002-b013",
+        "element": "eq-11-3"
+      },
+      "11.30": {
+        "chapter": "11",
+        "block": "p032-b006",
+        "element": "eq-11-30"
+      },
+      "11.31": {
+        "chapter": "11",
+        "block": "p032-b008",
+        "element": "eq-11-31"
+      },
+      "11.32": {
+        "chapter": "11",
+        "block": "p033-b002",
+        "element": "eq-11-32"
+      },
+      "11.33": {
+        "chapter": "11",
+        "block": "p033-b007",
+        "element": "eq-11-33"
+      },
+      "11.34": {
+        "chapter": "11",
+        "block": "p033-b009",
+        "element": "eq-11-34"
+      },
+      "11.35": {
+        "chapter": "11",
+        "block": "p034-b003",
+        "element": "eq-11-35"
+      },
+      "11.36": {
+        "chapter": "11",
+        "block": "p035-b002",
+        "element": "eq-11-36"
+      },
+      "11.37": {
+        "chapter": "11",
+        "block": "p035-b007",
+        "element": "eq-11-37"
+      },
+      "11.38": {
+        "chapter": "11",
+        "block": "p036-b004",
+        "element": "eq-11-38"
+      },
+      "11.39": {
+        "chapter": "11",
+        "block": "p036-b007",
+        "element": "eq-11-39"
+      },
+      "11.4": {
+        "chapter": "11",
+        "block": "p003-b008",
+        "element": "eq-11-4"
+      },
+      "11.40": {
+        "chapter": "11",
+        "block": "p037-b007",
+        "element": "eq-11-40"
+      },
+      "11.41": {
+        "chapter": "11",
+        "block": "p038-b010",
+        "element": "eq-11-41"
+      },
+      "11.42": {
+        "chapter": "11",
+        "block": "p039-b003",
+        "element": "eq-11-42"
+      },
+      "11.43": {
+        "chapter": "11",
+        "block": "p039-b010",
+        "element": "eq-11-43"
+      },
+      "11.44": {
+        "chapter": "11",
+        "block": "p039-b014",
+        "element": "eq-11-44"
+      },
+      "11.45": {
+        "chapter": "11",
+        "block": "p039-b014",
+        "element": "eq-11-45"
+      },
+      "11.46": {
+        "chapter": "11",
+        "block": "p042-b009",
+        "element": "eq-11-46"
+      },
+      "11.47": {
+        "chapter": "11",
+        "block": "p043-b008",
+        "element": "eq-11-47"
+      },
+      "11.48": {
+        "chapter": "11",
+        "block": "p047-b002",
+        "element": "eq-11-48"
+      },
+      "11.49": {
+        "chapter": "11",
+        "block": "p047-b010",
+        "element": "eq-11-49"
+      },
+      "11.5": {
+        "chapter": "11",
+        "block": "p003-b011",
+        "element": "eq-11-5"
+      },
+      "11.50": {
+        "chapter": "11",
+        "block": "p047-b013",
+        "element": "eq-11-50"
+      },
+      "11.51": {
+        "chapter": "11",
+        "block": "p048-b005",
+        "element": "eq-11-51"
+      },
+      "11.52": {
+        "chapter": "11",
+        "block": "p048-b013",
+        "element": "eq-11-52"
+      },
+      "11.53": {
+        "chapter": "11",
+        "block": "p049-b008",
+        "element": "eq-11-53"
+      },
+      "11.54": {
+        "chapter": "11",
+        "block": "p050-b010",
+        "element": "eq-11-54"
+      },
+      "11.55": {
+        "chapter": "11",
+        "block": "p050-b017",
+        "element": "eq-11-55"
+      },
+      "11.56": {
+        "chapter": "11",
+        "block": "p051-b002",
+        "element": "eq-11-56"
+      },
+      "11.57": {
+        "chapter": "11",
+        "block": "p051-b004",
+        "element": "eq-11-57"
+      },
+      "11.58": {
+        "chapter": "11",
+        "block": "p051-b006",
+        "element": "eq-11-58"
+      },
+      "11.59": {
+        "chapter": "11",
+        "block": "p052-b003",
+        "element": "eq-11-59"
+      },
+      "11.6": {
+        "chapter": "11",
+        "block": "p004-b009",
+        "element": "eq-11-6"
+      },
+      "11.60": {
+        "chapter": "11",
+        "block": "p055-b006",
+        "element": "eq-11-60"
+      },
+      "11.61": {
+        "chapter": "11",
+        "block": "p058-b002",
+        "element": "eq-11-61"
+      },
+      "11.62": {
+        "chapter": "11",
+        "block": "p060-b003",
+        "element": "eq-11-62"
+      },
+      "11.63": {
+        "chapter": "11",
+        "block": "p063-b018",
+        "element": "eq-11-63"
+      },
+      "11.64": {
+        "chapter": "11",
+        "block": "p063-b021",
+        "element": "eq-11-64"
+      },
+      "11.65": {
+        "chapter": "11",
+        "block": "p069-b016",
+        "element": "eq-11-65"
+      },
+      "11.66": {
+        "chapter": "11",
+        "block": "p069-b019",
+        "element": "eq-11-66"
+      },
+      "11.67": {
+        "chapter": "11",
+        "block": "p070-b002",
+        "element": "eq-11-67"
+      },
+      "11.7": {
+        "chapter": "11",
+        "block": "p005-b001",
+        "element": "eq-11-7"
+      },
+      "11.8": {
+        "chapter": "11",
+        "block": "p005-b003",
+        "element": "eq-11-8"
+      },
+      "11.9": {
+        "chapter": "11",
+        "block": "p005-b003",
+        "element": "eq-11-9"
+      },
+      "2.1": {
+        "chapter": "02",
+        "block": "p007-b015",
+        "element": "eq-2-1"
+      },
+      "2.10": {
+        "chapter": "02",
+        "block": "p016-b004",
+        "element": "eq-2-10"
+      },
+      "2.11": {
+        "chapter": "02",
+        "block": "p018-b018",
+        "element": "eq-2-11"
+      },
+      "2.12": {
+        "chapter": "02",
+        "block": "p021-b007",
+        "element": "eq-2-12"
+      },
+      "2.13": {
+        "chapter": "02",
+        "block": "p021-b009",
+        "element": "eq-2-13"
+      },
+      "2.14": {
+        "chapter": "02",
+        "block": "p021-b011",
+        "element": "eq-2-14"
+      },
+      "2.15": {
+        "chapter": "02",
+        "block": "p024-b001",
+        "element": "eq-2-15"
+      },
+      "2.16": {
+        "chapter": "02",
+        "block": "p028-b009",
+        "element": "eq-2-16"
+      },
+      "2.17": {
+        "chapter": "02",
+        "block": "p030-b004",
+        "element": "eq-2-17"
+      },
+      "2.18": {
+        "chapter": "02",
+        "block": "p030-b004",
+        "element": "eq-2-18"
+      },
+      "2.19": {
+        "chapter": "02",
+        "block": "p031-b007",
+        "element": "eq-2-19"
+      },
+      "2.2": {
+        "chapter": "02",
+        "block": "p009-b003",
+        "element": "eq-2-2"
+      },
+      "2.20": {
+        "chapter": "02",
+        "block": "p032-b004",
+        "element": "eq-2-20"
+      },
+      "2.21": {
+        "chapter": "02",
+        "block": "p034-b001",
+        "element": "eq-2-21"
+      },
+      "2.22": {
+        "chapter": "02",
+        "block": "p034-b001",
+        "element": "eq-2-22"
+      },
+      "2.3": {
+        "chapter": "02",
+        "block": "p010-b006",
+        "element": "eq-2-3"
+      },
+      "2.4": {
+        "chapter": "02",
+        "block": "p010-b009",
+        "element": "eq-2-4"
+      },
+      "2.5": {
+        "chapter": "02",
+        "block": "p011-b006",
+        "element": "eq-2-5"
+      },
+      "2.6": {
+        "chapter": "02",
+        "block": "p012-b003",
+        "element": "eq-2-6"
+      },
+      "2.7": {
+        "chapter": "02",
+        "block": "p012-b010",
+        "element": "eq-2-7"
+      },
+      "2.8": {
+        "chapter": "02",
+        "block": "p013-b006",
+        "element": "eq-2-8"
+      },
+      "2.9": {
+        "chapter": "02",
+        "block": "p014-b006",
+        "element": "eq-2-9"
+      },
+      "3.1": {
+        "chapter": "03",
+        "block": "p001-b006",
+        "element": "eq-3-1"
+      },
+      "3.10": {
+        "chapter": "03",
+        "block": "p018-b007",
+        "element": "eq-3-10"
+      },
+      "3.11": {
+        "chapter": "03",
+        "block": "p018-b009",
+        "element": "eq-3-11"
+      },
+      "3.12": {
+        "chapter": "03",
+        "block": "p019-b003",
+        "element": "eq-3-12"
+      },
+      "3.13": {
+        "chapter": "03",
+        "block": "p019-b006",
+        "element": "eq-3-13"
+      },
+      "3.14": {
+        "chapter": "03",
+        "block": "p019-b008",
+        "element": "eq-3-14"
+      },
+      "3.15": {
+        "chapter": "03",
+        "block": "p020-b010",
+        "element": "eq-3-15"
+      },
+      "3.16": {
+        "chapter": "03",
+        "block": "p021-b006",
+        "element": "eq-3-16"
+      },
+      "3.17": {
+        "chapter": "03",
+        "block": "p024-b001",
+        "element": "eq-3-17"
+      },
+      "3.18": {
+        "chapter": "03",
+        "block": "p025-b004",
+        "element": "eq-3-18"
+      },
+      "3.19": {
+        "chapter": "03",
+        "block": "p032-b003",
+        "element": "eq-3-19"
+      },
+      "3.2": {
+        "chapter": "03",
+        "block": "p003-b005",
+        "element": "eq-3-2"
+      },
+      "3.20": {
+        "chapter": "03",
+        "block": "p033-b010",
+        "element": "eq-3-20"
+      },
+      "3.21": {
+        "chapter": "03",
+        "block": "p035-b003",
+        "element": "eq-3-21"
+      },
+      "3.22": {
+        "chapter": "03",
+        "block": "p035-b008",
+        "element": "eq-3-22"
+      },
+      "3.23": {
+        "chapter": "03",
+        "block": "p037-b007",
+        "element": "eq-3-23"
+      },
+      "3.24": {
+        "chapter": "03",
+        "block": "p043-b003",
+        "element": "eq-3-24"
+      },
+      "3.25": {
+        "chapter": "03",
+        "block": "p043-b005",
+        "element": "eq-3-25"
+      },
+      "3.26": {
+        "chapter": "03",
+        "block": "p055-b015",
+        "element": "eq-3-26"
+      },
+      "3.27": {
+        "chapter": "03",
+        "block": "p055-b015",
+        "element": "eq-3-27"
+      },
+      "3.3": {
+        "chapter": "03",
+        "block": "p004-b002",
+        "element": "eq-3-3"
+      },
+      "3.4": {
+        "chapter": "03",
+        "block": "p004-b007",
+        "element": "eq-3-4"
+      },
+      "3.5": {
+        "chapter": "03",
+        "block": "p011-b013",
+        "element": "eq-3-5"
+      },
+      "3.6": {
+        "chapter": "03",
+        "block": "p012-b006",
+        "element": "eq-3-6"
+      },
+      "3.7": {
+        "chapter": "03",
+        "block": "p015-b002",
+        "element": "eq-3-7"
+      },
+      "3.8": {
+        "chapter": "03",
+        "block": "p017-b011",
+        "element": "eq-3-8"
+      },
+      "3.9": {
+        "chapter": "03",
+        "block": "p018-b005",
+        "element": "eq-3-9"
+      },
+      "4.1": {
+        "chapter": "04",
+        "block": "p001-b006",
+        "element": "eq-4-1"
+      },
+      "4.10": {
+        "chapter": "04",
+        "block": "p007-b018",
+        "element": "eq-4-10"
+      },
+      "4.11": {
+        "chapter": "04",
+        "block": "p008-b004",
+        "element": "eq-4-11"
+      },
+      "4.12": {
+        "chapter": "04",
+        "block": "p008-b009",
+        "element": "eq-4-12"
+      },
+      "4.13": {
+        "chapter": "04",
+        "block": "p009-b003",
+        "element": "eq-4-13"
+      },
+      "4.14": {
+        "chapter": "04",
+        "block": "p009-b007",
+        "element": "eq-4-14"
+      },
+      "4.15": {
+        "chapter": "04",
+        "block": "p010-b008",
+        "element": "eq-4-15"
+      },
+      "4.16": {
+        "chapter": "04",
+        "block": "p011-b008",
+        "element": "eq-4-16"
+      },
+      "4.17": {
+        "chapter": "04",
+        "block": "p011-b012",
+        "element": "eq-4-17"
+      },
+      "4.18": {
+        "chapter": "04",
+        "block": "p012-b002",
+        "element": "eq-4-18"
+      },
+      "4.19": {
+        "chapter": "04",
+        "block": "p012-b008",
+        "element": "eq-4-19"
+      },
+      "4.2": {
+        "chapter": "04",
+        "block": "p003-b008",
+        "element": "eq-4-2"
+      },
+      "4.20": {
+        "chapter": "04",
+        "block": "p013-b005",
+        "element": "eq-4-20"
+      },
+      "4.21": {
+        "chapter": "04",
+        "block": "p013-b009",
+        "element": "eq-4-21"
+      },
+      "4.22": {
+        "chapter": "04",
+        "block": "p014-b007",
+        "element": "eq-4-22"
+      },
+      "4.23": {
+        "chapter": "04",
+        "block": "p015-b001",
+        "element": "eq-4-23"
+      },
+      "4.24": {
+        "chapter": "04",
+        "block": "p018-b005",
+        "element": "eq-4-24"
+      },
+      "4.25": {
+        "chapter": "04",
+        "block": "p018-b011",
+        "element": "eq-4-25"
+      },
+      "4.26": {
+        "chapter": "04",
+        "block": "p019-b007",
+        "element": "eq-4-26"
+      },
+      "4.27": {
+        "chapter": "04",
+        "block": "p020-b005",
+        "element": "eq-4-27"
+      },
+      "4.28": {
+        "chapter": "04",
+        "block": "p021-b001",
+        "element": "eq-4-28"
+      },
+      "4.29": {
+        "chapter": "04",
+        "block": "p021-b004",
+        "element": "eq-4-29"
+      },
+      "4.3": {
+        "chapter": "04",
+        "block": "p004-b007",
+        "element": "eq-4-3"
+      },
+      "4.30": {
+        "chapter": "04",
+        "block": "p022-b016",
+        "element": "eq-4-30"
+      },
+      "4.31": {
+        "chapter": "04",
+        "block": "p023-b002",
+        "element": "eq-4-31"
+      },
+      "4.32": {
+        "chapter": "04",
+        "block": "p025-b006",
+        "element": "eq-4-32"
+      },
+      "4.33": {
+        "chapter": "04",
+        "block": "p025-b014",
+        "element": "eq-4-33"
+      },
+      "4.34": {
+        "chapter": "04",
+        "block": "p026-b008",
+        "element": "eq-4-34"
+      },
+      "4.35": {
+        "chapter": "04",
+        "block": "p026-b011",
+        "element": "eq-4-35"
+      },
+      "4.36": {
+        "chapter": "04",
+        "block": "p030-b012",
+        "element": "eq-4-36"
+      },
+      "4.37": {
+        "chapter": "04",
+        "block": "p031-b008",
+        "element": "eq-4-37"
+      },
+      "4.38": {
+        "chapter": "04",
+        "block": "p031-b020",
+        "element": "eq-4-38"
+      },
+      "4.39": {
+        "chapter": "04",
+        "block": "p032-b018",
+        "element": "eq-4-39"
+      },
+      "4.4": {
+        "chapter": "04",
+        "block": "p004-b013",
+        "element": "eq-4-4"
+      },
+      "4.40": {
+        "chapter": "04",
+        "block": "p034-b001",
+        "element": "eq-4-40"
+      },
+      "4.41": {
+        "chapter": "04",
+        "block": "p034-b009",
+        "element": "eq-4-41"
+      },
+      "4.42": {
+        "chapter": "04",
+        "block": "p034-b011",
+        "element": "eq-4-42"
+      },
+      "4.43": {
+        "chapter": "04",
+        "block": "p035-b004",
+        "element": "eq-4-43"
+      },
+      "4.44": {
+        "chapter": "04",
+        "block": "p036-b017",
+        "element": "eq-4-44"
+      },
+      "4.45": {
+        "chapter": "04",
+        "block": "p038-b015",
+        "element": "eq-4-45"
+      },
+      "4.46": {
+        "chapter": "04",
+        "block": "p039-b002",
+        "element": "eq-4-46"
+      },
+      "4.47": {
+        "chapter": "04",
+        "block": "p039-b011",
+        "element": "eq-4-47"
+      },
+      "4.48": {
+        "chapter": "04",
+        "block": "p041-b006",
+        "element": "eq-4-48"
+      },
+      "4.49": {
+        "chapter": "04",
+        "block": "p042-b003",
+        "element": "eq-4-49"
+      },
+      "4.5": {
+        "chapter": "04",
+        "block": "p005-b007",
+        "element": "eq-4-5"
+      },
+      "4.50": {
+        "chapter": "04",
+        "block": "p042-b012",
+        "element": "eq-4-50"
+      },
+      "4.51": {
+        "chapter": "04",
+        "block": "p042-b018",
+        "element": "eq-4-51"
+      },
+      "4.52": {
+        "chapter": "04",
+        "block": "p044-b012",
+        "element": "eq-4-52"
+      },
+      "4.53": {
+        "chapter": "04",
+        "block": "p047-b009",
+        "element": "eq-4-53"
+      },
+      "4.54": {
+        "chapter": "04",
+        "block": "p047-b011",
+        "element": "eq-4-54"
+      },
+      "4.55": {
+        "chapter": "04",
+        "block": "p048-b011",
+        "element": "eq-4-55"
+      },
+      "4.56": {
+        "chapter": "04",
+        "block": "p049-b001",
+        "element": "eq-4-56"
+      },
+      "4.57": {
+        "chapter": "04",
+        "block": "p049-b010",
+        "element": "eq-4-57"
+      },
+      "4.58": {
+        "chapter": "04",
+        "block": "p050-b003",
+        "element": "eq-4-58"
+      },
+      "4.59": {
+        "chapter": "04",
+        "block": "p051-b004",
+        "element": "eq-4-59"
+      },
+      "4.6": {
+        "chapter": "04",
+        "block": "p005-b007",
+        "element": "eq-4-6"
+      },
+      "4.60": {
+        "chapter": "04",
+        "block": "p052-b004",
+        "element": "eq-4-60"
+      },
+      "4.61": {
+        "chapter": "04",
+        "block": "p053-b003",
+        "element": "eq-4-61"
+      },
+      "4.62": {
+        "chapter": "04",
+        "block": "p054-b003",
+        "element": "eq-4-62"
+      },
+      "4.63": {
+        "chapter": "04",
+        "block": "p054-b005",
+        "element": "eq-4-63"
+      },
+      "4.64": {
+        "chapter": "04",
+        "block": "p054-b005",
+        "element": "eq-4-64"
+      },
+      "4.65": {
+        "chapter": "04",
+        "block": "p065-b003",
+        "element": "eq-4-65"
+      },
+      "4.66": {
+        "chapter": "04",
+        "block": "p065-b005",
+        "element": "eq-4-66"
+      },
+      "4.67": {
+        "chapter": "04",
+        "block": "p068-b009",
+        "element": "eq-4-67"
+      },
+      "4.68": {
+        "chapter": "04",
+        "block": "p068-b012",
+        "element": "eq-4-68"
+      },
+      "4.69": {
+        "chapter": "04",
+        "block": "p074-b013",
+        "element": "eq-4-69"
+      },
+      "4.7": {
+        "chapter": "04",
+        "block": "p005-b010",
+        "element": "eq-4-7"
+      },
+      "4.70": {
+        "chapter": "04",
+        "block": "p075-b003",
+        "element": "eq-4-70"
+      },
+      "4.71": {
+        "chapter": "04",
+        "block": "p076-b004",
+        "element": "eq-4-71"
+      },
+      "4.72": {
+        "chapter": "04",
+        "block": "p076-b004",
+        "element": "eq-4-72"
+      },
+      "4.73": {
+        "chapter": "04",
+        "block": "p079-b002",
+        "element": "eq-4-73"
+      },
+      "4.8": {
+        "chapter": "04",
+        "block": "p006-b003",
+        "element": "eq-4-8"
+      },
+      "4.9": {
+        "chapter": "04",
+        "block": "p007-b014",
+        "element": "eq-4-9"
+      },
+      "5.1": {
+        "chapter": "05",
+        "block": "p001-b006",
+        "element": "eq-5-1"
+      },
+      "5.10": {
+        "chapter": "05",
+        "block": "p007-b009",
+        "element": "eq-5-10"
+      },
+      "5.100": {
+        "chapter": "05",
+        "block": "p056-b002",
+        "element": "eq-5-100"
+      },
+      "5.101": {
+        "chapter": "05",
+        "block": "p056-b004",
+        "element": "eq-5-101"
+      },
+      "5.102": {
+        "chapter": "05",
+        "block": "p056-b007",
+        "element": "eq-5-102"
+      },
+      "5.103": {
+        "chapter": "05",
+        "block": "p060-b006",
+        "element": "eq-5-103"
+      },
+      "5.104": {
+        "chapter": "05",
+        "block": "p060-b011",
+        "element": "eq-5-104"
+      },
+      "5.105": {
+        "chapter": "05",
+        "block": "p060-b013",
+        "element": "eq-5-105"
+      },
+      "5.106": {
+        "chapter": "05",
+        "block": "p061-b001",
+        "element": "eq-5-106"
+      },
+      "5.107": {
+        "chapter": "05",
+        "block": "p062-b015",
+        "element": "eq-5-107"
+      },
+      "5.108": {
+        "chapter": "05",
+        "block": "p063-b002",
+        "element": "eq-5-108"
+      },
+      "5.109": {
+        "chapter": "05",
+        "block": "p063-b009",
+        "element": "eq-5-109"
+      },
+      "5.11": {
+        "chapter": "05",
+        "block": "p007-b011",
+        "element": "eq-5-11"
+      },
+      "5.110": {
+        "chapter": "05",
+        "block": "p063-b014",
+        "element": "eq-5-110"
+      },
+      "5.111": {
+        "chapter": "05",
+        "block": "p063-b016",
+        "element": "eq-5-111"
+      },
+      "5.112": {
+        "chapter": "05",
+        "block": "p067-b006",
+        "element": "eq-5-112"
+      },
+      "5.113": {
+        "chapter": "05",
+        "block": "p071-b018",
+        "element": "eq-5-113"
+      },
+      "5.114": {
+        "chapter": "05",
+        "block": "p071-b020",
+        "element": "eq-5-114"
+      },
+      "5.115": {
+        "chapter": "05",
+        "block": "p072-b001",
+        "element": "eq-5-115"
+      },
+      "5.116": {
+        "chapter": "05",
+        "block": "p073-b013",
+        "element": "eq-5-116"
+      },
+      "5.117": {
+        "chapter": "05",
+        "block": "p073-b015",
+        "element": "eq-5-117"
+      },
+      "5.118": {
+        "chapter": "05",
+        "block": "p073-b017",
+        "element": "eq-5-118"
+      },
+      "5.12": {
+        "chapter": "05",
+        "block": "p007-b017",
+        "element": "eq-5-12"
+      },
+      "5.13": {
+        "chapter": "05",
+        "block": "p008-b008",
+        "element": "eq-5-13"
+      },
+      "5.14": {
+        "chapter": "05",
+        "block": "p008-b016",
+        "element": "eq-5-14"
+      },
+      "5.15": {
+        "chapter": "05",
+        "block": "p009-b006",
+        "element": "eq-5-15"
+      },
+      "5.16": {
+        "chapter": "05",
+        "block": "p009-b013",
+        "element": "eq-5-16"
+      },
+      "5.17": {
+        "chapter": "05",
+        "block": "p010-b007",
+        "element": "eq-5-17"
+      },
+      "5.18": {
+        "chapter": "05",
+        "block": "p010-b011",
+        "element": "eq-5-18"
+      },
+      "5.19": {
+        "chapter": "05",
+        "block": "p010-b013",
+        "element": "eq-5-19"
+      },
+      "5.2": {
+        "chapter": "05",
+        "block": "p002-b007",
+        "element": "eq-5-2"
+      },
+      "5.20": {
+        "chapter": "05",
+        "block": "p010-b015",
+        "element": "eq-5-20"
+      },
+      "5.21": {
+        "chapter": "05",
+        "block": "p011-b003",
+        "element": "eq-5-21"
+      },
+      "5.22": {
+        "chapter": "05",
+        "block": "p011-b012",
+        "element": "eq-5-22"
+      },
+      "5.23": {
+        "chapter": "05",
+        "block": "p011-b017",
+        "element": "eq-5-23"
+      },
+      "5.24": {
+        "chapter": "05",
+        "block": "p012-b007",
+        "element": "eq-5-24"
+      },
+      "5.25": {
+        "chapter": "05",
+        "block": "p012-b010",
+        "element": "eq-5-25"
+      },
+      "5.26": {
+        "chapter": "05",
+        "block": "p012-b013",
+        "element": "eq-5-26"
+      },
+      "5.27": {
+        "chapter": "05",
+        "block": "p012-b016",
+        "element": "eq-5-27"
+      },
+      "5.28": {
+        "chapter": "05",
+        "block": "p013-b015",
+        "element": "eq-5-28"
+      },
+      "5.29": {
+        "chapter": "05",
+        "block": "p014-b004",
+        "element": "eq-5-29"
+      },
+      "5.3": {
+        "chapter": "05",
+        "block": "p004-b002",
+        "element": "eq-5-3"
+      },
+      "5.30": {
+        "chapter": "05",
+        "block": "p014-b012",
+        "element": "eq-5-30"
+      },
+      "5.31": {
+        "chapter": "05",
+        "block": "p015-b002",
+        "element": "eq-5-31"
+      },
+      "5.32": {
+        "chapter": "05",
+        "block": "p015-b007",
+        "element": "eq-5-32"
+      },
+      "5.33": {
+        "chapter": "05",
+        "block": "p015-b014",
+        "element": "eq-5-33"
+      },
+      "5.34": {
+        "chapter": "05",
+        "block": "p016-b011",
+        "element": "eq-5-34"
+      },
+      "5.35": {
+        "chapter": "05",
+        "block": "p016-b016",
+        "element": "eq-5-35"
+      },
+      "5.36": {
+        "chapter": "05",
+        "block": "p018-b004",
+        "element": "eq-5-36"
+      },
+      "5.37": {
+        "chapter": "05",
+        "block": "p018-b019",
+        "element": "eq-5-37"
+      },
+      "5.38": {
+        "chapter": "05",
+        "block": "p020-b011",
+        "element": "eq-5-38"
+      },
+      "5.39": {
+        "chapter": "05",
+        "block": "p021-b005",
+        "element": "eq-5-39"
+      },
+      "5.4": {
+        "chapter": "05",
+        "block": "p004-b007",
+        "element": "eq-5-4"
+      },
+      "5.40": {
+        "chapter": "05",
+        "block": "p021-b007",
+        "element": "eq-5-40"
+      },
+      "5.41": {
+        "chapter": "05",
+        "block": "p021-b009",
+        "element": "eq-5-41"
+      },
+      "5.42": {
+        "chapter": "05",
+        "block": "p021-b016",
+        "element": "eq-5-42"
+      },
+      "5.43": {
+        "chapter": "05",
+        "block": "p022-b006",
+        "element": "eq-5-43"
+      },
+      "5.44": {
+        "chapter": "05",
+        "block": "p023-b002",
+        "element": "eq-5-44"
+      },
+      "5.45": {
+        "chapter": "05",
+        "block": "p024-b006",
+        "element": "eq-5-45"
+      },
+      "5.46": {
+        "chapter": "05",
+        "block": "p024-b011",
+        "element": "eq-5-46"
+      },
+      "5.47": {
+        "chapter": "05",
+        "block": "p024-b013",
+        "element": "eq-5-47"
+      },
+      "5.48": {
+        "chapter": "05",
+        "block": "p029-b005",
+        "element": "eq-5-48"
+      },
+      "5.49": {
+        "chapter": "05",
+        "block": "p029-b017",
+        "element": "eq-5-49"
+      },
+      "5.5": {
+        "chapter": "05",
+        "block": "p004-b015",
+        "element": "eq-5-5"
+      },
+      "5.50": {
+        "chapter": "05",
+        "block": "p030-b010",
+        "element": "eq-5-50"
+      },
+      "5.51": {
+        "chapter": "05",
+        "block": "p032-b008",
+        "element": "eq-5-51"
+      },
+      "5.52": {
+        "chapter": "05",
+        "block": "p033-b003",
+        "element": "eq-5-52"
+      },
+      "5.53": {
+        "chapter": "05",
+        "block": "p033-b006",
+        "element": "eq-5-53"
+      },
+      "5.54": {
+        "chapter": "05",
+        "block": "p033-b008",
+        "element": "eq-5-54"
+      },
+      "5.55": {
+        "chapter": "05",
+        "block": "p034-b004",
+        "element": "eq-5-55"
+      },
+      "5.56": {
+        "chapter": "05",
+        "block": "p035-b006",
+        "element": "eq-5-56"
+      },
+      "5.57": {
+        "chapter": "05",
+        "block": "p036-b009",
+        "element": "eq-5-57"
+      },
+      "5.58": {
+        "chapter": "05",
+        "block": "p038-b001",
+        "element": "eq-5-58"
+      },
+      "5.59": {
+        "chapter": "05",
+        "block": "p039-b011",
+        "element": "eq-5-59"
+      },
+      "5.6": {
+        "chapter": "05",
+        "block": "p005-b008",
+        "element": "eq-5-6"
+      },
+      "5.60": {
+        "chapter": "05",
+        "block": "p040-b002",
+        "element": "eq-5-60"
+      },
+      "5.61": {
+        "chapter": "05",
+        "block": "p040-b009",
+        "element": "eq-5-61"
+      },
+      "5.62": {
+        "chapter": "05",
+        "block": "p040-b011",
+        "element": "eq-5-62"
+      },
+      "5.63": {
+        "chapter": "05",
+        "block": "p040-b012",
+        "element": "eq-5-63"
+      },
+      "5.64": {
+        "chapter": "05",
+        "block": "p040-b012",
+        "element": "eq-5-64"
+      },
+      "5.65": {
+        "chapter": "05",
+        "block": "p041-b002",
+        "element": "eq-5-65"
+      },
+      "5.66": {
+        "chapter": "05",
+        "block": "p041-b004",
+        "element": "eq-5-66"
+      },
+      "5.67": {
+        "chapter": "05",
+        "block": "p042-b003",
+        "element": "eq-5-67"
+      },
+      "5.68": {
+        "chapter": "05",
+        "block": "p043-b003",
+        "element": "eq-5-68"
+      },
+      "5.69": {
+        "chapter": "05",
+        "block": "p043-b003",
+        "element": "eq-5-69"
+      },
+      "5.7": {
+        "chapter": "05",
+        "block": "p005-b019",
+        "element": "eq-5-7"
+      },
+      "5.70": {
+        "chapter": "05",
+        "block": "p043-b003",
+        "element": "eq-5-70"
+      },
+      "5.71": {
+        "chapter": "05",
+        "block": "p043-b003",
+        "element": "eq-5-71"
+      },
+      "5.72": {
+        "chapter": "05",
+        "block": "p044-b004",
+        "element": "eq-5-72"
+      },
+      "5.73": {
+        "chapter": "05",
+        "block": "p044-b006",
+        "element": "eq-5-73"
+      },
+      "5.74": {
+        "chapter": "05",
+        "block": "p044-b008",
+        "element": "eq-5-74"
+      },
+      "5.75": {
+        "chapter": "05",
+        "block": "p045-b002",
+        "element": "eq-5-75"
+      },
+      "5.76": {
+        "chapter": "05",
+        "block": "p045-b004",
+        "element": "eq-5-76"
+      },
+      "5.77": {
+        "chapter": "05",
+        "block": "p045-b010",
+        "element": "eq-5-77"
+      },
+      "5.78": {
+        "chapter": "05",
+        "block": "p045-b012",
+        "element": "eq-5-78"
+      },
+      "5.79": {
+        "chapter": "05",
+        "block": "p046-b010",
+        "element": "eq-5-79"
+      },
+      "5.8": {
+        "chapter": "05",
+        "block": "p006-b015",
+        "element": "eq-5-8"
+      },
+      "5.80": {
+        "chapter": "05",
+        "block": "p046-b012",
+        "element": "eq-5-80"
+      },
+      "5.81": {
+        "chapter": "05",
+        "block": "p046-b015",
+        "element": "eq-5-81"
+      },
+      "5.82": {
+        "chapter": "05",
+        "block": "p047-b004",
+        "element": "eq-5-82"
+      },
+      "5.83": {
+        "chapter": "05",
+        "block": "p047-b008",
+        "element": "eq-5-83"
+      },
+      "5.84": {
+        "chapter": "05",
+        "block": "p047-b010",
+        "element": "eq-5-84"
+      },
+      "5.85": {
+        "chapter": "05",
+        "block": "p048-b009",
+        "element": "eq-5-85"
+      },
+      "5.86": {
+        "chapter": "05",
+        "block": "p048-b017",
+        "element": "eq-5-86"
+      },
+      "5.87": {
+        "chapter": "05",
+        "block": "p049-b003",
+        "element": "eq-5-87"
+      },
+      "5.88": {
+        "chapter": "05",
+        "block": "p049-b005",
+        "element": "eq-5-88"
+      },
+      "5.89": {
+        "chapter": "05",
+        "block": "p049-b008",
+        "element": "eq-5-89"
+      },
+      "5.9": {
+        "chapter": "05",
+        "block": "p006-b016",
+        "element": "eq-5-9"
+      },
+      "5.90": {
+        "chapter": "05",
+        "block": "p049-b010",
+        "element": "eq-5-90"
+      },
+      "5.91": {
+        "chapter": "05",
+        "block": "p050-b003",
+        "element": "eq-5-91"
+      },
+      "5.92": {
+        "chapter": "05",
+        "block": "p051-b008",
+        "element": "eq-5-92"
+      },
+      "5.93": {
+        "chapter": "05",
+        "block": "p051-b014",
+        "element": "eq-5-93"
+      },
+      "5.94": {
+        "chapter": "05",
+        "block": "p053-b005",
+        "element": "eq-5-94"
+      },
+      "5.95": {
+        "chapter": "05",
+        "block": "p053-b013",
+        "element": "eq-5-95"
+      },
+      "5.96": {
+        "chapter": "05",
+        "block": "p055-b003",
+        "element": "eq-5-96"
+      },
+      "5.97": {
+        "chapter": "05",
+        "block": "p055-b005",
+        "element": "eq-5-97"
+      },
+      "5.98": {
+        "chapter": "05",
+        "block": "p055-b011",
+        "element": "eq-5-98"
+      },
+      "5.99": {
+        "chapter": "05",
+        "block": "p055-b020",
+        "element": "eq-5-99"
+      },
+      "6.1": {
+        "chapter": "06",
+        "block": "p001-b006",
+        "element": "eq-6-1"
+      },
+      "6.10": {
+        "chapter": "06",
+        "block": "p016-b016",
+        "element": "eq-6-10"
+      },
+      "6.11": {
+        "chapter": "06",
+        "block": "p018-b003",
+        "element": "eq-6-11"
+      },
+      "6.12": {
+        "chapter": "06",
+        "block": "p021-b006",
+        "element": "eq-6-12"
+      },
+      "6.13": {
+        "chapter": "06",
+        "block": "p028-b008",
+        "element": "eq-6-13"
+      },
+      "6.14": {
+        "chapter": "06",
+        "block": "p029-b013",
+        "element": "eq-6-14"
+      },
+      "6.15": {
+        "chapter": "06",
+        "block": "p034-b004",
+        "element": "eq-6-15"
+      },
+      "6.16": {
+        "chapter": "06",
+        "block": "p034-b006",
+        "element": "eq-6-16"
+      },
+      "6.17": {
+        "chapter": "06",
+        "block": "p036-b003",
+        "element": "eq-6-17"
+      },
+      "6.18": {
+        "chapter": "06",
+        "block": "p044-b009",
+        "element": "eq-6-18"
+      },
+      "6.19": {
+        "chapter": "06",
+        "block": "p048-b002",
+        "element": "eq-6-19"
+      },
+      "6.2": {
+        "chapter": "06",
+        "block": "p004-b014",
+        "element": "eq-6-2"
+      },
+      "6.20": {
+        "chapter": "06",
+        "block": "p048-b004",
+        "element": "eq-6-20"
+      },
+      "6.21": {
+        "chapter": "06",
+        "block": "p049-b007",
+        "element": "eq-6-21"
+      },
+      "6.22": {
+        "chapter": "06",
+        "block": "p050-b003",
+        "element": "eq-6-22"
+      },
+      "6.23": {
+        "chapter": "06",
+        "block": "p050-b006",
+        "element": "eq-6-23"
+      },
+      "6.24": {
+        "chapter": "06",
+        "block": "p050-b008",
+        "element": "eq-6-24"
+      },
+      "6.25": {
+        "chapter": "06",
+        "block": "p050-b010",
+        "element": "eq-6-25"
+      },
+      "6.26": {
+        "chapter": "06",
+        "block": "p055-b002",
+        "element": "eq-6-26"
+      },
+      "6.27": {
+        "chapter": "06",
+        "block": "p055-b004",
+        "element": "eq-6-27"
+      },
+      "6.3": {
+        "chapter": "06",
+        "block": "p008-b004",
+        "element": "eq-6-3"
+      },
+      "6.4": {
+        "chapter": "06",
+        "block": "p009-b004",
+        "element": "eq-6-4"
+      },
+      "6.5": {
+        "chapter": "06",
+        "block": "p012-b013",
+        "element": "eq-6-5"
+      },
+      "6.6": {
+        "chapter": "06",
+        "block": "p014-b011",
+        "element": "eq-6-6"
+      },
+      "6.7": {
+        "chapter": "06",
+        "block": "p015-b006",
+        "element": "eq-6-7"
+      },
+      "6.8": {
+        "chapter": "06",
+        "block": "p016-b003",
+        "element": "eq-6-8"
+      },
+      "6.9": {
+        "chapter": "06",
+        "block": "p016-b006",
+        "element": "eq-6-9"
+      },
+      "7.1": {
+        "chapter": "07",
+        "block": "p001-b012",
+        "element": "eq-7-1"
+      },
+      "7.10": {
+        "chapter": "07",
+        "block": "p015-b005",
+        "element": "eq-7-10"
+      },
+      "7.11": {
+        "chapter": "07",
+        "block": "p015-b012",
+        "element": "eq-7-11"
+      },
+      "7.12": {
+        "chapter": "07",
+        "block": "p018-b008",
+        "element": "eq-7-12"
+      },
+      "7.13": {
+        "chapter": "07",
+        "block": "p019-b005",
+        "element": "eq-7-13"
+      },
+      "7.14": {
+        "chapter": "07",
+        "block": "p019-b011",
+        "element": "eq-7-14"
+      },
+      "7.15": {
+        "chapter": "07",
+        "block": "p021-b003",
+        "element": "eq-7-15"
+      },
+      "7.16": {
+        "chapter": "07",
+        "block": "p023-b008",
+        "element": "eq-7-16"
+      },
+      "7.17": {
+        "chapter": "07",
+        "block": "p025-b011",
+        "element": "eq-7-17"
+      },
+      "7.18": {
+        "chapter": "07",
+        "block": "p026-b003",
+        "element": "eq-7-18"
+      },
+      "7.19": {
+        "chapter": "07",
+        "block": "p027-b012",
+        "element": "eq-7-19"
+      },
+      "7.2": {
+        "chapter": "07",
+        "block": "p002-b010",
+        "element": "eq-7-2"
+      },
+      "7.20": {
+        "chapter": "07",
+        "block": "p029-b005",
+        "element": "eq-7-20"
+      },
+      "7.21": {
+        "chapter": "07",
+        "block": "p030-b017",
+        "element": "eq-7-21"
+      },
+      "7.22": {
+        "chapter": "07",
+        "block": "p031-b006",
+        "element": "eq-7-22"
+      },
+      "7.23": {
+        "chapter": "07",
+        "block": "p035-b007",
+        "element": "eq-7-23"
+      },
+      "7.24": {
+        "chapter": "07",
+        "block": "p036-b001",
+        "element": "eq-7-24"
+      },
+      "7.25": {
+        "chapter": "07",
+        "block": "p036-b003",
+        "element": "eq-7-25"
+      },
+      "7.26": {
+        "chapter": "07",
+        "block": "p037-b003",
+        "element": "eq-7-26"
+      },
+      "7.27": {
+        "chapter": "07",
+        "block": "p037-b011",
+        "element": "eq-7-27"
+      },
+      "7.28": {
+        "chapter": "07",
+        "block": "p037-b017",
+        "element": "eq-7-28"
+      },
+      "7.29": {
+        "chapter": "07",
+        "block": "p038-b007",
+        "element": "eq-7-29"
+      },
+      "7.3": {
+        "chapter": "07",
+        "block": "p004-b013",
+        "element": "eq-7-3"
+      },
+      "7.30": {
+        "chapter": "07",
+        "block": "p038-b010",
+        "element": "eq-7-30"
+      },
+      "7.31": {
+        "chapter": "07",
+        "block": "p038-b012",
+        "element": "eq-7-31"
+      },
+      "7.32": {
+        "chapter": "07",
+        "block": "p046-b009",
+        "element": "eq-7-32"
+      },
+      "7.4": {
+        "chapter": "07",
+        "block": "p006-b008",
+        "element": "eq-7-4"
+      },
+      "7.5": {
+        "chapter": "07",
+        "block": "p007-b002",
+        "element": "eq-7-5"
+      },
+      "7.6": {
+        "chapter": "07",
+        "block": "p008-b006",
+        "element": "eq-7-6"
+      },
+      "7.7": {
+        "chapter": "07",
+        "block": "p008-b015",
+        "element": "eq-7-7"
+      },
+      "7.8": {
+        "chapter": "07",
+        "block": "p012-b013",
+        "element": "eq-7-8"
+      },
+      "7.9": {
+        "chapter": "07",
+        "block": "p013-b001",
+        "element": "eq-7-9"
+      },
+      "8.1": {
+        "chapter": "08",
+        "block": "p002-b004",
+        "element": "eq-8-1"
+      },
+      "8.10": {
+        "chapter": "08",
+        "block": "p014-b010",
+        "element": "eq-8-10"
+      },
+      "8.11": {
+        "chapter": "08",
+        "block": "p015-b001",
+        "element": "eq-8-11"
+      },
+      "8.12": {
+        "chapter": "08",
+        "block": "p016-b008",
+        "element": "eq-8-12"
+      },
+      "8.13": {
+        "chapter": "08",
+        "block": "p017-b006",
+        "element": "eq-8-13"
+      },
+      "8.14": {
+        "chapter": "08",
+        "block": "p018-b008",
+        "element": "eq-8-14"
+      },
+      "8.15": {
+        "chapter": "08",
+        "block": "p018-b016",
+        "element": "eq-8-15"
+      },
+      "8.16": {
+        "chapter": "08",
+        "block": "p021-b006",
+        "element": "eq-8-16"
+      },
+      "8.17": {
+        "chapter": "08",
+        "block": "p022-b010",
+        "element": "eq-8-17"
+      },
+      "8.18": {
+        "chapter": "08",
+        "block": "p023-b006",
+        "element": "eq-8-18"
+      },
+      "8.19": {
+        "chapter": "08",
+        "block": "p024-b010",
+        "element": "eq-8-19"
+      },
+      "8.2": {
+        "chapter": "08",
+        "block": "p002-b006",
+        "element": "eq-8-2"
+      },
+      "8.20": {
+        "chapter": "08",
+        "block": "p027-b004",
+        "element": "eq-8-20"
+      },
+      "8.21": {
+        "chapter": "08",
+        "block": "p027-b006",
+        "element": "eq-8-21"
+      },
+      "8.22": {
+        "chapter": "08",
+        "block": "p027-b010",
+        "element": "eq-8-22"
+      },
+      "8.23": {
+        "chapter": "08",
+        "block": "p028-b004",
+        "element": "eq-8-23"
+      },
+      "8.24": {
+        "chapter": "08",
+        "block": "p029-b009",
+        "element": "eq-8-24"
+      },
+      "8.25": {
+        "chapter": "08",
+        "block": "p030-b002",
+        "element": "eq-8-25"
+      },
+      "8.26": {
+        "chapter": "08",
+        "block": "p031-b006",
+        "element": "eq-8-26"
+      },
+      "8.27": {
+        "chapter": "08",
+        "block": "p032-b002",
+        "element": "eq-8-27"
+      },
+      "8.28": {
+        "chapter": "08",
+        "block": "p037-b003",
+        "element": "eq-8-28"
+      },
+      "8.29": {
+        "chapter": "08",
+        "block": "p041-b002",
+        "element": "eq-8-29"
+      },
+      "8.3": {
+        "chapter": "08",
+        "block": "p007-b002",
+        "element": "eq-8-3"
+      },
+      "8.30": {
+        "chapter": "08",
+        "block": "p041-b008",
+        "element": "eq-8-30"
+      },
+      "8.31": {
+        "chapter": "08",
+        "block": "p042-b013",
+        "element": "eq-8-31"
+      },
+      "8.32": {
+        "chapter": "08",
+        "block": "p043-b007",
+        "element": "eq-8-32"
+      },
+      "8.33": {
+        "chapter": "08",
+        "block": "p043-b011",
+        "element": "eq-8-33"
+      },
+      "8.34": {
+        "chapter": "08",
+        "block": "p044-b007",
+        "element": "eq-8-34"
+      },
+      "8.35": {
+        "chapter": "08",
+        "block": "p044-b010",
+        "element": "eq-8-35"
+      },
+      "8.36": {
+        "chapter": "08",
+        "block": "p054-b001",
+        "element": "eq-8-36"
+      },
+      "8.37": {
+        "chapter": "08",
+        "block": "p054-b022",
+        "element": "eq-8-37"
+      },
+      "8.4": {
+        "chapter": "08",
+        "block": "p007-b006",
+        "element": "eq-8-4"
+      },
+      "8.5": {
+        "chapter": "08",
+        "block": "p007-b011",
+        "element": "eq-8-5"
+      },
+      "8.6": {
+        "chapter": "08",
+        "block": "p008-b003",
+        "element": "eq-8-6"
+      },
+      "8.7": {
+        "chapter": "08",
+        "block": "p012-b006",
+        "element": "eq-8-7"
+      },
+      "8.8": {
+        "chapter": "08",
+        "block": "p013-b007",
+        "element": "eq-8-8"
+      },
+      "8.9": {
+        "chapter": "08",
+        "block": "p014-b008",
+        "element": "eq-8-9"
+      },
+      "9.1": {
+        "chapter": "09",
+        "block": "p001-b005",
+        "element": "eq-9-1"
+      },
+      "9.10": {
+        "chapter": "09",
+        "block": "p004-b006",
+        "element": "eq-9-10"
+      },
+      "9.11": {
+        "chapter": "09",
+        "block": "p004-b008",
+        "element": "eq-9-11"
+      },
+      "9.12": {
+        "chapter": "09",
+        "block": "p004-b016",
+        "element": "eq-9-12"
+      },
+      "9.13": {
+        "chapter": "09",
+        "block": "p005-b002",
+        "element": "eq-9-13"
+      },
+      "9.14": {
+        "chapter": "09",
+        "block": "p005-b004",
+        "element": "eq-9-14"
+      },
+      "9.15": {
+        "chapter": "09",
+        "block": "p005-b008",
+        "element": "eq-9-15"
+      },
+      "9.16": {
+        "chapter": "09",
+        "block": "p008-b007",
+        "element": "eq-9-16"
+      },
+      "9.17": {
+        "chapter": "09",
+        "block": "p010-b008",
+        "element": "eq-9-17"
+      },
+      "9.18": {
+        "chapter": "09",
+        "block": "p011-b007",
+        "element": "eq-9-18"
+      },
+      "9.19": {
+        "chapter": "09",
+        "block": "p011-b009",
+        "element": "eq-9-19"
+      },
+      "9.2": {
+        "chapter": "09",
+        "block": "p001-b008",
+        "element": "eq-9-2"
+      },
+      "9.20": {
+        "chapter": "09",
+        "block": "p014-b006",
+        "element": "eq-9-20"
+      },
+      "9.21": {
+        "chapter": "09",
+        "block": "p016-b004",
+        "element": "eq-9-21"
+      },
+      "9.22": {
+        "chapter": "09",
+        "block": "p017-b007",
+        "element": "eq-9-22"
+      },
+      "9.23": {
+        "chapter": "09",
+        "block": "p019-b011",
+        "element": "eq-9-23"
+      },
+      "9.24": {
+        "chapter": "09",
+        "block": "p020-b003",
+        "element": "eq-9-24"
+      },
+      "9.25": {
+        "chapter": "09",
+        "block": "p020-b019",
+        "element": "eq-9-25"
+      },
+      "9.26": {
+        "chapter": "09",
+        "block": "p023-b006",
+        "element": "eq-9-26"
+      },
+      "9.27": {
+        "chapter": "09",
+        "block": "p023-b008",
+        "element": "eq-9-27"
+      },
+      "9.28": {
+        "chapter": "09",
+        "block": "p028-b010",
+        "element": "eq-9-28"
+      },
+      "9.29": {
+        "chapter": "09",
+        "block": "p031-b004",
+        "element": "eq-9-29"
+      },
+      "9.3": {
+        "chapter": "09",
+        "block": "p001-b012",
+        "element": "eq-9-3"
+      },
+      "9.30": {
+        "chapter": "09",
+        "block": "p031-b008",
+        "element": "eq-9-30"
+      },
+      "9.31": {
+        "chapter": "09",
+        "block": "p032-b004",
+        "element": "eq-9-31"
+      },
+      "9.32": {
+        "chapter": "09",
+        "block": "p032-b008",
+        "element": "eq-9-32"
+      },
+      "9.33": {
+        "chapter": "09",
+        "block": "p032-b008",
+        "element": "eq-9-33"
+      },
+      "9.34": {
+        "chapter": "09",
+        "block": "p032-b010",
+        "element": "eq-9-34"
+      },
+      "9.35": {
+        "chapter": "09",
+        "block": "p032-b014",
+        "element": "eq-9-35"
+      },
+      "9.36": {
+        "chapter": "09",
+        "block": "p033-b010",
+        "element": "eq-9-36"
+      },
+      "9.37": {
+        "chapter": "09",
+        "block": "p033-b013",
+        "element": "eq-9-37"
+      },
+      "9.38": {
+        "chapter": "09",
+        "block": "p034-b010",
+        "element": "eq-9-38"
+      },
+      "9.39": {
+        "chapter": "09",
+        "block": "p035-b006",
+        "element": "eq-9-39"
+      },
+      "9.4": {
+        "chapter": "09",
+        "block": "p002-b004",
+        "element": "eq-9-4"
+      },
+      "9.40": {
+        "chapter": "09",
+        "block": "p035-b018",
+        "element": "eq-9-40"
+      },
+      "9.41": {
+        "chapter": "09",
+        "block": "p041-b007",
+        "element": "eq-9-41"
+      },
+      "9.42": {
+        "chapter": "09",
+        "block": "p042-b002",
+        "element": "eq-9-42"
+      },
+      "9.43": {
+        "chapter": "09",
+        "block": "p044-b003",
+        "element": "eq-9-43"
+      },
+      "9.44": {
+        "chapter": "09",
+        "block": "p045-b008",
+        "element": "eq-9-44"
+      },
+      "9.45": {
+        "chapter": "09",
+        "block": "p045-b012",
+        "element": "eq-9-45"
+      },
+      "9.46": {
+        "chapter": "09",
+        "block": "p045-b016",
+        "element": "eq-9-46"
+      },
+      "9.47": {
+        "chapter": "09",
+        "block": "p046-b002",
+        "element": "eq-9-47"
+      },
+      "9.48": {
+        "chapter": "09",
+        "block": "p046-b004",
+        "element": "eq-9-48"
+      },
+      "9.49": {
+        "chapter": "09",
+        "block": "p046-b016",
+        "element": "eq-9-49"
+      },
+      "9.5": {
+        "chapter": "09",
+        "block": "p002-b019",
+        "element": "eq-9-5"
+      },
+      "9.50": {
+        "chapter": "09",
+        "block": "p046-b022",
+        "element": "eq-9-50"
+      },
+      "9.51": {
+        "chapter": "09",
+        "block": "p047-b005",
+        "element": "eq-9-51"
+      },
+      "9.52": {
+        "chapter": "09",
+        "block": "p047-b005",
+        "element": "eq-9-52"
+      },
+      "9.53": {
+        "chapter": "09",
+        "block": "p048-b003",
+        "element": "eq-9-53"
+      },
+      "9.54": {
+        "chapter": "09",
+        "block": "p048-b009",
+        "element": "eq-9-54"
+      },
+      "9.55": {
+        "chapter": "09",
+        "block": "p049-b009",
+        "element": "eq-9-55"
+      },
+      "9.56": {
+        "chapter": "09",
+        "block": "p049-b015",
+        "element": "eq-9-56"
+      },
+      "9.57": {
+        "chapter": "09",
+        "block": "p049-b017",
+        "element": "eq-9-57"
+      },
+      "9.58": {
+        "chapter": "09",
+        "block": "p051-b002",
+        "element": "eq-9-58"
+      },
+      "9.59": {
+        "chapter": "09",
+        "block": "p053-b004",
+        "element": "eq-9-59"
+      },
+      "9.6": {
+        "chapter": "09",
+        "block": "p003-b006",
+        "element": "eq-9-6"
+      },
+      "9.60": {
+        "chapter": "09",
+        "block": "p055-b012",
+        "element": "eq-9-60"
+      },
+      "9.61": {
+        "chapter": "09",
+        "block": "p056-b008",
+        "element": "eq-9-61"
+      },
+      "9.62": {
+        "chapter": "09",
+        "block": "p058-b018",
+        "element": "eq-9-62"
+      },
+      "9.63": {
+        "chapter": "09",
+        "block": "p062-b010",
+        "element": "eq-9-63"
+      },
+      "9.64": {
+        "chapter": "09",
+        "block": "p062-b012",
+        "element": "eq-9-64"
+      },
+      "9.7": {
+        "chapter": "09",
+        "block": "p003-b014",
+        "element": "eq-9-7"
+      },
+      "9.8": {
+        "chapter": "09",
+        "block": "p003-b018",
+        "element": "eq-9-8"
+      },
+      "9.9": {
+        "chapter": "09",
+        "block": "p004-b004",
+        "element": "eq-9-9"
+      },
+      "A.1": {
+        "chapter": "A",
+        "block": "p001-b009",
+        "element": "eq-A-1"
+      },
+      "A.10": {
+        "chapter": "A",
+        "block": "p014-b017",
+        "element": "eq-A-10"
+      },
+      "A.11": {
+        "chapter": "A",
+        "block": "p016-b003",
+        "element": "eq-A-11"
+      },
+      "A.12": {
+        "chapter": "A",
+        "block": "p016-b008",
+        "element": "eq-A-12"
+      },
+      "A.13": {
+        "chapter": "A",
+        "block": "p018-b020",
+        "element": "eq-A-13"
+      },
+      "A.14": {
+        "chapter": "A",
+        "block": "p018-b022",
+        "element": "eq-A-14"
+      },
+      "A.2": {
+        "chapter": "A",
+        "block": "p002-b002",
+        "element": "eq-A-2"
+      },
+      "A.3": {
+        "chapter": "A",
+        "block": "p007-b007",
+        "element": "eq-A-3"
+      },
+      "A.4": {
+        "chapter": "A",
+        "block": "p008-b007",
+        "element": "eq-A-4"
+      },
+      "A.5": {
+        "chapter": "A",
+        "block": "p010-b009",
+        "element": "eq-A-5"
+      },
+      "A.6": {
+        "chapter": "A",
+        "block": "p010-b011",
+        "element": "eq-A-6"
+      },
+      "A.7": {
+        "chapter": "A",
+        "block": "p010-b019",
+        "element": "eq-A-7"
+      },
+      "A.8": {
+        "chapter": "A",
+        "block": "p013-b005",
+        "element": "eq-A-8"
+      },
+      "A.9": {
+        "chapter": "A",
+        "block": "p014-b013",
+        "element": "eq-A-9"
+      },
+      "B.1": {
+        "chapter": "B",
+        "block": "p001-b006",
+        "element": "eq-B-1"
+      },
+      "B.2": {
+        "chapter": "B",
+        "block": "p001-b013",
+        "element": "eq-B-2"
+      },
+      "B.3": {
+        "chapter": "B",
+        "block": "p002-b005",
+        "element": "eq-B-3"
+      },
+      "B.4": {
+        "chapter": "B",
+        "block": "p002-b008",
+        "element": "eq-B-4"
+      },
+      "B.5": {
+        "chapter": "B",
+        "block": "p002-b010",
+        "element": "eq-B-5"
+      },
+      "B.6": {
+        "chapter": "B",
+        "block": "p003-b005",
+        "element": "eq-B-6"
+      },
+      "B.7": {
+        "chapter": "B",
+        "block": "p003-b007",
+        "element": "eq-B-7"
+      },
+      "B.8": {
+        "chapter": "B",
+        "block": "p004-b003",
+        "element": "eq-B-8"
+      },
+      "B.9": {
+        "chapter": "B",
+        "block": "p005-b005",
+        "element": "eq-B-9"
+      },
+      "C.1": {
+        "chapter": "C",
+        "block": "p001-b006",
+        "element": "eq-C-1"
+      },
+      "C.10": {
+        "chapter": "C",
+        "block": "p019-b014",
+        "element": "eq-C-10"
+      },
+      "C.11": {
+        "chapter": "C",
+        "block": "p021-b003",
+        "element": "eq-C-11"
+      },
+      "C.12": {
+        "chapter": "C",
+        "block": "p021-b006",
+        "element": "eq-C-12"
+      },
+      "C.2": {
+        "chapter": "C",
+        "block": "p010-b010",
+        "element": "eq-C-2"
+      },
+      "C.3": {
+        "chapter": "C",
+        "block": "p012-b013",
+        "element": "eq-C-3"
+      },
+      "C.4": {
+        "chapter": "C",
+        "block": "p013-b002",
+        "element": "eq-C-4"
+      },
+      "C.5": {
+        "chapter": "C",
+        "block": "p013-b004",
+        "element": "eq-C-5"
+      },
+      "C.6": {
+        "chapter": "C",
+        "block": "p014-b005",
+        "element": "eq-C-6"
+      },
+      "C.7": {
+        "chapter": "C",
+        "block": "p018-b004",
+        "element": "eq-C-7"
+      },
+      "C.8": {
+        "chapter": "C",
+        "block": "p018-b008",
+        "element": "eq-C-8"
+      },
+      "C.9": {
+        "chapter": "C",
+        "block": "p018-b016",
+        "element": "eq-C-9"
+      }
+    }
+  }
+}

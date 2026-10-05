@@ -128,7 +128,7 @@ with sync_playwright() as playwright:
     phone.keyboard.press("Escape")
     assert not preview_dialog.evaluate("dialog => dialog.open")
     phone.wait_for_function("!document.documentElement.classList.contains('reference-preview-open')")
-    assert abs(phone.evaluate("scrollY") - scroll_before_preview) <= 2
+    phone.wait_for_function("y => Math.abs(scrollY - y) <= 2", arg=scroll_before_preview)
     assert mobile_figure.evaluate("link => document.activeElement === link")
 
     system = browser.new_context(color_scheme="dark", service_workers="block")

@@ -149,6 +149,8 @@ def build_index() -> dict:
             ("figure", "30.1", "algorithm", "30.1")):
         target = targets[source_kind][source_number]
         add(alias_kind, alias_number, target["chapter"], target["block"], rank=3)
+    # This printed "figure" is an algorithm paragraph, so retain the jump only.
+    targets["figure"]["30.1"]["preview"] = False
     # The caption for Figure 47.2 follows its image and three translated
     # panel notes; the link should land at the image itself.
     add("figure", "47.2", "47", "p570-b001", rank=4)
