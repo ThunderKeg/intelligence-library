@@ -70,6 +70,124 @@
         "element": "table-i",
         "blockKind": "figure"
       }
+    },
+    "section": {
+      "1": {
+        "chapter": "01",
+        "block": "p01-b003"
+      },
+      "10": {
+        "chapter": "01",
+        "block": "p15-b017"
+      },
+      "11": {
+        "chapter": "02",
+        "block": "p01-b003"
+      },
+      "12": {
+        "chapter": "02",
+        "block": "p02-b001"
+      },
+      "13": {
+        "chapter": "02",
+        "block": "p04-b005"
+      },
+      "14": {
+        "chapter": "02",
+        "block": "p06-b015"
+      },
+      "15": {
+        "chapter": "02",
+        "block": "p07-b007"
+      },
+      "16": {
+        "chapter": "02",
+        "block": "p08-b006"
+      },
+      "17": {
+        "chapter": "02",
+        "block": "p09-b012"
+      },
+      "18": {
+        "chapter": "03",
+        "block": "p01-b005"
+      },
+      "19": {
+        "chapter": "03",
+        "block": "p03-b012"
+      },
+      "2": {
+        "chapter": "01",
+        "block": "p02-b015"
+      },
+      "20": {
+        "chapter": "03",
+        "block": "p04-b005"
+      },
+      "21": {
+        "chapter": "03",
+        "block": "p07-b001"
+      },
+      "22": {
+        "chapter": "03",
+        "block": "p08-b012"
+      },
+      "23": {
+        "chapter": "03",
+        "block": "p09-b006"
+      },
+      "24": {
+        "chapter": "04",
+        "block": "p01-b003"
+      },
+      "25": {
+        "chapter": "04",
+        "block": "p03-b013"
+      },
+      "26": {
+        "chapter": "04",
+        "block": "p05-b017"
+      },
+      "27": {
+        "chapter": "05",
+        "block": "p01-b003"
+      },
+      "28": {
+        "chapter": "05",
+        "block": "p03-b002"
+      },
+      "29": {
+        "chapter": "05",
+        "block": "p04-b011"
+      },
+      "3": {
+        "chapter": "01",
+        "block": "p05-b002"
+      },
+      "4": {
+        "chapter": "01",
+        "block": "p06-b002"
+      },
+      "5": {
+        "chapter": "01",
+        "block": "p06-b008"
+      },
+      "6": {
+        "chapter": "01",
+        "block": "p08-b010"
+      },
+      "7": {
+        "chapter": "01",
+        "block": "p11-b001"
+      },
+      "8": {
+        "chapter": "01",
+        "block": "p13-b004"
+      },
+      "9": {
+        "chapter": "01",
+        "block": "p14-b008"
+      }
     }
   }
 }

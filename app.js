@@ -541,6 +541,7 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
   singles("chapter", /附录\s*([A-E])(?![A-Za-z0-9])/g);
   singles("section", /(?:第\s*)?((?:[A-E]|\d+)(?:\.\d+){1,2})\s*(?:小)?节/g);
   singles("section", /附录\s*([A-E]\.\d+(?:\.\d+)?)\s*节?/g);
+  if (book.richReferenceAuto === true) singles("section", /第\s*(\d+)\s*节(?![\d.])/g);
   singles("figure", /图\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
   if (book.richReferenceAuto === true) singles("figure", /图\s*(\d+)(?![\d.])/g);
   singles("table", /表\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);

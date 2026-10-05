@@ -29,6 +29,8 @@ def build(book_id, selectors):
     targets = {kind: {} for kind in selectors}
     if book_id.startswith("boyd-"):
         targets.update(chapter={}, section={})
+    elif book_id.startswith("shannon-"):
+        targets["section"] = {}
 
     def add(kind, number, target):
         previous = targets[kind].setdefault(number, target)
@@ -40,14 +42,19 @@ def build(book_id, selectors):
         if chapter.get("bookId") != book_id or not chapter.get("chapterId"):
             raise ValueError(f"Invalid chapter: {path}")
         for block in chapter["blocks"]:
-            if "chapter" in targets and block.get("kind") == "heading":
+            if block.get("kind") == "heading":
                 heading = block.get("text", "")
-                match = re.match(r"^第\s*(\d+)\s*章(?:\s|$)", heading)
-                if not match:
-                    match = re.match(r"^附录\s*([A-C])(?:\s|$)", heading)
-                if match:
-                    add("chapter", match[1], {"chapter": chapter["chapterId"], "block": block["id"]})
-                match = re.match(r"^((?:[A-C]|\d+)\.\d+(?:\.\d+)?)\s", heading)
+                if "chapter" in targets:
+                    match = re.match(r"^第\s*(\d+)\s*章(?:\s|$)", heading)
+                    if not match:
+                        match = re.match(r"^附录\s*([A-C])(?:\s|$)", heading)
+                    if match:
+                        add("chapter", match[1], {"chapter": chapter["chapterId"], "block": block["id"]})
+                    match = re.match(r"^((?:[A-C]|\d+)\.\d+(?:\.\d+)?)\s", heading)
+                elif book_id.startswith("shannon-") and chapter["chapterId"] in {"01", "02", "03", "04", "05"}:
+                    match = re.match(r"^(\d+)\.\s", heading)
+                else:
+                    match = None
                 if match:
                     add("section", match[1], {"chapter": chapter["chapterId"], "block": block["id"]})
             if block.get("kind") != "rich" or not block.get("html"):

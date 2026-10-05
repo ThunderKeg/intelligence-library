@@ -64,6 +64,21 @@ with sync_playwright() as playwright:
     assert dialog.locator("figure img").evaluate("img => img.complete && img.naturalWidth > 0")
     assert "图 2" in dialog.locator("figcaption").inner_text()
     page.keyboard.press("Escape")
+    link, dialog = preview(page, "section", "2")
+    assert link.get_attribute("href") == "#read-p02-b015"
+    assert dialog.locator(".reference-preview-context-chapter").inner_text() == "I 无噪离散系统"
+    assert dialog.locator(".reference-preview-context-title").inner_text() == "2. 离散信源"
+    page.keyboard.press("Escape")
+    open_chapter(page, "shannon-mathematical-theory-1948", "02")
+    link, dialog = preview(page, "section", "1")
+    assert link.get_attribute("href").endswith("?book=shannon-mathematical-theory-1948&chapter=01#read-p01-b003")
+    assert dialog.locator(".reference-preview-context-chapter").inner_text() == "I 无噪离散系统"
+    assert dialog.locator(".reference-preview-context-title").inner_text() == "1. 无噪离散信道"
+    page.keyboard.press("Escape")
+    open_chapter(page, "shannon-mathematical-theory-1948", "a1-a4")
+    _, dialog = preview(page, "section", "1")
+    assert dialog.locator(".reference-preview-context-title").inner_text() == "1. 无噪离散信道"
+    page.keyboard.press("Escape")
     open_chapter(page, "shannon-mathematical-theory-1948", "03")
     link, dialog = preview(page, "table", "I")
     assert link.get_attribute("href").endswith("#table-i")
