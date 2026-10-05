@@ -128,6 +128,30 @@ a { color: var(--accent); }
 .book-formula { position: relative; display: flex; align-items: center; gap: 12px; margin: 1.6em 0; padding: 16px 18px; background: var(--formula); border-radius: 3px; color: var(--ink); }
 .formula-scroll { flex: 1 1 auto; min-width: 0; overflow-x: auto; }
 .book-formula math { font-size: 1.1em; }
+@font-face {
+  font-family: "PRML Math";
+  src: url("books/bishop-pattern-recognition-2006/assets/fonts/STIXTwoMath-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math {
+  font-family: "PRML Math", "Cambria Math", math;
+}
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right left"] > mtr > mtd:nth-child(odd),
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right"] > mtr > mtd { text-align: right; }
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right left"] > mtr > mtd:nth-child(even),
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="left left"] > mtr > mtd { text-align: left; }
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] math munder > mo[stretchy="true"][minsize="100%"]:last-child {
+  display: block;
+  width: 100%;
+  height: .5em;
+  color: transparent;
+  background-color: var(--ink);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 12' preserveAspectRatio='none'%3E%3Cpath d='M1 1 C1 6 5 6 10 6 H44 C48 6 50 8 50 11 C50 8 52 6 56 6 H90 C95 6 99 6 99 1' fill='none' stroke='black' stroke-width='1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p182-b014 .book-formula math mtable { border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p182-b014 .book-formula math mtr:nth-child(3) > mtd { border-top: 1px solid currentColor; }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p213-b012 .book-formula math munder > mrow { border-bottom: 1px solid currentColor; }
@@ -215,6 +239,7 @@ a { color: var(--accent); }
 .original-contents .contents-depth-1 .contents-title { padding-left: 1.1em; }
 .original-contents .contents-depth-2 .contents-title { padding-left: 2.2em; }
 .original-contents .contents-page { color: var(--muted); white-space: nowrap; }
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] .original-contents strong.contents-title + .contents-page { font-weight: 700; color: var(--ink); }
 .book-quote { margin: 1.5em 0 1.8em; padding: .2em 0 .2em 20px; border-left: 3px solid var(--caption-line); }
 .reading-block .book-quote p { margin: 0; font-size: 16px; line-height: 1.9; }
 .book-exercise { padding: 12px 16px; background: var(--surface); border-left: 2px solid var(--accent); }
@@ -230,6 +255,7 @@ a { color: var(--accent); }
 .table-scroll { overflow-x: auto; margin: 0 0 2em; }
 .book-table { width: 100%; border-collapse: collapse; font: 13px/1.6 var(--sans); white-space: nowrap; }
 .book-table caption { padding: 0 0 10px; color: var(--muted); text-align: left; font: 14px/1.7 var(--sans); }
+#reader-article[data-book-id="bishop-pattern-recognition-2006"] .book-table caption { white-space: normal; overflow-wrap: anywhere; }
 .book-table th, .book-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: right; white-space: pre-wrap; }
 .book-table th:first-child, .book-table td:first-child { text-align: left; }
 .book-table th { color: var(--accent); border-bottom-color: var(--table-line); }
@@ -489,31 +515,4 @@ a { color: var(--accent); }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p513-b003 h2 { text-wrap: pretty; }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p449-b001 .mackay-ch34-title-part { display: block; white-space: nowrap; }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p469-b001 .mackay-ch37-title-part { display: block; white-space: nowrap; }
-}
-
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] .original-contents strong.contents-title + .contents-page { font-weight: 700; color: var(--ink); }
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] .book-table caption { white-space: normal; overflow-wrap: anywhere; }
-@font-face {
-  font-family: "PRML Math";
-  src: url("books/bishop-pattern-recognition-2006/assets/fonts/STIXTwoMath-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] math {
-  font-family: "PRML Math", "Cambria Math", math;
-}
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right left"] > mtr > mtd:nth-child(odd),
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right"] > mtr > mtd { text-align: right; }
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="right left"] > mtr > mtd:nth-child(even),
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] math mtable[columnalign="left left"] > mtr > mtd { text-align: left; }
-#reader-article[data-book-id="bishop-pattern-recognition-2006"] math munder > mo[stretchy="true"][minsize="100%"]:last-child {
-  display: block;
-  width: 100%;
-  height: .5em;
-  color: transparent;
-  background-color: var(--ink);
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 12' preserveAspectRatio='none'%3E%3Cpath d='M1 1 C1 6 5 6 10 6 H44 C48 6 50 8 50 11 C50 8 52 6 56 6 H90 C95 6 99 6 99 1' fill='none' stroke='black' stroke-width='1' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
 }

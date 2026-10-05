@@ -7,6 +7,8 @@ function isBookImage(url) {
   return /\/books\/[^/]+\/assets\/.+\.(?:png|jpe?g|webp|gif|svg)$/i.test(url.pathname);
 }
 const CORE_ASSETS = [
+  "./", "./index.html", "./styles.css", "./app.js", "./books.js",
+  "./manifest.webmanifest", "./favicon.svg", "./icons/icon-180.png", "./icons/icon-192.png", "./icons/icon-512.png",
   "./books/bishop-pattern-recognition-2006/frontmatter.json",
   "./books/bishop-pattern-recognition-2006/preface.json",
   "./books/bishop-pattern-recognition-2006/notation.json",
@@ -35,11 +37,10 @@ const CORE_ASSETS = [
   "./books/bishop-pattern-recognition-2006/reference-index.json",
   "./books/bishop-pattern-recognition-2006/offline-images.json",
   "./books/bishop-pattern-recognition-2006/assets/fonts/STIXTwoMath-Regular.woff2",
-  "./", "./index.html", "./styles.css", "./app.js", "./books.js",
   "./books/bishop-deep-learning-2024/frontmatter.json",
   "./books/bishop-deep-learning-2024/chapter-00.json",
   "./books/bishop-deep-learning-2024/contents.json",
-  "./books/bishop-deep-learning-2024/chapter-01.json", "./manifest.webmanifest",
+  "./books/bishop-deep-learning-2024/chapter-01.json",
   "./books/bishop-deep-learning-2024/chapter-02.json",
   "./books/bishop-deep-learning-2024/chapter-03.json",
   "./books/bishop-deep-learning-2024/chapter-04.json",
@@ -66,7 +67,6 @@ const CORE_ASSETS = [
   "./books/bishop-deep-learning-2024/index.json",
   "./books/bishop-deep-learning-2024/reference-index.json",
   "./books/bishop-deep-learning-2024/offline-images.json",
-  "./favicon.svg", "./icons/icon-180.png", "./icons/icon-192.png", "./icons/icon-512.png",
   "./books/shannon-mathematical-theory-1948/chapter-00.json",
   "./books/shannon-mathematical-theory-1948/chapter-01.json",
   "./books/shannon-mathematical-theory-1948/chapter-02.json",
