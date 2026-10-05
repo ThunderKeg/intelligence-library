@@ -58,6 +58,9 @@ a { color: var(--accent); }
 .book-original-title { margin: 0 0 12px; color: var(--muted); font: italic 15px/1.5 Georgia, serif; }
 .book-author { margin: 0 0 18px; color: var(--muted); font-size: 12px; }
 .book-description { margin: 0 0 20px; color: var(--body); font-size: 14px; line-height: 1.8; }
+.book-reading-info { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 12px; margin: 0 0 18px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.book-reading-info dt { white-space: nowrap; }
+.book-reading-info dd { margin: 0; color: var(--body); overflow-wrap: anywhere; }
 .read-link { display: inline-block; font-size: 14px; font-weight: 700; text-decoration: none; }
 .read-link:hover, .back-link:hover, .toc-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 .empty-state { color: var(--muted); padding: 30px 0; }

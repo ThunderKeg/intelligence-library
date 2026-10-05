@@ -61,6 +61,24 @@ function setupTheme() {
   });
 }
 
+function renderReadingInfo(progress, chapter) {
+  const info = element("dl", "book-reading-info");
+  const lastRead = element("dd", "book-last-read", progress ? "时间未记录" : "尚未阅读");
+  const date = new Date(typeof progress?.updatedAt === "number" && progress.updatedAt > 0 ? progress.updatedAt : NaN);
+  if (Number.isFinite(date.getTime())) {
+    const time = element("time", "", date.toLocaleString("zh-CN", {
+      year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+    }));
+    time.dateTime = date.toISOString();
+    lastRead.replaceChildren(time);
+  }
+  const number = chapter && /^\d+$/.test(chapter.number) ? `第 ${chapter.number} 章` : chapter?.number || "";
+  const lastChapter = element("dd", "book-last-chapter", !progress ? "尚未阅读" :
+    chapter ? `${number} ${chapter.title}`.trim() : "章节已不可用");
+  info.append(element("dt", "", "最近阅读时间"), lastRead, element("dt", "", "最近阅读章节"), lastChapter);
+  return info;
+}
+
 function renderShelf() {
   const grid = document.querySelector("#book-grid");
   const search = document.querySelector("#search");
@@ -77,15 +95,22 @@ function renderShelf() {
       const author = element("p", "book-author", `${book.author} · ${book.year}`);
       const description = element("p", "book-description", book.description);
       const progress = readProgress(book);
+      const chapters = Array.isArray(book.chapters) ? book.chapters : [];
+      const chapter = progress && (chapters.find((item) => item.id === (progress.chapter || book.legacyPageChapter)) ||
+        (!progress.chapter ? chapters[0] : null));
       const read = element("a", "read-link", progress ? "继续阅读 →" : "开始阅读 →");
-      read.href = bookUrl(book, progress?.chapter);
-      card.append(title, original, author, description, read);
+      read.href = bookUrl(book, chapter?.id);
+      card.append(title, original, author, description, renderReadingInfo(progress, chapter), read);
       return card;
     }));
     document.querySelector("#empty-state").hidden = matches.length > 0;
   }
 
   search.addEventListener("input", draw);
+  window.addEventListener("pageshow", draw);
+  window.addEventListener("storage", (event) => {
+    if (event.key === null || event.key.startsWith(progressPrefix)) draw();
+  });
   draw();
 }
 
