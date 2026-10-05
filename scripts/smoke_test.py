@@ -80,6 +80,10 @@ with sync_playwright() as playwright:
     assert page.locator("#offline-panel").is_hidden()
     desktop.set_offline(True)
     assert page.evaluate("async () => (await fetch('books/bishop-deep-learning-2024/assets/chapter-20/fig-20-9.png')).status") == 200
+    page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=05")
+    page.locator('a[data-preview-kind="formula"][data-preview-chapter="04"]').first.click()
+    page.locator(".reference-preview-dialog math").wait_for()
+    page.get_by_role("button", name="关闭").last.click()
     page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=frontmatter")
     page.wait_for_function("(document.querySelector('.book-figure img')?.naturalWidth ?? 0) > 0")
     for chapter in ("frontmatter", "00", "contents", *(f"{number:02d}" for number in range(1, 21)),
@@ -107,6 +111,25 @@ with sync_playwright() as playwright:
     phone.screenshot(path=str(OUTPUT / "reader-mobile.png"), full_page=False)
     dimensions = phone.evaluate("({viewport: innerWidth, content: document.documentElement.scrollWidth})")
     assert dimensions["content"] <= dimensions["viewport"], dimensions
+    phone.goto(BASE + "?book=bishop-deep-learning-2024&chapter=01")
+    mobile_figure = phone.locator('#read-p10-b001 .figure-caption a[data-preview-kind="figure"]').first
+    mobile_figure.scroll_into_view_if_needed()
+    scroll_before_preview = phone.evaluate("scrollY")
+    mobile_figure.click()
+    phone.wait_for_function("document.querySelector('.reference-preview-dialog img')?.naturalWidth > 0")
+    preview_dialog = phone.locator(".reference-preview-dialog")
+    assert preview_dialog.evaluate("dialog => dialog.open")
+    assert preview_dialog.bounding_box()["width"] <= phone.evaluate("innerWidth")
+    assert phone.locator("html").evaluate("root => root.classList.contains('reference-preview-open')")
+    phone.mouse.move(2, 2)
+    phone.mouse.wheel(0, 300)
+    phone.wait_for_timeout(100)
+    phone.screenshot(path=str(OUTPUT / "reference-preview-mobile.png"), full_page=False)
+    phone.keyboard.press("Escape")
+    assert not preview_dialog.evaluate("dialog => dialog.open")
+    phone.wait_for_function("!document.documentElement.classList.contains('reference-preview-open')")
+    assert abs(phone.evaluate("scrollY") - scroll_before_preview) <= 2
+    assert mobile_figure.evaluate("link => document.activeElement === link")
 
     system = browser.new_context(color_scheme="dark", service_workers="block")
     system_page = system.new_page()
@@ -184,11 +207,52 @@ with sync_playwright() as playwright:
 
     references = browser.new_context(service_workers="block")
     reference_page = references.new_page()
+    reference_page.on("pageerror", lambda error: errors.append(str(error)))
     reference_page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=05")
     reference_page.locator(".reading-paragraph a.reading-reference[href*='chapter=04#read-p10-b003']").first.click()
     reference_page.wait_for_function("new URL(location.href).searchParams.get('chapter') === '04' && location.hash === '#read-p10-b003'")
     reference_page.wait_for_function("Math.abs(document.querySelector('#read-p10-b003')?.getBoundingClientRect().top ?? 9999) < 160")
     assert reference_page.locator("#read-p10-b003").inner_text().startswith("4.2")
+    reference_page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=05")
+    formula_link = reference_page.locator('a[data-preview-kind="formula"][data-preview-chapter="04"]').first
+    source_block = formula_link.evaluate("link => link.closest('.reading-block').id")
+    formula_link.hover()
+    reference_page.locator(".reference-preview-tooltip math").wait_for()
+    formula_link.click()
+    formula_dialog = reference_page.locator(".reference-preview-dialog")
+    formula_dialog.locator("math").wait_for()
+    assert formula_dialog.locator(".formula-number").inner_text() == "(4.12)"
+    assert "chapter=05" in reference_page.url
+    formula_dialog.get_by_role("link", name="跳转到原文").click()
+    reference_page.wait_for_url("**chapter=04#read-p05-b010")
+    reference_page.go_back()
+    reference_page.wait_for_url("**chapter=05")
+    reference_page.wait_for_function(
+        "id => Math.abs(document.getElementById(id)?.getBoundingClientRect().top ?? 9999) < 160",
+        arg=source_block,
+    )
+    reference_page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=03")
+    cross_figure = reference_page.locator('a[data-preview-kind="figure"][data-preview-number="2.2"]').first
+    cross_figure.click()
+    cross_figure_dialog = reference_page.locator(".reference-preview-dialog")
+    cross_figure_dialog.locator("img").wait_for()
+    assert "图 2.2" in cross_figure_dialog.locator("figcaption").inner_text()
+    assert "chapter=03" in reference_page.url
+    cross_figure_dialog.get_by_role("button", name="关闭").click()
+    reference_page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=01")
+    figure_link = reference_page.locator('#read-p10-b001 .figure-caption a[data-preview-kind="figure"]').first
+    figure_link.focus()
+    reference_page.keyboard.press("Enter")
+    figure_dialog = reference_page.locator(".reference-preview-dialog")
+    figure_dialog.locator("img").wait_for()
+    assert "图 1.4" in figure_dialog.locator("figcaption").inner_text()
+    reference_page.keyboard.press("Escape")
+    assert not figure_dialog.evaluate("dialog => dialog.open")
+    assert figure_link.evaluate("link => document.activeElement === link")
+    annotated_figure = reference_page.locator('a[data-preview-kind="figure"][data-preview-block="p11-b001"]').first
+    annotated_figure.click()
+    assert reference_page.locator(".reference-preview-dialog .figure-annotations li").count() > 0
+    reference_page.keyboard.press("Escape")
     references.close()
 
     rich = browser.new_context(service_workers="block")
@@ -251,5 +315,5 @@ with sync_playwright() as playwright:
     rich.close()
 
     assert not errors, errors
-    print(f"PASS: contents, themes, chapter navigation, resume, offline, mobile width {dimensions}, no page errors")
+    print(f"PASS: contents, reference previews, themes, chapter navigation, resume, offline, mobile width {dimensions}, no page errors")
     browser.close()

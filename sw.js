@@ -7,7 +7,7 @@ function isBookImage(url) {
   return /\/books\/[^/]+\/assets\/.+\.(?:png|jpe?g|webp|gif|svg)$/i.test(url.pathname);
 }
 const CORE_ASSETS = [
-  "./", "./index.html", "./styles.css", "./app.js", "./books.js",
+  "./", "./index.html", "./styles.css", "./app.js", "./books.js", "./reference-preview.js",
   "./manifest.webmanifest", "./favicon.svg", "./icons/icon-180.png", "./icons/icon-192.png", "./icons/icon-512.png",
   "./books/bishop-pattern-recognition-2006/frontmatter.json",
   "./books/bishop-pattern-recognition-2006/preface.json",

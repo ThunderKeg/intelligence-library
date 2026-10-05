@@ -9,6 +9,7 @@ const books = [
     description: "《深度学习：基础与概念》中文译文",
     legacyPageChapter: "01",
     referenceIndex: "books/bishop-deep-learning-2024/reference-index.json",
+    referencePreview: true,
     offlineImages: "books/bishop-deep-learning-2024/offline-images.json",
     chapters: [
       { id: "frontmatter", number: "", title: "封面与出版信息", content: "books/bishop-deep-learning-2024/frontmatter.json" },

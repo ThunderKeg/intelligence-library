@@ -197,6 +197,41 @@ a { color: var(--accent); }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-box-b-long-range-correlations .reading-paragraph p { margin: 0; text-align: center; }
 .algorithm-view-hint { display: none; }
 .reading-reference { text-underline-offset: 3px; }
+.reading-reference[data-preview-kind] { text-decoration-style: dotted; cursor: zoom-in; }
+.reading-reference[data-preview-kind]:focus-visible, .reference-preview-jump:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 3px;
+}
+.reference-preview-tooltip, .reference-preview-dialog {
+  color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+  box-shadow: 0 18px 50px #0005;
+}
+.reference-preview-tooltip {
+  position: fixed; z-index: 5; width: min(440px, calc(100vw - 24px));
+  max-height: min(65vh, 520px); overflow: hidden; padding: 16px;
+  border-radius: 6px; pointer-events: none;
+}
+.reference-preview-title { display: block; margin-bottom: 10px; font: 700 15px/1.5 var(--sans); }
+.reference-preview-tooltip-body { overflow: hidden; font: 14px/1.7 var(--sans); }
+.reference-preview-hint { margin: 10px 0 0; color: var(--muted); font: 12px/1.5 var(--sans); }
+.reference-preview-dialog {
+  width: min(720px, calc(100vw - 32px)); max-height: min(85vh, 760px);
+  padding: 0; border-radius: 8px; overflow: hidden;
+}
+.reference-preview-dialog::backdrop { background: #07150baa; }
+.reference-preview-header, .reference-preview-footer {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px 20px;
+}
+.reference-preview-header { border-bottom: 1px solid var(--line); }
+.reference-preview-header h2 { margin: 0; font: 700 17px/1.5 var(--sans); }
+.reference-preview-footer { justify-content: flex-end; border-top: 1px solid var(--line); }
+.reference-preview-jump { font: 700 14px/1.6 var(--sans); text-underline-offset: 3px; }
+.reference-preview-body { max-height: calc(min(85vh, 760px) - 122px); overflow: auto; padding: 18px 20px; }
+.reference-preview-content .book-figure, .reference-preview-content .book-formula { margin: 0; }
+.reference-preview-tooltip .book-figure img { max-height: 230px; object-fit: contain; }
+.reference-preview-tooltip .book-formula { padding: 10px; }
+.reference-preview-tooltip .book-formula math { font-size: .9em; }
+html.reference-preview-open { overflow: hidden; }
 .contents-reader-link { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .reading-heading .contents-reader-link { text-decoration: none; }
 .reading-heading .contents-reader-link:hover { text-decoration: underline; }
@@ -373,6 +408,15 @@ a { color: var(--accent); }
   .book-list { font-size: 17px; }
   .book-formula { padding: 13px 14px; }
   .book-formula math { font-size: 1em; }
+}
+
+@media (max-width: 600px) {
+  .reference-preview-dialog {
+    position: fixed; inset: auto 0 0; width: 100%; max-width: 100%;
+    max-height: 85dvh; margin: auto 0 0; border-radius: 12px 12px 0 0;
+  }
+  .reference-preview-body { max-height: calc(85dvh - 122px); padding: 16px; }
+  .reference-preview-footer { padding-bottom: max(14px, env(safe-area-inset-bottom)); }
 }
 
 @media (max-width: 480px) {

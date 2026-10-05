@@ -517,7 +517,7 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
     if (target.chapter === currentChapter && target.block === selfBlock) return;
     const href = target.chapter === currentChapter ? `#read-${target.block}` :
       `${bookUrl(book, target.chapter)}#read-${target.block}`;
-    matches.push({ start, end, href });
+    matches.push({ start, end, href, kind, number: key, chapter: target.chapter, block: target.block });
   }
 
   function singles(kind, pattern) {
@@ -577,6 +577,13 @@ function linkReferences(article, book, currentChapter, targets) {
         fragment.append(document.createTextNode(node.textContent.slice(offset, match.start)));
         const link = element("a", "reading-reference", node.textContent.slice(match.start, match.end));
         link.href = match.href;
+        if (book.referencePreview === true && (match.kind === "figure" || match.kind === "formula")) {
+          link.dataset.previewKind = match.kind;
+          link.dataset.previewNumber = match.number;
+          link.dataset.previewChapter = match.chapter;
+          link.dataset.previewBlock = match.block;
+          link.setAttribute("aria-haspopup", "dialog");
+        }
         fragment.append(link);
         linked += 1;
         offset = match.end;
@@ -699,6 +706,21 @@ async function renderReader(book) {
   article.replaceChildren(...blocks.map((block) => renderBlock(block, book)));
   const referenceIndex = await referenceIndexPromise;
   if (referenceIndex) linkReferences(article, book, chapterInfo.id, referenceIndex);
+  function rememberReferenceReturn(link) {
+    const destination = new URL(link.href, location.href);
+    const source = link.closest(".reading-block");
+    if (!source || destination.origin !== location.origin || destination.pathname !== location.pathname ||
+        destination.searchParams.get("book") !== book.id ||
+        destination.searchParams.get("chapter") === chapterInfo.id) return;
+    try {
+      history.replaceState({ ...history.state, readerReturn: {
+        book: book.id, chapter: chapterInfo.id, block: source.id, url: location.href,
+      } }, "");
+    } catch { /* Navigation remains available if history state is unavailable. */ }
+  }
+  if (book.referencePreview === true && referenceIndex) {
+    createReferencePreview({ article, book, chapterInfo, chapter, renderBlock, rememberReferenceReturn });
+  }
   setupOfflineImages(book);
   const nodes = [...article.querySelectorAll(".reading-block")];
   const updateFormulaHints = () => {
@@ -844,16 +866,7 @@ async function renderReader(book) {
     const link = event.target.closest?.("a.reading-reference");
     if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey ||
         event.ctrlKey || event.shiftKey || event.altKey || link.target === "_blank") return;
-    const destination = new URL(link.href, location.href);
-    const source = link.closest(".reading-block");
-    if (!source || destination.origin !== location.origin || destination.pathname !== location.pathname ||
-        destination.searchParams.get("book") !== book.id ||
-        destination.searchParams.get("chapter") === chapterInfo.id) return;
-    try {
-      history.replaceState({ ...history.state, readerReturn: {
-        book: book.id, chapter: chapterInfo.id, block: source.id, url: location.href,
-      } }, "");
-    } catch { /* Navigation remains available if history state is unavailable. */ }
+    rememberReferenceReturn(link);
   });
   const navigationType = performance.getEntriesByType("navigation")[0]?.type;
   const historyReturn = history.state?.readerReturn;
