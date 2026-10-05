@@ -212,11 +212,13 @@ a { color: var(--accent); }
 }
 .reference-preview-title { display: block; margin-bottom: 10px; font: 700 15px/1.5 var(--sans); }
 .reference-preview-tooltip-body { overflow: hidden; font: 14px/1.7 var(--sans); }
+.reference-preview-tooltip[data-preview-kind="table"] .reference-preview-tooltip-body { max-height: min(42vh, 330px); }
 .reference-preview-hint { margin: 10px 0 0; color: var(--muted); font: 12px/1.5 var(--sans); }
 .reference-preview-dialog {
   width: min(720px, calc(100vw - 32px)); max-height: min(85vh, 760px);
   padding: 0; border-radius: 8px; overflow: hidden;
 }
+.reference-preview-dialog[data-preview-kind="table"] { width: min(960px, calc(100vw - 32px)); }
 .reference-preview-dialog::backdrop { background: #07150baa; }
 .reference-preview-header, .reference-preview-footer {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
@@ -228,6 +230,16 @@ a { color: var(--accent); }
 .reference-preview-jump { font: 700 14px/1.6 var(--sans); text-underline-offset: 3px; }
 .reference-preview-body { max-height: calc(min(85vh, 760px) - 122px); overflow: auto; padding: 18px 20px; }
 .reference-preview-content .book-figure, .reference-preview-content .book-formula { margin: 0; }
+.reference-preview-content .table-scroll { margin: 0; }
+.reference-preview-table-caption { margin-top: 10px; }
+.reference-preview-table-caption:first-child { margin: 0 0 10px; }
+.reference-preview-table-caption p { margin: 0; padding-left: 14px; border-left: 2px solid var(--caption-line); color: var(--muted); font: 14px/1.7 var(--sans); }
+.reference-preview-table-hint { margin: 0 0 8px; color: var(--muted); font: 12px/1.5 var(--sans); }
+.reference-preview-context { padding: 4px 0; font-family: var(--sans); }
+.reference-preview-context p { margin: 0; }
+.reference-preview-context-chapter { color: var(--muted); font-size: 14px; line-height: 1.6; }
+.reference-preview-context-title { color: var(--ink); font-size: 17px; font-weight: 600; line-height: 1.6; }
+.reference-preview-context-chapter + .reference-preview-context-title { margin-top: 8px; }
 .reference-preview-tooltip .book-figure img { max-height: 230px; object-fit: contain; }
 .reference-preview-tooltip .book-formula { padding: 10px; }
 .reference-preview-tooltip .book-formula math { font-size: .9em; }
@@ -299,23 +311,23 @@ html.reference-preview-open { overflow: hidden; }
 .book-table.notation-table th:first-child, .book-table.notation-table td:first-child { min-width: 7em; white-space: nowrap; }
 .book-table.code-table { width: max-content; min-width: 100%; }
 .book-table.code-table th, .book-table.code-table td, .book-table.code-table .book-inline-code { white-space: nowrap; overflow-wrap: normal; }
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p229-b009 .book-table { width: max-content; border-collapse: separate; border-spacing: 12px 0; margin-inline: auto; font: 14px/1.45 ui-monospace, Consolas, monospace; }
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p229-b009 .book-table td { padding: 3px 6px; border: 0; text-align: center; white-space: nowrap; }
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p229-b009 .book-table tr:first-child td { border-top: 2px solid currentColor; }
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p229-b009 .book-table tr:last-child td { border-bottom: 2px solid currentColor; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p229-b009, [data-preview-source-id="read-p229-b009"]) .book-table { width: max-content; border-collapse: separate; border-spacing: 12px 0; margin-inline: auto; font: 14px/1.45 ui-monospace, Consolas, monospace; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p229-b009, [data-preview-source-id="read-p229-b009"]) .book-table td { padding: 3px 6px; border: 0; text-align: center; white-space: nowrap; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p229-b009, [data-preview-source-id="read-p229-b009"]) .book-table tr:first-child td { border-top: 2px solid currentColor; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p229-b009, [data-preview-source-id="read-p229-b009"]) .book-table tr:last-child td { border-bottom: 2px solid currentColor; }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p236-b006 .book-table { width: max-content; min-width: 100%; }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p236-b006 .book-table td,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p236-b006 .book-table .book-inline-code { white-space: nowrap; overflow-wrap: normal; }
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p279-b001 .book-table { width: max-content; min-width: 100%; }
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p279-b001 .book-table td,
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p279-b001 .book-table .book-inline-code { white-space: nowrap; overflow-wrap: normal; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p279-b001, [data-preview-source-id="read-p279-b001"]) .book-table { width: max-content; min-width: 100%; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p279-b001, [data-preview-source-id="read-p279-b001"]) .book-table td,
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p279-b001, [data-preview-source-id="read-p279-b001"]) .book-table .book-inline-code { white-space: nowrap; overflow-wrap: normal; }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p484-b007,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p487-b004,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p488-b008,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p491-b004,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p492-b013,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p492-b019,
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p492-b017 figcaption { text-wrap: pretty; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p492-b017, [data-preview-source-id="read-p492-b017"]) figcaption { text-wrap: pretty; }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p504-b010 p,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p512-b004 p,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p512-b008 p,
@@ -372,11 +384,11 @@ html.reference-preview-open { overflow: hidden; }
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p573-b010 p,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p573-b015 p,
 #reader-article[data-book-id="mackay-information-theory-2003"] #read-p579-b013 p { text-wrap: pretty; }
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p499-b003 .book-table tr:first-child th[colspan="8"],
-#reader-article[data-book-id="mackay-information-theory-2003"] #read-p500-b012 .book-table tr:first-child th[colspan="8"] { text-align: center; }
-#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] #read-p425-b03 .book-table { width: max-content; min-width: 100%; }
-#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] #read-p425-b03 .book-table th,
-#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] #read-p425-b03 .book-table td { white-space: nowrap; overflow-wrap: normal; }
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p499-b003, [data-preview-source-id="read-p499-b003"]) .book-table tr:first-child th[colspan="8"],
+#reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p500-b012, [data-preview-source-id="read-p500-b012"]) .book-table tr:first-child th[colspan="8"] { text-align: center; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] :is(#read-p425-b03, [data-preview-source-id="read-p425-b03"]) .book-table { width: max-content; min-width: 100%; }
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] :is(#read-p425-b03, [data-preview-source-id="read-p425-b03"]) .book-table th,
+#reader-article[data-book-id="sutton-barto-reinforcement-learning-2e"] :is(#read-p425-b03, [data-preview-source-id="read-p425-b03"]) .book-table td { white-space: nowrap; overflow-wrap: normal; }
 
 .toc-dialog { width: min(390px, calc(100vw - 32px)); max-height: min(760px, calc(100vh - 32px)); margin: 16px 16px 16px auto; padding: 20px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: var(--surface); box-shadow: 0 20px 55px #0005; }
 .toc-dialog::backdrop { background: #07150baa; }
@@ -394,7 +406,7 @@ html.reference-preview-open { overflow: hidden; }
 
 @media (max-width: 800px) {
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p236-b006 .table-scroll::before { content: "左右滑动查看完整码字表"; display: block; position: sticky; left: 0; width: fit-content; margin: 0 0 7px; color: var(--muted); font: 12px/1.5 var(--sans); }
-  #reader-article[data-book-id="mackay-information-theory-2003"] #read-p279-b001 .table-scroll::before { content: "左右滑动查看完整字符对齐表"; display: block; position: sticky; left: 0; width: fit-content; margin: 0 0 7px; color: var(--muted); font: 12px/1.5 var(--sans); }
+  #reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p279-b001, [data-preview-source-id="read-p279-b001"]) .table-scroll::before { content: "左右滑动查看完整字符对齐表"; display: block; position: sticky; left: 0; width: fit-content; margin: 0 0 7px; color: var(--muted); font: 12px/1.5 var(--sans); }
   .algorithm-view-hint { display: block; position: sticky; left: 0; width: fit-content; margin: .7em 0 0; color: var(--muted); font: 12px/1.5 var(--sans); }
   .reading-code p.code-view-hint { display: block; }
   .wide-figure .figure-image-link { width: max-content; }
@@ -415,6 +427,7 @@ html.reference-preview-open { overflow: hidden; }
     position: fixed; inset: auto 0 0; width: 100%; max-width: 100%;
     max-height: 85dvh; margin: auto 0 0; border-radius: 12px 12px 0 0;
   }
+  .reference-preview-dialog[data-preview-kind="table"] { width: 100%; }
   .reference-preview-body { max-height: calc(85dvh - 122px); padding: 16px; }
   .reference-preview-footer { padding-bottom: max(14px, env(safe-area-inset-bottom)); }
 }
@@ -485,7 +498,7 @@ html.reference-preview-open { overflow: hidden; }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p480-b001 .mackay-ch38-title-part { display: block; white-space: nowrap; }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p483-b001 .mackay-ch39-title-part { display: block; white-space: nowrap; }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p495-b001 .mackay-ch40-title-part { display: block; white-space: nowrap; }
-  #reader-article[data-book-id="mackay-information-theory-2003"] #read-p229-b009 .book-table { border-spacing: 6px 0; }
+  #reader-article[data-book-id="mackay-information-theory-2003"] :is(#read-p229-b009, [data-preview-source-id="read-p229-b009"]) .book-table { border-spacing: 6px 0; }
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p517-b003 p,
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p519-b016 p,
   #reader-article[data-book-id="mackay-information-theory-2003"] #read-p520-b019 p,

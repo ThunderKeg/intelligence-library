@@ -151,6 +151,9 @@ def build_index() -> dict:
         add(alias_kind, alias_number, target["chapter"], target["block"], rank=3)
     # This printed "figure" is an algorithm paragraph, so retain the jump only.
     targets["figure"]["30.1"]["preview"] = False
+    # These printed tables are stored as image/figure blocks in the reader.
+    for number in ("4.10", "39.7", "48.2"):
+        targets["table"][number]["blockKind"] = "figure"
     # The caption for Figure 47.2 follows its image and three translated
     # panel notes; the link should land at the image itself.
     add("figure", "47.2", "47", "p570-b001", rank=4)

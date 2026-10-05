@@ -47,7 +47,14 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
 
   function label(link) {
     const number = link.dataset.previewNumber;
-    return link.dataset.previewKind === "figure" ? `图 ${number}` : `式 (${number})`;
+    switch (link.dataset.previewKind) {
+      case "figure": return `图 ${number}`;
+      case "formula": return `式 (${number})`;
+      case "table": return `表 ${number}`;
+      case "chapter": return /^[A-E]$/.test(number) ? `附录 ${number}` : `第 ${number} 章`;
+      case "section": return `${number} 节`;
+      default: return "引用";
+    }
   }
 
   function loadChapter(id) {
@@ -70,33 +77,74 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
 
   async function loadTarget(link) {
     const { previewChapter: chapterId, previewBlock: blockId, previewKind: kind,
-      previewElement: elementId } = link.dataset;
+      previewNumber: number,
+      previewElement: elementId, previewBlockKind: blockKind } = link.dataset;
     if (!chapters.has(chapterId) || !/^[\w-]+$/.test(blockId || "") ||
-        (elementId && !/^[\w-]+$/.test(elementId)) || !["figure", "formula"].includes(kind)) {
+        (elementId && !/^[\w-]+$/.test(elementId)) ||
+        !["figure", "formula", "table", "chapter", "section"].includes(kind) ||
+        (blockKind && !(kind === "table" && blockKind === "figure"))) {
       throw new Error("Invalid reference");
     }
     const data = await loadChapter(chapterId);
     function findBlock(blocks) {
-      for (const item of blocks) {
-        if (item.id === blockId) return item;
+      for (let index = 0; index < blocks.length; index += 1) {
+        const item = blocks[index];
+        if (item.id === blockId) return { block: item, blocks, index };
         const nested = Array.isArray(item.blocks) && findBlock(item.blocks);
         if (nested) return nested;
       }
       return null;
     }
-    const block = findBlock(data.blocks);
-    if (!block || (elementId ? block.kind !== "rich" : block.kind !== kind)) {
+    const found = findBlock(data.blocks);
+    const block = found?.block;
+    const expectedKind = kind === "chapter" || kind === "section" ? "heading" : blockKind || kind;
+    if (!block || (elementId ? block.kind !== "rich" : block.kind !== expectedKind)) {
       throw new Error("Reference target unavailable");
     }
-    return { block, kind, elementId };
+    let captionBlock = null;
+    let captionBefore = false;
+    if (kind === "table" && block.kind === "table" && !block.caption) {
+      function isTableCaption(item) {
+        if (!item || !["caption", "paragraph"].includes(item.kind)) return false;
+        const match = item.text?.match(/^表\s*((?:[A-E]|\d+)\.\d+(?:\.\d+)?)(?=[：:。．、\u3000])/);
+        return match?.[1] === number;
+      }
+      const next = found.blocks[found.index + 1];
+      const previous = found.blocks[found.index - 1];
+      if (isTableCaption(next)) captionBlock = next;
+      else if (isTableCaption(previous)) {
+        captionBlock = previous;
+        captionBefore = true;
+      }
+    }
+    return { block, kind, blockKind, elementId, chapterInfo: chapters.get(chapterId), captionBlock, captionBefore };
   }
 
   function fill(container, target) {
+    if (target.kind === "chapter" || target.kind === "section") {
+      const summary = document.createElement("div");
+      summary.className = "reference-preview-context reference-preview-content";
+      if (target.kind === "section") {
+        const chapter = document.createElement("p");
+        chapter.className = "reference-preview-context-chapter";
+        const number = target.chapterInfo.number || "";
+        const title = target.chapterInfo.title || "";
+        chapter.textContent = `${/^\d+$/.test(number) ? `第 ${number} 章` : number} ${title}`.trim();
+        summary.append(chapter);
+      }
+      const title = document.createElement("p");
+      title.className = "reference-preview-context-title";
+      title.textContent = target.block.text;
+      summary.append(title);
+      container.replaceChildren(summary);
+      return;
+    }
     let rendered = renderBlock(target.block, book);
     const sourceId = rendered.id;
     if (target.elementId) {
       const element = [...rendered.querySelectorAll("[id]")].find((item) => item.id === target.elementId);
       if (!element || (target.kind === "figure" ? element.tagName !== "FIGURE" :
+          target.kind === "table" ? element.tagName !== (target.blockKind === "figure" ? "FIGURE" : "TABLE") :
           !element.classList.contains("book-formula"))) throw new Error("Reference element unavailable");
       const wrapper = document.createElement("div");
       wrapper.className = "reading-block reading-rich";
@@ -109,7 +157,24 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
     for (const duplicate of rendered.querySelectorAll("[id]")) duplicate.removeAttribute("id");
     rendered.classList.add("reference-preview-content");
     for (const image of rendered.querySelectorAll("img")) image.loading = "eager";
-    container.replaceChildren(rendered);
+    if (target.captionBlock) {
+      const caption = renderBlock(target.captionBlock, book);
+      caption.removeAttribute("id");
+      caption.removeAttribute("data-pdf-page");
+      for (const duplicate of caption.querySelectorAll("[id]")) duplicate.removeAttribute("id");
+      caption.classList.add("reference-preview-table-caption");
+      container.replaceChildren(...(target.captionBefore ? [caption, rendered] : [rendered, caption]));
+    } else container.replaceChildren(rendered);
+    if (target.kind === "table") {
+      const scroller = container.querySelector(".table-scroll");
+      if (scroller && scroller.scrollWidth > scroller.clientWidth + 2 &&
+          ["none", "normal"].includes(getComputedStyle(scroller, "::before").content)) {
+        const hint = document.createElement("p");
+        hint.className = "reference-preview-table-hint";
+        hint.textContent = "左右滑动查看完整表格";
+        scroller.before(hint);
+      }
+    }
   }
 
   function positionTooltip(link) {
@@ -146,6 +211,10 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
     const version = hoverVersion;
     hoverTimer = setTimeout(async () => {
       tooltipTitle.textContent = label(link);
+      tooltip.dataset.previewKind = link.dataset.previewKind;
+      tooltipHint.textContent = link.dataset.previewKind === "table" ? "点击查看完整表格" :
+        ["chapter", "section"].includes(link.dataset.previewKind) ? "点击查看章节标题" :
+        "点击引用查看完整内容";
       tooltipBody.textContent = "正在加载预览…";
       tooltip.hidden = false;
       positionTooltip(link);
@@ -189,6 +258,7 @@ function createReferencePreview({ article, book, chapterInfo, chapter, renderBlo
     jumping = false;
     openingScrollY = window.scrollY;
     heading.textContent = label(link);
+    dialog.dataset.previewKind = link.dataset.previewKind;
     jump.href = link.href;
     body.textContent = "正在加载预览…";
     dialog.showModal();

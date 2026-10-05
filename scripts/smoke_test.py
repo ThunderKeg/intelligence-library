@@ -114,7 +114,7 @@ with sync_playwright() as playwright:
     phone.goto(BASE + "?book=bishop-deep-learning-2024&chapter=01")
     mobile_figure = phone.locator('#read-p10-b001 .figure-caption a[data-preview-kind="figure"]').first
     mobile_figure.scroll_into_view_if_needed()
-    scroll_before_preview = phone.evaluate("scrollY")
+    anchor_before_preview = mobile_figure.evaluate("link => link.getBoundingClientRect().top")
     mobile_figure.click()
     phone.wait_for_function("document.querySelector('.reference-preview-dialog img')?.naturalWidth > 0")
     preview_dialog = phone.locator(".reference-preview-dialog")
@@ -128,7 +128,10 @@ with sync_playwright() as playwright:
     phone.keyboard.press("Escape")
     assert not preview_dialog.evaluate("dialog => dialog.open")
     phone.wait_for_function("!document.documentElement.classList.contains('reference-preview-open')")
-    phone.wait_for_function("y => Math.abs(scrollY - y) <= 2", arg=scroll_before_preview)
+    phone.wait_for_function(
+        "top => Math.abs(document.querySelector('#read-p10-b001 .figure-caption a[data-preview-kind=figure]').getBoundingClientRect().top - top) <= 2",
+        arg=anchor_before_preview,
+    )
     assert mobile_figure.evaluate("link => document.activeElement === link")
 
     system = browser.new_context(color_scheme="dark", service_workers="block")
@@ -210,6 +213,8 @@ with sync_playwright() as playwright:
     reference_page.on("pageerror", lambda error: errors.append(str(error)))
     reference_page.goto(BASE + "?book=bishop-deep-learning-2024&chapter=05")
     reference_page.locator(".reading-paragraph a.reading-reference[href*='chapter=04#read-p10-b003']").first.click()
+    reference_page.locator(".reference-preview-dialog .reference-preview-context-title").wait_for()
+    reference_page.locator(".reference-preview-dialog").get_by_role("link", name="跳转到原文").click()
     reference_page.wait_for_function("new URL(location.href).searchParams.get('chapter') === '04' && location.hash === '#read-p10-b003'")
     reference_page.wait_for_function("Math.abs(document.querySelector('#read-p10-b003')?.getBoundingClientRect().top ?? 9999) < 160")
     assert reference_page.locator("#read-p10-b003").inner_text().startswith("4.2")

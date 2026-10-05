@@ -2969,11 +2969,13 @@
       },
       "39.7": {
         "chapter": "39",
-        "block": "p492-b017"
+        "block": "p492-b017",
+        "blockKind": "figure"
       },
       "4.10": {
         "chapter": "04",
-        "block": "p090-b001"
+        "block": "p090-b001",
+        "blockKind": "figure"
       },
       "4.5": {
         "chapter": "04",
@@ -3001,7 +3003,8 @@
       },
       "48.2": {
         "chapter": "48",
-        "block": "p587-b006"
+        "block": "p587-b006",
+        "blockKind": "figure"
       },
       "5.10": {
         "chapter": "05",

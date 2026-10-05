@@ -1,4 +1,4 @@
-"""Build exact figure and equation preview targets for rich-HTML books.
+"""Build exact reference preview targets for rich-HTML books.
 
 Usage: python scripts/build_rich_reference_indexes.py [--check]
 """
@@ -13,7 +13,10 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOKS = {
-    "shannon-mathematical-theory-1948": {"figure": "figure[id^='fig-']"},
+    "shannon-mathematical-theory-1948": {
+        "figure": "figure[id^='fig-']",
+        "table": "figure[id^='table-']",
+    },
     "boyd-vandenberghe-convex-optimization-2004": {
         "figure": "figure[id^='fig-']",
         "formula": ".book-formula[id^='eq-']",
@@ -24,20 +27,43 @@ BOOKS = {
 def build(book_id, selectors):
     book_dir = ROOT / "books" / book_id
     targets = {kind: {} for kind in selectors}
+    if book_id.startswith("boyd-"):
+        targets.update(chapter={}, section={})
+
+    def add(kind, number, target):
+        previous = targets[kind].setdefault(number, target)
+        if previous != target:
+            raise ValueError(f"Duplicate {kind} {number}: {previous}, {target}")
+
     for path in sorted(book_dir.glob("chapter-*.json")):
         chapter = json.loads(path.read_text(encoding="utf-8"))
         if chapter.get("bookId") != book_id or not chapter.get("chapterId"):
             raise ValueError(f"Invalid chapter: {path}")
         for block in chapter["blocks"]:
+            if "chapter" in targets and block.get("kind") == "heading":
+                heading = block.get("text", "")
+                match = re.match(r"^第\s*(\d+)\s*章(?:\s|$)", heading)
+                if not match:
+                    match = re.match(r"^附录\s*([A-C])(?:\s|$)", heading)
+                if match:
+                    add("chapter", match[1], {"chapter": chapter["chapterId"], "block": block["id"]})
+                match = re.match(r"^((?:[A-C]|\d+)\.\d+(?:\.\d+)?)\s", heading)
+                if match:
+                    add("section", match[1], {"chapter": chapter["chapterId"], "block": block["id"]})
             if block.get("kind") != "rich" or not block.get("html"):
                 continue
             soup = BeautifulSoup(block["html"], "html.parser")
             for kind, selector in selectors.items():
-                prefix = "fig-" if kind == "figure" else "eq-"
+                prefix = {"figure": "fig-", "formula": "eq-", "table": "table-"}[kind]
                 for element in soup.select(selector):
                     element_id = element["id"]
                     number = element_id.removeprefix(prefix).replace("-", ".")
-                    valid = re.fullmatch(r"\d+" if book_id.startswith("shannon-") else r"(?:[A-C]|\d+)(?:\.\d+)+", number)
+                    if book_id.startswith("shannon-") and kind == "table":
+                        number = number.upper()
+                    if book_id.startswith("shannon-"):
+                        valid = re.fullmatch(r"[IVX]+" if kind == "table" else r"\d+", number)
+                    else:
+                        valid = re.fullmatch(r"(?:[A-C]|\d+)(?:\.\d+)+", number)
                     if not valid:
                         if kind == "figure":
                             continue  # Exercise artwork has a fig- ID but no figure number.
@@ -45,9 +71,9 @@ def build(book_id, selectors):
                     if kind == "figure" and element.get("data-figure") and element["data-figure"] != number:
                         raise ValueError(f"Figure number mismatch: {element_id}")
                     target = {"chapter": chapter["chapterId"], "block": block["id"], "element": element_id}
-                    previous = targets[kind].setdefault(number, target)
-                    if previous != target:
-                        raise ValueError(f"Duplicate {kind} {number}: {previous}, {target}")
+                    if kind == "table" and element.name == "figure":
+                        target["blockKind"] = "figure"
+                    add(kind, number, target)
     if not targets["figure"] or ("formula" in selectors and not targets["formula"]):
         raise ValueError(f"No preview targets found for {book_id}")
     return {"bookId": book_id, "targets": {kind: dict(sorted(entries.items())) for kind, entries in targets.items()}}

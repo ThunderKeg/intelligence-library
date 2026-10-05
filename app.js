@@ -520,7 +520,7 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
     const href = target.chapter === currentChapter ? `#${fragment}` :
       `${bookUrl(book, target.chapter)}#${fragment}`;
     matches.push({ start, end, href, kind, number: key, chapter: target.chapter, block: target.block,
-      element: target.element, previewable: target.preview !== false });
+      element: target.element, blockKind: target.blockKind, previewable: target.preview !== false });
   }
 
   function singles(kind, pattern) {
@@ -544,6 +544,7 @@ function referenceMatches(text, targets, book, currentChapter, selfBlock) {
   singles("figure", /图\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
   if (book.richReferenceAuto === true) singles("figure", /图\s*(\d+)(?![\d.])/g);
   singles("table", /表\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
+  if (book.richReferenceAuto === true) singles("table", /表\s*([IVX]+)(?![A-Za-z])/g);
   singles("algorithm", /算法\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
   singles("exercise", /习题\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
   singles("example", /(?:示例|例)\s*((?:[A-E]|\d+)\.\d+)(?![\d.])/g);
@@ -583,12 +584,14 @@ function linkReferences(article, book, currentChapter, targets) {
         fragment.append(document.createTextNode(node.textContent.slice(offset, match.start)));
         const link = element("a", "reading-reference", node.textContent.slice(match.start, match.end));
         link.href = match.href;
-        if (book.referencePreview === true && match.previewable && (match.kind === "figure" || match.kind === "formula")) {
+        if (book.referencePreview === true && match.previewable &&
+            ["figure", "formula", "table", "chapter", "section"].includes(match.kind)) {
           link.dataset.previewKind = match.kind;
           link.dataset.previewNumber = match.number;
           link.dataset.previewChapter = match.chapter;
           link.dataset.previewBlock = match.block;
           if (match.element) link.dataset.previewElement = match.element;
+          if (match.blockKind) link.dataset.previewBlockKind = match.blockKind;
           link.setAttribute("aria-haspopup", "dialog");
         }
         fragment.append(link);
@@ -602,18 +605,25 @@ function linkReferences(article, book, currentChapter, targets) {
   if (book.referencePreview === true) {
     for (const link of article.querySelectorAll("a.reading-reference[data-convex-reference]")) {
       const kind = link.dataset.convexReference;
-      if (kind !== "figure" && kind !== "formula") continue;
-      const number = link.textContent.match(/(?:[A-C]|\d+)\.\d+(?:\.\d+)?/)?.[0];
+      if (!["figure", "formula", "table", "chapter", "section"].includes(kind)) continue;
+      const value = link.textContent;
+      const number = kind === "chapter" ?
+        (value.match(/第\s*(\d+)\s*章/)?.[1] || value.match(/附录\s*([A-C])/)?.[1] ||
+         value.match(/^\s*([A-C]|\d+)(?=\s)/)?.[1]) :
+        value.match(/(?:[A-C]|\d+)\.\d+(?:\.\d+)?/)?.[0];
       const target = targets[kind]?.[number];
-      if (!target?.element || !/^[\w-]+$/.test(target.element) || !/^[\w-]+$/.test(target.block) ||
+      if (!target || target.preview === false || (target.element && !/^[\w-]+$/.test(target.element)) ||
+          !/^[\w-]+$/.test(target.block) ||
           !book.chapters.some((chapter) => chapter.id === target.chapter)) continue;
-      link.href = target.chapter === currentChapter ? `#${target.element}` :
-        `${bookUrl(book, target.chapter)}#${target.element}`;
+      const fragment = target.element || `read-${target.block}`;
+      link.href = target.chapter === currentChapter ? `#${fragment}` :
+        `${bookUrl(book, target.chapter)}#${fragment}`;
       link.dataset.previewKind = kind;
       link.dataset.previewNumber = number;
       link.dataset.previewChapter = target.chapter;
       link.dataset.previewBlock = target.block;
-      link.dataset.previewElement = target.element;
+      if (target.element) link.dataset.previewElement = target.element;
+      if (target.blockKind) link.dataset.previewBlockKind = target.blockKind;
       link.setAttribute("aria-haspopup", "dialog");
       linked += 1;
     }

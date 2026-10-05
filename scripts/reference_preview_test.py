@@ -1,4 +1,4 @@
-"""Cross-book browser checks for figure and equation previews.
+"""Cross-book browser checks for reference previews.
 
 Start a local HTTP server before running this script. LIBRARY_TEST_URL overrides
 the default http://127.0.0.1:8787/ address.
@@ -64,6 +64,12 @@ with sync_playwright() as playwright:
     assert dialog.locator("figure img").evaluate("img => img.complete && img.naturalWidth > 0")
     assert "图 2" in dialog.locator("figcaption").inner_text()
     page.keyboard.press("Escape")
+    open_chapter(page, "shannon-mathematical-theory-1948", "03")
+    link, dialog = preview(page, "table", "I")
+    assert link.get_attribute("href").endswith("#table-i")
+    assert dialog.locator("figure img").evaluate("img => img.complete && img.naturalWidth > 0")
+    assert dialog.locator(".figure-translation").count() == 1
+    page.keyboard.press("Escape")
 
     open_chapter(page, "boyd-vandenberghe-convex-optimization-2004", "10")
     link, dialog = preview(page, "formula", "10.26")
@@ -83,6 +89,70 @@ with sync_playwright() as playwright:
     assert dialog.locator("figure img").evaluate("img => img.complete && img.naturalWidth > 0")
     page.keyboard.press("Escape")
 
+    open_chapter(page, "bishop-deep-learning-2024", "01")
+    _, dialog = preview(page, "table", "1.1")
+    assert dialog.locator(".book-table").inner_text() == page.locator("#read-p12-b006 .book-table").inner_text()
+    assert dialog.locator(".book-table tr").count() == page.locator("#read-p12-b006 .book-table tr").count()
+    page.keyboard.press("Escape")
+    _, dialog = preview(page, "chapter", "12")
+    assert dialog.locator(".reference-preview-context-title").inner_text().startswith("第 12 章 Transformer")
+    page.keyboard.press("Escape")
+    _, dialog = preview(page, "section", "2.3")
+    assert "第 2 章 概率" in dialog.locator(".reference-preview-context-chapter").inner_text()
+    assert dialog.locator(".reference-preview-context-title").inner_text().startswith("2.3")
+    page.keyboard.press("Escape")
+
+    open_chapter(page, "bishop-pattern-recognition-2006", "chapter-01")
+    _, dialog = preview(page, "table", "1.1")
+    assert dialog.locator(".book-table tr").count() == page.locator("#read-p08-b005 .book-table tr").count()
+    page.keyboard.press("Escape")
+    _, dialog = preview(page, "chapter", "A")
+    assert "附录 A" in dialog.locator(".reference-preview-context-title").inner_text()
+    page.keyboard.press("Escape")
+
+    open_chapter(page, "sutton-barto-reinforcement-learning-2e", "16")
+    _, dialog = preview(page, "table", "16.1")
+    assert dialog.locator(".book-table tr").count() == page.locator("#read-p425-b03 .book-table tr").count()
+    assert dialog.locator(".reference-preview-table-caption").inner_text().startswith("表 16.1")
+    page.keyboard.press("Escape")
+    _, dialog = preview(page, "section", "12.2")
+    assert "第 12 章 资格迹" in dialog.locator(".reference-preview-context-chapter").inner_text()
+    page.keyboard.press("Escape")
+
+    open_chapter(page, "mackay-information-theory-2003", "13")
+    page.locator('a[data-preview-kind="table"][data-preview-number="13.16"]').first.hover()
+    page.locator(".reference-preview-tooltip .book-table").wait_for()
+    _, dialog = preview(page, "table", "13.16")
+    assert dialog.locator(".book-table tr").count() == page.locator("#read-p229-b009 .book-table tr").count()
+    assert dialog.locator(".reference-preview-table-caption").inner_text().startswith("表 13.16")
+    assert dialog.locator(".reference-preview-content .book-table tr:first-child td").first.evaluate(
+        "cell => getComputedStyle(cell).borderTopWidth") == "2px"
+    dialog.screenshot(path=str(OUTPUT / "mackay-table-preview.png"))
+    page.keyboard.press("Escape")
+    _, dialog = preview(page, "section", "C.1")
+    assert "附录 C 一些数学知识" in dialog.locator(".reference-preview-context-chapter").inner_text()
+    page.keyboard.press("Escape")
+    open_chapter(page, "mackay-information-theory-2003", "04")
+    _, dialog = preview(page, "table", "4.5")
+    assert dialog.locator(".reference-preview-body > :first-child").get_attribute("class").find(
+        "reference-preview-table-caption") >= 0
+    page.keyboard.press("Escape")
+    _, dialog = preview(page, "table", "4.10")
+    assert dialog.locator("figure img").evaluate("img => img.complete && img.naturalWidth > 0")
+    page.keyboard.press("Escape")
+
+    open_chapter(page, "boyd-vandenberghe-convex-optimization-2004", "01")
+    _, dialog = preview(page, "chapter", "4")
+    assert dialog.locator(".reference-preview-context-title").inner_text() == "第 4 章 凸优化问题"
+    page.keyboard.press("Escape")
+    page.locator('a[data-preview-kind="section"][data-preview-number="1.4"]').first.hover()
+    page.locator(".reference-preview-tooltip .reference-preview-context-title").wait_for()
+    _, dialog = preview(page, "section", "1.4")
+    assert dialog.locator(".reference-preview-context-chapter").inner_text() == "第 1 章 绪论"
+    assert dialog.locator(".reference-preview-context-title").inner_text() == "1.4 非线性优化"
+    dialog.screenshot(path=str(OUTPUT / "boyd-section-preview.png"))
+    page.keyboard.press("Escape")
+
     mobile = browser.new_context(viewport={"width": 390, "height": 844}, is_mobile=True,
                                  has_touch=True, service_workers="block")
     phone = mobile.new_page()
@@ -93,7 +163,17 @@ with sync_playwright() as playwright:
     assert dialog.locator("figure img").evaluate("img => img.complete && img.naturalWidth > 0")
     phone.screenshot(path=str(OUTPUT / "shannon-figure-preview-mobile.png"))
     phone.keyboard.press("Escape")
+    open_chapter(phone, "sutton-barto-reinforcement-learning-2e", "16")
+    _, dialog = preview(phone, "table", "16.1")
+    assert dialog.bounding_box()["width"] <= phone.evaluate("innerWidth")
+    scroller = dialog.locator(".table-scroll")
+    assert scroller.evaluate("node => node.scrollWidth > node.clientWidth")
+    assert dialog.locator(".reference-preview-table-hint").inner_text() == "左右滑动查看完整表格"
+    scroller.evaluate("node => { node.scrollLeft = node.scrollWidth; }")
+    assert scroller.evaluate("node => node.scrollLeft > 0")
+    phone.screenshot(path=str(OUTPUT / "sutton-table-preview-mobile.png"))
+    phone.keyboard.press("Escape")
 
     assert not errors, errors
-    print("PASS: five books, nested formulas, exact rich targets, alias, hover, mobile, no page errors")
+    print("PASS: six books, figures, formulas, complete tables, chapter/section titles, hover, mobile, no page errors")
     browser.close()

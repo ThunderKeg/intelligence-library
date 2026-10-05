@@ -62,6 +62,14 @@
         "block": "p04-b011",
         "element": "fig-9"
       }
+    },
+    "table": {
+      "I": {
+        "chapter": "03",
+        "block": "p09-b001",
+        "element": "table-i",
+        "blockKind": "figure"
+      }
     }
   }
 }
